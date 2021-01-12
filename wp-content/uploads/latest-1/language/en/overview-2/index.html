@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<base href="https://tencent.github.io/behaviac" />
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	 
+	
+	
+	<title>behaviac overview &#8211; behaviac</title>
+<link rel='dns-prefetch' href='//cdn.bootcss.com' />
+
+
+
+
+<link rel='stylesheet' id='ez-icomoon-css'  href='https://tencent.github.io/behaviac/contents/lib/easy-table-of-contents/vendor/icomoon/style.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='ez-toc-css'  href='https://tencent.github.io/behaviac/contents/lib/easy-table-of-contents/assets/css/screen.min.css' type='text/css' media='all' />
+<style id='ez-toc-inline-css' type='text/css'>
+div#ez-toc-container ul li {font-size: 95%;}div#ez-toc-container {width: 25%;}
+</style>
+<link rel='stylesheet' id='font-awesome-css'  href='//cdn.bootcss.com/font-awesome/4.1.0/css/font-awesome.min.css?ver=4.1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='owl-carousel-css'  href='https://tencent.github.io/behaviac/contents/lib/templatesnext-toolkit/css/owl.carousel.css' type='text/css' media='all' />
+<link rel='stylesheet' id='owl-carousel-transitions-css'  href='https://tencent.github.io/behaviac/contents/lib/templatesnext-toolkit/css/owl.transitions.css' type='text/css' media='all' />
+<link rel='stylesheet' id='colorbox-css'  href='https://tencent.github.io/behaviac/contents/lib/templatesnext-toolkit/css/colorbox.css' type='text/css' media='all' />
+<link rel='stylesheet' id='tx-style-css'  href='https://tencent.github.io/behaviac/contents/lib/templatesnext-toolkit/css/tx-style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='behaviac-fonts-css'  href='https://tencent.github.io/behaviac/contents/ui/theme/css/font.css' type='text/css' media='all' />
+<link rel='stylesheet' id='genericons-css'  href='https://tencent.github.io/behaviac/contents/ui/theme/fonts/genericons.css' type='text/css' media='all' />
+<link rel='stylesheet' id='animate-css'  href='https://tencent.github.io/behaviac/contents/ui/theme/css/animate.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='behaviac-sidr-css'  href='https://tencent.github.io/behaviac/contents/ui/theme/css/jquery.sidr.dark.css' type='text/css' media='all' />
+<link rel='stylesheet' id='owl-carousel-theme-css'  href='https://tencent.github.io/behaviac/contents/ui/theme/css/owl.theme.css' type='text/css' media='all' />
+<link rel='stylesheet' id='behaviac-style-css'  href='https://tencent.github.io/behaviac/contents/ui/theme/style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='behaviac-blog-layout-css'  href='https://tencent.github.io/behaviac/contents/ui/theme/css/twocol-blog.css' type='text/css' media='all' />
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='behaviac-ie-css'  href='https://tencent.github.io/behaviac/contents/ui/theme/css/ie.css' type='text/css' media='all' />
+<![endif]-->
+<link rel='stylesheet' id='behaviac-extra-stylesheet-css'  href='https://tencent.github.io/behaviac/contents/ui/theme/css/extra-style.css' type='text/css' media='all' />
+<script type='text/javascript' src='https://tencent.github.io/behaviac/inc/js/jquery/jquery.js'></script>
+<script type='text/javascript' src='https://tencent.github.io/behaviac/inc/js/jquery/jquery-migrate.min.js'></script>
+
+
+
+
+
+
+
+<style type="text/css">
+a,a:visited,.blog-columns .comments-link a:hover {color: #95C837;}input:focus,textarea:focus {border: 1px solid #95C837;}button,input[type="submit"],input[type="button"],input[type="reset"],.nav-container .current_page_item > a > span,.nav-container .current_page_ancestor > a > span,.nav-container .current-menu-item > a span,.nav-container .current-menu-ancestor > a > span,.nav-container li a:hover span {background-color: #95C837;}.nav-container li:hover > a,.nav-container li a:hover {color: #95C837;}.nav-container .sub-menu,.nav-container .children {border-top: 2px solid #95C837;}.ibanner,.da-dots span.da-dots-current,.tx-cta a.cta-button {background-color: #95C837;}#ft-post .entry-thumbnail:hover > .comments-link,.tx-folio-img .folio-links .folio-linkico,.tx-folio-img .folio-links .folio-zoomico {background-color: #95C837;}.entry-header h1.entry-title a:hover,.entry-header > .entry-meta a:hover {color: #95C837;}.featured-area div.entry-summary > p > a.moretag:hover {background-color: #95C837;}.site-content div.entry-thumbnail .stickyonimg,.site-content div.entry-thumbnail .dateonimg,.site-content div.entry-nothumb .stickyonimg,.site-content div.entry-nothumb .dateonimg {background-color: #95C837;}.entry-meta a,.entry-content a,.comment-content a,.entry-content a:visited {color: #95C837;}.format-status .entry-content .page-links a,.format-gallery .entry-content .page-links a,.format-chat .entry-content .page-links a,.format-quote .entry-content .page-links a,.page-links a {background: #95C837;border: 1px solid #95C837;color: #ffffff;}.format-gallery .entry-content .page-links a:hover,.format-audio .entry-content .page-links a:hover,.format-status .entry-content .page-links a:hover,.format-video .entry-content .page-links a:hover,.format-chat .entry-content .page-links a:hover,.format-quote .entry-content .page-links a:hover,.page-links a:hover {color: #95C837;}.iheader.front {background-color: #95C837;}.navigation a,.tx-post-row .tx-folio-title a:hover,.tx-blog .tx-blog-item h3.tx-post-title a:hover {color: #95C837;}.paging-navigation div.navigation > ul > li a:hover,.paging-navigation div.navigation > ul > li.active > a {color: #95C837;	border-color: #95C837;}.comment-author .fn,.comment-author .url,.comment-reply-link,.comment-reply-login,.comment-body .reply a,.widget a:hover {color: #95C837;}.widget_calendar a:hover {	background-color: #95C837;	color: #ffffff;	}.widget_calendar td#next a:hover,.widget_calendar td#prev a:hover {	background-color: #95C837;color: #ffffff;}.site-footer div.widget-area .widget a:hover {color: #95C837;}.site-main div.widget-area .widget_calendar a:hover,.site-footer div.widget-area .widget_calendar a:hover {	background-color: #95C837;color: #ffffff;}.widget a:visited { color: #373737;}.widget a:hover,.entry-header h1.entry-title a:hover,.error404 .page-title:before,.tx-service-icon span i,.tx-post-comm:after {color: #95C837;}.da-dots > span > span {background-color: #95C837;}.iheader,.format-status,.tx-service:hover .tx-service-icon span {background-color: #95C837;}.tx-cta {border-left: 6px solid #95C837;}.paging-navigation #posts-nav > span:hover, .paging-navigation #posts-nav > a:hover, .paging-navigation #posts-nav > span.current, .paging-navigation #posts-nav > a.current, .paging-navigation div.navigation > ul > li a:hover, .paging-navigation div.navigation > ul > li > span.current, .paging-navigation div.navigation > ul > li.active > a {border: 1px solid #95C837;color: #95C837;}.entry-title a { color: #141412;}.tx-service-icon span { border: 2px solid #95C837;}.site-footer .widget-area .widget input[type="submit"],.site .tx-slider .tx-slide-button a,.ibanner .da-slider .owl-item.active .da-link  { background-color: #95C837; color: #FFF; }.site-footer .widget-area .widget input[type="submit"]:hover,.site .tx-slider .tx-slide-button a:hover  { background-color: #373737; color: #FFF; }</style>
+<style type="text/css" id="custom-background-css">
+body.custom-background { background-image: url("https://tencent.github.io/behaviac/contents/ui/theme/images/default-bg.png"); background-position: left top; background-size: auto; background-repeat: repeat; background-attachment: scroll; }
+</style>
+<style type="text/css" id="syntaxhighlighteranchor"></style>
+</head>
+<body class="post-template-default single single-post postid-320 single-format-standard custom-background nx-boxed twocol-blog sidebar" style="  ">
+	<div id="page" class="hfeed site">
+    	
+
+        
+        <div class="headerwrap">
+            <header id="masthead" class="site-header" role="banner">
+         		<div class="headerinnerwrap">
+					                        <a class="home-link" href="https://tencent.github.io/behaviac/language/en/index/" title="behaviac" rel="home">
+			    <span class="hidden-on-phone">
+								<img class="hidden-on-phone" id="tencentOpen" onclick="openUrl('http://opensource.tencent.com/')" src="./../../../../../../tencentOpensource_logo.png" alt="tencent opensource logo">
+								<img src="https://tencent.github.io/behaviac/contents/data/2016/04/256x256.png" alt="behaviac" />
+								<div class="hidden-on-phone" style="float: right; margin: 0px; padding: 0px; margin-left: 4px;">
+									<b style="color: #1994CA; font-size: 24px; margin: 0px;padding:0; line-height: 1.5em; ">behaviac</b>
+									<br>
+									<b style="margin: 0;padding: 0; margin-top:-4px;color: #cccccc; font-size: 14px;line-height: 1.5em;">wtencent.github.io</b>
+								</div>
+							</span>
+			</a>
+	<script>
+	function openUrl(url){
+		window.open(url);
+	}
+	</script>
+                    	
+        
+                    <div id="navbar" class="navbar">
+                        <nav id="site-navigation" class="navigation main-navigation" role="navigation">
+                            <h3 class="menu-toggle"> </h3>
+                            <a class="screen-reader-text skip-link" href="#content" title="Skip to content">Skip to content</a>
+                            <div class="nav-container"><ul id="menu-menu" class="nav-menu"><li id="menu-item-107" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-107"><a href="https://tencent.github.io/behaviac/language/en/index/">Home</a></li>
+<li id="menu-item-114" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-114"><a href="https://tencent.github.io/behaviac/language/en/category/refrence/">Documents</a>
+<ul class="sub-menu">
+	<li id="menu-item-194" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-194"><a href="https://tencent.github.io/behaviac">API</a></li>
+</ul>
+</li>
+<li id="menu-item-348" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-348"><a href="https://github.com/Tencent/behaviac">Downloads</a></li>
+<li id="menu-item-942" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-942"><a href="https://tencent.github.io/behaviac/language/zh/category/announcement/">announcement</a></li>
+<li id="menu-item-347" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-347"><a href="http://bbs.behaviac.com/">Q&#038;A</a></li>
+</ul></div>							
+                        </nav><!-- #site-navigation -->
+                        <div class="topsearch">
+                            <form role="search" method="get" class="search-form" action="https://tencent.github.io/behaviac/language/en/">
+				<label>
+					<span class="screen-reader-text">Search for:</span>
+					<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" />
+				</label>
+				<input type="submit" class="search-submit" value="Search" />
+			</form>                        </div>
+                    </div><!-- #navbar -->
+                    <div class="clear"></div>
+                </div>
+            </header><!-- #masthead -->
+        </div>
+        
+        <!-- #Banner -->
+                
+        <div class="iheader" style="">
+        	<div class="titlebar">
+            	
+                <h1 class="entry-title">behaviac overview</h1>				                	<div class="nx-breadcrumb">
+                <!-- Breadcrumb NavXT 5.4.0 -->
+<span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" title="Go to behaviac." href="https://tencent.github.io/behaviac" class="home"><span property="name">behaviac</span></a><meta property="position" content="1"></span> &gt; <span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" title="Go to the refrence category archives." href="https://tencent.github.io/behaviac/language/en/category/refrence/" class="taxonomy category"><span property="name">refrence</span></a><meta property="position" content="2"></span> &gt; <span property="itemListElement" typeof="ListItem"><span property="name">behaviac overview</span><meta property="position" content="3"></span>                	</div>
+                               
+            	
+            </div>
+        </div>
+        
+				<div id="main" class="site-main">
+
+
+	<div id="primary" class="content-area">
+		<div id="content" class="site-content" role="main">
+
+						
+            <article id="post-320" class="post-320 post type-post status-publish format-standard hentry category-refrence tag-behaviac">
+            
+                <div class="meta-img">
+                                </div>
+                
+                <div class="post-mainpart">    
+                    <header class="entry-header">
+                        <div class="entry-meta">
+                            <span class="date"><a href="https://tencent.github.io/behaviac/overview-2/" title="Permalink to behaviac overview" rel="bookmark"><time class="entry-date" datetime="2016-05-13T16:28:14+00:00">2016年5月13日</time> <time>最近更新于：2016年11月12日</time></a></span><span class="categories-links"><a href="https://tencent.github.io/behaviac/language/en/category/refrence/" rel="category tag">refrence</a></span><span class="tags-links"><a href="https://tencent.github.io/behaviac/language/en/tag/behaviac/" rel="tag">behaviac</a></span><span class="author vcard"><a class="url fn n" href="https://tencent.github.io/behaviac/language/en/author/jonygli/" title="View all posts by jonygli" rel="author">jonygli</a></span>                                                    </div><!-- .entry-meta -->
+                    </header><!-- .entry-header -->
+                
+                    <div class="entry-content">
+                        <div id="ez-toc-container" class="ez-toc-wrap-left counter-hierarchy ez-toc-grey">
+<div class="ez-toc-title-container">
+<p class="ez-toc-title">目录</p>
+<span class="ez-toc-title-toggle"><a class="pull-right btn btn-xs btn-default ez-toc-toggle"><i class="glyphicon ez-toc-icon-toggle"></i></a></span></div>
+<ul class="ez-toc-list"><li><a href="#Overview" title="Overview">Overview</a><ul><li><a href="#Features_and_User_Value" title="Features and User Value">Features and User Value</a></li><li><a href="#Project_Link" title="Project Link">Project Link</a></li></ul></li><li><a href="#Background" title="Background">Background</a><ul><li><a href="#Finite_State_Machine" title="Finite State Machine">Finite State Machine</a></li><li><a href="#Behavior_Tree" title="Behavior Tree">Behavior Tree</a><ul><li><a href="#Basic_concept" title="Basic concept">Basic concept</a></li><li><a href="#Commonly_used_nodes_in_Behavior_Tree" title="Commonly used nodes in Behavior Tree">Commonly used nodes in Behavior Tree</a></li><li><a href="#The_execution_of_a_Behavior_Tree" title="The execution of a Behavior Tree">The execution of a Behavior Tree</a></li><li><a href="#Advantages_of_Behavior_Tree" title="Advantages of Behavior Tree">Advantages of Behavior Tree</a></li></ul></li></ul></li><li><a href="#behaviac_Overview" title="behaviac Overview">behaviac Overview</a><ul><li><a href="#Meta" title="Meta">Meta</a><ul><li><a href="#C_Meta" title="C++ Meta ">C++ Meta </a></li><li><a href="#C_Meta-2" title="C# Meta">C# Meta</a></li></ul></li><li><a href="#Data_Type" title="Data Type">Data Type</a></li><li><a href="#Instance" title="Instance">Instance</a></li><li><a href="#Variable" title="Variable">Variable</a></li><li><a href="#Method" title="Method">Method</a></li></ul></li><li><a href="#Workspace" title="Workspace">Workspace</a></li><li><a href="#Behavior_Tree-2" title="Behavior Tree">Behavior Tree</a><ul><li><a href="#Nodes_and_Attachment" title="Nodes and Attachment">Nodes and Attachment</a></li><li><a href="#PrefabPermalink" title="PrefabPermalink">PrefabPermalink</a></li><li><a href="#Sub_tree_and_Recursion" title="Sub tree and Recursion">Sub tree and Recursion</a></li><li><a href="#Event_Processing" title="Event Processing">Event Processing</a><ul><li><a href="#Parallel_Nodes" title="Parallel Nodes">Parallel Nodes</a></li><li><a href="#SelectorMonitor" title="SelectorMonitor">SelectorMonitor</a></li><li><a href="#Event_Attachment" title="Event Attachment">Event Attachment</a></li></ul></li><li><a href="#Hot-loading" title="Hot-loading">Hot-loading</a></li><li><a href="#FSM" title="FSM">FSM</a></li><li><a href="#Debug" title="Debug">Debug</a><ul><li><a href="#watch_the_propery_value" title="watch the propery value">watch the propery value</a></li><li><a href="#break_point" title="break point">break point</a></li><li><a href="#offline_debugging" title="offline debugging">offline debugging</a></li></ul></li><li><a href="#Unit_test_and_Demo" title="Unit test and Demo">Unit test and Demo</a></li><li><a href="#Open_Source" title="Open Source">Open Source</a></li></ul></li></ul></div>
+<h2 id="overview"><span class="ez-toc-section" id="Overview">Overview</span></h2>
+<ul>
+<li>behaviac is an AI development framework for games. Also, it is a rapid designing tool for developing game prototypes.</li>
+<li>It supports behavior tree, finite state machine, hierarchical task network, etc. It is easy to edit and debug.</li>
+<li>It supports all platforms and is applicable to both the client and the server. It helps to speed up the Iterative development.</li>
+<li>Currently it is being used by many projects within Tencent. It is also open source on famous domestic and foreign websites like GitHub and CSDN.</li>
+<li>It supports both C++ and C# and has native support of C# for Unity Engine. It supports all main stream platforms, including Windows, Linux, Android, iOS, etc.</li>
+<li>It has powerful function, great extensibility, and plentiful documents. Also, it supports both Chinese and English UI.</li>
+<li>This component can be used in (but not limited) to in-game logic, character’s AI, control of rendering, etc.</li>
+<li>All source code, both the designer and runtime are open source and they can be accessed by <a href="#?https://github.com/Tencent/behaviac">github</a></li>
+</ul>
+<h3 id="features-and-user-value"><span class="ez-toc-section" id="Features_and_User_Value">Features and User Value</span></h3>
+<ul>
+<li>The interaction between Designer and C++/C# when running is based on Meta. It can utilize program codes sufficiently. Also it provides GUI for high-level logic.</li>
+<li>Users can create and edit Meta in Designer. It is convenient for game designers to implement prototypes in advance.</li>
+<li>It supports exporting files in different file formats such as XML, BSON, C++, C#, etc. It provides high efficiency for loading and executing. Also it uses Hot-loading to boost the efficiency of the development.</li>
+<li>Designer is fully functioned. It supports Prefab, Undo/Redo, Sub tree, Event, etc.</li>
+<li>The types of data and types of nodes that it supported can be easily expanded.</li>
+<li>It supports real-time debugging and offline debugging. It shows logic graphically and make debugging convenient.</li>
+<li>These are use cases that are supported but not limited to (not just for AI):
+<ul>
+<li>Character AI</li>
+<li>Squad Logic</li>
+<li>Strategy AI</li>
+<li>In-Game Tutor</li>
+<li>Animation Control</li>
+<li>Player Avatars</li>
+</ul>
+</li>
+</ul>
+<h3 id="project-link"><span class="ez-toc-section" id="Project_Link">Project Link</span></h3>
+<p>You can get more information from<a href="#?https://github.com/Tencent/behaviac">github.com</a>.<br />
+and you can ask questions for anwsers at <a href="http://bbs.behaviac.com/">http://bbs.behaviac.com/</a></p>
+<h2 id="background"><span class="ez-toc-section" id="Background">Background</span></h2>
+<p>One goal of the video game’s AI is to find a plan of logic development that is easy and expandable. Highly used technologies include FSM, HFSM, GOAP, HTN, etc.<br />
+One goal of the video game’s AI is to find a plan of logic development that is easy and expandable. Highly used technologies include FSM, HFSM, GOAP, HTN, etc.<br />
+Behavior Tree is the next generation AI technology. Its original concept is brought up a decade ago. Triple A titles like Halo, Spore and Crysis all used Behavior Tree. Currently, many well-known game engines have integrated or provided their own Behavior Tree component, for example: Unreal engine, Unity engine, etc.</p>
+<h3 id="finite-state-machine"><span class="ez-toc-section" id="Finite_State_Machine">Finite State Machine</span></h3>
+<p>Many programmers are familiar with Finite State Machine. State machine technology has become mature and popular among video game developments. It reflects the change of input from the start of the system to the current.</p>
+<ul>
+<li>Action：It means the description of the event that is underway at a given time.</li>
+<li>State： It means the object’s certain state. At the current state, it may have different behaviors and properties</li>
+<li>Transition： It means the change of state. Also, it has to satisfy the conditions that ensure the transition would happen to execute.</li>
+<li>State Machine：A State Machine is a manager that controls object’s state. An object’s state would not change without a reason; it changes when certain Event is triggered.</li>
+</ul>
+<p>Different states may decide an object’s different properties and behaviors. .<br />
+The following picture shows finite state machine that maintains a graph. All nodes in the graph are states. A line between nodes is state transition that is according to the execution of certain rules between states. Logic in any nodes can be described as:</p>
+<ul>
+<li>If satisfy condition 1 then jump to state 1;</li>
+<li>If satisfy condition 2 then jump to state 2;</li>
+<li>….;</li>
+<li>Or else don’t jump and keep the current state.</li>
+</ul>
+<p><img src="https://tencent.github.io/behaviac/img/overview/fsm.png" alt="" /></p>
+<p>The finite state machine has advantages. For some simple AI, it is more convenient to use state machine. But when it comes to some complex AI, the logic would be complicated and overloaded. Also, when there is a need to expand the current behavior logic, coding would be difficult. Because the number of states that are required to be maintained increases manifold.</p>
+<h3 id="behavior-tree"><span class="ez-toc-section" id="Behavior_Tree">Behavior Tree</span></h3>
+<p>Behavior Tree makes the process of achieving AI requiring more skill. Framework designers comprehensively consider all possible situations and make every situation a type of abstract node. What game developers need to do is to connect all the nodes according to the rules to make a Behavior Tree that is required. Hence, the Behavior Tree would have more object-oriented properties.</p>
+<h4 id="basic-concept"><span class="ez-toc-section" id="Basic_concept">Basic concept</span></h4>
+<p>On the concept, Behavior Tree is a script that is showed to users in the form of a tree. <strong>The execution result of a node is managed by its parent node to decide what to do next.</strong> Since there is no more transition between nodes, they wouldn’t be called state, nodes are only behaviors.</p>
+<p><img src="https://tencent.github.io/behaviac/img/overview/bt.png" alt="" /></p>
+<p>Leaf nodes and branch nodes can mainly be split into five categories: action, condition, composite, decorator and attachment. Action and condition nodes are Leaf nodes, composite and decorator nodes are branch nodes. The attachment must attach to the other four types of nodes and cannot be existed independently.</p>
+<p><strong>Every node must provide its return value to its parent node after the execution ends. Return values of nodes include Success, Failure and Running</strong>. Basic behaviors (Leaf nodes) may execute successfully or failed to execute. The execution result of the high level behavior (branch note) is depended on its child node’s execution result. The failure of one child node’s execution may lead its parent node to select other child nodes.</p>
+<h4 id="commonly-used-nodes-in-behavior-tree"><span class="ez-toc-section" id="Commonly_used_nodes_in_Behavior_Tree">Commonly used nodes in Behavior Tree</span></h4>
+<ul>
+<li>Action node: It belongs to Leaf node. It is used to describe an action that is executed.</li>
+<li>Condition node: It belongs to Leaf node. It is used to describe whether a condition can hold.</li>
+<li>Selector node: It belongs to Composite node. It is used to execute child nodes in order. If one of its child node return successfully, then the whole branch would return successfully. Otherwise the whole branch would fail to return. It is similar to OR logic in programming.</li>
+<li>Sequence node: It belongs to Composite node. It is used to execute child nodes in order. If one of its child nodes fails to return, then the whole branch would fail to return. Otherwise the whole branch would return successfully. It is similar to AND logic in programming.</li>
+</ul>
+<h4 id="the-execution-of-a-behavior-tree"><span class="ez-toc-section" id="The_execution_of_a_Behavior_Tree">The execution of a Behavior Tree</span></h4>
+<p>The execution of a Behavior Tree is driven by cyclical updates of frames. Not every frame needs to be updated, but it requires to be executed periodically. The execution of Behavior Tree is similar to the concept of Coroutine, a running behavior tree continues its execution in the next update. The next execution of an ended Behavior Tree that returned either successfully or failed would start from the root node.</p>
+<p>A Behavior Tree needs to configure an Agent type at first. An Agent is an AI character in the game. All of the nodes in this Behavior Tree (mainly Leaf nodes) can select agent’s properties, methods and other properties to configure. Information like Agent type, property and method are called Meta.</p>
+<h4 id="advantages-of-behavior-tree"><span class="ez-toc-section" id="Advantages_of_Behavior_Tree">Advantages of Behavior Tree</span></h4>
+<ul>
+<li>The separation of behavior logic and status data. Any nodes can be used repeatedly.</li>
+<li>High re-usability can combine different nodes to achieve different Behavior Trees.</li>
+<li>Linear layout, easy to expand.</li>
+<li>Can configure, game designers can handle the work.</li>
+</ul>
+<h2 id="behaviac-overview"><span class="ez-toc-section" id="behaviac_Overview">behaviac Overview</span></h2>
+<p>behaviac includes designer and runtime: Designer is used for editing Behavior Tree and Runtime library is used for explaining and executing Behavior Tree. Runtime library has to be integrated to users’ own game projects.<br />
+Designer interacts with runtime through Meta.</p>
+<p><img src="https://tencent.github.io/behaviac/img/overview/meta.png" alt="" /></p>
+<h3 id="meta"><span class="ez-toc-section" id="Meta">Meta</span></h3>
+<p>Meta is the core of behaviac, it contains information of Agent type, property, method, etc. Agent is in charge of executions of Behavior Trees in games. Every Agent contains its data or the action to execute itself; this data is called Property and this action is called Method. Meta is the description of an Agent. It contains its property and method.</p>
+<p>Runtime library produces a XML file that describes agent’s Meta. Runtime library can export Meta and provide Meta to the Designer. The Designer can also edit and export Meta to Runtime library.</p>
+<h4 id="c-meta"><span class="ez-toc-section" id="C_Meta">C++ Meta<code> </code></span></h4>
+<pre class="brush: cpp; title: ; notranslate" title="">
+
+BEGIN_PROPERTIES_DESCRIPTION(AgentNodeTest)
+{
+//CLASS_DISPLAYNAME(L&quot;测试behaviac::Agent&quot;)
+//CLASS_DESC(L&quot;测试behaviac::Agent的说明&quot;)
+REGISTER_PROPERTY(testVar_0);
+REGISTER_PROPERTY(testVar_1).DISPLAYNAME(L&quot;testVar_1&quot;).DESC(L&quot;testVar_1 property&quot;).RANGE(100);
+REGISTER_PROPERTY(testVar_2);
+REGISTER_PROPERTY(testVar_3);
+REGISTER_PROPERTY(waiting_timeout_interval);
+REGISTER_PROPERTY(testVar_str_0);
+
+REGISTER_METHOD(setEventVarInt);
+REGISTER_METHOD(setEventVarBool);
+REGISTER_METHOD(setEventVarFloat);
+REGISTER_METHOD(setEventVarAgent);
+REGISTER_METHOD(getConstOne);
+REGISTER_METHOD(setTestVar_0);
+REGISTER_METHOD(setTestVar_1);
+REGISTER_METHOD(setTestVar_2);
+REGISTER_METHOD(setTestVar_0_2);
+REGISTER_METHOD(setTestVar_R);
+REGISTER_METHOD(setTestVar_3);
+REGISTER_METHOD(enter_action_0);
+REGISTER_METHOD(exit_action_0);
+REGISTER_METHOD(enter_action_1);
+REGISTER_METHOD(exit_action_1);
+REGISTER_METHOD(enter_action_2);
+REGISTER_METHOD(exit_action_2);
+REGISTER_METHOD(createGameObject);
+REGISTER_METHOD(testGameObject);
+REGISTER_METHOD(createExtendedNode);
+REGISTER_METHOD(testExtendedRefType);
+REGISTER_METHOD(testExtendedStruct);
+REGISTER_METHOD(switchRef);
+
+REGISTER_METHOD(CanSeeEnemy);
+REGISTER_METHOD(Move);
+REGISTER_METHOD(MoveToTarget);
+}
+END_PROPERTIES_DESCRIPTION()
+
+</pre>
+<div class="highlighter-rouge"></div>
+<h4 id="c-meta-1"><span class="ez-toc-section" id="C_Meta-2">C# Meta</span></h4>
+<pre class="brush: csharp; title: ; notranslate" title="">
+[behaviac.TypeMetaInfo()]
+ public class AgentNodeTest : behaviac.Agent
+ {
+ [behaviac.MemberMetaInfo()]
+ public int testVar_0 = -1;
+
+[behaviac.MemberMetaInfo(&quot;testVar_1&quot;, &quot;testVar_1 property&quot;, 100)]
+ public int testVar_1 = -1;
+
+[behaviac.MemberMetaInfo()]
+ public float testVar_2 = -1.0f;
+
+[behaviac.MemberMetaInfo()]
+ public float testVar_3 = -1.0f;
+
+[behaviac.MemberMetaInfo()]
+ public int waiting_timeout_interval = 0;
+
+[behaviac.MemberMetaInfo()]
+ public string testVar_str_0 = string.Empty;
+
+[behaviac.MemberMetaInfo()]
+public string testVar_str_1 = string.Empty;
+public bool m_bCanSee = false;
+
+public int event_test_var_int = -1;
+ public bool event_test_var_bool = false;
+ public float event_test_var_float = -1.0f;
+ public AgentNodeTest event_test_var_agent = null;
+ }</pre>
+<p>One of the traits of behaviac is to create and edit Meta in the Designer. Game designers can edit Behavior Trees and Meta. In the early stage of a project, before programmers write codes, game designers can manually create some Meta like Agent types, properties and methods. This can boost the creation of the game prototype. Game designers can edit a game’s prototype without waiting for programmers.</p>
+<p>The picture below shows by opening the Meta browser that is in the Designer, users can view or create Agent type. After selecting one Agent type, users can view its information such as property, methods and expand Agent type’s members’ properties, methods, etc.</p>
+<p><img src="https://tencent.github.io/behaviac/img/overview/metabrowser.png" alt="" /></p>
+<h3 id="data-type"><span class="ez-toc-section" id="Data_Type">Data Type</span></h3>
+<p>Data Type is divided into Agent, Enumeration：Enumeration and Structure.</p>
+<ul>
+<li>Agent：It is the basic composed element of a Behavior Tree. In the Meta browser, we can view all the Agent types that are exported and created. These Agent types include variables and methods. We can add agent subclasses in the Meta browser; add properties and methods to its members. But we need to write required logic code to achieve methods.</li>
+<li>Enumeration：Enumeration types that are used on the game end will be exported in the Meta files. In the Meta browser we can add enumeration types, export and generate C++ or C# source code. Then add the source code into the game end code.</li>
+<li>Structure：Structures that are used on the game end will be exported in the Meta files. In the Meta browser we can add structure types. But we can only add member property, cannot add member method. Can also exported and generate C++ or C# source code to add them into the game end code.</li>
+</ul>
+<p>The pictures below shows, when build a new Behavior Tree, firstly we select an Agent type for the root node to identify the kind of Agent that the new Behavior Tree uses. All of this Behavior Tree’s Leaf nodes can use this Agent type’s property and method.</p>
+<p><img src="https://tencent.github.io/behaviac/img/articles/agenttype_selector.png" alt="" /><br />
+<img src="https://tencent.github.io/behaviac/img/overview/agenttype.png" alt="" /></p>
+<h3 id="instance"><span class="ez-toc-section" id="Instance">Instance</span></h3>
+<p>It is mentioned in the previous paragraphs that we need to set an Agent type for a new Behavior Tree, so its Leaf nodes can use this Agent type’s property and method. This is called use Self’s property and method.</p>
+<p>The picture below shows, some node’s parameter may use property and method that don’t belong to self. In this situation we need to select Instance then select the Agent type’s property and method that belong to the Instance.</p>
+<p>All Agent type’s instances in the Runtime end are required to pass register and be exported to Meta files. So the Designer can get the instance list and list all the instances for users to choose. Please refer to the user manual for the register method.</p>
+<p><img src="https://tencent.github.io/behaviac/img/overview/properties.png" alt="" /></p>
+<h3 id="variable"><span class="ez-toc-section" id="Variable">Variable</span></h3>
+<p>Variable is divided into Field, Property, Custom-built Property and Partial Variable</p>
+<ul>
+<li>Member Field：The type of field in object-oriented programming (C++/C#).</li>
+<li>Member Property：The type of property in C#. Contains getter and setter.</li>
+<li>Custom Property：Mainly are member properties that are newly built for Agent property in Designer.</li>
+<li>Local Variable：Local Variable is a variable that is limited to one specific behavior tree</li>
+</ul>
+<p>behaviac supports Read-only variables. So the Variable can only be read in the Designer. Local variable does not only support basic data type like int, float, bool, but it also supports complicated pointer type or reference type.</p>
+<h3 id="method"><span class="ez-toc-section" id="Method">Method</span></h3>
+<p>Method includes Member Method, Customer Method, Task, etc.</p>
+<ul>
+<li>Member Method：Type of member method in object-oriented programming.</li>
+<li>Customer Method：Method that is created in the Designer. However, custom method is only created in the designer to use as a place holder. Trees using Custom Method can’t be exported.</li>
+<li>Task：It is used to describe interfaces (include interface names and parameter lists) that are required by a sub tree. It is similar to the definition of Method. Will combine the definition of the sub tree to introduce Task more in the later paragraphs.</li>
+</ul>
+<p>In the Designer users can edit Behavior Trees according to Meta that is exported and created. Picture below shows that user can select or set every node’s property, method and parameters according to needs of a Behavior Tree’.</p>
+<p><img src="https://tencent.github.io/behaviac/img/overview/action.png" alt="" /></p>
+<h2 id="workplace"><span class="ez-toc-section" id="Workspace">Workspace</span></h2>
+<p>To begin to use behaviac, at first users need to create a Workspace in the Designer.<br />
+Files in Workspace have .workspace.xml as their extension names. They are in charge of managing the configure file of all Behavior Trees in game projects.</p>
+<p><img src="https://tencent.github.io/behaviac/img/overview/workspace.png" alt="" /></p>
+<p>This configuration file can point XML Meta file, Behavior Tree file’s path, the path for exported files. User can edit related setting through ‘Create Workspace’ or ‘Edit Workspace’ in the Designer.</p>
+<p><img src="https://tencent.github.io/behaviac/img/overview/editworkspace.png" alt="" /></p>
+<p>The differences between a Behavior Tree’s source file and exported file are a Behavior Tree’s source file is the original source file (XML format) that is used and edited by game designers in the Designer. It includes some extra information like properties that UI requires. An exported file is a simple version of a behavior file. It is high-efficiency execution file that is only used by Runtime end.</p>
+<p>Source file is like raw data, it needs to be exported first in order to be used in execution. Exported file is like Game data that is processed and can be used directly. Workspace file, source file, Meta file are not required in the game. Only exported files are required in the game.</p>
+<p>Currently it supports four exported format XML, BSON, C++ and C#. XML and BSON are used in the development stage. C++ and C# are used in the final release. C++ and C#’s memory and performance are better than XML and BSON. So we recommend using C++ and C# format behavior tree exported files during the final release.</p>
+<h2 id="behavior-tree-1"><span class="ez-toc-section" id="Behavior_Tree-2">Behavior Tree</span></h2>
+<p>behaviac provides a lot of nodes and attachments with various functions. It also supports expanding the types of nodes that it requires. Moreover, behaviac support advance usage like sub tree, event, Prefab.</p>
+<h3 id="nodes-and-attachment"><span class="ez-toc-section" id="Nodes_and_Attachment">Nodes and Attachment</span></h3>
+<p>Behavior Tree’s nodes can be divided into 5 major categories: Action, Condition, Composite, modify, attachment. Picture below shows, Action nodes and Condition nodes are leaf nodes. Composite nodes and modifier nodes are branch nodes. Attachment has to be attached to these four nodes and cannot be existed independently.</p>
+<p>behaviac also supports expanding new types of nodes.</p>
+<p><img src="https://tencent.github.io/behaviac/img/articles/nodes.png" alt="" /></p>
+<p>To support Sub tree function, behaviac also support Referenced Behavior type.</p>
+<p>Nodes can have attachments like Preaction and Postaction. Preaction can mean execute some condition or operation. If it is a condition then Preaction has to return successfully first to continue executing the current node. Postaction only means operations that are continuing to execute after the execution of the current node.</p>
+<p><img src="https://tencent.github.io/behaviac/img/overview/attachments.png" alt="" /></p>
+<p>Event is the special attachment that makes one Behavior Tree as another Behavior Tree’s node (usually as the root node). It is used to switch Behavior Tree when respond event happens.</p>
+<p>To support some special application, behaviac also adds Interrupted Condition for Combination nodes like Sequence node and Selector node. Adding Interrupted Condition is to let Sequence node decides whether to execute the current node when it executes every child node in sequence according to the execution result of Interrupted Condition.</p>
+<p><img src="https://tencent.github.io/behaviac/img/overview/interupt.png" alt="" /></p>
+<p>In Designer users can use mouse to drag these nodes into the newly created Behavior Tree. Also to drag Preaction and Postaction attachments to the specific node.</p>
+<h3 id="prefab"><span class="ez-toc-section" id="PrefabPermalink">Prefab<a class="header-link" title="Permalink" href="https://tencent.github.io/behaviac/docs/en/articles/overview/#prefab"><span class="sr-only">Permalink</span><i class="fa fa-link"></i></a></span></h3>
+<p>behaviac’s Designer provides Prefab function to let users use Behavior Trees that are already edited for convenience purposes.<br />
+The mechanism of behaviac Prefab is similar to Unity engine’s Prefab. If Prefab is used and a node’s property of this Prefab is changed in the location that the Prefab is used, an Instance of this Prefab is created in the Behavior Tree that the Prefab is located. Any node’s property of the Prefab is changed; other Behavior Trees that use this prefab is would change accordingly. If none of the node’s property of the prefab is changed, it will keep the same property as the parent prefab.<br />
+In Designer user can save Behavior Trees that are edited as Prefabs. Prefabs would be in the Prefabs directory to distinguish from Behavior Trees that projects need (in Behaviors directory).</p>
+<p><img src="https://tencent.github.io/behaviac/img/overview/behaviors.png" alt="" /></p>
+<p>Picture below shows, firstly build a Prefab Behavior Tree called ‘Prefab_安全的随机移动’ . Then drag the Prefab Behavior Tree into the Behavior Tree ‘Tank_SafeWander_RandomFire’. Users can see that the Prefab Behavior Tree is duplicated and expanded in there. This boosts the speed of Behavior Tree editing.</p>
+<p><img src="https://tencent.github.io/behaviac/img/overview/prefab.png" alt="" /></p>
+<p><img src="https://tencent.github.io/behaviac/img/overview/prefabinstance.png" alt="" /></p>
+<h3 id="sub-tree-and-recursion"><span class="ez-toc-section" id="Sub_tree_and_Recursion">Sub tree and Recursion</span></h3>
+<p>In the Designer, users can drag one Behavior Tree into another Behavior Tree; added one Behavior Tree as Referenced Behavior to another Behavior Tree. Picture below shows, action_ut_0 is a sub tree of action_ut_1. The node that action_ut_0 is on is a Referenced Behavior.</p>
+<p><img src="https://tencent.github.io/behaviac/img/overview/subtree.png" alt="" /></p>
+<p>Beside sub tree function, behaviac also supports Recursion function. To use Recursion users need to make the current Behavior Tree as its own sub tree. Avoid create an endless loop by using Variable.</p>
+<p>Picture below shows, using testVar_0 to avoid an endless loop: when first enter testVar_0==0, so the following sequence can be executed. First assign testVar_0 to 1, when re-enter the Recursion testVar_0==1, the condition that testVar_0==0 is not satisfied. So the following sequence would not be entered, the endless loop is avoided.</p>
+<p><img src="https://tencent.github.io/behaviac/img/overview/reverse.png" alt="" /></p>
+<h3 id="event-processing"><span class="ez-toc-section" id="Event_Processing">Event Processing</span></h3>
+<p>During the process of execution of a Behavior Tree when status and conditions are changed or Events happen, how to interrupt the current execution is an important question.</p>
+<p>Currently, behaviac supports three ways to process when status and conditions are changed or Event happens: parallel nodes, SelectorMonitor nodes and Event attachment. Parallel nodes and SelectorMonitor nodes re-evaluate all the child nodes when the execution of a Behavior Tree happens. Unlike other nodes that keep the child nodes from the last execution for the next execution. Event attachment responds when Event happens to the game logic.</p>
+<h4 id="parallel-nodes"><span class="ez-toc-section" id="Parallel_Nodes">Parallel Nodes</span></h4>
+<p>To use parallel nodes to process Event, users need to express the Event in the format of a condition and monitor this condition. Quit if this condition is not satisfied. The concept of this method is vague. It is also complicated to use.</p>
+<p><img src="https://tencent.github.io/behaviac/img/articles/parallel_condition.jpg" alt="" /></p>
+<h4 id="selectormonitor"><span class="ez-toc-section" id="SelectorMonitor">SelectorMonitor</span></h4>
+<p>SelectorMonitor node and WithPrecondition node as the expansion of the traditional Behavior Tree can process the change of Event and Status naturally. SelectorMonitor node and WithPrecondition node can only be used when they are paired. SelectorMonitor can only add WithPrecondition node as its child node. WithPrecondition node can only be added as SelectorMonitor’s child node.</p>
+<ul>
+<li>SelectorMonitor node is a dynamic selector node. SelectorMonitor node chooses its first child node that returns successfully same as the Selector node. But it reselects its child node during every execution.</li>
+<li>WithPrecondition node has condition sub tree and action sub tree. Only when the condition sub tree returns successfully, the action sub tree can be executed.</li>
+</ul>
+<p><img src="https://tencent.github.io/behaviac/img/articles/selector_monitor.png" alt="" /></p>
+<h4 id="event-attachment"><span class="ez-toc-section" id="Event_Attachment">Event Attachment</span></h4>
+<p>Event as an attachment is mainly used when the game logic sends out Event; after receiving the respond, it interrupts the current ongoing Behavior Tree and switch to another Behavior Tree that is set.</p>
+<p>请详看文档《<a href="https://tencent.github.io/behaviac/docs/zh/tutorials/tutorial11_event/">事件处理</a>》。</p>
+<h3 id="hot-loading"><span class="ez-toc-section" id="Hot-loading">Hot-loading</span></h3>
+<p>behaviac Designer and Runtime library both support Hot-loading, but only for Behavior Tree files that are in XML and BSON formats.<br />
+In the Designer, whenever the Behavior Tree file that is currently open is changed outside of the Designer for whatever reason, it would refresh automatically in the Designer.<br />
+For Runtime end (or game end), if the Behavior Tree file is changed and re-exported in the Designer, the newest exported Behavior Tree will be automatically loaded during the running of the game without the need of quitting the game. So we can check the Behavior Tree’s newest effect in time.</p>
+<h3 id="fsm"><span class="ez-toc-section" id="FSM">FSM</span></h3>
+<p>behaviac also supports traditional FSM. FSM is mainly constructed by State and Transition like in the picture below.</p>
+<p><img src="https://tencent.github.io/behaviac/img/overview/fsm.png" alt="" /></p>
+<p>Similar to the concept of the sub tree, one trait of behaviac is to support to make one whole edited FSM as another FSM’s ‘sub tree’. Moreover, one FSM can be referenced reciprocally with a Behavior Tree and to be each other’s sub tree; one whole FSM can be a Behavior Tree’s ‘Referenced Behavior’ and a whole Behavior Tree can be one FMS’s ‘referenced Status’.<br />
+In behaviac Designer, status is independently existed, similar to a Behavior Tree’s node. Transition is attached to some status like attachment in a Behavior Tree. The editing of FSM is simple, just drag ‘Status’ nodes and ‘Transition’ attachment to a newly created FSM like in the picture below.</p>
+<p><img src="https://tencent.github.io/behaviac/img/overview/states.png" alt="" /></p>
+<p>Similar to nodes in the Behavior Tree, users can add pre attachment and post attachment to FSM’s Status nodes. It means the pre-condition and the post operation that are required for the current Status node when it is executed.</p>
+<h3 id="debug"><span class="ez-toc-section" id="Debug">Debug</span></h3>
+<p>Designer support functions like online debugging with the game end like in the picture below,</p>
+<p><img src="https://tencent.github.io/behaviac/img/overview/connect.png" alt="" /></p>
+<h4 id="watch-the-propery-value"><span class="ez-toc-section" id="watch_the_propery_value">watch the propery value</span></h4>
+<p><img src="https://tencent.github.io/behaviac/img/overview/agentproperties.png" alt="" /></p>
+<h4 id="break-point"><span class="ez-toc-section" id="break_point">break point</span></h4>
+<p>set break point on a node, highlight a Behavior Tree’s execution path</p>
+<p><img src="https://tencent.github.io/behaviac/img/overview/breakpoints.png" alt="" /></p>
+<h4 id="offline-debugging"><span class="ez-toc-section" id="offline_debugging">offline debugging</span></h4>
+<p>behaviac also supports offline debugging, the execution information can be saved and dumpped to a file and loaded later.</p>
+<h3 id="unit-test-and-demo"><span class="ez-toc-section" id="Unit_test_and_Demo">Unit test and Demo</span></h3>
+<p>behaviac provides unit test and game Demo in both C++ and C#. Can enter through menu-item: ‘help’ -&gt; ‘control explanation’ in Designer. Then click to open the unit test or game demo’s workspace that is required like in the picture below</p>
+<p><img src="https://tencent.github.io/behaviac/img/articles/start_page_en.png" alt="" /></p>
+<h3 id="open-source"><span class="ez-toc-section" id="Open_Source">Open Source</span></h3>
+<p>behaviac is open source on the github website<a href="#?https://github.com/Tencent/behaviac">github</a></p>
+<div class="section-nav"></div>
+                                            </div><!-- .entry-content -->
+
+                	                </div>
+            </article><!-- #post -->    
+    
+
+								
+<div id="comments" class="comments-area">
+
+			<h2 class="comments-title">
+			6 thoughts on &ldquo;<span>behaviac overview</span>&rdquo;		</h2>
+
+		<ol class="comment-list">
+					<li id="comment-21" class="comment even thread-even depth-1">
+			<article id="div-comment-21" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='http://2.gravatar.com/avatar/56b155671cc6cb47a3e7dca9b772373e?s=74&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/56b155671cc6cb47a3e7dca9b772373e?s=148&#038;d=mm&#038;r=g 2x' class='avatar avatar-74 photo' height='74' width='74' />						<b class="fn"><a href='http://www.porthacks.com/marvel-contest-of-champions-hack/' rel='external nofollow' class='url'>marvel contest of champions hack online</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://tencent.github.io/behaviac/overview-2/#comment-21">
+							<time datetime="2016-06-01T15:51:23+00:00">
+								2016年6月1日 at 15:51							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>This really answered my issue, thank you!</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://tencent.github.io/behaviac/overview-2/' onclick='return addComment.moveForm( "div-comment-21", "21", "respond", "320" )' aria-label='Reply to marvel contest of champions hack online'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-26" class="comment odd alt thread-odd thread-alt depth-1">
+			<article id="div-comment-26" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='http://1.gravatar.com/avatar/46daf9a1d6324c1acc4667a37fd86c09?s=74&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/46daf9a1d6324c1acc4667a37fd86c09?s=148&#038;d=mm&#038;r=g 2x' class='avatar avatar-74 photo' height='74' width='74' />						<b class="fn"><a href='http://Www.Darkhacks24.com/marvel-contest-of-champions-hack/' rel='external nofollow' class='url'>marvel contest of champions hack download</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://tencent.github.io/behaviac/overview-2/#comment-26">
+							<time datetime="2016-06-02T01:26:40+00:00">
+								2016年6月2日 at 01:26							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>This web site is really a walk through for all the info you wanted about this<br />
+and did’t know who to ask. Glimpse here, and<br />
+you’ll undoubtedly detect it.</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://tencent.github.io/behaviac/overview-2/' onclick='return addComment.moveForm( "div-comment-26", "26", "respond", "320" )' aria-label='Reply to marvel contest of champions hack download'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-32" class="comment even thread-even depth-1">
+			<article id="div-comment-32" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='http://2.gravatar.com/avatar/84d2994ba040ab729f46154c9bf999e1?s=74&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/84d2994ba040ab729f46154c9bf999e1?s=148&#038;d=mm&#038;r=g 2x' class='avatar avatar-74 photo' height='74' width='74' />						<b class="fn"><a href='http://www.hacksgen.org/marvel-contest-of-champions-hack/' rel='external nofollow' class='url'>marvel contest of champions hack tool</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://tencent.github.io/behaviac/overview-2/#comment-32">
+							<time datetime="2016-06-04T00:55:32+00:00">
+								2016年6月4日 at 00:55							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>After study a few of the blog posts on your site now, and I really like your manner<br />
+of blogging. I bookmarked it to my bookmark website list and will be checking back soon. Pls check out my website<br />
+also and allow me to know what you think.</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://tencent.github.io/behaviac/overview-2/' onclick='return addComment.moveForm( "div-comment-32", "32", "respond", "320" )' aria-label='Reply to marvel contest of champions hack tool'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-60" class="comment odd alt thread-odd thread-alt depth-1">
+			<article id="div-comment-60" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='http://0.gravatar.com/avatar/0062afae5e1e18ef63aef12fecf12482?s=74&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/0062afae5e1e18ef63aef12fecf12482?s=148&#038;d=mm&#038;r=g 2x' class='avatar avatar-74 photo' height='74' width='74' />						<b class="fn"><a href='http://www.marvelfuturefighthackonline.com/' rel='external nofollow' class='url'>marvel future fight hack download</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://tencent.github.io/behaviac/overview-2/#comment-60">
+							<time datetime="2016-06-10T10:48:50+00:00">
+								2016年6月10日 at 10:48							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>There&#8217;s apparently a bundle to understand about this.<br />
+I suppose you made certain nice points in attributes also.</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://tencent.github.io/behaviac/overview-2/' onclick='return addComment.moveForm( "div-comment-60", "60", "respond", "320" )' aria-label='Reply to marvel future fight hack download'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-61" class="comment even thread-even depth-1">
+			<article id="div-comment-61" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='http://2.gravatar.com/avatar/298d8bad1ea61d134379fd52df582b48?s=74&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/298d8bad1ea61d134379fd52df582b48?s=148&#038;d=mm&#038;r=g 2x' class='avatar avatar-74 photo' height='74' width='74' />						<b class="fn"><a href='http://www.darkhacks24.com/dungeon-hunter-5-hack/' rel='external nofollow' class='url'>dungeon hunter 5 hack free download</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://tencent.github.io/behaviac/overview-2/#comment-61">
+							<time datetime="2016-06-10T21:33:55+00:00">
+								2016年6月10日 at 21:33							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>You made some decent points there. I looked on the net for the issue and found most people will go along with with your website.</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://tencent.github.io/behaviac/overview-2/' onclick='return addComment.moveForm( "div-comment-61", "61", "respond", "320" )' aria-label='Reply to dungeon hunter 5 hack free download'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-337" class="comment odd alt thread-odd thread-alt depth-1">
+			<article id="div-comment-337" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='http://0.gravatar.com/avatar/f84c459109b0dd514199f845178c72d5?s=74&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/f84c459109b0dd514199f845178c72d5?s=148&#038;d=mm&#038;r=g 2x' class='avatar avatar-74 photo' height='74' width='74' />						<b class="fn"><a href='http://waittraiining.com/' rel='external nofollow' class='url'>how to lose cellulite</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://tencent.github.io/behaviac/overview-2/#comment-337">
+							<time datetime="2017-02-12T14:24:29+00:00">
+								2017年2月12日 at 14:24							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>I am not ѕure where you are getting your information, but great topic.<br />
+I needs tto spend ѕoke time learning more or undeгstanding more.</p>
+<p>Thanks for wondеrful infoгmation I was looking for thiks<br />
+information for my mission.</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://tencent.github.io/behaviac/overview-2/' onclick='return addComment.moveForm( "div-comment-337", "337", "respond", "320" )' aria-label='Reply to how to lose cellulite'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		</ol><!-- .comment-list -->
+
+		
+		
+	
+		<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="./../../../../../../language/en/overview-2/index.html#respond" style="display:none;">Cancel reply</a></small></h3>			<form action="https://tencent.github.io/behaviac/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate>
+				<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p><p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" aria-required="true" required="required"></textarea></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" aria-required='true' required='required' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" aria-required='true' required='required' /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="url" value="" size="30" maxlength="200" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='320' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p>		<p class="antispam-group antispam-group-q" style="clear: both;">
+			<label>Current ye@r <span class="required">*</span></label>
+			<input type="hidden" name="antspm-a" class="antispam-control antispam-control-a" value="2018" />
+			<input type="text" name="antspm-q" class="antispam-control antispam-control-q" value="4.3" autocomplete="off" />
+		</p>
+		<p class="antispam-group antispam-group-e" style="display: none;">
+			<label>Leave this field empty</label>
+			<input type="text" name="antspm-e-email-url-website" class="antispam-control antispam-control-e" value="" autocomplete="off" />
+		</p>
+			</form>
+			</div><!-- #respond -->
+	
+</div><!-- #comments -->
+			
+		</div><!-- #content -->
+			<div id="tertiary" class="sidebar-container" role="complementary">
+		<div class="sidebar-inner">
+			<div class="widget-area" id="sidebar-widgets">
+				<aside id="search-7" class="widget widget_search"><form role="search" method="get" class="search-form" action="https://tencent.github.io/behaviac/language/en/">
+				<label>
+					<span class="screen-reader-text">Search for:</span>
+					<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" />
+				</label>
+				<input type="submit" class="search-submit" value="Search" />
+			</form></aside><aside id="tag_cloud-10" class="widget widget_tag_cloud"><h3 class="widget-title">Tags</h3><div class="tagcloud"><a href="https://tencent.github.io/behaviac/language/en/tag/behaviac/" class="tag-cloud-link tag-link-53 tag-link-position-1" style="font-size: 8pt;" aria-label="behaviac (1 item)">behaviac</a></div>
+</aside>		<aside id="recent-posts-6" class="widget widget_recent_entries">		<h3 class="widget-title">最新文章</h3>		<ul>
+											<li>
+					<a href="https://tencent.github.io/behaviac/overview-2/">behaviac overview</a>
+									</li>
+					</ul>
+		</aside><aside id="polylang-11" class="widget widget_polylang"><ul>
+	<li class="lang-item lang-item-5 lang-item-zh no-translation"><a hreflang="zh-CN" href="https://tencent.github.io/behaviac/language/zh/%e9%a6%96%e9%a1%b5/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAFqSURBVHjaYrzOwPAPjJgYQEDAleHVbhADIvgHLPgHiQ0QQCxAlkR9NW8sw+cV/1gV/7Gb/hV4+vfzhj8Mv/78//Pn/+/f/8AkhH1t0yaAAAJp4I37zyz2lDfu79uqv/++/WYz+cuq/vvLxt8gdb+A5K9/v34B2SyyskBLAAII5JAva/7/+/z367a/f3/8ZuT9+//Pr78vQUrB6n4CSSj6/RuoASCAWEDO/fD3ddEfhv9/OE3/sKj8/n7k9/fDQNUIs/+DVf8HawAIIJCT/v38C3Hr95N/GDh/f94AVvT7N8RUBpjxQAVADQABBNLw/y/Ifwy/f/399ufTOpDBEPf8g5sN0QBEDAwAAQTWABEChgOSA9BVA00E2wAQQCANQBbEif/AzoCqgLkbbBYwWP/+//sXqBYggFhAkfL7D7OkJFCOCSj65zfUeFjwg8z++/ffX5AGoGKAAGI8jhSRyIw/SJH9D4aAYQoQYAA6rnMw1jU2vQAAAABJRU5ErkJggg==" title="中文 (中国) (zh_CN)" alt="中文 (中国)" />&nbsp;中文 (中国)</a></li>
+	<li class="lang-item lang-item-2 lang-item-en current-lang no-translation"><a hreflang="en-US" href="https://tencent.github.io/behaviac/language/en/index/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAHzSURBVHjaYkxOP8IAB//+Mfz7w8Dwi4HhP5CcJb/n/7evb16/APL/gRFQDiAAw3JuAgAIBEDQ/iswEERjGzBQLEru97ll0g0+3HvqMn1SpqlqGsZMsZsIe0SICA5gt5a/AGIEarCPtFh+6N/ffwxA9OvP/7//QYwff/6fZahmePeB4dNHhi+fGb59Y4zyvHHmCEAAAW3YDzQYaJJ93a+vX79aVf58//69fvEPlpIfnz59+vDhw7t37968efP3b/SXL59OnjwIEEAsDP+YgY53b2b89++/awvLn98MDi2cVxl+/vl6mituCtBghi9f/v/48e/XL86krj9XzwEEEENy8g6gu22rfn78+NGs5Ofr16+ZC58+fvyYwX8rxOxXr169fPny+fPn1//93bJlBUAAsQADZMEBxj9/GBxb2P/9+S/R8u3vzxuyaX8ZHv3j8/YGms3w8ycQARmi2eE37t4ACCDGR4/uSkrKAS35B3TT////wADOgLOBIaXIyjBlwxKAAGKRXjCB0SOEaeu+/y9fMnz4AHQxCP348R/o+l+//sMZQBNLEvif3AcIIMZbty7Ly6t9ZmXl+fXj/38GoHH/UcGfP79//BBiYHjy9+8/oUkNAAHEwt1V/vI/KBY/QSISFqM/GBg+MzB8A6PfYC5EFiDAABqgW776MP0rAAAAAElFTkSuQmCC" title="English (en_US)" alt="English" />&nbsp;English</a></li>
+</ul>
+</aside><aside id="meta-9" class="widget widget_meta"><h3 class="widget-title">Meta</h3>			<ul>
+						<li><a href="https://tencent.github.io/behaviac/wp-login.php">Log in</a></li>
+			<li><a href="https://tencent.github.io/behaviac/language/en/feed/">Entries <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="https://tencent.github.io/behaviac/language/en/comments/feed/">Comments <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="https://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress.org</a></li>			</ul>
+			</aside>                			</div><!-- .widget-area -->
+		</div><!-- .sidebar-inner -->
+	</div><!-- #tertiary -->
+	</div><!-- #primary -->
+
+
+
+		</div><!-- #main -->
+		<footer id="colophon" class="site-footer" role="contentinfo">
+        	<div class="footer-bg clearfix">
+                <div class="widget-wrap">
+                                    </div>
+			</div>
+
+			<div class="site-info">
+
+                <div class="copyright">
+					<p class="footermenu">
+						<a href="http://www.tencent.com/" target="new" title="关于腾讯">关于腾讯</a>|
+						<a href="http://www.tencent.com/index_e.shtml" target="new" title="About Tencent">About Tencent</a>|
+						<a href="http://www.qq.com/contract.shtml" target="new" title="服务协议">服务协议</a>|
+						<a href="http://open.qq.com/" target="new" title="开放平台">开放平台</a>|
+						<a href="http://www.tencentmind.com/" target="new" title="广告服务">广告服务</a>|
+						<a href="http://www.tencent.com/about/corp.shtml" target="new" title="商务洽谈">商务洽谈</a>|
+						<a href="http://hr.tencent.com/" target="new" title="腾讯招聘">腾讯招聘</a>|
+						<a href="http://www.qq.com/" target="new" title="腾讯网">腾讯网</a>|
+						<a href="http://gongyi.qq.com/" target="new" title="腾讯公益">腾讯公益</a>|
+						<a href="http://service.qq.com/" target="new" title="客服中心">客服中心</a>|
+						<a href="http://www.qq.com/map/" target="new" title="网站导航">网站导航</a>|
+						<a href="http://www.tencent.com/law/mo_law.shtml?/law/copyright.htm" target="new" title="版权所有">版权所有</a>
+					</p>
+					Copyright &copy; 1998-2015 Tencent, All Rights Reserved
+                	<br/>
+					腾讯公司 版权所有<br>
+					备案：粤B2-20090059-185
+                </div>            
+            	<div class="credit-info">
+
+					<a hreflang="zh-CN" href="https://tencent.github.io/behaviac/language/zh/首页/">&nbsp;<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAFqSURBVHjaYrzOwPAPjJgYQEDAleHVbhADIvgHLPgHiQ0QQCxAlkR9NW8sw+cV/1gV/7Gb/hV4+vfzhj8Mv/78//Pn/+/f/8AkhH1t0yaAAAJp4I37zyz2lDfu79uqv/++/WYz+cuq/vvLxt8gdb+A5K9/v34B2SyyskBLAAII5JAva/7/+/z367a/f3/8ZuT9+//Pr78vQUrB6n4CSSj6/RuoASCAWEDO/fD3ddEfhv9/OE3/sKj8/n7k9/fDQNUIs/+DVf8HawAIIJCT/v38C3Hr95N/GDh/f94AVvT7N8RUBpjxQAVADQABBNLw/y/Ifwy/f/399ufTOpDBEPf8g5sN0QBEDAwAAQTWABEChgOSA9BVA00E2wAQQCANQBbEif/AzoCqgLkbbBYwWP/+//sXqBYggFhAkfL7D7OkJFCOCSj65zfUeFjwg8z++/ffX5AGoGKAAGI8jhSRyIw/SJH9D4aAYQoQYAA6rnMw1jU2vQAAAABJRU5ErkJggg==" title="中文 (中国) (zh_CN)" alt="中文 (中国)">中文</a>
+					<a hreflang="en-US" href="https://tencent.github.io/behaviac/language/en/index/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAHzSURBVHjaYkxOP8IAB//+Mfz7w8Dwi4HhP5CcJb/n/7evb16/APL/gRFQDiAAw3JuAgAIBEDQ/iswEERjGzBQLEru97ll0g0+3HvqMn1SpqlqGsZMsZsIe0SICA5gt5a/AGIEarCPtFh+6N/ffwxA9OvP/7//QYwff/6fZahmePeB4dNHhi+fGb59Y4zyvHHmCEAAAW3YDzQYaJJ93a+vX79aVf58//69fvEPlpIfnz59+vDhw7t37968efP3b/SXL59OnjwIEEAsDP+YgY53b2b89++/awvLn98MDi2cVxl+/vl6mituCtBghi9f/v/48e/XL86krj9XzwEEEENy8g6gu22rfn78+NGs5Ofr16+ZC58+fvyYwX8rxOxXr169fPny+fPn1//93bJlBUAAsQADZMEBxj9/GBxb2P/9+S/R8u3vzxuyaX8ZHv3j8/YGms3w8ycQARmi2eE37t4ACCDGR4/uSkrKAS35B3TT////wADOgLOBIaXIyjBlwxKAAGKRXjCB0SOEaeu+/y9fMnz4AHQxCP348R/o+l+//sMZQBNLEvif3AcIIMZbty7Ly6t9ZmXl+fXj/38GoHH/UcGfP79//BBiYHjy9+8/oUkNAAHEwt1V/vI/KBY/QSISFqM/GBg+MzB8A6PfYC5EFiDAABqgW776MP0rAAAAAElFTkSuQmCC" title="English (en_US)" alt="English">English</a>
+					<br>
+					<img src="https://tencent.github.io/behaviac/img/QR_code.png" height="100" class="hidden-on-phone" alt="behaviac website's QR code">
+					<br>
+					<a href="https://tencent.github.io/behaviac/language/zh/contactus/">联系我们</a>
+					<a href="/" title="Semantic Personal Publishing Platform">
+						Powered by behaviac.com                    </a>
+
+
+                </div>
+
+			</div><!-- .site-info -->
+		</footer><!-- #colophon -->
+
+	</div><!-- #page -->
+<script>
+//baidu and google stats
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-71830575-1', 'auto');
+  ga('send', 'pageview');
+
+ 
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "//hm.baidu.com/hm.js?f4bf91f241741b47ba932bf2129763b7";
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
+  })();
+
+</script>
+	<script type='text/javascript' src='https://tencent.github.io/behaviac/contents/lib/syntaxhighlighter/syntaxhighlighter3/scripts/shCore.js'></script>
+<script type='text/javascript' src='https://tencent.github.io/behaviac/contents/lib/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushAS3.js'></script>
+<script type='text/javascript' src='https://tencent.github.io/behaviac/contents/lib/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushBash.js'></script>
+<script type='text/javascript' src='https://tencent.github.io/behaviac/contents/lib/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushColdFusion.js'></script>
+<script type='text/javascript' src='https://tencent.github.io/behaviac/contents/lib/syntaxhighlighter/third-party-brushes/shBrushClojure.js'></script>
+<script type='text/javascript' src='https://tencent.github.io/behaviac/contents/lib/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushCpp.js'></script>
+<script type='text/javascript' src='https://tencent.github.io/behaviac/contents/lib/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushCSharp.js'></script>
+<script type='text/javascript' src='https://tencent.github.io/behaviac/contents/lib/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushCss.js'></script>
+<script type='text/javascript' src='https://tencent.github.io/behaviac/contents/lib/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushDelphi.js'></script>
+<script type='text/javascript' src='https://tencent.github.io/behaviac/contents/lib/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushDiff.js'></script>
+<script type='text/javascript' src='https://tencent.github.io/behaviac/contents/lib/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushErlang.js'></script>
+<script type='text/javascript' src='https://tencent.github.io/behaviac/contents/lib/syntaxhighlighter/third-party-brushes/shBrushFSharp.js'></script>
+<script type='text/javascript' src='https://tencent.github.io/behaviac/contents/lib/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushGroovy.js'></script>
+<script type='text/javascript' src='https://tencent.github.io/behaviac/contents/lib/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushJava.js'></script>
+<script type='text/javascript' src='https://tencent.github.io/behaviac/contents/lib/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushJavaFX.js'></script>
+<script type='text/javascript' src='https://tencent.github.io/behaviac/contents/lib/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushJScript.js'></script>
+<script type='text/javascript' src='https://tencent.github.io/behaviac/contents/lib/syntaxhighlighter/third-party-brushes/shBrushLatex.js'></script>
+<script type='text/javascript' src='https://tencent.github.io/behaviac/contents/lib/syntaxhighlighter/third-party-brushes/shBrushMatlabKey.js'></script>
+<script type='text/javascript' src='https://tencent.github.io/behaviac/contents/lib/syntaxhighlighter/third-party-brushes/shBrushObjC.js'></script>
+<script type='text/javascript' src='https://tencent.github.io/behaviac/contents/lib/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushPerl.js'></script>
+<script type='text/javascript' src='https://tencent.github.io/behaviac/contents/lib/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushPhp.js'></script>
+<script type='text/javascript' src='https://tencent.github.io/behaviac/contents/lib/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushPlain.js'></script>
+<script type='text/javascript' src='https://tencent.github.io/behaviac/contents/lib/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushPowerShell.js'></script>
+<script type='text/javascript' src='https://tencent.github.io/behaviac/contents/lib/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushPython.js'></script>
+<script type='text/javascript' src='https://tencent.github.io/behaviac/contents/lib/syntaxhighlighter/third-party-brushes/shBrushR.js'></script>
+<script type='text/javascript' src='https://tencent.github.io/behaviac/contents/lib/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushRuby.js'></script>
+<script type='text/javascript' src='https://tencent.github.io/behaviac/contents/lib/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushScala.js'></script>
+<script type='text/javascript' src='https://tencent.github.io/behaviac/contents/lib/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushSql.js'></script>
+<script type='text/javascript' src='https://tencent.github.io/behaviac/contents/lib/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushVb.js'></script>
+<script type='text/javascript' src='https://tencent.github.io/behaviac/contents/lib/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushXml.js'></script>
+<script type='text/javascript'>
+	(function(){
+		var corecss = document.createElement('link');
+		var themecss = document.createElement('link');
+		var corecssurl = "https://tencent.github.io/behaviac/contents/lib/syntaxhighlighter/syntaxhighlighter3/styles/shCore.css";
+		if ( corecss.setAttribute ) {
+				corecss.setAttribute( "rel", "stylesheet" );
+				corecss.setAttribute( "type", "text/css" );
+				corecss.setAttribute( "href", corecssurl );
+		} else {
+				corecss.rel = "stylesheet";
+				corecss.href = corecssurl;
+		}
+		document.getElementsByTagName("head")[0].insertBefore( corecss, document.getElementById("syntaxhighlighteranchor") );
+		var themecssurl = "https://tencent.github.io/behaviac/contents/lib/syntaxhighlighter/syntaxhighlighter3/styles/shThemeDefault.css";
+		if ( themecss.setAttribute ) {
+				themecss.setAttribute( "rel", "stylesheet" );
+				themecss.setAttribute( "type", "text/css" );
+				themecss.setAttribute( "href", themecssurl );
+		} else {
+				themecss.rel = "stylesheet";
+				themecss.href = themecssurl;
+		}
+		//document.getElementById("syntaxhighlighteranchor").appendChild(themecss);
+		document.getElementsByTagName("head")[0].insertBefore( themecss, document.getElementById("syntaxhighlighteranchor") );
+	})();
+	SyntaxHighlighter.config.strings.expandSource = '+ expand source';
+	SyntaxHighlighter.config.strings.help = '?';
+	SyntaxHighlighter.config.strings.alert = 'SyntaxHighlighter\n\n';
+	SyntaxHighlighter.config.strings.noBrush = 'Can\'t find brush for: ';
+	SyntaxHighlighter.config.strings.brushNotHtmlScript = 'Brush wasn\'t configured for html-script option: ';
+	SyntaxHighlighter.defaults['pad-line-numbers'] = false;
+	SyntaxHighlighter.defaults['toolbar'] = false;
+	SyntaxHighlighter.all();
+</script>
+<script type='text/javascript' src='https://tencent.github.io/behaviac/contents/lib/anti-spam/js/anti-spam-4.3.js'></script>
+<script type='text/javascript' src='https://tencent.github.io/behaviac/inc/js/imagesloaded.min.js'></script>
+<script type='text/javascript' src='https://tencent.github.io/behaviac/inc/js/masonry.min.js'></script>
+<script type='text/javascript' src='https://tencent.github.io/behaviac/inc/js/jquery/jquery.masonry.min.js'></script>
+<script type='text/javascript' src='https://tencent.github.io/behaviac/contents/lib/templatesnext-toolkit/js/owl.carousel.min.js'></script>
+<script type='text/javascript' src='https://tencent.github.io/behaviac/contents/lib/templatesnext-toolkit/js/jquery.colorbox-min.js'></script>
+<script type='text/javascript' src='https://tencent.github.io/behaviac/contents/lib/templatesnext-toolkit/js/tx-script.js'></script>
+<script type='text/javascript' src='https://tencent.github.io/behaviac/contents/ui/theme/js/waypoints.min.js'></script>
+<script type='text/javascript' src='https://tencent.github.io/behaviac/contents/ui/theme/js/jquery.sidr.min.js'></script>
+<script type='text/javascript' src='https://tencent.github.io/behaviac/contents/ui/theme/js/functions.js'></script>
+<script type='text/javascript' src='https://tencent.github.io/behaviac/contents/lib/easy-table-of-contents/vendor/smooth-scroll/jquery.smooth-scroll.min.js'></script>
+<script type='text/javascript' src='https://tencent.github.io/behaviac/contents/lib/easy-table-of-contents/vendor/js-cookie/js.cookie.min.js'></script>
+<script type='text/javascript' src='https://tencent.github.io/behaviac/contents/lib/easy-table-of-contents/vendor/sticky-kit/jquery.sticky-kit.min.js'></script>
+<script type='text/javascript' src='https://tencent.github.io/behaviac/contents/lib/easy-table-of-contents/vendor/waypoints/jquery.waypoints.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ezTOC = {"smooth_scroll":"1","visibility_hide_by_default":"1","width":"25%","scroll_offset":"30"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://tencent.github.io/behaviac/contents/lib/easy-table-of-contents/assets/js/front.min.js'></script>
+</body>
+</html>

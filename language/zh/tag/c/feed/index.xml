@@ -1,0 +1,841 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>C++ &#8211; behaviac</title>
+	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
+	<link>./../../../../../index.html</link>
+	<description>Tencent behaviac, Game AI, Behavior Tree, Finite State Machine, Hierarchical Task Network, BT FSM HTN, 腾讯开源, 游戏AI, 行为树,有限状态机,分层任务网络</description>
+	<lastBuildDate>Tue, 25 Jul 2017 03:06:33 +0000</lastBuildDate>
+	<language>zh-CN</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.4.1</generator>
+
+<image>
+	<url>./../../../../../wp-content/uploads/2016/04/cropped-256x256-32x32.png</url>
+	<title>C++ &#8211; behaviac</title>
+	<link>./../../../../../index.html</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>VS项目中使用behaviac组件</title>
+		<link>./../../../../../cpp_include/index.html</link>
+					<comments>./../../../../../cpp_include/index.html#comments</comments>
+		
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Fri, 13 May 2016 02:44:04 +0000</pubDate>
+				<category><![CDATA[文章]]></category>
+		<category><![CDATA[上手]]></category>
+		<category><![CDATA[C++]]></category>
+		<category><![CDATA[编译构建]]></category>
+		<category><![CDATA[运行时]]></category>
+		<guid isPermaLink="false">./../../../../../index.html?p=311</guid>
+
+					<description><![CDATA[下载完behaviac组件的全部源码后，整个组件的目录结构，如下图所示： 将behaviac组件整合到自己的项目中时，可以通过两种方式使用behaviac组件：<a class="moretag" href="./../../../../../cpp_include/index.html">Read More...</a>]]></description>
+										<content:encoded><![CDATA[<p id="cbehaviac">下载完behaviac组件的全部源码后，整个组件的目录结构，如下图所示：</p>
+<p><img src="./../../../../../img/tutorials/tutorial16/sourceFolder.png" alt="" /></p>
+<p>将behaviac组件整合到自己的项目中时，可以通过两种方式使用behaviac组件：</p>
+<ul>
+<li>将全部源码（包括behaviac组件的所有<a href="https://github.com/Tencent/behaviac/blob/master/inc/behaviac">.h</a>和<a href="https://github.com/Tencent/behaviac/blob/master/src">.cpp</a>文件）全部复制到自己的游戏项目中。</li>
+<li>单独编译behaviac组件库，生成lib文件，然后自己的项目包含.h文件和生成的.lib文件。</li>
+</ul>
+<p>对于上面的第二种用法，请先参考<a href="./../../../../../docs/zh/tutorials/how_to_build/index.html">如何编译构建</a>文档来编译构建behavaic组件。</p>
+<p>在Windows平台，如果是使用VS来管理项目的，需要在VS的项目“Property Pages”-&gt;“Configuration Properties”-&gt;“C/C++”-&gt;“General”中的“Additional Include Directories”项中添加behaviac组件头文件（即图1中的inc文件夹）所在的路径，如下图所示：</p>
+<p><img src="./../../../../../img/tutorials/tutorial16/includeHeaderSettings.png" alt="" /></p>
+<p>再在VS的项目“Property Pages”-&gt;“Configuration Properties”-&gt;“Linker”-&gt;“General”中的“Additional Library Directories”项中添加自己编译出的behaviac lib文件（即图1中的lib文件夹）所在的路径，如下图所示：</p>
+<p><img src="./../../../../../img/tutorials/tutorial16/includeLibSettings.png" alt="" /></p>
+<p>最后在VS的项目“Property Pages”-&gt;“Configuration Properties”-&gt;“Linker”-&gt;“Input”中的“Additional Dependencies”项中添加自己编译出的behaviac lib文件，如下图所示：</p>
+<p><img src="./../../../../../img/tutorials/tutorial16/addLibSettings.png" alt="" /></p>
+<p>注意：上图中的behaviac_debugdll_win32_vs2010.lib文件是用VS2010编译出来的，说明游戏项目也需要用VS2010来编译。如果你的游戏项目使用其他版本的VS，则编译behaviac组件也需要用相应版本的VS来编译。</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>./../../../../../cpp_include/feed/index.html</wfw:commentRss>
+			<slash:comments>3</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>C++运行时端的使用上手</title>
+		<link>./../../../../../tutorial14_cpp_workflow/index.html</link>
+					<comments>./../../../../../tutorial14_cpp_workflow/index.html#comments</comments>
+		
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Fri, 13 May 2016 02:21:24 +0000</pubDate>
+				<category><![CDATA[3.5]]></category>
+		<category><![CDATA[上手]]></category>
+		<category><![CDATA[C++]]></category>
+		<category><![CDATA[运行时]]></category>
+		<guid isPermaLink="false">./../../../../../index.html?p=273</guid>
+
+					<description><![CDATA[运行时（游戏）端使用行为树之前，需要确保行为树文件已经成功导出。 如何注册和导出类型信息请参考C++类型信息的注册和导出，如何导出行为树请参考导出和使用XML/<a class="moretag" href="./../../../../../tutorial14_cpp_workflow/index.html">Read More...</a>]]></description>
+										<content:encoded><![CDATA[<p id="c">运行时（游戏）端使用行为树之前，需要确保行为树文件已经成功导出。</p>
+<p>如何注册和导出类型信息请参考<a href="./../../../../../docs/zh/tutorials/tutorial3_1_meta_cpp_register/index.html">C++类型信息的注册和导出</a>，如何导出行为树请参考<a href="./../../../../../docs/zh/tutorials/tutorial4_1_export_xml_bson/index.html">导出和使用XML/BSON行为树</a>。</p>
+<p>通过编辑器导出行为树文件后，运行时端的执行主要分为三个部分：</p>
+<ul>
+<li>初始化</li>
+<li>循环更新</li>
+<li>清理</li>
+</ul>
+<h3 id="section"><span class="ez-toc-section" id="1">1 初始化</span></h3>
+<p>在游戏的初始化函数中，添加初始化behaviac组件所需的功能，例如注册Agent子类信息、设置行为树文件的加载路径和文件格式、创建Agent子类的实例、加载行为树并设置当前所需执行的行为树等。</p>
+<p>如下代码所示：</p>
+<div class="highlighter-rouge">
+<pre class="highlight"><code><span class="n">bool</span> <span class="nf">InitBehavic</span><span class="p">(</span><span class="n">behaviac</span><span class="o">::</span><span class="n">Workspace</span><span class="o">::</span><span class="n">EFileFormat</span> <span class="n">ff</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">behaviac</span><span class="o">::</span><span class="n">Config</span><span class="o">::</span><span class="n">SetSocketBlocking</span><span class="p">(</span><span class="nb">false</span><span class="p">);</span>
+    <span class="n">behaviac</span><span class="o">::</span><span class="n">Config</span><span class="o">::</span><span class="n">SetSocketPort</span><span class="p">(</span><span class="mi">8081</span><span class="p">);</span>
+
+    <span class="n">behaviac</span><span class="o">::</span><span class="n">Agent</span><span class="o">::</span><span class="n">Register</span><span class="o">&lt;</span><span class="n">CBTPlayer</span><span class="o">&gt;</span><span class="p">();</span>
+
+    <span class="n">behaviac</span><span class="o">::</span><span class="n">Workspace</span><span class="o">::</span><span class="n">GetInstance</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">SetFilePath</span><span class="p">(</span><span class="s">"../test/demo_running/behaviac/exported"</span><span class="p">);</span>
+    <span class="n">behaviac</span><span class="o">::</span><span class="n">Workspace</span><span class="o">::</span><span class="n">GetInstance</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">SetFileFormat</span><span class="p">(</span><span class="n">ff</span><span class="p">);</span>
+
+    <span class="n">behaviac</span><span class="o">::</span><span class="n">Workspace</span><span class="o">::</span><span class="n">GetInstance</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">ExportMetas</span><span class="p">(</span><span class="s">"../test/demo_running/behaviac/demo_running.xml"</span><span class="p">);</span>
+
+    <span class="c1">//behaviac::Agent::SetIdMask(kIdMask_Wolrd | kIdMask_Opponent);
+</span>    <span class="n">behaviac</span><span class="o">::</span><span class="n">Workspace</span><span class="o">::</span><span class="n">GetInstance</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">SetDeltaFrames</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+
+    <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="n">bool</span> <span class="nf">InitPlayer</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">pszTreeName</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">g_player</span> <span class="o">=</span> <span class="n">behaviac</span><span class="o">::</span><span class="n">Agent</span><span class="o">::</span><span class="n">Create</span><span class="o">&lt;</span><span class="n">CBTPlayer</span><span class="o">&gt;</span><span class="p">();</span>
+
+    <span class="n">bool</span> <span class="n">bRet</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+    <span class="n">bRet</span> <span class="o">=</span> <span class="n">g_player</span><span class="o">-&gt;</span><span class="n">btload</span><span class="p">(</span><span class="n">pszTreeName</span><span class="p">);</span>
+    <span class="n">assert</span><span class="p">(</span><span class="n">bRet</span><span class="p">);</span>
+
+    <span class="n">g_player</span><span class="o">-&gt;</span><span class="n">btsetcurrent</span><span class="p">(</span><span class="n">pszTreeName</span><span class="p">);</span>
+
+    <span class="k">return</span> <span class="n">bRet</span><span class="p">;</span>
+<span class="p">}</span>
+
+</code></pre>
+</div>
+<div class="note info">
+<h5><span class="ez-toc-section" id="i">关于文件路径的说明</span></h5>
+</div>
+<ul>
+<li>Workspace::SetFilePath指定的是编辑器中Workspace的导出路径，可以是绝对路径。当指定的是相对路径的时候，相对的是当前<strong>工作路径</strong>（一般都是运行程序所在目录）。</li>
+<li>Agent::btload使用的文件名是相对于Workspace::SetFilePath指定的路径，没有扩展名，可以有目录结构的层次化文件名，如“node_test/selector_loop_ut_7”。在编辑器中打开某个行为树后，右键文件页选取“复制文件名”获取。</li>
+</ul>
+<p><img src="./../../../../../img/tutorials/tutorial14/copy_filepath.png" alt="copy_filepath" /></p>
+<ul>
+<li>例如：
+<ul>
+<li>如果运行程序所在目录（或者VS里指定的工作路径$(TargetDir)）是”D:\Test\bin”</li>
+<li>Workspace::SetFilePath指定的相对路径是“../behaviac/workspace/exported”</li>
+<li>btload指定是“node_test/selector_loop_ut_7”</li>
+<li>则workspace的导出路径实际是“D:/Test/behaviac/workspace/exported”，<br />
+而相应的导出行为树文件是“D:/Test/behaviac/workspace/exported/node_test/selector_loop_ut_7.xml”或<br />
+“D:/Test/behaviac/workspace/exported/node_test/selector_loop_ut_7.bson.bytes”。</li>
+<li>具体是xml或bson则由Workspace::SetFileFormat确定。</li>
+<li>当指定格式是cpp或c#的时候，导出的行为树是cpp或c#源码，已经编译构建进可执行程序，Agent::btload指定的文件名（跟xml的用法一样，无需修改btload的参数）只是用来标识该行为树的，从而代码可以据此创建相应的行为树，不像xml或bson格式的时候需要加载数据文件。</li>
+</ul>
+</li>
+<li>如果Agent::btload加载失败，请注意检查当前路径，Workspace::SetFilePath设定的导出路径，以及Agent::btload指定的文件标识。还可以在当前路径里检查log文件<code class="highlighter-rouge">_behaviac_$_$_.log</code></li>
+</ul>
+<h3 id="section-1"><span class="ez-toc-section" id="2">2 循环更新</span></h3>
+<p>在游戏的主循环中，添加执行Agent实例的行为树相关代码，也即通过调用Agent类的接口btexec()或Workspace类的接口Update()来执行行为树。</p>
+<p>这两种执行方式的区别，请参考<a href="./../../../../../docs/zh/tutorials/tutorial13_updateloop/index.html">更新流程</a>。</p>
+<p>如下代码样例所示：</p>
+<div class="highlighter-rouge">
+<pre class="highlight"><code>
+<span class="kt">void</span> <span class="nf">UpdateLoop</span><span class="p">()</span>
+<span class="p">{</span>
+	<span class="kt">int</span> <span class="n">i</span>  <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+	<span class="kt">int</span> <span class="n">frames</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+	<span class="n">behaviac</span><span class="o">::</span><span class="n">EBTStatus</span> <span class="n">status</span> <span class="o">=</span> <span class="n">behaviac</span><span class="o">::</span><span class="n">BT_RUNNING</span><span class="p">;</span>
+
+	<span class="k">while</span> <span class="p">(</span><span class="n">status</span> <span class="o">==</span> <span class="n">behaviac</span><span class="o">::</span><span class="n">BT_RUNNING</span><span class="p">)</span>
+	<span class="p">{</span>
+		<span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"frame "</span> <span class="o">&lt;&lt;</span> <span class="o">++</span><span class="n">frames</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+		<span class="n">status</span> <span class="o">=</span> <span class="n">g_player</span><span class="o">-&gt;</span><span class="n">btexec</span><span class="p">();</span>
+	<span class="p">}</span>
+<span class="p">}</span>
+
+</code></pre>
+</div>
+<h3 id="section-2"><span class="ez-toc-section" id="3">3 清理</span></h3>
+<p>最后的清理过程，包括销毁Agent子类的实例，以及反注册Agent子类信息等。</p>
+<p>如下代码样例所示：</p>
+<div class="highlighter-rouge">
+<pre class="highlight"><code>
+<span class="kt">void</span> <span class="nf">CleanupPlayer</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="n">behaviac</span><span class="o">::</span><span class="n">Agent</span><span class="o">::</span><span class="n">Destroy</span><span class="p">(</span><span class="n">g_player</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="nf">CleanupBehaviac</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="n">behaviac</span><span class="o">::</span><span class="n">Agent</span><span class="o">::</span><span class="n">UnRegister</span><span class="o">&lt;</span><span class="n">CBTPlayer</span><span class="o">&gt;</span><span class="p">();</span>
+
+	<span class="n">behaviac</span><span class="o">::</span><span class="n">Workspace</span><span class="o">::</span><span class="n">GetInstance</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">Cleanup</span><span class="p">();</span>
+<span class="p">}</span>
+
+</code></pre>
+</div>
+<p>以上步骤的完整代码，请参考<a href="https://github.com/Tencent/behaviac/blob/master/test/demo_running/demo_running.cpp">demo_running.cpp</a>文件。</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>./../../../../../tutorial14_cpp_workflow/feed/index.html</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>导出和使用C++行为树</title>
+		<link>./../../../../../tutorial4_2_export_cpp/index.html</link>
+					<comments>./../../../../../tutorial4_2_export_cpp/index.html#respond</comments>
+		
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Fri, 13 May 2016 02:29:06 +0000</pubDate>
+				<category><![CDATA[3.5]]></category>
+		<category><![CDATA[上手]]></category>
+		<category><![CDATA[C++]]></category>
+		<category><![CDATA[编辑器]]></category>
+		<guid isPermaLink="false">./../../../../../index.html?p=284</guid>
+
+					<description><![CDATA[在“导出行为树”对话框中，选择“C++ Behavior Exporter”，如下图所示： 点击上图中右侧的“…”设置按钮，在弹出的“C++导出设置”对话框中设<a class="moretag" href="./../../../../../tutorial4_2_export_cpp/index.html">Read More...</a>]]></description>
+										<content:encoded><![CDATA[<ul>
+<li>在“导出行为树”对话框中，选择“C++ Behavior Exporter”，如下图所示：</li>
+</ul>
+<p><img class="aligncenter" src="./../../../../../img/tutorials/tutorial4/exportCpp.png" alt="" /></p>
+<ul>
+<li>点击上图中右侧的“…”设置按钮，在弹出的“C++导出设置”对话框中设置生成文件所在的位置，并可以添加项目中游戏类（从Agent类派生而来）所在的.h头文件，添加的头文件将会被包含在生成的.cpp文件中，如下图所示：</li>
+</ul>
+<p><img class="aligncenter" src="./../../../../../img/tutorials/tutorial4/cppExportSettings.png" alt="" /></p>
+<ul>
+<li>回到“导出行为树”对话框，点击“导出”按钮，开始导出<code class="highlighter-rouge">C++</code>文件。在指定的导出位置（默认为当前工作区的导出路径）会自动生成一个名为<code class="highlighter-rouge">behaviac_generated</code>的文件夹，里面生成了<code class="highlighter-rouge">behaviors</code>和<code class="highlighter-rouge">types</code>两个子文件夹，如图3所示：</li>
+<li><code class="highlighter-rouge">behaviors</code>文件夹中含有<code class="highlighter-rouge">generated_behaviors.h</code>及其他单个的行为树<code class="highlighter-rouge">.inl</code>文件（如果没有勾选“导出统一文件？”，则对每一棵行为树都会生成独立的<code class="highlighter-rouge">.inl</code>文件，这些.inl文件会自动include在<code class="highlighter-rouge">generated_behaviors.h</code>文件中，无需在自己的项目中再include这些<code class="highlighter-rouge">.inl</code>文件，只需要include这个<code class="highlighter-rouge">generated_behaviors.h</code>文件即可）。</li>
+<li><code class="highlighter-rouge">types</code>文件夹中含有<code class="highlighter-rouge">agentproperties.h</code>（为Agent类自定义的属性和方法，会扩展在该文件中）、<code class="highlighter-rouge">customizedtypes.h/customizedtypes.cpp</code>（自定义的枚举和结构体类型，会生成在这两个文件中）以及其他自定义<code class="highlighter-rouge">Agent</code>子类的文件（这些文件是为添加的<code class="highlighter-rouge">Agent</code>子类自动生成的<code class="highlighter-rouge">.h/.cpp</code>文件，需要程序员补充代码进一步实现这些<code class="highlighter-rouge">Agent</code>子类的逻辑）。</li>
+</ul>
+<p><img class="aligncenter" src="./../../../../../img/tutorials/tutorial4/exportedCppFiles.png" alt="" /></p>
+<ul>
+<li>注意：这些自动生成的文件（除了上面提及的单个的行为树<code class="highlighter-rouge">.inl</code>文件之外）都需要包含到自己的游戏项目中，一起参与整个项目代码的编译和构建。</li>
+<li>在项目中包含了这些自动生成的代码文件后，就可以与前面提及的<a href="./../../../../../docs/zh/tutorials/tutorial4_1_export_xml_bson/index.html">导出和使用XML/BSON行为树</a>一样的接口和方式加载使用这些C++文件，只是需要将文件格式改为<code class="highlighter-rouge">EFF_cpp</code>：</li>
+</ul>
+<div class="highlighter-rouge">
+<pre class="highlight"><code>
+<span class="n">behaviac</span><span class="o">::</span><span class="n">Workspace</span><span class="o">::</span><span class="n">GetInstance</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">SetFileFormat</span><span class="p">(</span><span class="n">behaviac</span><span class="o">::</span><span class="n">Workspace</span><span class="o">::</span><span class="n">EFF_cpp</span><span class="p">);</span>
+
+</code></pre>
+</div>
+<div class="section-nav"></div>
+]]></content:encoded>
+					
+					<wfw:commentRss>./../../../../../tutorial4_2_export_cpp/feed/index.html</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>C++运行时端中元信息的注册和导出</title>
+		<link>./../../../../../tutorial3_1_meta_cpp_register/index.html</link>
+					<comments>./../../../../../tutorial3_1_meta_cpp_register/index.html#comments</comments>
+		
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Fri, 13 May 2016 02:23:51 +0000</pubDate>
+				<category><![CDATA[3.5]]></category>
+		<category><![CDATA[上手]]></category>
+		<category><![CDATA[C++]]></category>
+		<category><![CDATA[运行时]]></category>
+		<guid isPermaLink="false">./../../../../../index.html?p=276</guid>
+
+					<description><![CDATA[behaviac组件的基本运作机制就是在运行时端（C++）和编辑器通过元信息进行交互，如图1所示。其中，元信息里面包含了类自身的描述、属性、方法及类的实例等。 <a class="moretag" href="./../../../../../tutorial3_1_meta_cpp_register/index.html">Read More...</a>]]></description>
+										<content:encoded><![CDATA[<p id="c">behaviac组件的基本运作机制就是在运行时端（C++）和编辑器通过元信息进行交互，如图1所示。其中，元信息里面包含了类自身的描述、属性、方法及类的实例等。</p>
+<p><img class="aligncenter" src="./../../../../../img/overview/meta.png" alt="" /></p>
+<p style="text-align: center;">图1 基于元信息的编辑器和运行时端的交互</p>
+<p>在运行时端，也即游戏代码端，通过注册（C++通过宏的方式）并导出供行为树引擎和编辑器使用的XML元信息。运行时端主要是由程序员编写Agent的子类及其属性和方法，然后调用相关接口将这些元信息导出，就可以在编辑器中对这些元信息进行使用。</p>
+<p>在编辑器中也可以创建和编辑元信息。在项目开始初期，也就是程序员还没把代码写出来之前，策划就可以自己手动的创建一些Agent子类、属性和方法等元信息。这样可以加速游戏原型的创建，也就是策划不用等程序员，就可以进行游戏原型的编辑。</p>
+<p>整个工作流程主要分为以下几个步骤：</p>
+<h3 id="section">1 注册元信息</h3>
+<ul>
+<li>在.h文件中，根据项目需要按以下步骤编写自己的游戏类：
+<ul>
+<li>首先需要包含头文件#include “behaviac/behaviac.h”。</li>
+<li>该类需要从behaviac::Agent基类继承。</li>
+<li>首先用宏DECLARE_BEHAVIAC_AGENT声明该类及其父类，用于行为树引擎内部的反射系统所需的类型信息。</li>
+<li>为该类添加必要的属性和方法等。</li>
+</ul>
+</li>
+</ul>
+<p>如下代码样例所示：</p>
+<div class="highlighter-rouge">
+<pre class="highlight"><code>
+<span class="cp">#include "behaviac/behaviac.h"
+</span>
+<span class="k">using</span> <span class="k">namespace</span> <span class="n">behaviac</span><span class="p">;</span>
+
+<span class="k">class</span> <span class="nc">CBTPlayer</span> <span class="o">:</span> <span class="k">public</span> <span class="n">Agent</span>
+<span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+    <span class="n">DECLARE_BEHAVIAC_AGENT</span><span class="p">(</span><span class="n">CBTPlayer</span><span class="p">,</span> <span class="n">Agent</span><span class="p">);</span>
+
+    <span class="n">CBTPlayer</span><span class="p">();</span>
+    <span class="k">virtual</span> <span class="o">~</span><span class="n">CBTPlayer</span><span class="p">();</span>
+
+    <span class="kt">time_t</span> <span class="n">GetCurTime</span><span class="p">();</span>
+    <span class="n">bool</span> <span class="n">Condition</span><span class="p">();</span>
+    <span class="n">behaviac</span><span class="o">::</span><span class="n">EBTStatus</span> <span class="n">Action1</span><span class="p">();</span>
+    <span class="n">EBTStatus</span> <span class="n">Action3</span><span class="p">();</span>
+
+<span class="k">private</span><span class="o">:</span>
+    <span class="kt">int</span>                 <span class="n">m_iX</span><span class="p">;</span>
+    <span class="kt">int</span>                 <span class="n">m_iY</span><span class="p">;</span>
+    <span class="kt">unsigned</span> <span class="kt">int</span>        <span class="n">m_iBaseSpeed</span><span class="p">;</span>
+    <span class="kt">int</span>					<span class="n">m_Frames</span><span class="p">;</span>
+<span class="p">};</span>
+
+</code></pre>
+</div>
+<ul>
+<li>在.cpp文件中，通过一系列宏来注册该类自身的描述及其属性与方法：
+<ul>
+<li>宏BEGIN_PROPERTIES_DESCRIPTION和END_PROPERTIES_DESCRIPTION表示类型信息注册的开始和结束。</li>
+<li>宏CLASS_DISPLAYNAME和CLASS_DESC用于注册类自身的显示名和描述。</li>
+<li>宏REGISTER_PROPERTY用于注册类的属性，可以通过.DISPLAYNAME的追加方式为属性添加显示名，通过.DESC的追加方式为属性添加描述。</li>
+<li>宏REGISTER_METHOD用于注册类的方法，可以通过.DISPLAYNAME的追加方式为方法添加显示名，通过.DESC的追加方式为方法添加描述，通过.PARAM_DISPLAY_INFO的追加方式为参数添加显示名和描述等。如果参数类型是数值类型（例如int、unsigned int、float等），.PARAM_DISPLAY _INFO还可以用来指定参数的有效范围。</li>
+</ul>
+</li>
+</ul>
+<p>如下代码样例所示：</p>
+<div class="highlighter-rouge">
+<pre class="highlight"><code>
+<span class="n">BEGIN_PROPERTIES_DESCRIPTION</span><span class="p">(</span><span class="n">CBTPlayer</span><span class="p">)</span>
+<span class="p">{</span>
+	<span class="n">REGISTER_PROPERTY</span><span class="p">(</span><span class="n">m_iBaseSpeed</span><span class="p">);</span>
+
+	<span class="n">REGISTER_METHOD</span><span class="p">(</span><span class="n">Condition</span><span class="p">);</span>
+	<span class="n">REGISTER_METHOD</span><span class="p">(</span><span class="n">Action1</span><span class="p">);</span>
+	<span class="n">REGISTER_METHOD</span><span class="p">(</span><span class="n">Action3</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="n">END_PROPERTIES_DESCRIPTION</span><span class="p">()</span>
+
+</code></pre>
+</div>
+<h3 id="section-1">2 导出元信息</h3>
+<p>注册完类信息之后，按以下步骤导出元数据文件：</p>
+<ul>
+<li>在初始化函数里，添加Agent::Register&lt;***&gt;()用于注册类信息到引擎库中。</li>
+<li>通过Agent::RegisterInstanceName&lt;***&gt;(…)来注册类的实例名。</li>
+<li>调用Workspace::GetInstance()-&gt;SetFilePath(…)设置元信息文件导出的位置。</li>
+<li>调用Workspace::GetInstance()-&gt;ExportMetas(…)导出元信息文件。</li>
+<li>在释放函数里，添加Agent::Unregister&lt;***&gt;()用于释放类型的注册信息。</li>
+</ul>
+<p>如下代码样例所示：</p>
+<div class="highlighter-rouge">
+<pre class="highlight"><code>
+<span class="n">bool</span> <span class="nf">InitBehavic</span><span class="p">(</span><span class="n">behaviac</span><span class="o">::</span><span class="n">Workspace</span><span class="o">::</span><span class="n">EFileFormat</span> <span class="n">ff</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">behaviac</span><span class="o">::</span><span class="n">Config</span><span class="o">::</span><span class="n">SetSocketBlocking</span><span class="p">(</span><span class="nb">false</span><span class="p">);</span>
+    <span class="n">behaviac</span><span class="o">::</span><span class="n">Config</span><span class="o">::</span><span class="n">SetSocketPort</span><span class="p">(</span><span class="mi">8081</span><span class="p">);</span>
+
+    <span class="n">behaviac</span><span class="o">::</span><span class="n">Agent</span><span class="o">::</span><span class="n">Register</span><span class="o">&lt;</span><span class="n">CBTPlayer</span><span class="o">&gt;</span><span class="p">();</span>
+
+    <span class="n">behaviac</span><span class="o">::</span><span class="n">Workspace</span><span class="o">::</span><span class="n">GetInstance</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">SetFilePath</span><span class="p">(</span><span class="s">"../test/demo_running/behaviac/exported"</span><span class="p">);</span>
+    <span class="n">behaviac</span><span class="o">::</span><span class="n">Workspace</span><span class="o">::</span><span class="n">GetInstance</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">SetFileFormat</span><span class="p">(</span><span class="n">ff</span><span class="p">);</span>
+
+    <span class="n">behaviac</span><span class="o">::</span><span class="n">Workspace</span><span class="o">::</span><span class="n">GetInstance</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">ExportMetas</span><span class="p">(</span><span class="s">"../test/demo_running/behaviac/demo_running.xml"</span><span class="p">);</span>
+
+    <span class="c1">//behaviac::Agent::SetIdMask(kIdMask_Wolrd | kIdMask_Opponent);
+</span>    <span class="n">behaviac</span><span class="o">::</span><span class="n">Workspace</span><span class="o">::</span><span class="n">GetInstance</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">SetDeltaFrames</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+
+    <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="nf">CleanupBehaviac</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="n">behaviac</span><span class="o">::</span><span class="n">Agent</span><span class="o">::</span><span class="n">UnRegister</span><span class="o">&lt;</span><span class="n">CBTPlayer</span><span class="o">&gt;</span><span class="p">();</span>
+<span class="n">    behaviac</span><span class="o">::</span><span class="n">Workspace</span><span class="o">::</span><span class="n">GetInstance</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">Cleanup</span><span class="p">();</span>
+<span class="p">}</span>
+
+</code></pre>
+</div>
+<p>更多细节可以参考behaviac组件C++源码中附带的test/demo_running工程的<a href="https://github.com/Tencent/behaviac/blob/master/test/demo_running/demo_running.cpp">demo_running.cpp</a>文件。</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>./../../../../../tutorial3_1_meta_cpp_register/feed/index.html</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>导出和使用XML/BSON行为树</title>
+		<link>./../../../../../tutorial4_1_export_xml_bson/index.html</link>
+					<comments>./../../../../../tutorial4_1_export_xml_bson/index.html#respond</comments>
+		
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Fri, 13 May 2016 02:27:46 +0000</pubDate>
+				<category><![CDATA[3.5]]></category>
+		<category><![CDATA[unity]]></category>
+		<category><![CDATA[上手]]></category>
+		<category><![CDATA[C++]]></category>
+		<category><![CDATA[运行时]]></category>
+		<guid isPermaLink="false">./../../../../../index.html?p=282</guid>
+
+					<description><![CDATA[目前behaviac组件支持4种文件格式（XML、BSON、C++和C#）行为树的导出。在项目开发过程中，建议使用XML格式的导出文件，以便于调试和查错等；而在<a class="moretag" href="./../../../../../tutorial4_1_export_xml_bson/index.html">Read More...</a>]]></description>
+										<content:encoded><![CDATA[<p id="section">目前behaviac组件支持4种文件格式（XML、BSON、C++和C#）行为树的导出。在项目开发过程中，建议使用XML格式的导出文件，以便于调试和查错等；而在最终的发布（release）版本中，可以导出C++或C#格式的行为树文件，以便提高运行效率。</p>
+<h3 id="xmlbson">导出和使用XML/BSON行为树</h3>
+<ul>
+<li>在编辑器中导出整个工作区文件，在“导出行为树”对话框中，勾选“Xml Behavior Exporter”或“Bson Behavior Exporter”，如下图所示：</li>
+</ul>
+<p><img class="aligncenter" src="./../../../../../img/tutorials/tutorial4/exportXMLBson.png" alt="" /></p>
+<ul>
+<li>导出行为树文件结束后，回到运行时（游戏）代码端，按以下步骤使用行为树文件：
+<ul>
+<li>在游戏的初始化函数中，添加Agent::Register&lt;***&gt;()注册类信息到引擎库中。</li>
+<li>调用Workspace::SetFilePath(…)函数，设置行为树文件的加载路径，也即编辑器导出行为树文件所在的目录。</li>
+<li>调用Workspace::SetFileFormat(…)函数，设置加载行为树的文件格式，如果不调用则默认加载EFF_xml格式。</li>
+<li>通过调用Agent的接口btload(…)加载所需的行为树文件。</li>
+<li>通过调用Agent的接口btsetcurrent(…)设置当前准备执行的行为树文件。</li>
+<li>行为树的更新执行流程请参考<a href="./../../../../../docs/zh/tutorials/tutorial13_updateloop/index.html">更新流程</a>。</li>
+<li>在游戏的释放函数里面，添加Agent::Unregister&lt;***&gt;()用于释放类型的注册信息。</li>
+</ul>
+</li>
+</ul>
+<p>如下代码样例所示：</p>
+<div class="highlighter-rouge">
+<pre class="highlight"><code>
+<span class="n">bool</span> <span class="nf">InitBehavic</span><span class="p">(</span><span class="n">behaviac</span><span class="o">::</span><span class="n">Workspace</span><span class="o">::</span><span class="n">EFileFormat</span> <span class="n">ff</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">behaviac</span><span class="o">::</span><span class="n">Config</span><span class="o">::</span><span class="n">SetSocketBlocking</span><span class="p">(</span><span class="nb">false</span><span class="p">);</span>
+    <span class="n">behaviac</span><span class="o">::</span><span class="n">Config</span><span class="o">::</span><span class="n">SetSocketPort</span><span class="p">(</span><span class="mi">8081</span><span class="p">);</span>
+
+    <span class="n">behaviac</span><span class="o">::</span><span class="n">Agent</span><span class="o">::</span><span class="n">Register</span><span class="o">&lt;</span><span class="n">CBTPlayer</span><span class="o">&gt;</span><span class="p">();</span>
+
+    <span class="n">behaviac</span><span class="o">::</span><span class="n">Workspace</span><span class="o">::</span><span class="n">GetInstance</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">SetFilePath</span><span class="p">(</span><span class="s">"../test/demo_running/behaviac/exported"</span><span class="p">);</span>
+    <span class="n">behaviac</span><span class="o">::</span><span class="n">Workspace</span><span class="o">::</span><span class="n">GetInstance</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">SetFileFormat</span><span class="p">(</span><span class="n">ff</span><span class="p">);</span>
+
+    <span class="n">behaviac</span><span class="o">::</span><span class="n">Workspace</span><span class="o">::</span><span class="n">GetInstance</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">ExportMetas</span><span class="p">(</span><span class="s">"../test/demo_running/behaviac/demo_running.xml"</span><span class="p">);</span>
+
+    <span class="c1">//behaviac::Agent::SetIdMask(kIdMask_Wolrd | kIdMask_Opponent);
+</span>    <span class="n">behaviac</span><span class="o">::</span><span class="n">Workspace</span><span class="o">::</span><span class="n">GetInstance</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">SetDeltaFrames</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+
+    <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="n">bool</span> <span class="nf">InitPlayer</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">pszTreeName</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">g_player</span> <span class="o">=</span> <span class="n">behaviac</span><span class="o">::</span><span class="n">Agent</span><span class="o">::</span><span class="n">Create</span><span class="o">&lt;</span><span class="n">CBTPlayer</span><span class="o">&gt;</span><span class="p">();</span>
+
+    <span class="n">bool</span> <span class="n">bRet</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+    <span class="n">bRet</span> <span class="o">=</span> <span class="n">g_player</span><span class="o">-&gt;</span><span class="n">btload</span><span class="p">(</span><span class="n">pszTreeName</span><span class="p">);</span>
+    <span class="n">assert</span><span class="p">(</span><span class="n">bRet</span><span class="p">);</span>
+
+    <span class="n">g_player</span><span class="o">-&gt;</span><span class="n">btsetcurrent</span><span class="p">(</span><span class="n">pszTreeName</span><span class="p">);</span>
+
+    <span class="k">return</span> <span class="n">bRet</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="nf">CleanupPlayer</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="n">behaviac</span><span class="o">::</span><span class="n">Agent</span><span class="o">::</span><span class="n">Destroy</span><span class="p">(</span><span class="n">g_player</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="nf">CleanupBehaviac</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="n">behaviac</span><span class="o">::</span><span class="n">Agent</span><span class="o">::</span><span class="n">UnRegister</span><span class="o">&lt;</span><span class="n">CBTPlayer</span><span class="o">&gt;</span><span class="p">();</span>
+
+<span class="n">    behaviac</span><span class="o">::</span><span class="n">Workspace</span><span class="o">::</span><span class="n">GetInstance</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">Cleanup</span><span class="p">();</span>
+<span class="p">}</span>
+
+</code></pre>
+</div>
+<p>总之，一棵行为树的加载到执行，关键的就是前面提及的三个接口：btload()、btsetcurrent()和btexec()。</p>
+<p>更多细节可以参考behaviac组件C++源码中附带的test/demo_running工程的<a href="https://github.com/Tencent/behaviac/blob/master/test/demo_running/demo_running.cpp">demo_running.cpp</a>文件。</p>
+<p>类似的，对于C#版的运行时端，采用如下代码样例加载使用刚才导出的行为树：</p>
+<figure class="highlight">
+<pre><code class="language-cs" data-lang="cs"><span class="k">public</span> <span class="kt">bool</span> <span class="nf">Init</span> <span class="p">()</span>
+<span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">ms_fileSystem</span> <span class="p">==</span> <span class="k">null</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">ms_fileSystem</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">BehaviacFileManager</span><span class="p">();</span>
+    <span class="p">}</span>
+
+    <span class="c1">//&lt; write log file
+</span>    <span class="n">behaviac</span><span class="p">.</span><span class="n">Config</span><span class="p">.</span><span class="n">IsLogging</span> <span class="p">=</span> <span class="k">true</span><span class="p">;</span>
+    <span class="c1">//behaviac.Config.IsSocketing = false;
+</span>
+    <span class="n">behaviac</span><span class="p">.</span><span class="n">Workspace</span><span class="p">.</span><span class="n">Instance</span><span class="p">.</span><span class="n">FilePath</span> <span class="p">=</span> <span class="k">this</span><span class="p">.</span><span class="n">WorkspaceExportPath</span><span class="p">;</span>
+    <span class="n">behaviac</span><span class="p">.</span><span class="n">Workspace</span><span class="p">.</span><span class="n">Instance</span><span class="p">.</span><span class="n">FileFormat</span> <span class="p">=</span> <span class="n">behaviac</span><span class="p">.</span><span class="n">Workspace</span><span class="p">.</span><span class="n">EFileFormat</span><span class="p">.</span><span class="n">EFF_xml</span><span class="p">;</span>
+
+    <span class="c1">//register names
+</span>    <span class="n">behaviac</span><span class="p">.</span><span class="n">Agent</span><span class="p">.</span><span class="n">RegisterInstanceName</span><span class="p">&lt;</span><span class="n">GameLevelCommon</span><span class="p">&gt;(</span><span class="s">"GameLevel"</span><span class="p">);</span>
+    <span class="n">behaviac</span><span class="p">.</span><span class="n">Workspace</span><span class="p">.</span><span class="n">Instance</span><span class="p">.</span><span class="nf">ExportMetas</span><span class="p">(</span><span class="s">"behaviac/workspace/xmlmeta/BattleCityMeta.xml"</span><span class="p">);</span>
+
+    <span class="n">behaviac</span><span class="p">.</span><span class="n">Debug</span><span class="p">.</span><span class="nf">Log</span><span class="p">(</span><span class="s">"Behaviac meta data export over."</span><span class="p">);</span>
+    <span class="n">behaviac</span><span class="p">.</span><span class="n">Agent</span><span class="p">.</span><span class="nf">SetIdMask</span><span class="p">(</span><span class="m">0xffffffff</span><span class="p">);</span>
+
+    <span class="k">return</span> <span class="k">true</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">public</span> <span class="k">void</span> <span class="nf">Uninit</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="n">behaviac</span><span class="p">.</span><span class="n">Workspace</span><span class="p">.</span><span class="n">Instance</span><span class="p">.</span><span class="nf">Cleanup</span><span class="p">();</span>
+<span class="p">}</span>
+
+<span class="c1">// 加载所需的行为树文件
+</span><span class="k">if</span><span class="p">(</span><span class="n">behaviorTree</span><span class="p">.</span><span class="n">Length</span> <span class="p">&gt;</span> <span class="m">0</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="n">    btloadResult</span> <span class="p">=</span> agent.<span class="nf">btload</span><span class="p">(</span><span class="n">behaviorTree</span><span class="p">,</span> <span class="k">true</span><span class="p">);</span>
+<span class="k">    if</span><span class="p">(</span><span class="n">btloadResult</span><span class="p">)</span>
+        agent.<span class="nf">btsetcurrent</span><span class="p">(</span><span class="n">behaviorTree</span><span class="p">);</span>
+<span class="k">    else</span>
+        <span class="n">Debug</span><span class="p">.</span><span class="nf">LogError</span><span class="p">(</span><span class="s">"Behavior tree data load failed! "</span> <span class="p">+ </span><span class="n">behaviorTree</span><span class="p">);</span>
+<span class="p">}</span></code></pre>
+</figure>
+<p>更多细节可以参考behaviac组件C#源码中附带的integration/BattleCityDemo工程的<a href="https://github.com/Tencent/behaviac/blob/master/integration/BattleCityDemo/Assets/Scripts/BehaviacSystem.cs">BehaviacSystem.cs</a>文件。</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>./../../../../../tutorial4_1_export_xml_bson/feed/index.html</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>运行时端的执行流程</title>
+		<link>./../../../../../tutorial13_updateloop/index.html</link>
+					<comments>./../../../../../tutorial13_updateloop/index.html#comments</comments>
+		
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Fri, 13 May 2016 02:42:05 +0000</pubDate>
+				<category><![CDATA[文章]]></category>
+		<category><![CDATA[unity]]></category>
+		<category><![CDATA[上手]]></category>
+		<category><![CDATA[C++]]></category>
+		<guid isPermaLink="false">./../../../../../index.html?p=306</guid>
+
+					<description><![CDATA[在运行时端（下面以C++版来加以说明，C#版基本类似），整个组建的更新可以通过Workspace::Update()函数来执行，该函数主要包括两大功能： 调用D<a class="moretag" href="./../../../../../tutorial13_updateloop/index.html">Read More...</a>]]></description>
+										<content:encoded><![CDATA[<p id="section">在运行时端（下面以C++版来加以说明，C#版基本类似），整个组建的更新可以通过Workspace::Update()函数来执行，该函数主要包括两大功能：</p>
+<ul>
+<li>调用DebugUpdate()函数来更新一些连调和热加载相关的功能。</li>
+<li>根据m_bExecAgents来判断是否需要执行所有Agent实例的btexec()函数，可以通过接口Workspace::SetIsExecAgents(bool bExecAgents)对m_bExecAgents进行设置。</li>
+</ul>
+<p>具体执行逻辑如下代码所示：</p>
+<div class="highlighter-rouge">
+<pre class="highlight"><code><span class="kt">void</span> <span class="n">Workspace</span><span class="o">::</span><span class="n">DebugUpdate</span><span class="p">()</span>
+<span class="p">{</span>
+<span class="k">    this</span><span class="o">-&gt;</span><span class="n">LogFrames</span><span class="p">();</span>
+<span class="k">    this</span><span class="o">-&gt;</span><span class="n">HandleRequests</span><span class="p">();</span>
+
+<span class="k">    if</span> <span class="p">(</span><span class="k">this</span><span class="o">-&gt;</span><span class="n">GetAutoHotReload</span><span class="p">())</span>
+<span class="p">    {</span>
+<span class="k">        this</span><span class="o">-&gt;</span><span class="n">HotReload</span><span class="p">();</span>
+<span class="p">    }</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="n">Workspace</span><span class="o">::</span><span class="n">Update</span><span class="p">()</span>
+<span class="p">{
+</span><span class="k">    this</span><span class="o">-&gt;</span><span class="n">DebugUpdate</span><span class="p">();</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="k">this</span><span class="o">-&gt;</span><span class="n">m_bExecAgents</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="kt">int</span> <span class="n">contextId</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+
+        <span class="n">Context</span><span class="o">::</span><span class="n">execAgents</span><span class="p">(</span><span class="n">contextId</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+<p>对于C++版，行为树的执行可以调用behaviac::Workspace::GetInstance()-&gt;Update()来执行所有Agent实例的行为树，也可以单独调用Agent的接口btexec()来执行单个实例的行为树。</p>
+<p>其中，Workspace::Update()会遍历所有的Agent实例并依次执行btexec()，但在自己的游戏项目中，可能在一帧中需要对某些Agent多次调用btexec()，而另一些Agent只需调用一次，这时候就需要单独调用Agent::btexec()，而不是统一调用Workspace::Update()。</p>
+<p>Workspace::Update()在调用Agent::btexec()之前，会检查Agent::IsActive()是否为true，如果为false，那么btexec()就不会被调用。</p>
+<p>此外，为了支持连调和热加载，请务必保证在自己游戏的更新函数中调用了DebugUpdate()函数。如果已经调用了behaviac::Workspace::GetInstance()-&gt;Update()，那么就不需要再单独调用DebugUpdate()。</p>
+<p>上述示例代码虽然是C++，但对于C#，也都是同名的。</p>
+<p>特别注意：对于C#版，behaviac.Workspace.IsExecAgents默认设为false。</p>
+<ul>
+<li>如果将behaviac.Workspace.IsExecAgents设为true，使用behaviac.Workspace.Instance.Update()集中进行更新，Agent自己的更新就不需要调用btexec()了。</li>
+<li>如果将behaviac.Workspace.IsExecAgents设为false，则不使用behaviac.Workspace.Instance.Update()集中进行更新，Agent自己的更新就需要调用btexec()了。</li>
+</ul>
+]]></content:encoded>
+					
+					<wfw:commentRss>./../../../../../tutorial13_updateloop/feed/index.html</wfw:commentRss>
+			<slash:comments>3</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>类、结构体或枚举的数组</title>
+		<link>./../../../../../tutorial8_customarray/index.html</link>
+					<comments>./../../../../../tutorial8_customarray/index.html#respond</comments>
+		
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Fri, 13 May 2016 02:34:48 +0000</pubDate>
+				<category><![CDATA[3.5]]></category>
+		<category><![CDATA[扩展]]></category>
+		<category><![CDATA[C++]]></category>
+		<category><![CDATA[运行时]]></category>
+		<guid isPermaLink="false">./../../../../../index.html?p=296</guid>
+
+					<description><![CDATA[对于C#版，类型信息不支持[]类型的数组，只支持List&#60;***&#62;类型的数组。 对于C++版，需要按照如下方式进行注册： 基本类型（bool、int<a class="moretag" href="./../../../../../tutorial8_customarray/index.html">Read More...</a>]]></description>
+										<content:encoded><![CDATA[<p id="section">对于C#版，类型信息不支持[]类型的数组，只支持List&lt;***&gt;类型的数组。</p>
+<p>对于C++版，需要按照如下方式进行注册：</p>
+<p>基本类型（bool、int、float、char、sbyte、ubyte等）的数组可以直接使用，但当使用到其他自定义类型数组的时候，需要添加特殊的宏和代码，否则运行时可能会有错误（如果没有使用到相应的操作，则没有错误）：</p>
+<ul>
+<li>在.h的头文件里添加如下所示的宏，但需放在任意namespace之外：</li>
+</ul>
+<div class="highlighter-rouge">
+<pre class="highlight"><code>
+<span class="n">BEHAVIAC_DECLARE_TYPE_VECTOR_HANDLER</span><span class="p">(</span><span class="n">TNS</span><span class="o">::</span><span class="n">ST</span><span class="o">::</span><span class="n">PER</span><span class="o">::</span><span class="n">WRK</span><span class="o">::</span><span class="n">kEmployee</span><span class="p">);</span>
+
+</code></pre>
+</div>
+<ul>
+<li>在初始化的代码里添加如下所示的注册代码：</li>
+</ul>
+<div class="highlighter-rouge">
+<pre class="highlight"><code>
+<span class="n">behaviac</span><span class="o">::</span><span class="n">TypeRegister</span><span class="o">::</span><span class="n">Register</span><span class="o">&lt;</span><span class="n">TNS</span><span class="o">::</span><span class="n">ST</span><span class="o">::</span><span class="n">PER</span><span class="o">::</span><span class="n">WRK</span><span class="o">::</span><span class="n">kEmployee</span><span class="o">&gt;</span><span class="p">(</span><span class="s">" TNS::ST::PER::WRK::kEmployee"</span><span class="p">);</span>
+
+</code></pre>
+</div>
+<ul>
+<li>在结束代码里添加如下所示的反注册代码：</li>
+</ul>
+<div class="highlighter-rouge">
+<pre class="highlight"><code>
+<span class="n">behaviac</span><span class="o">::</span><span class="n">TypeRegister</span><span class="o">::</span><span class="n">UnRegister</span><span class="o">&lt;</span><span class="n">TNS</span><span class="o">::</span><span class="n">ST</span><span class="o">::</span><span class="n">PER</span><span class="o">::</span><span class="n">WRK</span><span class="o">::</span><span class="n">kEmployee</span><span class="o">&gt;</span><span class="p">(</span><span class="s">" TNS::ST::PER::WRK::kEmployee"</span><span class="p">);</span>
+
+</code></pre>
+</div>
+<p>更多细节可以参考behaviac组件C++源码中附带的<a href="https://github.com/Tencent/behaviac/blob/master/test/btunittest/Agent/UnitTestTypes.h">UnitTestTypes.h</a>文件中的结构体kEmployee。</p>
+<ul>
+<li>Agent及其子类的数组<br />
+当涉及<code class="highlighter-rouge">behaviac::Agent</code>或是其子类的时候，仅支持其指针类型即<code class="highlighter-rouge">behaviac::Agent*</code>或<code class="highlighter-rouge">SubclassAgent*</code>（<code class="highlighter-rouge">SubclassAgent</code>是<code class="highlighter-rouge">behaviac::Agent</code>的一个子类）。<br />
+<code class="highlighter-rouge">behaviac::Agent*</code>或<code class="highlighter-rouge">vector&lt;behaviac::Agent*&gt;</code>类型直接被支持，不需要做什么额外的工作，其任何子类<code class="highlighter-rouge">SubclassAgent*</code>也直接被支持。<br />
+但是需要支持<code class="highlighter-rouge">vector&lt;SubclassAgent*&gt;</code>的时候，则需要在.h文件里添加如下所示的宏，但需放在任意namespace之外：</li>
+</ul>
+<div class="highlighter-rouge">
+<pre class="highlight"><code>
+<span class="n">BEHAVIAC_DECLARE_TYPE_VECTOR_HANDLER</span><span class="p">(</span><span class="n">SubclassAgent</span><span class="o">*</span><span class="p">);</span>
+
+</code></pre>
+</div>
+<p>在初始化和结束的时候分别注册和反注册：</p>
+<div class="highlighter-rouge">
+<pre class="highlight"><code>
+<span class="n">behaviac</span><span class="o">::</span><span class="n">Agent</span><span class="o">::</span><span class="n">Register</span><span class="o">&lt;</span><span class="n">SubclassAgent</span><span class="o">&gt;</span><span class="p">();</span>
+
+<span class="n">behaviac</span><span class="o">::</span><span class="n">Agent</span><span class="o">::</span><span class="n">UnRegister</span><span class="o">&lt;</span><span class="n">SubclassAgent</span><span class="o">&gt;</span><span class="p">();</span>
+
+</code></pre>
+</div>
+<p>更多细节可以参考behaviac组件C++源码中附带的<a href="https://github.com/Tencent/behaviac/blob/master/test/btunittest/Agent/EmployeeParTestAgent.h">EmployeeParTestAgent.h</a>文件中的类EmployeeParTestAgent。</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>./../../../../../tutorial8_customarray/feed/index.html</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>自定义枚举</title>
+		<link>./../../../../../tutorial7_customenum/index.html</link>
+					<comments>./../../../../../tutorial7_customenum/index.html#respond</comments>
+		
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Fri, 13 May 2016 02:34:01 +0000</pubDate>
+				<category><![CDATA[3.5]]></category>
+		<category><![CDATA[扩展]]></category>
+		<category><![CDATA[C++]]></category>
+		<category><![CDATA[运行时]]></category>
+		<guid isPermaLink="false">./../../../../../index.html?p=294</guid>
+
+					<description><![CDATA[类似于自定义类，在.h文件中，任意编写一个自定义枚举类型，然后通过宏DECLARE_BEHAVIAC_ENUM声明该枚举类型。需要注意的是，宏DECLARE_B<a class="moretag" href="./../../../../../tutorial7_customenum/index.html">Read More...</a>]]></description>
+										<content:encoded><![CDATA[<ul>
+<li>类似于自定义类，在.h文件中，任意编写一个自定义枚举类型，然后通过宏DECLARE_BEHAVIAC_ENUM声明该枚举类型。需要注意的是，宏DECLARE_BEHAVIAC_ENUM必须定义在全局的namespace里，即放在任何命名空间之外。<br />
+如下代码样例所示：</li>
+</ul>
+<div class="highlighter-rouge">
+<pre class="highlight"><code><span class="k">namespace</span> <span class="n">TNS</span>
+<span class="p">{
+</span><span class="k">    namespace</span> <span class="n">NE</span>
+<span class="p">    {</span>
+<span class="k">        namespace</span> <span class="n">NAT</span>
+	<span class="p">{</span>
+            <span class="k">enum</span> <span class="n">eColor</span>
+	    <span class="p">{</span>
+	        <span class="n">RED</span><span class="p">,</span>
+                <span class="n">GREEN</span><span class="p">,</span>
+                <span class="n">BLUE</span><span class="p">,</span>
+                <span class="n">YELLOW</span><span class="p">,</span>
+                <span class="n">WHITE</span><span class="p">,</span>
+	    <span class="p">};</span>
+	<span class="p">}</span>
+<span class="p">    }</span>
+<span class="p">}</span>
+
+<span class="n">DECLARE_BEHAVIAC_ENUM</span><span class="p">(</span><span class="n">TNS</span><span class="o">::</span><span class="n">NE</span><span class="o">::</span><span class="n">NAT</span><span class="o">::</span><span class="n">eColor</span><span class="p">,</span> <span class="n">eColor</span><span class="p">);</span>
+</code></pre>
+</div>
+<ul>
+<li>在.cpp文件中，通过一系列宏注册该枚举自身的描述及其枚举值：
+<ul>
+<li>宏BEGIN_ENUM_DESCRIPTION和END_ENUM_DESCRIPTION表示枚举信息注册的开始和结束。</li>
+<li>可选的宏ENUMCLASS_DISPLAY_INFO用于注册枚举自身的显示名和描述。</li>
+<li>宏DEFINE_ENUM_VALUE用于注册枚举的值，可以通过.DISPLAYNAME的追加方式为值添加显示名，通过.DESC的追加方式为值添加描述。<br />
+如下代码样例所示：</li>
+</ul>
+</li>
+</ul>
+<div class="highlighter-rouge">
+<pre class="highlight"><code><span class="n">BEGIN_ENUM_DESCRIPTION</span><span class="p">(</span><span class="n">TNS</span><span class="o">::</span><span class="n">NE</span><span class="o">::</span><span class="n">NAT</span><span class="o">::</span><span class="n">eColor</span><span class="p">,</span> <span class="n">eColor</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">ENUMCLASS_DISPLAY_INFO</span><span class="p">(</span><span class="s">L"色彩枚举"</span><span class="p">,</span> <span class="s">L"eColor是用于测试枚举使用的类型"</span><span class="p">);</span>
+
+    <span class="n">DEFINE_ENUM_VALUE</span><span class="p">(</span><span class="n">TNS</span><span class="o">::</span><span class="n">NE</span><span class="o">::</span><span class="n">NAT</span><span class="o">::</span><span class="n">RED</span><span class="p">,</span> <span class="s">"RED"</span><span class="p">).</span><span class="n">DISPLAY_INFO</span><span class="p">(</span><span class="s">L"红色"</span><span class="p">,</span> <span class="s">L"激进"</span><span class="p">);</span>
+    <span class="n">DEFINE_ENUM_VALUE</span><span class="p">(</span><span class="n">TNS</span><span class="o">::</span><span class="n">NE</span><span class="o">::</span><span class="n">NAT</span><span class="o">::</span><span class="n">GREEN</span><span class="p">,</span> <span class="s">"GREEN"</span><span class="p">);</span>
+    <span class="n">DEFINE_ENUM_VALUE</span><span class="p">(</span><span class="n">TNS</span><span class="o">::</span><span class="n">NE</span><span class="o">::</span><span class="n">NAT</span><span class="o">::</span><span class="n">BLUE</span><span class="p">,</span> <span class="s">"BLUE"</span><span class="p">);</span>
+    <span class="n">DEFINE_ENUM_VALUE</span><span class="p">(</span><span class="n">TNS</span><span class="o">::</span><span class="n">NE</span><span class="o">::</span><span class="n">NAT</span><span class="o">::</span><span class="n">YELLOW</span><span class="p">,</span> <span class="s">"YELLOW"</span><span class="p">);</span>
+    <span class="n">DEFINE_ENUM_VALUE</span><span class="p">(</span><span class="n">TNS</span><span class="o">::</span><span class="n">NE</span><span class="o">::</span><span class="n">NAT</span><span class="o">::</span><span class="n">WHITE</span><span class="p">,</span> <span class="s">"WHITE"</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="n">END_ENUM_DESCRIPTION</span><span class="p">()</span>
+</code></pre>
+</div>
+<ul>
+<li>在初始化注册（Register）的部分需要加上如下的代码，反注册（UnRegister）的部分添加相应UnRegister的代码。注意这部分Register/UnRegister的代码不是必须的，如果该类型没有用作par或者没有用作条件比较，就可以不需要。</li>
+</ul>
+<div class="highlighter-rouge">
+<pre class="highlight"><code><span class="n">behaviac</span><span class="o">::</span><span class="n">TypeRegister</span><span class="o">::</span><span class="n">Register</span><span class="o">&lt;</span> <span class="n">TNS</span><span class="o">::</span><span class="n">EnumTest</span> <span class="o">&gt;</span><span class="p">(</span><span class="s">" TNS::EnumTest "</span><span class="p">);</span>
+
+<span class="n">behaviac</span><span class="o">::</span><span class="n">TypeRegister</span><span class="o">::</span><span class="n">UnRegister</span><span class="o">&lt;</span> <span class="n">TNS</span><span class="o">::</span><span class="n">EnumTest</span> <span class="o">&gt;</span><span class="p">(</span><span class="s">" TNS::EnumTest "</span><span class="p">);</span>
+</code></pre>
+</div>
+<p>更多细节可以参考behaviac组件C++源码库中btunittest工程的<a href="#?https://github.com/Tencent/behaviac/blob/master/test/btunittest/Agent/UnitTestTypes.h">UnitTestTypes.h</a>文件中eColor结构体相关的代码。</p>
+<hr />
+<p><!--StartFragment --></p>
+<div>声明的类型只用被使用过才会导出。所谓使用过是指：</div>
+<div>1. 作为某Agent的成员</div>
+<div>2. 作为某Agent成员函数的参数或返回值</div>
+<div></div>
+<div>如果只是声明了，但是没有被使用过，则不会被导出。</div>
+]]></content:encoded>
+					
+					<wfw:commentRss>./../../../../../tutorial7_customenum/feed/index.html</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>使用cmake构建C++版运行时库</title>
+		<link>./../../../../../build/index.html</link>
+					<comments>./../../../../../build/index.html#comments</comments>
+		
+		<dc:creator><![CDATA[jonygli]]></dc:creator>
+		<pubDate>Mon, 11 Apr 2016 09:55:36 +0000</pubDate>
+				<category><![CDATA[文章]]></category>
+		<category><![CDATA[上手]]></category>
+		<category><![CDATA[C++]]></category>
+		<category><![CDATA[编译构建]]></category>
+		<guid isPermaLink="false">./../../../../../index.html?p=156</guid>
+
+					<description><![CDATA[请首先到./../../../downloads/下载或克隆源码。/index.html 缺省的，我们使用cmake来生成对应平台<a class="moretag" href="./../../../../../build/index.html">Read More...</a>]]></description>
+										<content:encoded><![CDATA[<p>请首先到<a href="./../../../downloads/index.html#https://github.com/Tencent/behaviac">./../../../downloads/index.html</a>下载或克隆源码。</p>
+<p id="cpp">缺省的，我们使用<a href="https://cmake.org/download/">cmake</a>来生成对应平台的项目文件（sln或make文件等）。</p>
+<p>但cmake不是必须的，也可以选择自己喜欢的方式创建自己的项目文件。比如，使用premake等来生成项目文件，或者手工创建。</p>
+<h3></h3>
+<h3 id="windows"><span class="ez-toc-section" id="Windows">Windows平台</span></h3>
+<ul>
+<li>下载并安装<a href="https://cmake.org/download/">cmake</a>，请使用3.3以上版本</li>
+<li>cmake的路径需要添加到环境变量PATH</li>
+<li>运行build目录下的cmake_generate_projects.bat生成项目文件</li>
+<li>如果需要build android版本
+<ul>
+<li>需要安装vs2015</li>
+<li>使用android_vs2015子目录下的项目文件</li>
+<li>或者使用cmake生成项目文件
+<ul>
+<li>下载并安装<a href="https://github.com/Microsoft/CMake/releases">cmake android</a>, 直接覆盖上面步骤安装的cmake就好。</li>
+<li>运行build目录下的cmake_generate_projects_android.bat生成项目文件</li>
+<li>如果想使用mk，可以修改生成的linux下的make文件</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="section"><span class="ez-toc-section" id="i">其他平台</span></h3>
+<ul>
+<li>下载并安装<a href="https://cmake.org/">cmake</a>，请使用3.3以上版本</li>
+<li>如果可能，请保证4.4.6以上版本的gcc
+<ul>
+<li>使用版本为4.4.6的gcc可以顺利编译，但4.1.2的gcc有错误（未测试低于4.4.6的版本）</li>
+</ul>
+</li>
+<li>运行build目录下的cmake_generate_projects.sh生成项目文件
+<ul>
+<li>mac上，运行build目录下的cmake_generate_projects_mac.sh生成项目文件</li>
+</ul>
+</li>
+</ul>
+<h3 id="section-1"><span class="ez-toc-section" id="i-2">注意</span></h3>
+<ol>
+<li>cmake_generate*.bat里使用的是vs2013和vs2015，用户可以根据自己的需要选择相应的编译器，比如vs2008、vs2010等，或者通过cmakegui进行选择。</li>
+<li>CMakeLists.txt里提供的是缺省设置，可以根据自己的需要直接修改或通过cmakegui来选择配置。特别的，CMakeLists.txt里有若干个选项可以配置。<br />
+<img src="./../../../../../img/concepts/cmake_config.png" alt="cmake_config" /></p>
+<ul>
+<li>BEHAVIAC_VERSION_MODE用来控制BEHAVIAC_RELEASE是否定义。BEHAVIAC_RELEASE的用途请参考文章《<a href="./../../../../../docs/zh/articles/tutorial10_performence/index.html">优化及性能</a>》。
+<ul>
+<li>Default：缺省模式是Debug下BEHAVIAC_RELEASE没有定义，而Release下BEHAVIAC_RELEASE有定义</li>
+<li>ForceUseDev：强制不定义BEHAVIAC_RELEASE</li>
+<li>ForceUseRelease：强制定义BEHAVIAC_RELEASE
+<ul>
+<li>在ForceUseRelease的时候，Release下，生成的项目文件会试图打开LTO开关，请参考文档《<a href="./../../../../../docs/zh/articles/code_size/index.html">Cpp生成代码大小的说明</a>》</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>CMAKE_BUILD_TYPE用来控制生成Debug还是Release（Visual Studio的时候不需要指定CMAKE_BUILD_TYPE）</li>
+<li>BUILD_SHARED_LIBS用来控制libbehaviac是stati lib/a还是dynamid dll/so</li>
+<li>BUILD_USE_64BITS用来控制是否生成64位 （使用Visual Studio时，需要指定带Win64的generator，请参考cmake的文档）</li>
+<li>根据上面的配置，CMake生成下面的_config.h文件，用来自动定义宏BEHAVIAC_RELEASE，如下图所示：<img class="aligncenter size-full wp-image-1650" src="./../../../../../wp-content/uploads/2016/04/config.png" alt="" width="874" height="286" srcset="./../../../../../wp-content/uploads/2016/04/config.png 874w, ./../../../../../wp-content/uploads/2016/04/config-300x98.png 300w, ./../../../../../wp-content/uploads/2016/04/config-768x251.png 768w" sizes="(max-width: 874px) 100vw, 874px" /></li>
+<li>在另一个文件config.h中，会根据_DEBUG或DEBUG宏来尝试重新定义宏BEHAVIAC_RELEASE，如果在_config.h中宏BEHAVIAC_RELEASE并没有定义，如下图所示：<img class="aligncenter size-full wp-image-1651" src="./../../../../../wp-content/uploads/2016/04/config-1.png" alt="" width="855" height="372" srcset="./../../../../../wp-content/uploads/2016/04/config-1.png 855w, ./../../../../../wp-content/uploads/2016/04/config-1-300x131.png 300w, ./../../../../../wp-content/uploads/2016/04/config-1-768x334.png 768w" sizes="(max-width: 855px) 100vw, 855px" /></li>
+</ul>
+</li>
+<li>cmake不是必须的
+<ul>
+<li>你可以选择自己喜欢的其他类似工具，比如premake等来生成项目文件。</li>
+<li>或者，你可以手工创建项目文件。</li>
+<li>又或者，可以直接把src和inc加到你已有的项目文件。</li>
+<li>当你自行修改或创建项目文件的时候，可能需要参考CMakeLists.txt查看需要的设置：
+<ul>
+<li>include_directories包含目录，你需要设置正确的包含目录</li>
+<li>add_definitions编译宏，比如_DEBUG</li>
+<li>add_target_definitions编译宏，比如BEHAVIACDLL_EXPORTS，BEHAVIAC_DLL</li>
+<li>CMAKE_CXX_FLAGS编译开关</li>
+<li>BUILD_SHARED_LIBS是否动态库还是静态库</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>build\android_vs2015是提供的缺省的使用Visual Studio 2015来生成android项目的项目工程，支持64位。</li>
+<li>可以使用cmakegui选择设置，或者在cmake的命令行里指定设置（ -DCMAKE_BUILD_TYPE=Debug -DBUILD_USE_64BITS=ON等）。请参考<a href="https://github.com/Tencent/behaviac/blob/master/build/cmake_generate_projects.bat">build/cmake_generate_projects.bat</a>或者cmake文档。</li>
+</ol>
+<h3 id="section-2"><span class="ez-toc-section" id="i-3">构建</span></h3>
+<ul>
+<li>无论Windows平台还是其他平台，项目文件都生成到目录cmake_binary</li>
+<li>项目文件生成到目录cmake_binary，根据选用的编译工具（vs2013、make等）打开相应目录的项目文件或运行make等进行构建</li>
+<li>.a、.lib、.dll、.exe等被生成到根目录的lib目录和bin目录</li>
+<li>生成的项目配置(mvsc, linxu, xcode)包含了Debug和Release，请根据需要构建Debug或Release版本</li>
+</ul>
+<h2 id="unity"></h2>
+]]></content:encoded>
+					
+					<wfw:commentRss>./../../../../../build/feed/index.html</wfw:commentRss>
+			<slash:comments>6</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

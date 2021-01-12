@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	《behaviac概述》的评论	</title>
+	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
+	<link>./../index.html</link>
+	<description>Tencent behaviac, Game AI, Behavior Tree, Finite State Machine, Hierarchical Task Network, BT FSM HTN, 腾讯开源, 游戏AI, 行为树,有限状态机,分层任务网络</description>
+	<lastBuildDate>Thu, 16 Feb 2017 08:47:56 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.4.1</generator>
+	<item>
+		<title>
+		作者：admin		</title>
+		<link>./../index.html#comment-351</link>
+
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Thu, 16 Feb 2017 08:47:56 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=166#comment-351</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;./../index.html#comment-350&quot;&gt;曹海涛&lt;/a&gt;.
+
+behaviac是游戏AI的开发框架组件。开发者在我们的behaviac上可以创建和使用行为树，同样可以创建和使用fsm和htn。behaviac更支持他们之间互相调用，比如行为树中调用状态机，状态机的也同样可以调用某个行为树。虽然behaviac支持行为树，有限状态机和HTN，但不是他们简单的结合。]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="./../index.html#comment-350">曹海涛</a>.</p>
+<p>behaviac是游戏AI的开发框架组件。开发者在我们的behaviac上可以创建和使用行为树，同样可以创建和使用fsm和htn。behaviac更支持他们之间互相调用，比如行为树中调用状态机，状态机的也同样可以调用某个行为树。虽然behaviac支持行为树，有限状态机和HTN，但不是他们简单的结合。</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		作者：曹海涛		</title>
+		<link>./../index.html#comment-350</link>
+
+		<dc:creator><![CDATA[曹海涛]]></dc:creator>
+		<pubDate>Thu, 16 Feb 2017 08:37:40 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=166#comment-350</guid>
+
+					<description><![CDATA[behaviac是行为树与有限状态机的结合吗？]]></description>
+			<content:encoded><![CDATA[<p>behaviac是行为树与有限状态机的结合吗？</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>behaviac</title>
+	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
+	<link>./../../../index.html</link>
+	<description>Tencent behaviac, Game AI, Behavior Tree, Finite State Machine, Hierarchical Task Network, BT FSM HTN, 腾讯开源, 游戏AI, 行为树,有限状态机,分层任务网络</description>
+	<lastBuildDate>Sat, 12 Nov 2016 03:11:48 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.4.1</generator>
+
+<image>
+	<url>./../../../wp-content/uploads/2016/04/cropped-256x256-32x32.png</url>
+	<title>behaviac</title>
+	<link>./../../../index.html</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>behaviac overview</title>
+		<link>./../../../overview-2/index.html</link>
+					<comments>./../../../overview-2/index.html#comments</comments>
+		
+		<dc:creator><![CDATA[jonygli]]></dc:creator>
+		<pubDate>Fri, 13 May 2016 08:28:14 +0000</pubDate>
+				<category><![CDATA[refrence]]></category>
+		<category><![CDATA[behaviac]]></category>
+		<guid isPermaLink="false">./../../../index.html?p=320</guid>
+
+					<description><![CDATA[Overview behaviac is an AI development framework for games. Also, it is a rapid designing tool for developing game prototypes. It supports behavior tree, finite state machine, hierarchical task network, etc. It is easy to edit and debug. It supports all platforms and is applicable to both the client and the server. It helps to speed up the Iterative development. Currently it is being used by many projects within Tencent. It is also open source on famous domestic and foreign<a class="moretag" href="./../../../overview-2/index.html">Read More...</a>]]></description>
+										<content:encoded><![CDATA[<h2 id="overview"><span class="ez-toc-section" id="Overview">Overview</span></h2>
+<ul>
+<li>behaviac is an AI development framework for games. Also, it is a rapid designing tool for developing game prototypes.</li>
+<li>It supports behavior tree, finite state machine, hierarchical task network, etc. It is easy to edit and debug.</li>
+<li>It supports all platforms and is applicable to both the client and the server. It helps to speed up the Iterative development.</li>
+<li>Currently it is being used by many projects within Tencent. It is also open source on famous domestic and foreign websites like GitHub and CSDN.</li>
+<li>It supports both C++ and C# and has native support of C# for Unity Engine. It supports all main stream platforms, including Windows, Linux, Android, iOS, etc.</li>
+<li>It has powerful function, great extensibility, and plentiful documents. Also, it supports both Chinese and English UI.</li>
+<li>This component can be used in (but not limited) to in-game logic, character’s AI, control of rendering, etc.</li>
+<li>All source code, both the designer and runtime are open source and they can be accessed by <a href="#?https://github.com/Tencent/behaviac">github</a></li>
+</ul>
+<h3 id="features-and-user-value"><span class="ez-toc-section" id="Features_and_User_Value">Features and User Value</span></h3>
+<ul>
+<li>The interaction between Designer and C++/C# when running is based on Meta. It can utilize program codes sufficiently. Also it provides GUI for high-level logic.</li>
+<li>Users can create and edit Meta in Designer. It is convenient for game designers to implement prototypes in advance.</li>
+<li>It supports exporting files in different file formats such as XML, BSON, C++, C#, etc. It provides high efficiency for loading and executing. Also it uses Hot-loading to boost the efficiency of the development.</li>
+<li>Designer is fully functioned. It supports Prefab, Undo/Redo, Sub tree, Event, etc.</li>
+<li>The types of data and types of nodes that it supported can be easily expanded.</li>
+<li>It supports real-time debugging and offline debugging. It shows logic graphically and make debugging convenient.</li>
+<li>These are use cases that are supported but not limited to (not just for AI):
+<ul>
+<li>Character AI</li>
+<li>Squad Logic</li>
+<li>Strategy AI</li>
+<li>In-Game Tutor</li>
+<li>Animation Control</li>
+<li>Player Avatars</li>
+</ul>
+</li>
+</ul>
+<h3 id="project-link"><span class="ez-toc-section" id="Project_Link">Project Link</span></h3>
+<p>You can get more information from<a href="#?https://github.com/Tencent/behaviac">github.com</a>.<br />
+and you can ask questions for anwsers at <a href="http://bbs.behaviac.com/">http://bbs.behaviac.com/</a></p>
+<h2 id="background"><span class="ez-toc-section" id="Background">Background</span></h2>
+<p>One goal of the video game’s AI is to find a plan of logic development that is easy and expandable. Highly used technologies include FSM, HFSM, GOAP, HTN, etc.<br />
+One goal of the video game’s AI is to find a plan of logic development that is easy and expandable. Highly used technologies include FSM, HFSM, GOAP, HTN, etc.<br />
+Behavior Tree is the next generation AI technology. Its original concept is brought up a decade ago. Triple A titles like Halo, Spore and Crysis all used Behavior Tree. Currently, many well-known game engines have integrated or provided their own Behavior Tree component, for example: Unreal engine, Unity engine, etc.</p>
+<h3 id="finite-state-machine"><span class="ez-toc-section" id="Finite_State_Machine">Finite State Machine</span></h3>
+<p>Many programmers are familiar with Finite State Machine. State machine technology has become mature and popular among video game developments. It reflects the change of input from the start of the system to the current.</p>
+<ul>
+<li>Action：It means the description of the event that is underway at a given time.</li>
+<li>State： It means the object’s certain state. At the current state, it may have different behaviors and properties</li>
+<li>Transition： It means the change of state. Also, it has to satisfy the conditions that ensure the transition would happen to execute.</li>
+<li>State Machine：A State Machine is a manager that controls object’s state. An object’s state would not change without a reason; it changes when certain Event is triggered.</li>
+</ul>
+<p>Different states may decide an object’s different properties and behaviors. .<br />
+The following picture shows finite state machine that maintains a graph. All nodes in the graph are states. A line between nodes is state transition that is according to the execution of certain rules between states. Logic in any nodes can be described as:</p>
+<ul>
+<li>If satisfy condition 1 then jump to state 1;</li>
+<li>If satisfy condition 2 then jump to state 2;</li>
+<li>….;</li>
+<li>Or else don’t jump and keep the current state.</li>
+</ul>
+<p><img src="./../../../img/overview/fsm.png" alt="" /></p>
+<p>The finite state machine has advantages. For some simple AI, it is more convenient to use state machine. But when it comes to some complex AI, the logic would be complicated and overloaded. Also, when there is a need to expand the current behavior logic, coding would be difficult. Because the number of states that are required to be maintained increases manifold.</p>
+<h3 id="behavior-tree"><span class="ez-toc-section" id="Behavior_Tree">Behavior Tree</span></h3>
+<p>Behavior Tree makes the process of achieving AI requiring more skill. Framework designers comprehensively consider all possible situations and make every situation a type of abstract node. What game developers need to do is to connect all the nodes according to the rules to make a Behavior Tree that is required. Hence, the Behavior Tree would have more object-oriented properties.</p>
+<h4 id="basic-concept"><span class="ez-toc-section" id="Basic_concept">Basic concept</span></h4>
+<p>On the concept, Behavior Tree is a script that is showed to users in the form of a tree. <strong>The execution result of a node is managed by its parent node to decide what to do next.</strong> Since there is no more transition between nodes, they wouldn’t be called state, nodes are only behaviors.</p>
+<p><img src="./../../../img/overview/bt.png" alt="" /></p>
+<p>Leaf nodes and branch nodes can mainly be split into five categories: action, condition, composite, decorator and attachment. Action and condition nodes are Leaf nodes, composite and decorator nodes are branch nodes. The attachment must attach to the other four types of nodes and cannot be existed independently.</p>
+<p><strong>Every node must provide its return value to its parent node after the execution ends. Return values of nodes include Success, Failure and Running</strong>. Basic behaviors (Leaf nodes) may execute successfully or failed to execute. The execution result of the high level behavior (branch note) is depended on its child node’s execution result. The failure of one child node’s execution may lead its parent node to select other child nodes.</p>
+<h4 id="commonly-used-nodes-in-behavior-tree"><span class="ez-toc-section" id="Commonly_used_nodes_in_Behavior_Tree">Commonly used nodes in Behavior Tree</span></h4>
+<ul>
+<li>Action node: It belongs to Leaf node. It is used to describe an action that is executed.</li>
+<li>Condition node: It belongs to Leaf node. It is used to describe whether a condition can hold.</li>
+<li>Selector node: It belongs to Composite node. It is used to execute child nodes in order. If one of its child node return successfully, then the whole branch would return successfully. Otherwise the whole branch would fail to return. It is similar to OR logic in programming.</li>
+<li>Sequence node: It belongs to Composite node. It is used to execute child nodes in order. If one of its child nodes fails to return, then the whole branch would fail to return. Otherwise the whole branch would return successfully. It is similar to AND logic in programming.</li>
+</ul>
+<h4 id="the-execution-of-a-behavior-tree"><span class="ez-toc-section" id="The_execution_of_a_Behavior_Tree">The execution of a Behavior Tree</span></h4>
+<p>The execution of a Behavior Tree is driven by cyclical updates of frames. Not every frame needs to be updated, but it requires to be executed periodically. The execution of Behavior Tree is similar to the concept of Coroutine, a running behavior tree continues its execution in the next update. The next execution of an ended Behavior Tree that returned either successfully or failed would start from the root node.</p>
+<p>A Behavior Tree needs to configure an Agent type at first. An Agent is an AI character in the game. All of the nodes in this Behavior Tree (mainly Leaf nodes) can select agent’s properties, methods and other properties to configure. Information like Agent type, property and method are called Meta.</p>
+<h4 id="advantages-of-behavior-tree"><span class="ez-toc-section" id="Advantages_of_Behavior_Tree">Advantages of Behavior Tree</span></h4>
+<ul>
+<li>The separation of behavior logic and status data. Any nodes can be used repeatedly.</li>
+<li>High re-usability can combine different nodes to achieve different Behavior Trees.</li>
+<li>Linear layout, easy to expand.</li>
+<li>Can configure, game designers can handle the work.</li>
+</ul>
+<h2 id="behaviac-overview"><span class="ez-toc-section" id="behaviac_Overview">behaviac Overview</span></h2>
+<p>behaviac includes designer and runtime: Designer is used for editing Behavior Tree and Runtime library is used for explaining and executing Behavior Tree. Runtime library has to be integrated to users’ own game projects.<br />
+Designer interacts with runtime through Meta.</p>
+<p><img src="./../../../img/overview/meta.png" alt="" /></p>
+<h3 id="meta"><span class="ez-toc-section" id="Meta">Meta</span></h3>
+<p>Meta is the core of behaviac, it contains information of Agent type, property, method, etc. Agent is in charge of executions of Behavior Trees in games. Every Agent contains its data or the action to execute itself; this data is called Property and this action is called Method. Meta is the description of an Agent. It contains its property and method.</p>
+<p>Runtime library produces a XML file that describes agent’s Meta. Runtime library can export Meta and provide Meta to the Designer. The Designer can also edit and export Meta to Runtime library.</p>
+<h4 id="c-meta"><span class="ez-toc-section" id="C_Meta">C++ Meta<code> </code></span></h4>
+<pre class="brush: cpp; title: ; notranslate">
+
+BEGIN_PROPERTIES_DESCRIPTION(AgentNodeTest)
+{
+//CLASS_DISPLAYNAME(L&quot;测试behaviac::Agent&quot;)
+//CLASS_DESC(L&quot;测试behaviac::Agent的说明&quot;)
+REGISTER_PROPERTY(testVar_0);
+REGISTER_PROPERTY(testVar_1).DISPLAYNAME(L&quot;testVar_1&quot;).DESC(L&quot;testVar_1 property&quot;).RANGE(100);
+REGISTER_PROPERTY(testVar_2);
+REGISTER_PROPERTY(testVar_3);
+REGISTER_PROPERTY(waiting_timeout_interval);
+REGISTER_PROPERTY(testVar_str_0);
+
+REGISTER_METHOD(setEventVarInt);
+REGISTER_METHOD(setEventVarBool);
+REGISTER_METHOD(setEventVarFloat);
+REGISTER_METHOD(setEventVarAgent);
+REGISTER_METHOD(getConstOne);
+REGISTER_METHOD(setTestVar_0);
+REGISTER_METHOD(setTestVar_1);
+REGISTER_METHOD(setTestVar_2);
+REGISTER_METHOD(setTestVar_0_2);
+REGISTER_METHOD(setTestVar_R);
+REGISTER_METHOD(setTestVar_3);
+REGISTER_METHOD(enter_action_0);
+REGISTER_METHOD(exit_action_0);
+REGISTER_METHOD(enter_action_1);
+REGISTER_METHOD(exit_action_1);
+REGISTER_METHOD(enter_action_2);
+REGISTER_METHOD(exit_action_2);
+REGISTER_METHOD(createGameObject);
+REGISTER_METHOD(testGameObject);
+REGISTER_METHOD(createExtendedNode);
+REGISTER_METHOD(testExtendedRefType);
+REGISTER_METHOD(testExtendedStruct);
+REGISTER_METHOD(switchRef);
+
+REGISTER_METHOD(CanSeeEnemy);
+REGISTER_METHOD(Move);
+REGISTER_METHOD(MoveToTarget);
+}
+END_PROPERTIES_DESCRIPTION()
+
+</pre>
+<div class="highlighter-rouge"></div>
+<h4 id="c-meta-1"><span class="ez-toc-section" id="C_Meta-2">C# Meta</span></h4>
+<pre class="brush: csharp; title: ; notranslate">
+[behaviac.TypeMetaInfo()]
+ public class AgentNodeTest : behaviac.Agent
+ {
+ [behaviac.MemberMetaInfo()]
+ public int testVar_0 = -1;
+
+[behaviac.MemberMetaInfo(&quot;testVar_1&quot;, &quot;testVar_1 property&quot;, 100)]
+ public int testVar_1 = -1;
+
+[behaviac.MemberMetaInfo()]
+ public float testVar_2 = -1.0f;
+
+[behaviac.MemberMetaInfo()]
+ public float testVar_3 = -1.0f;
+
+[behaviac.MemberMetaInfo()]
+ public int waiting_timeout_interval = 0;
+
+[behaviac.MemberMetaInfo()]
+ public string testVar_str_0 = string.Empty;
+
+[behaviac.MemberMetaInfo()]
+public string testVar_str_1 = string.Empty;
+public bool m_bCanSee = false;
+
+public int event_test_var_int = -1;
+ public bool event_test_var_bool = false;
+ public float event_test_var_float = -1.0f;
+ public AgentNodeTest event_test_var_agent = null;
+ }</pre>
+<p>One of the traits of behaviac is to create and edit Meta in the Designer. Game designers can edit Behavior Trees and Meta. In the early stage of a project, before programmers write codes, game designers can manually create some Meta like Agent types, properties and methods. This can boost the creation of the game prototype. Game designers can edit a game’s prototype without waiting for programmers.</p>
+<p>The picture below shows by opening the Meta browser that is in the Designer, users can view or create Agent type. After selecting one Agent type, users can view its information such as property, methods and expand Agent type’s members’ properties, methods, etc.</p>
+<p><img src="./../../../img/overview/metabrowser.png" alt="" /></p>
+<h3 id="data-type"><span class="ez-toc-section" id="Data_Type">Data Type</span></h3>
+<p>Data Type is divided into Agent, Enumeration：Enumeration and Structure.</p>
+<ul>
+<li>Agent：It is the basic composed element of a Behavior Tree. In the Meta browser, we can view all the Agent types that are exported and created. These Agent types include variables and methods. We can add agent subclasses in the Meta browser; add properties and methods to its members. But we need to write required logic code to achieve methods.</li>
+<li>Enumeration：Enumeration types that are used on the game end will be exported in the Meta files. In the Meta browser we can add enumeration types, export and generate C++ or C# source code. Then add the source code into the game end code.</li>
+<li>Structure：Structures that are used on the game end will be exported in the Meta files. In the Meta browser we can add structure types. But we can only add member property, cannot add member method. Can also exported and generate C++ or C# source code to add them into the game end code.</li>
+</ul>
+<p>The pictures below shows, when build a new Behavior Tree, firstly we select an Agent type for the root node to identify the kind of Agent that the new Behavior Tree uses. All of this Behavior Tree’s Leaf nodes can use this Agent type’s property and method.</p>
+<p><img src="./../../../img/articles/agenttype_selector.png" alt="" /><br />
+<img src="./../../../img/overview/agenttype.png" alt="" /></p>
+<h3 id="instance"><span class="ez-toc-section" id="Instance">Instance</span></h3>
+<p>It is mentioned in the previous paragraphs that we need to set an Agent type for a new Behavior Tree, so its Leaf nodes can use this Agent type’s property and method. This is called use Self’s property and method.</p>
+<p>The picture below shows, some node’s parameter may use property and method that don’t belong to self. In this situation we need to select Instance then select the Agent type’s property and method that belong to the Instance.</p>
+<p>All Agent type’s instances in the Runtime end are required to pass register and be exported to Meta files. So the Designer can get the instance list and list all the instances for users to choose. Please refer to the user manual for the register method.</p>
+<p><img src="./../../../img/overview/properties.png" alt="" /></p>
+<h3 id="variable"><span class="ez-toc-section" id="Variable">Variable</span></h3>
+<p>Variable is divided into Field, Property, Custom-built Property and Partial Variable</p>
+<ul>
+<li>Member Field：The type of field in object-oriented programming (C++/C#).</li>
+<li>Member Property：The type of property in C#. Contains getter and setter.</li>
+<li>Custom Property：Mainly are member properties that are newly built for Agent property in Designer.</li>
+<li>Local Variable：Local Variable is a variable that is limited to one specific behavior tree</li>
+</ul>
+<p>behaviac supports Read-only variables. So the Variable can only be read in the Designer. Local variable does not only support basic data type like int, float, bool, but it also supports complicated pointer type or reference type.</p>
+<h3 id="method"><span class="ez-toc-section" id="Method">Method</span></h3>
+<p>Method includes Member Method, Customer Method, Task, etc.</p>
+<ul>
+<li>Member Method：Type of member method in object-oriented programming.</li>
+<li>Customer Method：Method that is created in the Designer. However, custom method is only created in the designer to use as a place holder. Trees using Custom Method can’t be exported.</li>
+<li>Task：It is used to describe interfaces (include interface names and parameter lists) that are required by a sub tree. It is similar to the definition of Method. Will combine the definition of the sub tree to introduce Task more in the later paragraphs.</li>
+</ul>
+<p>In the Designer users can edit Behavior Trees according to Meta that is exported and created. Picture below shows that user can select or set every node’s property, method and parameters according to needs of a Behavior Tree’.</p>
+<p><img src="./../../../img/overview/action.png" alt="" /></p>
+<h2 id="workplace"><span class="ez-toc-section" id="Workspace">Workspace</span></h2>
+<p>To begin to use behaviac, at first users need to create a Workspace in the Designer.<br />
+Files in Workspace have .workspace.xml as their extension names. They are in charge of managing the configure file of all Behavior Trees in game projects.</p>
+<p><img src="./../../../img/overview/workspace.png" alt="" /></p>
+<p>This configuration file can point XML Meta file, Behavior Tree file’s path, the path for exported files. User can edit related setting through ‘Create Workspace’ or ‘Edit Workspace’ in the Designer.</p>
+<p><img src="./../../../img/overview/editworkspace.png" alt="" /></p>
+<p>The differences between a Behavior Tree’s source file and exported file are a Behavior Tree’s source file is the original source file (XML format) that is used and edited by game designers in the Designer. It includes some extra information like properties that UI requires. An exported file is a simple version of a behavior file. It is high-efficiency execution file that is only used by Runtime end.</p>
+<p>Source file is like raw data, it needs to be exported first in order to be used in execution. Exported file is like Game data that is processed and can be used directly. Workspace file, source file, Meta file are not required in the game. Only exported files are required in the game.</p>
+<p>Currently it supports four exported format XML, BSON, C++ and C#. XML and BSON are used in the development stage. C++ and C# are used in the final release. C++ and C#’s memory and performance are better than XML and BSON. So we recommend using C++ and C# format behavior tree exported files during the final release.</p>
+<h2 id="behavior-tree-1"><span class="ez-toc-section" id="Behavior_Tree-2">Behavior Tree</span></h2>
+<p>behaviac provides a lot of nodes and attachments with various functions. It also supports expanding the types of nodes that it requires. Moreover, behaviac support advance usage like sub tree, event, Prefab.</p>
+<h3 id="nodes-and-attachment"><span class="ez-toc-section" id="Nodes_and_Attachment">Nodes and Attachment</span></h3>
+<p>Behavior Tree’s nodes can be divided into 5 major categories: Action, Condition, Composite, modify, attachment. Picture below shows, Action nodes and Condition nodes are leaf nodes. Composite nodes and modifier nodes are branch nodes. Attachment has to be attached to these four nodes and cannot be existed independently.</p>
+<p>behaviac also supports expanding new types of nodes.</p>
+<p><img src="./../../../img/articles/nodes.png" alt="" /></p>
+<p>To support Sub tree function, behaviac also support Referenced Behavior type.</p>
+<p>Nodes can have attachments like Preaction and Postaction. Preaction can mean execute some condition or operation. If it is a condition then Preaction has to return successfully first to continue executing the current node. Postaction only means operations that are continuing to execute after the execution of the current node.</p>
+<p><img src="./../../../img/overview/attachments.png" alt="" /></p>
+<p>Event is the special attachment that makes one Behavior Tree as another Behavior Tree’s node (usually as the root node). It is used to switch Behavior Tree when respond event happens.</p>
+<p>To support some special application, behaviac also adds Interrupted Condition for Combination nodes like Sequence node and Selector node. Adding Interrupted Condition is to let Sequence node decides whether to execute the current node when it executes every child node in sequence according to the execution result of Interrupted Condition.</p>
+<p><img src="./../../../img/overview/interupt.png" alt="" /></p>
+<p>In Designer users can use mouse to drag these nodes into the newly created Behavior Tree. Also to drag Preaction and Postaction attachments to the specific node.</p>
+<h3 id="prefab"><span class="ez-toc-section" id="PrefabPermalink">Prefab<a class="header-link" title="Permalink" href="./../../../docs/en/articles/overview/index.html#prefab"><span class="sr-only">Permalink</span><i class="fa fa-link"></i></a></span></h3>
+<p>behaviac’s Designer provides Prefab function to let users use Behavior Trees that are already edited for convenience purposes.<br />
+The mechanism of behaviac Prefab is similar to Unity engine’s Prefab. If Prefab is used and a node’s property of this Prefab is changed in the location that the Prefab is used, an Instance of this Prefab is created in the Behavior Tree that the Prefab is located. Any node’s property of the Prefab is changed; other Behavior Trees that use this prefab is would change accordingly. If none of the node’s property of the prefab is changed, it will keep the same property as the parent prefab.<br />
+In Designer user can save Behavior Trees that are edited as Prefabs. Prefabs would be in the Prefabs directory to distinguish from Behavior Trees that projects need (in Behaviors directory).</p>
+<p><img src="./../../../img/overview/behaviors.png" alt="" /></p>
+<p>Picture below shows, firstly build a Prefab Behavior Tree called ‘Prefab_安全的随机移动’ . Then drag the Prefab Behavior Tree into the Behavior Tree ‘Tank_SafeWander_RandomFire’. Users can see that the Prefab Behavior Tree is duplicated and expanded in there. This boosts the speed of Behavior Tree editing.</p>
+<p><img src="./../../../img/overview/prefab.png" alt="" /></p>
+<p><img src="./../../../img/overview/prefabinstance.png" alt="" /></p>
+<h3 id="sub-tree-and-recursion"><span class="ez-toc-section" id="Sub_tree_and_Recursion">Sub tree and Recursion</span></h3>
+<p>In the Designer, users can drag one Behavior Tree into another Behavior Tree; added one Behavior Tree as Referenced Behavior to another Behavior Tree. Picture below shows, action_ut_0 is a sub tree of action_ut_1. The node that action_ut_0 is on is a Referenced Behavior.</p>
+<p><img src="./../../../img/overview/subtree.png" alt="" /></p>
+<p>Beside sub tree function, behaviac also supports Recursion function. To use Recursion users need to make the current Behavior Tree as its own sub tree. Avoid create an endless loop by using Variable.</p>
+<p>Picture below shows, using testVar_0 to avoid an endless loop: when first enter testVar_0==0, so the following sequence can be executed. First assign testVar_0 to 1, when re-enter the Recursion testVar_0==1, the condition that testVar_0==0 is not satisfied. So the following sequence would not be entered, the endless loop is avoided.</p>
+<p><img src="./../../../img/overview/reverse.png" alt="" /></p>
+<h3 id="event-processing"><span class="ez-toc-section" id="Event_Processing">Event Processing</span></h3>
+<p>During the process of execution of a Behavior Tree when status and conditions are changed or Events happen, how to interrupt the current execution is an important question.</p>
+<p>Currently, behaviac supports three ways to process when status and conditions are changed or Event happens: parallel nodes, SelectorMonitor nodes and Event attachment. Parallel nodes and SelectorMonitor nodes re-evaluate all the child nodes when the execution of a Behavior Tree happens. Unlike other nodes that keep the child nodes from the last execution for the next execution. Event attachment responds when Event happens to the game logic.</p>
+<h4 id="parallel-nodes"><span class="ez-toc-section" id="Parallel_Nodes">Parallel Nodes</span></h4>
+<p>To use parallel nodes to process Event, users need to express the Event in the format of a condition and monitor this condition. Quit if this condition is not satisfied. The concept of this method is vague. It is also complicated to use.</p>
+<p><img src="./../../../img/articles/parallel_condition.jpg" alt="" /></p>
+<h4 id="selectormonitor"><span class="ez-toc-section" id="SelectorMonitor">SelectorMonitor</span></h4>
+<p>SelectorMonitor node and WithPrecondition node as the expansion of the traditional Behavior Tree can process the change of Event and Status naturally. SelectorMonitor node and WithPrecondition node can only be used when they are paired. SelectorMonitor can only add WithPrecondition node as its child node. WithPrecondition node can only be added as SelectorMonitor’s child node.</p>
+<ul>
+<li>SelectorMonitor node is a dynamic selector node. SelectorMonitor node chooses its first child node that returns successfully same as the Selector node. But it reselects its child node during every execution.</li>
+<li>WithPrecondition node has condition sub tree and action sub tree. Only when the condition sub tree returns successfully, the action sub tree can be executed.</li>
+</ul>
+<p><img src="./../../../img/articles/selector_monitor.png" alt="" /></p>
+<h4 id="event-attachment"><span class="ez-toc-section" id="Event_Attachment">Event Attachment</span></h4>
+<p>Event as an attachment is mainly used when the game logic sends out Event; after receiving the respond, it interrupts the current ongoing Behavior Tree and switch to another Behavior Tree that is set.</p>
+<p>请详看文档《<a href="./../../../docs/zh/tutorials/tutorial11_event/index.html">事件处理</a>》。</p>
+<h3 id="hot-loading"><span class="ez-toc-section" id="Hot-loading">Hot-loading</span></h3>
+<p>behaviac Designer and Runtime library both support Hot-loading, but only for Behavior Tree files that are in XML and BSON formats.<br />
+In the Designer, whenever the Behavior Tree file that is currently open is changed outside of the Designer for whatever reason, it would refresh automatically in the Designer.<br />
+For Runtime end (or game end), if the Behavior Tree file is changed and re-exported in the Designer, the newest exported Behavior Tree will be automatically loaded during the running of the game without the need of quitting the game. So we can check the Behavior Tree’s newest effect in time.</p>
+<h3 id="fsm"><span class="ez-toc-section" id="FSM">FSM</span></h3>
+<p>behaviac also supports traditional FSM. FSM is mainly constructed by State and Transition like in the picture below.</p>
+<p><img src="./../../../img/overview/fsm.png" alt="" /></p>
+<p>Similar to the concept of the sub tree, one trait of behaviac is to support to make one whole edited FSM as another FSM’s ‘sub tree’. Moreover, one FSM can be referenced reciprocally with a Behavior Tree and to be each other’s sub tree; one whole FSM can be a Behavior Tree’s ‘Referenced Behavior’ and a whole Behavior Tree can be one FMS’s ‘referenced Status’.<br />
+In behaviac Designer, status is independently existed, similar to a Behavior Tree’s node. Transition is attached to some status like attachment in a Behavior Tree. The editing of FSM is simple, just drag ‘Status’ nodes and ‘Transition’ attachment to a newly created FSM like in the picture below.</p>
+<p><img src="./../../../img/overview/states.png" alt="" /></p>
+<p>Similar to nodes in the Behavior Tree, users can add pre attachment and post attachment to FSM’s Status nodes. It means the pre-condition and the post operation that are required for the current Status node when it is executed.</p>
+<h3 id="debug"><span class="ez-toc-section" id="Debug">Debug</span></h3>
+<p>Designer support functions like online debugging with the game end like in the picture below,</p>
+<p><img src="./../../../img/overview/connect.png" alt="" /></p>
+<h4 id="watch-the-propery-value"><span class="ez-toc-section" id="watch_the_propery_value">watch the propery value</span></h4>
+<p><img src="./../../../img/overview/agentproperties.png" alt="" /></p>
+<h4 id="break-point"><span class="ez-toc-section" id="break_point">break point</span></h4>
+<p>set break point on a node, highlight a Behavior Tree’s execution path</p>
+<p><img src="./../../../img/overview/breakpoints.png" alt="" /></p>
+<h4 id="offline-debugging"><span class="ez-toc-section" id="offline_debugging">offline debugging</span></h4>
+<p>behaviac also supports offline debugging, the execution information can be saved and dumpped to a file and loaded later.</p>
+<h3 id="unit-test-and-demo"><span class="ez-toc-section" id="Unit_test_and_Demo">Unit test and Demo</span></h3>
+<p>behaviac provides unit test and game Demo in both C++ and C#. Can enter through menu-item: ‘help’ -&gt; ‘control explanation’ in Designer. Then click to open the unit test or game demo’s workspace that is required like in the picture below</p>
+<p><img src="./../../../img/articles/start_page_en.png" alt="" /></p>
+<h3 id="open-source"><span class="ez-toc-section" id="Open_Source">Open Source</span></h3>
+<p>behaviac is open source on the github website<a href="#?https://github.com/Tencent/behaviac">github</a></p>
+<div class="section-nav"></div>
+]]></content:encoded>
+					
+					<wfw:commentRss>./../../../overview-2/feed/index.html</wfw:commentRss>
+			<slash:comments>6</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

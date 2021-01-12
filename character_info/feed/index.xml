@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	《角色介绍》的评论	</title>
+	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
+	<link>./../index.html</link>
+	<description>Tencent behaviac, Game AI, Behavior Tree, Finite State Machine, Hierarchical Task Network, BT FSM HTN, 腾讯开源, 游戏AI, 行为树,有限状态机,分层任务网络</description>
+	<lastBuildDate>Thu, 14 Jul 2016 03:19:25 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.4.1</generator>
+	<item>
+		<title>
+		作者：腾讯首届游戏AI大赛——天天炫斗AI项目 &#8211; behaviac		</title>
+		<link>./../index.html#comment-71</link>
+
+		<dc:creator><![CDATA[腾讯首届游戏AI大赛——天天炫斗AI项目 &#8211; behaviac]]></dc:creator>
+		<pubDate>Mon, 20 Jun 2016 06:58:44 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=661#comment-71</guid>
+
+					<description><![CDATA[[&#8230;] 角色介绍 [&#8230;]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] 角色介绍 [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

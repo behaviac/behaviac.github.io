@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>其他 &#8211; behaviac</title>
+	<atom:link href="./../../%E5%85%B6%E4%BB%96/feed/index.html" rel="self" type="application/rss+xml" />
+	<link>./../../../../../index.html</link>
+	<description>Tencent behaviac, Game AI, Behavior Tree, Finite State Machine, Hierarchical Task Network, BT FSM HTN, 腾讯开源, 游戏AI, 行为树,有限状态机,分层任务网络</description>
+	<lastBuildDate>Wed, 03 Aug 2016 11:34:43 +0000</lastBuildDate>
+	<language>zh-CN</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.4.1</generator>
+
+<image>
+	<url>./../../../../../wp-content/uploads/2016/04/cropped-256x256-32x32.png</url>
+	<title>其他 &#8211; behaviac</title>
+	<link>./../../../../../index.html</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>常见问题及答疑</title>
+		<link>./../../../../../qcg_ai_faq/index.html</link>
+					<comments>./../../../../../qcg_ai_faq/index.html#comments</comments>
+		
+		<dc:creator><![CDATA[cainhuang]]></dc:creator>
+		<pubDate>Mon, 18 Jul 2016 10:10:33 +0000</pubDate>
+				<category><![CDATA[其他]]></category>
+		<guid isPermaLink="false">./../../../../../index.html?p=868</guid>
+
+					<description><![CDATA[Q1：版本升级，文件怎么迁移 A：升级的时候啥也不要改，解压缩时直接覆盖原有的就好。除非自己建的行为树名字都没改，还是原有的两个示例ExampleBT和Exam<a class="moretag" href="./../../../../../qcg_ai_faq/index.html">Read More...</a>]]></description>
+										<content:encoded><![CDATA[<p>Q1：版本升级，文件怎么迁移</p>
+<p>A：升级的时候啥也不要改，解压缩时直接覆盖原有的就好。除非自己建的行为树名字都没改，还是原有的两个示例ExampleBT和ExampleBT_0行为树。此外，<!--StartFragment --></p>
+<div>这个Res\SimpleConfig\XD_AI\metas\XDPVE.xml文件要确保是最新的！</div>
+<hr />
+<p>Q2：场景大小是多少？</p>
+<p>A：最大宽度是2816像素，最大深度是260像素</p>
+<hr />
+<p>Q3：现在Res文件夹里面的log文件怎么没有生成了？</p>
+<p>A：考虑效率问题，默认双击XDSimple_Release.exe打开游戏，不再生成log文件。但可通过命令行的方式打开游戏：XDSimple_Release.exe -log 1，这样就会在Res文件夹中生成_behaviac_$_.log文件。</p>
+<hr />
+<p>Q4：队友间如何共享行为树？</p>
+<p>A：需要保证各自创建的行为树不要同名，在目录Res\SimpleConfig\XD_AI\trees下面就是创建的原始行为树，只需要将该目录下的行为树合并即可。注意：如果有创建自定义的成员属性或局部变量，需要将该目录下的behaviac.bb.xml文件通过记事本打开，将各自的变量合并到一起。</p>
+<hr />
+<p>Q5：数组该怎么操作？</p>
+<p>A：数组的相关操作提供了VectorAdd、VectorRemove、VectorContains、VectorLength、VectorClear等五个方法。</p>
+<hr />
+<p>Q6：游戏中按了暂停按钮，再按F2退出的话会卡死</p>
+<p>A：再按Shift键就行了，Shift键也是暂停/继续的快捷方式</p>
+<hr />
+<p>Q7：移动速度有上限吗？</p>
+<p>A：设定的速度上限是800像素/秒。</p>
+<hr />
+<p>Q8：在哪个地方可以快速直接地体验下各种角色的各种技能呢？</p>
+<p>A：将左右两边角色的行为树全部设为Do not use BT，然后随便设置左边自己的角色及其技能，开始游戏后，进去自己手工操作角色使用技能，键盘按键W、A、S、D四个键控制角色移动，鼠标可以用来点击技能释放，也可以通过键盘按键U、I、O、J、K五个键释放技能。按F2退出来，重新选择角色和技能。</p>
+<p><!--StartFragment --></p>
+<div>
+<hr />
+<p>Q9：行为树里面，复制了节点之后，怎么粘贴呢？</p>
+<p>A：按住键盘Ctrl+V，然后移动鼠标去放置。更多的按键说明，请查看菜单项“帮助”-&gt;“起始页”中的说明。</p>
+<hr />
+<p>Q10：比赛时MP是足够的，还是需要控制的？</p>
+<p>A：蓝血最大是110，用完了就得等时间才能慢慢涨上来了。</p>
+<hr />
+<p>Q11：调用LogMessage方法后，生成的log信息在哪个文件？</p>
+<p>A：Res文件夹中的_behaviac_$_$_.log</p>
+<hr />
+<p>Q12：如何约战？</p>
+<p>A：在Res/SimpleConfig中新建2个文件夹，比如分别命名为player1和player2，player1文件夹中包含了自己原有的SimpleConfig的所有文件，player2文件夹中包含了对方原有的SimpleConfig的所有文件。然后通过命令行启动炫斗游戏：XDSimple_Release.exe -rtx1 player1 -rtx2 player2</p>
+<hr />
+<p>Q13：什么是无敌和霸体？<br />
+A：无敌：免疫伤害，同时免疫受击<br />
+霸体：不免疫伤害，但免疫受击<br />
+可选择方法：自己是否霸体，自己是否无敌，目标是否霸体，目标是否无敌</p>
+<hr />
+<p>Q14：一帧以内可以同时释放多个技能吗？</p>
+<p>A：不能，即便调用多个技能，后面的执行也是返回失败</p>
+<hr />
+<p>Q15：目标释放技能后，有没有持续时间？如果有点话，这段时间内，针对目标的其他操作（如移动）是否无效？</p>
+<p>A：相关的方法：自己的当前技能ID（返回-1表示技能播放完毕），目标的当前技能ID，返回技能剩余的冷却时间。<br />
+技能没执行完毕，其他操作（移动）不会执行</p>
+<hr />
+</div>
+]]></content:encoded>
+					
+					<wfw:commentRss>./../../../../../qcg_ai_faq/feed/index.html</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>角色介绍</title>
+		<link>./../../../../../character_info/index.html</link>
+					<comments>./../../../../../character_info/index.html#comments</comments>
+		
+		<dc:creator><![CDATA[cainhuang]]></dc:creator>
+		<pubDate>Mon, 20 Jun 2016 06:57:57 +0000</pubDate>
+				<category><![CDATA[其他]]></category>
+		<guid isPermaLink="false">./../../../../../index.html?p=661</guid>
+
+					<description><![CDATA[详细的角色介绍请登录天天炫斗官网查看。 通过“目标的角色ID”方法返回角色职业ID（int值），如下表所示： 角色职业ID 角色职业名 2 布雷泽 3 仓木熏 <a class="moretag" href="./../../../../../character_info/index.html">Read More...</a>]]></description>
+										<content:encoded><![CDATA[<p>详细的角色介绍请登录<a href="http://ttxd.qq.com/index.shtml">天天炫斗官网</a>查看。</p>
+<p>通过“目标的角色ID”方法返回角色职业ID（int值），如下表所示：</p>
+<table style="height: 365px;" width="240">
+<tbody>
+<tr>
+<td style="text-align: center;" width="104"><strong>角色职业ID</strong></td>
+<td style="text-align: center;" width="99"><strong>角色职业名</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;" width="104">2</td>
+<td style="text-align: center;">布雷泽</td>
+</tr>
+<tr>
+<td style="text-align: center;" width="104">3</td>
+<td style="text-align: center;">仓木熏</td>
+</tr>
+<tr>
+<td style="text-align: center;" width="104">4</td>
+<td style="text-align: center;">布鲁</td>
+</tr>
+<tr>
+<td style="text-align: center;" width="104">5</td>
+<td style="text-align: center;">凯瑟琳</td>
+</tr>
+<tr>
+<td style="text-align: center;" width="104">6</td>
+<td style="text-align: center;">商之溟</td>
+</tr>
+<tr>
+<td style="text-align: center;" width="104">7</td>
+<td style="text-align: center;">康士坦丁</td>
+</tr>
+<tr>
+<td style="text-align: center;" width="104">8</td>
+<td style="text-align: center;">洛漓</td>
+</tr>
+<tr>
+<td style="text-align: center;" width="104">9</td>
+<td style="text-align: center;">草薙京</td>
+</tr>
+<tr>
+<td style="text-align: center;" width="104">10</td>
+<td style="text-align: center;">不知火舞</td>
+</tr>
+</tbody>
+</table>
+<p><img class="alignnone size-full wp-image-662" src="./../../../../../wp-content/uploads/2016/06/1.png" alt="1" width="934" height="266" srcset="./../../../../../wp-content/uploads/2016/06/1.png 934w, ./../../../../../wp-content/uploads/2016/06/1-300x85.png 300w, ./../../../../../wp-content/uploads/2016/06/1-768x219.png 768w" sizes="(max-width: 934px) 100vw, 934px" /> <img class="alignnone size-full wp-image-663" src="./../../../../../wp-content/uploads/2016/06/2.png" alt="2" width="936" height="266" srcset="./../../../../../wp-content/uploads/2016/06/2.png 936w, ./../../../../../wp-content/uploads/2016/06/2-300x85.png 300w, ./../../../../../wp-content/uploads/2016/06/2-768x218.png 768w" sizes="(max-width: 936px) 100vw, 936px" /> <img class="alignnone size-full wp-image-664" src="./../../../../../wp-content/uploads/2016/06/3.png" alt="3" width="935" height="260" srcset="./../../../../../wp-content/uploads/2016/06/3.png 935w, ./../../../../../wp-content/uploads/2016/06/3-300x83.png 300w, ./../../../../../wp-content/uploads/2016/06/3-768x214.png 768w" sizes="(max-width: 935px) 100vw, 935px" /> <img class="alignnone size-full wp-image-665" src="./../../../../../wp-content/uploads/2016/06/4.png" alt="4" width="933" height="263" srcset="./../../../../../wp-content/uploads/2016/06/4.png 933w, ./../../../../../wp-content/uploads/2016/06/4-300x85.png 300w, ./../../../../../wp-content/uploads/2016/06/4-768x216.png 768w" sizes="(max-width: 933px) 100vw, 933px" /> <img class="alignnone size-full wp-image-666" src="./../../../../../wp-content/uploads/2016/06/5.png" alt="5" width="935" height="261" srcset="./../../../../../wp-content/uploads/2016/06/5.png 935w, ./../../../../../wp-content/uploads/2016/06/5-300x84.png 300w, ./../../../../../wp-content/uploads/2016/06/5-768x214.png 768w" sizes="(max-width: 935px) 100vw, 935px" /> <img class="alignnone size-full wp-image-667" src="./../../../../../wp-content/uploads/2016/06/6.png" alt="6" width="932" height="261" srcset="./../../../../../wp-content/uploads/2016/06/6.png 932w, ./../../../../../wp-content/uploads/2016/06/6-300x84.png 300w, ./../../../../../wp-content/uploads/2016/06/6-768x215.png 768w" sizes="(max-width: 932px) 100vw, 932px" /> <img class="alignnone size-full wp-image-668" src="./../../../../../wp-content/uploads/2016/06/7.png" alt="7" width="934" height="259" srcset="./../../../../../wp-content/uploads/2016/06/7.png 934w, ./../../../../../wp-content/uploads/2016/06/7-300x83.png 300w, ./../../../../../wp-content/uploads/2016/06/7-768x213.png 768w" sizes="(max-width: 934px) 100vw, 934px" /> <img class="alignnone size-full wp-image-669" src="./../../../../../wp-content/uploads/2016/06/8.png" alt="8" width="933" height="261" srcset="./../../../../../wp-content/uploads/2016/06/8.png 933w, ./../../../../../wp-content/uploads/2016/06/8-300x84.png 300w, ./../../../../../wp-content/uploads/2016/06/8-768x215.png 768w" sizes="(max-width: 933px) 100vw, 933px" /> <img class="alignnone size-full wp-image-670" src="./../../../../../wp-content/uploads/2016/06/9.png" alt="9" width="938" height="263" srcset="./../../../../../wp-content/uploads/2016/06/9.png 938w, ./../../../../../wp-content/uploads/2016/06/9-300x84.png 300w, ./../../../../../wp-content/uploads/2016/06/9-768x215.png 768w" sizes="(max-width: 938px) 100vw, 938px" /></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>./../../../../../character_info/feed/index.html</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>角色方法说明</title>
+		<link>./../../../../../method_usage/index.html</link>
+					<comments>./../../../../../method_usage/index.html#comments</comments>
+		
+		<dc:creator><![CDATA[cainhuang]]></dc:creator>
+		<pubDate>Mon, 20 Jun 2016 06:07:28 +0000</pubDate>
+				<category><![CDATA[其他]]></category>
+		<guid isPermaLink="false">./../../../../../index.html?p=646</guid>
+
+					<description><![CDATA[方法名字 功能描述 返回值类型 选择最近者(return) 选择一个距离最近的敌人作为目标,参数可设定xyz轴的范围,没选择到任何目标返回假 bool 移动(到<a class="moretag" href="./../../../../../method_usage/index.html">Read More...</a>]]></description>
+										<content:encoded><![CDATA[<table width="927">
+<tbody>
+<tr>
+<td width="256"><strong>方法名字</strong></td>
+<td width="596"><strong>功能描述</strong></td>
+<td width="75"><strong>返回值类型</strong></td>
+</tr>
+<tr>
+<td>选择最近者(return)</td>
+<td>选择一个距离最近的敌人作为目标,参数可设定xyz轴的范围,没选择到任何目标返回假</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>移动(到目标范围内)(return)</td>
+<td>当前目标角色的位置作为目标点，向其移动，直至时间结束或到达目标范围内</td>
+<td>int</td>
+</tr>
+<tr>
+<td>移动(出目标范围外)(return)</td>
+<td>当前目标角色的位置作为参考点，向远离的方向移动，停止的情况：最大移动帧数结束；到达目标范围外并且至少移动帧数结束了</td>
+<td>int</td>
+</tr>
+<tr>
+<td>移动(到绝对坐标)(return)</td>
+<td>将怪移动到绝对的坐标处</td>
+<td>int</td>
+</tr>
+<tr>
+<td>移动(动态追踪目标)(return)</td>
+<td>锁定目标后，动态更新目标角色的位置，追踪目标</td>
+<td>int</td>
+</tr>
+<tr>
+<td>设置方向</td>
+<td>设置方向。非强制时动作ID&gt;=9000或当前Y！=地面Y值的情况不进行设置方向操作。</td>
+<td>void</td>
+</tr>
+<tr>
+<td>设置player的基本攻击键down或up</td>
+<td>设置player的基本攻击键down(true)或up(false)</td>
+<td>void</td>
+</tr>
+<tr>
+<td>区域坐标内</td>
+<td>是否在指定坐标区域内</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>自己的X坐标</td>
+<td>获取自己的X坐标</td>
+<td>int</td>
+</tr>
+<tr>
+<td>自己的Y坐标</td>
+<td>获取自己的Y坐标</td>
+<td>int</td>
+</tr>
+<tr>
+<td>自己的Z坐标</td>
+<td>获取自己的Z坐标</td>
+<td>int</td>
+</tr>
+<tr>
+<td>自己的当前能量</td>
+<td>获取自己的当前能量值，初始最大值为110</td>
+<td>int</td>
+</tr>
+<tr>
+<td>自己的血量</td>
+<td>获取自己的血量</td>
+<td>int</td>
+</tr>
+<tr>
+<td>自己的血量百分比</td>
+<td>获取自己的血量百分比</td>
+<td>int</td>
+</tr>
+<tr>
+<td>自己是否朝左</td>
+<td>自己是否朝左</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>自己是否霸体</td>
+<td>获取自己是否霸体</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>自己是否无敌</td>
+<td>获取自己是否无敌</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>距离_两角色(平方)</td>
+<td>获取两角色的距离的平方,仅供1v1使用</td>
+<td>int</td>
+</tr>
+<tr>
+<td>距离_版边</td>
+<td>获取角色到版边的距离</td>
+<td>int</td>
+</tr>
+<tr>
+<td>区域-是否在行走区域</td>
+<td>判断指定X、Z坐标值是否在自己的行走区域内</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>区域-获取行走区域边界</td>
+<td>获取自己的可行走区域的边界</td>
+<td>int</td>
+</tr>
+<tr>
+<td>执行技能(return)</td>
+<td>执行一个技能，执行完成后返回真。参数为技能槽ID，取值5、6、7、8分别对应技能槽B、C、D、W</td>
+<td>EBTStatus</td>
+</tr>
+<tr>
+<td>是否可执行技能</td>
+<td>判断当前是否可以成功执行一个技能。参数为技能槽ID，取值5、6、7、8分别对应技能槽B、C、D、W</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>返回技能剩余的冷却时间</td>
+<td>返回技能剩余的冷却时间，单位帧（一秒60帧）。参数为技能槽ID，取值5、6、7、8分别对应技能槽B、C、D、W</td>
+<td>int</td>
+</tr>
+<tr>
+<td>获取技能X距离</td>
+<td>获取技能在X方向上的有效距离</td>
+<td>int</td>
+</tr>
+<tr>
+<td>获取技能Z距离</td>
+<td>获取技能在Z方向上的有效距离</td>
+<td>int</td>
+</tr>
+<tr>
+<td>获取技能槽X距离</td>
+<td>获取技能槽设定的技能在X方向上的有效距离。参数为技能槽ID，取值5、6、7、8分别对应技能槽B、C、D、W</td>
+<td>int</td>
+</tr>
+<tr>
+<td>获取技能槽Z距离</td>
+<td>获取技能槽设定的技能在Z方向上的有效距离。参数为技能槽ID，取值5、6、7、8分别对应技能槽B、C、D、W</td>
+<td>int</td>
+</tr>
+<tr>
+<td>自己的角色ID</td>
+<td>获取自己的角色ID : 布雷泽(2) 仓木熏(3) 布鲁(4) 凯瑟琳(5) 商之溟(6) 康士坦丁(7) 洛漓(8) 草薙京(9) 不知火舞(10)</td>
+<td>int</td>
+</tr>
+<tr>
+<td>自己的当前动作类型</td>
+<td>获取自己的当前动作类型，可以查看自己是否在攻击对方或正在挨打，返回值类型ActionType请查看文章末尾的描述</td>
+<td>ActionType</td>
+</tr>
+<tr>
+<td>自己的当前技能ID</td>
+<td>获取自己的当前技能ID，返回-1表示技能播放完毕</td>
+<td>int</td>
+</tr>
+<tr>
+<td>目标的角色ID</td>
+<td>获取目标的角色ID : 布雷泽(2) 仓木熏(3) 布鲁(4) 凯瑟琳(5) 商之溟(6) 康士坦丁(7) 洛漓(8) 草薙京(9) 不知火舞(10)</td>
+<td>int</td>
+</tr>
+<tr>
+<td>目标的当前动作类型</td>
+<td>获取目标的当前动作类型，可以查看目标是否在攻击对方或正在挨打，返回值类型ActionType请查看文章末尾的描述</td>
+<td>ActionType</td>
+</tr>
+<tr>
+<td>目标的当前技能ID</td>
+<td>获取目标的当前技能ID，返回-1表示技能播放完毕</td>
+<td>int</td>
+</tr>
+<tr>
+<td>目标的X坐标</td>
+<td>获取目标角色的X坐标</td>
+<td>int</td>
+</tr>
+<tr>
+<td>目标的Y坐标</td>
+<td>获取目标角色的Y坐标</td>
+<td>int</td>
+</tr>
+<tr>
+<td>目标的Z坐标</td>
+<td>获取目标角色的Z坐标</td>
+<td>int</td>
+</tr>
+<tr>
+<td>目标的当前能量</td>
+<td>获取目标的当前能量值，初始最大值为110</td>
+<td>int</td>
+</tr>
+<tr>
+<td>目标的血量</td>
+<td>获取目标血量</td>
+<td>int</td>
+</tr>
+<tr>
+<td>目标是否朝左</td>
+<td>目标是否朝左</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>目标是否霸体</td>
+<td>获取目标是否霸体</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>目标是否无敌</td>
+<td>获取目标是否无敌</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>目标距自己距离</td>
+<td>获取目标到自己距离的平方，Z方向距离会自动换算到X方向，无目标返回-1</td>
+<td>int</td>
+</tr>
+<tr>
+<td>目标距自己X方向距离</td>
+<td>获取目标到自己X方向距离，无目标返回-1</td>
+<td>int</td>
+</tr>
+<tr>
+<td>目标距自己Y方向距离</td>
+<td>获取目标到自己Y方向距离，无目标返回-1</td>
+<td>int</td>
+</tr>
+<tr>
+<td>目标距自己Z方向距离</td>
+<td>获取目标到自己Z方向距离，无目标返回-1</td>
+<td>int</td>
+</tr>
+<tr>
+<td>目标(面向目标)</td>
+<td>转向目标所在方向</td>
+<td>void</td>
+</tr>
+<tr>
+<td>是否面向目标</td>
+<td>如果面向目标或没有目标，返回true; 否则返回false</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>是否拥有技能</td>
+<td>判断Player是否有该技能，拥有返回true，否则返回false</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>将int类型转换为double类型</td>
+<td>将int类型的值转换为double类型的值</td>
+<td>double</td>
+</tr>
+<tr>
+<td>将double类型转换为int类型</td>
+<td>将double类型的值转换为int类型的值</td>
+<td>int</td>
+</tr>
+<tr>
+<td>将ActionType类型转换为int类型</td>
+<td>将ActionType类型的值转换为int类型的值</td>
+<td>int</td>
+</tr>
+<tr>
+<td>VectorAdd</td>
+<td>为数组添加一个元素</td>
+<td>void</td>
+</tr>
+<tr>
+<td>VectorRemove</td>
+<td>为数组删除指定元素</td>
+<td>void</td>
+</tr>
+<tr>
+<td>VectorContains</td>
+<td>返回数组是否包含指定元素</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>VectorLength</td>
+<td>返回数组中包含元素的总个数</td>
+<td>int</td>
+</tr>
+<tr>
+<td>VectorClear</td>
+<td>清空数组</td>
+<td>void</td>
+</tr>
+<tr>
+<td>LogMessage</td>
+<td>输出指定的Log信息，用于调试</td>
+<td>void</td>
+</tr>
+<tr>
+<td>LogMessageBool</td>
+<td>输出指定的Log信息和bool值，用于调试</td>
+<td>void</td>
+</tr>
+<tr>
+<td>LogMessageInt</td>
+<td>输出指定的Log信息和int值，用于调试</td>
+<td>void</td>
+</tr>
+<tr>
+<td>LogMessageDouble</td>
+<td>输出指定的Log信息和double值，用于调试</td>
+<td>void</td>
+</tr>
+<tr>
+<td>LogMessageActionType</td>
+<td>输出指定的Log信息和ActionType值，用于调试</td>
+<td>void</td>
+</tr>
+</tbody>
+</table>
+<p>枚举类型ActionType的定义如下：<br />
+enum ActionType<br />
+{<br />
+RES_ACTIONTYPE_Base = 0, // 基本<br />
+RES_ACTIONTYPE_Recovery, // 防御<br />
+RES_ACTIONTYPE_LightAttack, // 攻击1-轻<br />
+RES_ACTIONTYPE_WeightAttack, // 攻击2-重<br />
+RES_ACTIONTYPE_SuperWeightAttack, // 攻击3-超重<br />
+RES_ACTIONTYPE_SpecialAttack, // 攻击4-特殊<br />
+RES_ACTIONTYPE_BishaAttack, // 攻击5-必杀<br />
+RES_ACTIONTYPE_SuperBishaAttack, // 攻击6-超必杀<br />
+RES_ACTIONTYPE_NormalToss, // 投技1-普通<br />
+RES_ACTIONTYPE_BishaToss, // 投技2-必杀<br />
+RES_ACTIONTYPE_ChaoBishaToss, // 投技3-超必杀<br />
+RES_ACTIONTYPE_Helper, // 辅助<br />
+RES_ACTIONTYPE_Split, // 分身<br />
+RES_ACTIONTYPE_NormalHurt, // 受击1-普通<br />
+RES_ACTIONTYPE_DropHurt, // 受击2-击倒<br />
+RES_ACTIONTYPE_FaceUpHurt, // 受击3-仰卧<br />
+RES_ACTIONTYPE_FaceDownHurt, // 受击4-俯卧<br />
+RES_ACTIONTYPE_GetupHurt, // 受击5-起身<br />
+RES_ACTIONTYPE_ControlHurt, // 受击6-控制<br />
+RES_ACTIONTYPE_Show, // 展示动作<br />
+RES_ACTIONTYPE_Item, // 道具<br />
+RES_ACTIONTYPE_MaxChaoBishaToss, // max超必杀投技<br />
+RES_ACTIONTYPE_MaxSuperBishaAttack, // max超必杀<br />
+RES_ACTIONTYPE_CanBreak, // 可被任意主动动作打断的动作<br />
+RES_ACTIONTYPE_0FrameToss, // 0帧指令投<br />
+RES_ACTIONTYPE_AssistAction, //援护技动作类型<br />
+RES_ACTIONTYPE_SuitAction, // 时装动作<br />
+RES_ACTIONTYPE_Max,<br />
+};</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>./../../../../../method_usage/feed/index.html</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

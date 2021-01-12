@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>《概率选择节点》的评论</title>
+	<atom:link href="/selectorprobability/feed/" rel="self" type="application/rss+xml" />
+	<link>/selectorprobability/</link>
+	<description>Tencent behaviac, Game AI, Behavior Tree, Finite State Machine, Hierarchical Task Network, BT FSM HTN, 腾讯开源, 游戏AI, 行为树,有限状态机,分层任务网络</description>
+	<lastBuildDate>Mon, 26 Mar 2018 16:07:20 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.1</generator>
+	<item>
+		<title>作者：刘宏旭</title>
+		<link>/selectorprobability/#comment-423</link>
+		<dc:creator><![CDATA[刘宏旭]]></dc:creator>
+		<pubDate>Mon, 18 Dec 2017 06:01:03 +0000</pubDate>
+		<guid isPermaLink="false">/</guid>
+		<description><![CDATA[如果所有分支权重都配置为0，表示所有分支都不会被执行。那么选择节点返回的状态是什么？]]></description>
+		<content:encoded><![CDATA[<p>如果所有分支权重都配置为0，表示所有分支都不会被执行。那么选择节点返回的状态是什么？</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>作者：jonygli</title>
+		<link>/selectorprobability/#comment-415</link>
+		<dc:creator><![CDATA[jonygli]]></dc:creator>
+		<pubDate>Wed, 01 Nov 2017 02:48:28 +0000</pubDate>
+		<guid isPermaLink="false">/</guid>
+		<description><![CDATA[有bug请报bug。]]></description>
+		<content:encoded><![CDATA[<p>有bug请报bug。</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>作者：Shaun</title>
+		<link>/selectorprobability/#comment-414</link>
+		<dc:creator><![CDATA[Shaun]]></dc:creator>
+		<pubDate>Thu, 26 Oct 2017 09:33:40 +0000</pubDate>
+		<guid isPermaLink="false">/</guid>
+		<description><![CDATA[有BUG 折腾死我了 MMP]]></description>
+		<content:encoded><![CDATA[<p>有BUG 折腾死我了 MMP</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>作者：jojo</title>
+		<link>/selectorprobability/#comment-398</link>
+		<dc:creator><![CDATA[jojo]]></dc:creator>
+		<pubDate>Tue, 30 May 2017 10:10:59 +0000</pubDate>
+		<guid isPermaLink="false">/</guid>
+		<description><![CDATA[这随机尼玛就是坑]]></description>
+		<content:encoded><![CDATA[<p>这随机尼玛就是坑</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>作者：教程13：随机与概率相关节点的使用 &#8211; behaviac</title>
+		<link>/selectorprobability/#comment-394</link>
+		<dc:creator><![CDATA[教程13：随机与概率相关节点的使用 &#8211; behaviac]]></dc:creator>
+		<pubDate>Tue, 25 Apr 2017 11:22:09 +0000</pubDate>
+		<guid isPermaLink="false">/</guid>
+		<description><![CDATA[[&#8230;] 为了方便使用，behaviac组件除了提供传统的序列、选择等组合节点之外，还提供了随机与概率相关的节点类型，主要包括随机序列（SequenceStochastic）、随机选择（SelectorStochastic）和概率选择（SelectorProbability）等节点。 [&#8230;]]]></description>
+		<content:encoded><![CDATA[<p>[&#8230;] 为了方便使用，behaviac组件除了提供传统的序列、选择等组合节点之外，还提供了随机与概率相关的节点类型，主要包括随机序列（SequenceStochastic）、随机选择（SelectorStochastic）和概率选择（SelectorProbability）等节点。 [&#8230;]</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

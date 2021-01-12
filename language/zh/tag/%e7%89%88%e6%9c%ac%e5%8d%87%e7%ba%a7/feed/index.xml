@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>版本升级 &#8211; behaviac</title>
+	<atom:link href="./../../%E7%89%88%E6%9C%AC%E5%8D%87%E7%BA%A7/feed/index.html" rel="self" type="application/rss+xml" />
+	<link>./../../../../../index.html</link>
+	<description>Tencent behaviac, Game AI, Behavior Tree, Finite State Machine, Hierarchical Task Network, BT FSM HTN, 腾讯开源, 游戏AI, 行为树,有限状态机,分层任务网络</description>
+	<lastBuildDate>Mon, 06 Feb 2017 08:46:12 +0000</lastBuildDate>
+	<language>zh-CN</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.4.1</generator>
+
+<image>
+	<url>./../../../../../wp-content/uploads/2016/04/cropped-256x256-32x32.png</url>
+	<title>版本升级 &#8211; behaviac</title>
+	<link>./../../../../../index.html</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>behaviac升级的步骤及注意事项</title>
+		<link>./../../../../../updatenotes/index.html</link>
+					<comments>./../../../../../updatenotes/index.html#comments</comments>
+		
+		<dc:creator><![CDATA[jonygli]]></dc:creator>
+		<pubDate>Mon, 11 Apr 2016 10:01:19 +0000</pubDate>
+				<category><![CDATA[文章]]></category>
+		<category><![CDATA[版本升级]]></category>
+		<guid isPermaLink="false">./../../../../../index.html?p=168</guid>
+
+					<description><![CDATA[ 相比之前版本，3.6.x版本有若干重大改动 3.6版本的概述，请参考文章《关于新旧版本的说明》。 3.6.x版本的编辑器将导出类型信息代码文件，运行时不需要注<a class="moretag" href="./../../../../../updatenotes/index.html">Read More...</a>]]></description>
+										<content:encoded><![CDATA[<h2><span class="ez-toc-section" id="36x"> 相比之前版本，3.6.x版本有若干重大改动</span></h2>
+<ol>
+<li>3.6版本的概述，请参考文章《<a href="./../../../3-6-overview/index.html">关于新旧版本的说明</a>》。</li>
+<li>3.6.x版本的编辑器将导出类型信息<strong>代码文件</strong>，运行时<strong>不需要</strong>注册和导出xml类型信息文件。</li>
+<li>如果3.6.x版本的编辑器打开之前版本的workspace文件，将读取xml类型信息文件并且转存其中的内容，之后的版本就不再需要xml类型信息文件了</li>
+<li>下列宏及函数已删除，升级后使用该宏或代码的相应代码注释掉或删掉即可（升级的时候，只需要修改编译出现错误的部分，其他的不是必须修改的，因为为了尽可能向后兼容，已经把相关宏重新定义为了空）
+<ol>
+<li><del>BEHAVIAC_REGISTER_METHOD/BEHAVIAC_REGISTER_PROPERTY</del></li>
+<li><del>BEHAVIAC_BEGIN_PROPERTIES/BEHAVIAC_END_PROPERTIES</del></li>
+<li><del>BEGIN_PROPERTIES_DESCRIPTION/END_PROPERTIES_DESCRIPTION</del></li>
+<li><del>behaviac::Agent::Register/behaviac::Agent::UnRegister</del></li>
+<li><del>behaviac::TypeRegister::Register/behaviac::TypeRegister::UnRegister</del></li>
+<li><del>behaviac::Agent::ExportMetas</del></li>
+</ol>
+</li>
+<li><span style="color: #ff0000;"><strong>升级步骤</strong></span>
+<ol>
+<li>备份程序代码及workspace项目</li>
+<li><strong>删掉</strong>老版本中behaviac的所有代码（src及inc等），使用新版本中behaviac的代码（src及inc等）。（因为很多文件被删除，不要只是覆盖！）</li>
+<li>使用新版本的编辑器打开workspace.xml文件，重新导出（可能需要配置“代码生成位置”）
+<ol>
+<li>仔细阅读该说明，点击确定后，你的workspace文件将被更新（不能恢复，除非你预先有备份！）。<img class="alignnone size-full wp-image-1151" src="./../../../../../wp-content/uploads/2016/04/QQ截图20161129165728.png" alt="qq%e6%88%aa%e5%9b%be20161129165728" width="496" height="357" srcset="./../../../../../wp-content/uploads/2016/04/QQ截图20161129165728.png 496w, ./../../../../../wp-content/uploads/2016/04/QQ截图20161129165728-300x216.png 300w" sizes="(max-width: 496px) 100vw, 496px" /></li>
+<li>在弹出来的类型信息浏览器中，点击下方的“应用”按钮，生成类型代码文件，点击左下方的“打开代码生成位置”，将生成的类型代码文件添加到程序make文件或项目文件中，并编译构建成为程序的一部分：<img class="alignnone size-medium wp-image-1138" src="./../../../../../wp-content/uploads/2016/04/QQ截图20161125171027-1-250x300.png" alt="qq%e6%88%aa%e5%9b%be20161125171027" width="250" height="300" srcset="./../../../../../wp-content/uploads/2016/04/QQ截图20161125171027-1-250x300.png 250w, ./../../../../../wp-content/uploads/2016/04/QQ截图20161125171027-1.png 612w" sizes="(max-width: 250px) 100vw, 250px" /></li>
+<li>你可能需要通过菜单项“文件-&gt;编辑工作区”来配置“代码生成位置”，如下图： <img class="alignnone wp-image-1089" src="./../../../../../wp-content/uploads/2016/04/QQ截图20161118193315-300x139.png" alt="qq%e6%88%aa%e5%9b%be20161118193315" width="365" height="169" srcset="./../../../../../wp-content/uploads/2016/04/QQ截图20161118193315-300x139.png 300w, ./../../../../../wp-content/uploads/2016/04/QQ截图20161118193315.png 587w" sizes="(max-width: 365px) 100vw, 365px" /></li>
+<li>通过菜单项“文件-&gt;导出全部&#8230;”，重新导出所有的行为树及生成所有的类型文件，如下图：<img class="alignnone size-medium wp-image-1144" src="./../../../../../wp-content/uploads/2016/04/QQ截图20161125170748-1-199x300.png" alt="qq%e6%88%aa%e5%9b%be20161125170748" width="199" height="300" srcset="./../../../../../wp-content/uploads/2016/04/QQ截图20161125170748-1-199x300.png 199w, ./../../../../../wp-content/uploads/2016/04/QQ截图20161125170748-1.png 395w" sizes="(max-width: 199px) 100vw, 199px" /></li>
+</ol>
+</li>
+<li>把上一步中导出的源码加入工程中开始编译构建，并修改出现的编译错误，把出错的代码都删掉即可（如上述4中所说，那些宏和函数已删除。<strong>只需要修改编译出现错误的部分，其他的不是必须修改的，因为为了尽可能向后兼容，已经把相关宏重新定义为了空</strong>）</li>
+<li>如果是C#版本，步骤基本一致。</li>
+</ol>
+</li>
+<li>等待节点和等待帧数节点的使用，请分别参考文档：<a href="./../../../wait/index.html">./../../../wait/index.html</a>和<a href="./../../../waitframes/index.html">./../../../waitframes/index.html</a></li>
+<li>按照上述步骤就可以正常运行了。对于“已有实现”的类型，如果需要修改，请参考下面的说明。</li>
+</ol>
+<p>&nbsp;</p>
+<h3><span class="ez-toc-section" id="i">对于‘已有实现’的类型</span></h3>
+<p>如果需要修改的话，有两个流程可以选择。可以选择生成代码，也可以选择不生成代码，请参考下面的步骤，选择自己适合的方式。</p>
+<h4><span class="ez-toc-section" id="i-2">生成代码</span></h4>
+<ol>
+<li>打开类型信息浏览器，如下图，“生成代码?”没有勾选上的类型就是在程序里已经实现的类型，程序里已经有了相应的类型声明以及函数定义的代码。如下图中的ChildNodeTest在代码里已经有’class ChildNodeTest’了。<img class="alignnone size-full wp-image-1153" src="./../../../../../wp-content/uploads/2016/04/QQ截图20161130142048.png" alt="qq%e6%88%aa%e5%9b%be20161130142048" width="612" height="735" srcset="./../../../../../wp-content/uploads/2016/04/QQ截图20161130142048.png 612w, ./../../../../../wp-content/uploads/2016/04/QQ截图20161130142048-250x300.png 250w" sizes="(max-width: 612px) 100vw, 612px" /></li>
+<li>勾选上该Checkbox，然后点击“应用”，会生成类型文件。</li>
+<li>点击“打开代码生成位置”，可以看到ChildNodeTest.cs被生成了。在上图类型信息浏览器中，每个类的“生成位置”可以用来配置该类的生成位置，如果不配置，则使用工作区统一配置的代码生成位置。<img class="alignnone size-full wp-image-1129" src="./../../../../../wp-content/uploads/2016/04/QQ截图20161124183705.png" alt="qq%e6%88%aa%e5%9b%be20161124183705" width="712" height="266" srcset="./../../../../../wp-content/uploads/2016/04/QQ截图20161124183705.png 712w, ./../../../../../wp-content/uploads/2016/04/QQ截图20161124183705-300x112.png 300w" sizes="(max-width: 712px) 100vw, 712px" /></li>
+<li>打开ChildNodeTest.cs，可以看到如下，<span style="color: #0000ff;"><strong>只能在红色框内添加自己的代码。红色框外面的修改将会在重新生成代码的时候被丢弃</strong></span>！需要手工的把原来类型中的代码复制到新生成的类里，而把原来的文件<span style="color: #ff0000;">删掉</span>！否则会有重复定义的错误产生。<img class="alignnone size-full wp-image-1149" src="./../../../../../wp-content/uploads/2016/04/QQ截图20161128195834-1.png" alt="qq%e6%88%aa%e5%9b%be20161128195834" width="910" height="737" srcset="./../../../../../wp-content/uploads/2016/04/QQ截图20161128195834-1.png 910w, ./../../../../../wp-content/uploads/2016/04/QQ截图20161128195834-1-300x243.png 300w, ./../../../../../wp-content/uploads/2016/04/QQ截图20161128195834-1-768x622.png 768w" sizes="(max-width: 910px) 100vw, 910px" /></li>
+<li>从上可知，如果要修改类型名、成员名，请在“类型信息浏览器”中修改，然后“应用”就可以生成更新的代码。而其他相关代码只能添加在‘///&lt;&lt;&lt; BEGIN WRITING YOUR CODE’和‘///&lt;&lt;&lt; END WRITING YOUR CODE’中间，添加在这个块外面的代码在重新生成代码的时候将会丢失！C++代码也是同样的处理。<span style="color: #ff0000;">不要手工修改</span>‘///&lt;&lt;&lt; BEGIN WRITING YOUR CODE’后面的内容（例如FILE_INIT，FILE_UNINIT，CLASS_PART等），该内容在重新生成代码的时候将被使用到。</li>
+<li>对于enum和struct，如果需要修改，也需要勾选上其&#8221;生成代码?&#8221;的Checkbox。</li>
+</ol>
+<h4><span class="ez-toc-section" id="i-3">不生成代码</span></h4>
+<p>上述生成代码的流程，需要手工的把原来的代码copy/paste到生成的代码文件中有“///&lt;&lt;&lt; BEGIN WRITING YOUR CODE’和‘///&lt;&lt;&lt; END WRITING YOUR CODE”这样的注释块中间，比较麻烦！而且有人可能并不喜欢这样的形式，那么可以采取下面的流程：</p>
+<ol>
+<li>不要勾选“生成代码?”，任何修改依然在原来自己维护的代码中进行。</li>
+<li>任何需要在行为树中暴露的属性或方法需要在类型信息浏览器中同样的添加，否则编辑器中将看不到该属性或方法，即不能被使用。但原来已有的不需要重复加入，添加后需要点击“应用”重新生成胶水代码。</li>
+<li>另一方面，如果只是在编辑器中添加了属性或方法（添加后需要点击“应用”重新生成胶水代码），而在你的代码中没有相应的修改，编译程序的时候，会有编译错误。</li>
+<li>如果运行没有重新编译的程序，有可能会有报错发生：
+<ol>
+<li>当只是添加了属性的时候，如果没有使用“应用”后重新生成的代码编译构建程序，而使用老的程序的时候，可以正常运行，只是新添加的属性作为自定义属性使用而已（编译构建后，新添加的属性就将作为Agent的真正成员，效率最高）。</li>
+<li>当修改了方法（添加或改名），如果没有使用“应用”后重新生成的代码编译构建程序，而使用老的程序的时候，会有错误发生，在_behaviac_$_$.log中会有详细的错误输出。</li>
+</ol>
+</li>
+</ol>
+<h4><span class="ez-toc-section" id="i-4">总结比较</span></h4>
+<p>从上面可以知道，对于从老版本升级到3.6.*的情况下，对于已经有了大量代码的类来说，可以选择依然使用原来的代码，或者可以选择生成代码。</p>
+<p>使用原来的代码的好处是不需要copy/paste大量代码到新生成的类型文件中了，并且所有的代码都可以保持原来的风格，缺点是之后任何关于属性、方法的修改（改名、添加、删除等）都需要在类型信息浏览器中重复的做一遍。</p>
+<p>选择生成代码的缺点是需要手工copy/paste大量的代码到新生成的类型文件里，并且需要忍受begin/end注释块的束缚。但好处是后续的修改都只需要在类型信息浏览器中改一次，重新生成就好了。</p>
+<p>实际上即使对于选择了生成代码的情况，后续也可以再选择不生成代码，反之亦然。选择生成代码，则编辑器负责在你指定的位置生成代码；而选择不生成代码，编辑器将不为你生成代码，所有的代码由你自己来维护。二选一，如果选择生成代码，而自己原来维护的代码没用删掉，则会有编译错误！</p>
+<p>另外，需要说明的是，这里的生成代码是指生成class的声明代码（.h和.cpp，或者.cs）。而不管这里是否选择生成代码，在点击“应用”的时候，都会生成所有类型的胶水代码，可以在配置的代码生成位置查看生成的behaviac_agent_meta.cpp文件或AgentProperties.cs，里面的代码就是所谓的“胶水”代码。</p>
+<p>此外，我们知道，行为树的导出格式可以是xml或bson，也可以导出cpp或c#代码。即使采用xml或bson格式的时候，这里的“胶水”代码或者类型代码都会被生成，而且需要被添加到工程项目中参与编译构建！</p>
+<p><span id="more-168"></span></p>
+<h2><span class="ez-toc-section" id="34x35x">相比3.4.x版本，3.5.x版本有若干重大改动</span></h2>
+<ol>
+<li>用最新的代码把你们的游戏能够编译运行（如果可能首先删除旧的的代码及导出数据，用新代码替换。）</li>
+<li>导出最新的meta的xml文件</li>
+<li>用最新版本的编辑器打开老的workspace，重新导出</li>
+<li>用3中导出的新的文件，重新编译构建，运行游戏</li>
+</ol>
+<p>大版本升级，导出文件的版本号都会有改变，不严格按照上述步骤的话，在运行游戏或编辑器的时候都会有报错。而小版本的升级的时候，导出文件的版本号没有改变，可以不严格按照上述步骤。</p>
+<p>对于unity，3.5.3及以后的版本，在上述步骤3中导出文件的时候，会生成c#文件（AgentProperties.cs和customizedtypes.cs），需要添加都项目中，否则运行时会发生错误。</p>
+<p>为了支持C# GC Free，生成的代码有大的变化，需要按照上述升级步骤升级版本，否则运行游戏或者编辑器都会有报错。</p>
+<h2><span class="ez-toc-section" id="2x3x">相比2.x版本，3.x版本有若干重大改动</span></h2>
+<ol>
+<li>meta browser， 变量的使用更加统一和方便</li>
+<li>preaction/postaction，任何一个节点都可以添加前置和后置，统一了用法和体验</li>
+<li>支持了FSM</li>
+</ol>
+<h2><span class="ez-toc-section" id="2xAPItestunittesttestusertest">相比2.x版本，API的改动（请参考test/unittest或test/usertest中的代码）：</span></h2>
+<ul>
+<li>删掉了behaviac::Start, behaviac::Stop</li>
+<li>LogManager::SetEnable -&gt; Config::SetLogging</li>
+<li>删掉了World</li>
+<li>删掉了SetWorkspaceSettings</li>
+<li>删掉了REGISTER_EVENT</li>
+<li>bttick rename to btexec</li>
+<li>DECLARE_BEHAVIAC_OBJECT_NOVIRTUAL rename to DECLARE_BEHAVIAC_OBJECT_STRUCT</li>
+<li>删掉了REGISTER_METHOD_CHECKRESULT</li>
+<li>RegisterName -&gt; RegisterIntanceName, UnRegisterName -&gt; UnRegisterIntanceName</li>
+<li>behaviac::Property::Registger, behaviac::Condition::Register -&gt; behaviac::TypeRegister::Register, UnRegister类似</li>
+<li>在所有加载BT之前，调用behaviac::Workspace::GetInstance()-&gt;SetFilePath和behaviac:: Workspace::GetInstance()-&gt;SetFileFormat来设置路径和格式</li>
+<li>behaviac::Workspace::ExportMetas修改为behaviac::Workspace::GetInstance()-&gt;ExportMetas，其他相应的对Workspace的函数的调用也要类似的修改</li>
+<li>删掉了Workspace::LogFrames和Workspace::HandleRequests, 添加了Workspace::DebugUpdate</li>
+<li>behaviac::World::GetInstance()-&gt;btexec()修改为behaviac::Workspace::GetInstance()-&gt;Update()</li>
+</ul>
+]]></content:encoded>
+					
+					<wfw:commentRss>./../../../../../updatenotes/feed/index.html</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

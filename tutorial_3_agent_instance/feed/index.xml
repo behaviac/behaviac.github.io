@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	《教程3：Agent实例》的评论	</title>
+	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
+	<link>./../index.html</link>
+	<description>Tencent behaviac, Game AI, Behavior Tree, Finite State Machine, Hierarchical Task Network, BT FSM HTN, 腾讯开源, 游戏AI, 行为树,有限状态机,分层任务网络</description>
+	<lastBuildDate>Mon, 09 Oct 2017 00:36:48 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.4.1</generator>
+	<item>
+		<title>
+		作者：cainhuang		</title>
+		<link>./../index.html#comment-412</link>
+
+		<dc:creator><![CDATA[cainhuang]]></dc:creator>
+		<pubDate>Mon, 09 Oct 2017 00:36:48 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=1534#comment-412</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;./../index.html#comment-411&quot;&gt;jamesjxiao&lt;/a&gt;.
+
+C#版支持Unity版和纯C#版，使用BEHAVIAC_CS_ONLY宏，纯C#版的Agent不从Mono继承]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="./../index.html#comment-411">jamesjxiao</a>.</p>
+<p>C#版支持Unity版和纯C#版，使用BEHAVIAC_CS_ONLY宏，纯C#版的Agent不从Mono继承</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		作者：jamesjxiao		</title>
+		<link>./../index.html#comment-411</link>
+
+		<dc:creator><![CDATA[jamesjxiao]]></dc:creator>
+		<pubDate>Tue, 03 Oct 2017 07:44:58 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=1534#comment-411</guid>
+
+					<description><![CDATA[这里说到了一个比较重要的点，Unity版本的Agent其实建议不要继承自Mono，而是走存逻辑类。我现在的代码框架是脱离mono的，但因为Agent继承自mono，所以需要手动创建一个逻辑GameObject，非常的不优雅哟~]]></description>
+			<content:encoded><![CDATA[<p>这里说到了一个比较重要的点，Unity版本的Agent其实建议不要继承自Mono，而是走存逻辑类。我现在的代码框架是脱离mono的，但因为Agent继承自mono，所以需要手动创建一个逻辑GameObject，非常的不优雅哟~</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		作者：Princerin		</title>
+		<link>./../index.html#comment-384</link>
+
+		<dc:creator><![CDATA[Princerin]]></dc:creator>
+		<pubDate>Fri, 31 Mar 2017 06:22:32 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=1534#comment-384</guid>
+
+					<description><![CDATA[再次感谢！]]></description>
+			<content:encoded><![CDATA[<p>再次感谢！</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		作者：Princerin		</title>
+		<link>./../index.html#comment-383</link>
+
+		<dc:creator><![CDATA[Princerin]]></dc:creator>
+		<pubDate>Fri, 31 Mar 2017 06:21:47 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=1534#comment-383</guid>
+
+					<description><![CDATA[知道原因了，因为Unity版本的Agent是继承自MonoBehaviour的，如果按照纯C#版本教程那样new Agent()，在Unity的语义环境里是不允许有这种行为的，导致new出来的实例判空操作会返回true。在Unity的应用场景里应该将Agent挂到GameObject，是我自己使用方式不对:)。]]></description>
+			<content:encoded><![CDATA[<p>知道原因了，因为Unity版本的Agent是继承自MonoBehaviour的，如果按照纯C#版本教程那样new Agent()，在Unity的语义环境里是不允许有这种行为的，导致new出来的实例判空操作会返回true。在Unity的应用场景里应该将Agent挂到GameObject，是我自己使用方式不对:)。</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		作者：cainhuang		</title>
+		<link>./../index.html#comment-382</link>
+
+		<dc:creator><![CDATA[cainhuang]]></dc:creator>
+		<pubDate>Fri, 31 Mar 2017 06:18:13 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=1534#comment-382</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;./../index.html#comment-381&quot;&gt;Princerin&lt;/a&gt;.
+
+可以改成这样试试：
+if (!object.ReferenceEquals(pAgent, null) &amp;&amp; object.ReferenceEquals(pParent, null) &amp;&amp; !Utils.IsStaticClass(instanceName))
+
+但==操作符并没有重载过]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="./../index.html#comment-381">Princerin</a>.</p>
+<p>可以改成这样试试：<br />
+if (!object.ReferenceEquals(pAgent, null) &#038;&#038; object.ReferenceEquals(pParent, null) &#038;&#038; !Utils.IsStaticClass(instanceName))</p>
+<p>但==操作符并没有重载过</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		作者：Princerin		</title>
+		<link>./../index.html#comment-381</link>
+
+		<dc:creator><![CDATA[Princerin]]></dc:creator>
+		<pubDate>Fri, 31 Mar 2017 04:25:32 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=1534#comment-381</guid>
+
+					<description><![CDATA[感谢回复。胶水代码已经包含在工程里。经过调试runtime发现，在Util.cs的466行，
+if (pAgent != null &#038;&#038; pParent == null &#038;&#038; !Utils.IsStaticClass(instanceName))这一句，在pParent有值的情况下，很奇怪的进入了if语句，从而在FirstAgent里寻找SecondAgentInstance实例，导致失败。而运行纯CS版本不会出现这个问题，是否因为Unity.Object重载了==操作符导致？谢谢。]]></description>
+			<content:encoded><![CDATA[<p>感谢回复。胶水代码已经包含在工程里。经过调试runtime发现，在Util.cs的466行，<br />
+if (pAgent != null &amp;&amp; pParent == null &amp;&amp; !Utils.IsStaticClass(instanceName))这一句，在pParent有值的情况下，很奇怪的进入了if语句，从而在FirstAgent里寻找SecondAgentInstance实例，导致失败。而运行纯CS版本不会出现这个问题，是否因为Unity.Object重载了==操作符导致？谢谢。</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		作者：cainhuang		</title>
+		<link>./../index.html#comment-380</link>
+
+		<dc:creator><![CDATA[cainhuang]]></dc:creator>
+		<pubDate>Fri, 31 Mar 2017 02:03:11 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=1534#comment-380</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;./../index.html#comment-379&quot;&gt;Princerin&lt;/a&gt;.
+
+编辑器生成的胶水代码也要一起编译，里面有自动生成Agent.RegisterInstance()相关代码]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="./../index.html#comment-379">Princerin</a>.</p>
+<p>编辑器生成的胶水代码也要一起编译，里面有自动生成Agent.RegisterInstance()相关代码</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		作者：Princerin		</title>
+		<link>./../index.html#comment-379</link>
+
+		<dc:creator><![CDATA[Princerin]]></dc:creator>
+		<pubDate>Fri, 31 Mar 2017 01:56:40 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=1534#comment-379</guid>
+
+					<description><![CDATA[使用U3D跟着教程3进行操作，到最后运行会报错找不到SecondAgentInstance，而在代码里确实已经调用过
+SecondAgent SecondAgentInstance = new SecondAgent();
+Agent.BindInstance(SecondAgentInstance, &quot;SecondAgentInstance&quot;);
+请问有可能是什么原因导致的呢？]]></description>
+			<content:encoded><![CDATA[<p>使用U3D跟着教程3进行操作，到最后运行会报错找不到SecondAgentInstance，而在代码里确实已经调用过<br />
+SecondAgent SecondAgentInstance = new SecondAgent();<br />
+Agent.BindInstance(SecondAgentInstance, &#8220;SecondAgentInstance&#8221;);<br />
+请问有可能是什么原因导致的呢？</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

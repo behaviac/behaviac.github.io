@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>竞品分析 &#8211; behaviac</title>
+	<atom:link href="./../../%E7%AB%9E%E5%93%81%E5%88%86%E6%9E%90/feed/index.html" rel="self" type="application/rss+xml" />
+	<link>./../../../../../index.html</link>
+	<description>Tencent behaviac, Game AI, Behavior Tree, Finite State Machine, Hierarchical Task Network, BT FSM HTN, 腾讯开源, 游戏AI, 行为树,有限状态机,分层任务网络</description>
+	<lastBuildDate>Tue, 13 Dec 2016 11:16:26 +0000</lastBuildDate>
+	<language>zh-CN</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.4.1</generator>
+
+<image>
+	<url>./../../../../../wp-content/uploads/2016/04/cropped-256x256-32x32.png</url>
+	<title>竞品分析 &#8211; behaviac</title>
+	<link>./../../../../../index.html</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>behaviac与Behavior Designer的对比</title>
+		<link>./../../../../../bd_vs_behaviac/index.html</link>
+					<comments>./../../../../../bd_vs_behaviac/index.html#comments</comments>
+		
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Mon, 11 Apr 2016 09:52:11 +0000</pubDate>
+				<category><![CDATA[文章]]></category>
+		<category><![CDATA[竞品分析]]></category>
+		<guid isPermaLink="false">./../../../../../index.html?p=154</guid>
+
+					<description><![CDATA[简介 众所周知，行为树技术已经在游戏开发过程中逐渐变得流行起来。目前业界有两款知名度相对比较高的行为树组件——Behavior Designer（后面简称BD）<a class="moretag" href="./../../../../../bd_vs_behaviac/index.html">Read More...</a>]]></description>
+										<content:encoded><![CDATA[<h3><span class="ez-toc-section" id="i">简介</span></h3>
+<p>众所周知，行为树技术已经在游戏开发过程中逐渐变得流行起来。目前业界有两款知名度相对比较高的行为树组件——Behavior Designer（后面简称BD）和behaviac。本文将重点剖析这两款行为树组件的特点和差异。</p>
+<p>BD是独立游戏工作室Opsive开发的一款集成在Unity引擎中的行为树插件（<a href="http://www.opsive.com/">www.opsive.com</a>），提供了让程序员、策划、美术等方便使用的可视化编辑器，以及丰富的API以便轻松的创建任务，并无缝集成类似uScript和PlayMaker等第三方的Unity插件。</p>
+<p>behaviac是腾讯公司提供的一款行为树解决方案（<a href="./../../../../../index.html">www.behaviac.com</a>），是游戏AI的开发框架和组件。支持全平台，适用于客户端和服务器，助力游戏快速迭代开发，提供了功能强大的编辑器和API。</p>
+<p>目前已有多款游戏分别采用了这两款组件。</p>
+<p>那么，这两款行为树组件究竟有什么特点和差异？本文通过重点分析BD组件的特色，本着“人无我有，人有我优”的目标，期待将behaviac组件实现的更加完善。</p>
+<p>首先给出behaviac与BD的对比表，如下表所示，后面将详细介绍。</p>
+<p><img src="./../../../../../img/articles/bd_vs_behaviac.png" alt="bd_vs_behaviac" /></p>
+<h3 id="section"><span class="ez-toc-section" id="i-2">费用</span></h3>
+<p>BD是Unity Asset Store中的付费组件，可以获得到运行时的源码，如下图所示：</p>
+<p><img src="./../../../../../img/articles/bd.png" alt="bd" /></p>
+<p>behaviac完全免费使用, 已经在Github上全部开源，包括运行时和编辑器。</p>
+<h3 id="section-1"><span class="ez-toc-section" id="i-3">平台</span></h3>
+<p>BD是Unity引擎的插件，运行时只有C#语言实现，编辑器也整合在Unity的编辑器中。</p>
+<p>behaviac的运行时支持全平台（Linux/Windows/Mac/Android/iOS等），有C++和C#两种版本，并在研发JS和LUA版本，原生支持Unity引擎，也可以整合Cocos引擎。编辑器运行在Windows上，是独立运行的exe，可以通过IP和端口跟游戏端（运行时）进行本机或远程连调。</p>
+<h3 id="section-2"><span class="ez-toc-section" id="i-4">支持</span></h3>
+<p>BD可以在其官网提供的论坛进行发帖咨询并得到答疑，提供了较为全面的文档、视频和示例，但目前只有全英文版。</p>
+<p>behaviac在官网提供了论坛进行问题咨询和答疑，目前都为全中文版。此外，还提供了开发者QQ群（433547396），可以与组件研发人员进行实时沟通，以最快的速度交流使用中的问题，并及时修复使用者发现的bug。behaviac自带了相关游戏demo和单元测试的代码，提供的中文文档已经较为全面，但缺乏教学视频。</p>
+<h3 id="section-3"><span class="ez-toc-section" id="i-5">技术点</span></h3>
+<p>相比其他行为树组件，BD提供了很多实用的技术：</p>
+<h4 id="section-4"><span class="ez-toc-section" id="i-6">节点类型</span></h4>
+<p>BD提供了四种概念节点，都称之为任务（Task）：</p>
+<ul>
+<li>组合节点（Composite）：Sequence、Selector、Parallel等。</li>
+<li>装饰节点（Decorator）：为仅有的一个子节点额外添加一些功能，比如让子节点一直运行直到其返回某个运行状态值，或者将子节点的返回值取反等。</li>
+<li>动作节点（Action）：动作节点是真正做事的节点，其为叶节点。BD中自带了很多动作节点，如果不够用，也可以编写自己的动作节点。</li>
+<li>条件节点（Conditional）：用于判断某条件是否成立。</li>
+</ul>
+<p>BD常用的任务包括动作和条件节点，这两个节点是用来派生出自己游戏所需的子类来进行脚本定制，特定的逻辑体现在派生出的动作或条件节点中，暴露一些属性在编辑器中以供配置和测试。</p>
+<p>BD提供了覆盖整个Unity引擎API的各种任务，包括动画、声音、物理、角色控制、粒子系统等方面的常用类型（如下图所示），这样就允许非程序员（策划或美术）方便的创建自己的游戏AI，同时也让程序员尽量少的编写自定义的任务。</p>
+<p><img src="./../../../../../img/articles/bd_nodes.png" alt="bd_nodes" /></p>
+<p>behaviac提供了丰富的节点类型（如下图所示），一般情况下，开发者无需扩展自己的节点就可以工作，并不需要派生自己的动作和条件节点。除了支持常用的节点外，behaviac还提供了很多快捷节点（例如，选择监控、条件执行、概率选择、随机选择等），每个节点上还可以支持添加附件（前置、后置和事件等）。</p>
+<p><img src="./../../../../../img/articles/behaviac_nodes.png" alt="behaviac_nodes" /></p>
+<p>此外，behaviac还提供了有限状态机（FSM），并支持FSM跟行为树的嵌套使用。</p>
+<p>behaviac是基于类型信息的工作方式，只需要实现Agent子类及其属性、方法，然后在编辑器中创建行为树时选用这些属性或方法。</p>
+<h4 id="section-5"><span class="ez-toc-section" id="i-7">条件终止</span></h4>
+<p>BD为了实现终止执行，引入了条件终止（Conditional Abort）的概念，也就是设置了终止的节点将在每次更新时都会进行条件测试，以免从头开始执行整个行为树。这类似于虚幻引擎4（UE4）中的观察者终止（Observer Abort）。</p>
+<p>如下图所示，Sequence节点设置了“Abort”标记，那么当第一个叶子节点“Int Comparison”返回为true时，可以执行到后面的Wait节点。这里Wait节点会等待10秒中，在这10秒内如果之前的“Int Comparison”节点返回为false时，那么Sequence节点会被重新开始执行。</p>
+<p>behaviac的实现方式跟BD有所区别，可以通过“前置”附件来实现该功能。该前置附件的“执行时机”只要设置为“Enter/Update”，就可以支持当前节点在每次进入或执行时都会检测该前置条件，来决定它的子节点是否会被执行。</p>
+<p>behaviac的前置附件机制可能更为灵活和通用，接下来介绍的节点类型也能通过前置来实现。</p>
+<h4 id="section-6"><span class="ez-toc-section" id="i-8">中断节点</span></h4>
+<p>BD提供了中断（Interrupt）和执行中断（Perform Interruption）节点。</p>
+<p>如果中断节点被触发，则它的所有子节点的执行被中断。中断命令被执行中断节点发起。中断节点在收到中断命令前，不会打断子节点的执行状态。如果子节点执行完毕还没有收到任何中断命令，则直接返回子节点的执行结果，如下图所示：</p>
+<p>behaviac没有提供中断相关的节点，可以通过“前置”附件来实现该功能。该前置附件的“执行时机”只要设置为“Enter/Update”，就可以支持当前节点在每次进入或执行时都会检测该前置条件，来决定它的子节点是否会被执行。</p>
+<h4 id="section-7"><span class="ez-toc-section" id="i-9">监控节点</span></h4>
+<p>BD提供了监控任务（Guard Task）来保证多个节点执行的互斥性，类似于多线程编程中的信号量（Semaphore）。</p>
+<p>比如有两个不同的任务，一个播放声音，另一个播放特效。这两个任务在行为树里是两个不同的分支，所以它们之间并不知道对方的状态，有可能同一时间这两个任务被同时执行。但可能并不希望这种情况发生。在这种情况下，通过使用监控任务来保证当前要么播放音效，要么播放特效。只有当第一个播放完毕，才会播放第二个。</p>
+<p>behaviac没有提供监控节点，可以通过“前置”附件来实现该功能。该前置附件的“执行时机”只要设置为“Enter/Update”，就可以支持当前节点在每次进入或执行时都会检测该前置条件，来决定它的子节点是否会被执行。</p>
+<h4 id="section-8"><span class="ez-toc-section" id="i-10">事件系统</span></h4>
+<p>BD提供了一个内置的事件系统，可以通过代码（BehaviorTree.SendEvent函数）触发事件，也可以通过行为树的节点来触发（SendEvent节点）和监听（HasReceivedEvent节点）事件。</p>
+<p>behaviac的事件跟BD有所区别，通过附件的方式，将另一棵行为树作为附件添加到当前行为树的某个节点上，在游戏端（运行时）发送事件时进行响应，并切换到另一棵行为树。behaviac未提供BD中的SendEvent和HasRecivedEvent节点，只能在代码端发送事件，行为树里监听和响应事件。</p>
+<h4 id="section-9"><span class="ez-toc-section" id="i-11">性能</span></h4>
+<p>BD和behaviac都存在着部分代码使用了C#的反射来进行方法的调用，会影响性能。</p>
+<p>在BD中，行为树在启动的时候会获取每个任务的事件接口。事件定义在了Behavior.EventTypes里，包括OnCollisionEnter和Update等物理和更新事件。获取事件的时候由于用到了C#的反射，所以当任务节点很多的时候，这个过程会非常的慢。</p>
+<p>在behaviac中，解决方案是通过生成C#源码的方式来绕开反射的使用，目前XML版行为树的执行还依赖于反射，需要改进。</p>
+<h4 id="section-10"><span class="ez-toc-section" id="i-12">热更新</span></h4>
+<p>BD的行为树的扩展节点全部基于C#写脚本实现，行为树可以保存为JSON格式，可以在iOS平台进行热更新。</p>
+<p>behaviac采用XML版的行为树，这些XML文件可以作为配置文件在iOS平台上进行热更新。</p>
+<h4 id="section-11"><span class="ez-toc-section" id="i-13">调试</span></h4>
+<p>BD的编辑器嵌套在Unity编辑器中，调试可以无需跟游戏建立连接，就可以直接设置断点、查看执行路径、修改变量进行调试。</p>
+<p>而behaviac的编辑器是独立的exe。当进行调试时，需要将游戏端（运行时）跟编辑器建立连接，然后游戏端将数据发到编辑器，编辑器进行相应的显示，编辑器这边也可以修改参数并发送给游戏端进行测试。</p>
+<p>behaviac独立的编辑器可以方便的与布局在Linux服务器上的游戏端进行远程连调，这也是BD所不支持的优势。<br />
+此外，behaviac还支持离线调试，也就是在游戏结束后可以加载游戏中的log数据，再以图形化的形式表现出来。</p>
+<h4 id="section-12"><span class="ez-toc-section" id="i-14">预制</span></h4>
+<p>BD的编辑器没有预制（Prefab）的功能。</p>
+<p>behaviac的编辑器提供了预制的功能，可以将一棵行为树保存为预制，然后在其他的行为树中可以使用该预制进行编辑，大大提高了复用相同功能行为树的编辑效率。</p>
+<h4 id="section-13"><span class="ez-toc-section" id="i-15">编辑与查看</span></h4>
+<p>在编辑行为树的过程中，通过实时的错误检测器，BD会立即显示行为树中的节点错误，这样方便开发者快速找出错误而不用等到运行时。类似的，如果修改了行为树，BD会在游戏场景中立即使用修改后的行为树。</p>
+<p>behaviac对行为树错误的检测是通过在编辑器中手动的点击“检查错误”按钮或开始导出行为树时，才开始检查行为树中的错误。此外，如果修改了行为树，也需要手动导出该行为树后，通过热加载，游戏端才会自动体现修改后的效果。</p>
+<p>因此，behaviac在实时编辑和检查错误方面，可以稍微改进跟BD保持一致流畅的用户体验。</p>
+<div class="section-nav"></div>
+]]></content:encoded>
+					
+					<wfw:commentRss>./../../../../../bd_vs_behaviac/feed/index.html</wfw:commentRss>
+			<slash:comments>8</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

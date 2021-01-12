@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>扩展 &#8211; behaviac</title>
+	<atom:link href="./../../%E6%89%A9%E5%B1%95/feed/index.html" rel="self" type="application/rss+xml" />
+	<link>./../../../../../index.html</link>
+	<description>Tencent behaviac, Game AI, Behavior Tree, Finite State Machine, Hierarchical Task Network, BT FSM HTN, 腾讯开源, 游戏AI, 行为树,有限状态机,分层任务网络</description>
+	<lastBuildDate>Mon, 19 Dec 2016 09:11:42 +0000</lastBuildDate>
+	<language>zh-CN</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.4.1</generator>
+
+<image>
+	<url>./../../../../../wp-content/uploads/2016/04/cropped-256x256-32x32.png</url>
+	<title>扩展 &#8211; behaviac</title>
+	<link>./../../../../../index.html</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>扩展节点类型</title>
+		<link>./../../../../../tutorial9_extendnodes/index.html</link>
+					<comments>./../../../../../tutorial9_extendnodes/index.html#respond</comments>
+		
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Fri, 13 May 2016 02:37:40 +0000</pubDate>
+				<category><![CDATA[3.5]]></category>
+		<category><![CDATA[扩展]]></category>
+		<guid isPermaLink="false">./../../../../../index.html?p=298</guid>
+
+					<description><![CDATA[有时候，behaviac组件自带的节点类型不能满足项目需求，或者需要更高效的节点类型，可以通过添加新的节点类型来扩展系统。 添加新的节点类型，编辑器端需要实现一<a class="moretag" href="./../../../../../tutorial9_extendnodes/index.html">Read More...</a>]]></description>
+										<content:encoded><![CDATA[<p id="section">有时候，behaviac组件自带的节点类型不能满足项目需求，或者需要更高效的节点类型，可以通过添加新的节点类型来扩展系统。</p>
+<p>添加新的节点类型，编辑器端需要实现一个插件，运行时端需要实现相应的节点类型以便加载数据并且负责执行。</p>
+<h3 id="section-1"><span class="ez-toc-section" id="i">编辑器端的插件</span></h3>
+<p>随项目提供了ExamplePlugin，可以根据该插件做相应的修改来添加自己的新节点。该项目所在路径：tools/Designer/Plugins/ExamplePlugin。</p>
+<h3 id="section-2"><span class="ez-toc-section" id="i-2">项目设置</span></h3>
+<ul>
+<li>该项目依赖如下DLL，如下图所示：</li>
+</ul>
+<p><img class="aligncenter" src="./../../../../../img/tutorials/tutorial9/referencedDlls.png" alt="" /></p>
+<ul>
+<li>产生的DLL需要放置在BehaviacDesigner.exe同一个目录。</li>
+<li>如果自己的插件只是对ExamplePlugin修改了相应的名字，并且该插件项目和ExamplePlugin的所在位置一样，即位于tools/Designer/Plugins中，那么对BehaviacDesignerBase.dll的引用以及产生DLL的输出路径不需要改动即可。否则，如果有编译错误或者运行时不能看到添加的节点，请确保上面两个步骤的设置都是正确的。</li>
+<li>打开编辑器后，正常情况下新加的节点ExampleNode将出现在动作组下，如下图所示：</li>
+</ul>
+<p><img class="aligncenter" src="./../../../../../img/tutorials/tutorial9/actionFolder.png" alt="" /></p>
+<h3><span class="ez-toc-section" id="i-3">节点类型</span></h3>
+<p>每一个要添加的节点类型，都需要仿照ExampleNode或相应的节点新建文件ExampleNode.cs，并编写类ExampleNode的实现。</p>
+<ul>
+<li>该类的Attribute（即NodeDesc）用来指定该节点出现的组和图标（icon）。如果使用自己的图标文件，则需要添加进工程的Resources.resx文件中，假如该图标命名为“exampleNodeIcon”，并使用如下代码：<br />
+[NodeDesc(“Actions”, “exampleNodeIcon”)]</li>
+<li>构造函数里需要提供显示用的名字（DisplanName）和描述（Description）</li>
+<li>ExportClass用来指定该类导出供C++载入时的类名。</li>
+<li>根据需要添加自己的属性（Property），这些属性在designer里将会自动的显示出来供用户指定数据。</li>
+<li>如果上一步添加了属性，那么需要重载protected override void CloneProperties(Node newnode)，来clone这些新加的属性。</li>
+<li>重载public override void CheckForErrors(BehaviorNode rootBehavior, List result)来验证数据的有效性已经提供无效时的说明。</li>
+<li>此外，还需编写生成新加节点类型的C++或C#相关的代码，参考“5.4扩展生成节点或编程语言”。这里介绍用于生成C++代码的相关类和接口（生成C#完全类似）：
+<ul>
+<li>添加文件ExampleNodeCppExporter.cs（注意，必须是CppExporter结尾，若是生成C#，则必须以CsExporter结尾，后面类推），编写类ExampleNodeCppExporter的实现。</li>
+<li>根据新加节点的需要，重载GenerateConstructor、GenerateMember、GenerateMethod等函数。</li>
+<li>其他细节请参考样例代码的实现。</li>
+</ul>
+</li>
+</ul>
+<h3 id="section-4"><span class="ez-toc-section" id="i-4">属性</span></h3>
+<ul>
+<li>属性（Property）的类型可以是基本类型如bool、int、float、string等</li>
+<li>可以是VariableDef、MethodDef，RightValueDef来表示访问Agent的属性或方法。</li>
+<li>可以是结构体（Struct）、数组（Array）或结构体的数组。</li>
+<li>可以是枚举（Enum）或枚举的数组。</li>
+<li>需要提供相应的Attribute来描述该属性的类型信息，比如，显示名、描述、范围、显示顺序等。请注意属性的类型必须与相应的Attribute的类型保持一致。
+<ul>
+<li>DesignerBoolean</li>
+<li>DesignerInteger</li>
+<li>DesignerFloat</li>
+<li>DesignerString</li>
+<li>DesignerTypeEnum</li>
+<li>DesignerStruct</li>
+<li>DesignerPropertyEnum</li>
+<li>DesignerRightValueEnum</li>
+<li>DesignerMethodEnum</li>
+<li>DesignerArrayStruct</li>
+<li>DesignerArrayBoolean</li>
+<li>DesignerArrayInteger</li>
+<li>DesignerArrayFloat</li>
+<li>DesignerArrayString</li>
+<li>DesignerArrayEnum</li>
+</ul>
+</li>
+</ul>
+<h3 id="section-5"><span class="ez-toc-section" id="i-5">运行时端需要实现相应的节点类型</span></h3>
+<p>节点类型包括叶子节点和分支节点，而分支节点又分为组合节点（Composite）或装饰节点（Decorator）。需要根据具体的节点类型从相应的基类继承来创建自己的节点类。<br />
+每个节点类型需要两个相应的类：一个是静态Node，这个是静态的数据，负责load数据以及创建相应的动态节点；另一个是动态Task。<br />
+详细代码请参考action.h、condition.h或waitframes.h等头文件。</p>
+<h4 id="node"><span class="ez-toc-section" id="Node">静态Node</span></h4>
+<p>静态的Node必须提供的两个虚函数如下：</p>
+<ul>
+<li>virtual void load(int version, const char* agentType, const properties_t&amp; properties);</li>
+<li>virtual BehaviorTask* createTask() const;</li>
+<li>BehaviorNode::Register&lt;***&gt;();进入程序前需要注册该静态的Node类型，动态的Task类不需要注册。</li>
+<li>BehaviorNode::UnRegister&lt;***&gt;();结束程序前需要反注册该静态的Node类型，动态的Task类不需要反注册。</li>
+</ul>
+<h4 id="task"><span class="ez-toc-section" id="Task">动态Task</span></h4>
+<p>对应静态Node，动态Task需要提供下列虚函数：</p>
+<ul>
+<li>virtual void copyto(BehaviorTask* target) const;</li>
+<li>virtual void save(ISerializableNode* node) const;</li>
+<li>virtual void load(ISerializableNode* node);</li>
+<li>virtual bool onenter(Agent* pAgent);</li>
+<li>virtual void onexit(Agent* pAgent, EBTStatus s);</li>
+<li>virtual EBTStatus update(Agent* pAgent, Interval_t&amp; interval, EBTStatus childStatus);</li>
+</ul>
+<p>如果没有特殊需要，则直接调用super的函数就可以了。</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>./../../../../../tutorial9_extendnodes/feed/index.html</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>类、结构体或枚举的数组</title>
+		<link>./../../../../../tutorial8_customarray/index.html</link>
+					<comments>./../../../../../tutorial8_customarray/index.html#respond</comments>
+		
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Fri, 13 May 2016 02:34:48 +0000</pubDate>
+				<category><![CDATA[3.5]]></category>
+		<category><![CDATA[扩展]]></category>
+		<category><![CDATA[C++]]></category>
+		<category><![CDATA[运行时]]></category>
+		<guid isPermaLink="false">./../../../../../index.html?p=296</guid>
+
+					<description><![CDATA[对于C#版，类型信息不支持[]类型的数组，只支持List&#60;***&#62;类型的数组。 对于C++版，需要按照如下方式进行注册： 基本类型（bool、int<a class="moretag" href="./../../../../../tutorial8_customarray/index.html">Read More...</a>]]></description>
+										<content:encoded><![CDATA[<p id="section">对于C#版，类型信息不支持[]类型的数组，只支持List&lt;***&gt;类型的数组。</p>
+<p>对于C++版，需要按照如下方式进行注册：</p>
+<p>基本类型（bool、int、float、char、sbyte、ubyte等）的数组可以直接使用，但当使用到其他自定义类型数组的时候，需要添加特殊的宏和代码，否则运行时可能会有错误（如果没有使用到相应的操作，则没有错误）：</p>
+<ul>
+<li>在.h的头文件里添加如下所示的宏，但需放在任意namespace之外：</li>
+</ul>
+<div class="highlighter-rouge">
+<pre class="highlight"><code>
+<span class="n">BEHAVIAC_DECLARE_TYPE_VECTOR_HANDLER</span><span class="p">(</span><span class="n">TNS</span><span class="o">::</span><span class="n">ST</span><span class="o">::</span><span class="n">PER</span><span class="o">::</span><span class="n">WRK</span><span class="o">::</span><span class="n">kEmployee</span><span class="p">);</span>
+
+</code></pre>
+</div>
+<ul>
+<li>在初始化的代码里添加如下所示的注册代码：</li>
+</ul>
+<div class="highlighter-rouge">
+<pre class="highlight"><code>
+<span class="n">behaviac</span><span class="o">::</span><span class="n">TypeRegister</span><span class="o">::</span><span class="n">Register</span><span class="o">&lt;</span><span class="n">TNS</span><span class="o">::</span><span class="n">ST</span><span class="o">::</span><span class="n">PER</span><span class="o">::</span><span class="n">WRK</span><span class="o">::</span><span class="n">kEmployee</span><span class="o">&gt;</span><span class="p">(</span><span class="s">" TNS::ST::PER::WRK::kEmployee"</span><span class="p">);</span>
+
+</code></pre>
+</div>
+<ul>
+<li>在结束代码里添加如下所示的反注册代码：</li>
+</ul>
+<div class="highlighter-rouge">
+<pre class="highlight"><code>
+<span class="n">behaviac</span><span class="o">::</span><span class="n">TypeRegister</span><span class="o">::</span><span class="n">UnRegister</span><span class="o">&lt;</span><span class="n">TNS</span><span class="o">::</span><span class="n">ST</span><span class="o">::</span><span class="n">PER</span><span class="o">::</span><span class="n">WRK</span><span class="o">::</span><span class="n">kEmployee</span><span class="o">&gt;</span><span class="p">(</span><span class="s">" TNS::ST::PER::WRK::kEmployee"</span><span class="p">);</span>
+
+</code></pre>
+</div>
+<p>更多细节可以参考behaviac组件C++源码中附带的<a href="https://github.com/Tencent/behaviac/blob/master/test/btunittest/Agent/UnitTestTypes.h">UnitTestTypes.h</a>文件中的结构体kEmployee。</p>
+<ul>
+<li>Agent及其子类的数组<br />
+当涉及<code class="highlighter-rouge">behaviac::Agent</code>或是其子类的时候，仅支持其指针类型即<code class="highlighter-rouge">behaviac::Agent*</code>或<code class="highlighter-rouge">SubclassAgent*</code>（<code class="highlighter-rouge">SubclassAgent</code>是<code class="highlighter-rouge">behaviac::Agent</code>的一个子类）。<br />
+<code class="highlighter-rouge">behaviac::Agent*</code>或<code class="highlighter-rouge">vector&lt;behaviac::Agent*&gt;</code>类型直接被支持，不需要做什么额外的工作，其任何子类<code class="highlighter-rouge">SubclassAgent*</code>也直接被支持。<br />
+但是需要支持<code class="highlighter-rouge">vector&lt;SubclassAgent*&gt;</code>的时候，则需要在.h文件里添加如下所示的宏，但需放在任意namespace之外：</li>
+</ul>
+<div class="highlighter-rouge">
+<pre class="highlight"><code>
+<span class="n">BEHAVIAC_DECLARE_TYPE_VECTOR_HANDLER</span><span class="p">(</span><span class="n">SubclassAgent</span><span class="o">*</span><span class="p">);</span>
+
+</code></pre>
+</div>
+<p>在初始化和结束的时候分别注册和反注册：</p>
+<div class="highlighter-rouge">
+<pre class="highlight"><code>
+<span class="n">behaviac</span><span class="o">::</span><span class="n">Agent</span><span class="o">::</span><span class="n">Register</span><span class="o">&lt;</span><span class="n">SubclassAgent</span><span class="o">&gt;</span><span class="p">();</span>
+
+<span class="n">behaviac</span><span class="o">::</span><span class="n">Agent</span><span class="o">::</span><span class="n">UnRegister</span><span class="o">&lt;</span><span class="n">SubclassAgent</span><span class="o">&gt;</span><span class="p">();</span>
+
+</code></pre>
+</div>
+<p>更多细节可以参考behaviac组件C++源码中附带的<a href="https://github.com/Tencent/behaviac/blob/master/test/btunittest/Agent/EmployeeParTestAgent.h">EmployeeParTestAgent.h</a>文件中的类EmployeeParTestAgent。</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>./../../../../../tutorial8_customarray/feed/index.html</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>自定义枚举</title>
+		<link>./../../../../../tutorial7_customenum/index.html</link>
+					<comments>./../../../../../tutorial7_customenum/index.html#respond</comments>
+		
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Fri, 13 May 2016 02:34:01 +0000</pubDate>
+				<category><![CDATA[3.5]]></category>
+		<category><![CDATA[扩展]]></category>
+		<category><![CDATA[C++]]></category>
+		<category><![CDATA[运行时]]></category>
+		<guid isPermaLink="false">./../../../../../index.html?p=294</guid>
+
+					<description><![CDATA[类似于自定义类，在.h文件中，任意编写一个自定义枚举类型，然后通过宏DECLARE_BEHAVIAC_ENUM声明该枚举类型。需要注意的是，宏DECLARE_B<a class="moretag" href="./../../../../../tutorial7_customenum/index.html">Read More...</a>]]></description>
+										<content:encoded><![CDATA[<ul>
+<li>类似于自定义类，在.h文件中，任意编写一个自定义枚举类型，然后通过宏DECLARE_BEHAVIAC_ENUM声明该枚举类型。需要注意的是，宏DECLARE_BEHAVIAC_ENUM必须定义在全局的namespace里，即放在任何命名空间之外。<br />
+如下代码样例所示：</li>
+</ul>
+<div class="highlighter-rouge">
+<pre class="highlight"><code><span class="k">namespace</span> <span class="n">TNS</span>
+<span class="p">{
+</span><span class="k">    namespace</span> <span class="n">NE</span>
+<span class="p">    {</span>
+<span class="k">        namespace</span> <span class="n">NAT</span>
+	<span class="p">{</span>
+            <span class="k">enum</span> <span class="n">eColor</span>
+	    <span class="p">{</span>
+	        <span class="n">RED</span><span class="p">,</span>
+                <span class="n">GREEN</span><span class="p">,</span>
+                <span class="n">BLUE</span><span class="p">,</span>
+                <span class="n">YELLOW</span><span class="p">,</span>
+                <span class="n">WHITE</span><span class="p">,</span>
+	    <span class="p">};</span>
+	<span class="p">}</span>
+<span class="p">    }</span>
+<span class="p">}</span>
+
+<span class="n">DECLARE_BEHAVIAC_ENUM</span><span class="p">(</span><span class="n">TNS</span><span class="o">::</span><span class="n">NE</span><span class="o">::</span><span class="n">NAT</span><span class="o">::</span><span class="n">eColor</span><span class="p">,</span> <span class="n">eColor</span><span class="p">);</span>
+</code></pre>
+</div>
+<ul>
+<li>在.cpp文件中，通过一系列宏注册该枚举自身的描述及其枚举值：
+<ul>
+<li>宏BEGIN_ENUM_DESCRIPTION和END_ENUM_DESCRIPTION表示枚举信息注册的开始和结束。</li>
+<li>可选的宏ENUMCLASS_DISPLAY_INFO用于注册枚举自身的显示名和描述。</li>
+<li>宏DEFINE_ENUM_VALUE用于注册枚举的值，可以通过.DISPLAYNAME的追加方式为值添加显示名，通过.DESC的追加方式为值添加描述。<br />
+如下代码样例所示：</li>
+</ul>
+</li>
+</ul>
+<div class="highlighter-rouge">
+<pre class="highlight"><code><span class="n">BEGIN_ENUM_DESCRIPTION</span><span class="p">(</span><span class="n">TNS</span><span class="o">::</span><span class="n">NE</span><span class="o">::</span><span class="n">NAT</span><span class="o">::</span><span class="n">eColor</span><span class="p">,</span> <span class="n">eColor</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">ENUMCLASS_DISPLAY_INFO</span><span class="p">(</span><span class="s">L"色彩枚举"</span><span class="p">,</span> <span class="s">L"eColor是用于测试枚举使用的类型"</span><span class="p">);</span>
+
+    <span class="n">DEFINE_ENUM_VALUE</span><span class="p">(</span><span class="n">TNS</span><span class="o">::</span><span class="n">NE</span><span class="o">::</span><span class="n">NAT</span><span class="o">::</span><span class="n">RED</span><span class="p">,</span> <span class="s">"RED"</span><span class="p">).</span><span class="n">DISPLAY_INFO</span><span class="p">(</span><span class="s">L"红色"</span><span class="p">,</span> <span class="s">L"激进"</span><span class="p">);</span>
+    <span class="n">DEFINE_ENUM_VALUE</span><span class="p">(</span><span class="n">TNS</span><span class="o">::</span><span class="n">NE</span><span class="o">::</span><span class="n">NAT</span><span class="o">::</span><span class="n">GREEN</span><span class="p">,</span> <span class="s">"GREEN"</span><span class="p">);</span>
+    <span class="n">DEFINE_ENUM_VALUE</span><span class="p">(</span><span class="n">TNS</span><span class="o">::</span><span class="n">NE</span><span class="o">::</span><span class="n">NAT</span><span class="o">::</span><span class="n">BLUE</span><span class="p">,</span> <span class="s">"BLUE"</span><span class="p">);</span>
+    <span class="n">DEFINE_ENUM_VALUE</span><span class="p">(</span><span class="n">TNS</span><span class="o">::</span><span class="n">NE</span><span class="o">::</span><span class="n">NAT</span><span class="o">::</span><span class="n">YELLOW</span><span class="p">,</span> <span class="s">"YELLOW"</span><span class="p">);</span>
+    <span class="n">DEFINE_ENUM_VALUE</span><span class="p">(</span><span class="n">TNS</span><span class="o">::</span><span class="n">NE</span><span class="o">::</span><span class="n">NAT</span><span class="o">::</span><span class="n">WHITE</span><span class="p">,</span> <span class="s">"WHITE"</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="n">END_ENUM_DESCRIPTION</span><span class="p">()</span>
+</code></pre>
+</div>
+<ul>
+<li>在初始化注册（Register）的部分需要加上如下的代码，反注册（UnRegister）的部分添加相应UnRegister的代码。注意这部分Register/UnRegister的代码不是必须的，如果该类型没有用作par或者没有用作条件比较，就可以不需要。</li>
+</ul>
+<div class="highlighter-rouge">
+<pre class="highlight"><code><span class="n">behaviac</span><span class="o">::</span><span class="n">TypeRegister</span><span class="o">::</span><span class="n">Register</span><span class="o">&lt;</span> <span class="n">TNS</span><span class="o">::</span><span class="n">EnumTest</span> <span class="o">&gt;</span><span class="p">(</span><span class="s">" TNS::EnumTest "</span><span class="p">);</span>
+
+<span class="n">behaviac</span><span class="o">::</span><span class="n">TypeRegister</span><span class="o">::</span><span class="n">UnRegister</span><span class="o">&lt;</span> <span class="n">TNS</span><span class="o">::</span><span class="n">EnumTest</span> <span class="o">&gt;</span><span class="p">(</span><span class="s">" TNS::EnumTest "</span><span class="p">);</span>
+</code></pre>
+</div>
+<p>更多细节可以参考behaviac组件C++源码库中btunittest工程的<a href="#?https://github.com/Tencent/behaviac/blob/master/test/btunittest/Agent/UnitTestTypes.h">UnitTestTypes.h</a>文件中eColor结构体相关的代码。</p>
+<hr />
+<p><!--StartFragment --></p>
+<div>声明的类型只用被使用过才会导出。所谓使用过是指：</div>
+<div>1. 作为某Agent的成员</div>
+<div>2. 作为某Agent成员函数的参数或返回值</div>
+<div></div>
+<div>如果只是声明了，但是没有被使用过，则不会被导出。</div>
+]]></content:encoded>
+					
+					<wfw:commentRss>./../../../../../tutorial7_customenum/feed/index.html</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>自定义类或结构体</title>
+		<link>./../../../../../tutorial6_customtypes/index.html</link>
+					<comments>./../../../../../tutorial6_customtypes/index.html#comments</comments>
+		
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Fri, 13 May 2016 02:32:53 +0000</pubDate>
+				<category><![CDATA[3.5]]></category>
+		<category><![CDATA[扩展]]></category>
+		<category><![CDATA[运行时]]></category>
+		<guid isPermaLink="false">./../../../../../index.html?p=292</guid>
+
+					<description><![CDATA[在.h文件中，任意编写一个自定义的类或结构体，并用宏DECLARE_BEHAVIAC_STRUCT声明该类或者结构体为非虚类，如下代码所示： struct Ty<a class="moretag" href="./../../../../../tutorial6_customtypes/index.html">Read More...</a>]]></description>
+										<content:encoded><![CDATA[<ul>
+<li>在.h文件中，任意编写一个自定义的类或结构体，并用宏DECLARE_BEHAVIAC_STRUCT声明该类或者结构体为非虚类，如下代码所示：</li>
+</ul>
+<pre>struct TypeTest2_t
+{
+    int	  name;
+    float weight;
+    bool  bLive;
+
+    DECLARE_BEHAVIAC_STRUCT(TypeTest2_t);
+};</pre>
+<p>上面的用法定义出来的TypeTest2_t在导出的元信息中为值类型（也即在导出的元信息中其值IsRefType为false），值类型可以在编辑器中设置其成员属性。与值类型对应的是引用类型，引用类型不会导出其成员属性，在编辑器中也不用配置其成员属性。</p>
+<p>另外，宏DECLARE_BEHAVIAC_STRUCT也可以带2个参数，第一个参数为类型，第二个参数为true表示该类型用作为引用类型（也即导出元信息后其值IsRefType为true），否则不用第二个参数表示为值类型，如下代码所示：</p>
+<pre>DECLARE_BEHAVIAC_STRUCT(TypeTest2_t, true);</pre>
+<ul>
+<li>在.cpp文件中，通过一系列宏注册该类或结构体自身的描述及其属性：</li>
+</ul>
+<pre>BEGIN_PROPERTIES_DESCRIPTION(TypeTest2_t)
+{
+    CLASS_DISPLAYNAME(L"测试结构体")
+    CLASS_DESC(L"自定义结构体")
+
+    REGISTER_PROPERTY(name);
+    REGISTER_PROPERTY(weight).DISPLAYNAME(L”重量”);
+    REGISTER_PROPERTY(bLive) .DISPLAYNAME(L”是否活着”).DESC(L”存活状态”);
+}
+END_PROPERTIES_DESCRIPTION()</pre>
+<ul>
+<li>在初始化注册（Register）的部分需要加上如下的代码，反注册（UnRegister）的部分添加相应UnRegister的代码。注意这部分Register/UnRegister的代码不是必须的，如果该类型没有用作par或者没有用作条件比较，就可以不需要。</li>
+</ul>
+<pre>behaviac::TypeRegister::Register&amp;amp;amp;amp;lt; TypeTest2_t &amp;amp;amp;amp;gt;(" TypeTest2_t ");
+
+behaviac::TypeRegister::UnRegister&amp;amp;amp;amp;lt; TypeTest2_t &amp;amp;amp;amp;gt;(" TypeTest2_t ");</pre>
+<p>更多细节可以参考behaviac组件C++源码库中btunittest工程的<a href="https://github.com/Tencent/behaviac/blob/master/test/btunittest/Others/reflectionunittest.cpp">reflectionunittest.cpp</a>文件中TypeTest2_t结构体相关的代码。</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>./../../../../../tutorial6_customtypes/feed/index.html</wfw:commentRss>
+			<slash:comments>3</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>扩展使用已有的类型</title>
+		<link>./../../../../../tutorial5_extendtypes/index.html</link>
+					<comments>./../../../../../tutorial5_extendtypes/index.html#respond</comments>
+		
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Fri, 13 May 2016 02:32:11 +0000</pubDate>
+				<category><![CDATA[3.5]]></category>
+		<category><![CDATA[扩展]]></category>
+		<category><![CDATA[运行时]]></category>
+		<guid isPermaLink="false">./../../../../../index.html?p=290</guid>
+
+					<description><![CDATA[在某些情况下，除了运行时库（C++）中提供支持的一些基本类型（bool、short、int、float等）之外，behaviac还支持扩展使用已有的或者用户自定<a class="moretag" href="./../../../../../tutorial5_extendtypes/index.html">Read More...</a>]]></description>
+										<content:encoded><![CDATA[<p>在某些情况下，除了运行时库（C++）中提供支持的一些基本类型（bool、short、int、float等）之外，behaviac还支持扩展使用已有的或者用户自定义的类、结构体和枚举类型。<br />
+这里有两种情况，其处理方式是不同的：</p>
+<ul>
+<li>有些类型是程序中本来就有的，该类型可能是某个第三方库中提供的，但这些类型是不方便随意修改的。</li>
+<li>另外一些可以随便修改的类型，请参考<a href="./../../../../../docs/zh/tutorials/tutorial6_customtypes/index.html">自定义类或结构体</a>。</li>
+</ul>
+<h3 id="section">字符串和数组类型</h3>
+<p>需要注意的是，behaviac组件为了支持C++的反射系统，对字符串和数组类型有如下要求：</p>
+<ul>
+<li>字符串：不要使用std::string，需要使用behaviac::string，因为behaviac::string使用了自定义的allocator，可以对内存的使用进行统一的管理。</li>
+<li>数组：不要使用std::vector，需要使用behaviac::vector。</li>
+</ul>
+<h3 id="char">char类型</h3>
+<p>此外，需要对char、signed char和unsigned char做出一些必要的说明：</p>
+<ul>
+<li>在C++中，char、signed char和unsigned char是三个不同的类型。</li>
+<li>在编辑器中，分别对应char、sbyte、ubyte。</li>
+<li>对于C#，char、sbyte和byte是基本类型，分别对应编辑器中的char、sbyte和ubyte。</li>
+</ul>
+<h3 id="section-1">扩展使用已有的类型</h3>
+<p>对于已有的不能修改源码的类型，需要按照如下步骤进行扩展：</p>
+<ul>
+<li>在.h文件中，通过宏BEHAVIAC_EXTEND_EXISTING_TYPE特化某个需要的类型。<br />
+如下代码样例所示（假设TestNS::Float2是某个第三方库中的类型，需要用到但不能修改它）：</li>
+</ul>
+<div class="highlighter-rouge">
+<pre class="highlight"><code><span class="n">BEHAVIAC_EXTEND_EXISTING_TYPE</span><span class="p">(</span><span class="n">myFloat2</span><span class="p">,</span> <span class="n">TestNS</span><span class="o">::</span><span class="n">Float2</span><span class="p">);</span>
+</code></pre>
+</div>
+<ul>
+<li>定义一个“相似”的struct（myFloat2），该struct的作用是用来定义那个已存在的类的成员，以便behaviac能够访问该类。</li>
+<li>通过DECLARE_BEHAVIAC_STRUCT的第二个参数isRefType为true或false表示该类型是否为引用类型，如下代码所示。</li>
+</ul>
+<div class="highlighter-rouge">
+<pre class="highlight"><code><span class="k">struct</span> <span class="n">myFloat2</span>
+<span class="p">{</span>
+    <span class="kt">float</span> <span class="n">x</span><span class="p">;</span>
+    <span class="kt">float</span> <span class="n">y</span><span class="p">;
+</span>
+    <span class="n">DECLARE_BEHAVIAC_STRUCT</span> <span class="p">(</span><span class="n">myFloat2</span><span class="p">,</span> <span class="nb">false</span><span class="p">);
+</span>
+    <span class="n">myFloat2</span><span class="p">()</span>
+<span class="p">    {</span>
+<span class="p">    }
+</span>
+<span class="n">    myFloat2</span><span class="p">(</span><span class="k">const</span> <span class="n">TestNS</span><span class="o">::</span><span class="n">Float2</span><span class="o">&amp;</span> <span class="n">v</span><span class="p">)</span> <span class="o">:</span> <span class="n">x</span><span class="p">(</span><span class="n">v</span><span class="p">.</span><span class="n">x</span><span class="p">),</span> <span class="n">y</span><span class="p">(</span><span class="n">v</span><span class="p">.</span><span class="n">y</span><span class="p">)</span>
+<span class="p">    {</span>
+<span class="p">    }</span>
+<span class="p">};</span>
+</code></pre>
+</div>
+<ul>
+<li>在命名空间StringUtils的嵌套子空间Private中实现该类型的ToString()和FromString()函数。注意myFloat2中需要实现相应的转换构造函数（myFloat2(const TestNS::Float2&amp; v)），如下代码样例所示：</li>
+</ul>
+<div class="highlighter-rouge">
+<pre class="highlight"><code><span class="k">namespace</span> <span class="n">behaviac</span>
+<span class="p">{</span>
+    <span class="c1">// ValueToString &amp; ValueFromString
+</span>    <span class="k">namespace</span> <span class="n">StringUtils</span>
+    <span class="p">{</span>
+        <span class="k">namespace</span> <span class="n">Private</span>
+        <span class="p">{</span>
+            <span class="k">template</span><span class="o">&lt;&gt;</span>
+            <span class="kr">inline</span> <span class="n">behaviac</span><span class="o">::</span><span class="n">string</span> <span class="n">ToString</span><span class="p">(</span><span class="k">const</span> <span class="n">TestNS</span><span class="o">::</span><span class="n">Float2</span><span class="o">&amp;</span> <span class="n">val</span><span class="p">)</span>
+            <span class="p">{</span>
+                <span class="c1">//myFloat2::ToString is defined by DECLARE_BEHAVIAC_STRUCT(myFloat2)
+</span>                <span class="n">myFloat2</span> <span class="n">temp</span><span class="p">(</span><span class="n">val</span><span class="p">);</span>
+                <span class="k">return</span> <span class="n">temp</span><span class="p">.</span><span class="n">ToString</span><span class="p">();</span>
+            <span class="p">}</span>
+
+            <span class="k">template</span><span class="o">&lt;&gt;</span>
+            <span class="kr">inline</span> <span class="n">bool</span> <span class="n">FromString</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">str</span><span class="p">,</span> <span class="n">TestNS</span><span class="o">::</span><span class="n">Float2</span><span class="o">&amp;</span> <span class="n">val</span><span class="p">)</span>
+            <span class="p">{</span>
+                <span class="n">myFloat2</span> <span class="n">temp</span><span class="p">;</span>
+
+                <span class="c1">//myFloat2::FromString is defined by DECLARE_BEHAVIAC_STRUCT(myFloat2)
+</span>                <span class="k">if</span> <span class="p">(</span><span class="n">temp</span><span class="p">.</span><span class="n">FromString</span><span class="p">(</span><span class="n">str</span><span class="p">))</span>
+                <span class="p">{</span>
+                    <span class="n">val</span><span class="p">.</span><span class="n">x</span> <span class="o">=</span> <span class="n">temp</span><span class="p">.</span><span class="n">x</span><span class="p">;</span>
+                    <span class="n">val</span><span class="p">.</span><span class="n">y</span> <span class="o">=</span> <span class="n">temp</span><span class="p">.</span><span class="n">y</span><span class="p">;</span>
+                    <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+                <span class="p">}</span>
+
+                <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+<ul>
+<li>实现该类型的模板函数SwapByteTempl()，注意该函数不能放在任何命名空间（namespace）中，如下代码样例所示：</li>
+</ul>
+<div class="highlighter-rouge">
+<pre class="highlight"><code><span class="k">template</span><span class="o">&lt;</span> <span class="k">typename</span> <span class="n">SWAPPER</span> <span class="o">&gt;</span>
+<span class="kr">inline</span> <span class="kt">void</span> <span class="n">SwapByteTempl</span><span class="p">(</span><span class="n">TestNS</span><span class="o">::</span><span class="n">Float2</span><span class="o">&amp;</span> <span class="n">v</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="n">    SwapByteTempl</span><span class="o">&lt;</span> <span class="n">SWAPPER</span> <span class="o">&gt;</span><span class="p">(</span><span class="n">v</span><span class="p">.</span><span class="n">x</span><span class="p">);</span>
+<span class="n">    SwapByteTempl</span><span class="o">&lt;</span> <span class="n">SWAPPER</span> <span class="o">&gt;</span><span class="p">(</span><span class="n">v</span><span class="p">.</span><span class="n">y</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+<ul>
+<li>在命名空间behaviac的嵌套子空间Details中实现该类型的Equal()模板函数，如下代码样例所示：</li>
+</ul>
+<div class="highlighter-rouge">
+<pre class="highlight"><code><span class="k">namespace</span> <span class="n">behaviac</span>
+<span class="p">{
+</span><span class="k">    namespace</span> <span class="n">Details</span>
+    <span class="p">{</span>
+        <span class="k">template</span><span class="o">&lt;&gt;</span>
+	<span class="kr">inline</span> <span class="n">bool</span> <span class="n">Equal</span><span class="p">(</span><span class="k">const</span> <span class="n">TestNS</span><span class="o">::</span><span class="n">Float2</span><span class="o">&amp;</span> <span class="n">lhs</span><span class="p">,</span> <span class="k">const</span> <span class="n">TestNS</span><span class="o">::</span><span class="n">Float2</span><span class="o">&amp;</span> <span class="n">rhs</span><span class="p">)</span>
+        <span class="p">{</span>
+	    <span class="k">return</span> <span class="n">Tag</span><span class="o">::</span><span class="n">IsEqualWithEpsilon</span><span class="p">(</span><span class="n">lhs</span><span class="p">.</span><span class="n">x</span><span class="p">,</span> <span class="n">rhs</span><span class="p">.</span><span class="n">x</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="n">Tag</span><span class="o">::</span><span class="n">IsEqualWithEpsilon</span><span class="p">(</span><span class="n">lhs</span><span class="p">.</span><span class="n">y</span><span class="p">,</span> <span class="n">rhs</span><span class="p">.</span><span class="n">y</span><span class="p">);</span>
+	<span class="p">}</span>
+<span class="p">    }</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+<ul>
+<li>在初始化注册（Register）的部分需要加上如下的代码，反注册（UnRegister）的部分添加相应UnRegister的代码。注意：这部分Register/UnRegister的代码不是必须的，如果该类型没有用作par或者没有用作条件比较，就可以不需要。</li>
+</ul>
+<div class="highlighter-rouge">
+<pre class="highlight"><code><span class="n">behaviac</span><span class="o">::</span><span class="n">TypeRegister</span><span class="o">::</span><span class="n">Register</span><span class="o">&lt;</span><span class="n">TestNS</span><span class="o">::</span><span class="n">Float2</span><span class="o">&gt;</span><span class="p">(</span><span class="s">"TestNS::Float2"</span><span class="p">);</span>
+
+<span class="n">behaviac</span><span class="o">::</span><span class="n">TypeRegister</span><span class="o">::</span><span class="n">UnRegister</span><span class="o">&lt;</span><span class="n">TestNS</span><span class="o">::</span><span class="n">Float2</span><span class="o">&gt;</span><span class="p">(</span><span class="s">"TestNS::Float2"</span><span class="p">);</span>
+</code></pre>
+</div>
+<p>详细代码可以参考behaviac组件C++源码库中btunittest工程的<a href="https://github.com/Tencent/behaviac/blob/master/test/btunittest/ext/extendstruct.h">extendstruct.h</a>文件。</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>./../../../../../tutorial5_extendtypes/feed/index.html</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>扩展生成节点的行为树代码</title>
+		<link>./../../../../../tutorial4_4_generate_node/index.html</link>
+					<comments>./../../../../../tutorial4_4_generate_node/index.html#respond</comments>
+		
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Fri, 13 May 2016 02:30:59 +0000</pubDate>
+				<category><![CDATA[文章]]></category>
+		<category><![CDATA[扩展]]></category>
+		<category><![CDATA[编辑器]]></category>
+		<guid isPermaLink="false">./../../../../../index.html?p=288</guid>
+
+					<description><![CDATA[生成C++或C#的相关代码放在behaviac编辑器项目的PluginBehaviac工程中，具体代码可以用VS打开该项目进行查看或修改。 这里介绍用于生成C+<a class="moretag" href="./../../../../../tutorial4_4_generate_node/index.html">Read More...</a>]]></description>
+										<content:encoded><![CDATA[<p id="section">生成C++或C#的相关代码放在behaviac编辑器项目的PluginBehaviac工程中，具体代码可以用VS打开该项目进行查看或修改。</p>
+<p>这里介绍用于生成C++代码的相关类和接口（与生成C#代码基本相同）：</p>
+<ul>
+<li>从基类Exporter派生出子类ExporterCpp用于管理和发起C++代码的生成。在模块初始化的地方调用如下代码，编辑器将会支持导出C++代码：<br />
+Plugin.Exporters.Add(new ExporterInfo(typeof(PluginBehaviac.Exporters.ExporterCpp), “cpp”, “C++ Behavior Exporter”, true, true));</li>
+<li>在DataExporters/Cpp文件夹中，维护了一组导出Variable、Par、Property、Method、Enum、Struct、Array等基本数据结构的Utility类。</li>
+<li>从基类NodeExporter派生出子类NodeCppExporter，该子类定义了GenerateClass()、GenerateInstance()、GetGeneratedClassName()、ShouldGenerateClass()、GenerateConstructor()、GenerateMember()、GenerateMethod()等虚函数，用于生成某个具体的节点类。</li>
+<li>在NodeExporters/Cpp文件夹中，维护了各种节点类的辅助导出类，例如类Action对应的类ActionCppExporter等等，这些类分别实现了上面的虚函数，用于导出特定节点类的类型、属性和方法等信息。</li>
+</ul>
+<p>更多细节可以参考behaviac组件编辑器源码中附带的<a href="https://github.com/Tencent/behaviac/blob/master/tools/designer/Plugins/PluginBehaviac/NodeExporters/Cpp">NodeExporters</a>文件夹。</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>./../../../../../tutorial4_4_generate_node/feed/index.html</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

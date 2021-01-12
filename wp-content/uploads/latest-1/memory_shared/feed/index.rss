@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>《共享资源和实例数据》的评论</title>
+	<atom:link href="/memory_shared/feed/" rel="self" type="application/rss+xml" />
+	<link>/memory_shared/</link>
+	<description>Tencent behaviac, Game AI, Behavior Tree, Finite State Machine, Hierarchical Task Network, BT FSM HTN, 腾讯开源, 游戏AI, 行为树,有限状态机,分层任务网络</description>
+	<lastBuildDate>Mon, 26 Mar 2018 16:07:20 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.1</generator>
+	<item>
+		<title>作者：frankw</title>
+		<link>/memory_shared/#comment-417</link>
+		<dc:creator><![CDATA[frankw]]></dc:creator>
+		<pubDate>Fri, 17 Nov 2017 07:54:45 +0000</pubDate>
+		<guid isPermaLink="false">/</guid>
+		<description><![CDATA[共享的配置信息，对于在不同线程执行Agent的btexec处理，是否有线程安全问题？是否有线程锁保护？
+
+“每个使用行为树的对象（Agent）依据这个共享的资源创建独立的实例数据，例如对于Sequence节点，实例数据中只是存储更新到哪个子树，至于Sequence节点的配置信息等则被共享。”]]></description>
+		<content:encoded><![CDATA[<p>共享的配置信息，对于在不同线程执行Agent的btexec处理，是否有线程安全问题？是否有线程锁保护？</p>
+<p>“每个使用行为树的对象（Agent）依据这个共享的资源创建独立的实例数据，例如对于Sequence节点，实例数据中只是存储更新到哪个子树，至于Sequence节点的配置信息等则被共享。”</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>作者：jonygli</title>
+		<link>/memory_shared/#comment-397</link>
+		<dc:creator><![CDATA[jonygli]]></dc:creator>
+		<pubDate>Wed, 24 May 2017 11:38:28 +0000</pubDate>
+		<guid isPermaLink="false">/</guid>
+		<description><![CDATA[对的。一般情况，不需要显示的调用btunload。如果还有相应问题，可以去bbs.behaviac.com提问哈。]]></description>
+		<content:encoded><![CDATA[<p>对的。一般情况，不需要显示的调用btunload。如果还有相应问题，可以去bbs.behaviac.com提问哈。</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>作者：pan</title>
+		<link>/memory_shared/#comment-396</link>
+		<dc:creator><![CDATA[pan]]></dc:creator>
+		<pubDate>Wed, 24 May 2017 10:09:37 +0000</pubDate>
+		<guid isPermaLink="false">/</guid>
+		<description><![CDATA[我在所有的tutorials中都没有看到过Agent::btunload这个函数被调用过，什么时候需要调用这个btunload?
+是否在同一个agent实例多次加载不同的行为树前需要先btunload一下，
+而在销毁agent的时候无需做这个btunload的操作，agent::destroy会自动进行btunload?]]></description>
+		<content:encoded><![CDATA[<p>我在所有的tutorials中都没有看到过Agent::btunload这个函数被调用过，什么时候需要调用这个btunload?<br />
+是否在同一个agent实例多次加载不同的行为树前需要先btunload一下，<br />
+而在销毁agent的时候无需做这个btunload的操作，agent::destroy会自动进行btunload?</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

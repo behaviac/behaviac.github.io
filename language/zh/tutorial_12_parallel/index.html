@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	 
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="./../../../xmlrpc.php">
+	<title>教程12：并行节点的使用 &#8211; behaviac</title>
+<link rel='dns-prefetch' href='//cdn.bootcss.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="behaviac &raquo; Feed" href="./../feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="behaviac &raquo; 评论Feed" href="./../comments/feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="behaviac &raquo; 教程12：并行节点的使用评论Feed" href="./../../../tutorial_12_parallel/feed/index.html" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":".\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.4.1"}};
+			/*! This file is auto-generated */
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='./../../../wp-includes/css/dist/block-library/style.min.css?ver=5.4.1' type='text/css' media='all' />
+<link rel='stylesheet' id='ez-icomoon-css'  href='./../../../wp-content/plugins/easy-table-of-contents/vendor/icomoon/style.min.css?ver=1.2' type='text/css' media='all' />
+<link rel='stylesheet' id='ez-toc-css'  href='./../../../wp-content/plugins/easy-table-of-contents/assets/css/screen.min.css?ver=1.2' type='text/css' media='all' />
+<style id='ez-toc-inline-css' type='text/css'>
+div#ez-toc-container ul li {font-size: 95%;}div#ez-toc-container {width: 25%;}
+</style>
+<link rel='stylesheet' id='font-awesome-css'  href='//cdn.bootcss.com/font-awesome/4.1.0/css/font-awesome.min.css?ver=4.1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='owl-carousel-css'  href='./../../../wp-content/plugins/templatesnext-toolkit/css/owl.carousel.css?ver=1.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='owl-carousel-transitions-css'  href='./../../../wp-content/plugins/templatesnext-toolkit/css/owl.transitions.css?ver=1.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='colorbox-css'  href='./../../../wp-content/plugins/templatesnext-toolkit/css/colorbox.css?ver=1.5.14' type='text/css' media='all' />
+<link rel='stylesheet' id='tx-style-css'  href='./../../../wp-content/plugins/templatesnext-toolkit/css/tx-style.css?ver=1.01' type='text/css' media='all' />
+<link rel='stylesheet' id='behaviac-fonts-css'  href='./../../../wp-content/themes/behaviac/css/font.css?pjkui' type='text/css' media='all' />
+<link rel='stylesheet' id='genericons-css'  href='./../../../wp-content/themes/behaviac/fonts/genericons.css?ver=2.09' type='text/css' media='all' />
+<link rel='stylesheet' id='animate-css'  href='./../../../wp-content/themes/behaviac/css/animate.min.css?ver=2014-01-12' type='text/css' media='all' />
+<link rel='stylesheet' id='behaviac-sidr-css'  href='./../../../wp-content/themes/behaviac/css/jquery.sidr.dark.css?ver=2014-01-12' type='text/css' media='all' />
+<link rel='stylesheet' id='owl-carousel-theme-css'  href='./../../../wp-content/themes/behaviac/css/owl.theme.css?ver=2014-01-12' type='text/css' media='all' />
+<link rel='stylesheet' id='behaviac-style-css'  href='./../../../wp-content/themes/behaviac/style.css?ver=2013-07-18' type='text/css' media='all' />
+<link rel='stylesheet' id='behaviac-blog-layout-css'  href='./../../../wp-content/themes/behaviac/css/twocol-blog.css?ver=2014-03-11' type='text/css' media='all' />
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='behaviac-ie-css'  href='./wp-content/themes/behaviac/css/ie.css?ver=2013-07-18' type='text/css' media='all' />
+<![endif]-->
+<link rel='stylesheet' id='behaviac-extra-stylesheet-css'  href='./../../../wp-content/themes/behaviac/css/extra-style.css?ver=2014-03-11' type='text/css' media='all' />
+<script type='text/javascript' src='./../../../wp-includes/js/jquery/jquery.js?ver=1.12.4-wp'></script>
+<script type='text/javascript' src='./../../../wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<link rel='https://api.w.org/' href='./../../../wp-json/index.html' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="./../../../xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="./../../../wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='教程13：随机与概率相关节点的使用' href='./../tutorial_13_random_nodes/index.html' />
+<link rel='next' title='教程11：使用Android Studio编译构建behaviac' href='./../tutorial_11_android_studio/index.html' />
+<meta name="generator" content="WordPress 5.4.1" />
+<link rel="canonical" href="./../../../tutorial_12_parallel/index.html" />
+<link rel='shortlink' href='./../../../index.html?p=1939' />
+<link rel="alternate" type="application/json+oembed" href="./../../../wp-json/oembed/1.0/embed/index.html?url=https%3A%2F%2F%2Ftutorial_12_parallel%2F" />
+<link rel="alternate" type="text/xml+oembed" href="./../../../wp-json/oembed/1.0/embed/index.html?url=https%3A%2F%2F%2Ftutorial_12_parallel%2F&#038;format=xml" />
+<style type="text/css">
+a,a:visited,.blog-columns .comments-link a:hover {color: #95C837;}input:focus,textarea:focus {border: 1px solid #95C837;}button,input[type="submit"],input[type="button"],input[type="reset"],.nav-container .current_page_item > a > span,.nav-container .current_page_ancestor > a > span,.nav-container .current-menu-item > a span,.nav-container .current-menu-ancestor > a > span,.nav-container li a:hover span {background-color: #95C837;}.nav-container li:hover > a,.nav-container li a:hover {color: #95C837;}.nav-container .sub-menu,.nav-container .children {border-top: 2px solid #95C837;}.ibanner,.da-dots span.da-dots-current,.tx-cta a.cta-button {background-color: #95C837;}#ft-post .entry-thumbnail:hover > .comments-link,.tx-folio-img .folio-links .folio-linkico,.tx-folio-img .folio-links .folio-zoomico {background-color: #95C837;}.entry-header h1.entry-title a:hover,.entry-header > .entry-meta a:hover {color: #95C837;}.featured-area div.entry-summary > p > a.moretag:hover {background-color: #95C837;}.site-content div.entry-thumbnail .stickyonimg,.site-content div.entry-thumbnail .dateonimg,.site-content div.entry-nothumb .stickyonimg,.site-content div.entry-nothumb .dateonimg {background-color: #95C837;}.entry-meta a,.entry-content a,.comment-content a,.entry-content a:visited {color: #95C837;}.format-status .entry-content .page-links a,.format-gallery .entry-content .page-links a,.format-chat .entry-content .page-links a,.format-quote .entry-content .page-links a,.page-links a {background: #95C837;border: 1px solid #95C837;color: #ffffff;}.format-gallery .entry-content .page-links a:hover,.format-audio .entry-content .page-links a:hover,.format-status .entry-content .page-links a:hover,.format-video .entry-content .page-links a:hover,.format-chat .entry-content .page-links a:hover,.format-quote .entry-content .page-links a:hover,.page-links a:hover {color: #95C837;}.iheader.front {background-color: #95C837;}.navigation a,.tx-post-row .tx-folio-title a:hover,.tx-blog .tx-blog-item h3.tx-post-title a:hover {color: #95C837;}.paging-navigation div.navigation > ul > li a:hover,.paging-navigation div.navigation > ul > li.active > a {color: #95C837;	border-color: #95C837;}.comment-author .fn,.comment-author .url,.comment-reply-link,.comment-reply-login,.comment-body .reply a,.widget a:hover {color: #95C837;}.widget_calendar a:hover {	background-color: #95C837;	color: #ffffff;	}.widget_calendar td#next a:hover,.widget_calendar td#prev a:hover {	background-color: #95C837;color: #ffffff;}.site-footer div.widget-area .widget a:hover {color: #95C837;}.site-main div.widget-area .widget_calendar a:hover,.site-footer div.widget-area .widget_calendar a:hover {	background-color: #95C837;color: #ffffff;}.widget a:visited { color: #373737;}.widget a:hover,.entry-header h1.entry-title a:hover,.error404 .page-title:before,.tx-service-icon span i,.tx-post-comm:after {color: #95C837;}.da-dots > span > span {background-color: #95C837;}.iheader,.format-status,.tx-service:hover .tx-service-icon span {background-color: #95C837;}.tx-cta {border-left: 6px solid #95C837;}.paging-navigation #posts-nav > span:hover, .paging-navigation #posts-nav > a:hover, .paging-navigation #posts-nav > span.current, .paging-navigation #posts-nav > a.current, .paging-navigation div.navigation > ul > li a:hover, .paging-navigation div.navigation > ul > li > span.current, .paging-navigation div.navigation > ul > li.active > a {border: 1px solid #95C837;color: #95C837;}.entry-title a { color: #141412;}.tx-service-icon span { border: 2px solid #95C837;}.site-footer .widget-area .widget input[type="submit"],.site .tx-slider .tx-slide-button a,.ibanner .da-slider .owl-item.active .da-link  { background-color: #95C837; color: #FFF; }.site-footer .widget-area .widget input[type="submit"]:hover,.site .tx-slider .tx-slide-button a:hover  { background-color: #373737; color: #FFF; }</style>
+<style type="text/css" id="custom-background-css">
+body.custom-background { background-image: url("./../../../wp-content/themes/behaviac/images/default-bg.png"); background-position: left top; background-size: auto; background-repeat: repeat; background-attachment: scroll; }
+</style>
+	<style type="text/css" id="syntaxhighlighteranchor"></style>
+<link rel="icon" href="./../../../wp-content/uploads/2016/04/cropped-256x256-32x32.png" sizes="32x32" />
+<link rel="icon" href="./../../../wp-content/uploads/2016/04/cropped-256x256-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="./../../../wp-content/uploads/2016/04/cropped-256x256-180x180.png" />
+<meta name="msapplication-TileImage" content="./wp-content/uploads/2016/04/cropped-256x256-270x270.png" />
+</head>
+<body class="post-template-default single single-post postid-1939 single-format-standard custom-background nx-boxed twocol-blog sidebar" style="  ">
+	<div id="page" class="hfeed site">
+    	
+
+        
+        <div class="headerwrap">
+            <header id="masthead" class="site-header" role="banner">
+         		<div class="headerinnerwrap">
+					                        <a class="home-link" href="./../%e9%a6%96%e9%a1%b5/index.html" title="behaviac" rel="home">
+			    <span class="hidden-on-phone">
+								<img class="hidden-on-phone" id="tencentOpen" onclick="openUrl('http://opensource.tencent.com/')" src="./../../../tencentOpensource_logo.png" alt="tencent opensource logo">
+								<img src="./../../../wp-content/uploads/2016/04/256x256.png" alt="behaviac" />
+								<div class="hidden-on-phone" style="float: right; margin: 0px; padding: 0px; margin-left: 4px;">
+									<b style="color: #1994CA; font-size: 24px; margin: 0px;padding:0; line-height: 1.5em; ">behaviac</b>
+									<br>
+									<b style="margin: 0;padding: 0; margin-top:-4px;color: #cccccc; font-size: 14px;line-height: 1.5em;">/</b>
+								</div>
+							</span>
+			</a>
+	<script>
+	function openUrl(url){
+		window.open(url);
+	}
+	</script>
+                    	
+        
+                    <div id="navbar" class="navbar">
+                        <nav id="site-navigation" class="navigation main-navigation" role="navigation">
+                            <h3 class="menu-toggle"> </h3>
+                            <a class="screen-reader-text skip-link" href="#content" title="Skip to content">Skip to content</a>
+                            <div class="nav-container"><ul id="menu-%e4%b8%ad%e6%96%87%e7%9b%ae%e5%bd%95" class="nav-menu"><li id="menu-item-101" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-101"><a href="./../%e9%a6%96%e9%a1%b5/index.html">首页</a></li>
+<li id="menu-item-368" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor menu-item-has-children menu-item-368"><a href="./../category/%e6%96%87%e6%a1%a3/index.html">文档</a>
+<ul class="sub-menu">
+	<li id="menu-item-176" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-176"><a href="./../category/%e6%96%87%e6%a1%a3/%e6%95%99%e7%a8%8b/index.html">教程</a></li>
+	<li id="menu-item-175" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-175"><a href="./../category/%e6%96%87%e6%a1%a3/%e6%96%87%e7%ab%a0/index.html">文章</a></li>
+	<li id="menu-item-66" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-66"><a href="./../category/%e6%96%87%e6%a1%a3/%e6%89%8b%e5%86%8c/index.html">手册</a></li>
+	<li id="menu-item-1270" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1270"><a href="./../category/%e6%96%87%e6%a1%a3/3-5-%e6%96%87%e6%a1%a3/index.html">3.5</a></li>
+	<li id="menu-item-195" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-195"><a href="./../../../index.html">API</a></li>
+</ul>
+</li>
+<li id="menu-item-198" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-198"><a title="behaviac版本下载页面" href="./../behaviac版本下载/index.html">下载</a>
+<ul class="sub-menu">
+	<li id="menu-item-1105" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1105"><a href="https://github.com/Tencent/behaviac/">克隆源码</a></li>
+	<li id="menu-item-200" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-200"><a title="behaviac版本下载页面" href="./../behaviac版本下载/index.html">下载版本</a></li>
+</ul>
+</li>
+<li id="menu-item-346" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-346"><a href="https://github.com/Tencent/behaviac/issues">问答</a></li>
+<li id="menu-item-941" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-941"><a href="./../category/announcement/index.html">公告</a>
+<ul class="sub-menu">
+	<li id="menu-item-1004" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1004"><a href="./../contactus/index.html">联系我们</a></li>
+</ul>
+</li>
+</ul></div>							
+                        </nav><!-- #site-navigation -->
+                        <div class="topsearch">
+                            <form role="search" method="get" class="search-form" action="./../index.html">
+				<label>
+					<span class="screen-reader-text">搜索：</span>
+					<input type="search" class="search-field" placeholder="搜索&hellip;" value="" name="s" />
+				</label>
+				<input type="submit" class="search-submit" value="搜索" />
+			</form>                        </div>
+                    </div><!-- #navbar -->
+                    <div class="clear"></div>
+                </div>
+            </header><!-- #masthead -->
+        </div>
+        
+        <!-- #Banner -->
+                
+        <div class="iheader" style="">
+        	<div class="titlebar">
+            	
+                <h1 class="entry-title">教程12：并行节点的使用</h1>				                	<div class="nx-breadcrumb">
+                <!-- Breadcrumb NavXT 5.4.0 -->
+<span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" title="Go to behaviac." href="./../../../index.html" class="home"><span property="name">behaviac</span></a><meta property="position" content="1"></span> &gt; <span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" title="Go to the 文档 category archives." href="./../category/%e6%96%87%e6%a1%a3/index.html" class="taxonomy category"><span property="name">文档</span></a><meta property="position" content="2"></span> &gt; <span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" title="Go to the 教程 category archives." href="./../category/%e6%96%87%e6%a1%a3/%e6%95%99%e7%a8%8b/index.html" class="taxonomy category"><span property="name">教程</span></a><meta property="position" content="3"></span> &gt; <span property="itemListElement" typeof="ListItem"><span property="name">教程12：并行节点的使用</span><meta property="position" content="4"></span>                	</div>
+                               
+            	
+            </div>
+        </div>
+        
+				<div id="main" class="site-main">
+
+
+	<div id="primary" class="content-area">
+		<div id="content" class="site-content" role="main">
+
+						
+            <article id="post-1939" class="post-1939 post type-post status-publish format-standard hentry category-23">
+            
+                <div class="meta-img">
+                                </div>
+                
+                <div class="post-mainpart">    
+                    <header class="entry-header">
+                        <div class="entry-meta">
+                            <span class="date"><a href="./../../../tutorial_12_parallel/index.html" title="Permalink to 教程12：并行节点的使用" rel="bookmark"><time class="entry-date" datetime="2017-04-25T12:04:20+08:00">2017年4月25日</time> <time>最近更新于：2017年5月15日</time></a></span><span class="categories-links"><a href="./../category/%e6%96%87%e6%a1%a3/%e6%95%99%e7%a8%8b/index.html" rel="category tag">教程</a></span><span class="author vcard"><a class="url fn n" href="./../author/cainhuang/index.html" title="View all posts by cainhuang" rel="author">cainhuang</a></span>                                                    </div><!-- .entry-meta -->
+                    </header><!-- .entry-header -->
+                
+                    <div class="entry-content">
+                        <pre>本文档描述的是3.6.34及以后版本，对于3.5及以前的老版本请参考分类“3.5”。</pre>
+<p>并行节点用于一般意义上并行的执行所有子节点，相关的功能和属性说明详见手册《<a href="./../parallel/index.html">并行节点</a>》。</p>
+<p>并行节点容易在其属性配置上产生误用，本文将结合行为树中对并行节点的实际使用来加以说明。</p>
+<p>1. 首先创建Agent子类“FirstAgent”及其成员属性p1和成员方法Say(behaviac::string&amp; value, bool isLatent)，Say()方法用于打印指定的参数，如下图所示：</p>
+<p id="AhQHURQ"><img class="size-full wp-image-2031 aligncenter" src="./../../../wp-content/uploads/2017/05/img_5909a93aaff59.png" alt="" srcset="./../../../wp-content/uploads/2017/05/img_5909a93aaff59.png 612w, ./../../../wp-content/uploads/2017/05/img_5909a93aaff59-250x300.png 250w" sizes="(max-width: 612px) 100vw, 612px" /></p>
+<p>Say()方法表示对于isLatent为真的情况，在第三帧后返回成功，前两帧返回正在执行；而对于isLatent为假的情况，在第一帧就直接返回成功，其实现代码如下所示：</p>
+<pre>behaviac::EBTStatus FirstAgent::Say(behaviac::string&amp; value, bool isLatent)
+{
+///&lt;&lt;&lt; BEGIN WRITING YOUR CODE Say
+    if (isLatent &amp;&amp; behaviac::Workspace::GetInstance()-&gt;GetFrameSinceStartup() &lt; 3)
+    {
+        printf("\n%s [Running]\n\n", value.c_str());
+
+        return behaviac::BT_RUNNING;
+    }
+
+    printf("\n%s [Success]\n\n", value.c_str());
+
+    return behaviac::BT_SUCCESS;
+///&lt;&lt;&lt; END WRITING YOUR CODE
+}</pre>
+<p>其中，当前帧数在主循环代码中每帧进行累加，如下代码所示：</p>
+<pre>void UpdateLoop()
+{
+    LOGI("UpdateLoop\n");
+
+    behaviac::Workspace::GetInstance()-&gt;SetFrameSinceStartup(0);
+
+    behaviac::EBTStatus status = behaviac::BT_RUNNING;
+
+    while (status == behaviac::BT_RUNNING)
+    {
+        behaviac::Workspace::GetInstance()-&gt;SetFrameSinceStartup(behaviac::Workspace::GetInstance()-&gt;GetFrameSinceStartup() + 1);
+
+        LOGI("frame %d\n", behaviac::Workspace::GetInstance()-&gt;GetFrameSinceStartup());
+
+        status = g_FirstAgent-&gt;btexec();
+    }
+}</pre>
+<p>2. 创建行为树“ParallelBT”，其中并行节点有3个子节点，第一个是条件节点，第二和三个都是动作节点，如下图所示：</p>
+<p id="NJvyZLO"><img class="size-full wp-image-2045 aligncenter" src="./../../../wp-content/uploads/2017/05/img_59194b03da0fb.png" alt="" srcset="./../../../wp-content/uploads/2017/05/img_59194b03da0fb.png 1098w, ./../../../wp-content/uploads/2017/05/img_59194b03da0fb-300x95.png 300w, ./../../../wp-content/uploads/2017/05/img_59194b03da0fb-768x242.png 768w, ./../../../wp-content/uploads/2017/05/img_59194b03da0fb-1024x323.png 1024w" sizes="(max-width: 1098px) 100vw, 1098px" /></p>
+<p>3. 该并行节点的的属性默认配置如下图所示：</p>
+<p><img class="size-full wp-image-1943 aligncenter" src="./../../../wp-content/uploads/2017/04/img_58feb9cd3d315.png" alt="" srcset="./../../../wp-content/uploads/2017/04/img_58feb9cd3d315.png 475w, ./../../../wp-content/uploads/2017/04/img_58feb9cd3d315-300x105.png 300w" sizes="(max-width: 475px) 100vw, 475px" /></p>
+<ul>
+<li><strong>失败条件：</strong>FAIL_ON_ONE表示一个子节点返回失败，那么并行节点就返回失败。</li>
+<li><strong>成功条件：</strong>SUCCEED_ON_ALL表示所有子节点都返回成功，并行节点才返回成功。这里需要注意，失败条件优先于成功条件。</li>
+<li><strong>子节点结束继续条件：</strong>CHILDFINISH_LOOP表示子节点结束后会重新再循环执行。</li>
+<li><strong>退出行为：</strong>EXIT_ABORT_RUNNINGSIBLINGS表示当并行节点的成功或失败条件满足并返回成功或失败后，会终止掉其他还在运行的子节点。</li>
+</ul>
+<p>4. 执行该行为树，结果如下图所示：</p>
+<p id="WKjlFhz"><img class="size-full wp-image-2035 aligncenter" src="./../../../wp-content/uploads/2017/05/img_5909ab958726a.png" alt="" srcset="./../../../wp-content/uploads/2017/05/img_5909ab958726a.png 214w, ./../../../wp-content/uploads/2017/05/img_5909ab958726a-137x300.png 137w" sizes="(max-width: 214px) 100vw, 214px" /></p>
+<p>5. 将并行节点的属性“子节点结束继续条件”改为CHILDFINISH_ONCE，表示子节点结束后不再执行（除非重入该并行节点），如下图所示：</p>
+<p id="ksHGkoe"><img class="size-full wp-image-1948 aligncenter" src="./../../../wp-content/uploads/2017/04/img_58fec8784ee36.png" alt="" srcset="./../../../wp-content/uploads/2017/04/img_58fec8784ee36.png 477w, ./../../../wp-content/uploads/2017/04/img_58fec8784ee36-300x103.png 300w" sizes="(max-width: 477px) 100vw, 477px" /></p>
+<p>6. 再执行该行为树，结果如下图所示：</p>
+<p id="yzOtmuW"><img class="size-full wp-image-2036 aligncenter" src="./../../../wp-content/uploads/2017/05/img_5909ac085f1a6.png" alt="" srcset="./../../../wp-content/uploads/2017/05/img_5909ac085f1a6.png 217w, ./../../../wp-content/uploads/2017/05/img_5909ac085f1a6-175x300.png 175w" sizes="(max-width: 217px) 100vw, 217px" /></p>
+<p>从上图可以看到，虽然一共循环了3次，但ID为7的动作节点只执行了一次，而ID为0的动作节点由于前两帧执行时返回Running，得到持续执行，直到第三帧返回Success或Failure。</p>
+<p>7. 将并行节点的属性“失败条件”改为FAIL_ON_ALL，并将“成功条件”改为SUCCEED_ON_ONE，如下图所示：</p>
+<p id="ecycJfE"><img class="size-full wp-image-1949 aligncenter" src="./../../../wp-content/uploads/2017/04/img_58fec9ec1afdb.png" alt="" srcset="./../../../wp-content/uploads/2017/04/img_58fec9ec1afdb.png 477w, ./../../../wp-content/uploads/2017/04/img_58fec9ec1afdb-300x104.png 300w" sizes="(max-width: 477px) 100vw, 477px" /></p>
+<p>8. 再执行该行为树，结果如下图所示：</p>
+<p id="ZDFiGAF"><img class="size-full wp-image-2046 aligncenter" src="./../../../wp-content/uploads/2017/05/img_59194b7c8c160.png" alt="" /></p>
+<p>从上图可以看到，一共循环了1次，并行节点的所有子节点也都执行了1次。</p>
+<p>本教程相关的工作区和代码工程详见源码包的目录<a href="https://github.com/Tencent/behaviac/blob/master/tutorials/tutorial_12">tutorials/tutorial_12</a>。</p>
+                                            </div><!-- .entry-content -->
+
+                	                </div>
+            </article><!-- #post -->    
+    
+
+					<nav class="navigation post-navigation" role="navigation">
+		<h1 class="screen-reader-text">Post navigation</h1>
+		<div class="nav-links">
+
+			<a href="./../tutorial_13_random_nodes/index.html" rel="prev"><span class="meta-nav">&larr;</span> 教程13：随机与概率相关节点的使用</a>			<a href="./../tutorial_11_android_studio/index.html" rel="next">教程11：使用Android Studio编译构建behaviac <span class="meta-nav">&rarr;</span></a>
+		</div><!-- .nav-links -->
+	</nav><!-- .navigation -->
+					
+<div id="comments" class="comments-area">
+
+	
+		<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">发表评论 <small><a rel="nofollow" id="cancel-comment-reply-link" href="./index.html#respond" style="display:none;">取消回复</a></small></h3><form action="./../../../wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate><p class="comment-notes"><span id="email-notes">电子邮件地址不会被公开。</span> 必填项已用<span class="required">*</span>标注</p><p class="comment-form-comment"><label for="comment">评论</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="comment-form-author"><label for="author">姓名 <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required='required' /></p>
+<p class="comment-form-email"><label for="email">电子邮件 <span class="required">*</span></label> <input id="email" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" required='required' /></p>
+<p class="comment-form-url"><label for="url">站点</label> <input id="url" name="url" type="url" value="" size="30" maxlength="200" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="发表评论" /> <input type='hidden' name='comment_post_ID' value='1939' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p>		<p class="antispam-group antispam-group-q" style="clear: both;">
+			<label>Current ye@r <span class="required">*</span></label>
+			<input type="hidden" name="antspm-a" class="antispam-control antispam-control-a" value="2021" />
+			<input type="text" name="antspm-q" class="antispam-control antispam-control-q" value="4.3" autocomplete="off" />
+		</p>
+		<p class="antispam-group antispam-group-e" style="display: none;">
+			<label>Leave this field empty</label>
+			<input type="text" name="antspm-e-email-url-website" class="antispam-control antispam-control-e" value="" autocomplete="off" />
+		</p>
+</form>	</div><!-- #respond -->
+	
+</div><!-- #comments -->
+			
+		</div><!-- #content -->
+			<div id="tertiary" class="sidebar-container" role="complementary">
+		<div class="sidebar-inner">
+			<div class="widget-area" id="sidebar-widgets">
+				<aside id="search-7" class="widget widget_search"><form role="search" method="get" class="search-form" action="./../index.html">
+				<label>
+					<span class="screen-reader-text">搜索：</span>
+					<input type="search" class="search-field" placeholder="搜索&hellip;" value="" name="s" />
+				</label>
+				<input type="submit" class="search-submit" value="搜索" />
+			</form></aside><aside id="tag_cloud-10" class="widget widget_tag_cloud"><h3 class="widget-title">标签</h3><div class="tagcloud"><a href="./../tag/c/index.html" class="tag-cloud-link tag-link-63 tag-link-position-1" style="font-size: 16.828828828829pt;" aria-label="C++ (9个项目)">C++</a>
+<a href="./../tag/unity/index.html" class="tag-cloud-link tag-link-65 tag-link-position-2" style="font-size: 13.045045045045pt;" aria-label="unity (4个项目)">unity</a>
+<a href="./../tag/%e4%b8%8a%e6%89%8b/index.html" class="tag-cloud-link tag-link-61 tag-link-position-3" style="font-size: 19.72972972973pt;" aria-label="上手 (16个项目)">上手</a>
+<a href="./../tag/%e4%ba%8b%e4%bb%b6/index.html" class="tag-cloud-link tag-link-67 tag-link-position-4" style="font-size: 13.045045045045pt;" aria-label="事件 (4个项目)">事件</a>
+<a href="./../tag/%e4%bc%98%e5%8c%96/index.html" class="tag-cloud-link tag-link-51 tag-link-position-5" style="font-size: 10.27027027027pt;" aria-label="优化 (2个项目)">优化</a>
+<a href="./../tag/%e5%ae%89%e8%a3%85/index.html" class="tag-cloud-link tag-link-49 tag-link-position-6" style="font-size: 8pt;" aria-label="安装 (1个项目)">安装</a>
+<a href="./../tag/%e6%89%8b%e5%86%8c/index.html" class="tag-cloud-link tag-link-41 tag-link-position-7" style="font-size: 22pt;" aria-label="手册 (25个项目)">手册</a>
+<a href="./../tag/%e6%89%a9%e5%b1%95/index.html" class="tag-cloud-link tag-link-69 tag-link-position-8" style="font-size: 14.936936936937pt;" aria-label="扩展 (6个项目)">扩展</a>
+<a href="./../tag/%e6%95%99%e7%a8%8b/index.html" class="tag-cloud-link tag-link-47 tag-link-position-9" style="font-size: 8pt;" aria-label="教程 (1个项目)">教程</a>
+<a href="./../tag/%e6%a6%82%e5%bf%b5/index.html" class="tag-cloud-link tag-link-31 tag-link-position-10" style="font-size: 15.567567567568pt;" aria-label="概念 (7个项目)">概念</a>
+<a href="./../tag/%e6%a6%82%e8%bf%b0/index.html" class="tag-cloud-link tag-link-59 tag-link-position-11" style="font-size: 11.783783783784pt;" aria-label="概述 (3个项目)">概述</a>
+<a href="./../tag/%e7%89%88%e6%9c%ac%e5%8d%87%e7%ba%a7/index.html" class="tag-cloud-link tag-link-37 tag-link-position-12" style="font-size: 8pt;" aria-label="版本升级 (1个项目)">版本升级</a>
+<a href="./../tag/%e7%ab%9e%e5%93%81%e5%88%86%e6%9e%90/index.html" class="tag-cloud-link tag-link-29 tag-link-position-13" style="font-size: 8pt;" aria-label="竞品分析 (1个项目)">竞品分析</a>
+<a href="./../tag/%e7%bc%96%e8%af%91%e6%9e%84%e5%bb%ba/index.html" class="tag-cloud-link tag-link-13 tag-link-position-14" style="font-size: 14.936936936937pt;" aria-label="编译构建 (6个项目)">编译构建</a>
+<a href="./../tag/%e7%bc%96%e8%be%91%e5%99%a8/index.html" class="tag-cloud-link tag-link-11 tag-link-position-15" style="font-size: 16.198198198198pt;" aria-label="编辑器 (8个项目)">编辑器</a>
+<a href="./../tag/%e8%8a%82%e7%82%b9/index.html" class="tag-cloud-link tag-link-43 tag-link-position-16" style="font-size: 21.873873873874pt;" aria-label="节点 (24个项目)">节点</a>
+<a href="./../tag/%e8%bf%90%e8%a1%8c%e6%97%b6/index.html" class="tag-cloud-link tag-link-27 tag-link-position-17" style="font-size: 18.216216216216pt;" aria-label="运行时 (12个项目)">运行时</a>
+<a href="./../tag/%e8%bf%9e%e8%b0%83/index.html" class="tag-cloud-link tag-link-81 tag-link-position-18" style="font-size: 11.783783783784pt;" aria-label="连调 (3个项目)">连调</a></div>
+</aside>		<aside id="recent-posts-6" class="widget widget_recent_entries">		<h3 class="widget-title">最新文章</h3>		<ul>
+											<li>
+					<a href="./../../../3-6-39/index.html">最新版3.6.39发布了！</a>
+									</li>
+											<li>
+					<a href="./../../../intro/index.html">节点类型的简单介绍</a>
+									</li>
+											<li>
+					<a href="./../../../version3_6_38/index.html">最新版3.6.38发布了！</a>
+									</li>
+											<li>
+					<a href="./../../../version3_6_36/index.html">最新版3.6.36发布了！</a>
+									</li>
+											<li>
+					<a href="./../../../%e6%9c%80%e6%96%b0%e7%89%883-6-35%e5%8f%91%e5%b8%83%e4%ba%86%ef%bc%81/index.html">最新版3.6.35发布了！</a>
+									</li>
+					</ul>
+		</aside><aside id="polylang-11" class="widget widget_polylang"><ul>
+	<li class="lang-item lang-item-5 lang-item-zh current-lang no-translation"><a hreflang="zh-CN" href="./../%e9%a6%96%e9%a1%b5/index.html"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAFqSURBVHjaYrzOwPAPjJgYQEDAleHVbhADIvgHLPgHiQ0QQCxAlkR9NW8sw+cV/1gV/7Gb/hV4+vfzhj8Mv/78//Pn/+/f/8AkhH1t0yaAAAJp4I37zyz2lDfu79uqv/++/WYz+cuq/vvLxt8gdb+A5K9/v34B2SyyskBLAAII5JAva/7/+/z367a/f3/8ZuT9+//Pr78vQUrB6n4CSSj6/RuoASCAWEDO/fD3ddEfhv9/OE3/sKj8/n7k9/fDQNUIs/+DVf8HawAIIJCT/v38C3Hr95N/GDh/f94AVvT7N8RUBpjxQAVADQABBNLw/y/Ifwy/f/399ufTOpDBEPf8g5sN0QBEDAwAAQTWABEChgOSA9BVA00E2wAQQCANQBbEif/AzoCqgLkbbBYwWP/+//sXqBYggFhAkfL7D7OkJFCOCSj65zfUeFjwg8z++/ffX5AGoGKAAGI8jhSRyIw/SJH9D4aAYQoQYAA6rnMw1jU2vQAAAABJRU5ErkJggg==" title="中文 (中国) (zh_CN)" alt="中文 (中国)" />&nbsp;中文 (中国)</a></li>
+	<li class="lang-item lang-item-2 lang-item-en no-translation"><a hreflang="en-US" href="./../../en/index/index.html"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAHzSURBVHjaYkxOP8IAB//+Mfz7w8Dwi4HhP5CcJb/n/7evb16/APL/gRFQDiAAw3JuAgAIBEDQ/iswEERjGzBQLEru97ll0g0+3HvqMn1SpqlqGsZMsZsIe0SICA5gt5a/AGIEarCPtFh+6N/ffwxA9OvP/7//QYwff/6fZahmePeB4dNHhi+fGb59Y4zyvHHmCEAAAW3YDzQYaJJ93a+vX79aVf58//69fvEPlpIfnz59+vDhw7t37968efP3b/SXL59OnjwIEEAsDP+YgY53b2b89++/awvLn98MDi2cVxl+/vl6mituCtBghi9f/v/48e/XL86krj9XzwEEEENy8g6gu22rfn78+NGs5Ofr16+ZC58+fvyYwX8rxOxXr169fPny+fPn1//93bJlBUAAsQADZMEBxj9/GBxb2P/9+S/R8u3vzxuyaX8ZHv3j8/YGms3w8ycQARmi2eE37t4ACCDGR4/uSkrKAS35B3TT////wADOgLOBIaXIyjBlwxKAAGKRXjCB0SOEaeu+/y9fMnz4AHQxCP348R/o+l+//sMZQBNLEvif3AcIIMZbty7Ly6t9ZmXl+fXj/38GoHH/UcGfP79//BBiYHjy9+8/oUkNAAHEwt1V/vI/KBY/QSISFqM/GBg+MzB8A6PfYC5EFiDAABqgW776MP0rAAAAAElFTkSuQmCC" title="English (en_US)" alt="English" />&nbsp;English</a></li>
+</ul>
+</aside><aside id="meta-9" class="widget widget_meta"><h3 class="widget-title">功能</h3>			<ul>
+						<li><a href="./../../../wp-login.php">登录</a></li>
+			<li><a href="./../feed/index.html">Entries feed</a></li>
+			<li><a href="./../comments/feed/index.html">Comments feed</a></li>
+			<li><a href="https://cn.wordpress.org/">WordPress.org</a></li>			</ul>
+			</aside>                			</div><!-- .widget-area -->
+		</div><!-- .sidebar-inner -->
+	</div><!-- #tertiary -->
+	</div><!-- #primary -->
+
+
+
+		</div><!-- #main -->
+		<footer id="colophon" class="site-footer" role="contentinfo">
+        	<div class="footer-bg clearfix">
+                <div class="widget-wrap">
+                                    </div>
+			</div>
+
+			<div class="site-info">
+
+                <div class="copyright">
+					<p class="footermenu">
+						<a href="http://www.tencent.com/" target="new" title="关于腾讯">关于腾讯</a>|
+						<a href="http://www.tencent.com/index_e.shtml" target="new" title="About Tencent">About Tencent</a>|
+						<a href="http://www.qq.com/contract.shtml" target="new" title="服务协议">服务协议</a>|
+						<a href="http://open.qq.com/" target="new" title="开放平台">开放平台</a>|
+						<a href="http://www.tencentmind.com/" target="new" title="广告服务">广告服务</a>|
+						<a href="http://www.tencent.com/about/corp.shtml" target="new" title="商务洽谈">商务洽谈</a>|
+						<a href="http://hr.tencent.com/" target="new" title="腾讯招聘">腾讯招聘</a>|
+						<a href="http://www.qq.com/" target="new" title="腾讯网">腾讯网</a>|
+						<a href="http://gongyi.qq.com/" target="new" title="腾讯公益">腾讯公益</a>|
+						<a href="http://service.qq.com/" target="new" title="客服中心">客服中心</a>|
+						<a href="http://www.qq.com/map/" target="new" title="网站导航">网站导航</a>|
+						<a href="http://www.tencent.com/law/mo_law.shtml?/law/copyright.htm" target="new" title="版权所有">版权所有</a>
+					</p>
+					Copyright &copy; 1998-2015 Tencent, All Rights Reserved
+                	<br/>
+					腾讯公司 版权所有<br>
+					备案：粤B2-20090059-185
+                </div>            
+            	<div class="credit-info">
+
+					<a hreflang="zh-CN" href="./../首页/index.html">&nbsp;<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAFqSURBVHjaYrzOwPAPjJgYQEDAleHVbhADIvgHLPgHiQ0QQCxAlkR9NW8sw+cV/1gV/7Gb/hV4+vfzhj8Mv/78//Pn/+/f/8AkhH1t0yaAAAJp4I37zyz2lDfu79uqv/++/WYz+cuq/vvLxt8gdb+A5K9/v34B2SyyskBLAAII5JAva/7/+/z367a/f3/8ZuT9+//Pr78vQUrB6n4CSSj6/RuoASCAWEDO/fD3ddEfhv9/OE3/sKj8/n7k9/fDQNUIs/+DVf8HawAIIJCT/v38C3Hr95N/GDh/f94AVvT7N8RUBpjxQAVADQABBNLw/y/Ifwy/f/399ufTOpDBEPf8g5sN0QBEDAwAAQTWABEChgOSA9BVA00E2wAQQCANQBbEif/AzoCqgLkbbBYwWP/+//sXqBYggFhAkfL7D7OkJFCOCSj65zfUeFjwg8z++/ffX5AGoGKAAGI8jhSRyIw/SJH9D4aAYQoQYAA6rnMw1jU2vQAAAABJRU5ErkJggg==" title="中文 (中国) (zh_CN)" alt="中文 (中国)">中文</a>
+					<a hreflang="en-US" href="./../../en/index/index.html"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAHzSURBVHjaYkxOP8IAB//+Mfz7w8Dwi4HhP5CcJb/n/7evb16/APL/gRFQDiAAw3JuAgAIBEDQ/iswEERjGzBQLEru97ll0g0+3HvqMn1SpqlqGsZMsZsIe0SICA5gt5a/AGIEarCPtFh+6N/ffwxA9OvP/7//QYwff/6fZahmePeB4dNHhi+fGb59Y4zyvHHmCEAAAW3YDzQYaJJ93a+vX79aVf58//69fvEPlpIfnz59+vDhw7t37968efP3b/SXL59OnjwIEEAsDP+YgY53b2b89++/awvLn98MDi2cVxl+/vl6mituCtBghi9f/v/48e/XL86krj9XzwEEEENy8g6gu22rfn78+NGs5Ofr16+ZC58+fvyYwX8rxOxXr169fPny+fPn1//93bJlBUAAsQADZMEBxj9/GBxb2P/9+S/R8u3vzxuyaX8ZHv3j8/YGms3w8ycQARmi2eE37t4ACCDGR4/uSkrKAS35B3TT////wADOgLOBIaXIyjBlwxKAAGKRXjCB0SOEaeu+/y9fMnz4AHQxCP348R/o+l+//sMZQBNLEvif3AcIIMZbty7Ly6t9ZmXl+fXj/38GoHH/UcGfP79//BBiYHjy9+8/oUkNAAHEwt1V/vI/KBY/QSISFqM/GBg+MzB8A6PfYC5EFiDAABqgW776MP0rAAAAAElFTkSuQmCC" title="English (en_US)" alt="English">English</a>
+					<br>
+					<img src="./../../../img/QR_code.png" height="100" class="hidden-on-phone" alt="behaviac website's QR code">
+					<br>
+					<a href="./../contactus/index.html">联系我们</a>
+					<a href="/" title="Semantic Personal Publishing Platform">
+						Powered by behaviac.com                    </a>
+
+
+                </div>
+
+			</div><!-- .site-info -->
+		</footer><!-- #colophon -->
+
+	</div><!-- #page -->
+<script>
+//baidu and google stats
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-71830575-1', 'auto');
+  ga('send', 'pageview');
+
+ 
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "//hm.baidu.com/hm.js?f4bf91f241741b47ba932bf2129763b7";
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
+  })();
+
+</script>
+	<script type='text/javascript' src='./../../../wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shCore.js?ver=3.0.9b'></script>
+<script type='text/javascript' src='./../../../wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushAS3.js?ver=3.0.9b'></script>
+<script type='text/javascript' src='./../../../wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushBash.js?ver=3.0.9b'></script>
+<script type='text/javascript' src='./../../../wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushColdFusion.js?ver=3.0.9b'></script>
+<script type='text/javascript' src='./../../../wp-content/plugins/syntaxhighlighter/third-party-brushes/shBrushClojure.js?ver=20090602'></script>
+<script type='text/javascript' src='./../../../wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushCpp.js?ver=3.0.9b'></script>
+<script type='text/javascript' src='./../../../wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushCSharp.js?ver=3.0.9b'></script>
+<script type='text/javascript' src='./../../../wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushCss.js?ver=3.0.9b'></script>
+<script type='text/javascript' src='./../../../wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushDelphi.js?ver=3.0.9b'></script>
+<script type='text/javascript' src='./../../../wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushDiff.js?ver=3.0.9b'></script>
+<script type='text/javascript' src='./../../../wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushErlang.js?ver=3.0.9b'></script>
+<script type='text/javascript' src='./../../../wp-content/plugins/syntaxhighlighter/third-party-brushes/shBrushFSharp.js?ver=20091003'></script>
+<script type='text/javascript' src='./../../../wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushGroovy.js?ver=3.0.9b'></script>
+<script type='text/javascript' src='./../../../wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushJava.js?ver=3.0.9b'></script>
+<script type='text/javascript' src='./../../../wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushJavaFX.js?ver=3.0.9b'></script>
+<script type='text/javascript' src='./../../../wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushJScript.js?ver=3.0.9b'></script>
+<script type='text/javascript' src='./../../../wp-content/plugins/syntaxhighlighter/third-party-brushes/shBrushLatex.js?ver=20090613'></script>
+<script type='text/javascript' src='./../../../wp-content/plugins/syntaxhighlighter/third-party-brushes/shBrushMatlabKey.js?ver=20091209'></script>
+<script type='text/javascript' src='./../../../wp-content/plugins/syntaxhighlighter/third-party-brushes/shBrushObjC.js?ver=20091207'></script>
+<script type='text/javascript' src='./../../../wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushPerl.js?ver=3.0.9b'></script>
+<script type='text/javascript' src='./../../../wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushPhp.js?ver=3.0.9b'></script>
+<script type='text/javascript' src='./../../../wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushPlain.js?ver=3.0.9b'></script>
+<script type='text/javascript' src='./../../../wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushPowerShell.js?ver=3.0.9b'></script>
+<script type='text/javascript' src='./../../../wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushPython.js?ver=3.0.9b'></script>
+<script type='text/javascript' src='./../../../wp-content/plugins/syntaxhighlighter/third-party-brushes/shBrushR.js?ver=20100919'></script>
+<script type='text/javascript' src='./../../../wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushRuby.js?ver=3.0.9b'></script>
+<script type='text/javascript' src='./../../../wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushScala.js?ver=3.0.9b'></script>
+<script type='text/javascript' src='./../../../wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushSql.js?ver=3.0.9b'></script>
+<script type='text/javascript' src='./../../../wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushVb.js?ver=3.0.9b'></script>
+<script type='text/javascript' src='./../../../wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushXml.js?ver=3.0.9b'></script>
+<script type='text/javascript'>
+	(function(){
+		var corecss = document.createElement('link');
+		var themecss = document.createElement('link');
+		var corecssurl = "./wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/styles/shCore.css?ver=3.0.9b";
+		if ( corecss.setAttribute ) {
+				corecss.setAttribute( "rel", "stylesheet" );
+				corecss.setAttribute( "type", "text/css" );
+				corecss.setAttribute( "href", corecssurl );
+		} else {
+				corecss.rel = "stylesheet";
+				corecss.href = corecssurl;
+		}
+		document.getElementsByTagName("head")[0].insertBefore( corecss, document.getElementById("syntaxhighlighteranchor") );
+		var themecssurl = "./wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/styles/shThemeDefault.css?ver=3.0.9b";
+		if ( themecss.setAttribute ) {
+				themecss.setAttribute( "rel", "stylesheet" );
+				themecss.setAttribute( "type", "text/css" );
+				themecss.setAttribute( "href", themecssurl );
+		} else {
+				themecss.rel = "stylesheet";
+				themecss.href = themecssurl;
+		}
+		//document.getElementById("syntaxhighlighteranchor").appendChild(themecss);
+		document.getElementsByTagName("head")[0].insertBefore( themecss, document.getElementById("syntaxhighlighteranchor") );
+	})();
+	SyntaxHighlighter.config.strings.expandSource = '+ expand source';
+	SyntaxHighlighter.config.strings.help = '帮助';
+	SyntaxHighlighter.config.strings.alert = 'SyntaxHighlighter\n\n';
+	SyntaxHighlighter.config.strings.noBrush = '无法找到Brush：';
+	SyntaxHighlighter.config.strings.brushNotHtmlScript = 'Brush不能设置 html-script选项';
+	SyntaxHighlighter.defaults['pad-line-numbers'] = false;
+	SyntaxHighlighter.defaults['toolbar'] = false;
+	SyntaxHighlighter.all();
+</script>
+<script type='text/javascript' src='./../../../wp-content/plugins/anti-spam/js/anti-spam-4.3.js'></script>
+<script type='text/javascript' src='./../../../wp-includes/js/imagesloaded.min.js?ver=3.2.0'></script>
+<script type='text/javascript' src='./../../../wp-includes/js/masonry.min.js?ver=3.3.2'></script>
+<script type='text/javascript' src='./../../../wp-includes/js/jquery/jquery.masonry.min.js?ver=3.1.2b'></script>
+<script type='text/javascript' src='./../../../wp-content/plugins/templatesnext-toolkit/js/owl.carousel.min.js?ver=1.3.2'></script>
+<script type='text/javascript' src='./../../../wp-content/plugins/templatesnext-toolkit/js/jquery.colorbox-min.js?ver=1.5.14'></script>
+<script type='text/javascript' src='./../../../wp-content/plugins/templatesnext-toolkit/js/tx-script.js?ver=2013-07-18'></script>
+<script type='text/javascript' src='./../../../wp-includes/js/comment-reply.min.js?ver=5.4.1'></script>
+<script type='text/javascript' src='./../../../wp-content/themes/behaviac/js/waypoints.min.js?ver=2014-01-13'></script>
+<script type='text/javascript' src='./../../../wp-content/themes/behaviac/js/jquery.sidr.min.js?ver=2014-01-13'></script>
+<script type='text/javascript' src='./../../../wp-content/themes/behaviac/js/functions.js?ver=2013-07-18'></script>
+<script type='text/javascript' src='./../../../wp-includes/js/wp-embed.min.js?ver=5.4.1'></script>
+</body>
+</html>

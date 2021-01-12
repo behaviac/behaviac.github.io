@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>《教程1.2：手工编写类型代码的工作流程》的评论</title>
+	<atom:link href="/tutorial_1_2_write_codes/feed/" rel="self" type="application/rss+xml" />
+	<link>/tutorial_1_2_write_codes/</link>
+	<description>Tencent behaviac, Game AI, Behavior Tree, Finite State Machine, Hierarchical Task Network, BT FSM HTN, 腾讯开源, 游戏AI, 行为树,有限状态机,分层任务网络</description>
+	<lastBuildDate>Mon, 26 Mar 2018 16:07:20 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.1</generator>
+	<item>
+		<title>作者：Superflat</title>
+		<link>/tutorial_1_2_write_codes/#comment-420</link>
+		<dc:creator><![CDATA[Superflat]]></dc:creator>
+		<pubDate>Fri, 01 Dec 2017 09:14:53 +0000</pubDate>
+		<guid isPermaLink="false">/</guid>
+		<description><![CDATA[Does this means using editor and editing xml file are the only ways to let the editor know what the properties and methods are defined in hand coded agent class? I saw from other article talking about using macro to generate xml file from c++ code? (/tutorial3_1_meta_cpp_register/)]]></description>
+		<content:encoded><![CDATA[<p>Does this means using editor and editing xml file are the only ways to let the editor know what the properties and methods are defined in hand coded agent class? I saw from other article talking about using macro to generate xml file from c++ code? (<a href="/tutorial3_1_meta_cpp_register/" rel="nofollow">/tutorial3_1_meta_cpp_register/</a>)</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>作者：cainhuang</title>
+		<link>/tutorial_1_2_write_codes/#comment-404</link>
+		<dc:creator><![CDATA[cainhuang]]></dc:creator>
+		<pubDate>Tue, 25 Jul 2017 03:11:45 +0000</pubDate>
+		<guid isPermaLink="false">/</guid>
+		<description><![CDATA[没有问题，因为每个.h文件的第一句代码都是类似这种语句：#ifndef _BEHAVIAC_HEADERS_H_，所以不会造成循环include]]></description>
+		<content:encoded><![CDATA[<p>没有问题，因为每个.h文件的第一句代码都是类似这种语句：#ifndef _BEHAVIAC_HEADERS_H_，所以不会造成循环include</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>作者：franck</title>
+		<link>/tutorial_1_2_write_codes/#comment-399</link>
+		<dc:creator><![CDATA[franck]]></dc:creator>
+		<pubDate>Fri, 16 Jun 2017 02:26:20 +0000</pubDate>
+		<guid isPermaLink="false">/</guid>
+		<description><![CDATA[在behaviac_heads.h中有#include &quot;SecondAgent.h&quot;，而在SecondAgent.h中又有#include &quot;behaviac_headers.h&quot;，这样相互include，在C++中会有问题的吧]]></description>
+		<content:encoded><![CDATA[<p>在behaviac_heads.h中有#include &#8220;SecondAgent.h&#8221;，而在SecondAgent.h中又有#include &#8220;behaviac_headers.h&#8221;，这样相互include，在C++中会有问题的吧</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

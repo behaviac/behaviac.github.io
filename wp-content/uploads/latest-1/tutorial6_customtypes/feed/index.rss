@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>《自定义类或结构体》的评论</title>
+	<atom:link href="/tutorial6_customtypes/feed/" rel="self" type="application/rss+xml" />
+	<link>/tutorial6_customtypes/</link>
+	<description>Tencent behaviac, Game AI, Behavior Tree, Finite State Machine, Hierarchical Task Network, BT FSM HTN, 腾讯开源, 游戏AI, 行为树,有限状态机,分层任务网络</description>
+	<lastBuildDate>Mon, 26 Mar 2018 16:07:20 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.1</generator>
+	<item>
+		<title>作者：green</title>
+		<link>/tutorial6_customtypes/#comment-405</link>
+		<dc:creator><![CDATA[green]]></dc:creator>
+		<pubDate>Thu, 27 Jul 2017 09:38:39 +0000</pubDate>
+		<guid isPermaLink="false">/</guid>
+		<description><![CDATA[你好，请问一下如何在编辑器使用第三方库的类或结构体呢]]></description>
+		<content:encoded><![CDATA[<p>你好，请问一下如何在编辑器使用第三方库的类或结构体呢</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>作者：quinnpan</title>
+		<link>/tutorial6_customtypes/#comment-82</link>
+		<dc:creator><![CDATA[quinnpan]]></dc:creator>
+		<pubDate>Mon, 27 Jun 2016 09:00:05 +0000</pubDate>
+		<guid isPermaLink="false">/</guid>
+		<description><![CDATA[感谢指出来，一会儿就改过来。]]></description>
+		<content:encoded><![CDATA[<p>感谢指出来，一会儿就改过来。</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>作者：zhaohui</title>
+		<link>/tutorial6_customtypes/#comment-81</link>
+		<dc:creator><![CDATA[zhaohui]]></dc:creator>
+		<pubDate>Mon, 27 Jun 2016 08:55:45 +0000</pubDate>
+		<guid isPermaLink="false">/</guid>
+		<description><![CDATA[DECLARE_BEHAVIAC_STRUCT(TypeTest2_t) 这个里面的名字不需要和结构体名字一样么？]]></description>
+		<content:encoded><![CDATA[<p>DECLARE_BEHAVIAC_STRUCT(TypeTest2_t) 这个里面的名字不需要和结构体名字一样么？</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

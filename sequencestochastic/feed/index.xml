@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	《随机序列节点》的评论	</title>
+	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
+	<link>./../index.html</link>
+	<description>Tencent behaviac, Game AI, Behavior Tree, Finite State Machine, Hierarchical Task Network, BT FSM HTN, 腾讯开源, 游戏AI, 行为树,有限状态机,分层任务网络</description>
+	<lastBuildDate>Tue, 25 Apr 2017 11:19:37 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.4.1</generator>
+	<item>
+		<title>
+		作者：随机与概率相关节点的使用 &#8211; behaviac		</title>
+		<link>./../index.html#comment-392</link>
+
+		<dc:creator><![CDATA[随机与概率相关节点的使用 &#8211; behaviac]]></dc:creator>
+		<pubDate>Tue, 25 Apr 2017 11:19:37 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=254#comment-392</guid>
+
+					<description><![CDATA[[&#8230;] 为了方便使用，behaviac组件除了提供传统的序列、选择等组合节点之外，还提供了随机与概率相关的节点类型，主要包括随机序列（SequenceStochastic）、随机选择（SelectorStochastic）和概率选择（SelectorProbability）等节点。 [&#8230;]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] 为了方便使用，behaviac组件除了提供传统的序列、选择等组合节点之外，还提供了随机与概率相关的节点类型，主要包括随机序列（SequenceStochastic）、随机选择（SelectorStochastic）和概率选择（SelectorProbability）等节点。 [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

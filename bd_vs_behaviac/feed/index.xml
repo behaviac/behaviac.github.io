@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	《behaviac与Behavior Designer的对比》的评论	</title>
+	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
+	<link>./../index.html</link>
+	<description>Tencent behaviac, Game AI, Behavior Tree, Finite State Machine, Hierarchical Task Network, BT FSM HTN, 腾讯开源, 游戏AI, 行为树,有限状态机,分层任务网络</description>
+	<lastBuildDate>Tue, 30 Jan 2018 03:43:59 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.4.1</generator>
+	<item>
+		<title>
+		作者：admin		</title>
+		<link>./../index.html#comment-425</link>
+
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Tue, 30 Jan 2018 03:43:59 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=154#comment-425</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;./../index.html#comment-424&quot;&gt;林一&lt;/a&gt;.
+
+http://bbs.behaviac.com/index.php/570/lua%E7%89%88%E6%9C%AC%E7%9A%84%E5%BC%80%E5%8F%91%E8%BF%9B%E5%BA%A6?show=570#q570]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="./../index.html#comment-424">林一</a>.</p>
+<p><a href="http://bbs.behaviac.com/index.php/570/lua%E7%89%88%E6%9C%AC%E7%9A%84%E5%BC%80%E5%8F%91%E8%BF%9B%E5%BA%A6?show=570#q570" rel="nofollow ugc">http://bbs.behaviac.com/index.php/570/lua%E7%89%88%E6%9C%AC%E7%9A%84%E5%BC%80%E5%8F%91%E8%BF%9B%E5%BA%A6?show=570#q570</a></p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		作者：林一		</title>
+		<link>./../index.html#comment-424</link>
+
+		<dc:creator><![CDATA[林一]]></dc:creator>
+		<pubDate>Mon, 29 Jan 2018 17:07:29 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=154#comment-424</guid>
+
+					<description><![CDATA[lua版本什么时候能用呢]]></description>
+			<content:encoded><![CDATA[<p>lua版本什么时候能用呢</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		作者：陈x		</title>
+		<link>./../index.html#comment-413</link>
+
+		<dc:creator><![CDATA[陈x]]></dc:creator>
+		<pubDate>Mon, 23 Oct 2017 13:08:06 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=154#comment-413</guid>
+
+					<description><![CDATA[js版本什么时候开发好]]></description>
+			<content:encoded><![CDATA[<p>js版本什么时候开发好</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		作者：aaa		</title>
+		<link>./../index.html#comment-401</link>
+
+		<dc:creator><![CDATA[aaa]]></dc:creator>
+		<pubDate>Sat, 15 Jul 2017 06:27:10 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=154#comment-401</guid>
+
+					<description><![CDATA[editor尽快支持macos]]></description>
+			<content:encoded><![CDATA[<p>editor尽快支持macos</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		作者：admin		</title>
+		<link>./../index.html#comment-370</link>
+
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Tue, 28 Feb 2017 02:23:54 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=154#comment-370</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;./../index.html#comment-369&quot;&gt;tcdona&lt;/a&gt;.
+
+如果有什么想法和建议可以告诉我们 :D]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="./../index.html#comment-369">tcdona</a>.</p>
+<p>如果有什么想法和建议可以告诉我们 😀</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		作者：tcdona		</title>
+		<link>./../index.html#comment-369</link>
+
+		<dc:creator><![CDATA[tcdona]]></dc:creator>
+		<pubDate>Mon, 27 Feb 2017 16:10:50 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=154#comment-369</guid>
+
+					<description><![CDATA[看到 js 版本正在开发中，c++小白好感动。。。]]></description>
+			<content:encoded><![CDATA[<p>看到 js 版本正在开发中，c++小白好感动。。。</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		作者：admin		</title>
+		<link>./../index.html#comment-9</link>
+
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Tue, 24 May 2016 03:31:04 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=154#comment-9</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;./../index.html#comment-5&quot;&gt;刘贞明&lt;/a&gt;.
+
+由于网站刚刚更换新的系统，数据迁移的时候出现了链接地址错误，主页君这里已经修改这篇文章，多谢反馈！]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="./../index.html#comment-5">刘贞明</a>.</p>
+<p>由于网站刚刚更换新的系统，数据迁移的时候出现了链接地址错误，主页君这里已经修改这篇文章，多谢反馈！</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		作者：刘贞明		</title>
+		<link>./../index.html#comment-5</link>
+
+		<dc:creator><![CDATA[刘贞明]]></dc:creator>
+		<pubDate>Thu, 19 May 2016 03:24:13 +0000</pubDate>
+		<guid isPermaLink="false">./../../index.html?p=154#comment-5</guid>
+
+					<description><![CDATA[图裂了，主页君]]></description>
+			<content:encoded><![CDATA[<p>图裂了，主页君</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

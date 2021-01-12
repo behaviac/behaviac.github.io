@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>安装 &#8211; behaviac</title>
+	<atom:link href="./../../%E5%AE%89%E8%A3%85/feed/index.html" rel="self" type="application/rss+xml" />
+	<link>./../../../../../index.html</link>
+	<description>Tencent behaviac, Game AI, Behavior Tree, Finite State Machine, Hierarchical Task Network, BT FSM HTN, 腾讯开源, 游戏AI, 行为树,有限状态机,分层任务网络</description>
+	<lastBuildDate>Mon, 19 Dec 2016 06:20:13 +0000</lastBuildDate>
+	<language>zh-CN</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.4.1</generator>
+
+<image>
+	<url>./../../../../../wp-content/uploads/2016/04/cropped-256x256-32x32.png</url>
+	<title>安装 &#8211; behaviac</title>
+	<link>./../../../../../index.html</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>编辑器的安装</title>
+		<link>./../../../../../tutorial1_install/index.html</link>
+					<comments>./../../../../../tutorial1_install/index.html#respond</comments>
+		
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Fri, 13 May 2016 02:17:21 +0000</pubDate>
+				<category><![CDATA[3.5]]></category>
+		<category><![CDATA[上手]]></category>
+		<category><![CDATA[安装]]></category>
+		<category><![CDATA[编辑器]]></category>
+		<guid isPermaLink="false">./../../../../../index.html?p=267</guid>
+
+					<description><![CDATA[首先从下载页面下载编辑器 可以查看目录结构 安装 安装behaviac套件的系统配置需求如下所示： 最低配置： 硬件环境： CPU：Intel core2 Du<a class="moretag" href="./../../../../../tutorial1_install/index.html">Read More...</a>]]></description>
+										<content:encoded><![CDATA[<p><a href="./../../../behaviac%E7%89%88%E6%9C%AC%E4%B8%8B%E8%BD%BD/index.html">首先从下载页面下载编辑器</a></p>
+<p><a href="./../../../directory/index.html">可以查看目录结构</a></p>
+<h2 id="section">安装</h2>
+<p>安装behaviac套件的系统配置需求如下所示：</p>
+<h3 id="section-1">最低配置：</h3>
+<p>硬件环境：</p>
+<p>CPU：Intel core2 Duo 2.0G或同等配置</p>
+<p>内存：2GB以上</p>
+<p>显卡：nvidia 6600GT或同等配置</p>
+<p>软件环境：</p>
+<p>操作系统：Windows XP/Vista/7/8</p>
+<p>屏幕分辨率：1024*768</p>
+<h3 id="section-2">推荐配置：</h3>
+<p>硬件环境：</p>
+<p>CPU：Intel I5 2.93G或更高配置</p>
+<p>内存：4GB以上</p>
+<p>显卡：nvidia GTS450或更高配置</p>
+<p>软件环境：</p>
+<p>操作系统：Windows 7/8</p>
+<p>屏幕分辨率：1680*1050</p>
+<p>运行BehaviacSetup_***.exe安装包文件，选择安装路径（推荐直接使用默认路径），安装behaviac相关套件。</p>
+<p>可能需要下载安装<a href="https://support.microsoft.com/en-us/kb/2977003">Microsoft Visual C++ 运行库</a>。<br />
+及<a href="https://www.microsoft.com/en-US/download/details.aspx?id=21">.net</a>。</p>
+<p>安装完成后，会在桌面生成编辑器的快捷方式，如下图所示：</p>
+<p><img src="./../../../../../img/tutorials/tutorial1/designerIcon.png" alt="" /></p>
+<p>图1 安装后桌面的编辑器图标</p>
+<p>另外，在系统的“开始”菜单中生成了一些游戏demo和文档的菜单项。其中，BattleCityDemo是采用Unity引擎实现的小游戏（C#版），LaunchCocosGame是采用Cocos引擎实现的小游戏（C++版），LaunchSDLDemo是采用SDL库实现的小游戏（C++版），如下图所示：</p>
+<p><img src="./../../../../../img/tutorials/tutorial1/startmenu.png" alt="" /></p>
+<p>图2 开始菜单中demo和文档菜单项</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>./../../../../../tutorial1_install/feed/index.html</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>
