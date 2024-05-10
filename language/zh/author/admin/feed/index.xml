@@ -88,9 +88,9 @@
 <li>C++版的构建使用cmake来生成对应平台的项目文件，请参考<a href="/docs/zh/articles/build/">构建说明</a></li>
 <li>访问<a href="https://github.com/Tencent/behaviac/blob/master/history.txt">history.txt</a>获取修改说明</li>
 <li><a href="/language/zh/updatenotes/">升级版本的步骤及注意事项</a></li>
-<li><a href="/language/zh/category/文档/教程/">教程 </a></li>
-<li><a href="/language/zh/category/文档/%e6%96%87%e7%ab%a0/">说明文章</a></li>
-<li><a href="/language/zh/category/文档/%e6%89%8b%e5%86%8c/">节点手册</a></li>
+<li><a href="/language/zh/category/docs/tutorial/">教程 </a></li>
+<li><a href="/language/zh/category/docs/articles/">说明文章</a></li>
+<li><a href="/language/zh/category/docs/manual/">节点手册</a></li>
 <li>每个版本有3个文件可以下载，每个文件中的数字都是版本号
 <ul>
 <li>BehaviacSetup_*.exe是windows平台上的安装程序，用以安装可执行的编辑器和demo。也可以从源码自行构建。</li>

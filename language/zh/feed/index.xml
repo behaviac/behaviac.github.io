@@ -134,7 +134,7 @@
 <li>修复概率选择节点重入的bug</li>
 <li>修复编辑器其他的bug</li>
 </ul>
-<p>注意：3.6是重大版本升级，请参考文档《<a href="/language/zh/updatenotes/#36x">升级版本的步骤及注意事项</a>》，还可以结合最新版的《<a href="/language/zh/category/文档/教程/">教程</a>》系列上手学习。</p>
+<p>注意：3.6是重大版本升级，请参考文档《<a href="/language/zh/updatenotes/#36x">升级版本的步骤及注意事项</a>》，还可以结合最新版的《<a href="/language/zh/category/docs/tutorial/">教程</a>》系列上手学习。</p>
 <p>有任何问题可以去<a href="http://bbs.behaviac.com/">问答社区</a>寻求帮助，或者去QQ群（433547396）寻求技术支持！</p>
 ]]></content:encoded>
 					
@@ -191,7 +191,7 @@
 <li>修复生成事件中方法的bug</li>
 <li>修复类型信息文件热加载的bug</li>
 </ul>
-<p>注意：3.6是重大版本升级，请参考文档《<a href="/language/zh/updatenotes/#36x">升级版本的步骤及注意事项</a>》，还可以结合最新版的《<a href="/language/zh/category/文档/教程/">教程</a>》系列上手学习。</p>
+<p>注意：3.6是重大版本升级，请参考文档《<a href="/language/zh/updatenotes/#36x">升级版本的步骤及注意事项</a>》，还可以结合最新版的《<a href="/language/zh/category/docs/tutorial/">教程</a>》系列上手学习。</p>
 <p>有任何问题可以去<a href="http://bbs.behaviac.com/">问答社区</a>寻求帮助，或者去QQ群（433547396）寻求技术支持！</p>
 ]]></content:encoded>
 					
@@ -219,7 +219,7 @@
 <li>修复生成Agent*作为函数返回值的bug</li>
 <li>修复方法和属性改名的bug</li>
 </ul>
-<p>注意：3.6是重大版本升级，请参考文档《<a href="/language/zh/updatenotes/#36x">升级版本的步骤及注意事项</a>》，还可以结合最新版的《<a href="/language/zh/category/文档/教程/">教程</a>》系列上手学习。</p>
+<p>注意：3.6是重大版本升级，请参考文档《<a href="/language/zh/updatenotes/#36x">升级版本的步骤及注意事项</a>》，还可以结合最新版的《<a href="/language/zh/category/docs/tutorial/">教程</a>》系列上手学习。</p>
 <p>有任何问题可以去<a href="http://bbs.behaviac.com/">问答社区</a>寻求帮助，或者去QQ群（433547396）寻求技术支持！</p>
 ]]></content:encoded>
 					
@@ -354,7 +354,7 @@ status = g_player-&gt;btexec();
 <li>支持C++多级命名空间的导出</li>
 <li>支持复制节点中的结构体成员为成员属性</li>
 </ul>
-<p>注意：3.6是重大版本升级，请参考文档《<a href="/language/zh/updatenotes/#36x">升级版本的步骤及注意事项</a>》，还可以结合最新版的《<a href="/language/zh/category/文档/教程/">教程</a>》系列上手学习。</p>
+<p>注意：3.6是重大版本升级，请参考文档《<a href="/language/zh/updatenotes/#36x">升级版本的步骤及注意事项</a>》，还可以结合最新版的《<a href="/language/zh/category/docs/tutorial/">教程</a>》系列上手学习。</p>
 <p>有任何问题可以去<a href="http://bbs.behaviac.com/">问答社区</a>寻求帮助，或者去QQ群（433547396）寻求技术支持！</p>
 ]]></content:encoded>
 					
@@ -381,7 +381,7 @@ status = g_player-&gt;btexec();
 <li>提供了便于上手学习的教程和源码</li>
 <li>修复了一些类型信息编辑的bug</li>
 </ul>
-<p>注意：3.6是重大版本升级，请参考文档《<a href="/language/zh/updatenotes/#36x">升级版本的步骤及注意事项</a>》，还可以结合最新版的《<a href="/language/zh/category/文档/教程/">教程</a>》系列上手学习。</p>
+<p>注意：3.6是重大版本升级，请参考文档《<a href="/language/zh/updatenotes/#36x">升级版本的步骤及注意事项</a>》，还可以结合最新版的《<a href="/language/zh/category/docs/tutorial/">教程</a>》系列上手学习。</p>
 <p>有任何问题可以去<a href="http://bbs.behaviac.com/">问答社区</a>寻求帮助，或者去QQ群（433547396）寻求技术支持！</p>
 ]]></content:encoded>
 					
@@ -2112,7 +2112,7 @@ Java_com_tencent_behaviac_behaviac_1android_MainActivity_TestMain(JNIEnv* env, j
 <li>designer</li>
 </ul>
 </li>
-<li>tutorials：教程相关的源码，配合<a href="/language/zh/category/文档/教程/">教程相关文档</a>使用，方便上手</li>
+<li>tutorials：教程相关的源码，配合<a href="/language/zh/category/docs/tutorial/">教程相关文档</a>使用，方便上手</li>
 </ul>
 ]]></content:encoded>
 					

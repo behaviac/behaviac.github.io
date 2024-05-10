@@ -55,7 +55,7 @@
 			function wp_attempt_focus() {setTimeout( function() {try {d = document.getElementById( "user_login" );d.focus(); d.select();} catch( er ) {}}, 200);}
 wp_attempt_focus();
 if ( typeof wpOnload === 'function' ) { wpOnload() }		</script>
-				<p id="backtoblog"><a href="/language/zh/首页/">
+				<p id="backtoblog"><a href="/language/zh/index/">
 		&larr; 返回到behaviac		</a></p>
 			</div>
 	<script type='text/javascript' src='/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp'></script>
