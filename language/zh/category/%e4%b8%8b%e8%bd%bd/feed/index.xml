@@ -9,8 +9,8 @@
 
 <channel>
 	<title>下载 &#8211; behaviac</title>
-	<atom:link href="./../../%E4%B8%8B%E8%BD%BD/feed/index.html" rel="self" type="application/rss+xml" />
-	<link>./../../../../../index.html</link>
+	<atom:link href="/language/zh/category/%E4%B8%8B%E8%BD%BD/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
 	<description>Tencent behaviac, Game AI, Behavior Tree, Finite State Machine, Hierarchical Task Network, BT FSM HTN, 腾讯开源, 游戏AI, 行为树,有限状态机,分层任务网络</description>
 	<lastBuildDate>Tue, 12 Sep 2017 11:04:11 +0000</lastBuildDate>
 	<language>zh-CN</language>
@@ -19,36 +19,28 @@
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
 	<generator>https://wordpress.org/?v=5.4.1</generator>
-
-<image>
-	<url>./../../../../../wp-content/uploads/2016/04/cropped-256x256-32x32.png</url>
-	<title>下载 &#8211; behaviac</title>
-	<link>./../../../../../index.html</link>
-	<width>32</width>
-	<height>32</height>
-</image> 
 	<item>
 		<title>behaviac版本下载及说明</title>
-		<link>./../../../../../downloads/index.html</link>
-					<comments>./../../../../../downloads/index.html#comments</comments>
+		<link>/downloads/</link>
+					<comments>/downloads/#comments</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<pubDate>Mon, 16 May 2016 09:46:07 +0000</pubDate>
 				<category><![CDATA[下载]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=343</guid>
+		<guid isPermaLink="false">/?p=343</guid>
 
-					<description><![CDATA[说明 C++版的构建使用cmake来生成对应平台的项目文件，请参考构建说明 访问history.txt获取修改说明 升级版本的步骤及注意事项 教程 说明文章 节<a class="moretag" href="./../../../../../downloads/index.html">Read More...</a>]]></description>
+					<description><![CDATA[说明 C++版的构建使用cmake来生成对应平台的项目文件，请参考构建说明 访问history.txt获取修改说明 升级版本的步骤及注意事项 教程 说明文章 节<a class="moretag" href="/downloads/">Read More...</a>]]></description>
 										<content:encoded><![CDATA[<div class="release label-latest">
 <div class="release-body commit open">
 <div class="release-header">
 <h1><span class="ez-toc-section" id="i">说明</span></h1>
 <ul>
-<li>C++版的构建使用cmake来生成对应平台的项目文件，请参考<a href="./../../../../../docs/zh/articles/build/index.html">构建说明</a></li>
+<li>C++版的构建使用cmake来生成对应平台的项目文件，请参考<a href="/docs/zh/articles/build/">构建说明</a></li>
 <li>访问<a href="https://github.com/Tencent/behaviac/blob/master/history.txt">history.txt</a>获取修改说明</li>
-<li><a href="./../../../updatenotes/index.html">升级版本的步骤及注意事项</a></li>
-<li><a href="./../../%e6%96%87%e6%a1%a3/%e6%95%99%e7%a8%8b/index.html">教程 </a></li>
-<li><a href="./../../%e6%96%87%e6%a1%a3/%e6%96%87%e7%ab%a0/index.html">说明文章</a></li>
-<li><a href="./../../%e6%96%87%e6%a1%a3/%e6%89%8b%e5%86%8c/index.html">节点手册</a></li>
+<li><a href="/language/zh/updatenotes/">升级版本的步骤及注意事项</a></li>
+<li><a href="/language/zh/category/文档/教程/">教程 </a></li>
+<li><a href="/language/zh/category/文档/%e6%96%87%e7%ab%a0/">说明文章</a></li>
+<li><a href="/language/zh/category/文档/%e6%89%8b%e5%86%8c/">节点手册</a></li>
 <li>每个版本有3个文件可以下载，每个文件中的数字都是版本号
 <ul>
 <li>BehaviacSetup_*.exe是windows平台上的安装程序，用以安装可执行的编辑器和demo。也可以从源码自行构建。</li>
@@ -2349,7 +2341,7 @@
 <li><strong>所有源码 [<a href="http://dlied5.qq.com/behaviac/behaviac3.6.18.zip">国内镜像</a>]</strong></li>
 <li><strong>unity package [<a href="http://dlied5.qq.com/behaviac/behaviac3.6.18.unitypackage">国内镜像</a>]</strong></li>
 </ul>
-<p>3.6.18是重大版本升级，请参考文档《<a href="./../../../updatenotes/index.html#36x">升级版本的步骤及注意事项</a>》</p>
+<p>3.6.18是重大版本升级，请参考文档《<a href="/language/zh/updatenotes/#36x">升级版本的步骤及注意事项</a>》</p>
 <h3><span class="ez-toc-section" id="i-17">主要改动：</span></h3>
 </div>
 <ul>
@@ -2644,8 +2636,8 @@
 </div>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../downloads/feed/index.html</wfw:commentRss>
-			<slash:comments>11</slash:comments>
+					<wfw:commentRss>/downloads/feed/</wfw:commentRss>
+			<slash:comments>10</slash:comments>
 		
 		
 			</item>

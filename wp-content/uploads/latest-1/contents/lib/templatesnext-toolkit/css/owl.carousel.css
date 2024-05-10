@@ -46,7 +46,7 @@ user-select: none;
 -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 .grabbing { 
-cursor:url(./grabbing.png) 8 8, move;
+cursor:url(/wp-content/uploads/latest-1/contents/lib/templatesnext-toolkit/css/grabbing.png) 8 8, move;
 }
 .owl-carousel  .owl-wrapper,
 .owl-carousel  .owl-item{

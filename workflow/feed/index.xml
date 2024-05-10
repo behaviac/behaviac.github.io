@@ -8,8 +8,8 @@
 <channel>
 	<title>
 	《原理和流程》的评论	</title>
-	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
-	<link>./../index.html</link>
+	<atom:link href="/workflow/feed/" rel="self" type="application/rss+xml" />
+	<link>/workflow/</link>
 	<description>Tencent behaviac, Game AI, Behavior Tree, Finite State Machine, Hierarchical Task Network, BT FSM HTN, 腾讯开源, 游戏AI, 行为树,有限状态机,分层任务网络</description>
 	<lastBuildDate>Sun, 22 Jan 2017 03:22:57 +0000</lastBuildDate>
 	<sy:updatePeriod>
@@ -20,11 +20,11 @@
 	<item>
 		<title>
 		作者：教程一：Hello Behaviac &#8211; behaviac		</title>
-		<link>./../index.html#comment-160</link>
+		<link>/workflow/#comment-160</link>
 
 		<dc:creator><![CDATA[教程一：Hello Behaviac &#8211; behaviac]]></dc:creator>
 		<pubDate>Mon, 16 Jan 2017 08:59:41 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=1456#comment-160</guid>
+		<guid isPermaLink="false">/?p=1456#comment-160</guid>
 
 					<description><![CDATA[[&#8230;] 如果是初次接触behaviac组件，请首先查看文档《原理和流程》。 [&#8230;]]]></description>
 			<content:encoded><![CDATA[<p>[&#8230;] 如果是初次接触behaviac组件，请首先查看文档《原理和流程》。 [&#8230;]</p>

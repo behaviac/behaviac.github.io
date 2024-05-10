@@ -9,8 +9,8 @@
 
 <channel>
 	<title>手册 &#8211; behaviac</title>
-	<atom:link href="./../../%E6%89%8B%E5%86%8C/feed/index.html" rel="self" type="application/rss+xml" />
-	<link>./../../../../../index.html</link>
+	<atom:link href="/language/zh/tag/%E6%89%8B%E5%86%8C/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
 	<description>Tencent behaviac, Game AI, Behavior Tree, Finite State Machine, Hierarchical Task Network, BT FSM HTN, 腾讯开源, 游戏AI, 行为树,有限状态机,分层任务网络</description>
 	<lastBuildDate>Tue, 10 Oct 2017 04:20:07 +0000</lastBuildDate>
 	<language>zh-CN</language>
@@ -19,52 +19,44 @@
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
 	<generator>https://wordpress.org/?v=5.4.1</generator>
-
-<image>
-	<url>./../../../../../wp-content/uploads/2016/04/cropped-256x256-32x32.png</url>
-	<title>手册 &#8211; behaviac</title>
-	<link>./../../../../../index.html</link>
-	<width>32</width>
-	<height>32</height>
-</image> 
 	<item>
 		<title>节点类型的简单介绍</title>
-		<link>./../../../../../intro/index.html</link>
-					<comments>./../../../../../intro/index.html#comments</comments>
+		<link>/intro/</link>
+					<comments>/intro/#comments</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<pubDate>Wed, 11 May 2016 10:05:17 +0000</pubDate>
 				<category><![CDATA[手册]]></category>
 		<category><![CDATA[节点]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=216</guid>
+		<guid isPermaLink="false">/?p=216</guid>
 
-					<description><![CDATA[behaviac 有以下节点类型： 其中‘附件’有前置和后置，可以添加到任何一个节点作为前置和后置。前置往往是作为前提条件（precondition）来使用，而<a class="moretag" href="./../../../../../intro/index.html">Read More...</a>]]></description>
+					<description><![CDATA[behaviac 有以下节点类型： 其中‘附件’有前置和后置，可以添加到任何一个节点作为前置和后置。前置往往是作为前提条件（precondition）来使用，而<a class="moretag" href="/intro/">Read More...</a>]]></description>
 										<content:encoded><![CDATA[<p>behaviac 有以下节点类型：</p>
-<p><img src="./../../../../../img/references/nodetypes.png" alt="nodetypes" /></p>
+<p><img src="/img/references/nodetypes.png" alt="nodetypes" /></p>
 <p>其中‘附件’有前置和后置，可以添加到任何一个节点作为前置和后置。前置往往是作为前提条件（precondition）来使用，而后置往往是当节点结束的时候施加效果（effects）。</p>
-<p><img src="./../../../../../img/references/prepost.png" alt="prepost" /></p>
+<p><img src="/img/references/prepost.png" alt="prepost" /></p>
 <p>其中‘组合’，‘装饰器’ 类都是分支节点，‘动作’ 类，和‘条件’类大都是子节点， 而‘条件’类中的‘或’、‘与’是分支节点。</p>
 <p>需要指出的是，有些节点类型通过其他更基本类型的节点的组合也可以实现。这里提供的节点类型只是使用起来可能会更方便，更直观些。用户可以根据自己的偏好选择使用与否。 用户也可以选择扩展节点类型提供扩展功能或者快捷方式，请参考‘教程’ 中的相关章节。 同时如果根本不打算使用某些节点类型，可以在 config.xml 里配置后就不会出现在可选的列表里了，请参考配置Config.xml。</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../intro/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/intro/feed/</wfw:commentRss>
 			<slash:comments>1</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>序列节点</title>
-		<link>./../../../../../sequence/index.html</link>
-					<comments>./../../../../../sequence/index.html#comments</comments>
+		<link>/sequence/</link>
+					<comments>/sequence/#comments</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<pubDate>Thu, 12 May 2016 10:08:31 +0000</pubDate>
 				<category><![CDATA[手册]]></category>
 		<category><![CDATA[节点]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=222</guid>
+		<guid isPermaLink="false">/?p=222</guid>
 
-					<description><![CDATA[Sequence 节点是 BT 中传统的组合节点之一。 该节点以给定的顺序依次执行其子节点，直到所有子节点成功返回，该节点也返回成功。只要其中某个子节点失败，那<a class="moretag" href="./../../../../../sequence/index.html">Read More...</a>]]></description>
-										<content:encoded><![CDATA[<p><img src="./../../../../../img/references/sequence.png" alt="sequence" /></p>
+					<description><![CDATA[Sequence 节点是 BT 中传统的组合节点之一。 该节点以给定的顺序依次执行其子节点，直到所有子节点成功返回，该节点也返回成功。只要其中某个子节点失败，那<a class="moretag" href="/sequence/">Read More...</a>]]></description>
+										<content:encoded><![CDATA[<p><img src="/img/references/sequence.png" alt="sequence" /></p>
 <p>Sequence 节点是 BT 中传统的组合节点之一。 该节点以给定的顺序依次执行其子节点，直到所有子节点成功返回，该节点也返回成功。只要其中某个子节点失败，那么该节点也失败。</p>
 <p>Sequence 实现了与（&amp;&amp;）的功能。我们知道表达式 R=A&amp;&amp;B&amp;&amp;C&amp;&amp;D 执行的时候首先执行 A，如果 A 是 false 则返回 false，如果 A 是 true 则执行 B，如果 B 是 false 则返回 false，否则如果 B 是 true 则执行 C，如果 C 是 false 则返回 false，否则如果 C 是 true 则执行 D，并且返回D 的值。</p>
 <p>最一般的意义上， Sequence 节点实现了一个序列。 实际上， Sequence 节点不仅可以管理‘动作’子节点，也可以管理‘条件’子节点。 如上图的应用中， 如果1和2号节点是条件节点的话，这两个条件节点实际上用作进入下面其他节点的 precondition，只有这两个条件是 true，下面的其他节点才有可能执行。</p>
@@ -72,24 +64,24 @@
 <p>具体的执行逻辑可以查看 <a href="https://github.com/Tencent/behaviac/blob/master/src/behaviortree/nodes/composites/sequence.cpp">behaviortree/nodes/composites/sequence.cpp</a></p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../sequence/feed/index.html</wfw:commentRss>
-			<slash:comments>1</slash:comments>
+					<wfw:commentRss>/sequence/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>选择节点</title>
-		<link>./../../../../../selector/index.html</link>
-					<comments>./../../../../../selector/index.html#comments</comments>
+		<link>/selector/</link>
+					<comments>/selector/#comments</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<pubDate>Wed, 11 May 2016 10:07:34 +0000</pubDate>
 				<category><![CDATA[手册]]></category>
 		<category><![CDATA[节点]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=218</guid>
+		<guid isPermaLink="false">/?p=218</guid>
 
-					<description><![CDATA[Selector 节点是 BT 中传统的组合节点之一。 该节点以给定的顺序依次调用其子节点，直到 其中一个成功返回，那么该节点也返回成功。如果所有的子节点都失败<a class="moretag" href="./../../../../../selector/index.html">Read More...</a>]]></description>
-										<content:encoded><![CDATA[<p><img src="./../../../../../img/references/selector.png" alt="selector" /></p>
+					<description><![CDATA[Selector 节点是 BT 中传统的组合节点之一。 该节点以给定的顺序依次调用其子节点，直到 其中一个成功返回，那么该节点也返回成功。如果所有的子节点都失败<a class="moretag" href="/selector/">Read More...</a>]]></description>
+										<content:encoded><![CDATA[<p><img src="/img/references/selector.png" alt="selector" /></p>
 <p>Selector 节点是 BT 中传统的组合节点之一。 该节点以给定的顺序依次调用其子节点，直到<br />
 其中一个成功返回，那么该节点也返回成功。如果所有的子节点都失败，那么该节点也失败。</p>
 <p>Selector 实现了或（‘||’）的功能。 我们知道表达式 R=A||B||C||D 执行的时候首先执行 A，如果<br />
@@ -101,29 +93,29 @@ false 则执行 C，如果 C 是 true 则返回 true，否则如果 C 是 false 
 <p>具体的执行逻辑可以查看 <a href="https://github.com/Tencent/behaviac/blob/master/src/behaviortree/nodes/composites/selector.cpp">behaviortree/nodes/composites/selector.cpp</a></p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../selector/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/selector/feed/</wfw:commentRss>
 			<slash:comments>1</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>并行节点</title>
-		<link>./../../../../../parallel/index.html</link>
-					<comments>./../../../../../parallel/index.html#comments</comments>
+		<link>/parallel/</link>
+					<comments>/parallel/#comments</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<pubDate>Wed, 25 May 2016 08:31:58 +0000</pubDate>
 				<category><![CDATA[手册]]></category>
 		<category><![CDATA[节点]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=429</guid>
+		<guid isPermaLink="false">/?p=429</guid>
 
-					<description><![CDATA[并行（Parallel）节点在一般意义上是并行的执行其子节点，即“一边做A，一边做B”，如下图所示： 在选择或序列节点中，是顺序的一个接一个的执行其子节点，上一<a class="moretag" href="./../../../../../parallel/index.html">Read More...</a>]]></description>
+					<description><![CDATA[并行（Parallel）节点在一般意义上是并行的执行其子节点，即“一边做A，一边做B”，如下图所示： 在选择或序列节点中，是顺序的一个接一个的执行其子节点，上一<a class="moretag" href="/parallel/">Read More...</a>]]></description>
 										<content:encoded><![CDATA[<p>并行（Parallel）节点在一般意义上是并行的执行其子节点，即“一边做A，一边做B”，如下图所示：</p>
-<p id="FgwGTQU"><img class="size-full wp-image-1940  aligncenter" src="./../../../../../wp-content/uploads/2017/04/img_58fdc12123513.png" alt="" srcset="./../../../../../wp-content/uploads/2017/04/img_58fdc12123513.png 530w, ./../../../../../wp-content/uploads/2017/04/img_58fdc12123513-300x159.png 300w" sizes="(max-width: 530px) 100vw, 530px" /></p>
+<p id="FgwGTQU"><img class="size-full wp-image-1940  aligncenter" src="/wp-content/uploads/2017/04/img_58fdc12123513.png" alt="" srcset="/wp-content/uploads/2017/04/img_58fdc12123513.png 530w, /wp-content/uploads/2017/04/img_58fdc12123513-300x159.png 300w" sizes="(max-width: 530px) 100vw, 530px" /></p>
 <p>在选择或序列节点中，是顺序的一个接一个的执行其子节点，上一个子节点执行结束后，根据其状态是否执行接下来的子节点。而并行节点在逻辑上是“同时”并行的执行所有子节点（但实际也是从上往下依次执行），然后根据所有子节点的状态决定本身的状态。</p>
 <p><strong>注意：</strong>并行节点每帧都有可能执行所有的子树，大量使用的时候请注意其性能。</p>
 <p>如何根据所有子节点的返回状态，来决定并行节点本身的状态呢？并行节点有几个重要属性可以配置，如下图所示：</p>
-<p><img class="aligncenter" src="./../../../../../img/references/parallelproperties.png" alt="parallelproperties" /></p>
+<p><img class="aligncenter" src="/img/references/parallelproperties.png" alt="parallelproperties" /></p>
 <ul>
 <li><strong>失败条件：</strong>决定并行节点在什么条件下是失败的</li>
 <li><strong>成功条件：</strong>决定并行节点在什么条件下是成功的</li>
@@ -133,34 +125,34 @@ false 则执行 C，如果 C 是 true 则返回 true，否则如果 C 是 false 
 </ul>
 <p>在序列节点中，假设其子节点包括了条件节点和其他节点。那么，条件节点实际上是作为其他节点的前提条件，只有条件节点返回Success，下面的其他节点才会得到执行。</p>
 <p>并行节点可以用来实现所谓的“上下文相关的前提条件”（context precondition），如下图所示：<img src="file:///C:\Users\cainhuang\AppData\Roaming\Tencent\Users\48016464\QQ\WinTemp\RichOle\&#96;95YXVWT)4SIK20T]5NH&#96;K5.png" /></p>
-<p><img class="aligncenter size-full wp-image-1941" src="./../../../../../wp-content/uploads/2016/05/95YXVWT4SIK20T5NHK5.png" alt="" width="521" height="186" srcset="./../../../../../wp-content/uploads/2016/05/95YXVWT4SIK20T5NHK5.png 521w, ./../../../../../wp-content/uploads/2016/05/95YXVWT4SIK20T5NHK5-300x107.png 300w" sizes="(max-width: 521px) 100vw, 521px" /></p>
+<p><img class="aligncenter size-full wp-image-1941" src="/wp-content/uploads/2016/05/95YXVWT4SIK20T5NHK5.png" alt="" width="521" height="186" srcset="/wp-content/uploads/2016/05/95YXVWT4SIK20T5NHK5.png 521w, /wp-content/uploads/2016/05/95YXVWT4SIK20T5NHK5-300x107.png 300w" sizes="(max-width: 521px) 100vw, 521px" /></p>
 <p>并行节点配置条件节点和其他节点，并且失败条件是缺省的配置FAIL_ON_ONE，那么只有当条件节点成功的时候其他节点才被执行，从而条件节点事实上是其他节点的前提条件。</p>
-<p><strong>注意：</strong>作为前提条件的这种用法是不严谨的，当条件失败的时候，在并行节点返回失败之前，后续的其他节点会多执行一次。所以，请使用“<a href="./../../../../../attachment/index.html">前置</a>”附件来实现这种前置条件的需求。</p>
+<p><strong>注意：</strong>作为前提条件的这种用法是不严谨的，当条件失败的时候，在并行节点返回失败之前，后续的其他节点会多执行一次。所以，请使用“<a href="/attachment/">前置</a>”附件来实现这种前置条件的需求。</p>
 <p>与序列节点+条件节点方式的不同之处在于，序列节点实现的前提条件只是“进入”其他节点的前提条件，一旦首次进入并开始执行其他节点后，就不再检查该前提条件了。而并行节点实现的前提条件是上下文相关的，不但首次进入并开始执行前需要检查，之后每次执行也都要检查。</p>
 <p>具体的执行逻辑可以查看 <a href="https://github.com/Tencent/behaviac/blob/master/src/behaviortree/nodes/composites/parallel.cpp">behaviortree/nodes/composites/parallel.cpp</a></p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../parallel/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/parallel/feed/</wfw:commentRss>
 			<slash:comments>2</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>动作节点</title>
-		<link>./../../../../../action/index.html</link>
-					<comments>./../../../../../action/index.html#comments</comments>
+		<link>/action/</link>
+					<comments>/action/#comments</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<pubDate>Mon, 11 Apr 2016 09:10:18 +0000</pubDate>
 				<category><![CDATA[手册]]></category>
 		<category><![CDATA[节点]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=128</guid>
+		<guid isPermaLink="false">/?p=128</guid>
 
-					<description><![CDATA[动作（Action）节点在behaviac中几乎是最重要的节点，如下图所示： 动作节点通常对应Agent的某个方法（Method），可以从下拉列表里为其选择方法<a class="moretag" href="./../../../../../action/index.html">Read More...</a>]]></description>
+					<description><![CDATA[动作（Action）节点在behaviac中几乎是最重要的节点，如下图所示： 动作节点通常对应Agent的某个方法（Method），可以从下拉列表里为其选择方法<a class="moretag" href="/action/">Read More...</a>]]></description>
 										<content:encoded><![CDATA[<p>动作（Action）节点在behaviac中几乎是最重要的节点，如下图所示：</p>
-<p><img class="aligncenter" src="./../../../../../img/references/action.png" alt="action" /></p>
+<p><img class="aligncenter" src="/img/references/action.png" alt="action" /></p>
 <p>动作节点通常对应Agent的某个方法（Method），可以从下拉列表里为其选择方法，如下图所示：</p>
-<p><img class="aligncenter" src="./../../../../../img/references/action_prop.png" alt="action" /></p>
+<p><img class="aligncenter" src="/img/references/action_prop.png" alt="action" /></p>
 <p>在设置其方法后，需进一步设置其“决定状态的选项（Status Option）”或“决定状态的函数（Status Functor）”，如上图所示。如果没有正确配置，则视为错误不能被导出。</p>
 <ul>
 <li>“决定状态的选项”：不管动作的方法的返回值是什么，都强制返回设定的EBTStatus值（即Success、Failure或Running）。</li>
@@ -180,25 +172,25 @@ false 则执行 C，如果 C 是 true 则返回 true，否则如果 C 是 false 
 <p>具体的执行逻辑可以查看<a href="https://github.com/Tencent/behaviac/blob/master/src/behaviortree/nodes/actions/action.cpp">behaviortree/nodes/actions/action.cpp</a></p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../action/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/action/feed/</wfw:commentRss>
 			<slash:comments>1</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>条件节点</title>
-		<link>./../../../../../condition/index.html</link>
-					<comments>./../../../../../condition/index.html#respond</comments>
+		<link>/condition/</link>
+					<comments>/condition/#respond</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<pubDate>Fri, 13 May 2016 02:02:06 +0000</pubDate>
 				<category><![CDATA[手册]]></category>
 		<category><![CDATA[节点]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=242</guid>
+		<guid isPermaLink="false">/?p=242</guid>
 
-					<description><![CDATA[条件（Condition）节点对左右参数进行比较，如下图所示： 图1 条件节点 条件节点根据比较结果返回成功或失败，但永远不会返回正在执行（Running）： <a class="moretag" href="./../../../../../condition/index.html">Read More...</a>]]></description>
+					<description><![CDATA[条件（Condition）节点对左右参数进行比较，如下图所示： 图1 条件节点 条件节点根据比较结果返回成功或失败，但永远不会返回正在执行（Running）： <a class="moretag" href="/condition/">Read More...</a>]]></description>
 										<content:encoded><![CDATA[<p>条件（Condition）节点对左右参数进行比较，如下图所示：</p>
-<p><img src="./../../../../../img/references/condition.png" alt="condition" /></p>
+<p><img src="/img/references/condition.png" alt="condition" /></p>
 <p>图1 条件节点</p>
 <p>条件节点根据比较结果返回成功或失败，但永远不会返回正在执行（Running）：</p>
 <ul>
@@ -206,41 +198,41 @@ false 则执行 C，如果 C 是 true 则返回 true，否则如果 C 是 false 
 <li>如果结果为假，则返回失败。</li>
 </ul>
 <p>通常左参数是Agent的某个属性或某个有返回值的方法，用户可以从下拉列表里选择，右参数是相应类型的常数、Agent的某个属性或某个有返回值的方法，如下图所示：</p>
-<p><img src="./../../../../../img/references/condition_prop.png" alt="condition" /></p>
+<p><img src="/img/references/condition_prop.png" alt="condition" /></p>
 <p>图2 条件节点的属性</p>
-<p>条件节点没有提供取反的属性。如果需要取反，请用《<a href="./../../../../../docs/zh/references/decorator/index.html">非（Not）节点</a>》来装饰。</p>
+<p>条件节点没有提供取反的属性。如果需要取反，请用《<a href="/docs/zh/references/decorator/">非（Not）节点</a>》来装饰。</p>
 <p>具体的执行逻辑可以查看<a href="https://github.com/Tencent/behaviac/blob/master/src/behaviortree/nodes/conditions/condition.cpp">behaviortree/nodes/conditions/condition.cpp</a></p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../condition/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/condition/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>装饰节点</title>
-		<link>./../../../../../decorator/index.html</link>
-					<comments>./../../../../../decorator/index.html#comments</comments>
+		<link>/decorator/</link>
+					<comments>/decorator/#comments</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<pubDate>Fri, 13 May 2016 02:06:29 +0000</pubDate>
 				<category><![CDATA[手册]]></category>
 		<category><![CDATA[节点]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=248</guid>
+		<guid isPermaLink="false">/?p=248</guid>
 
-					<description><![CDATA[概述 装饰节点作为控制分支节点，必须且只接受一个子节点。装饰节点的执行首先执行子节点，并根据自身的控制逻辑以及子节点的返回结果决定自身的状态。 装饰节点都有属性<a class="moretag" href="./../../../../../decorator/index.html">Read More...</a>]]></description>
+					<description><![CDATA[概述 装饰节点作为控制分支节点，必须且只接受一个子节点。装饰节点的执行首先执行子节点，并根据自身的控制逻辑以及子节点的返回结果决定自身的状态。 装饰节点都有属性<a class="moretag" href="/decorator/">Read More...</a>]]></description>
 										<content:encoded><![CDATA[<h2><span class="ez-toc-section" id="i">概述</span></h2>
 <p>装饰节点作为控制分支节点，必须且只接受一个子节点。装饰节点的执行首先执行子节点，并根据自身的控制逻辑以及子节点的返回结果决定自身的状态。</p>
 <p>装饰节点都有属性“子节点结束时作用（DecorateChildEnds）”可以配置，如果该值配置为真，则仅当子节点结束（成功或失败）的时候，装饰节点的装饰逻辑才起作用。</p>
 <h2 id="log"><span class="ez-toc-section" id="Log">输出消息（Log）节点</span></h2>
 <p>输出消息节点作为调试的辅助工具，执行完子节点后，输出配置的消息，如下图所示：</p>
-<p><img class="aligncenter" src="./../../../../../img/references/log.png" alt="log" /></p>
+<p><img class="aligncenter" src="/img/references/log.png" alt="log" /></p>
 <p>可以在“输出消息”属性中设置想输出的任何消息，如下图所示：</p>
-<p><img class="aligncenter" src="./../../../../../img/references/log_prop.png" alt="log" /></p>
+<p><img class="aligncenter" src="/img/references/log_prop.png" alt="log" /></p>
 <p>具体的执行逻辑可以查看<a href="https://github.com/Tencent/behaviac/blob/master/src/behaviortree/nodes/decorators/decoratorlog.cpp">behaviortree/nodes/decorators/decoratorlog.cpp</a></p>
 <h2 id="not"><span class="ez-toc-section" id="Not">非（Not）节点</span></h2>
 <p>非节点将子节点的返回值取反，如下图所示：</p>
-<p><img class="aligncenter" src="./../../../../../img/references/not.png" alt="not" /></p>
+<p><img class="aligncenter" src="/img/references/not.png" alt="not" /></p>
 <p>类似于逻辑“非”操作，非节点对子节点的返回值执行如下操作：</p>
 <ul>
 <li>如果子节点失败，那么此节点返回成功。</li>
@@ -250,9 +242,9 @@ false 则执行 C，如果 C 是 true 则返回 true，否则如果 C 是 false 
 <p>具体的执行逻辑可以查看<a href="https://github.com/Tencent/behaviac/blob/master/src/behaviortree/nodes/decorators/decoratornot.cpp">behaviortree/nodes/decorators/decoratornot.cpp</a></p>
 <h2 id="loop"><span class="ez-toc-section" id="Loop">循环（Loop）节点</span></h2>
 <p>循环节点循环执行子节点指定的次数，如下图所示：</p>
-<p><img class="aligncenter" src="./../../../../../img/references/loop.png" alt="loop" /></p>
+<p><img class="aligncenter" src="/img/references/loop.png" alt="loop" /></p>
 <p>如下图可以配置循环节点的相关参数：</p>
-<p><img class="aligncenter size-full wp-image-1488" src="./../../../../../wp-content/uploads/2016/05/loop.png" alt="" width="476" height="214" srcset="./../../../../../wp-content/uploads/2016/05/loop.png 476w, ./../../../../../wp-content/uploads/2016/05/loop-300x135.png 300w" sizes="(max-width: 476px) 100vw, 476px" /></p>
+<p><img class="aligncenter size-full wp-image-1488" src="/wp-content/uploads/2016/05/loop.png" alt="" width="476" height="214" srcset="/wp-content/uploads/2016/05/loop.png 476w, /wp-content/uploads/2016/05/loop-300x135.png 300w" sizes="(max-width: 476px) 100vw, 476px" /></p>
 <ul>
 <li>次数：如果次数配置为-1，则视为无限循环，总是返回运行。否则循环执行子节点指定的次数然后返回成功，在指定次数之前则返回运行。</li>
 <li>此循环次数可以是常数，也可以是变量，当是变量的时候，每次enter的时候此循环次数被赋值，也就是每次enter的时候，循环的次数就被确定了。之后再更改该变量的值在本次循环内将不起作用，但是exit后再enter的时候会起作用。</li>
@@ -261,16 +253,16 @@ false 则执行 C，如果 C 是 true 则返回 true，否则如果 C 是 false 
 <li>然而如果子节点失败了，不会执行指定次数就直接返回失败。</li>
 <li>如果子节点一直返回运行，则本节点一直阻塞。但如果“子节点结束时作用”不为真，则不会阻塞。</li>
 <li>在‘一帧内结束’的情况下，本节点只能成功或失败，不会返回运行。</li>
-<li>‘一帧内结束’的配置只在3.5.4及以后的版本中才有实现。用以取代<a href="./../../../decorator/index.html#repeat">重复节点</a></li>
+<li>‘一帧内结束’的配置只在3.5.4及以后的版本中才有实现。用以取代<a href="/language/zh/decorator/#repeat">重复节点</a></li>
 </ul>
 </li>
 </ul>
 <p>具体的执行逻辑可以查看<a href="https://github.com/Tencent/behaviac/blob/master/src/behaviortree/nodes/decorators/decoratorloop.cpp">behaviortree/nodes/decorators/decoratorloop.cpp</a></p>
 <h2 id="loopuntil"><span class="ez-toc-section" id="LoopUntil">循环直到（LoopUntil）节点</span></h2>
 <p>循环直到节点在指定的次数到达后返回成功，在指定的次数到达前一直返回正在执行。如果指定的次数小于0，则表示无限循环，总是返回正在执行。如下图所示：</p>
-<p><img class="aligncenter" src="./../../../../../img/references/loopuntil.png" alt="loopuntil" /></p>
+<p><img class="aligncenter" src="/img/references/loopuntil.png" alt="loopuntil" /></p>
 <p>循环直到节点除了像循环节点可以配置循环的次数，还有一个属性“直到子树”需要配置，如下图所示：</p>
-<p><img class="aligncenter" src="./../../../../../img/references/loopuntil_prop.png" alt="loopuntil_prop" /></p>
+<p><img class="aligncenter" src="/img/references/loopuntil_prop.png" alt="loopuntil_prop" /></p>
 <p>循环直到节点有两个结束条件，指定的“循环次数”到达或者子树的返回值与配置的“直到子树”值一样：</p>
 <ul>
 <li>指定的“循环次数”到达的时候，则返回成功。</li>
@@ -284,9 +276,9 @@ false 则执行 C，如果 C 是 true 则返回 true，否则如果 C 是 false 
 </ul>
 <p>具体的执行逻辑可以查看<a href="https://github.com/Tencent/behaviac/blob/master/src/behaviortree/nodes/decorators/decoratorloopuntil.cpp">behaviortree/nodes/decorators/decoratorloopuntil.cpp</a></p>
 <h2 id="repeat"><span class="ez-toc-section" id="Repeat">重复（Repeat）节点</span></h2>
-<p id="repeat">重复（Repeat）节点只在3.5.4以前的版本中才有。3.5.4及以后的版本请使用<a href="./../../../decorator/index.html#loop">循环节点</a>，并且选上‘一帧内结束’</p>
+<p id="repeat">重复（Repeat）节点只在3.5.4以前的版本中才有。3.5.4及以后的版本请使用<a href="/language/zh/decorator/#loop">循环节点</a>，并且选上‘一帧内结束’</p>
 <p>重复节点根据指定的次数，在一次更新过程中重复执行子节点然后返回，如下图所示：</p>
-<p><img class="aligncenter" src="./../../../../../img/references/repeat.png" alt="repeat" /></p>
+<p><img class="aligncenter" src="/img/references/repeat.png" alt="repeat" /></p>
 <p>重复节点根据子节点的返回值相应的返回：</p>
 <ul>
 <li>如果子节点失败了，则返回失败。</li>
@@ -295,7 +287,7 @@ false 则执行 C，如果 C 是 true 则返回 true，否则如果 C 是 false 
 <li>本节点只能成功或失败，不会返回运行。</li>
 </ul>
 <p>重复节点可以配置重复执行的“次数”和“子节点结束时作用”，如下图所示：</p>
-<p><img class="aligncenter" src="./../../../../../img/references/repeat_prop.png" alt="repeat_prop" /></p>
+<p><img class="aligncenter" src="/img/references/repeat_prop.png" alt="repeat_prop" /></p>
 <div class="qa-a-selection">
 <p>重复节点和循环节点相同之处是其子节点都是被多次执行。</p>
 <div class="entry-content">
@@ -305,86 +297,86 @@ false 则执行 C，如果 C 是 true 则返回 true，否则如果 C 是 false 
 <p>具体的执行逻辑可以查看<a href="https://github.com/Tencent/behaviac/blob/master/src/behaviortree/nodes/decorators/decoratorrepeat.cpp">behaviortree/nodes/decorators/decoratorrepeat.cpp</a></p>
 <h2 id="time"><span class="ez-toc-section" id="Time">时间（Time）节点</span></h2>
 <p>时间节点用于在指定的时间内，持续调用其子节点，如下图所示：</p>
-<p><img class="aligncenter" src="./../../../../../img/references/time.png" alt="time" /></p>
+<p><img class="aligncenter" src="/img/references/time.png" alt="time" /></p>
 <p>时间节点可以配置其属性“时间”，该属性是float或double类型，可以配置一个常量、成员属性或方法的返回值，如下图所示：</p>
-<p><img class="aligncenter" src="./../../../../../img/references/time_prop.png" alt="time" /></p>
+<p><img class="aligncenter" src="/img/references/time_prop.png" alt="time" /></p>
 <p>具体的执行逻辑可以查看<a href="https://github.com/Tencent/behaviac/blob/master/src/behaviortree/nodes/decorators/decoratortime.cpp">behaviortree/nodes/decorators/decoratortime.cpp</a></p>
 <h2 id="frames"><span class="ez-toc-section" id="Frames">帧数（Frames）节点</span></h2>
 <p>帧数节点用于在指定的帧数内，持续调用其子节点，如下图所示：</p>
-<p><img class="aligncenter" src="./../../../../../img/references/frames.png" alt="frames" /></p>
+<p><img class="aligncenter" src="/img/references/frames.png" alt="frames" /></p>
 <p>帧数节点可以配置其属性“帧数”，该属性是int类型，可以配置一个常量、成员属性或方法的返回值，如下图所示：</p>
-<p><img class="aligncenter" src="./../../../../../img/references/frames_prop.png" alt="frames" /></p>
+<p><img class="aligncenter" src="/img/references/frames_prop.png" alt="frames" /></p>
 <p>具体的执行逻辑可以查看<a href="https://github.com/Tencent/behaviac/blob/master/src/behaviortree/nodes/decorators/decoratorframes.cpp">behaviortree/nodes/decorators/decoratorframes.cpp</a></p>
 <h2 id="countlimit"><span class="ez-toc-section" id="CountLimit">计数限制（CountLimit）节点</span></h2>
 <p>计数限制节点不同于循环节点，它在指定的循环次数到达前返回子节点返回的状态，无论成功、失败还是正在执行，如下图所示：</p>
-<p><img class="aligncenter" src="./../../../../../img/references/countlimit.png" alt="countlimit" /></p>
+<p><img class="aligncenter" src="/img/references/countlimit.png" alt="countlimit" /></p>
 <p>计数限制节点在指定的循环次数到达后不再执行。如果指定的循环次数小于0，则表示无限循环，等同于什么操作都没有，只是执行子节点并且返回子节点的返回值。</p>
 <p>此外，计数限制节点上还可以添加中断条件作为重新开始条件，如下图所示：</p>
-<p><img class="aligncenter" src="./../../../../../img/references/countlimit_interupt.png" alt="countlimit" /></p>
+<p><img class="aligncenter" src="/img/references/countlimit_interupt.png" alt="countlimit" /></p>
 <p>具体的执行逻辑可以查看<a href="https://github.com/Tencent/behaviac/blob/master/src/behaviortree/nodes/decorators/decoratorcountlimit.cpp">behaviortree/nodes/decorators/decoratorcountlimit.cpp</a></p>
 <h2 id="successuntilfailureuntil"><span class="ez-toc-section" id="SuccessUntilFailureUntil">返回成功直到（SuccessUntil）/返回失败直到（FailureUntil）</span></h2>
 <p>返回成功直到节点在指定的次数到达前返回成功，指定的次数到达后返回失败。如果指定的次数小于0，则总是返回成功。如下图所示：</p>
-<p><img class="aligncenter" src="./../../../../../img/references/successuntil.png" alt="successuntil" /></p>
+<p><img class="aligncenter" src="/img/references/successuntil.png" alt="successuntil" /></p>
 <p>返回失败直到节点在指定的次数到达前返回失败，指定的次数到达后返回成功。如果指定的次数小于0，则总是返回失败。如下图所示：</p>
-<p><img class="aligncenter" src="./../../../../../img/references/failureuntil.png" alt="failureuntil" /></p>
+<p><img class="aligncenter" src="/img/references/failureuntil.png" alt="failureuntil" /></p>
 <p>具体的执行逻辑可以分别查看<a href="https://github.com/Tencent/behaviac/blob/master/src/behaviortree/nodes/decorators/decoratorsuccessuntil.cpp">behaviortree/nodes/decorators/decoratorsuccessuntil.cpp</a>和<a href="https://github.com/Tencent/behaviac/blob/master/src/behaviortree/nodes/decorators/decoratorfailureuntil.cpp">behaviortree/nodes/decorators/decoratorfailureuntil.cpp</a></p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../decorator/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/decorator/feed/</wfw:commentRss>
 			<slash:comments>1</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>结束节点</title>
-		<link>./../../../../../end/index.html</link>
-					<comments>./../../../../../end/index.html#respond</comments>
+		<link>/end/</link>
+					<comments>/end/#respond</comments>
 		
 		<dc:creator><![CDATA[cainhuang]]></dc:creator>
 		<pubDate>Fri, 08 Sep 2017 10:54:30 +0000</pubDate>
 				<category><![CDATA[手册]]></category>
 		<category><![CDATA[节点]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=2080</guid>
+		<guid isPermaLink="false">/?p=2080</guid>
 
-					<description><![CDATA[结束（End）节点可以使用于行为树执行过程中的强制返回，即终止该行为树的全部执行，整个行为树直接返回当前结束节点所配置的“结束状态”值，如下图所示： 在上图中，<a class="moretag" href="./../../../../../end/index.html">Read More...</a>]]></description>
+					<description><![CDATA[结束（End）节点可以使用于行为树执行过程中的强制返回，即终止该行为树的全部执行，整个行为树直接返回当前结束节点所配置的“结束状态”值，如下图所示： 在上图中，<a class="moretag" href="/end/">Read More...</a>]]></description>
 										<content:encoded><![CDATA[<p>结束（End）节点可以使用于行为树执行过程中的强制返回，即终止该行为树的全部执行，整个行为树直接返回当前结束节点所配置的“结束状态”值，如下图所示：</p>
-<p id="vgYsFSw"><img class="size-full wp-image-2081 aligncenter" src="./../../../../../wp-content/uploads/2017/09/img_59b275e8e9919.png" alt="" srcset="./../../../../../wp-content/uploads/2017/09/img_59b275e8e9919.png 845w, ./../../../../../wp-content/uploads/2017/09/img_59b275e8e9919-300x133.png 300w, ./../../../../../wp-content/uploads/2017/09/img_59b275e8e9919-768x342.png 768w, ./../../../../../wp-content/uploads/2017/09/img_59b275e8e9919-604x270.png 604w" sizes="(max-width: 845px) 100vw, 845px" /></p>
+<p id="vgYsFSw"><img class="size-full wp-image-2081 aligncenter" src="/wp-content/uploads/2017/09/img_59b275e8e9919.png" alt="" srcset="/wp-content/uploads/2017/09/img_59b275e8e9919.png 845w, /wp-content/uploads/2017/09/img_59b275e8e9919-300x133.png 300w, /wp-content/uploads/2017/09/img_59b275e8e9919-768x342.png 768w, /wp-content/uploads/2017/09/img_59b275e8e9919-604x270.png 604w" sizes="(max-width: 845px) 100vw, 845px" /></p>
 <p>在上图中，当执行到结束节点时，行为树直接返回Success，不再执行下面ID为0的动作节点。</p>
 <p>可以为结束节点配置“结束状态”属性，如下图所示：</p>
-<p id="FybmXDU"><img class="size-full wp-image-2087 aligncenter" src="./../../../../../wp-content/uploads/2017/09/img_59b64306bb1cf.png" alt="" srcset="./../../../../../wp-content/uploads/2017/09/img_59b64306bb1cf.png 446w, ./../../../../../wp-content/uploads/2017/09/img_59b64306bb1cf-300x126.png 300w" sizes="(max-width: 446px) 100vw, 446px" /></p>
+<p id="FybmXDU"><img class="size-full wp-image-2087 aligncenter" src="/wp-content/uploads/2017/09/img_59b64306bb1cf.png" alt="" srcset="/wp-content/uploads/2017/09/img_59b64306bb1cf.png 446w, /wp-content/uploads/2017/09/img_59b64306bb1cf-300x126.png 300w" sizes="(max-width: 446px) 100vw, 446px" /></p>
 <p>上面的“结束状态”可以是一个常量，也可以是成员属性或方法的返回值，表示行为树执行到结束节点时，强制返回“结束状态”所配置的当前值。</p>
 <p>注意：只有“结束状态”的当前值是Success或Failure时，行为树才会结束并返回该值；为Invalid或Running时，该结束节点不起作用，行为树接着执行。</p>
 <p>此外，还有一个属性“结束外层树”，该属性用于表示在子树中的结束节点返回时，是否需要返回该子树所在的父树。</p>
 <p>例如，创建一个带有结束节点的子树subtree1，如下图所示：</p>
-<p id="Omcutmo"><img class="size-full wp-image-2088 aligncenter" src="./../../../../../wp-content/uploads/2017/09/img_59b6438c10cec.png" alt="" srcset="./../../../../../wp-content/uploads/2017/09/img_59b6438c10cec.png 819w, ./../../../../../wp-content/uploads/2017/09/img_59b6438c10cec-300x137.png 300w, ./../../../../../wp-content/uploads/2017/09/img_59b6438c10cec-768x351.png 768w" sizes="(max-width: 819px) 100vw, 819px" /></p>
+<p id="Omcutmo"><img class="size-full wp-image-2088 aligncenter" src="/wp-content/uploads/2017/09/img_59b6438c10cec.png" alt="" srcset="/wp-content/uploads/2017/09/img_59b6438c10cec.png 819w, /wp-content/uploads/2017/09/img_59b6438c10cec-300x137.png 300w, /wp-content/uploads/2017/09/img_59b6438c10cec-768x351.png 768w" sizes="(max-width: 819px) 100vw, 819px" /></p>
 <p>调用该子树的父树maintree1如下图所示：</p>
-<p id="sHOEmcY"><img class="size-full wp-image-2089 aligncenter" src="./../../../../../wp-content/uploads/2017/09/img_59b643dc926d1.png" alt="" srcset="./../../../../../wp-content/uploads/2017/09/img_59b643dc926d1.png 827w, ./../../../../../wp-content/uploads/2017/09/img_59b643dc926d1-300x133.png 300w, ./../../../../../wp-content/uploads/2017/09/img_59b643dc926d1-768x340.png 768w" sizes="(max-width: 827px) 100vw, 827px" /></p>
+<p id="sHOEmcY"><img class="size-full wp-image-2089 aligncenter" src="/wp-content/uploads/2017/09/img_59b643dc926d1.png" alt="" srcset="/wp-content/uploads/2017/09/img_59b643dc926d1.png 827w, /wp-content/uploads/2017/09/img_59b643dc926d1-300x133.png 300w, /wp-content/uploads/2017/09/img_59b643dc926d1-768x340.png 768w" sizes="(max-width: 827px) 100vw, 827px" /></p>
 <p>如果子树subtree1中结束节点的“结束外层树”属性没有勾选，那么在执行父树maintree1的ID为4的子树节点时，会进入子树subtree1中，在该子树中执行到ID为3的结束节点时，会直接返回Success，不再执行ID为2的动作节点。子树subtree1返回后，回到父树maintree1中，由于子树subtree1中的结束节点没有勾选“结束外层树”属性，父树maintree1中ID为5的动作节点会继续得到执行。</p>
 <p>但是如果勾选了子树subtree1中结束节点的“结束外层树”属性，则上述的执行过程会有所变化，也即子树subree1返回Success后，父树maintree1也直接返回Success，父树maintree1中ID为5的动作节点不再执行。</p>
 <p>具体的执行逻辑可以查看<a href="https://github.com/Tencent/behaviac/blob/master/src/behaviortree/nodes/actions/end.cpp">behaviortree/nodes/actions/end.cpp</a></p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../end/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/end/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>赋值节点</title>
-		<link>./../../../../../assignment/index.html</link>
-					<comments>./../../../../../assignment/index.html#comments</comments>
+		<link>/assignment/</link>
+					<comments>/assignment/#comments</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<pubDate>Mon, 11 Apr 2016 09:15:21 +0000</pubDate>
 				<category><![CDATA[手册]]></category>
 		<category><![CDATA[节点]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=132</guid>
+		<guid isPermaLink="false">/?p=132</guid>
 
-					<description><![CDATA[赋值（Assignment）节点实现了赋值的操作，可以把右边的值赋值给左侧的参数，如下图所示： 其中，左参数是某个Agent实例的属性，右参数可以是常数、Age<a class="moretag" href="./../../../../../assignment/index.html">Read More...</a>]]></description>
+					<description><![CDATA[赋值（Assignment）节点实现了赋值的操作，可以把右边的值赋值给左侧的参数，如下图所示： 其中，左参数是某个Agent实例的属性，右参数可以是常数、Age<a class="moretag" href="/assignment/">Read More...</a>]]></description>
 										<content:encoded><![CDATA[<p>赋值（Assignment）节点实现了赋值的操作，可以把右边的值赋值给左侧的参数，如下图所示：</p>
-<p><img src="./../../../../../img/references/assignment.png" alt="assignment" /></p>
+<p><img src="/img/references/assignment.png" alt="assignment" /></p>
 <p>其中，左参数是某个Agent实例的属性，右参数可以是常数、Agent实例的属性或者方法调用的返回值，如下图所示：</p>
-<p><img class="alignnone size-medium wp-image-935" src="./../../../../../wp-content/uploads/2016/04/无标题-300x70.png" alt="无标题" width="300" height="70" srcset="./../../../../../wp-content/uploads/2016/04/无标题-300x70.png 300w, ./../../../../../wp-content/uploads/2016/04/无标题.png 498w" sizes="(max-width: 300px) 100vw, 300px" /></p>
+<p><img class="alignnone size-medium wp-image-935" src="/wp-content/uploads/2016/04/无标题-300x70.png" alt="无标题" width="300" height="70" srcset="/wp-content/uploads/2016/04/无标题-300x70.png 300w, /wp-content/uploads/2016/04/无标题.png 498w" sizes="(max-width: 300px) 100vw, 300px" /></p>
 <h2>类型转换</h2>
 <ul>
 <li>3.5.10及以后版本才支持</li>
@@ -397,64 +389,64 @@ false 则执行 C，如果 C 是 true 则返回 true，否则如果 C 是 false 
 </li>
 </ul>
 <h2>其他</h2>
-<p>当需要对某个属性做一些加减乘除运算的时候，可以用<a href="./../../../../../docs/zh/references/compute/index.html">计算节点</a>。</p>
-<p>另外，如果需要修改某些其他没有导出的属性，或做一些复杂的计算时，可以通过<a href="./../../../../../docs/zh/references/action/index.html">动作节点</a>调用相应的函数来实现修改或计算。</p>
+<p>当需要对某个属性做一些加减乘除运算的时候，可以用<a href="/docs/zh/references/compute/">计算节点</a>。</p>
+<p>另外，如果需要修改某些其他没有导出的属性，或做一些复杂的计算时，可以通过<a href="/docs/zh/references/action/">动作节点</a>调用相应的函数来实现修改或计算。</p>
 <p>具体的执行逻辑可以查看<a href="https://github.com/Tencent/behaviac/blob/master/src/behaviortree/nodes/actions/assignment.cpp">behaviortree/nodes/actions/assignment.cpp</a></p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../assignment/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/assignment/feed/</wfw:commentRss>
 			<slash:comments>1</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>计算节点</title>
-		<link>./../../../../../compute/index.html</link>
-					<comments>./../../../../../compute/index.html#respond</comments>
+		<link>/compute/</link>
+					<comments>/compute/#respond</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<pubDate>Thu, 12 May 2016 10:14:24 +0000</pubDate>
 				<category><![CDATA[手册]]></category>
 		<category><![CDATA[节点]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=234</guid>
+		<guid isPermaLink="false">/?p=234</guid>
 
-					<description><![CDATA[计算（Compute）节点对常数、属性或函数的返回值做加减乘除的运算，把结果赋值给某个属性，如下图所示： 图1 计算节点 其中，左参数是某个Agent实例的属性<a class="moretag" href="./../../../../../compute/index.html">Read More...</a>]]></description>
+					<description><![CDATA[计算（Compute）节点对常数、属性或函数的返回值做加减乘除的运算，把结果赋值给某个属性，如下图所示： 图1 计算节点 其中，左参数是某个Agent实例的属性<a class="moretag" href="/compute/">Read More...</a>]]></description>
 										<content:encoded><![CDATA[<p>计算（Compute）节点对常数、属性或函数的返回值做加减乘除的运算，把结果赋值给某个属性，如下图所示：</p>
-<p><img src="./../../../../../img/references/compute.png" alt="compute" /></p>
+<p><img src="/img/references/compute.png" alt="compute" /></p>
 <p>图1 计算节点</p>
 <p>其中，左参数是某个Agent实例的属性，参数1和参数2可以是常数、Agent实例的属性或者方法调用的返回值，操作符可以是”+, -, *, /”，如下图所示：</p>
-<p><img src="./../../../../../img/references/compute_prop.png" alt="compute" /></p>
+<p><img src="/img/references/compute_prop.png" alt="compute" /></p>
 <p>图2 计算节点的属性</p>
 <p>请注意这些操作的“粒度”过小，大量这种小粒度的操作可能对性能造成影响。</p>
-<p>另外，如果需要修改某些其他没有导出的属性，或做一些复杂的计算时，可以通过<a href="./../../../../../docs/zh/references/action/index.html">动作节点</a>调用相应的函数来实现修改或计算。</p>
+<p>另外，如果需要修改某些其他没有导出的属性，或做一些复杂的计算时，可以通过<a href="/docs/zh/references/action/">动作节点</a>调用相应的函数来实现修改或计算。</p>
 <p>具体的执行逻辑可以查看<a href="https://github.com/Tencent/behaviac/blob/master/src/behaviortree/nodes/actions/compute.cpp">behaviortree/nodes/actions/compute.cpp</a></p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../compute/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/compute/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>附件</title>
-		<link>./../../../../../attachment/index.html</link>
-					<comments>./../../../../../attachment/index.html#comments</comments>
+		<link>/attachment/</link>
+					<comments>/attachment/#comments</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<pubDate>Thu, 12 May 2016 10:10:18 +0000</pubDate>
 				<category><![CDATA[手册]]></category>
 		<category><![CDATA[事件]]></category>
 		<category><![CDATA[节点]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=226</guid>
+		<guid isPermaLink="false">/?p=226</guid>
 
-					<description><![CDATA[附件（Attachments）类型可以附加到相应的节点上，在编辑器中有两类附件：显式附件和隐式附件。 1 显式附件 显式附件包括前置和后置，如下图所示： 可以在<a class="moretag" href="./../../../../../attachment/index.html">Read More...</a>]]></description>
+					<description><![CDATA[附件（Attachments）类型可以附加到相应的节点上，在编辑器中有两类附件：显式附件和隐式附件。 1 显式附件 显式附件包括前置和后置，如下图所示： 可以在<a class="moretag" href="/attachment/">Read More...</a>]]></description>
 										<content:encoded><![CDATA[<p>附件（Attachments）类型可以附加到相应的节点上，在编辑器中有两类附件：显式附件和隐式附件。</p>
 <h2 id="section">1 显式附件</h2>
 <p>显式附件包括前置和后置，如下图所示：</p>
-<p><img src="./../../../../../img/references/attachment.png" alt="attachment" /></p>
+<p><img src="/img/references/attachment.png" alt="attachment" /></p>
 <p>可以在任何一个节点通过鼠标拖拽来添加前置或后置附件，前置往往是作为前提条件（precondition）来使用，而后置往往是当节点结束的时候施加效果（effect）。</p>
 <p>前置的属性主要有“联合”、“执行时机”、“左参数”、“操作符”和“右参数”等，如下图所示：</p>
-<p><img src="./../../../../../img/references/preaction_prop.png" alt="attachment" /></p>
+<p><img src="/img/references/preaction_prop.png" alt="attachment" /></p>
 <p>其中，“联合”是用于同一个节点的多个前置是“与（and）”还是“或（or）”的运算关系，执行时的逻辑顺序是从上往下依次执行，不管“与”还是“或”。如果“联合”是and<br />
 &#8211; 如果有a，b两个前置，则最后的结果是（a and b）。<br />
 &#8211; 如果有a，b，c三个前置，则最后的结果是（a and b and c），也即：（（a and b） and c）。如果a是false，b和c还是会计算，没有shortcut的优化。</p>
@@ -468,7 +460,7 @@ false 则执行 C，如果 C 是 true 则返回 true，否则如果 C 是 false 
 <li>Both表示不管所在节点是刚进入还是每次更新时，都需要检查该前置。</li>
 </ul>
 <p>后置的属性主要有“执行时机”、“左参数”、“操作符”和“右参数”等，如下图所示：</p>
-<p><img src="./../../../../../img/references/postaction_prop.png" alt="attachment" /></p>
+<p><img src="/img/references/postaction_prop.png" alt="attachment" /></p>
 <p>“执行时机”分为Success、Failure和Both三种类型：</p>
 <ul>
 <li>Success表示所在节点执行成功后，才需要继续执行该后置。</li>
@@ -478,65 +470,65 @@ false 则执行 C，如果 C 是 true 则返回 true，否则如果 C 是 false 
 <h2 id="section-1">2 隐式附件</h2>
 <p>隐式附件主要是指事件这种附件，编辑器中没有单独的事件节点供拖拽来产生，需要通过拖拽另一棵行为树到目标行为树的节点来间接产生该事件附件。</p>
 <p>只有根节点是Task的子树才能被拖拽到另一个符合要求的树上生成事件。</p>
-<p>请详看文档《<a href="./../../../../../docs/zh/tutorials/tutorial11_event/index.html">事件处理</a>》。</p>
+<p>请详看文档《<a href="/docs/zh/tutorials/tutorial11_event/">事件处理</a>》。</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../attachment/feed/index.html</wfw:commentRss>
-			<slash:comments>3</slash:comments>
+					<wfw:commentRss>/attachment/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>任务节点</title>
-		<link>./../../../../../task/index.html</link>
-					<comments>./../../../../../task/index.html#respond</comments>
+		<link>/task/</link>
+					<comments>/task/#respond</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<pubDate>Fri, 13 May 2016 02:12:05 +0000</pubDate>
 				<category><![CDATA[手册]]></category>
 		<category><![CDATA[事件]]></category>
 		<category><![CDATA[节点]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=260</guid>
+		<guid isPermaLink="false">/?p=260</guid>
 
-					<description><![CDATA[任务节点（Task）用于描述一个接口，该接口的入口参数为当前的行为树提供了局部变量，这些局部变量可以根据需要用于该行为树所有子节点，如下图所示： 图1 任务节点<a class="moretag" href="./../../../../../task/index.html">Read More...</a>]]></description>
+					<description><![CDATA[任务节点（Task）用于描述一个接口，该接口的入口参数为当前的行为树提供了局部变量，这些局部变量可以根据需要用于该行为树所有子节点，如下图所示： 图1 任务节点<a class="moretag" href="/task/">Read More...</a>]]></description>
 										<content:encoded><![CDATA[<p>任务节点（Task）用于描述一个接口，该接口的入口参数为当前的行为树提供了局部变量，这些局部变量可以根据需要用于该行为树所有子节点，如下图所示：</p>
-<p><img src="./../../../../../img/references/task.png" alt="task" /></p>
+<p><img src="/img/references/task.png" alt="task" /></p>
 <p>图1 任务节点</p>
 <p>注意：任务节点只能作为行为树的第一个子节点存在，在任务节点上可以添加其他子节点。</p>
 <p>在任务节点的任务属性中需要选择在类型信息浏览器中创建的事件，如下图所示：</p>
-<p><img src="./../../../../../img/references/task_prop.png" alt="task" /></p>
+<p><img src="/img/references/task_prop.png" alt="task" /></p>
 <p>图2 任务节点的属性</p>
-<p>带有任务节点的行为树主要用于事件的处理，请详看文档《<a href="./../../../../../docs/zh/tutorials/tutorial11_event/index.html">事件处理</a>》。</p>
+<p>带有任务节点的行为树主要用于事件的处理，请详看文档《<a href="/docs/zh/tutorials/tutorial11_event/">事件处理</a>》。</p>
 <p>具体的执行逻辑可以查看<a href="https://github.com/Tencent/behaviac/blob/master/src/htn/task.cpp">htn/task.cpp</a></p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../task/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/task/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>子树节点</title>
-		<link>./../../../../../subtree/index.html</link>
-					<comments>./../../../../../subtree/index.html#respond</comments>
+		<link>/subtree/</link>
+					<comments>/subtree/#respond</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<pubDate>Fri, 13 May 2016 02:14:04 +0000</pubDate>
 				<category><![CDATA[手册]]></category>
 		<category><![CDATA[节点]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=264</guid>
+		<guid isPermaLink="false">/?p=264</guid>
 
-					<description><![CDATA[子树的介绍 通过子树节点，一个行为树可以作为另一个行为树的子树。作为子树的那个行为树被“调用”。如同一个动作节点一样，子树节点根据子树的执行结果也会返回执行结果<a class="moretag" href="./../../../../../subtree/index.html">Read More...</a>]]></description>
+					<description><![CDATA[子树的介绍 通过子树节点，一个行为树可以作为另一个行为树的子树。作为子树的那个行为树被“调用”。如同一个动作节点一样，子树节点根据子树的执行结果也会返回执行结果<a class="moretag" href="/subtree/">Read More...</a>]]></description>
 										<content:encoded><![CDATA[<h2 id="section"><span class="ez-toc-section" id="i">子树的介绍</span></h2>
 <p>通过<code class="highlighter-rouge">子树节点</code>，一个行为树可以作为另一个行为树的<code class="highlighter-rouge">子树</code>。作为子树的那个行为树被“调用”。如同一个动作节点一样，<code class="highlighter-rouge">子树</code>节点根据子树的执行结果也会返回执行结果（成功、失败或运行。），其父节点按照自己的控制逻辑来控制接下来的运行。<br />
-<img src="./../../../../../img/references/subtree.png" alt="" /></p>
+<img src="/img/references/subtree.png" alt="" /></p>
 <h3 id="section-1"><span class="ez-toc-section" id="i-2">递归</span></h3>
 <p>一个行为树可以“调用”自己，这么做的时候形成递归，形成递归的时候需要注意不要造成死循环，这可以通过变量的使用来避免。</p>
 <p>如下图所示，利用testVar_0来避免死循环：第一次进入的时候testVar_0 == 0，所以可以执行下面的序列，先把testVar_0赋值为1，那么在下面的递归重入的时候由于testVar_0 == 1，所以testVar_0 == 0的条件不满足，所以下面的序列不会进入从而避免了死循环。</p>
-<p><img src="./../../../../../img/overview/reverse.png" alt="" /></p>
+<p><img src="/img/overview/reverse.png" alt="" /></p>
 <h2 id="section-2"><span class="ez-toc-section" id="i-3">子树节点的属性</span></h2>
 <p>当选取子树节点的时候，在属性面板中显示如下图的属性：<br />
-<img src="./../../../../../img/references/subtree_property.png" alt="" /></p>
+<img src="/img/references/subtree_property.png" alt="" /></p>
 <ul>
 <li><code class="highlighter-rouge">引用文件名</code>，作为被调用的子树的行为树的相对路径。该属性不允许为空，需要是有效的路径。没有提供有效路径会导致报错并且该树不允许被导出。<code class="highlighter-rouge">引用文件名</code>可以是const常量，可以是变量(其值是行为树的相对路径)，或函数（其返回值需要是字符串，是行为树的相对路径）</li>
 <li><code class="highlighter-rouge">任务</code>，如果子树的根节点是任务节点，这里会出现该任务，并且允许提供参数。如在最上的图中，8号节点travel(x, ax)，4号节点travel(ay, y)。如果子树的根节点不是任务节点，或者<code class="highlighter-rouge">引用文件名</code>不是常量，<code class="highlighter-rouge">任务</code>属性就是空的。</li>
@@ -545,7 +537,7 @@ false 则执行 C，如果 C 是 true 则返回 true，否则如果 C 是 false 
 <ul>
 <li>在编辑器中，可以通过鼠标拖拽一棵行为树到另一棵行为树中生成子树节点，被拖拽的行为树的路径被设置到<code class="highlighter-rouge">引用文件名</code>。需要指出的是，并非任意一个行为树都可以作为另外一个行为树的子树。作为子树的行为树的Agent类型需要是“父树”的Agent类型的子类或同类。</li>
 <li>也可以像添加其他节点那样，在节点列表中选取子树，拖拽其到相应的位置，然后配置<code class="highlighter-rouge">引用文件名</code>或<code class="highlighter-rouge">任务</code>。<br />
-<img src="./../../../../../img/references/nodelist_subtree.png" alt="" /></li>
+<img src="/img/references/nodelist_subtree.png" alt="" /></li>
 <li>如果手工配置的子树的路径是空的，或无效的则会报错，该树不允许被导出。如果配置的是变量或函数，编辑器中无法知道其是否有效，只有运行的时候才会报运行时错误，如果其运行时的值无效的话。</li>
 </ul>
 <h2 id="section-4"><span class="ez-toc-section" id="i-5">版本</span></h2>
@@ -553,26 +545,26 @@ false 则执行 C，如果 C 是 true 则返回 true，否则如果 C 是 false 
 <div class="section-nav"></div>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../subtree/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/subtree/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>选择监测节点</title>
-		<link>./../../../../../selectormonitor/index.html</link>
-					<comments>./../../../../../selectormonitor/index.html#comments</comments>
+		<link>/selectormonitor/</link>
+					<comments>/selectormonitor/#comments</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<pubDate>Fri, 13 May 2016 02:11:13 +0000</pubDate>
 				<category><![CDATA[手册]]></category>
 		<category><![CDATA[事件]]></category>
 		<category><![CDATA[节点]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=258</guid>
+		<guid isPermaLink="false">/?p=258</guid>
 
-					<description><![CDATA[选择监测节点（SelectorMonitor）和监测分支节点（WithPrecondition）作为对传统行为树的扩展，可以很自然的处理事件和状态的改变，类似于<a class="moretag" href="./../../../../../selectormonitor/index.html">Read More...</a>]]></description>
+					<description><![CDATA[选择监测节点（SelectorMonitor）和监测分支节点（WithPrecondition）作为对传统行为树的扩展，可以很自然的处理事件和状态的改变，类似于<a class="moretag" href="/selectormonitor/">Read More...</a>]]></description>
 										<content:encoded><![CDATA[<p>选择监测节点（SelectorMonitor）和监测分支节点（WithPrecondition）作为对传统行为树的扩展，可以很自然的处理事件和状态的改变，类似于程序语言中的“switch&#8230;case”语句，如下图所示：</p>
-<p id="xojrlZA"><img class="size-full wp-image-2000 aligncenter" src="./../../../../../wp-content/uploads/2017/04/img_59015d5a54a9a.png" alt="" srcset="./../../../../../wp-content/uploads/2017/04/img_59015d5a54a9a.png 887w, ./../../../../../wp-content/uploads/2017/04/img_59015d5a54a9a-300x126.png 300w, ./../../../../../wp-content/uploads/2017/04/img_59015d5a54a9a-768x323.png 768w" sizes="(max-width: 887px) 100vw, 887px" /></p>
+<p id="xojrlZA"><img class="size-full wp-image-2000 aligncenter" src="/wp-content/uploads/2017/04/img_59015d5a54a9a.png" alt="" srcset="/wp-content/uploads/2017/04/img_59015d5a54a9a.png 887w, /wp-content/uploads/2017/04/img_59015d5a54a9a-300x126.png 300w, /wp-content/uploads/2017/04/img_59015d5a54a9a-768x323.png 768w" sizes="(max-width: 887px) 100vw, 887px" /></p>
 <ul>
 <li>选择监测和监测分支节点只能配对使用，即选择监测节点只能添加监测分支节点作为它的子节点，监测分支节点也只能作为选择监测节点的子节点被添加。</li>
 <li>监测分支节点有条件分支子树和动作分支子树。只有条件分支子树返回成功的时候，动作分支子树才能够被执行。</li>
@@ -580,116 +572,116 @@ false 则执行 C，如果 C 是 true 则返回 true，否则如果 C 是 false 
 </ul>
 <p>默认情况下，上一次得到执行的动作分支，如果在下一次其条件分支也返回成功，那么这个动作分支会继续执行上次返回正在运行的节点。例如，假设上图中上一次执行行为树的时候，ID为13的条件节点返回成功，并且已经执行到ID为9的动作节点（这时ID为4的动作节点已返回成功，而ID为9的动作节点返回正在运行）。那么，当下一次执行该选择检测节点时，如果发现ID为13的条件节点还是返回成功，ID为9的动作节点就会直接得到执行，而不是先执行ID为4的动作节点。</p>
 <p>但有的时候，可能需要在条件分支再次得到满足时，其动作分支需要重新执行，而不是默认情况下的从上次返回正在执行的节点继续执行。例如，对于上面的例子，当ID为13的条件节点再次返回成功时，需要重新执行其动作分支，即重新开始执行ID为4的动作节点。这时候，需要勾选上选择检测节点的属性“重置子节点”，如下图所示：</p>
-<p id="TIymLqP"><img class="size-full wp-image-2001 aligncenter" src="./../../../../../wp-content/uploads/2017/04/img_59016087886d5.png" alt="" srcset="./../../../../../wp-content/uploads/2017/04/img_59016087886d5.png 476w, ./../../../../../wp-content/uploads/2017/04/img_59016087886d5-300x60.png 300w" sizes="(max-width: 476px) 100vw, 476px" /></p>
+<p id="TIymLqP"><img class="size-full wp-image-2001 aligncenter" src="/wp-content/uploads/2017/04/img_59016087886d5.png" alt="" srcset="/wp-content/uploads/2017/04/img_59016087886d5.png 476w, /wp-content/uploads/2017/04/img_59016087886d5-300x60.png 300w" sizes="(max-width: 476px) 100vw, 476px" /></p>
 <p>勾选该属性后，选择检测节点每次执行时，都会从头开始执行其动作分支。</p>
 <p>选择检测节点的实现很像并行节点，每帧都要重新执行所有的子树，大量使用的时候请注意其性能。</p>
 <p>具体的执行逻辑可以查看<a href="https://github.com/Tencent/behaviac/blob/master/src/behaviortree/nodes/composites/selectorloop.cpp">behaviortree/nodes/composites/selectorloop.cpp</a></p>
 <p>另外，执行行为树的过程中，当状态、条件发生变化或发生事件（Event）时如何响应或打断当前的执行是个重要的问题。</p>
 <p>目前behaviac组件支持三种方式来处理状态变化或事件发生：并行节点、选择监测节点、事件附件等。简而言之，并行和选择监测节点的工作方式是采用“轮询”的方式，每次执行时需要重新评估所有子节点，而不是像其他节点会保留上一次正在执行的子节点以便在下一次执行时继续执行。事件附件是在游戏逻辑（程序端）发出事件时，才按需得到响应。</p>
-<p>请详看文档《<a href="./../../../../../docs/zh/tutorials/tutorial11_event/index.html">事件处理</a>》。</p>
+<p>请详看文档《<a href="/docs/zh/tutorials/tutorial11_event/">事件处理</a>》。</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../selectormonitor/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/selectormonitor/feed/</wfw:commentRss>
 			<slash:comments>1</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>条件执行节点</title>
-		<link>./../../../../../ifelse/index.html</link>
-					<comments>./../../../../../ifelse/index.html#respond</comments>
+		<link>/ifelse/</link>
+					<comments>/ifelse/#respond</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<pubDate>Fri, 13 May 2016 02:10:22 +0000</pubDate>
 				<category><![CDATA[手册]]></category>
 		<category><![CDATA[节点]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=256</guid>
+		<guid isPermaLink="false">/?p=256</guid>
 
-					<description><![CDATA[条件执行节点（IfElse）是behaviac组件的一个扩展或快捷方式。 条件执行节点必须要有3个子节点，第一个子节点是条件分支，第二个子节点是“真时执行”分支<a class="moretag" href="./../../../../../ifelse/index.html">Read More...</a>]]></description>
+					<description><![CDATA[条件执行节点（IfElse）是behaviac组件的一个扩展或快捷方式。 条件执行节点必须要有3个子节点，第一个子节点是条件分支，第二个子节点是“真时执行”分支<a class="moretag" href="/ifelse/">Read More...</a>]]></description>
 										<content:encoded><![CDATA[<p>条件执行节点（IfElse）是behaviac组件的一个扩展或快捷方式。</p>
 <p>条件执行节点必须要有3个子节点，第一个子节点是条件分支，第二个子节点是“真时执行”分支，第三个子节点是“假时执行”分支。如果条件为真，那么执行“真时执行”分支；否则，执行“假时执行”分支。</p>
 <p>而条件执行节点的执行结果则根据具体执行分支的执行结果来决定，如下图所示：</p>
-<p><img class="aligncenter" src="./../../../../../img/references/ifelse.png" alt="ifelse" /></p>
+<p><img class="aligncenter" src="/img/references/ifelse.png" alt="ifelse" /></p>
 <p>如果不使用条件执行节点，完全可以用序列（Sequence）和选择（Selector）节点来实现相同的功能，只不过没有条件执行节点简洁。</p>
 <p>另外，条件执行节点的“条件”分支，还可以挂上动作节点甚至是一棵子树。比如挂上动作节点时，如果该动作节点返回Running，则条件执行节点也返回Running，并且该条件一直持续执行，直到动作节点返回Success或Failure，则继续相应的执行“真时执行”或“假时执行”分支。</p>
 <p>具体的执行逻辑可以查看<a href="https://github.com/Tencent/behaviac/blob/master/src/behaviortree/nodes/composites/ifelse.cpp">behaviortree/nodes/composites/ifelse.cpp</a></p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../ifelse/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/ifelse/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>随机序列节点</title>
-		<link>./../../../../../sequencestochastic/index.html</link>
-					<comments>./../../../../../sequencestochastic/index.html#comments</comments>
+		<link>/sequencestochastic/</link>
+					<comments>/sequencestochastic/#comments</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<pubDate>Fri, 13 May 2016 02:09:28 +0000</pubDate>
 				<category><![CDATA[手册]]></category>
 		<category><![CDATA[节点]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=254</guid>
+		<guid isPermaLink="false">/?p=254</guid>
 
-					<description><![CDATA[类似序列（Sequence）节点，随机序列（SequenceStochastic）节点也是从子节点中顺序执行，但不像序列节点每次都是按照排列的先后顺序，随机序列<a class="moretag" href="./../../../../../sequencestochastic/index.html">Read More...</a>]]></description>
+					<description><![CDATA[类似序列（Sequence）节点，随机序列（SequenceStochastic）节点也是从子节点中顺序执行，但不像序列节点每次都是按照排列的先后顺序，随机序列<a class="moretag" href="/sequencestochastic/">Read More...</a>]]></description>
 										<content:encoded><![CDATA[<p>类似序列（Sequence）节点，随机序列（SequenceStochastic）节点也是从子节点中顺序执行，但不像序列节点每次都是按照排列的先后顺序，随机序列节点每次执行子节点时随机的决定其执行顺序，如下图所示：</p>
-<p><img class="aligncenter" src="./../../../../../img/references/sequencestochastic.png" alt="sequencestochastic" /></p>
+<p><img class="aligncenter" src="/img/references/sequencestochastic.png" alt="sequencestochastic" /></p>
 <p>例如，序列节点和随机序列节点都有A、B、C、D这四个子节点。对于序列节点，每次都是按A、B、C、D的顺序依次执行；而对于随机序列节点，有时按A、B、C、D的顺序执行，有时按B、A、D、C的顺序执行，又有时按A、C、D、B的顺序执行，等等。</p>
 <p>与随机选择节点相同的是，随机序列节点也有随机数生成器可以配置，该随机数生成器是一个返回值为0.0到1.0之间的float类型的函数，如下图所示：</p>
-<p><img class="aligncenter" src="./../../../../../img/references/sequencestochastic_prop.png" alt="sequencestochastic" /></p>
+<p><img class="aligncenter" src="/img/references/sequencestochastic_prop.png" alt="sequencestochastic" /></p>
 <p>该随机数生成器一般设为空即可，表示采用系统的缺省实现，也可以使用自己提供的函数。</p>
 <p>具体的执行逻辑可以查看<a href="https://github.com/Tencent/behaviac/blob/master/src/behaviortree/nodes/composites/sequencestochastic.cpp">behaviortree/nodes/composites/sequencestochastic.cpp</a></p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../sequencestochastic/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/sequencestochastic/feed/</wfw:commentRss>
 			<slash:comments>1</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>随机选择节点</title>
-		<link>./../../../../../selectorstochastic/index.html</link>
-					<comments>./../../../../../selectorstochastic/index.html#comments</comments>
+		<link>/selectorstochastic/</link>
+					<comments>/selectorstochastic/#comments</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<pubDate>Fri, 13 May 2016 02:08:39 +0000</pubDate>
 				<category><![CDATA[手册]]></category>
 		<category><![CDATA[节点]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=252</guid>
+		<guid isPermaLink="false">/?p=252</guid>
 
-					<description><![CDATA[类似选择（Selector）节点，随机选择（SelectorStochastic）节点也是从子节点中选择执行一个，但不像选择节点每次都是按照排列的先后顺序选择，<a class="moretag" href="./../../../../../selectorstochastic/index.html">Read More...</a>]]></description>
+					<description><![CDATA[类似选择（Selector）节点，随机选择（SelectorStochastic）节点也是从子节点中选择执行一个，但不像选择节点每次都是按照排列的先后顺序选择，<a class="moretag" href="/selectorstochastic/">Read More...</a>]]></description>
 										<content:encoded><![CDATA[<p>类似选择（Selector）节点，随机选择（SelectorStochastic）节点也是从子节点中选择执行一个，但不像选择节点每次都是按照排列的先后顺序选择，随机选择节点每次选择的时候随机的决定执行顺序，如下图所示：</p>
-<p><img class="aligncenter" src="./../../../../../img/references/selectorstochastic.png" alt="selectorstochastic" /></p>
+<p><img class="aligncenter" src="/img/references/selectorstochastic.png" alt="selectorstochastic" /></p>
 <p>例如，选择节点和随机选择节点都有A、B、C、D这四个子节点。对于选择节点，每次都是顺序的按A、B、C、D的顺序选择；而对于随机选择节点，有时按A、B、C、D的顺序选择，有时按B、A、D、C的顺序选择，又有时按A、C、D、B的顺序选择，等等。</p>
 <p>随机选择节点有随机数生成器可以配置，该随机数生成器是一个返回值为0.0到1.0之间的float类型的函数，如下图所示：</p>
-<p><img class="aligncenter" src="./../../../../../img/references/selectorstochastic_prop.png" alt="selectorstochastic" /></p>
+<p><img class="aligncenter" src="/img/references/selectorstochastic_prop.png" alt="selectorstochastic" /></p>
 <p>该随机数生成器一般设为空即可，表示采用系统的缺省实现，也可以使用自己提供的函数。</p>
 <p>具体的执行逻辑可以查看<a href="https://github.com/Tencent/behaviac/blob/master/src/behaviortree/nodes/composites/selectorstochastic.cpp">behaviortree/nodes/composites/selectorstochastic.cpp</a></p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../selectorstochastic/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/selectorstochastic/feed/</wfw:commentRss>
 			<slash:comments>1</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>概率选择节点</title>
-		<link>./../../../../../selectorprobability/index.html</link>
-					<comments>./../../../../../selectorprobability/index.html#comments</comments>
+		<link>/selectorprobability/</link>
+					<comments>/selectorprobability/#comments</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<pubDate>Fri, 13 May 2016 02:07:34 +0000</pubDate>
 				<category><![CDATA[手册]]></category>
 		<category><![CDATA[节点]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=250</guid>
+		<guid isPermaLink="false">/?p=250</guid>
 
-					<description><![CDATA[类似选择（Selector）节点，概率选择（SelectorProbability）节点也是从子节点中选择执行一个，但不像选择节点每次都是按照排列的先后顺序选择<a class="moretag" href="./../../../../../selectorprobability/index.html">Read More...</a>]]></description>
+					<description><![CDATA[类似选择（Selector）节点，概率选择（SelectorProbability）节点也是从子节点中选择执行一个，但不像选择节点每次都是按照排列的先后顺序选择<a class="moretag" href="/selectorprobability/">Read More...</a>]]></description>
 										<content:encoded><![CDATA[<p>类似选择（Selector）节点，概率选择（SelectorProbability）节点也是从子节点中选择执行一个，但不像选择节点每次都是按照排列的先后顺序选择，概率选择节点每次选择的时候根据子节点的“概率权值”进行选择，权值越大，被选到的机会越大，权值为0，则其分支不会被执行，如下图所示：</p>
-<p><img class="aligncenter" src="./../../../../../img/references/selectorprobability.png" alt="selectorprobability" /></p>
+<p><img class="aligncenter" src="/img/references/selectorprobability.png" alt="selectorprobability" /></p>
 <p>注意：选择节点是按照从上到下的顺序依次执行子节点，一直到第一个返回成功的那个子节点则返回成功，或者如果所有子节点都返回失败则返回失败。</p>
 <p>而概率选择节点则是根据概率“直接”选择并执行某个子节点，无论其返回成功还是失败，概率选择节点也将返回同样的结果。如果该子节点返回失败，概率选择也返回失败，它不会像选择节点那样会继续执行接下来的子节点。</p>
 <p>概率选择节点有随机数生成器可以配置，该随机数生成器是一个返回值为0.0到1.0之间的float类型的函数，如下图所示：</p>
-<p><img class="aligncenter" src="./../../../../../img/references/selectorprobability_prop.png" alt="selectorprobability" /></p>
+<p><img class="aligncenter" src="/img/references/selectorprobability_prop.png" alt="selectorprobability" /></p>
 <p>该随机数生成器一般设为空即可，表示采用系统的缺省实现，也可以使用自己提供的函数。</p>
 <p>概率选择节点的子节点只能是“权值”的子节点，在添加子节点时，该权值节点会被系统自动添加。所有权值子节点的相加之和不需要是100，执行时会进行归一化操作，子节点的概率是该子节点的权值/总和。</p>
 <p>概率选择节点的选择算法是基于概率区间的，比如上图中的3个子节点的权值分别是20、30、50，归一化后的概率分别是0.2、0.3、0.5，那么对应的概率区间分别是[0.0, 0.2)、[0.2, 0.5)、[0.5, 1.0)。概率选择节点的随机数生成器随机产生一个[0.0, 1.0)之间的随机数，看这个随机数落在哪个区间，则执行第几个子节点。例如，随机数为0.45，落在第二个区间[0.2, 0.5)，则选择执行第二个子节点。</p>
@@ -697,77 +689,77 @@ false 则执行 C，如果 C 是 true 则返回 true，否则如果 C 是 false 
 <div class="section-nav"></div>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../selectorprobability/feed/index.html</wfw:commentRss>
-			<slash:comments>5</slash:comments>
+					<wfw:commentRss>/selectorprobability/feed/</wfw:commentRss>
+			<slash:comments>4</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>或节点</title>
-		<link>./../../../../../or/index.html</link>
-					<comments>./../../../../../or/index.html#respond</comments>
+		<link>/or/</link>
+					<comments>/or/#respond</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<pubDate>Fri, 13 May 2016 02:03:49 +0000</pubDate>
 				<category><![CDATA[手册]]></category>
 		<category><![CDATA[节点]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=244</guid>
+		<guid isPermaLink="false">/?p=244</guid>
 
-					<description><![CDATA[或（Or）节点接受两个以上的条件子节点，执行逻辑”或（ ）”操作，如下图所示： 图1 或节点 只要有一个条件子节点的返回值为成功，或节点则返回成功。所有条件子节<a class="moretag" href="./../../../../../or/index.html">Read More...</a>]]></description>
-										<content:encoded><![CDATA[<p>或（Or）节点接受两个以上的条件子节点，执行逻辑”或（ ）”操作，如下图所示：<img src="./../../../../../img/references/or.png" alt="or" /></p>
+					<description><![CDATA[或（Or）节点接受两个以上的条件子节点，执行逻辑”或（ ）”操作，如下图所示： 图1 或节点 只要有一个条件子节点的返回值为成功，或节点则返回成功。所有条件子节<a class="moretag" href="/or/">Read More...</a>]]></description>
+										<content:encoded><![CDATA[<p>或（Or）节点接受两个以上的条件子节点，执行逻辑”或（ ）”操作，如下图所示：<img src="/img/references/or.png" alt="or" /></p>
 <p>图1 或节点</p>
 <p>只要有一个条件子节点的返回值为成功，或节点则返回成功。所有条件子节点都返回为失败，或节点则返回失败。</p>
 <p>具体的执行逻辑可以查看<a href="https://github.com/Tencent/behaviac/blob/master/src/behaviortree/nodes/conditions/or.cpp">behaviortree/nodes/conditions/or.cpp</a></p>
 <p>&nbsp;</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../or/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/or/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>与节点</title>
-		<link>./../../../../../and/index.html</link>
-					<comments>./../../../../../and/index.html#respond</comments>
+		<link>/and/</link>
+					<comments>/and/#respond</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<pubDate>Mon, 11 Apr 2016 09:11:22 +0000</pubDate>
 				<category><![CDATA[手册]]></category>
 		<category><![CDATA[节点]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=130</guid>
+		<guid isPermaLink="false">/?p=130</guid>
 
-					<description><![CDATA[与（And）节点接受两个以上的条件子节点，执行逻辑”与（&#38;&#38;）”操作，如下图所示： 图1 与节点 只要有一个条件子节点的返回值为失败，与节点则返<a class="moretag" href="./../../../../../and/index.html">Read More...</a>]]></description>
+					<description><![CDATA[与（And）节点接受两个以上的条件子节点，执行逻辑”与（&#38;&#38;）”操作，如下图所示： 图1 与节点 只要有一个条件子节点的返回值为失败，与节点则返<a class="moretag" href="/and/">Read More...</a>]]></description>
 										<content:encoded><![CDATA[<p>与（And）节点接受两个以上的条件子节点，执行逻辑”与（&amp;&amp;）”操作，如下图所示：</p>
-<p><img src="./../../../../../img/references/and.png" alt="and" /></p>
+<p><img src="/img/references/and.png" alt="and" /></p>
 <p>图1 与节点</p>
 <p>只要有一个条件子节点的返回值为失败，与节点则返回失败。所有条件子节点都返回为成功，与节点则返回成功。</p>
 <p>具体的执行逻辑可以查看<a href="https://github.com/Tencent/behaviac/blob/master/src/behaviortree/nodes/conditions/and.cpp">behaviortree/nodes/conditions/and.cpp</a></p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../and/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/and/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>等待节点</title>
-		<link>./../../../../../wait/index.html</link>
-					<comments>./../../../../../wait/index.html#comments</comments>
+		<link>/wait/</link>
+					<comments>/wait/#comments</comments>
 		
 		<dc:creator><![CDATA[jonygli]]></dc:creator>
 		<pubDate>Mon, 06 Jun 2016 10:11:17 +0000</pubDate>
 				<category><![CDATA[手册]]></category>
 		<category><![CDATA[节点]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=460</guid>
+		<guid isPermaLink="false">/?p=460</guid>
 
-					<description><![CDATA[等待（Wait）节点在指定的数值内（单位根据自己的使用场景来定）持续保持为运行（Running）状态，数值到达之后则返回成功，如下图所示： 需要配置“持续时间”<a class="moretag" href="./../../../../../wait/index.html">Read More...</a>]]></description>
+					<description><![CDATA[等待（Wait）节点在指定的数值内（单位根据自己的使用场景来定）持续保持为运行（Running）状态，数值到达之后则返回成功，如下图所示： 需要配置“持续时间”<a class="moretag" href="/wait/">Read More...</a>]]></description>
 										<content:encoded><![CDATA[<p>等待（Wait）节点在指定的数值内（单位根据自己的使用场景来定）持续保持为运行（Running）状态，数值到达之后则返回成功，如下图所示：</p>
-<p><img class="aligncenter" src="./../../../../../img/references/wait.png" alt="wait" /></p>
+<p><img class="aligncenter" src="/img/references/wait.png" alt="wait" /></p>
 <p>需要配置“持续时间”，可以是常数、属性或方法的返回值（支持double和int类型），如下图所示：</p>
-<p><img class="aligncenter" src="./../../../../../img/references/wait_prop.png" alt="wait" /></p>
+<p><img class="aligncenter" src="/img/references/wait_prop.png" alt="wait" /></p>
 <p>在工作区配置窗口中，可以勾选左下角的“使用整数值”来表示是否使用整数值，如下图所示：</p>
-<p><img class="size-full wp-image-1163 aligncenter" src="./../../../../../wp-content/uploads/2016/06/edit_workspace-1.png" alt="edit_workspace" width="587" height="272" srcset="./../../../../../wp-content/uploads/2016/06/edit_workspace-1.png 587w, ./../../../../../wp-content/uploads/2016/06/edit_workspace-1-300x139.png 300w" sizes="(max-width: 587px) 100vw, 587px" /></p>
+<p><img class="size-full wp-image-1163 aligncenter" src="/wp-content/uploads/2016/06/edit_workspace-1.png" alt="edit_workspace" width="587" height="272" srcset="/wp-content/uploads/2016/06/edit_workspace-1.png 587w, /wp-content/uploads/2016/06/edit_workspace-1-300x139.png 300w" sizes="(max-width: 587px) 100vw, 587px" /></p>
 <p>如果勾选了“使用整数值”选项，那么在导出代码文件behaviac_agent_meta.cpp中，会自动生成Workspace::GetInstance()-&gt;SetUseIntValue(true)。</p>
 <p>等待节点的更新逻辑是：</p>
 <div class="highlighter-rouge">
@@ -801,28 +793,28 @@ else
 <div class="section-nav"></div>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../wait/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/wait/feed/</wfw:commentRss>
 			<slash:comments>1</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>等待帧数节点</title>
-		<link>./../../../../../waitframes/index.html</link>
-					<comments>./../../../../../waitframes/index.html#respond</comments>
+		<link>/waitframes/</link>
+					<comments>/waitframes/#respond</comments>
 		
 		<dc:creator><![CDATA[jonygli]]></dc:creator>
 		<pubDate>Mon, 06 Jun 2016 10:14:25 +0000</pubDate>
 				<category><![CDATA[手册]]></category>
 		<category><![CDATA[节点]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=463</guid>
+		<guid isPermaLink="false">/?p=463</guid>
 
-					<description><![CDATA[//www 图1 等待帧数节点 需要配置“帧数”，可以是常数、属性或方法的返回值（必须是int类型），如下图所示： 图2 等待帧数节点的属性 等待帧数节点的更新<a class="moretag" href="./../../../../../waitframes/index.html">Read More...</a>]]></description>
+					<description><![CDATA[//www 图1 等待帧数节点 需要配置“帧数”，可以是常数、属性或方法的返回值（必须是int类型），如下图所示： 图2 等待帧数节点的属性 等待帧数节点的更新<a class="moretag" href="/waitframes/">Read More...</a>]]></description>
 										<content:encoded><![CDATA[<p>//www</p>
-<p><img src="./../../../../../img/references/waitframes.png" alt="waitframes" /></p>
+<p><img src="/img/references/waitframes.png" alt="waitframes" /></p>
 <p>图1 等待帧数节点</p>
 <p>需要配置“帧数”，可以是常数、属性或方法的返回值（必须是int类型），如下图所示：</p>
-<p><img src="./../../../../../img/references/waitframes_prop.png" alt="waitframes" /></p>
+<p><img src="/img/references/waitframes_prop.png" alt="waitframes" /></p>
 <p>图2 等待帧数节点的属性</p>
 <p>等待帧数节点的更新逻辑是:</p>
 <div class="highlighter-rouge">
@@ -839,31 +831,31 @@ else
 <div class="section-nav"></div>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../waitframes/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/waitframes/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>状态机</title>
-		<link>./../../../../../fsm/index.html</link>
-					<comments>./../../../../../fsm/index.html#respond</comments>
+		<link>/fsm/</link>
+					<comments>/fsm/#respond</comments>
 		
 		<dc:creator><![CDATA[jonygli]]></dc:creator>
 		<pubDate>Fri, 13 May 2016 02:12:55 +0000</pubDate>
 				<category><![CDATA[手册]]></category>
 		<category><![CDATA[节点]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=262</guid>
+		<guid isPermaLink="false">/?p=262</guid>
 
-					<description><![CDATA[简介 behaviac组件不仅支持行为树，也支持有限状态机（FSM），并且支持行为树跟状态机的相互嵌套调用。 behaviac组件中的状态机主要用到了状态（St<a class="moretag" href="./../../../../../fsm/index.html">Read More...</a>]]></description>
+					<description><![CDATA[简介 behaviac组件不仅支持行为树，也支持有限状态机（FSM），并且支持行为树跟状态机的相互嵌套调用。 behaviac组件中的状态机主要用到了状态（St<a class="moretag" href="/fsm/">Read More...</a>]]></description>
 										<content:encoded><![CDATA[<h2><span class="ez-toc-section" id="i">简介</span></h2>
 <p>behaviac组件不仅支持行为树，也支持有限状态机（FSM），并且支持行为树跟状态机的相互嵌套调用。</p>
 <p>behaviac组件中的状态机主要用到了状态（State）、等待状态（WaitState）和等待帧数状态（WaitFramesState）三种节点，以及条件转换（Transition）和总是转换（AlwaysTransition）两种附件，如下图所示：</p>
-<p><img src="./../../../../../img/references/fsm_nodes.png" alt="fsm_nodes" /></p>
+<p><img src="/img/references/fsm_nodes.png" alt="fsm_nodes" /></p>
 <p>图1 状态机相关节点和附件</p>
 <h2 id="section"><span class="ez-toc-section" id="i-2">状态节点</span></h2>
 <p>状态节点（State）是状态机中的基本组成部分之一，可以在状态节点上添加前置、后置以及转换等附件，如下图所示：</p>
-<p><img src="./../../../../../img/references/state.png" alt="state" /></p>
+<p><img src="/img/references/state.png" alt="state" /></p>
 <p>图2 状态节点</p>
 <ul>
 <li>在状态节点上添加的前置：表明进入该状态节点时，需要执行的操作。</li>
@@ -871,7 +863,7 @@ else
 <li>在状态节点上添加的转换：表明满足该转换所表示的条件时，由当前状态切换到转换所指向的下一个状态。</li>
 </ul>
 <p>如下图所示，可以编辑状态节点的相关属性：</p>
-<p><img src="./../../../../../img/references/state_prop.png" alt="state" /></p>
+<p><img src="/img/references/state_prop.png" alt="state" /></p>
 <p>图3 状态节点的属性</p>
 <ul>
 <li>名字：为状态节点指定一个有意义的名字，以便区分其他状态节点。</li>
@@ -881,30 +873,30 @@ else
 <p>具体的执行逻辑可以查看<a href="https://github.com/Tencent/behaviac/blob/master/src/fsm/fsmstate.cpp">fsm/fsmstate.cpp</a></p>
 <h2 id="section-1"><span class="ez-toc-section" id="i-3">等待状态节点</span></h2>
 <p>等待状态节点（WaitState）是一种特殊的状态节点，可以在状态节点上添加前置、后置以及等待转换等附件，如下图所示：</p>
-<p><img src="./../../../../../img/references/waitstate.png" alt="waitstate" /></p>
+<p><img src="/img/references/waitstate.png" alt="waitstate" /></p>
 <p>图4 等待状态节点</p>
 <p>添加等待状态节点时，会自动的生成唯一的等待转换附件，不接受添加其他类型的转换附件。</p>
 <p>如下图所示，可以编辑等待状态节点的相关属性：</p>
-<p><img src="./../../../../../img/references/waitstate_prop.png" alt="waitstate" /></p>
+<p><img src="/img/references/waitstate_prop.png" alt="waitstate" /></p>
 <p>图5 等待状态节点的属性</p>
 <p>相比状态节点的属性，等待状态节点少了“方法”属性，但多出了一个“持续时间”属性，用来指定需要等待多长时间，可以是常数、属性或方法的返回值。</p>
 <p>具体的执行逻辑可以查看<a href="https://github.com/Tencent/behaviac/blob/master/src/fsm/waitstate.cpp">fsm/waitstate.cpp</a></p>
 <h2 id="section-2"><span class="ez-toc-section" id="i-4">等待帧数状态节点</span></h2>
 <p>等待帧数状态节点（WaitFramesState）也是一种特殊的状态节点，可以在状态节点上添加前置、后置以及等待转换等附件，如下图所示：</p>
-<p><img src="./../../../../../img/references/waitframesstate.png" alt="waitframesstate" /></p>
+<p><img src="/img/references/waitframesstate.png" alt="waitframesstate" /></p>
 <p>图6 等待帧数状态节点</p>
 <p>添加等待帧数状态节点时，会自动的生成唯一的等待转换附件，不接受添加其他类型的转换附件。</p>
 <p>如下图所示，可以编辑等待帧数状态节点的相关属性：</p>
-<p><img src="./../../../../../img/references/waitframesstate_prop.png" alt="waitframesstate" /></p>
+<p><img src="/img/references/waitframesstate_prop.png" alt="waitframesstate" /></p>
 <p>图7 等待帧数状态节点的属性</p>
 <p>相比状态节点的属性，等待帧数状态节点少了“方法”属性，但多出了一个“帧数”属性，用来指定需要等待多少帧数，可以是常数、属性或方法的返回值。</p>
 <p>具体的执行逻辑可以查看<a href="https://github.com/Tencent/behaviac/blob/master/src/fsm/waitframesstate.cpp">fsm/waitframesstate.cpp</a></p>
 <h2 id="section-3"><span class="ez-toc-section" id="i-5">条件转换附件</span></h2>
 <p>转换附件（Transition）是状态机中的基本组成部分之一，它表示一个条件，当这个条件满足时，由所在的状态切换到另一个状态，如下图所示：</p>
-<p><img src="./../../../../../img/references/transition.png" alt="transition" /></p>
+<p><img src="/img/references/transition.png" alt="transition" /></p>
 <p>图8 转换附件</p>
 <p>如下图所示，类似条件节点来编辑转换附件的相关属性：</p>
-<p><img src="./../../../../../img/references/transition_prop.png" alt="transition" /></p>
+<p><img src="/img/references/transition_prop.png" alt="transition" /></p>
 <p>图9 转换附件的属性</p>
 <p>此外，在上图中有个“效果”的属性，是转换附件执行完之后需要执行的额外操作。</p>
 <p>具体的执行逻辑可以查看<a href="https://github.com/Tencent/behaviac/blob/master/src/fsm/startcondition.cpp">fsm/startcondition.cpp</a></p>
@@ -916,50 +908,50 @@ else
 <li>失败时，表示当所在节点是子树并且失败的时候转换</li>
 <li>结束时，表示当所在节点是子树并且结束（成功或失败）的时候转换</li>
 </ol>
-<p><img src="./../../../../../img/references/alwaystransition.png" alt="alwaystransition" /></p>
+<p><img src="/img/references/alwaystransition.png" alt="alwaystransition" /></p>
 <p>图10 状态转换附件</p>
 <p>具体的执行逻辑可以查看<a href="https://github.com/Tencent/behaviac/blob/master/src/fsm/alwaystransition.cpp">fsm/alwaystransition.cpp</a></p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../fsm/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/fsm/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>空操作节点</title>
-		<link>./../../../../../noop/index.html</link>
-					<comments>./../../../../../noop/index.html#respond</comments>
+		<link>/noop/</link>
+					<comments>/noop/#respond</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<pubDate>Fri, 13 May 2016 01:59:14 +0000</pubDate>
 				<category><![CDATA[手册]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=238</guid>
+		<guid isPermaLink="false">/?p=238</guid>
 
-					<description><![CDATA[空操作（Noop）节点只是作为占位，仅执行一次就返回成功，如下图所示： 图1 空节点 具体的执行逻辑可以查看behaviortree/nodes/actions<a class="moretag" href="./../../../../../noop/index.html">Read More...</a>]]></description>
+					<description><![CDATA[空操作（Noop）节点只是作为占位，仅执行一次就返回成功，如下图所示： 图1 空节点 具体的执行逻辑可以查看behaviortree/nodes/actions<a class="moretag" href="/noop/">Read More...</a>]]></description>
 										<content:encoded><![CDATA[<p>空操作（Noop）节点只是作为占位，仅执行一次就返回成功，如下图所示：</p>
-<p><img src="./../../../../../img/references/noop.png" alt="noop" /></p>
+<p><img src="/img/references/noop.png" alt="noop" /></p>
 <p>图1 空节点</p>
 <p>具体的执行逻辑可以查看<a href="https://github.com/Tencent/behaviac/blob/master/src/behaviortree/nodes/actions/noop.cpp">behaviortree/nodes/actions/noop.cpp</a></p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../noop/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/noop/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>等待信号节点</title>
-		<link>./../../../../../waitforsignal/index.html</link>
-					<comments>./../../../../../waitforsignal/index.html#respond</comments>
+		<link>/waitforsignal/</link>
+					<comments>/waitforsignal/#respond</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<pubDate>Mon, 11 Apr 2016 09:17:30 +0000</pubDate>
 				<category><![CDATA[手册]]></category>
 		<category><![CDATA[节点]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=136</guid>
+		<guid isPermaLink="false">/?p=136</guid>
 
-					<description><![CDATA[等待信号（WaitforSignal）节点模拟了等待某个条件的“阻塞”过程。 等待信号节点返回Running，直到它上面附加的条件是true的时候： 如果有子节<a class="moretag" href="./../../../../../waitforsignal/index.html">Read More...</a>]]></description>
+					<description><![CDATA[等待信号（WaitforSignal）节点模拟了等待某个条件的“阻塞”过程。 等待信号节点返回Running，直到它上面附加的条件是true的时候： 如果有子节<a class="moretag" href="/waitforsignal/">Read More...</a>]]></description>
 										<content:encoded><![CDATA[<p>等待信号（WaitforSignal）节点模拟了等待某个条件的“阻塞”过程。</p>
 <p>等待信号节点返回Running，直到它上面附加的条件是true的时候：</p>
 <ul>
@@ -967,15 +959,15 @@ else
 <li>如果没有子节点，则直接返回成功。</li>
 </ul>
 <p>在图1中，该等待信号节点一直“阻塞”直到它上面附加的条件是true的时候才结束“阻塞”，从而继续序列节点中后面的节点：</p>
-<p><img src="./../../../../../img/references/waitforsignal.png" alt="waitforsignal" /></p>
+<p><img src="/img/references/waitforsignal.png" alt="waitforsignal" /></p>
 <p>图1 不带子节点的等待信号节点</p>
 <p>而在图2中，则是在该等待信号节点上附加的条件是true的时候，结束“阻塞”而执行其子节点。</p>
-<p><img src="./../../../../../img/references/waitforsignal2.png" alt="waitforsignal" /></p>
+<p><img src="/img/references/waitforsignal2.png" alt="waitforsignal" /></p>
 <p>图2 带子节点的等待信号节点</p>
 <p>具体的执行逻辑可以查看<a href="https://github.com/Tencent/behaviac/blob/master/src/behaviortree/nodes/actions/waitforsignal.cpp">behaviortree/nodes/actions/waitforsignal.cpp</a></p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../waitforsignal/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/waitforsignal/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		

@@ -7,8 +7,8 @@
 	>
 <channel>
 	<title>《常见问题及答疑》的评论</title>
-	<atom:link href="/qcg_ai_faq/feed/" rel="self" type="application/rss+xml" />
-	<link>/qcg_ai_faq/</link>
+	<atom:link href="http://www.behaviac.com/qcg_ai_faq/feed/" rel="self" type="application/rss+xml" />
+	<link>http://www.behaviac.com/qcg_ai_faq/</link>
 	<description>Tencent behaviac, Game AI, Behavior Tree, Finite State Machine, Hierarchical Task Network, BT FSM HTN, 腾讯开源, 游戏AI, 行为树,有限状态机,分层任务网络</description>
 	<lastBuildDate>Mon, 26 Mar 2018 16:07:20 +0000</lastBuildDate>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
@@ -16,10 +16,10 @@
 	<generator>https://wordpress.org/?v=4.9.1</generator>
 	<item>
 		<title>作者：腾讯首届游戏AI大赛——天天炫斗AI项目 &#8211; behaviac</title>
-		<link>/qcg_ai_faq/#comment-87</link>
+		<link>http://www.behaviac.com/qcg_ai_faq/#comment-87</link>
 		<dc:creator><![CDATA[腾讯首届游戏AI大赛——天天炫斗AI项目 &#8211; behaviac]]></dc:creator>
 		<pubDate>Mon, 18 Jul 2016 10:11:01 +0000</pubDate>
-		<guid isPermaLink="false">/</guid>
+		<guid isPermaLink="false">http://www.behaviac.com/</guid>
 		<description><![CDATA[[&#8230;] FAQ [&#8230;]]]></description>
 		<content:encoded><![CDATA[<p>[&#8230;] FAQ [&#8230;]</p>
 ]]></content:encoded>

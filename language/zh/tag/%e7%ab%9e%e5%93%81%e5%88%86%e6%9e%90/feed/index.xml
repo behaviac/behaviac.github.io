@@ -9,8 +9,8 @@
 
 <channel>
 	<title>竞品分析 &#8211; behaviac</title>
-	<atom:link href="./../../%E7%AB%9E%E5%93%81%E5%88%86%E6%9E%90/feed/index.html" rel="self" type="application/rss+xml" />
-	<link>./../../../../../index.html</link>
+	<atom:link href="/language/zh/tag/%E7%AB%9E%E5%93%81%E5%88%86%E6%9E%90/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
 	<description>Tencent behaviac, Game AI, Behavior Tree, Finite State Machine, Hierarchical Task Network, BT FSM HTN, 腾讯开源, 游戏AI, 行为树,有限状态机,分层任务网络</description>
 	<lastBuildDate>Tue, 13 Dec 2016 11:16:26 +0000</lastBuildDate>
 	<language>zh-CN</language>
@@ -19,37 +19,29 @@
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
 	<generator>https://wordpress.org/?v=5.4.1</generator>
-
-<image>
-	<url>./../../../../../wp-content/uploads/2016/04/cropped-256x256-32x32.png</url>
-	<title>竞品分析 &#8211; behaviac</title>
-	<link>./../../../../../index.html</link>
-	<width>32</width>
-	<height>32</height>
-</image> 
 	<item>
 		<title>behaviac与Behavior Designer的对比</title>
-		<link>./../../../../../bd_vs_behaviac/index.html</link>
-					<comments>./../../../../../bd_vs_behaviac/index.html#comments</comments>
+		<link>/bd_vs_behaviac/</link>
+					<comments>/bd_vs_behaviac/#comments</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<pubDate>Mon, 11 Apr 2016 09:52:11 +0000</pubDate>
 				<category><![CDATA[文章]]></category>
 		<category><![CDATA[竞品分析]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=154</guid>
+		<guid isPermaLink="false">/?p=154</guid>
 
-					<description><![CDATA[简介 众所周知，行为树技术已经在游戏开发过程中逐渐变得流行起来。目前业界有两款知名度相对比较高的行为树组件——Behavior Designer（后面简称BD）<a class="moretag" href="./../../../../../bd_vs_behaviac/index.html">Read More...</a>]]></description>
+					<description><![CDATA[简介 众所周知，行为树技术已经在游戏开发过程中逐渐变得流行起来。目前业界有两款知名度相对比较高的行为树组件——Behavior Designer（后面简称BD）<a class="moretag" href="/bd_vs_behaviac/">Read More...</a>]]></description>
 										<content:encoded><![CDATA[<h3><span class="ez-toc-section" id="i">简介</span></h3>
 <p>众所周知，行为树技术已经在游戏开发过程中逐渐变得流行起来。目前业界有两款知名度相对比较高的行为树组件——Behavior Designer（后面简称BD）和behaviac。本文将重点剖析这两款行为树组件的特点和差异。</p>
 <p>BD是独立游戏工作室Opsive开发的一款集成在Unity引擎中的行为树插件（<a href="http://www.opsive.com/">www.opsive.com</a>），提供了让程序员、策划、美术等方便使用的可视化编辑器，以及丰富的API以便轻松的创建任务，并无缝集成类似uScript和PlayMaker等第三方的Unity插件。</p>
-<p>behaviac是腾讯公司提供的一款行为树解决方案（<a href="./../../../../../index.html">www.behaviac.com</a>），是游戏AI的开发框架和组件。支持全平台，适用于客户端和服务器，助力游戏快速迭代开发，提供了功能强大的编辑器和API。</p>
+<p>behaviac是腾讯公司提供的一款行为树解决方案（<a href="/">www.behaviac.com</a>），是游戏AI的开发框架和组件。支持全平台，适用于客户端和服务器，助力游戏快速迭代开发，提供了功能强大的编辑器和API。</p>
 <p>目前已有多款游戏分别采用了这两款组件。</p>
 <p>那么，这两款行为树组件究竟有什么特点和差异？本文通过重点分析BD组件的特色，本着“人无我有，人有我优”的目标，期待将behaviac组件实现的更加完善。</p>
 <p>首先给出behaviac与BD的对比表，如下表所示，后面将详细介绍。</p>
-<p><img src="./../../../../../img/articles/bd_vs_behaviac.png" alt="bd_vs_behaviac" /></p>
+<p><img src="/img/articles/bd_vs_behaviac.png" alt="bd_vs_behaviac" /></p>
 <h3 id="section"><span class="ez-toc-section" id="i-2">费用</span></h3>
 <p>BD是Unity Asset Store中的付费组件，可以获得到运行时的源码，如下图所示：</p>
-<p><img src="./../../../../../img/articles/bd.png" alt="bd" /></p>
+<p><img src="/img/articles/bd.png" alt="bd" /></p>
 <p>behaviac完全免费使用, 已经在Github上全部开源，包括运行时和编辑器。</p>
 <h3 id="section-1"><span class="ez-toc-section" id="i-3">平台</span></h3>
 <p>BD是Unity引擎的插件，运行时只有C#语言实现，编辑器也整合在Unity的编辑器中。</p>
@@ -69,9 +61,9 @@
 </ul>
 <p>BD常用的任务包括动作和条件节点，这两个节点是用来派生出自己游戏所需的子类来进行脚本定制，特定的逻辑体现在派生出的动作或条件节点中，暴露一些属性在编辑器中以供配置和测试。</p>
 <p>BD提供了覆盖整个Unity引擎API的各种任务，包括动画、声音、物理、角色控制、粒子系统等方面的常用类型（如下图所示），这样就允许非程序员（策划或美术）方便的创建自己的游戏AI，同时也让程序员尽量少的编写自定义的任务。</p>
-<p><img src="./../../../../../img/articles/bd_nodes.png" alt="bd_nodes" /></p>
+<p><img src="/img/articles/bd_nodes.png" alt="bd_nodes" /></p>
 <p>behaviac提供了丰富的节点类型（如下图所示），一般情况下，开发者无需扩展自己的节点就可以工作，并不需要派生自己的动作和条件节点。除了支持常用的节点外，behaviac还提供了很多快捷节点（例如，选择监控、条件执行、概率选择、随机选择等），每个节点上还可以支持添加附件（前置、后置和事件等）。</p>
-<p><img src="./../../../../../img/articles/behaviac_nodes.png" alt="behaviac_nodes" /></p>
+<p><img src="/img/articles/behaviac_nodes.png" alt="behaviac_nodes" /></p>
 <p>此外，behaviac还提供了有限状态机（FSM），并支持FSM跟行为树的嵌套使用。</p>
 <p>behaviac是基于类型信息的工作方式，只需要实现Agent子类及其属性、方法，然后在编辑器中创建行为树时选用这些属性或方法。</p>
 <h4 id="section-5"><span class="ez-toc-section" id="i-7">条件终止</span></h4>
@@ -112,7 +104,7 @@
 <div class="section-nav"></div>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../bd_vs_behaviac/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/bd_vs_behaviac/feed/</wfw:commentRss>
 			<slash:comments>8</slash:comments>
 		
 		

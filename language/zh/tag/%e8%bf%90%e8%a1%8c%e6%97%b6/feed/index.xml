@@ -9,8 +9,8 @@
 
 <channel>
 	<title>运行时 &#8211; behaviac</title>
-	<atom:link href="./../../%E8%BF%90%E8%A1%8C%E6%97%B6/feed/index.html" rel="self" type="application/rss+xml" />
-	<link>./../../../../../index.html</link>
+	<atom:link href="/language/zh/tag/%E8%BF%90%E8%A1%8C%E6%97%B6/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
 	<description>Tencent behaviac, Game AI, Behavior Tree, Finite State Machine, Hierarchical Task Network, BT FSM HTN, 腾讯开源, 游戏AI, 行为树,有限状态机,分层任务网络</description>
 	<lastBuildDate>Thu, 23 Feb 2017 08:05:20 +0000</lastBuildDate>
 	<language>zh-CN</language>
@@ -19,18 +19,10 @@
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
 	<generator>https://wordpress.org/?v=5.4.1</generator>
-
-<image>
-	<url>./../../../../../wp-content/uploads/2016/04/cropped-256x256-32x32.png</url>
-	<title>运行时 &#8211; behaviac</title>
-	<link>./../../../../../index.html</link>
-	<width>32</width>
-	<height>32</height>
-</image> 
 	<item>
 		<title>VS项目中使用behaviac组件</title>
-		<link>./../../../../../cpp_include/index.html</link>
-					<comments>./../../../../../cpp_include/index.html#comments</comments>
+		<link>/cpp_include/</link>
+					<comments>/cpp_include/#comments</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<pubDate>Fri, 13 May 2016 02:44:04 +0000</pubDate>
@@ -39,35 +31,35 @@
 		<category><![CDATA[C++]]></category>
 		<category><![CDATA[编译构建]]></category>
 		<category><![CDATA[运行时]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=311</guid>
+		<guid isPermaLink="false">/?p=311</guid>
 
-					<description><![CDATA[下载完behaviac组件的全部源码后，整个组件的目录结构，如下图所示： 将behaviac组件整合到自己的项目中时，可以通过两种方式使用behaviac组件：<a class="moretag" href="./../../../../../cpp_include/index.html">Read More...</a>]]></description>
+					<description><![CDATA[下载完behaviac组件的全部源码后，整个组件的目录结构，如下图所示： 将behaviac组件整合到自己的项目中时，可以通过两种方式使用behaviac组件：<a class="moretag" href="/cpp_include/">Read More...</a>]]></description>
 										<content:encoded><![CDATA[<p id="cbehaviac">下载完behaviac组件的全部源码后，整个组件的目录结构，如下图所示：</p>
-<p><img src="./../../../../../img/tutorials/tutorial16/sourceFolder.png" alt="" /></p>
+<p><img src="/img/tutorials/tutorial16/sourceFolder.png" alt="" /></p>
 <p>将behaviac组件整合到自己的项目中时，可以通过两种方式使用behaviac组件：</p>
 <ul>
 <li>将全部源码（包括behaviac组件的所有<a href="https://github.com/Tencent/behaviac/blob/master/inc/behaviac">.h</a>和<a href="https://github.com/Tencent/behaviac/blob/master/src">.cpp</a>文件）全部复制到自己的游戏项目中。</li>
 <li>单独编译behaviac组件库，生成lib文件，然后自己的项目包含.h文件和生成的.lib文件。</li>
 </ul>
-<p>对于上面的第二种用法，请先参考<a href="./../../../../../docs/zh/tutorials/how_to_build/index.html">如何编译构建</a>文档来编译构建behavaic组件。</p>
+<p>对于上面的第二种用法，请先参考<a href="/docs/zh/tutorials/how_to_build/">如何编译构建</a>文档来编译构建behavaic组件。</p>
 <p>在Windows平台，如果是使用VS来管理项目的，需要在VS的项目“Property Pages”-&gt;“Configuration Properties”-&gt;“C/C++”-&gt;“General”中的“Additional Include Directories”项中添加behaviac组件头文件（即图1中的inc文件夹）所在的路径，如下图所示：</p>
-<p><img src="./../../../../../img/tutorials/tutorial16/includeHeaderSettings.png" alt="" /></p>
+<p><img src="/img/tutorials/tutorial16/includeHeaderSettings.png" alt="" /></p>
 <p>再在VS的项目“Property Pages”-&gt;“Configuration Properties”-&gt;“Linker”-&gt;“General”中的“Additional Library Directories”项中添加自己编译出的behaviac lib文件（即图1中的lib文件夹）所在的路径，如下图所示：</p>
-<p><img src="./../../../../../img/tutorials/tutorial16/includeLibSettings.png" alt="" /></p>
+<p><img src="/img/tutorials/tutorial16/includeLibSettings.png" alt="" /></p>
 <p>最后在VS的项目“Property Pages”-&gt;“Configuration Properties”-&gt;“Linker”-&gt;“Input”中的“Additional Dependencies”项中添加自己编译出的behaviac lib文件，如下图所示：</p>
-<p><img src="./../../../../../img/tutorials/tutorial16/addLibSettings.png" alt="" /></p>
+<p><img src="/img/tutorials/tutorial16/addLibSettings.png" alt="" /></p>
 <p>注意：上图中的behaviac_debugdll_win32_vs2010.lib文件是用VS2010编译出来的，说明游戏项目也需要用VS2010来编译。如果你的游戏项目使用其他版本的VS，则编译behaviac组件也需要用相应版本的VS来编译。</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../cpp_include/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/cpp_include/feed/</wfw:commentRss>
 			<slash:comments>3</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>C++运行时端的使用上手</title>
-		<link>./../../../../../tutorial14_cpp_workflow/index.html</link>
-					<comments>./../../../../../tutorial14_cpp_workflow/index.html#comments</comments>
+		<link>/tutorial14_cpp_workflow/</link>
+					<comments>/tutorial14_cpp_workflow/#comments</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<pubDate>Fri, 13 May 2016 02:21:24 +0000</pubDate>
@@ -75,11 +67,11 @@
 		<category><![CDATA[上手]]></category>
 		<category><![CDATA[C++]]></category>
 		<category><![CDATA[运行时]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=273</guid>
+		<guid isPermaLink="false">/?p=273</guid>
 
-					<description><![CDATA[运行时（游戏）端使用行为树之前，需要确保行为树文件已经成功导出。 如何注册和导出类型信息请参考C++类型信息的注册和导出，如何导出行为树请参考导出和使用XML/<a class="moretag" href="./../../../../../tutorial14_cpp_workflow/index.html">Read More...</a>]]></description>
+					<description><![CDATA[运行时（游戏）端使用行为树之前，需要确保行为树文件已经成功导出。 如何注册和导出类型信息请参考C++类型信息的注册和导出，如何导出行为树请参考导出和使用XML/<a class="moretag" href="/tutorial14_cpp_workflow/">Read More...</a>]]></description>
 										<content:encoded><![CDATA[<p id="c">运行时（游戏）端使用行为树之前，需要确保行为树文件已经成功导出。</p>
-<p>如何注册和导出类型信息请参考<a href="./../../../../../docs/zh/tutorials/tutorial3_1_meta_cpp_register/index.html">C++类型信息的注册和导出</a>，如何导出行为树请参考<a href="./../../../../../docs/zh/tutorials/tutorial4_1_export_xml_bson/index.html">导出和使用XML/BSON行为树</a>。</p>
+<p>如何注册和导出类型信息请参考<a href="/docs/zh/tutorials/tutorial3_1_meta_cpp_register/">C++类型信息的注册和导出</a>，如何导出行为树请参考<a href="/docs/zh/tutorials/tutorial4_1_export_xml_bson/">导出和使用XML/BSON行为树</a>。</p>
 <p>通过编辑器导出行为树文件后，运行时端的执行主要分为三个部分：</p>
 <ul>
 <li>初始化</li>
@@ -130,7 +122,7 @@
 <li>Workspace::SetFilePath指定的是编辑器中Workspace的导出路径，可以是绝对路径。当指定的是相对路径的时候，相对的是当前<strong>工作路径</strong>（一般都是运行程序所在目录）。</li>
 <li>Agent::btload使用的文件名是相对于Workspace::SetFilePath指定的路径，没有扩展名，可以有目录结构的层次化文件名，如“node_test/selector_loop_ut_7”。在编辑器中打开某个行为树后，右键文件页选取“复制文件名”获取。</li>
 </ul>
-<p><img src="./../../../../../img/tutorials/tutorial14/copy_filepath.png" alt="copy_filepath" /></p>
+<p><img src="/img/tutorials/tutorial14/copy_filepath.png" alt="copy_filepath" /></p>
 <ul>
 <li>例如：
 <ul>
@@ -148,7 +140,7 @@
 </ul>
 <h3 id="section-1"><span class="ez-toc-section" id="2">2 循环更新</span></h3>
 <p>在游戏的主循环中，添加执行Agent实例的行为树相关代码，也即通过调用Agent类的接口btexec()或Workspace类的接口Update()来执行行为树。</p>
-<p>这两种执行方式的区别，请参考<a href="./../../../../../docs/zh/tutorials/tutorial13_updateloop/index.html">更新流程</a>。</p>
+<p>这两种执行方式的区别，请参考<a href="/docs/zh/tutorials/tutorial13_updateloop/">更新流程</a>。</p>
 <p>如下代码样例所示：</p>
 <div class="highlighter-rouge">
 <pre class="highlight"><code>
@@ -189,15 +181,15 @@
 <p>以上步骤的完整代码，请参考<a href="https://github.com/Tencent/behaviac/blob/master/test/demo_running/demo_running.cpp">demo_running.cpp</a>文件。</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../tutorial14_cpp_workflow/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/tutorial14_cpp_workflow/feed/</wfw:commentRss>
 			<slash:comments>2</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>C++运行时端中元信息的注册和导出</title>
-		<link>./../../../../../tutorial3_1_meta_cpp_register/index.html</link>
-					<comments>./../../../../../tutorial3_1_meta_cpp_register/index.html#comments</comments>
+		<link>/tutorial3_1_meta_cpp_register/</link>
+					<comments>/tutorial3_1_meta_cpp_register/#comments</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<pubDate>Fri, 13 May 2016 02:23:51 +0000</pubDate>
@@ -205,11 +197,11 @@
 		<category><![CDATA[上手]]></category>
 		<category><![CDATA[C++]]></category>
 		<category><![CDATA[运行时]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=276</guid>
+		<guid isPermaLink="false">/?p=276</guid>
 
-					<description><![CDATA[behaviac组件的基本运作机制就是在运行时端（C++）和编辑器通过元信息进行交互，如图1所示。其中，元信息里面包含了类自身的描述、属性、方法及类的实例等。 <a class="moretag" href="./../../../../../tutorial3_1_meta_cpp_register/index.html">Read More...</a>]]></description>
+					<description><![CDATA[behaviac组件的基本运作机制就是在运行时端（C++）和编辑器通过元信息进行交互，如图1所示。其中，元信息里面包含了类自身的描述、属性、方法及类的实例等。 <a class="moretag" href="/tutorial3_1_meta_cpp_register/">Read More...</a>]]></description>
 										<content:encoded><![CDATA[<p id="c">behaviac组件的基本运作机制就是在运行时端（C++）和编辑器通过元信息进行交互，如图1所示。其中，元信息里面包含了类自身的描述、属性、方法及类的实例等。</p>
-<p><img class="aligncenter" src="./../../../../../img/overview/meta.png" alt="" /></p>
+<p><img class="aligncenter" src="/img/overview/meta.png" alt="" /></p>
 <p style="text-align: center;">图1 基于元信息的编辑器和运行时端的交互</p>
 <p>在运行时端，也即游戏代码端，通过注册（C++通过宏的方式）并导出供行为树引擎和编辑器使用的XML元信息。运行时端主要是由程序员编写Agent的子类及其属性和方法，然后调用相关接口将这些元信息导出，就可以在编辑器中对这些元信息进行使用。</p>
 <p>在编辑器中也可以创建和编辑元信息。在项目开始初期，也就是程序员还没把代码写出来之前，策划就可以自己手动的创建一些Agent子类、属性和方法等元信息。这样可以加速游戏原型的创建，也就是策划不用等程序员，就可以进行游戏原型的编辑。</p>
@@ -320,15 +312,15 @@
 <p>更多细节可以参考behaviac组件C++源码中附带的test/demo_running工程的<a href="https://github.com/Tencent/behaviac/blob/master/test/demo_running/demo_running.cpp">demo_running.cpp</a>文件。</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../tutorial3_1_meta_cpp_register/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/tutorial3_1_meta_cpp_register/feed/</wfw:commentRss>
 			<slash:comments>2</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>C#运行时端中元信息的注册和导出</title>
-		<link>./../../../../../tutorial3_2_meta_cs_register/index.html</link>
-					<comments>./../../../../../tutorial3_2_meta_cs_register/index.html#respond</comments>
+		<link>/tutorial3_2_meta_cs_register/</link>
+					<comments>/tutorial3_2_meta_cs_register/#respond</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<pubDate>Fri, 13 May 2016 02:25:57 +0000</pubDate>
@@ -336,11 +328,11 @@
 		<category><![CDATA[unity]]></category>
 		<category><![CDATA[上手]]></category>
 		<category><![CDATA[运行时]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=278</guid>
+		<guid isPermaLink="false">/?p=278</guid>
 
-					<description><![CDATA[behaviac组件的基本运作机制就是在运行时端（C#）和编辑器通过元信息进行交互，如图1所示。其中，元信息里面包含了类自身的描述、属性、方法及类的实例等。 图<a class="moretag" href="./../../../../../tutorial3_2_meta_cs_register/index.html">Read More...</a>]]></description>
+					<description><![CDATA[behaviac组件的基本运作机制就是在运行时端（C#）和编辑器通过元信息进行交互，如图1所示。其中，元信息里面包含了类自身的描述、属性、方法及类的实例等。 图<a class="moretag" href="/tutorial3_2_meta_cs_register/">Read More...</a>]]></description>
 										<content:encoded><![CDATA[<p id="c-">behaviac组件的基本运作机制就是在运行时端（C#）和编辑器通过元信息进行交互，如图1所示。其中，元信息里面包含了类自身的描述、属性、方法及类的实例等。</p>
-<p><img class="aligncenter" src="./../../../../../img/overview/meta.png" alt="" /></p>
+<p><img class="aligncenter" src="/img/overview/meta.png" alt="" /></p>
 <p style="text-align: center;">图1 基于元信息的编辑器和运行时端的交互</p>
 <p>在运行时端，也即游戏代码端，通过注册（C#通过标记Attribute的方式）并导出供行为树引擎和编辑器使用的XML元信息。运行时端主要是由程序员编写Agent的子类及其属性和方法，然后调用相关接口将这些元信息导出，就可以在编辑器中对这些元信息进行使用。</p>
 <p>在编辑器中也可以创建和编辑元信息。在项目开始初期，也就是程序员还没把代码写出来之前，策划就可以自己手动的创建一些Agent子类、属性和方法等元信息。这样可以加速游戏原型的创建，也就是策划不用等程序员，就可以进行游戏原型的编辑。</p>
@@ -427,15 +419,15 @@
 <p>更多细节可以参考behaviac组件C#源码中附带的integration/BattleCityDemo工程的<a href="https://github.com/Tencent/behaviac/blob/master/integration/BattleCityDemo/Assets/Scripts/BehaviacSystem.cs">BehaviacSystem.cs</a>文件。</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../tutorial3_2_meta_cs_register/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/tutorial3_2_meta_cs_register/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>导出和使用XML/BSON行为树</title>
-		<link>./../../../../../tutorial4_1_export_xml_bson/index.html</link>
-					<comments>./../../../../../tutorial4_1_export_xml_bson/index.html#respond</comments>
+		<link>/tutorial4_1_export_xml_bson/</link>
+					<comments>/tutorial4_1_export_xml_bson/#respond</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<pubDate>Fri, 13 May 2016 02:27:46 +0000</pubDate>
@@ -444,15 +436,15 @@
 		<category><![CDATA[上手]]></category>
 		<category><![CDATA[C++]]></category>
 		<category><![CDATA[运行时]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=282</guid>
+		<guid isPermaLink="false">/?p=282</guid>
 
-					<description><![CDATA[目前behaviac组件支持4种文件格式（XML、BSON、C++和C#）行为树的导出。在项目开发过程中，建议使用XML格式的导出文件，以便于调试和查错等；而在<a class="moretag" href="./../../../../../tutorial4_1_export_xml_bson/index.html">Read More...</a>]]></description>
+					<description><![CDATA[目前behaviac组件支持4种文件格式（XML、BSON、C++和C#）行为树的导出。在项目开发过程中，建议使用XML格式的导出文件，以便于调试和查错等；而在<a class="moretag" href="/tutorial4_1_export_xml_bson/">Read More...</a>]]></description>
 										<content:encoded><![CDATA[<p id="section">目前behaviac组件支持4种文件格式（XML、BSON、C++和C#）行为树的导出。在项目开发过程中，建议使用XML格式的导出文件，以便于调试和查错等；而在最终的发布（release）版本中，可以导出C++或C#格式的行为树文件，以便提高运行效率。</p>
 <h3 id="xmlbson">导出和使用XML/BSON行为树</h3>
 <ul>
 <li>在编辑器中导出整个工作区文件，在“导出行为树”对话框中，勾选“Xml Behavior Exporter”或“Bson Behavior Exporter”，如下图所示：</li>
 </ul>
-<p><img class="aligncenter" src="./../../../../../img/tutorials/tutorial4/exportXMLBson.png" alt="" /></p>
+<p><img class="aligncenter" src="/img/tutorials/tutorial4/exportXMLBson.png" alt="" /></p>
 <ul>
 <li>导出行为树文件结束后，回到运行时（游戏）代码端，按以下步骤使用行为树文件：
 <ul>
@@ -461,7 +453,7 @@
 <li>调用Workspace::SetFileFormat(…)函数，设置加载行为树的文件格式，如果不调用则默认加载EFF_xml格式。</li>
 <li>通过调用Agent的接口btload(…)加载所需的行为树文件。</li>
 <li>通过调用Agent的接口btsetcurrent(…)设置当前准备执行的行为树文件。</li>
-<li>行为树的更新执行流程请参考<a href="./../../../../../docs/zh/tutorials/tutorial13_updateloop/index.html">更新流程</a>。</li>
+<li>行为树的更新执行流程请参考<a href="/docs/zh/tutorials/tutorial13_updateloop/">更新流程</a>。</li>
 <li>在游戏的释放函数里面，添加Agent::Unregister&lt;***&gt;()用于释放类型的注册信息。</li>
 </ul>
 </li>
@@ -560,15 +552,15 @@
 <p>更多细节可以参考behaviac组件C#源码中附带的integration/BattleCityDemo工程的<a href="https://github.com/Tencent/behaviac/blob/master/integration/BattleCityDemo/Assets/Scripts/BehaviacSystem.cs">BehaviacSystem.cs</a>文件。</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../tutorial4_1_export_xml_bson/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/tutorial4_1_export_xml_bson/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>类、结构体或枚举的数组</title>
-		<link>./../../../../../tutorial8_customarray/index.html</link>
-					<comments>./../../../../../tutorial8_customarray/index.html#respond</comments>
+		<link>/tutorial8_customarray/</link>
+					<comments>/tutorial8_customarray/#respond</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<pubDate>Fri, 13 May 2016 02:34:48 +0000</pubDate>
@@ -576,9 +568,9 @@
 		<category><![CDATA[扩展]]></category>
 		<category><![CDATA[C++]]></category>
 		<category><![CDATA[运行时]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=296</guid>
+		<guid isPermaLink="false">/?p=296</guid>
 
-					<description><![CDATA[对于C#版，类型信息不支持[]类型的数组，只支持List&#60;***&#62;类型的数组。 对于C++版，需要按照如下方式进行注册： 基本类型（bool、int<a class="moretag" href="./../../../../../tutorial8_customarray/index.html">Read More...</a>]]></description>
+					<description><![CDATA[对于C#版，类型信息不支持[]类型的数组，只支持List&#60;***&#62;类型的数组。 对于C++版，需要按照如下方式进行注册： 基本类型（bool、int<a class="moretag" href="/tutorial8_customarray/">Read More...</a>]]></description>
 										<content:encoded><![CDATA[<p id="section">对于C#版，类型信息不支持[]类型的数组，只支持List&lt;***&gt;类型的数组。</p>
 <p>对于C++版，需要按照如下方式进行注册：</p>
 <p>基本类型（bool、int、float、char、sbyte、ubyte等）的数组可以直接使用，但当使用到其他自定义类型数组的时候，需要添加特殊的宏和代码，否则运行时可能会有错误（如果没有使用到相应的操作，则没有错误）：</p>
@@ -634,15 +626,15 @@
 <p>更多细节可以参考behaviac组件C++源码中附带的<a href="https://github.com/Tencent/behaviac/blob/master/test/btunittest/Agent/EmployeeParTestAgent.h">EmployeeParTestAgent.h</a>文件中的类EmployeeParTestAgent。</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../tutorial8_customarray/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/tutorial8_customarray/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>自定义枚举</title>
-		<link>./../../../../../tutorial7_customenum/index.html</link>
-					<comments>./../../../../../tutorial7_customenum/index.html#respond</comments>
+		<link>/tutorial7_customenum/</link>
+					<comments>/tutorial7_customenum/#respond</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<pubDate>Fri, 13 May 2016 02:34:01 +0000</pubDate>
@@ -650,9 +642,9 @@
 		<category><![CDATA[扩展]]></category>
 		<category><![CDATA[C++]]></category>
 		<category><![CDATA[运行时]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=294</guid>
+		<guid isPermaLink="false">/?p=294</guid>
 
-					<description><![CDATA[类似于自定义类，在.h文件中，任意编写一个自定义枚举类型，然后通过宏DECLARE_BEHAVIAC_ENUM声明该枚举类型。需要注意的是，宏DECLARE_B<a class="moretag" href="./../../../../../tutorial7_customenum/index.html">Read More...</a>]]></description>
+					<description><![CDATA[类似于自定义类，在.h文件中，任意编写一个自定义枚举类型，然后通过宏DECLARE_BEHAVIAC_ENUM声明该枚举类型。需要注意的是，宏DECLARE_B<a class="moretag" href="/tutorial7_customenum/">Read More...</a>]]></description>
 										<content:encoded><![CDATA[<ul>
 <li>类似于自定义类，在.h文件中，任意编写一个自定义枚举类型，然后通过宏DECLARE_BEHAVIAC_ENUM声明该枚举类型。需要注意的是，宏DECLARE_BEHAVIAC_ENUM必须定义在全局的namespace里，即放在任何命名空间之外。<br />
 如下代码样例所示：</li>
@@ -722,24 +714,24 @@
 <div>如果只是声明了，但是没有被使用过，则不会被导出。</div>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../tutorial7_customenum/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/tutorial7_customenum/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>自定义类或结构体</title>
-		<link>./../../../../../tutorial6_customtypes/index.html</link>
-					<comments>./../../../../../tutorial6_customtypes/index.html#comments</comments>
+		<link>/tutorial6_customtypes/</link>
+					<comments>/tutorial6_customtypes/#comments</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<pubDate>Fri, 13 May 2016 02:32:53 +0000</pubDate>
 				<category><![CDATA[3.5]]></category>
 		<category><![CDATA[扩展]]></category>
 		<category><![CDATA[运行时]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=292</guid>
+		<guid isPermaLink="false">/?p=292</guid>
 
-					<description><![CDATA[在.h文件中，任意编写一个自定义的类或结构体，并用宏DECLARE_BEHAVIAC_STRUCT声明该类或者结构体为非虚类，如下代码所示： struct Ty<a class="moretag" href="./../../../../../tutorial6_customtypes/index.html">Read More...</a>]]></description>
+					<description><![CDATA[在.h文件中，任意编写一个自定义的类或结构体，并用宏DECLARE_BEHAVIAC_STRUCT声明该类或者结构体为非虚类，如下代码所示： struct Ty<a class="moretag" href="/tutorial6_customtypes/">Read More...</a>]]></description>
 										<content:encoded><![CDATA[<ul>
 <li>在.h文件中，任意编写一个自定义的类或结构体，并用宏DECLARE_BEHAVIAC_STRUCT声明该类或者结构体为非虚类，如下代码所示：</li>
 </ul>
@@ -776,29 +768,29 @@ behaviac::TypeRegister::UnRegister&amp;amp;amp;amp;lt; TypeTest2_t &amp;amp;amp;
 <p>更多细节可以参考behaviac组件C++源码库中btunittest工程的<a href="https://github.com/Tencent/behaviac/blob/master/test/btunittest/Others/reflectionunittest.cpp">reflectionunittest.cpp</a>文件中TypeTest2_t结构体相关的代码。</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../tutorial6_customtypes/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/tutorial6_customtypes/feed/</wfw:commentRss>
 			<slash:comments>3</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>扩展使用已有的类型</title>
-		<link>./../../../../../tutorial5_extendtypes/index.html</link>
-					<comments>./../../../../../tutorial5_extendtypes/index.html#respond</comments>
+		<link>/tutorial5_extendtypes/</link>
+					<comments>/tutorial5_extendtypes/#respond</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<pubDate>Fri, 13 May 2016 02:32:11 +0000</pubDate>
 				<category><![CDATA[3.5]]></category>
 		<category><![CDATA[扩展]]></category>
 		<category><![CDATA[运行时]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=290</guid>
+		<guid isPermaLink="false">/?p=290</guid>
 
-					<description><![CDATA[在某些情况下，除了运行时库（C++）中提供支持的一些基本类型（bool、short、int、float等）之外，behaviac还支持扩展使用已有的或者用户自定<a class="moretag" href="./../../../../../tutorial5_extendtypes/index.html">Read More...</a>]]></description>
+					<description><![CDATA[在某些情况下，除了运行时库（C++）中提供支持的一些基本类型（bool、short、int、float等）之外，behaviac还支持扩展使用已有的或者用户自定<a class="moretag" href="/tutorial5_extendtypes/">Read More...</a>]]></description>
 										<content:encoded><![CDATA[<p>在某些情况下，除了运行时库（C++）中提供支持的一些基本类型（bool、short、int、float等）之外，behaviac还支持扩展使用已有的或者用户自定义的类、结构体和枚举类型。<br />
 这里有两种情况，其处理方式是不同的：</p>
 <ul>
 <li>有些类型是程序中本来就有的，该类型可能是某个第三方库中提供的，但这些类型是不方便随意修改的。</li>
-<li>另外一些可以随便修改的类型，请参考<a href="./../../../../../docs/zh/tutorials/tutorial6_customtypes/index.html">自定义类或结构体</a>。</li>
+<li>另外一些可以随便修改的类型，请参考<a href="/docs/zh/tutorials/tutorial6_customtypes/">自定义类或结构体</a>。</li>
 </ul>
 <h3 id="section">字符串和数组类型</h3>
 <p>需要注意的是，behaviac组件为了支持C++的反射系统，对字符串和数组类型有如下要求：</p>
@@ -925,15 +917,15 @@ behaviac::TypeRegister::UnRegister&amp;amp;amp;amp;lt; TypeTest2_t &amp;amp;amp;
 <p>详细代码可以参考behaviac组件C++源码库中btunittest工程的<a href="https://github.com/Tencent/behaviac/blob/master/test/btunittest/ext/extendstruct.h">extendstruct.h</a>文件。</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../tutorial5_extendtypes/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/tutorial5_extendtypes/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>热加载</title>
-		<link>./../../../../../tutorial12_hotreload/index.html</link>
-					<comments>./../../../../../tutorial12_hotreload/index.html#respond</comments>
+		<link>/tutorial12_hotreload/</link>
+					<comments>/tutorial12_hotreload/#respond</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<pubDate>Fri, 13 May 2016 02:41:28 +0000</pubDate>
@@ -941,13 +933,13 @@ behaviac::TypeRegister::UnRegister&amp;amp;amp;amp;lt; TypeTest2_t &amp;amp;amp;
 		<category><![CDATA[概念]]></category>
 		<category><![CDATA[编辑器]]></category>
 		<category><![CDATA[运行时]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=304</guid>
+		<guid isPermaLink="false">/?p=304</guid>
 
-					<description><![CDATA[behaviac组件中的编辑器和运行时库都支持热加载，但是只针对XML/BSON格式的行为树文件。 在编辑器中，只要当前打开的行为树文件在编辑器外由于某种原因得<a class="moretag" href="./../../../../../tutorial12_hotreload/index.html">Read More...</a>]]></description>
+					<description><![CDATA[behaviac组件中的编辑器和运行时库都支持热加载，但是只针对XML/BSON格式的行为树文件。 在编辑器中，只要当前打开的行为树文件在编辑器外由于某种原因得<a class="moretag" href="/tutorial12_hotreload/">Read More...</a>]]></description>
 										<content:encoded><![CDATA[<p id="section">behaviac组件中的编辑器和运行时库都支持热加载，但是只针对XML/BSON格式的行为树文件。</p>
 <p>在编辑器中，只要当前打开的行为树文件在编辑器外由于某种原因得到修改（例如，通过项目中的文件版本管理系统强制同步行为树文件，或者通过文本编辑器强制修改行为树XML文件等），那么都可以自动的在编辑器中得到刷新。</p>
 <p>对于运行时端（或程序端），只要在编辑器中修改了行为树文件并重新导出，那么在游戏运行过程中不用退出游戏，最新导出的行为树就可以自动进行加载。这样可以及时查看或使用行为树最新的修改效果。</p>
-<p>行为树的更新执行流程请参考<a href="./../../../../../docs/zh/tutorials/tutorial13_updateloop/index.html">更新流程</a>。</p>
+<p>行为树的更新执行流程请参考<a href="/docs/zh/tutorials/tutorial13_updateloop/">更新流程</a>。</p>
 <p>为了启动热加载功能，需要确保在运行时端直接或间接调用了Workspace::DebugUpdate()函数，有两种方式：</p>
 <ul>
 <li>如果Agent的行为树是通过调用Workspace::Update()来集中执行的，则无需额外调用Workspace::DebugUpdate()函数</li>
@@ -955,15 +947,15 @@ behaviac::TypeRegister::UnRegister&amp;amp;amp;amp;lt; TypeTest2_t &amp;amp;amp;
 </ul>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../tutorial12_hotreload/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/tutorial12_hotreload/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>优化及性能</title>
-		<link>./../../../../../performence/index.html</link>
-					<comments>./../../../../../performence/index.html#comments</comments>
+		<link>/performence/</link>
+					<comments>/performence/#comments</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<pubDate>Fri, 13 May 2016 02:39:39 +0000</pubDate>
@@ -972,9 +964,9 @@ behaviac::TypeRegister::UnRegister&amp;amp;amp;amp;lt; TypeTest2_t &amp;amp;amp;
 		<category><![CDATA[优化]]></category>
 		<category><![CDATA[编译构建]]></category>
 		<category><![CDATA[运行时]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=300</guid>
+		<guid isPermaLink="false">/?p=300</guid>
 
-					<description><![CDATA[优化及性能 宏BEHAVIAC_RELEASE定义的时候是最终版，BEHAVIAC_RELEASE没有定义的时候是为开发版。 在debug版中，BEHAVIAC<a class="moretag" href="./../../../../../performence/index.html">Read More...</a>]]></description>
+					<description><![CDATA[优化及性能 宏BEHAVIAC_RELEASE定义的时候是最终版，BEHAVIAC_RELEASE没有定义的时候是为开发版。 在debug版中，BEHAVIAC<a class="moretag" href="/performence/">Read More...</a>]]></description>
 										<content:encoded><![CDATA[<h2 id="section">优化及性能</h2>
 <p>宏BEHAVIAC_RELEASE定义的时候是最终版，BEHAVIAC_RELEASE没有定义的时候是为开发版。</p>
 <ul>
@@ -984,7 +976,7 @@ behaviac::TypeRegister::UnRegister&amp;amp;amp;amp;lt; TypeTest2_t &amp;amp;amp;
 <div class="note info">
 <h5>BEHAVIAC_RELEASE缺省下是否定义的说明</h5>
 </div>
-<p>BEHAVIAC_RELEASE缺省下是否定义可以参考文章《<a href="./../../../build/index.html">构建说明</a>》。</p>
+<p>BEHAVIAC_RELEASE缺省下是否定义可以参考文章《<a href="/language/zh/build/">构建说明</a>》。</p>
 <p>简单来说对于Cpp，当使用CMake的时候，BEHAVIAC_VERSION_MODE用来控制BEHAVIAC_RELEASE是否定义：</p>
 <ol>
 <li>Default：缺省模式是Debug下BEHAVIAC_RELEASE没有定义，而Release下BEHAVIAC_RELEASE有定义</li>
@@ -992,7 +984,7 @@ behaviac::TypeRegister::UnRegister&amp;amp;amp;amp;lt; TypeTest2_t &amp;amp;amp;
 <li>ForceUseRelease：强制定义BEHAVIAC_RELEASE</li>
 </ol>
 <p>而当BEHAVIAC_RELEASE有定义的最终版里，logging和socketing是关闭的，也不支持连接编辑器。</p>
-<p>具体可以参考文章《<a href="./../../../config/index.html">开发功能开关</a>》。</p>
+<p>具体可以参考文章《<a href="/language/zh/config/">开发功能开关</a>》。</p>
 <p>总之，针对效率可以有下述选择：</p>
 <ol>
 <li>定义BEHAVIAC_RELEASE，从而不编译诸如logging、socketing、热加载等开发功能，提供最高效率，也不支持连调功能。
@@ -1012,28 +1004,28 @@ behaviac::TypeRegister::UnRegister&amp;amp;amp;amp;lt; TypeTest2_t &amp;amp;amp;
 <h5>overhead</h5>
 </div>
 <p>behaviac可以导出xml(bson)，或者源码（cpp/c#），源码的效率要优于数据（xml/bson）的执行效率。实际上这里的效率都是指的behaviac本身的overhead，如果提供的<code class="highlighter-rouge">方法</code>本身效率很低，运行很慢，behaviac本身的overhead就可以忽略不计了，无论是选用导出何种格式都遇事无补，这个时候，最需要解决的是优化方法的执行效率。</p>
-<p><img src="./../../../../../img/references/overhead.png" alt="overhead" /><br />
+<p><img src="/img/references/overhead.png" alt="overhead" /><br />
 如上图，尽管xml格式是cpp格式的大约2倍，但这个overhead实际上是非常小的，只有0.0000269秒，0.0269毫秒。（具体数据会因为测试环境的不同有差异）。</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../performence/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/performence/feed/</wfw:commentRss>
 			<slash:comments>3</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>运行时端常用类的介绍</title>
-		<link>./../../../../../basic_classes/index.html</link>
-					<comments>./../../../../../basic_classes/index.html#respond</comments>
+		<link>/basic_classes/</link>
+					<comments>/basic_classes/#respond</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<pubDate>Mon, 11 Apr 2016 09:49:47 +0000</pubDate>
 				<category><![CDATA[文章]]></category>
 		<category><![CDATA[上手]]></category>
 		<category><![CDATA[运行时]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=152</guid>
+		<guid isPermaLink="false">/?p=152</guid>
 
-					<description><![CDATA[在使用behaviac运行时端（Runtime）的源代码或API时，有几个最常用的类值得注意：如Workspace、Agent、Config等。 Workspa<a class="moretag" href="./../../../../../basic_classes/index.html">Read More...</a>]]></description>
+					<description><![CDATA[在使用behaviac运行时端（Runtime）的源代码或API时，有几个最常用的类值得注意：如Workspace、Agent、Config等。 Workspa<a class="moretag" href="/basic_classes/">Read More...</a>]]></description>
 										<content:encoded><![CDATA[<p>在使用behaviac运行时端（Runtime）的源代码或API时，有几个最常用的类值得注意：如Workspace、Agent、Config等。</p>
 <h3>Workspace类</h3>
 <p>Workspace类主要用于管理类型信息的导出，加载、卸载、执行、停止执行行为树，设置时间和帧数等。</p>
@@ -1077,7 +1069,7 @@ behaviac::TypeRegister::UnRegister&amp;amp;amp;amp;lt; TypeTest2_t &amp;amp;amp;
 <p>详见文档《<a href="{{site.url}}{{site.baseurl}}/docs/zh/articles/config/">开发功能开关</a>》。</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../basic_classes/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/basic_classes/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		

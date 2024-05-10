@@ -7,8 +7,8 @@
 	>
 <channel>
 	<title>《教程3：Agent实例》的评论</title>
-	<atom:link href="/tutorial_3_agent_instance/feed/" rel="self" type="application/rss+xml" />
-	<link>/tutorial_3_agent_instance/</link>
+	<atom:link href="http://www.behaviac.com/tutorial_3_agent_instance/feed/" rel="self" type="application/rss+xml" />
+	<link>http://www.behaviac.com/tutorial_3_agent_instance/</link>
 	<description>Tencent behaviac, Game AI, Behavior Tree, Finite State Machine, Hierarchical Task Network, BT FSM HTN, 腾讯开源, 游戏AI, 行为树,有限状态机,分层任务网络</description>
 	<lastBuildDate>Mon, 26 Mar 2018 16:07:20 +0000</lastBuildDate>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
@@ -16,50 +16,50 @@
 	<generator>https://wordpress.org/?v=4.9.1</generator>
 	<item>
 		<title>作者：cainhuang</title>
-		<link>/tutorial_3_agent_instance/#comment-412</link>
+		<link>http://www.behaviac.com/tutorial_3_agent_instance/#comment-412</link>
 		<dc:creator><![CDATA[cainhuang]]></dc:creator>
 		<pubDate>Mon, 09 Oct 2017 00:36:48 +0000</pubDate>
-		<guid isPermaLink="false">/</guid>
+		<guid isPermaLink="false">http://www.behaviac.com/</guid>
 		<description><![CDATA[C#版支持Unity版和纯C#版，使用BEHAVIAC_CS_ONLY宏，纯C#版的Agent不从Mono继承]]></description>
 		<content:encoded><![CDATA[<p>C#版支持Unity版和纯C#版，使用BEHAVIAC_CS_ONLY宏，纯C#版的Agent不从Mono继承</p>
 ]]></content:encoded>
 	</item>
 	<item>
 		<title>作者：jamesjxiao</title>
-		<link>/tutorial_3_agent_instance/#comment-411</link>
+		<link>http://www.behaviac.com/tutorial_3_agent_instance/#comment-411</link>
 		<dc:creator><![CDATA[jamesjxiao]]></dc:creator>
 		<pubDate>Tue, 03 Oct 2017 07:44:58 +0000</pubDate>
-		<guid isPermaLink="false">/</guid>
+		<guid isPermaLink="false">http://www.behaviac.com/</guid>
 		<description><![CDATA[这里说到了一个比较重要的点，Unity版本的Agent其实建议不要继承自Mono，而是走存逻辑类。我现在的代码框架是脱离mono的，但因为Agent继承自mono，所以需要手动创建一个逻辑GameObject，非常的不优雅哟~]]></description>
 		<content:encoded><![CDATA[<p>这里说到了一个比较重要的点，Unity版本的Agent其实建议不要继承自Mono，而是走存逻辑类。我现在的代码框架是脱离mono的，但因为Agent继承自mono，所以需要手动创建一个逻辑GameObject，非常的不优雅哟~</p>
 ]]></content:encoded>
 	</item>
 	<item>
 		<title>作者：Princerin</title>
-		<link>/tutorial_3_agent_instance/#comment-384</link>
+		<link>http://www.behaviac.com/tutorial_3_agent_instance/#comment-384</link>
 		<dc:creator><![CDATA[Princerin]]></dc:creator>
 		<pubDate>Fri, 31 Mar 2017 06:22:32 +0000</pubDate>
-		<guid isPermaLink="false">/</guid>
+		<guid isPermaLink="false">http://www.behaviac.com/</guid>
 		<description><![CDATA[再次感谢！]]></description>
 		<content:encoded><![CDATA[<p>再次感谢！</p>
 ]]></content:encoded>
 	</item>
 	<item>
 		<title>作者：Princerin</title>
-		<link>/tutorial_3_agent_instance/#comment-383</link>
+		<link>http://www.behaviac.com/tutorial_3_agent_instance/#comment-383</link>
 		<dc:creator><![CDATA[Princerin]]></dc:creator>
 		<pubDate>Fri, 31 Mar 2017 06:21:47 +0000</pubDate>
-		<guid isPermaLink="false">/</guid>
+		<guid isPermaLink="false">http://www.behaviac.com/</guid>
 		<description><![CDATA[知道原因了，因为Unity版本的Agent是继承自MonoBehaviour的，如果按照纯C#版本教程那样new Agent()，在Unity的语义环境里是不允许有这种行为的，导致new出来的实例判空操作会返回true。在Unity的应用场景里应该将Agent挂到GameObject，是我自己使用方式不对:)。]]></description>
 		<content:encoded><![CDATA[<p>知道原因了，因为Unity版本的Agent是继承自MonoBehaviour的，如果按照纯C#版本教程那样new Agent()，在Unity的语义环境里是不允许有这种行为的，导致new出来的实例判空操作会返回true。在Unity的应用场景里应该将Agent挂到GameObject，是我自己使用方式不对:)。</p>
 ]]></content:encoded>
 	</item>
 	<item>
 		<title>作者：cainhuang</title>
-		<link>/tutorial_3_agent_instance/#comment-382</link>
+		<link>http://www.behaviac.com/tutorial_3_agent_instance/#comment-382</link>
 		<dc:creator><![CDATA[cainhuang]]></dc:creator>
 		<pubDate>Fri, 31 Mar 2017 06:18:13 +0000</pubDate>
-		<guid isPermaLink="false">/</guid>
+		<guid isPermaLink="false">http://www.behaviac.com/</guid>
 		<description><![CDATA[可以改成这样试试：
 if (!object.ReferenceEquals(pAgent, null) &amp;&amp; object.ReferenceEquals(pParent, null) &amp;&amp; !Utils.IsStaticClass(instanceName))
 
@@ -71,10 +71,10 @@ if (!object.ReferenceEquals(pAgent, null) &#038;&#038; object.ReferenceEquals(pP
 	</item>
 	<item>
 		<title>作者：Princerin</title>
-		<link>/tutorial_3_agent_instance/#comment-381</link>
+		<link>http://www.behaviac.com/tutorial_3_agent_instance/#comment-381</link>
 		<dc:creator><![CDATA[Princerin]]></dc:creator>
 		<pubDate>Fri, 31 Mar 2017 04:25:32 +0000</pubDate>
-		<guid isPermaLink="false">/</guid>
+		<guid isPermaLink="false">http://www.behaviac.com/</guid>
 		<description><![CDATA[感谢回复。胶水代码已经包含在工程里。经过调试runtime发现，在Util.cs的466行，
 if (pAgent != null &#038;&#038; pParent == null &#038;&#038; !Utils.IsStaticClass(instanceName))这一句，在pParent有值的情况下，很奇怪的进入了if语句，从而在FirstAgent里寻找SecondAgentInstance实例，导致失败。而运行纯CS版本不会出现这个问题，是否因为Unity.Object重载了==操作符导致？谢谢。]]></description>
 		<content:encoded><![CDATA[<p>感谢回复。胶水代码已经包含在工程里。经过调试runtime发现，在Util.cs的466行，<br />
@@ -83,20 +83,20 @@ if (pAgent != null &amp;&amp; pParent == null &amp;&amp; !Utils.IsStaticClass(in
 	</item>
 	<item>
 		<title>作者：cainhuang</title>
-		<link>/tutorial_3_agent_instance/#comment-380</link>
+		<link>http://www.behaviac.com/tutorial_3_agent_instance/#comment-380</link>
 		<dc:creator><![CDATA[cainhuang]]></dc:creator>
 		<pubDate>Fri, 31 Mar 2017 02:03:11 +0000</pubDate>
-		<guid isPermaLink="false">/</guid>
+		<guid isPermaLink="false">http://www.behaviac.com/</guid>
 		<description><![CDATA[编辑器生成的胶水代码也要一起编译，里面有自动生成Agent.RegisterInstance()相关代码]]></description>
 		<content:encoded><![CDATA[<p>编辑器生成的胶水代码也要一起编译，里面有自动生成Agent.RegisterInstance()相关代码</p>
 ]]></content:encoded>
 	</item>
 	<item>
 		<title>作者：Princerin</title>
-		<link>/tutorial_3_agent_instance/#comment-379</link>
+		<link>http://www.behaviac.com/tutorial_3_agent_instance/#comment-379</link>
 		<dc:creator><![CDATA[Princerin]]></dc:creator>
 		<pubDate>Fri, 31 Mar 2017 01:56:40 +0000</pubDate>
-		<guid isPermaLink="false">/</guid>
+		<guid isPermaLink="false">http://www.behaviac.com/</guid>
 		<description><![CDATA[使用U3D跟着教程3进行操作，到最后运行会报错找不到SecondAgentInstance，而在代码里确实已经调用过
 SecondAgent SecondAgentInstance = new SecondAgent();
 Agent.BindInstance(SecondAgentInstance, &quot;SecondAgentInstance&quot;);

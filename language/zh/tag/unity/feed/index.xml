@@ -9,8 +9,8 @@
 
 <channel>
 	<title>unity &#8211; behaviac</title>
-	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
-	<link>./../../../../../index.html</link>
+	<atom:link href="/language/zh/tag/unity/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
 	<description>Tencent behaviac, Game AI, Behavior Tree, Finite State Machine, Hierarchical Task Network, BT FSM HTN, 腾讯开源, 游戏AI, 行为树,有限状态机,分层任务网络</description>
 	<lastBuildDate>Mon, 16 Jan 2017 01:55:23 +0000</lastBuildDate>
 	<language>zh-CN</language>
@@ -19,18 +19,10 @@
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
 	<generator>https://wordpress.org/?v=5.4.1</generator>
-
-<image>
-	<url>./../../../../../wp-content/uploads/2016/04/cropped-256x256-32x32.png</url>
-	<title>unity &#8211; behaviac</title>
-	<link>./../../../../../index.html</link>
-	<width>32</width>
-	<height>32</height>
-</image> 
 	<item>
 		<title>C#运行时端中元信息的注册和导出</title>
-		<link>./../../../../../tutorial3_2_meta_cs_register/index.html</link>
-					<comments>./../../../../../tutorial3_2_meta_cs_register/index.html#respond</comments>
+		<link>/tutorial3_2_meta_cs_register/</link>
+					<comments>/tutorial3_2_meta_cs_register/#respond</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<pubDate>Fri, 13 May 2016 02:25:57 +0000</pubDate>
@@ -38,11 +30,11 @@
 		<category><![CDATA[unity]]></category>
 		<category><![CDATA[上手]]></category>
 		<category><![CDATA[运行时]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=278</guid>
+		<guid isPermaLink="false">/?p=278</guid>
 
-					<description><![CDATA[behaviac组件的基本运作机制就是在运行时端（C#）和编辑器通过元信息进行交互，如图1所示。其中，元信息里面包含了类自身的描述、属性、方法及类的实例等。 图<a class="moretag" href="./../../../../../tutorial3_2_meta_cs_register/index.html">Read More...</a>]]></description>
+					<description><![CDATA[behaviac组件的基本运作机制就是在运行时端（C#）和编辑器通过元信息进行交互，如图1所示。其中，元信息里面包含了类自身的描述、属性、方法及类的实例等。 图<a class="moretag" href="/tutorial3_2_meta_cs_register/">Read More...</a>]]></description>
 										<content:encoded><![CDATA[<p id="c-">behaviac组件的基本运作机制就是在运行时端（C#）和编辑器通过元信息进行交互，如图1所示。其中，元信息里面包含了类自身的描述、属性、方法及类的实例等。</p>
-<p><img class="aligncenter" src="./../../../../../img/overview/meta.png" alt="" /></p>
+<p><img class="aligncenter" src="/img/overview/meta.png" alt="" /></p>
 <p style="text-align: center;">图1 基于元信息的编辑器和运行时端的交互</p>
 <p>在运行时端，也即游戏代码端，通过注册（C#通过标记Attribute的方式）并导出供行为树引擎和编辑器使用的XML元信息。运行时端主要是由程序员编写Agent的子类及其属性和方法，然后调用相关接口将这些元信息导出，就可以在编辑器中对这些元信息进行使用。</p>
 <p>在编辑器中也可以创建和编辑元信息。在项目开始初期，也就是程序员还没把代码写出来之前，策划就可以自己手动的创建一些Agent子类、属性和方法等元信息。这样可以加速游戏原型的创建，也就是策划不用等程序员，就可以进行游戏原型的编辑。</p>
@@ -129,15 +121,15 @@
 <p>更多细节可以参考behaviac组件C#源码中附带的integration/BattleCityDemo工程的<a href="https://github.com/Tencent/behaviac/blob/master/integration/BattleCityDemo/Assets/Scripts/BehaviacSystem.cs">BehaviacSystem.cs</a>文件。</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../tutorial3_2_meta_cs_register/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/tutorial3_2_meta_cs_register/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>导出和使用C#行为树</title>
-		<link>./../../../../../tutorial4_3_export_cs/index.html</link>
-					<comments>./../../../../../tutorial4_3_export_cs/index.html#respond</comments>
+		<link>/tutorial4_3_export_cs/</link>
+					<comments>/tutorial4_3_export_cs/#respond</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<pubDate>Fri, 13 May 2016 02:29:49 +0000</pubDate>
@@ -145,40 +137,40 @@
 		<category><![CDATA[unity]]></category>
 		<category><![CDATA[上手]]></category>
 		<category><![CDATA[编辑器]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=286</guid>
+		<guid isPermaLink="false">/?p=286</guid>
 
-					<description><![CDATA[在“导出行为树”对话框中，选择“C# Behavior Exporter”，如下图所示： 点击上图中右侧的“…”设置按钮，在弹出的“C#导出设置”对话框中设置导<a class="moretag" href="./../../../../../tutorial4_3_export_cs/index.html">Read More...</a>]]></description>
+					<description><![CDATA[在“导出行为树”对话框中，选择“C# Behavior Exporter”，如下图所示： 点击上图中右侧的“…”设置按钮，在弹出的“C#导出设置”对话框中设置导<a class="moretag" href="/tutorial4_3_export_cs/">Read More...</a>]]></description>
 										<content:encoded><![CDATA[<ul>
 <li>在“导出行为树”对话框中，选择“C# Behavior Exporter”，如下图所示：</li>
 </ul>
-<p><img class="aligncenter" src="./../../../../../img/tutorials/tutorial4/exportCs.png" alt="" /></p>
+<p><img class="aligncenter" src="/img/tutorials/tutorial4/exportCs.png" alt="" /></p>
 <ul>
 <li>点击上图中右侧的“…”设置按钮，在弹出的“C#导出设置”对话框中设置导出文件所在的位置，如图2所示：</li>
 </ul>
-<p><img class="aligncenter" src="./../../../../../img/tutorials/tutorial4/csExportSettings.png" alt="" /></p>
+<p><img class="aligncenter" src="/img/tutorials/tutorial4/csExportSettings.png" alt="" /></p>
 <ul>
-<li>回到“导出行为树”对话框，点击“导出”按钮，开始导出<code class="highlighter-rouge">C#</code>文件。在指定的导出位置（默认为当前工作区的导出路径）会自动生成一个名为<code class="highlighter-rouge">behaviac_generated</code>的文件夹，里面生成了<code class="highlighter-rouge">behaviors</code>和<code class="highlighter-rouge">types</code>两个子文件夹，如图3所示：<img class="aligncenter" src="./../../../../../img/tutorials/tutorial4/exportedCsFiles.png" alt="" /></li>
+<li>回到“导出行为树”对话框，点击“导出”按钮，开始导出<code class="highlighter-rouge">C#</code>文件。在指定的导出位置（默认为当前工作区的导出路径）会自动生成一个名为<code class="highlighter-rouge">behaviac_generated</code>的文件夹，里面生成了<code class="highlighter-rouge">behaviors</code>和<code class="highlighter-rouge">types</code>两个子文件夹，如图3所示：<img class="aligncenter" src="/img/tutorials/tutorial4/exportedCsFiles.png" alt="" /></li>
 <li><code class="highlighter-rouge">behaviors</code>文件夹含有<code class="highlighter-rouge">generated_behaviors.cs</code>及其他单个的行为树<code class="highlighter-rouge">.cs</code>文件（如果没有勾选“导出统一文件？”，则对每一棵行为树都会生成独立的<code class="highlighter-rouge">.cs</code>文件）。</li>
 <li><code class="highlighter-rouge">types</code>文件夹中含有<code class="highlighter-rouge">agentproperties.cs</code>（为<code class="highlighter-rouge">Agent</code>类自定义的属性和方法，会扩展在该文件中）、<code class="highlighter-rouge">customizedtypes.cs</code>（自定义的枚举和结构体类型，会生成在这个文件中）以及其他的<code class="highlighter-rouge">Agent</code>子类的文件（这些文件是为添加的<code class="highlighter-rouge">Agent</code>子类自动生成的<code class="highlighter-rouge">.cs</code>文件，需要程序员补充代码进一步实现这些<code class="highlighter-rouge">Agent</code>子类的逻辑），这些自动生成的文件都需要包含到自己的游戏项目中。</li>
 </ul>
 <ul>
 <li>注意：这些自动生成的文件都需要包含到自己的游戏项目中，一起参与整个项目代码的编译和构建。</li>
-<li>在项目中包含了这些自动生成的<code class="highlighter-rouge">.cs</code>文件后，就可以与前面提及的<a href="./../../../../../docs/zh/tutorials/tutorial4_1_export_xml_bson/index.html">导出和使用XML/BSON行为树</a>一样的接口和方式加载使用这些文件，只是需要将文件格式改为<code class="highlighter-rouge">EFF_cs</code>：</li>
+<li>在项目中包含了这些自动生成的<code class="highlighter-rouge">.cs</code>文件后，就可以与前面提及的<a href="/docs/zh/tutorials/tutorial4_1_export_xml_bson/">导出和使用XML/BSON行为树</a>一样的接口和方式加载使用这些文件，只是需要将文件格式改为<code class="highlighter-rouge">EFF_cs</code>：</li>
 </ul>
 <figure class="highlight">
 <pre><code class="language-cs" data-lang="cs"><span class="n">behaviac</span><span class="p">.</span><span class="n">Workspace</span><span class="p">.</span><span class="n">Instance</span><span class="p">.</span><span class="n">FileFormat</span> <span class="p">=</span> <span class="n">behaviac</span><span class="p">.</span><span class="n">Workspace</span><span class="p">.</span><span class="n">EFileFormat</span><span class="p">.</span><span class="n">EF</span></code></pre>
 </figure>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../tutorial4_3_export_cs/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/tutorial4_3_export_cs/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>导出和使用XML/BSON行为树</title>
-		<link>./../../../../../tutorial4_1_export_xml_bson/index.html</link>
-					<comments>./../../../../../tutorial4_1_export_xml_bson/index.html#respond</comments>
+		<link>/tutorial4_1_export_xml_bson/</link>
+					<comments>/tutorial4_1_export_xml_bson/#respond</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<pubDate>Fri, 13 May 2016 02:27:46 +0000</pubDate>
@@ -187,15 +179,15 @@
 		<category><![CDATA[上手]]></category>
 		<category><![CDATA[C++]]></category>
 		<category><![CDATA[运行时]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=282</guid>
+		<guid isPermaLink="false">/?p=282</guid>
 
-					<description><![CDATA[目前behaviac组件支持4种文件格式（XML、BSON、C++和C#）行为树的导出。在项目开发过程中，建议使用XML格式的导出文件，以便于调试和查错等；而在<a class="moretag" href="./../../../../../tutorial4_1_export_xml_bson/index.html">Read More...</a>]]></description>
+					<description><![CDATA[目前behaviac组件支持4种文件格式（XML、BSON、C++和C#）行为树的导出。在项目开发过程中，建议使用XML格式的导出文件，以便于调试和查错等；而在<a class="moretag" href="/tutorial4_1_export_xml_bson/">Read More...</a>]]></description>
 										<content:encoded><![CDATA[<p id="section">目前behaviac组件支持4种文件格式（XML、BSON、C++和C#）行为树的导出。在项目开发过程中，建议使用XML格式的导出文件，以便于调试和查错等；而在最终的发布（release）版本中，可以导出C++或C#格式的行为树文件，以便提高运行效率。</p>
 <h3 id="xmlbson">导出和使用XML/BSON行为树</h3>
 <ul>
 <li>在编辑器中导出整个工作区文件，在“导出行为树”对话框中，勾选“Xml Behavior Exporter”或“Bson Behavior Exporter”，如下图所示：</li>
 </ul>
-<p><img class="aligncenter" src="./../../../../../img/tutorials/tutorial4/exportXMLBson.png" alt="" /></p>
+<p><img class="aligncenter" src="/img/tutorials/tutorial4/exportXMLBson.png" alt="" /></p>
 <ul>
 <li>导出行为树文件结束后，回到运行时（游戏）代码端，按以下步骤使用行为树文件：
 <ul>
@@ -204,7 +196,7 @@
 <li>调用Workspace::SetFileFormat(…)函数，设置加载行为树的文件格式，如果不调用则默认加载EFF_xml格式。</li>
 <li>通过调用Agent的接口btload(…)加载所需的行为树文件。</li>
 <li>通过调用Agent的接口btsetcurrent(…)设置当前准备执行的行为树文件。</li>
-<li>行为树的更新执行流程请参考<a href="./../../../../../docs/zh/tutorials/tutorial13_updateloop/index.html">更新流程</a>。</li>
+<li>行为树的更新执行流程请参考<a href="/docs/zh/tutorials/tutorial13_updateloop/">更新流程</a>。</li>
 <li>在游戏的释放函数里面，添加Agent::Unregister&lt;***&gt;()用于释放类型的注册信息。</li>
 </ul>
 </li>
@@ -303,15 +295,15 @@
 <p>更多细节可以参考behaviac组件C#源码中附带的integration/BattleCityDemo工程的<a href="https://github.com/Tencent/behaviac/blob/master/integration/BattleCityDemo/Assets/Scripts/BehaviacSystem.cs">BehaviacSystem.cs</a>文件。</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../tutorial4_1_export_xml_bson/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/tutorial4_1_export_xml_bson/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>运行时端的执行流程</title>
-		<link>./../../../../../tutorial13_updateloop/index.html</link>
-					<comments>./../../../../../tutorial13_updateloop/index.html#comments</comments>
+		<link>/tutorial13_updateloop/</link>
+					<comments>/tutorial13_updateloop/#comments</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<pubDate>Fri, 13 May 2016 02:42:05 +0000</pubDate>
@@ -319,9 +311,9 @@
 		<category><![CDATA[unity]]></category>
 		<category><![CDATA[上手]]></category>
 		<category><![CDATA[C++]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=306</guid>
+		<guid isPermaLink="false">/?p=306</guid>
 
-					<description><![CDATA[在运行时端（下面以C++版来加以说明，C#版基本类似），整个组建的更新可以通过Workspace::Update()函数来执行，该函数主要包括两大功能： 调用D<a class="moretag" href="./../../../../../tutorial13_updateloop/index.html">Read More...</a>]]></description>
+					<description><![CDATA[在运行时端（下面以C++版来加以说明，C#版基本类似），整个组建的更新可以通过Workspace::Update()函数来执行，该函数主要包括两大功能： 调用D<a class="moretag" href="/tutorial13_updateloop/">Read More...</a>]]></description>
 										<content:encoded><![CDATA[<p id="section">在运行时端（下面以C++版来加以说明，C#版基本类似），整个组建的更新可以通过Workspace::Update()函数来执行，该函数主要包括两大功能：</p>
 <ul>
 <li>调用DebugUpdate()函数来更新一些连调和热加载相关的功能。</li>
@@ -365,7 +357,7 @@
 </ul>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../tutorial13_updateloop/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/tutorial13_updateloop/feed/</wfw:commentRss>
 			<slash:comments>3</slash:comments>
 		
 		

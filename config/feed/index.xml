@@ -8,8 +8,8 @@
 <channel>
 	<title>
 	《开发功能开关》的评论	</title>
-	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
-	<link>./../index.html</link>
+	<atom:link href="/config/feed/" rel="self" type="application/rss+xml" />
+	<link>/config/</link>
 	<description>Tencent behaviac, Game AI, Behavior Tree, Finite State Machine, Hierarchical Task Network, BT FSM HTN, 腾讯开源, 游戏AI, 行为树,有限状态机,分层任务网络</description>
 	<lastBuildDate>Fri, 17 Mar 2017 09:30:44 +0000</lastBuildDate>
 	<sy:updatePeriod>
@@ -20,11 +20,11 @@
 	<item>
 		<title>
 		作者：教程7：行为树的调试 &#8211; behaviac		</title>
-		<link>./../index.html#comment-374</link>
+		<link>/config/#comment-374</link>
 
 		<dc:creator><![CDATA[教程7：行为树的调试 &#8211; behaviac]]></dc:creator>
 		<pubDate>Fri, 17 Mar 2017 09:30:44 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=160#comment-374</guid>
+		<guid isPermaLink="false">/?p=160#comment-374</guid>
 
 					<description><![CDATA[[&#8230;] 连调需要游戏是开发版本（即宏BEHAVIAC_RELEASE没有被定义），发布版本下没有连调的功能，可以参考文章《版本说明》和《开发功能开关》。 [&#8230;]]]></description>
 			<content:encoded><![CDATA[<p>[&#8230;] 连调需要游戏是开发版本（即宏BEHAVIAC_RELEASE没有被定义），发布版本下没有连调的功能，可以参考文章《版本说明》和《开发功能开关》。 [&#8230;]</p>
@@ -34,11 +34,11 @@
 		<item>
 		<title>
 		作者：关于性能优化的说明 &#8211; behaviac		</title>
-		<link>./../index.html#comment-77</link>
+		<link>/config/#comment-77</link>
 
 		<dc:creator><![CDATA[关于性能优化的说明 &#8211; behaviac]]></dc:creator>
 		<pubDate>Thu, 23 Jun 2016 07:25:59 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=160#comment-77</guid>
+		<guid isPermaLink="false">/?p=160#comment-77</guid>
 
 					<description><![CDATA[[&#8230;] 当发布版本或测量性能的时候，可以定义宏BEHAVIAC_RELEASE或者使用功能开关 [&#8230;]]]></description>
 			<content:encoded><![CDATA[<p>[&#8230;] 当发布版本或测量性能的时候，可以定义宏BEHAVIAC_RELEASE或者使用功能开关 [&#8230;]</p>
@@ -48,11 +48,11 @@
 		<item>
 		<title>
 		作者：调试功能的说明 &#8211; behaviac		</title>
-		<link>./../index.html#comment-66</link>
+		<link>/config/#comment-66</link>
 
 		<dc:creator><![CDATA[调试功能的说明 &#8211; behaviac]]></dc:creator>
 		<pubDate>Fri, 17 Jun 2016 08:05:33 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=160#comment-66</guid>
+		<guid isPermaLink="false">/?p=160#comment-66</guid>
 
 					<description><![CDATA[[&#8230;] 可以参考：版本说明和开发功能开关。 [&#8230;]]]></description>
 			<content:encoded><![CDATA[<p>[&#8230;] 可以参考：版本说明和开发功能开关。 [&#8230;]</p>
@@ -62,11 +62,11 @@
 		<item>
 		<title>
 		作者：优化及性能 &#8211; behaviac		</title>
-		<link>./../index.html#comment-23</link>
+		<link>/config/#comment-23</link>
 
 		<dc:creator><![CDATA[优化及性能 &#8211; behaviac]]></dc:creator>
 		<pubDate>Wed, 01 Jun 2016 08:18:36 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=160#comment-23</guid>
+		<guid isPermaLink="false">/?p=160#comment-23</guid>
 
 					<description><![CDATA[[&#8230;] 具体可以参考开发功能开关 [&#8230;]]]></description>
 			<content:encoded><![CDATA[<p>[&#8230;] 具体可以参考开发功能开关 [&#8230;]</p>

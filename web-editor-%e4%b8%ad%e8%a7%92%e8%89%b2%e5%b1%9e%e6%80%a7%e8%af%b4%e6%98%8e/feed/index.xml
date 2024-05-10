@@ -8,8 +8,8 @@
 <channel>
 	<title>
 	《密码保护：web editor 中角色属性说明》的评论	</title>
-	<atom:link href="./../../web-editor-%E4%B8%AD%E8%A7%92%E8%89%B2%E5%B1%9E%E6%80%A7%E8%AF%B4%E6%98%8E/feed/index.html" rel="self" type="application/rss+xml" />
-	<link>./../index.html</link>
+	<atom:link href="/web-editor-%E4%B8%AD%E8%A7%92%E8%89%B2%E5%B1%9E%E6%80%A7%E8%AF%B4%E6%98%8E/feed/" rel="self" type="application/rss+xml" />
+	<link>/web-editor-%e4%b8%ad%e8%a7%92%e8%89%b2%e5%b1%9e%e6%80%a7%e8%af%b4%e6%98%8e/</link>
 	<description>Tencent behaviac, Game AI, Behavior Tree, Finite State Machine, Hierarchical Task Network, BT FSM HTN, 腾讯开源, 游戏AI, 行为树,有限状态机,分层任务网络</description>
 	<lastBuildDate>Wed, 03 May 2017 01:57:32 +0000</lastBuildDate>
 	<sy:updatePeriod>

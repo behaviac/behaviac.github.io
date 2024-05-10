@@ -466,7 +466,7 @@ ins {
 }
 
 hr {
-	background: url(./images/dotted-line.png) repeat center top;
+	background: url(/wp-content/themes/behaviac/images/dotted-line.png) repeat center top;
 	background-size: 4px 4px;
 	border: 0;
 	height: 1px;
@@ -1550,7 +1550,7 @@ ul.nav-container ul a:hover,
 /* preloading images */
 .owl-item.loading{
 	min-height: 150px;
-	background: url(./AjaxLoader.gif) no-repeat center center
+	background: url(/wp-content/themes/behaviac/AjaxLoader.gif) no-repeat center center
 }
 
 .other-slider {
@@ -2451,7 +2451,7 @@ footer.entry-meta {
 }
 
 .format-audio .audio-content {
-	background: url(./images/dotted-line.png) repeat-y left top;
+	background: url(/wp-content/themes/behaviac/images/dotted-line.png) repeat-y left top;
 	background-size: 4px 4px;
 	float: right;
 	padding-left: 35px;
@@ -2694,7 +2694,7 @@ footer.entry-meta {
 
 .format-status .entry-content:before,
 .format-status .entry-meta:before {
-	background: url(./images/dotted-line.png) repeat-y left bottom;
+	background: url(/wp-content/themes/behaviac/images/dotted-line.png) repeat-y left bottom;
 	background-size: 4px 4px;
 	content: "";
 	display: block;
@@ -3217,7 +3217,7 @@ nav.navigation .nav-links a:visited {
 
 .comment-list > li:after,
 .comment-list .children > li:before {
-	background: url(./images/dotted-line.png) repeat left top;
+	background: url(/wp-content/themes/behaviac/images/dotted-line.png) repeat left top;
 	background-size: 4px 4px;
 	content: "";
 	display: block;
@@ -4844,14 +4844,14 @@ color:rgb(58,58,58);
 	margin-right: 40px;
 }
 .function-block-bg-simple{
-	background:  #FFFFFF url(./images/function_simple.png) no-repeat  bottom right;
+	background:  #FFFFFF url(/wp-content/themes/behaviac/images/function_simple.png) no-repeat  bottom right;
 }
 
 .function-block-bg-flexible{
-	background:  #FFFFFF url(./images/function_flexible.png) no-repeat  bottom right;
+	background:  #FFFFFF url(/wp-content/themes/behaviac/images/function_flexible.png) no-repeat  bottom right;
 }
 .function-block-bg-powerful{
-	background:  #FFFFFF url(./images/function_powerful.png) no-repeat  bottom right;
+	background:  #FFFFFF url(/wp-content/themes/behaviac/images/function_powerful.png) no-repeat  bottom right;
 }
 .download-version{
 	background: rgba(14, 148, 105, 0.81) !important;
@@ -4918,14 +4918,14 @@ color:rgb(58,58,58);
         margin-bottom: 10px;
 	}
 	.function-block-bg-simple{
-		/*background:  #FFFFFF url(./images/function_simple.png) no-repeat  bottom right;*/
+		/*background:  #FFFFFF url(/wp-content/themes/behaviac/images/function_simple.png) no-repeat  bottom right;*/
 	}
 
 	.function-block-bg-flexible{
-		/*background:  #FFFFFF url(./images/function_flexible.png) no-repeat  bottom right;*/
+		/*background:  #FFFFFF url(/wp-content/themes/behaviac/images/function_flexible.png) no-repeat  bottom right;*/
 	}
 	.function-block-bg-powerful{
-		/*background:  #FFFFFF url(./images/function_powerful.png) no-repeat  bottom right;*/
+		/*background:  #FFFFFF url(/wp-content/themes/behaviac/images/function_powerful.png) no-repeat  bottom right;*/
 	}
 	.download-version{
 		background: rgba(14, 148, 105, 0.81) !important;

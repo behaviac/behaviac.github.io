@@ -8,10 +8,10 @@
 <channel>
 	<title>
 	《附件》的评论	</title>
-	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
-	<link>./../index.html</link>
+	<atom:link href="/attachment/feed/" rel="self" type="application/rss+xml" />
+	<link>/attachment/</link>
 	<description>Tencent behaviac, Game AI, Behavior Tree, Finite State Machine, Hierarchical Task Network, BT FSM HTN, 腾讯开源, 游戏AI, 行为树,有限状态机,分层任务网络</description>
-	<lastBuildDate>Sat, 02 Nov 2019 10:03:16 +0000</lastBuildDate>
+	<lastBuildDate>Thu, 13 Apr 2017 02:33:20 +0000</lastBuildDate>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
@@ -19,45 +19,12 @@
 	<generator>https://wordpress.org/?v=5.4.1</generator>
 	<item>
 		<title>
-		作者：admin		</title>
-		<link>./../index.html#comment-481</link>
-
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<pubDate>Sat, 02 Nov 2019 10:03:16 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=226#comment-481</guid>
-
-					<description><![CDATA[In reply to &lt;a href=&quot;./../index.html#comment-469&quot;&gt;dwing&lt;/a&gt;.
-
-节点更新可以理解为行为树每次运到这个节点，调用这个节点的Update()。]]></description>
-			<content:encoded><![CDATA[<p>In reply to <a href="./../index.html#comment-469">dwing</a>.</p>
-<p>节点更新可以理解为行为树每次运到这个节点，调用这个节点的Update()。</p>
-]]></content:encoded>
-		
-			</item>
-		<item>
-		<title>
-		作者：dwing		</title>
-		<link>./../index.html#comment-469</link>
-
-		<dc:creator><![CDATA[dwing]]></dc:creator>
-		<pubDate>Sat, 13 Apr 2019 10:21:29 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=226#comment-469</guid>
-
-					<description><![CDATA[&quot;Update表示所在节点每次更新时，都需要检查该前置。&quot;
-能不能解释一下什么是&quot;节点更新&quot;?]]></description>
-			<content:encoded><![CDATA[<p>&#8220;Update表示所在节点每次更新时，都需要检查该前置。&#8221;<br />
-能不能解释一下什么是&#8221;节点更新&#8221;?</p>
-]]></content:encoded>
-		
-			</item>
-		<item>
-		<title>
 		作者：并行节点 &#8211; behaviac		</title>
-		<link>./../index.html#comment-385</link>
+		<link>/attachment/#comment-385</link>
 
 		<dc:creator><![CDATA[并行节点 &#8211; behaviac]]></dc:creator>
 		<pubDate>Thu, 13 Apr 2017 02:33:20 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=226#comment-385</guid>
+		<guid isPermaLink="false">/?p=226#comment-385</guid>
 
 					<description><![CDATA[[&#8230;] 注意：作为前提条件的这种用法是不严谨的，当条件失败的时候，在并行节点返回失败之前，后续的其他节点会多执行一次。所以，请使用“前置”附件来实现这种前置条件的需求。 [&#8230;]]]></description>
 			<content:encoded><![CDATA[<p>[&#8230;] 注意：作为前提条件的这种用法是不严谨的，当条件失败的时候，在并行节点返回失败之前，后续的其他节点会多执行一次。所以，请使用“前置”附件来实现这种前置条件的需求。 [&#8230;]</p>

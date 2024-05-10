@@ -9,8 +9,8 @@
 
 <channel>
 	<title>公告 &#8211; behaviac</title>
-	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
-	<link>./../../../../../index.html</link>
+	<atom:link href="/language/zh/category/announcement/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
 	<description>Tencent behaviac, Game AI, Behavior Tree, Finite State Machine, Hierarchical Task Network, BT FSM HTN, 腾讯开源, 游戏AI, 行为树,有限状态机,分层任务网络</description>
 	<lastBuildDate>Tue, 12 Sep 2017 11:07:12 +0000</lastBuildDate>
 	<language>zh-CN</language>
@@ -19,26 +19,18 @@
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
 	<generator>https://wordpress.org/?v=5.4.1</generator>
-
-<image>
-	<url>./../../../../../wp-content/uploads/2016/04/cropped-256x256-32x32.png</url>
-	<title>公告 &#8211; behaviac</title>
-	<link>./../../../../../index.html</link>
-	<width>32</width>
-	<height>32</height>
-</image> 
 	<item>
 		<title>最新版3.6.39发布了！</title>
-		<link>./../../../../../3-6-39/index.html</link>
-					<comments>./../../../../../3-6-39/index.html#respond</comments>
+		<link>/3-6-39/</link>
+					<comments>/3-6-39/#respond</comments>
 		
 		<dc:creator><![CDATA[cainhuang]]></dc:creator>
 		<pubDate>Tue, 12 Sep 2017 11:06:56 +0000</pubDate>
 				<category><![CDATA[公告]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=2097</guid>
+		<guid isPermaLink="false">/?p=2097</guid>
 
 					<description><![CDATA[下载该版本点这里 新增“结束”节点 修复导出相关的bug 有任何问题可以去问答社区寻求帮助，或者去QQ群（433547396）寻求技术支持！]]></description>
-										<content:encoded><![CDATA[<h6><span id="i" class="ez-toc-section"><a href="./../../../downloads/index.html#3639_2017-09-12">下载该版本点这里</a></span></h6>
+										<content:encoded><![CDATA[<h6><span id="i" class="ez-toc-section"><a href="/language/zh/downloads/#3639_2017-09-12">下载该版本点这里</a></span></h6>
 <ul>
 <li>新增“结束”节点</li>
 <li>修复导出相关的bug</li>
@@ -46,23 +38,23 @@
 <p>有任何问题可以去<a href="http://bbs.behaviac.com/">问答社区</a>寻求帮助，或者去QQ群（433547396）寻求技术支持！</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../3-6-39/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/3-6-39/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>最新版3.6.38发布了！</title>
-		<link>./../../../../../version3_6_38/index.html</link>
-					<comments>./../../../../../version3_6_38/index.html#respond</comments>
+		<link>/version3_6_38/</link>
+					<comments>/version3_6_38/#respond</comments>
 		
 		<dc:creator><![CDATA[cainhuang]]></dc:creator>
 		<pubDate>Thu, 17 Aug 2017 06:41:07 +0000</pubDate>
 				<category><![CDATA[公告]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=2077</guid>
+		<guid isPermaLink="false">/?p=2077</guid>
 
-					<description><![CDATA[下载该版本点这里 修复Unity版的GC问题 支持成员属性为数组类型的初始化代码生成 有任何问题可以去问答社区寻求帮助，或者去QQ群（433547396）寻求技<a class="moretag" href="./../../../../../version3_6_38/index.html">Read More...</a>]]></description>
-										<content:encoded><![CDATA[<h6><span id="i" class="ez-toc-section"><a href="./../../../downloads/index.html#3638_2017-08-17">下载该版本点这里</a></span></h6>
+					<description><![CDATA[下载该版本点这里 修复Unity版的GC问题 支持成员属性为数组类型的初始化代码生成 有任何问题可以去问答社区寻求帮助，或者去QQ群（433547396）寻求技<a class="moretag" href="/version3_6_38/">Read More...</a>]]></description>
+										<content:encoded><![CDATA[<h6><span id="i" class="ez-toc-section"><a href="/language/zh/downloads/#3638_2017-08-17">下载该版本点这里</a></span></h6>
 <ul>
 <li>修复Unity版的GC问题</li>
 <li>支持成员属性为数组类型的初始化代码生成</li>
@@ -70,46 +62,46 @@
 <p>有任何问题可以去<a href="http://bbs.behaviac.com/">问答社区</a>寻求帮助，或者去QQ群（433547396）寻求技术支持！</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../version3_6_38/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/version3_6_38/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>最新版3.6.36发布了！</title>
-		<link>./../../../../../version3_6_36/index.html</link>
-					<comments>./../../../../../version3_6_36/index.html#respond</comments>
+		<link>/version3_6_36/</link>
+					<comments>/version3_6_36/#respond</comments>
 		
 		<dc:creator><![CDATA[jonygli]]></dc:creator>
 		<pubDate>Thu, 03 Aug 2017 08:03:57 +0000</pubDate>
 				<category><![CDATA[公告]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=2068</guid>
+		<guid isPermaLink="false">/?p=2068</guid>
 
 					<description><![CDATA[下载该版本点这里 修复Task参数访问时有子树时的bug 有任何问题可以去问答社区寻求帮助，或者去QQ群（433547396）寻求技术支持！]]></description>
-										<content:encoded><![CDATA[<h6><span id="i" class="ez-toc-section"><a href="./../../../downloads/index.html#3636_2017-08-03">下载该版本点这里</a></span></h6>
+										<content:encoded><![CDATA[<h6><span id="i" class="ez-toc-section"><a href="/language/zh/downloads/#3636_2017-08-03">下载该版本点这里</a></span></h6>
 <ul>
 <li>修复Task参数访问时有子树时的bug</li>
 </ul>
 <p>有任何问题可以去<a href="http://bbs.behaviac.com/">问答社区</a>寻求帮助，或者去QQ群（433547396）寻求技术支持！</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../version3_6_36/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/version3_6_36/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>最新版3.6.35发布了！</title>
-		<link>./../../../../../%e6%9c%80%e6%96%b0%e7%89%883-6-35%e5%8f%91%e5%b8%83%e4%ba%86%ef%bc%81/index.html</link>
-					<comments>./../../../../../%e6%9c%80%e6%96%b0%e7%89%883-6-35%e5%8f%91%e5%b8%83%e4%ba%86%ef%bc%81/index.html#respond</comments>
+		<link>/%e6%9c%80%e6%96%b0%e7%89%883-6-35%e5%8f%91%e5%b8%83%e4%ba%86%ef%bc%81/</link>
+					<comments>/%e6%9c%80%e6%96%b0%e7%89%883-6-35%e5%8f%91%e5%b8%83%e4%ba%86%ef%bc%81/#respond</comments>
 		
 		<dc:creator><![CDATA[cainhuang]]></dc:creator>
 		<pubDate>Wed, 12 Jul 2017 06:35:46 +0000</pubDate>
 				<category><![CDATA[公告]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=2059</guid>
+		<guid isPermaLink="false">/?p=2059</guid>
 
-					<description><![CDATA[下载该版本点这里 修复C++/C#代码生成相关的bug 修复等待节点时间参数不能设置的bug 修复Agent改名后属性和方法被清空的bug 修复概率选择节点重入<a class="moretag" href="./../../../../../%e6%9c%80%e6%96%b0%e7%89%883-6-35%e5%8f%91%e5%b8%83%e4%ba%86%ef%bc%81/index.html">Read More...</a>]]></description>
-										<content:encoded><![CDATA[<h6><span id="i" class="ez-toc-section"><a href="./../../../downloads/index.html#3635_2017-7-11">下载该版本点这里</a></span></h6>
+					<description><![CDATA[下载该版本点这里 修复C++/C#代码生成相关的bug 修复等待节点时间参数不能设置的bug 修复Agent改名后属性和方法被清空的bug 修复概率选择节点重入<a class="moretag" href="/%e6%9c%80%e6%96%b0%e7%89%883-6-35%e5%8f%91%e5%b8%83%e4%ba%86%ef%bc%81/">Read More...</a>]]></description>
+										<content:encoded><![CDATA[<h6><span id="i" class="ez-toc-section"><a href="/language/zh/downloads/#3635_2017-7-11">下载该版本点这里</a></span></h6>
 <ul>
 <li>修复C++/C#代码生成相关的bug</li>
 <li>修复等待节点时间参数不能设置的bug</li>
@@ -117,52 +109,52 @@
 <li>修复概率选择节点重入的bug</li>
 <li>修复编辑器其他的bug</li>
 </ul>
-<p>注意：3.6是重大版本升级，请参考文档《<a href="./../../../updatenotes/index.html#36x">升级版本的步骤及注意事项</a>》，还可以结合最新版的《<a href="./../../%E6%96%87%E6%A1%A3/%E6%95%99%E7%A8%8B/index.html">教程</a>》系列上手学习。</p>
+<p>注意：3.6是重大版本升级，请参考文档《<a href="/language/zh/updatenotes/#36x">升级版本的步骤及注意事项</a>》，还可以结合最新版的《<a href="/language/zh/category/文档/教程/">教程</a>》系列上手学习。</p>
 <p>有任何问题可以去<a href="http://bbs.behaviac.com/">问答社区</a>寻求帮助，或者去QQ群（433547396）寻求技术支持！</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../%e6%9c%80%e6%96%b0%e7%89%883-6-35%e5%8f%91%e5%b8%83%e4%ba%86%ef%bc%81/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/%e6%9c%80%e6%96%b0%e7%89%883-6-35%e5%8f%91%e5%b8%83%e4%ba%86%ef%bc%81/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>最新版3.6.31发布了！</title>
-		<link>./../../../../../%e6%9c%80%e6%96%b0%e7%89%883-6-31%e5%8f%91%e5%b8%83%e4%ba%86%ef%bc%81/index.html</link>
-					<comments>./../../../../../%e6%9c%80%e6%96%b0%e7%89%883-6-31%e5%8f%91%e5%b8%83%e4%ba%86%ef%bc%81/index.html#respond</comments>
+		<link>/%e6%9c%80%e6%96%b0%e7%89%883-6-31%e5%8f%91%e5%b8%83%e4%ba%86%ef%bc%81/</link>
+					<comments>/%e6%9c%80%e6%96%b0%e7%89%883-6-31%e5%8f%91%e5%b8%83%e4%ba%86%ef%bc%81/#respond</comments>
 		
 		<dc:creator><![CDATA[cainhuang]]></dc:creator>
 		<pubDate>Fri, 21 Apr 2017 04:09:18 +0000</pubDate>
 				<category><![CDATA[公告]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=1933</guid>
+		<guid isPermaLink="false">/?p=1933</guid>
 
-					<description><![CDATA[下载该版本点这里 修复生成事件中方法的bug 修复类型信息文件热加载的bug 注意：3.6是重大版本升级，请参考文档《升级版本的步骤及注意事项》，还可以结合最新<a class="moretag" href="./../../../../../%e6%9c%80%e6%96%b0%e7%89%883-6-31%e5%8f%91%e5%b8%83%e4%ba%86%ef%bc%81/index.html">Read More...</a>]]></description>
-										<content:encoded><![CDATA[<h6><span id="i" class="ez-toc-section"><a href="./../../../downloads/index.html#3631_2017-4-24">下载该版本点这里</a></span></h6>
+					<description><![CDATA[下载该版本点这里 修复生成事件中方法的bug 修复类型信息文件热加载的bug 注意：3.6是重大版本升级，请参考文档《升级版本的步骤及注意事项》，还可以结合最新<a class="moretag" href="/%e6%9c%80%e6%96%b0%e7%89%883-6-31%e5%8f%91%e5%b8%83%e4%ba%86%ef%bc%81/">Read More...</a>]]></description>
+										<content:encoded><![CDATA[<h6><span id="i" class="ez-toc-section"><a href="/language/zh/downloads/#3631_2017-4-24">下载该版本点这里</a></span></h6>
 <ul>
 <li>修复生成事件中方法的bug</li>
 <li>修复类型信息文件热加载的bug</li>
 </ul>
-<p>注意：3.6是重大版本升级，请参考文档《<a href="./../../../updatenotes/index.html#36x">升级版本的步骤及注意事项</a>》，还可以结合最新版的《<a href="./../../%E6%96%87%E6%A1%A3/%E6%95%99%E7%A8%8B/index.html">教程</a>》系列上手学习。</p>
+<p>注意：3.6是重大版本升级，请参考文档《<a href="/language/zh/updatenotes/#36x">升级版本的步骤及注意事项</a>》，还可以结合最新版的《<a href="/language/zh/category/文档/教程/">教程</a>》系列上手学习。</p>
 <p>有任何问题可以去<a href="http://bbs.behaviac.com/">问答社区</a>寻求帮助，或者去QQ群（433547396）寻求技术支持！</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../%e6%9c%80%e6%96%b0%e7%89%883-6-31%e5%8f%91%e5%b8%83%e4%ba%86%ef%bc%81/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/%e6%9c%80%e6%96%b0%e7%89%883-6-31%e5%8f%91%e5%b8%83%e4%ba%86%ef%bc%81/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>最新版3.6.26发布了！</title>
-		<link>./../../../../../%e6%9c%80%e6%96%b0%e7%89%883-6-26%e5%8f%91%e5%b8%83%e4%ba%86%ef%bc%81/index.html</link>
-					<comments>./../../../../../%e6%9c%80%e6%96%b0%e7%89%883-6-26%e5%8f%91%e5%b8%83%e4%ba%86%ef%bc%81/index.html#respond</comments>
+		<link>/%e6%9c%80%e6%96%b0%e7%89%883-6-26%e5%8f%91%e5%b8%83%e4%ba%86%ef%bc%81/</link>
+					<comments>/%e6%9c%80%e6%96%b0%e7%89%883-6-26%e5%8f%91%e5%b8%83%e4%ba%86%ef%bc%81/#respond</comments>
 		
 		<dc:creator><![CDATA[cainhuang]]></dc:creator>
 		<pubDate>Thu, 23 Mar 2017 10:27:11 +0000</pubDate>
 				<category><![CDATA[公告]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=1856</guid>
+		<guid isPermaLink="false">/?p=1856</guid>
 
-					<description><![CDATA[下载该版本点这里 支持类型的别名 减少发送Update消息，优化调试效率 修复C#连调设置变量的bug 修复生成Agent*作为函数返回值的bug 修复方法和属<a class="moretag" href="./../../../../../%e6%9c%80%e6%96%b0%e7%89%883-6-26%e5%8f%91%e5%b8%83%e4%ba%86%ef%bc%81/index.html">Read More...</a>]]></description>
-										<content:encoded><![CDATA[<h6><span id="i" class="ez-toc-section"><a href="./../../../downloads/index.html#3626_2017-3-23">下载该版本点这里</a></span></h6>
+					<description><![CDATA[下载该版本点这里 支持类型的别名 减少发送Update消息，优化调试效率 修复C#连调设置变量的bug 修复生成Agent*作为函数返回值的bug 修复方法和属<a class="moretag" href="/%e6%9c%80%e6%96%b0%e7%89%883-6-26%e5%8f%91%e5%b8%83%e4%ba%86%ef%bc%81/">Read More...</a>]]></description>
+										<content:encoded><![CDATA[<h6><span id="i" class="ez-toc-section"><a href="/language/zh/downloads/#3626_2017-3-23">下载该版本点这里</a></span></h6>
 <ul>
 <li>支持类型的别名</li>
 <li>减少发送Update消息，优化调试效率</li>
@@ -170,27 +162,27 @@
 <li>修复生成Agent*作为函数返回值的bug</li>
 <li>修复方法和属性改名的bug</li>
 </ul>
-<p>注意：3.6是重大版本升级，请参考文档《<a href="./../../../updatenotes/index.html#36x">升级版本的步骤及注意事项</a>》，还可以结合最新版的《<a href="./../../%E6%96%87%E6%A1%A3/%E6%95%99%E7%A8%8B/index.html">教程</a>》系列上手学习。</p>
+<p>注意：3.6是重大版本升级，请参考文档《<a href="/language/zh/updatenotes/#36x">升级版本的步骤及注意事项</a>》，还可以结合最新版的《<a href="/language/zh/category/文档/教程/">教程</a>》系列上手学习。</p>
 <p>有任何问题可以去<a href="http://bbs.behaviac.com/">问答社区</a>寻求帮助，或者去QQ群（433547396）寻求技术支持！</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../%e6%9c%80%e6%96%b0%e7%89%883-6-26%e5%8f%91%e5%b8%83%e4%ba%86%ef%bc%81/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/%e6%9c%80%e6%96%b0%e7%89%883-6-26%e5%8f%91%e5%b8%83%e4%ba%86%ef%bc%81/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>最新版3.6.22发布了！</title>
-		<link>./../../../../../%e6%9c%80%e6%96%b0%e7%89%883-6-22%e5%8f%91%e5%b8%83%e4%ba%86%ef%bc%81/index.html</link>
-					<comments>./../../../../../%e6%9c%80%e6%96%b0%e7%89%883-6-22%e5%8f%91%e5%b8%83%e4%ba%86%ef%bc%81/index.html#respond</comments>
+		<link>/%e6%9c%80%e6%96%b0%e7%89%883-6-22%e5%8f%91%e5%b8%83%e4%ba%86%ef%bc%81/</link>
+					<comments>/%e6%9c%80%e6%96%b0%e7%89%883-6-22%e5%8f%91%e5%b8%83%e4%ba%86%ef%bc%81/#respond</comments>
 		
 		<dc:creator><![CDATA[cainhuang]]></dc:creator>
 		<pubDate>Fri, 03 Mar 2017 04:07:27 +0000</pubDate>
 				<category><![CDATA[公告]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=1705</guid>
+		<guid isPermaLink="false">/?p=1705</guid>
 
-					<description><![CDATA[下载该版本点这里 修复UnityEngine.Vector3及char*的导出bug 修复不能对函数参数重命名的bug 支持设置枚举类成员的值 支持C++多级命<a class="moretag" href="./../../../../../%e6%9c%80%e6%96%b0%e7%89%883-6-22%e5%8f%91%e5%b8%83%e4%ba%86%ef%bc%81/index.html">Read More...</a>]]></description>
-										<content:encoded><![CDATA[<h6><span id="i" class="ez-toc-section"><a href="./../../../downloads/index.html#3622_2017-3-2">下载该版本点这里</a></span></h6>
+					<description><![CDATA[下载该版本点这里 修复UnityEngine.Vector3及char*的导出bug 修复不能对函数参数重命名的bug 支持设置枚举类成员的值 支持C++多级命<a class="moretag" href="/%e6%9c%80%e6%96%b0%e7%89%883-6-22%e5%8f%91%e5%b8%83%e4%ba%86%ef%bc%81/">Read More...</a>]]></description>
+										<content:encoded><![CDATA[<h6><span id="i" class="ez-toc-section"><a href="/language/zh/downloads/#3622_2017-3-2">下载该版本点这里</a></span></h6>
 <ul>
 <li>修复UnityEngine.Vector3及char*的导出bug</li>
 <li>修复不能对函数参数重命名的bug</li>
@@ -198,77 +190,77 @@
 <li>支持C++多级命名空间的导出</li>
 <li>支持复制节点中的结构体成员为成员属性</li>
 </ul>
-<p>注意：3.6是重大版本升级，请参考文档《<a href="./../../../updatenotes/index.html#36x">升级版本的步骤及注意事项</a>》，还可以结合最新版的《<a href="./../../%E6%96%87%E6%A1%A3/%E6%95%99%E7%A8%8B/index.html">教程</a>》系列上手学习。</p>
+<p>注意：3.6是重大版本升级，请参考文档《<a href="/language/zh/updatenotes/#36x">升级版本的步骤及注意事项</a>》，还可以结合最新版的《<a href="/language/zh/category/文档/教程/">教程</a>》系列上手学习。</p>
 <p>有任何问题可以去<a href="http://bbs.behaviac.com/">问答社区</a>寻求帮助，或者去QQ群（433547396）寻求技术支持！</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../%e6%9c%80%e6%96%b0%e7%89%883-6-22%e5%8f%91%e5%b8%83%e4%ba%86%ef%bc%81/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/%e6%9c%80%e6%96%b0%e7%89%883-6-22%e5%8f%91%e5%b8%83%e4%ba%86%ef%bc%81/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>最新版3.6.19发布了！</title>
-		<link>./../../../../../version_3_6_19/index.html</link>
-					<comments>./../../../../../version_3_6_19/index.html#respond</comments>
+		<link>/version_3_6_19/</link>
+					<comments>/version_3_6_19/#respond</comments>
 		
 		<dc:creator><![CDATA[cainhuang]]></dc:creator>
 		<pubDate>Wed, 22 Feb 2017 10:03:06 +0000</pubDate>
 				<category><![CDATA[公告]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=1635</guid>
+		<guid isPermaLink="false">/?p=1635</guid>
 
-					<description><![CDATA[下载该版本点这里 编辑器优化了 Agent 类型的生成和使用 重构了C++的代码 提供了便于上手学习的教程和源码 修复了一些类型信息编辑的bug 注意：3.6是<a class="moretag" href="./../../../../../version_3_6_19/index.html">Read More...</a>]]></description>
-										<content:encoded><![CDATA[<h6><span id="i" class="ez-toc-section"><a href="./../../../downloads/index.html#3619_2017-2-23">下载该版本点这里</a></span></h6>
+					<description><![CDATA[下载该版本点这里 编辑器优化了 Agent 类型的生成和使用 重构了C++的代码 提供了便于上手学习的教程和源码 修复了一些类型信息编辑的bug 注意：3.6是<a class="moretag" href="/version_3_6_19/">Read More...</a>]]></description>
+										<content:encoded><![CDATA[<h6><span id="i" class="ez-toc-section"><a href="/language/zh/downloads/#3619_2017-2-23">下载该版本点这里</a></span></h6>
 <ul>
 <li>编辑器优化了 Agent 类型的生成和使用</li>
 <li>重构了C++的代码</li>
 <li>提供了便于上手学习的教程和源码</li>
 <li>修复了一些类型信息编辑的bug</li>
 </ul>
-<p>注意：3.6是重大版本升级，请参考文档《<a href="./../../../updatenotes/index.html#36x">升级版本的步骤及注意事项</a>》，还可以结合最新版的《<a href="./../../%E6%96%87%E6%A1%A3/%E6%95%99%E7%A8%8B/index.html">教程</a>》系列上手学习。</p>
+<p>注意：3.6是重大版本升级，请参考文档《<a href="/language/zh/updatenotes/#36x">升级版本的步骤及注意事项</a>》，还可以结合最新版的《<a href="/language/zh/category/文档/教程/">教程</a>》系列上手学习。</p>
 <p>有任何问题可以去<a href="http://bbs.behaviac.com/">问答社区</a>寻求帮助，或者去QQ群（433547396）寻求技术支持！</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../version_3_6_19/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/version_3_6_19/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>最新版3.5.19发布了！</title>
-		<link>./../../../../../%e6%9c%80%e6%96%b0%e7%89%883-5-19%e5%8f%91%e5%b8%83%e4%ba%86%ef%bc%81/index.html</link>
-					<comments>./../../../../../%e6%9c%80%e6%96%b0%e7%89%883-5-19%e5%8f%91%e5%b8%83%e4%ba%86%ef%bc%81/index.html#respond</comments>
+		<link>/%e6%9c%80%e6%96%b0%e7%89%883-5-19%e5%8f%91%e5%b8%83%e4%ba%86%ef%bc%81/</link>
+					<comments>/%e6%9c%80%e6%96%b0%e7%89%883-5-19%e5%8f%91%e5%b8%83%e4%ba%86%ef%bc%81/#respond</comments>
 		
 		<dc:creator><![CDATA[cainhuang]]></dc:creator>
 		<pubDate>Fri, 11 Nov 2016 08:17:46 +0000</pubDate>
 				<category><![CDATA[公告]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=1059</guid>
+		<guid isPermaLink="false">/?p=1059</guid>
 
 					<description><![CDATA[下载该版本点这里 修复C#版中枚举和结构体比较的GC bug 修复删除属性或方法后所有行为树被自动清空的bug]]></description>
-										<content:encoded><![CDATA[<h6><span id="i" class="ez-toc-section"><a href="./../../../downloads/index.html#3519_2016-11-11">下载该版本点这里</a></span></h6>
+										<content:encoded><![CDATA[<h6><span id="i" class="ez-toc-section"><a href="/language/zh/downloads/#3519_2016-11-11">下载该版本点这里</a></span></h6>
 <ul>
 <li>修复C#版中枚举和结构体比较的GC bug</li>
 <li>修复删除属性或方法后所有行为树被自动清空的bug</li>
 </ul>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../%e6%9c%80%e6%96%b0%e7%89%883-5-19%e5%8f%91%e5%b8%83%e4%ba%86%ef%bc%81/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/%e6%9c%80%e6%96%b0%e7%89%883-5-19%e5%8f%91%e5%b8%83%e4%ba%86%ef%bc%81/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>最新版3.5.18发布了！</title>
-		<link>./../../../../../%e6%9c%80%e6%96%b0%e7%89%883-5-18%e5%8f%91%e5%b8%83%e4%ba%86%ef%bc%81/index.html</link>
-					<comments>./../../../../../%e6%9c%80%e6%96%b0%e7%89%883-5-18%e5%8f%91%e5%b8%83%e4%ba%86%ef%bc%81/index.html#respond</comments>
+		<link>/%e6%9c%80%e6%96%b0%e7%89%883-5-18%e5%8f%91%e5%b8%83%e4%ba%86%ef%bc%81/</link>
+					<comments>/%e6%9c%80%e6%96%b0%e7%89%883-5-18%e5%8f%91%e5%b8%83%e4%ba%86%ef%bc%81/#respond</comments>
 		
 		<dc:creator><![CDATA[cainhuang]]></dc:creator>
 		<pubDate>Fri, 04 Nov 2016 02:04:44 +0000</pubDate>
 				<category><![CDATA[公告]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=1055</guid>
+		<guid isPermaLink="false">/?p=1055</guid>
 
 					<description><![CDATA[下载该版本点这里 修复预制中替换节点的bug 修复设置节点ID的bug 改进赋值和前置代码的生成 为加载出错时添加文件名]]></description>
-										<content:encoded><![CDATA[<h6><span id="i" class="ez-toc-section"><a href="./../../../downloads/index.html#3518_2016-11-3">下载该版本点这里</a></span></h6>
+										<content:encoded><![CDATA[<h6><span id="i" class="ez-toc-section"><a href="/language/zh/downloads/#3518_2016-11-3">下载该版本点这里</a></span></h6>
 <ul>
 <li>修复预制中替换节点的bug</li>
 <li>修复设置节点ID的bug</li>
@@ -277,46 +269,46 @@
 </ul>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../%e6%9c%80%e6%96%b0%e7%89%883-5-18%e5%8f%91%e5%b8%83%e4%ba%86%ef%bc%81/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/%e6%9c%80%e6%96%b0%e7%89%883-5-18%e5%8f%91%e5%b8%83%e4%ba%86%ef%bc%81/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>最新版3.5.16发布了！</title>
-		<link>./../../../../../%e6%9c%80%e6%96%b0%e7%89%883-5-16%e5%8f%91%e5%b8%83%e4%ba%86%ef%bc%81/index.html</link>
-					<comments>./../../../../../%e6%9c%80%e6%96%b0%e7%89%883-5-16%e5%8f%91%e5%b8%83%e4%ba%86%ef%bc%81/index.html#respond</comments>
+		<link>/%e6%9c%80%e6%96%b0%e7%89%883-5-16%e5%8f%91%e5%b8%83%e4%ba%86%ef%bc%81/</link>
+					<comments>/%e6%9c%80%e6%96%b0%e7%89%883-5-16%e5%8f%91%e5%b8%83%e4%ba%86%ef%bc%81/#respond</comments>
 		
 		<dc:creator><![CDATA[cainhuang]]></dc:creator>
 		<pubDate>Tue, 18 Oct 2016 07:16:33 +0000</pubDate>
 				<category><![CDATA[公告]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=1010</guid>
+		<guid isPermaLink="false">/?p=1010</guid>
 
 					<description><![CDATA[下载该版本点这里 修复行为树根节点Agent类型不能设置的bug 修复转换条件的效果附件中不能配置方法参数的bug]]></description>
-										<content:encoded><![CDATA[<h6><span id="i" class="ez-toc-section"><a href="./../../../downloads/index.html#3516_2016-10-18">下载该版本点这里</a></span></h6>
+										<content:encoded><![CDATA[<h6><span id="i" class="ez-toc-section"><a href="/language/zh/downloads/#3516_2016-10-18">下载该版本点这里</a></span></h6>
 <ul>
 <li>修复行为树根节点Agent类型不能设置的bug</li>
 <li>修复转换条件的效果附件中不能配置方法参数的bug</li>
 </ul>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../%e6%9c%80%e6%96%b0%e7%89%883-5-16%e5%8f%91%e5%b8%83%e4%ba%86%ef%bc%81/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/%e6%9c%80%e6%96%b0%e7%89%883-5-16%e5%8f%91%e5%b8%83%e4%ba%86%ef%bc%81/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>最新版3.5.15发布了！</title>
-		<link>./../../../../../%e6%9c%80%e6%96%b0%e7%89%883-5-15%e5%8f%91%e5%b8%83%e4%ba%86%ef%bc%81/index.html</link>
-					<comments>./../../../../../%e6%9c%80%e6%96%b0%e7%89%883-5-15%e5%8f%91%e5%b8%83%e4%ba%86%ef%bc%81/index.html#respond</comments>
+		<link>/%e6%9c%80%e6%96%b0%e7%89%883-5-15%e5%8f%91%e5%b8%83%e4%ba%86%ef%bc%81/</link>
+					<comments>/%e6%9c%80%e6%96%b0%e7%89%883-5-15%e5%8f%91%e5%b8%83%e4%ba%86%ef%bc%81/#respond</comments>
 		
 		<dc:creator><![CDATA[cainhuang]]></dc:creator>
 		<pubDate>Fri, 30 Sep 2016 08:37:10 +0000</pubDate>
 				<category><![CDATA[公告]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=998</guid>
+		<guid isPermaLink="false">/?p=998</guid>
 
 					<description><![CDATA[下载该版本点这里 修复选择节点检查错误的bug 修复导出类型路径设置的bug 修复字符串中带有转义字符和空格字符的bug]]></description>
-										<content:encoded><![CDATA[<h6><span id="i" class="ez-toc-section"><a href="./../../../downloads/index.html#3515_2016-09-26">下载该版本点这里</a></span></h6>
+										<content:encoded><![CDATA[<h6><span id="i" class="ez-toc-section"><a href="/language/zh/downloads/#3515_2016-09-26">下载该版本点这里</a></span></h6>
 <ul>
 <li>修复选择节点检查错误的bug</li>
 <li>修复导出类型路径设置的bug</li>
@@ -324,23 +316,23 @@
 </ul>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../%e6%9c%80%e6%96%b0%e7%89%883-5-15%e5%8f%91%e5%b8%83%e4%ba%86%ef%bc%81/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/%e6%9c%80%e6%96%b0%e7%89%883-5-15%e5%8f%91%e5%b8%83%e4%ba%86%ef%bc%81/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>最新版3.5.14发布了！</title>
-		<link>./../../../../../version_3_5_14/index.html</link>
-					<comments>./../../../../../version_3_5_14/index.html#respond</comments>
+		<link>/version_3_5_14/</link>
+					<comments>/version_3_5_14/#respond</comments>
 		
 		<dc:creator><![CDATA[cainhuang]]></dc:creator>
 		<pubDate>Tue, 20 Sep 2016 06:20:39 +0000</pubDate>
 				<category><![CDATA[公告]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=988</guid>
+		<guid isPermaLink="false">/?p=988</guid>
 
-					<description><![CDATA[下载该版本点这里 支持生成C++版的行为树文件的拆分，解决了在手游平台编译文件过大的问题 对于C#版的运行时源码，增加BEHAVIAC_CS_ONLY宏来表示是<a class="moretag" href="./../../../../../version_3_5_14/index.html">Read More...</a>]]></description>
-										<content:encoded><![CDATA[<h6><a href="./../../../downloads/index.html#3514_2016-09-20">下载该版本点这里</a></h6>
+					<description><![CDATA[下载该版本点这里 支持生成C++版的行为树文件的拆分，解决了在手游平台编译文件过大的问题 对于C#版的运行时源码，增加BEHAVIAC_CS_ONLY宏来表示是<a class="moretag" href="/version_3_5_14/">Read More...</a>]]></description>
+										<content:encoded><![CDATA[<h6><a href="/language/zh/downloads/#3514_2016-09-20">下载该版本点这里</a></h6>
 <ul>
 <li>支持生成C++版的行为树文件的拆分，解决了在手游平台编译文件过大的问题</li>
 <li>对于C#版的运行时源码，增加BEHAVIAC_CS_ONLY宏来表示是纯C#版，还是Unity版</li>
@@ -348,7 +340,7 @@
 </ul>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../version_3_5_14/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/version_3_5_14/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		

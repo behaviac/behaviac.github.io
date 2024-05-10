@@ -8,8 +8,8 @@
 <channel>
 	<title>
 	《目录结构》的评论	</title>
-	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
-	<link>./../index.html</link>
+	<atom:link href="/directory/feed/" rel="self" type="application/rss+xml" />
+	<link>/directory/</link>
 	<description>Tencent behaviac, Game AI, Behavior Tree, Finite State Machine, Hierarchical Task Network, BT FSM HTN, 腾讯开源, 游戏AI, 行为树,有限状态机,分层任务网络</description>
 	<lastBuildDate>Wed, 18 Jan 2017 02:05:16 +0000</lastBuildDate>
 	<sy:updatePeriod>

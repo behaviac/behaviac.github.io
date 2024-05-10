@@ -7,8 +7,8 @@
 	>
 <channel>
 	<title>《C++运行时端的使用上手》的评论</title>
-	<atom:link href="/tutorial14_cpp_workflow/feed/" rel="self" type="application/rss+xml" />
-	<link>/tutorial14_cpp_workflow/</link>
+	<atom:link href="http://www.behaviac.com/tutorial14_cpp_workflow/feed/" rel="self" type="application/rss+xml" />
+	<link>http://www.behaviac.com/tutorial14_cpp_workflow/</link>
 	<description>Tencent behaviac, Game AI, Behavior Tree, Finite State Machine, Hierarchical Task Network, BT FSM HTN, 腾讯开源, 游戏AI, 行为树,有限状态机,分层任务网络</description>
 	<lastBuildDate>Mon, 26 Mar 2018 16:07:20 +0000</lastBuildDate>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
@@ -16,20 +16,20 @@
 	<generator>https://wordpress.org/?v=4.9.1</generator>
 	<item>
 		<title>作者：quinnpan</title>
-		<link>/tutorial14_cpp_workflow/#comment-19</link>
+		<link>http://www.behaviac.com/tutorial14_cpp_workflow/#comment-19</link>
 		<dc:creator><![CDATA[quinnpan]]></dc:creator>
 		<pubDate>Wed, 25 May 2016 07:13:35 +0000</pubDate>
-		<guid isPermaLink="false">/</guid>
+		<guid isPermaLink="false">http://www.behaviac.com/</guid>
 		<description><![CDATA[请去http://bbs.behaviac.com上反馈问题，这个地方粘贴错误代码的格式不是很友好。]]></description>
 		<content:encoded><![CDATA[<p>请去http://bbs.behaviac.com上反馈问题，这个地方粘贴错误代码的格式不是很友好。</p>
 ]]></content:encoded>
 	</item>
 	<item>
 		<title>作者：郑经纬</title>
-		<link>/tutorial14_cpp_workflow/#comment-18</link>
+		<link>http://www.behaviac.com/tutorial14_cpp_workflow/#comment-18</link>
 		<dc:creator><![CDATA[郑经纬]]></dc:creator>
 		<pubDate>Wed, 25 May 2016 07:11:03 +0000</pubDate>
-		<guid isPermaLink="false">/</guid>
+		<guid isPermaLink="false">http://www.behaviac.com/</guid>
 		<description><![CDATA[24 bytes in 1 blocks are definitely lost in loss record 59 of 429
  at 0x4A05DBC: memalign (vg_replace_malloc.c:858)
 by 0x8447DA: behaviac::MemDefaultAllocator::AllocAligned(unsigned long, unsigned long, char const*, char const

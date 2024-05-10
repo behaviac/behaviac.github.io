@@ -9,8 +9,8 @@
 
 <channel>
 	<title>概述 &#8211; behaviac</title>
-	<atom:link href="./../../%E6%A6%82%E8%BF%B0/feed/index.html" rel="self" type="application/rss+xml" />
-	<link>./../../../../../index.html</link>
+	<atom:link href="/language/zh/tag/%E6%A6%82%E8%BF%B0/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
 	<description>Tencent behaviac, Game AI, Behavior Tree, Finite State Machine, Hierarchical Task Network, BT FSM HTN, 腾讯开源, 游戏AI, 行为树,有限状态机,分层任务网络</description>
 	<lastBuildDate>Tue, 07 Feb 2017 01:57:37 +0000</lastBuildDate>
 	<language>zh-CN</language>
@@ -19,36 +19,28 @@
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
 	<generator>https://wordpress.org/?v=5.4.1</generator>
-
-<image>
-	<url>./../../../../../wp-content/uploads/2016/04/cropped-256x256-32x32.png</url>
-	<title>概述 &#8211; behaviac</title>
-	<link>./../../../../../index.html</link>
-	<width>32</width>
-	<height>32</height>
-</image> 
 	<item>
 		<title>目录结构</title>
-		<link>./../../../../../directory/index.html</link>
-					<comments>./../../../../../directory/index.html#respond</comments>
+		<link>/directory/</link>
+					<comments>/directory/#respond</comments>
 		
 		<dc:creator><![CDATA[jonygli]]></dc:creator>
 		<pubDate>Mon, 11 Apr 2016 09:58:37 +0000</pubDate>
 				<category><![CDATA[文章]]></category>
 		<category><![CDATA[上手]]></category>
 		<category><![CDATA[概述]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=162</guid>
+		<guid isPermaLink="false">/?p=162</guid>
 
-					<description><![CDATA[首先说明的是从下载链接获取的BehaviacSetup*.exe是安装包，内含可执行的编辑器及示例。 如果编辑器不能正常启动，需要下载安装Microsoft V<a class="moretag" href="./../../../../../directory/index.html">Read More...</a>]]></description>
-										<content:encoded><![CDATA[<p>首先说明的是从<a href="./../../../downloads/index.html">下载链接</a>获取的BehaviacSetup*.exe是安装包，内含可执行的编辑器及示例。</p>
+					<description><![CDATA[首先说明的是从下载链接获取的BehaviacSetup*.exe是安装包，内含可执行的编辑器及示例。 如果编辑器不能正常启动，需要下载安装Microsoft V<a class="moretag" href="/directory/">Read More...</a>]]></description>
+										<content:encoded><![CDATA[<p>首先说明的是从<a href="/language/zh/downloads/">下载链接</a>获取的BehaviacSetup*.exe是安装包，内含可执行的编辑器及示例。</p>
 <p>如果编辑器不能正常启动，需要下载安装<a href="https://support.microsoft.com/en-us/kb/2977003">Microsoft Visual C++ 运行库</a>及<a href="https://www.microsoft.com/en-US/download/details.aspx?id=21">.net框架</a>。</p>
-<p>可以从<a href="./../../../downloads/index.html">下载链接</a>下载或从<a href="https://github.com/Tencent/behaviac">github</a>克隆源码，这里介绍的是源码的目录结构。</p>
+<p>可以从<a href="/language/zh/downloads/">下载链接</a>下载或从<a href="https://github.com/Tencent/behaviac">github</a>克隆源码，这里介绍的是源码的目录结构。</p>
 <h3 id="section">目录结构图示</h3>
-<p><img class="aligncenter size-full wp-image-1411" src="./../../../../../wp-content/uploads/2016/04/directory.png" alt="directory" width="177" height="346" srcset="./../../../../../wp-content/uploads/2016/04/directory.png 177w, ./../../../../../wp-content/uploads/2016/04/directory-153x300.png 153w" sizes="(max-width: 177px) 100vw, 177px" /></p>
+<p><img class="aligncenter size-full wp-image-1411" src="/wp-content/uploads/2016/04/directory.png" alt="directory" width="177" height="346" srcset="/wp-content/uploads/2016/04/directory.png 177w, /wp-content/uploads/2016/04/directory-153x300.png 153w" sizes="(max-width: 177px) 100vw, 177px" /></p>
 <h3 id="section-1">目录结构说明</h3>
 <ul>
-<li>build：构建脚本，使用CMake构建。可以参考文档<a href="./../../../how_to_build/index.html">《如何编译构建》</a>。</li>
-<li>docs：文档，目前只有behaviac.chm，以后访问文档需要访问<a href="./../../../../../index.html">API</a></li>
+<li>build：构建脚本，使用CMake构建。可以参考文档<a href="/language/zh/how_to_build/">《如何编译构建》</a>。</li>
+<li>docs：文档，目前只有behaviac.chm，以后访问文档需要访问<a href="/">API</a></li>
 <li>inc：运行时库的C++头文件</li>
 <li>integration：Unity平台的实现及示例
 <ul>
@@ -63,7 +55,7 @@
 <li>btperformance：简单的性能测试</li>
 <li>btremotetest,：简单的连调测试</li>
 <li>btunittest：C++ unit test</li>
-<li>demo_running：简单的测试，适合少量修改，体会<a href="./../../../../../docs/zh/articles/concepts/index.html">行为树的概念</a></li>
+<li>demo_running：简单的测试，适合少量修改，体会<a href="/docs/zh/articles/concepts/">行为树的概念</a></li>
 <li>usertest：简单的测试，适合少量修改，做出自己的测试</li>
 </ul>
 </li>
@@ -72,27 +64,27 @@
 <li>designer</li>
 </ul>
 </li>
-<li>tutorials：教程相关的源码，配合<a href="./../../../category/%E6%96%87%E6%A1%A3/%E6%95%99%E7%A8%8B/index.html">教程相关文档</a>使用，方便上手</li>
+<li>tutorials：教程相关的源码，配合<a href="/language/zh/category/文档/教程/">教程相关文档</a>使用，方便上手</li>
 </ul>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../directory/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/directory/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>版本号说明</title>
-		<link>./../../../../../version/index.html</link>
-					<comments>./../../../../../version/index.html#respond</comments>
+		<link>/version/</link>
+					<comments>/version/#respond</comments>
 		
 		<dc:creator><![CDATA[jonygli]]></dc:creator>
 		<pubDate>Mon, 09 May 2016 03:16:57 +0000</pubDate>
 				<category><![CDATA[文章]]></category>
 		<category><![CDATA[概述]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=206</guid>
+		<guid isPermaLink="false">/?p=206</guid>
 
-					<description><![CDATA[在源码和安装包的根目录都提供了version.txt，unity的源码里也提供了version.txt。 version.txt中的版本号和安装包（如Behav<a class="moretag" href="./../../../../../version/index.html">Read More...</a>]]></description>
+					<description><![CDATA[在源码和安装包的根目录都提供了version.txt，unity的源码里也提供了version.txt。 version.txt中的版本号和安装包（如Behav<a class="moretag" href="/version/">Read More...</a>]]></description>
 										<content:encoded><![CDATA[<p>在源码和安装包的根目录都提供了<a href="https://github.com/Tencent/behaviac/blob/master/version.txt">version.txt</a>，unity的源码里也提供了<a href="https://github.com/Tencent/behaviac/blob/master/integration/unity/Assets/Scripts/behaviac/runtime/version.txt">version.txt</a>。</p>
 <ol>
 <li>version.txt中的版本号和安装包（如BehaviacSetup_3.3.16.exe）的版本号以及编辑器的版本号是一致的。请使用相同版本号的编辑器和运行时。</li>
@@ -100,7 +92,7 @@
 <li>version.txt只是从3.3.16版本后才提供，之前的版本中没有该文件。</li>
 <li>Cpp版本中提供了函数<code class="highlighter-rouge">behaviac::GetVersionString()</code>来返回版本号，该版本号和version.txt中的版本号是一致的。</li>
 <li>Cpp版本运行的时候，有下图所示的信息。<br />
-<img class="aligncenter size-full wp-image-1275" src="./../../../../../wp-content/uploads/2016/05/version.png" alt="version" width="583" height="138" srcset="./../../../../../wp-content/uploads/2016/05/version.png 583w, ./../../../../../wp-content/uploads/2016/05/version-300x71.png 300w" sizes="(max-width: 583px) 100vw, 583px" /></p>
+<img class="aligncenter size-full wp-image-1275" src="/wp-content/uploads/2016/05/version.png" alt="version" width="583" height="138" srcset="/wp-content/uploads/2016/05/version.png 583w, /wp-content/uploads/2016/05/version-300x71.png 300w" sizes="(max-width: 583px) 100vw, 583px" /></p>
 <ul>
 <li>第一行就包含了版本信息。其中的debug，NRELEASE等信息是用来表明是否定义了宏<code class="highlighter-rouge">_DEBUG</code>或<code class="highlighter-rouge">DEBUG</code>,<code class="highlighter-rouge">BEHAVIAC_RELEASE</code></li>
 <li>该信息在vs的输出窗口中有输出，在<code class="highlighter-rouge">_behaviac_$_$_.log</code>文件里也有输出</li>
@@ -109,15 +101,15 @@
 </ol>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../version/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/version/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>开发功能开关</title>
-		<link>./../../../../../config/index.html</link>
-					<comments>./../../../../../config/index.html#comments</comments>
+		<link>/config/</link>
+					<comments>/config/#comments</comments>
 		
 		<dc:creator><![CDATA[jonygli]]></dc:creator>
 		<pubDate>Mon, 11 Apr 2016 09:57:37 +0000</pubDate>
@@ -125,12 +117,12 @@
 		<category><![CDATA[连调]]></category>
 		<category><![CDATA[概述]]></category>
 		<category><![CDATA[编译构建]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=160</guid>
+		<guid isPermaLink="false">/?p=160</guid>
 
-					<description><![CDATA[behaviac的运行时提供有核心的更新行为树的功能，在其之上，还有logging，热加载，连调等调试功能。这些调试功能只是‘开发’功能，在游戏发布后实际上是不<a class="moretag" href="./../../../../../config/index.html">Read More...</a>]]></description>
+					<description><![CDATA[behaviac的运行时提供有核心的更新行为树的功能，在其之上，还有logging，热加载，连调等调试功能。这些调试功能只是‘开发’功能，在游戏发布后实际上是不<a class="moretag" href="/config/">Read More...</a>]]></description>
 										<content:encoded><![CDATA[<p>behaviac的运行时提供有核心的更新行为树的功能，在其之上，还有logging，热加载，连调等调试功能。这些调试功能只是‘开发’功能，在游戏发布后实际上是不需要的。</p>
 <p>除了可以在<code>config.h</code>中定义<code>BEHAVIAC_RELEASE</code>宏为1来完全使‘开发功能’不被编译外。也可以保留这些‘开发’功能但只是使用下面所列的‘开关’来关闭或者打开某些功能。</p>
-<p>具体可以参考<a href="./../../../tutorial10_performence/index.html">优化及性能</a></p>
+<p>具体可以参考<a href="/language/zh/tutorial10_performence/">优化及性能</a></p>
 <h2>Cpp</h2>
 <pre class="brush: cpp; title: ; notranslate">namespace behaviac
 {
@@ -172,7 +164,7 @@ static void SetHotReload(bool bHotReload);
 <p>具体的代码请查看<a href="{{site.repository}}/blob/master/integration/unity/Assets/Scripts/behaviac/runtime/Workspace.cs">behaviac/runtime/workspace.cs</a></p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../config/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/config/feed/</wfw:commentRss>
 			<slash:comments>4</slash:comments>
 		
 		

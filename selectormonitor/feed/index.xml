@@ -8,8 +8,8 @@
 <channel>
 	<title>
 	《选择监测节点》的评论	</title>
-	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
-	<link>./../index.html</link>
+	<atom:link href="/selectormonitor/feed/" rel="self" type="application/rss+xml" />
+	<link>/selectormonitor/</link>
 	<description>Tencent behaviac, Game AI, Behavior Tree, Finite State Machine, Hierarchical Task Network, BT FSM HTN, 腾讯开源, 游戏AI, 行为树,有限状态机,分层任务网络</description>
 	<lastBuildDate>Thu, 27 Apr 2017 03:35:36 +0000</lastBuildDate>
 	<sy:updatePeriod>
@@ -20,11 +20,11 @@
 	<item>
 		<title>
 		作者：关于性能优化的说明 &#8211; behaviac		</title>
-		<link>./../index.html#comment-75</link>
+		<link>/selectormonitor/#comment-75</link>
 
 		<dc:creator><![CDATA[关于性能优化的说明 &#8211; behaviac]]></dc:creator>
 		<pubDate>Thu, 23 Jun 2016 07:12:15 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=258#comment-75</guid>
+		<guid isPermaLink="false">/?p=258#comment-75</guid>
 
 					<description><![CDATA[[&#8230;] 选择监测节点以及并行节点 [&#8230;]]]></description>
 			<content:encoded><![CDATA[<p>[&#8230;] 选择监测节点以及并行节点 [&#8230;]</p>

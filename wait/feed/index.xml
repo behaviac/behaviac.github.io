@@ -8,8 +8,8 @@
 <channel>
 	<title>
 	《等待节点》的评论	</title>
-	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
-	<link>./../index.html</link>
+	<atom:link href="/wait/feed/" rel="self" type="application/rss+xml" />
+	<link>/wait/</link>
 	<description>Tencent behaviac, Game AI, Behavior Tree, Finite State Machine, Hierarchical Task Network, BT FSM HTN, 腾讯开源, 游戏AI, 行为树,有限状态机,分层任务网络</description>
 	<lastBuildDate>Wed, 26 Apr 2017 02:32:14 +0000</lastBuildDate>
 	<sy:updatePeriod>
@@ -20,14 +20,14 @@
 	<item>
 		<title>
 		作者：behaviac升级的步骤及注意事项 &#8211; behaviac		</title>
-		<link>./../index.html#comment-164</link>
+		<link>/wait/#comment-164</link>
 
 		<dc:creator><![CDATA[behaviac升级的步骤及注意事项 &#8211; behaviac]]></dc:creator>
 		<pubDate>Thu, 19 Jan 2017 02:23:11 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=460#comment-164</guid>
+		<guid isPermaLink="false">/?p=460#comment-164</guid>
 
-					<description><![CDATA[[&#8230;] 等待节点和等待帧数节点的使用，请分别参考文档：./../../language/zh/wait/和https:///language/zh/waitframes/index.html [&#8230;]]]></description>
-			<content:encoded><![CDATA[<p>[&#8230;] 等待节点和等待帧数节点的使用，请分别参考文档：./../../language/zh/wait/和https:///language/zh/waitframes/index.html [&#8230;]</p>
+					<description><![CDATA[[&#8230;] 等待节点和等待帧数节点的使用，请分别参考文档：/language/zh/wait/和http:///language/zh/waitframes/ [&#8230;]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] 等待节点和等待帧数节点的使用，请分别参考文档：/language/zh/wait/和http:///language/zh/waitframes/ [&#8230;]</p>
 ]]></content:encoded>
 		
 			</item>

@@ -8,8 +8,8 @@
 <channel>
 	<title>
 	《自定义枚举》的评论	</title>
-	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
-	<link>./../index.html</link>
+	<atom:link href="/tutorial7_customenum/feed/" rel="self" type="application/rss+xml" />
+	<link>/tutorial7_customenum/</link>
 	<description>Tencent behaviac, Game AI, Behavior Tree, Finite State Machine, Hierarchical Task Network, BT FSM HTN, 腾讯开源, 游戏AI, 行为树,有限状态机,分层任务网络</description>
 	<lastBuildDate>Mon, 19 Dec 2016 08:52:40 +0000</lastBuildDate>
 	<sy:updatePeriod>

@@ -7,8 +7,8 @@
 	>
 <channel>
 	<title>《扩展使用已有的类型》的评论</title>
-	<atom:link href="/tutorial5_extendtypes/feed/" rel="self" type="application/rss+xml" />
-	<link>/tutorial5_extendtypes/</link>
+	<atom:link href="http://www.behaviac.com/tutorial5_extendtypes/feed/" rel="self" type="application/rss+xml" />
+	<link>http://www.behaviac.com/tutorial5_extendtypes/</link>
 	<description>Tencent behaviac, Game AI, Behavior Tree, Finite State Machine, Hierarchical Task Network, BT FSM HTN, 腾讯开源, 游戏AI, 行为树,有限状态机,分层任务网络</description>
 	<lastBuildDate>Mon, 26 Mar 2018 16:07:20 +0000</lastBuildDate>
 	<sy:updatePeriod>hourly</sy:updatePeriod>

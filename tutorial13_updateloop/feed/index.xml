@@ -8,8 +8,8 @@
 <channel>
 	<title>
 	《运行时端的执行流程》的评论	</title>
-	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
-	<link>./../index.html</link>
+	<atom:link href="/tutorial13_updateloop/feed/" rel="self" type="application/rss+xml" />
+	<link>/tutorial13_updateloop/</link>
 	<description>Tencent behaviac, Game AI, Behavior Tree, Finite State Machine, Hierarchical Task Network, BT FSM HTN, 腾讯开源, 游戏AI, 行为树,有限状态机,分层任务网络</description>
 	<lastBuildDate>Mon, 20 Mar 2017 02:25:55 +0000</lastBuildDate>
 	<sy:updatePeriod>
@@ -20,11 +20,11 @@
 	<item>
 		<title>
 		作者：教程7：行为树的连调 &#8211; behaviac		</title>
-		<link>./../index.html#comment-377</link>
+		<link>/tutorial13_updateloop/#comment-377</link>
 
 		<dc:creator><![CDATA[教程7：行为树的连调 &#8211; behaviac]]></dc:creator>
 		<pubDate>Mon, 20 Mar 2017 02:25:55 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=306#comment-377</guid>
+		<guid isPermaLink="false">/?p=306#comment-377</guid>
 
 					<description><![CDATA[[&#8230;] 另外，如果程序端是通过Workspace::Update()的方式来统一执行所有Agent实例的行为树，则不需要再额外调用Workspace::DebugUpdate()方法，详见文章《运行时端的执行流程》。 [&#8230;]]]></description>
 			<content:encoded><![CDATA[<p>[&#8230;] 另外，如果程序端是通过Workspace::Update()的方式来统一执行所有Agent实例的行为树，则不需要再额外调用Workspace::DebugUpdate()方法，详见文章《运行时端的执行流程》。 [&#8230;]</p>
@@ -34,11 +34,11 @@
 		<item>
 		<title>
 		作者：教程1：Hello Behaviac &#8211; behaviac		</title>
-		<link>./../index.html#comment-376</link>
+		<link>/tutorial13_updateloop/#comment-376</link>
 
 		<dc:creator><![CDATA[教程1：Hello Behaviac &#8211; behaviac]]></dc:creator>
 		<pubDate>Mon, 20 Mar 2017 02:23:56 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=306#comment-376</guid>
+		<guid isPermaLink="false">/?p=306#comment-376</guid>
 
 					<description><![CDATA[[&#8230;] 另外，如果不通过Agent::btexec()来单独执行行为树，也可以调用Workspace::Update()的方式来统一执行所有Agent实例的行为树，详见文章《运行时端的执行流程》。 [&#8230;]]]></description>
 			<content:encoded><![CDATA[<p>[&#8230;] 另外，如果不通过Agent::btexec()来单独执行行为树，也可以调用Workspace::Update()的方式来统一执行所有Agent实例的行为树，详见文章《运行时端的执行流程》。 [&#8230;]</p>
@@ -48,11 +48,11 @@
 		<item>
 		<title>
 		作者：调试功能的说明 &#8211; behaviac		</title>
-		<link>./../index.html#comment-64</link>
+		<link>/tutorial13_updateloop/#comment-64</link>
 
 		<dc:creator><![CDATA[调试功能的说明 &#8211; behaviac]]></dc:creator>
 		<pubDate>Fri, 17 Jun 2016 07:54:01 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=306#comment-64</guid>
+		<guid isPermaLink="false">/?p=306#comment-64</guid>
 
 					<description><![CDATA[[&#8230;] 更新流程 [&#8230;]]]></description>
 			<content:encoded><![CDATA[<p>[&#8230;] 更新流程 [&#8230;]</p>

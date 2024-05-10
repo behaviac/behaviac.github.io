@@ -8,8 +8,8 @@
 <channel>
 	<title>
 	《教程1.1：编辑器生成类型代码的工作流程》的评论	</title>
-	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
-	<link>./../index.html</link>
+	<atom:link href="/tutorial_1_1_generate_codes/feed/" rel="self" type="application/rss+xml" />
+	<link>/tutorial_1_1_generate_codes/</link>
 	<description>Tencent behaviac, Game AI, Behavior Tree, Finite State Machine, Hierarchical Task Network, BT FSM HTN, 腾讯开源, 游戏AI, 行为树,有限状态机,分层任务网络</description>
 	<lastBuildDate>Mon, 20 Mar 2017 09:40:47 +0000</lastBuildDate>
 	<sy:updatePeriod>

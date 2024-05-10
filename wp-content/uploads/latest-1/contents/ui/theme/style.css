@@ -328,7 +328,7 @@ background: #fff9c0;
 text-decoration: none;
 }
 hr {
-background: url(./images/dotted-line.png) repeat center top;
+background: url(/wp-content/uploads/latest-1/contents/ui/theme/images/dotted-line.png) repeat center top;
 background-size: 4px 4px;
 border: 0;
 height: 1px;
@@ -1213,7 +1213,7 @@ opacity: 1;
 }
 .owl-item.loading{
 min-height: 150px;
-background: url(./AjaxLoader.gif) no-repeat center center
+background: url(/wp-content/uploads/latest-1/contents/ui/theme/AjaxLoader.gif) no-repeat center center
 }
 .other-slider {
 text-align: center;
@@ -1922,7 +1922,7 @@ top: 4px;
 color: #575757;
 }
 .format-audio .audio-content {
-background: url(./images/dotted-line.png) repeat-y left top;
+background: url(/wp-content/uploads/latest-1/contents/ui/theme/images/dotted-line.png) repeat-y left top;
 background-size: 4px 4px;
 float: right;
 padding-left: 35px;
@@ -2112,7 +2112,7 @@ padding-left: 95px;
 }
 .format-status .entry-content:before,
 .format-status .entry-meta:before {
-background: url(./images/dotted-line.png) repeat-y left bottom;
+background: url(/wp-content/uploads/latest-1/contents/ui/theme/images/dotted-line.png) repeat-y left bottom;
 background-size: 4px 4px;
 content: "";
 display: block;
@@ -2506,7 +2506,7 @@ margin-left: 20px;
 }
 .comment-list > li:after,
 .comment-list .children > li:before {
-background: url(./images/dotted-line.png) repeat left top;
+background: url(/wp-content/uploads/latest-1/contents/ui/theme/images/dotted-line.png) repeat left top;
 background-size: 4px 4px;
 content: "";
 display: block;
@@ -3743,13 +3743,13 @@ margin-left: 40px;
 margin-right: 40px;
 }
 .function-block-bg-simple{
-background:  #FFFFFF url(./images/function_simple.png) no-repeat  bottom right;
+background:  #FFFFFF url(/wp-content/uploads/latest-1/contents/ui/theme/images/function_simple.png) no-repeat  bottom right;
 }
 .function-block-bg-flexible{
-background:  #FFFFFF url(./images/function_flexible.png) no-repeat  bottom right;
+background:  #FFFFFF url(/wp-content/uploads/latest-1/contents/ui/theme/images/function_flexible.png) no-repeat  bottom right;
 }
 .function-block-bg-powerful{
-background:  #FFFFFF url(./images/function_powerful.png) no-repeat  bottom right;
+background:  #FFFFFF url(/wp-content/uploads/latest-1/contents/ui/theme/images/function_powerful.png) no-repeat  bottom right;
 }
 .download-version{
 background: rgba(14, 148, 105, 0.81) !important;

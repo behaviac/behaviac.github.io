@@ -8,8 +8,8 @@
 <channel>
 	<title>
 	《共享资源和实例数据》的评论	</title>
-	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
-	<link>./../index.html</link>
+	<atom:link href="/memory_shared/feed/" rel="self" type="application/rss+xml" />
+	<link>/memory_shared/</link>
 	<description>Tencent behaviac, Game AI, Behavior Tree, Finite State Machine, Hierarchical Task Network, BT FSM HTN, 腾讯开源, 游戏AI, 行为树,有限状态机,分层任务网络</description>
 	<lastBuildDate>Fri, 17 Nov 2017 07:54:45 +0000</lastBuildDate>
 	<sy:updatePeriod>
@@ -20,11 +20,11 @@
 	<item>
 		<title>
 		作者：frankw		</title>
-		<link>./../index.html#comment-417</link>
+		<link>/memory_shared/#comment-417</link>
 
 		<dc:creator><![CDATA[frankw]]></dc:creator>
 		<pubDate>Fri, 17 Nov 2017 07:54:45 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=164#comment-417</guid>
+		<guid isPermaLink="false">/?p=164#comment-417</guid>
 
 					<description><![CDATA[共享的配置信息，对于在不同线程执行Agent的btexec处理，是否有线程安全问题？是否有线程锁保护？
 
@@ -37,16 +37,16 @@
 		<item>
 		<title>
 		作者：jonygli		</title>
-		<link>./../index.html#comment-397</link>
+		<link>/memory_shared/#comment-397</link>
 
 		<dc:creator><![CDATA[jonygli]]></dc:creator>
 		<pubDate>Wed, 24 May 2017 11:38:28 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=164#comment-397</guid>
+		<guid isPermaLink="false">/?p=164#comment-397</guid>
 
-					<description><![CDATA[In reply to &lt;a href=&quot;./../index.html#comment-396&quot;&gt;pan&lt;/a&gt;.
+					<description><![CDATA[In reply to &lt;a href=&quot;/memory_shared/#comment-396&quot;&gt;pan&lt;/a&gt;.
 
 对的。一般情况，不需要显示的调用btunload。如果还有相应问题，可以去bbs.behaviac.com提问哈。]]></description>
-			<content:encoded><![CDATA[<p>In reply to <a href="./../index.html#comment-396">pan</a>.</p>
+			<content:encoded><![CDATA[<p>In reply to <a href="/memory_shared/#comment-396">pan</a>.</p>
 <p>对的。一般情况，不需要显示的调用btunload。如果还有相应问题，可以去bbs.behaviac.com提问哈。</p>
 ]]></content:encoded>
 		
@@ -54,11 +54,11 @@
 		<item>
 		<title>
 		作者：pan		</title>
-		<link>./../index.html#comment-396</link>
+		<link>/memory_shared/#comment-396</link>
 
 		<dc:creator><![CDATA[pan]]></dc:creator>
 		<pubDate>Wed, 24 May 2017 10:09:37 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=164#comment-396</guid>
+		<guid isPermaLink="false">/?p=164#comment-396</guid>
 
 					<description><![CDATA[我在所有的tutorials中都没有看到过Agent::btunload这个函数被调用过，什么时候需要调用这个btunload?
 是否在同一个agent实例多次加载不同的行为树前需要先btunload一下，

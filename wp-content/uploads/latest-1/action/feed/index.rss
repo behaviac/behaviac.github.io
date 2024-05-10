@@ -7,8 +7,8 @@
 	>
 <channel>
 	<title>《动作节点》的评论</title>
-	<atom:link href="/action/feed/" rel="self" type="application/rss+xml" />
-	<link>/action/</link>
+	<atom:link href="http://www.behaviac.com/action/feed/" rel="self" type="application/rss+xml" />
+	<link>http://www.behaviac.com/action/</link>
 	<description>Tencent behaviac, Game AI, Behavior Tree, Finite State Machine, Hierarchical Task Network, BT FSM HTN, 腾讯开源, 游戏AI, 行为树,有限状态机,分层任务网络</description>
 	<lastBuildDate>Mon, 26 Mar 2018 16:07:20 +0000</lastBuildDate>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
@@ -16,10 +16,10 @@
 	<generator>https://wordpress.org/?v=4.9.1</generator>
 	<item>
 		<title>作者：教程一：Hello Behaviac &#8211; behaviac</title>
-		<link>/action/#comment-161</link>
+		<link>http://www.behaviac.com/action/#comment-161</link>
 		<dc:creator><![CDATA[教程一：Hello Behaviac &#8211; behaviac]]></dc:creator>
 		<pubDate>Mon, 16 Jan 2017 09:00:44 +0000</pubDate>
-		<guid isPermaLink="false">/</guid>
+		<guid isPermaLink="false">http://www.behaviac.com/</guid>
 		<description><![CDATA[[&#8230;] 如果想了解动作节点的更多细节，请参考文档《动作节点》。 [&#8230;]]]></description>
 		<content:encoded><![CDATA[<p>[&#8230;] 如果想了解动作节点的更多细节，请参考文档《动作节点》。 [&#8230;]</p>
 ]]></content:encoded>

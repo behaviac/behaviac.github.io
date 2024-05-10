@@ -8,8 +8,8 @@
 <channel>
 	<title>
 	《最新版3.6.19发布了！》的评论	</title>
-	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
-	<link>./../index.html</link>
+	<atom:link href="/version_3_6_19/feed/" rel="self" type="application/rss+xml" />
+	<link>/version_3_6_19/</link>
 	<description>Tencent behaviac, Game AI, Behavior Tree, Finite State Machine, Hierarchical Task Network, BT FSM HTN, 腾讯开源, 游戏AI, 行为树,有限状态机,分层任务网络</description>
 	<lastBuildDate>Thu, 23 Feb 2017 06:44:19 +0000</lastBuildDate>
 	<sy:updatePeriod>

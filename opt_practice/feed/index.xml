@@ -8,8 +8,8 @@
 <channel>
 	<title>
 	《关于性能优化的说明》的评论	</title>
-	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
-	<link>./../index.html</link>
+	<atom:link href="/opt_practice/feed/" rel="self" type="application/rss+xml" />
+	<link>/opt_practice/</link>
 	<description>Tencent behaviac, Game AI, Behavior Tree, Finite State Machine, Hierarchical Task Network, BT FSM HTN, 腾讯开源, 游戏AI, 行为树,有限状态机,分层任务网络</description>
 	<lastBuildDate>Sat, 25 Feb 2017 12:45:58 +0000</lastBuildDate>
 	<sy:updatePeriod>
@@ -20,11 +20,11 @@
 	<item>
 		<title>
 		作者：金庆		</title>
-		<link>./../index.html#comment-367</link>
+		<link>/opt_practice/#comment-367</link>
 
 		<dc:creator><![CDATA[金庆]]></dc:creator>
 		<pubDate>Sat, 25 Feb 2017 12:45:58 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=717#comment-367</guid>
+		<guid isPermaLink="false">/?p=717#comment-367</guid>
 
 					<description><![CDATA[先不考虑效率，Agent仅提供最底层的接口，然后提取执行频繁的子树实现为高层接口。]]></description>
 			<content:encoded><![CDATA[<p>先不考虑效率，Agent仅提供最底层的接口，然后提取执行频繁的子树实现为高层接口。</p>

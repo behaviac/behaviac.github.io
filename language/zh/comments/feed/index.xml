@@ -8,10 +8,10 @@
 <channel>
 	<title>
 	“behaviac”的评论	</title>
-	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
-	<link>./../../../../index.html</link>
+	<atom:link href="/language/zh/comments/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
 	<description>Tencent behaviac, Game AI, Behavior Tree, Finite State Machine, Hierarchical Task Network, BT FSM HTN, 腾讯开源, 游戏AI, 行为树,有限状态机,分层任务网络</description>
-	<lastBuildDate>Sat, 02 Nov 2019 10:03:16 +0000</lastBuildDate>
+	<lastBuildDate>Mon, 26 Mar 2018 16:07:20 +0000</lastBuildDate>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
@@ -19,73 +19,12 @@
 	<generator>https://wordpress.org/?v=5.4.1</generator>
 	<item>
 		<title>
-		admin对《附件》的评论		</title>
-		<link>./../../../../attachment/index.html#comment-481</link>
-
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<pubDate>Sat, 02 Nov 2019 10:03:16 +0000</pubDate>
-		<guid isPermaLink="false">./../../../../index.html?p=226#comment-481</guid>
-
-					<description><![CDATA[In reply to &lt;a href=&quot;./../../../../attachment/index.html#comment-469&quot;&gt;dwing&lt;/a&gt;.
-
-节点更新可以理解为行为树每次运到这个节点，调用这个节点的Update()。]]></description>
-			<content:encoded><![CDATA[<p>In reply to <a href="./../../../../attachment/index.html#comment-469">dwing</a>.</p>
-<p>节点更新可以理解为行为树每次运到这个节点，调用这个节点的Update()。</p>
-]]></content:encoded>
-		
-			</item>
-		<item>
-		<title>
-		Liuzhy对《教程1：Hello Behaviac》的评论		</title>
-		<link>./../../../../tutorial_1_hello_behaviac/index.html#comment-474</link>
-
-		<dc:creator><![CDATA[Liuzhy]]></dc:creator>
-		<pubDate>Thu, 20 Jun 2019 08:04:06 +0000</pubDate>
-		<guid isPermaLink="false">./../../../../index.html?p=1315#comment-474</guid>
-
-					<description><![CDATA[不懂的东西很多，不过开始慢慢跟。]]></description>
-			<content:encoded><![CDATA[<p>不懂的东西很多，不过开始慢慢跟。</p>
-]]></content:encoded>
-		
-			</item>
-		<item>
-		<title>
-		dwing对《附件》的评论		</title>
-		<link>./../../../../attachment/index.html#comment-469</link>
-
-		<dc:creator><![CDATA[dwing]]></dc:creator>
-		<pubDate>Sat, 13 Apr 2019 10:21:29 +0000</pubDate>
-		<guid isPermaLink="false">./../../../../index.html?p=226#comment-469</guid>
-
-					<description><![CDATA[&quot;Update表示所在节点每次更新时，都需要检查该前置。&quot;
-能不能解释一下什么是&quot;节点更新&quot;?]]></description>
-			<content:encoded><![CDATA[<p>&#8220;Update表示所在节点每次更新时，都需要检查该前置。&#8221;<br />
-能不能解释一下什么是&#8221;节点更新&#8221;?</p>
-]]></content:encoded>
-		
-			</item>
-		<item>
-		<title>
-		void对《behaviac版本下载及说明》的评论		</title>
-		<link>./../../../../downloads/index.html#comment-463</link>
-
-		<dc:creator><![CDATA[void]]></dc:creator>
-		<pubDate>Fri, 07 Dec 2018 03:09:40 +0000</pubDate>
-		<guid isPermaLink="false">./../../../../index.html?p=343#comment-463</guid>
-
-					<description><![CDATA[构建帮助404了]]></description>
-			<content:encoded><![CDATA[<p>构建帮助404了</p>
-]]></content:encoded>
-		
-			</item>
-		<item>
-		<title>
 		雨林一叶对《行为树的基本概念及进阶》的评论		</title>
-		<link>./../../../../concepts/index.html#comment-433</link>
+		<link>/concepts/#comment-433</link>
 
 		<dc:creator><![CDATA[雨林一叶]]></dc:creator>
 		<pubDate>Mon, 26 Mar 2018 16:07:20 +0000</pubDate>
-		<guid isPermaLink="false">./../../../../index.html?p=158#comment-433</guid>
+		<guid isPermaLink="false">/?p=158#comment-433</guid>
 
 					<description><![CDATA[第一个例子的行为一开始没太看懂，后来用魂斗罗第一关的银色小炮台的AI套了一下，立马明白了]]></description>
 			<content:encoded><![CDATA[<p>第一个例子的行为一开始没太看懂，后来用魂斗罗第一关的银色小炮台的AI套了一下，立马明白了</p>
@@ -95,11 +34,11 @@
 		<item>
 		<title>
 		谭兆飞对《教程1：Hello Behaviac》的评论		</title>
-		<link>./../../../../tutorial_1_hello_behaviac/index.html#comment-426</link>
+		<link>/tutorial_1_hello_behaviac/#comment-426</link>
 
 		<dc:creator><![CDATA[谭兆飞]]></dc:creator>
 		<pubDate>Mon, 12 Mar 2018 12:06:53 +0000</pubDate>
-		<guid isPermaLink="false">./../../../../index.html?p=1315#comment-426</guid>
+		<guid isPermaLink="false">/?p=1315#comment-426</guid>
 
 					<description><![CDATA[文档写的很详细，很好。赞一个]]></description>
 			<content:encoded><![CDATA[<p>文档写的很详细，很好。赞一个</p>
@@ -109,16 +48,16 @@
 		<item>
 		<title>
 		admin对《behaviac与Behavior Designer的对比》的评论		</title>
-		<link>./../../../../bd_vs_behaviac/index.html#comment-425</link>
+		<link>/bd_vs_behaviac/#comment-425</link>
 
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<pubDate>Tue, 30 Jan 2018 03:43:59 +0000</pubDate>
-		<guid isPermaLink="false">./../../../../index.html?p=154#comment-425</guid>
+		<guid isPermaLink="false">/?p=154#comment-425</guid>
 
-					<description><![CDATA[In reply to &lt;a href=&quot;./../../../../bd_vs_behaviac/index.html#comment-424&quot;&gt;林一&lt;/a&gt;.
+					<description><![CDATA[In reply to &lt;a href=&quot;/bd_vs_behaviac/#comment-424&quot;&gt;林一&lt;/a&gt;.
 
 http://bbs.behaviac.com/index.php/570/lua%E7%89%88%E6%9C%AC%E7%9A%84%E5%BC%80%E5%8F%91%E8%BF%9B%E5%BA%A6?show=570#q570]]></description>
-			<content:encoded><![CDATA[<p>In reply to <a href="./../../../../bd_vs_behaviac/index.html#comment-424">林一</a>.</p>
+			<content:encoded><![CDATA[<p>In reply to <a href="/bd_vs_behaviac/#comment-424">林一</a>.</p>
 <p><a href="http://bbs.behaviac.com/index.php/570/lua%E7%89%88%E6%9C%AC%E7%9A%84%E5%BC%80%E5%8F%91%E8%BF%9B%E5%BA%A6?show=570#q570" rel="nofollow ugc">http://bbs.behaviac.com/index.php/570/lua%E7%89%88%E6%9C%AC%E7%9A%84%E5%BC%80%E5%8F%91%E8%BF%9B%E5%BA%A6?show=570#q570</a></p>
 ]]></content:encoded>
 		
@@ -126,11 +65,11 @@ http://bbs.behaviac.com/index.php/570/lua%E7%89%88%E6%9C%AC%E7%9A%84%E5%BC%80%E5
 		<item>
 		<title>
 		林一对《behaviac与Behavior Designer的对比》的评论		</title>
-		<link>./../../../../bd_vs_behaviac/index.html#comment-424</link>
+		<link>/bd_vs_behaviac/#comment-424</link>
 
 		<dc:creator><![CDATA[林一]]></dc:creator>
 		<pubDate>Mon, 29 Jan 2018 17:07:29 +0000</pubDate>
-		<guid isPermaLink="false">./../../../../index.html?p=154#comment-424</guid>
+		<guid isPermaLink="false">/?p=154#comment-424</guid>
 
 					<description><![CDATA[lua版本什么时候能用呢]]></description>
 			<content:encoded><![CDATA[<p>lua版本什么时候能用呢</p>
@@ -140,11 +79,11 @@ http://bbs.behaviac.com/index.php/570/lua%E7%89%88%E6%9C%AC%E7%9A%84%E5%BC%80%E5
 		<item>
 		<title>
 		刘宏旭对《概率选择节点》的评论		</title>
-		<link>./../../../../selectorprobability/index.html#comment-423</link>
+		<link>/selectorprobability/#comment-423</link>
 
 		<dc:creator><![CDATA[刘宏旭]]></dc:creator>
 		<pubDate>Mon, 18 Dec 2017 06:01:03 +0000</pubDate>
-		<guid isPermaLink="false">./../../../../index.html?p=250#comment-423</guid>
+		<guid isPermaLink="false">/?p=250#comment-423</guid>
 
 					<description><![CDATA[如果所有分支权重都配置为0，表示所有分支都不会被执行。那么选择节点返回的状态是什么？]]></description>
 			<content:encoded><![CDATA[<p>如果所有分支权重都配置为0，表示所有分支都不会被执行。那么选择节点返回的状态是什么？</p>
@@ -154,11 +93,11 @@ http://bbs.behaviac.com/index.php/570/lua%E7%89%88%E6%9C%AC%E7%9A%84%E5%BC%80%E5
 		<item>
 		<title>
 		tangyin025对《VS项目中使用behaviac组件》的评论		</title>
-		<link>./../../../../cpp_include/index.html#comment-422</link>
+		<link>/cpp_include/#comment-422</link>
 
 		<dc:creator><![CDATA[tangyin025]]></dc:creator>
 		<pubDate>Tue, 12 Dec 2017 03:54:18 +0000</pubDate>
-		<guid isPermaLink="false">./../../../../index.html?p=311#comment-422</guid>
+		<guid isPermaLink="false">/?p=311#comment-422</guid>
 
 					<description><![CDATA[由BehaviacDesigner生成的cpp中需要预编译头stdafx.h如何处理]]></description>
 			<content:encoded><![CDATA[<p>由BehaviacDesigner生成的cpp中需要预编译头stdafx.h如何处理</p>
@@ -168,11 +107,11 @@ http://bbs.behaviac.com/index.php/570/lua%E7%89%88%E6%9C%AC%E7%9A%84%E5%BC%80%E5
 		<item>
 		<title>
 		Superflat对《C++运行时端中元信息的注册和导出》的评论		</title>
-		<link>./../../../../tutorial3_1_meta_cpp_register/index.html#comment-421</link>
+		<link>/tutorial3_1_meta_cpp_register/#comment-421</link>
 
 		<dc:creator><![CDATA[Superflat]]></dc:creator>
 		<pubDate>Fri, 01 Dec 2017 09:19:31 +0000</pubDate>
-		<guid isPermaLink="false">./../../../../index.html?p=276#comment-421</guid>
+		<guid isPermaLink="false">/?p=276#comment-421</guid>
 
 					<description><![CDATA[Is the content still valid? As I see nothing about REGISTER_METHOD in demo_running project.]]></description>
 			<content:encoded><![CDATA[<p>Is the content still valid? As I see nothing about REGISTER_METHOD in demo_running project.</p>
@@ -182,25 +121,25 @@ http://bbs.behaviac.com/index.php/570/lua%E7%89%88%E6%9C%AC%E7%9A%84%E5%BC%80%E5
 		<item>
 		<title>
 		Superflat对《教程1.2：手工编写类型代码的工作流程》的评论		</title>
-		<link>./../../../../tutorial_1_2_write_codes/index.html#comment-420</link>
+		<link>/tutorial_1_2_write_codes/#comment-420</link>
 
 		<dc:creator><![CDATA[Superflat]]></dc:creator>
 		<pubDate>Fri, 01 Dec 2017 09:14:53 +0000</pubDate>
-		<guid isPermaLink="false">./../../../../index.html?p=1745#comment-420</guid>
+		<guid isPermaLink="false">/?p=1745#comment-420</guid>
 
-					<description><![CDATA[Does this means using editor and editing xml file are the only ways to let the editor know what the properties and methods are defined in hand coded agent class? I saw from other article talking about using macro to generate xml file from c++ code? (./../../../../tutorial3_1_meta_cpp_register/)]]>/index.html</description>
-			<content:encoded><![CDATA[<p>Does this means using editor and editing xml file are the only ways to let the editor know what the properties and methods are defined in hand coded agent class? I saw from other article talking about using macro to generate xml file from c++ code? (<a href="./../../../../tutorial3_1_meta_cpp_register/index.html" rel="nofollow ugc">./../../../../tutorial3_1_meta_cpp_register/index.html</a>)</p>
+					<description><![CDATA[Does this means using editor and editing xml file are the only ways to let the editor know what the properties and methods are defined in hand coded agent class? I saw from other article talking about using macro to generate xml file from c++ code? (/tutorial3_1_meta_cpp_register/)]]></description>
+			<content:encoded><![CDATA[<p>Does this means using editor and editing xml file are the only ways to let the editor know what the properties and methods are defined in hand coded agent class? I saw from other article talking about using macro to generate xml file from c++ code? (<a href="/tutorial3_1_meta_cpp_register/" rel="nofollow ugc">/tutorial3_1_meta_cpp_register/</a>)</p>
 ]]></content:encoded>
 		
 			</item>
 		<item>
 		<title>
 		DevTang对《教程1：Hello Behaviac》的评论		</title>
-		<link>./../../../../tutorial_1_hello_behaviac/index.html#comment-419</link>
+		<link>/tutorial_1_hello_behaviac/#comment-419</link>
 
 		<dc:creator><![CDATA[DevTang]]></dc:creator>
 		<pubDate>Fri, 24 Nov 2017 08:08:11 +0000</pubDate>
-		<guid isPermaLink="false">./../../../../index.html?p=1315#comment-419</guid>
+		<guid isPermaLink="false">/?p=1315#comment-419</guid>
 
 					<description><![CDATA[请问为什么在Clean Behaviac 的时候中止线程异常呢？
 提示说不支持 xxx  platform 
@@ -215,11 +154,11 @@ http://bbs.behaviac.com/index.php/570/lua%E7%89%88%E6%9C%AC%E7%9A%84%E5%BC%80%E5
 		<item>
 		<title>
 		陈对《使用cmake构建C++版运行时库》的评论		</title>
-		<link>./../../../../build/index.html#comment-418</link>
+		<link>/build/#comment-418</link>
 
 		<dc:creator><![CDATA[陈]]></dc:creator>
 		<pubDate>Fri, 17 Nov 2017 14:56:41 +0000</pubDate>
-		<guid isPermaLink="false">./../../../../index.html?p=156#comment-418</guid>
+		<guid isPermaLink="false">/?p=156#comment-418</guid>
 
 					<description><![CDATA[VS 2015 默认mDd编译 ,改成MTD编译，运行测试代码会有 __acrt_first_block == header std::string]]></description>
 			<content:encoded><![CDATA[<p>VS 2015 默认mDd编译 ,改成MTD编译，运行测试代码会有 __acrt_first_block == header std::string</p>
@@ -229,11 +168,11 @@ http://bbs.behaviac.com/index.php/570/lua%E7%89%88%E6%9C%AC%E7%9A%84%E5%BC%80%E5
 		<item>
 		<title>
 		frankw对《共享资源和实例数据》的评论		</title>
-		<link>./../../../../memory_shared/index.html#comment-417</link>
+		<link>/memory_shared/#comment-417</link>
 
 		<dc:creator><![CDATA[frankw]]></dc:creator>
 		<pubDate>Fri, 17 Nov 2017 07:54:45 +0000</pubDate>
-		<guid isPermaLink="false">./../../../../index.html?p=164#comment-417</guid>
+		<guid isPermaLink="false">/?p=164#comment-417</guid>
 
 					<description><![CDATA[共享的配置信息，对于在不同线程执行Agent的btexec处理，是否有线程安全问题？是否有线程锁保护？
 
@@ -246,11 +185,11 @@ http://bbs.behaviac.com/index.php/570/lua%E7%89%88%E6%9C%AC%E7%9A%84%E5%BC%80%E5
 		<item>
 		<title>
 		啦啦啦对《使用cmake构建C++版运行时库》的评论		</title>
-		<link>./../../../../build/index.html#comment-416</link>
+		<link>/build/#comment-416</link>
 
 		<dc:creator><![CDATA[啦啦啦]]></dc:creator>
 		<pubDate>Mon, 13 Nov 2017 06:44:18 +0000</pubDate>
-		<guid isPermaLink="false">./../../../../index.html?p=156#comment-416</guid>
+		<guid isPermaLink="false">/?p=156#comment-416</guid>
 
 					<description><![CDATA[请问能否在VS2005运行吗？]]></description>
 			<content:encoded><![CDATA[<p>请问能否在VS2005运行吗？</p>
@@ -260,45 +199,28 @@ http://bbs.behaviac.com/index.php/570/lua%E7%89%88%E6%9C%AC%E7%9A%84%E5%BC%80%E5
 		<item>
 		<title>
 		jonygli对《概率选择节点》的评论		</title>
-		<link>./../../../../selectorprobability/index.html#comment-415</link>
+		<link>/selectorprobability/#comment-415</link>
 
 		<dc:creator><![CDATA[jonygli]]></dc:creator>
 		<pubDate>Wed, 01 Nov 2017 02:48:28 +0000</pubDate>
-		<guid isPermaLink="false">./../../../../index.html?p=250#comment-415</guid>
+		<guid isPermaLink="false">/?p=250#comment-415</guid>
 
-					<description><![CDATA[In reply to &lt;a href=&quot;./../../../../selectorprobability/index.html#comment-414&quot;&gt;Shaun&lt;/a&gt;.
+					<description><![CDATA[In reply to &lt;a href=&quot;/selectorprobability/#comment-414&quot;&gt;Shaun&lt;/a&gt;.
 
 有bug请报bug。]]></description>
-			<content:encoded><![CDATA[<p>In reply to <a href="./../../../../selectorprobability/index.html#comment-414">Shaun</a>.</p>
+			<content:encoded><![CDATA[<p>In reply to <a href="/selectorprobability/#comment-414">Shaun</a>.</p>
 <p>有bug请报bug。</p>
 ]]></content:encoded>
 		
 			</item>
 		<item>
 		<title>
-		Shaun对《概率选择节点》的评论		</title>
-		<link>./../../../../selectorprobability/index.html#comment-414</link>
-
-		<dc:creator><![CDATA[Shaun]]></dc:creator>
-		<pubDate>Thu, 26 Oct 2017 09:33:40 +0000</pubDate>
-		<guid isPermaLink="false">./../../../../index.html?p=250#comment-414</guid>
-
-					<description><![CDATA[In reply to &lt;a href=&quot;./../../../../selectorprobability/index.html#comment-398&quot;&gt;jojo&lt;/a&gt;.
-
-有BUG 折腾死我了 MMP]]></description>
-			<content:encoded><![CDATA[<p>In reply to <a href="./../../../../selectorprobability/index.html#comment-398">jojo</a>.</p>
-<p>有BUG 折腾死我了 MMP</p>
-]]></content:encoded>
-		
-			</item>
-		<item>
-		<title>
 		陈x对《behaviac与Behavior Designer的对比》的评论		</title>
-		<link>./../../../../bd_vs_behaviac/index.html#comment-413</link>
+		<link>/bd_vs_behaviac/#comment-413</link>
 
 		<dc:creator><![CDATA[陈x]]></dc:creator>
 		<pubDate>Mon, 23 Oct 2017 13:08:06 +0000</pubDate>
-		<guid isPermaLink="false">./../../../../index.html?p=154#comment-413</guid>
+		<guid isPermaLink="false">/?p=154#comment-413</guid>
 
 					<description><![CDATA[js版本什么时候开发好]]></description>
 			<content:encoded><![CDATA[<p>js版本什么时候开发好</p>
@@ -308,16 +230,16 @@ http://bbs.behaviac.com/index.php/570/lua%E7%89%88%E6%9C%AC%E7%9A%84%E5%BC%80%E5
 		<item>
 		<title>
 		cainhuang对《教程3：Agent实例》的评论		</title>
-		<link>./../../../../tutorial_3_agent_instance/index.html#comment-412</link>
+		<link>/tutorial_3_agent_instance/#comment-412</link>
 
 		<dc:creator><![CDATA[cainhuang]]></dc:creator>
 		<pubDate>Mon, 09 Oct 2017 00:36:48 +0000</pubDate>
-		<guid isPermaLink="false">./../../../../index.html?p=1534#comment-412</guid>
+		<guid isPermaLink="false">/?p=1534#comment-412</guid>
 
-					<description><![CDATA[In reply to &lt;a href=&quot;./../../../../tutorial_3_agent_instance/index.html#comment-411&quot;&gt;jamesjxiao&lt;/a&gt;.
+					<description><![CDATA[In reply to &lt;a href=&quot;/tutorial_3_agent_instance/#comment-411&quot;&gt;jamesjxiao&lt;/a&gt;.
 
 C#版支持Unity版和纯C#版，使用BEHAVIAC_CS_ONLY宏，纯C#版的Agent不从Mono继承]]></description>
-			<content:encoded><![CDATA[<p>In reply to <a href="./../../../../tutorial_3_agent_instance/index.html#comment-411">jamesjxiao</a>.</p>
+			<content:encoded><![CDATA[<p>In reply to <a href="/tutorial_3_agent_instance/#comment-411">jamesjxiao</a>.</p>
 <p>C#版支持Unity版和纯C#版，使用BEHAVIAC_CS_ONLY宏，纯C#版的Agent不从Mono继承</p>
 ]]></content:encoded>
 		
@@ -325,11 +247,11 @@ C#版支持Unity版和纯C#版，使用BEHAVIAC_CS_ONLY宏，纯C#版的Agent不
 		<item>
 		<title>
 		jamesjxiao对《教程3：Agent实例》的评论		</title>
-		<link>./../../../../tutorial_3_agent_instance/index.html#comment-411</link>
+		<link>/tutorial_3_agent_instance/#comment-411</link>
 
 		<dc:creator><![CDATA[jamesjxiao]]></dc:creator>
 		<pubDate>Tue, 03 Oct 2017 07:44:58 +0000</pubDate>
-		<guid isPermaLink="false">./../../../../index.html?p=1534#comment-411</guid>
+		<guid isPermaLink="false">/?p=1534#comment-411</guid>
 
 					<description><![CDATA[这里说到了一个比较重要的点，Unity版本的Agent其实建议不要继承自Mono，而是走存逻辑类。我现在的代码框架是脱离mono的，但因为Agent继承自mono，所以需要手动创建一个逻辑GameObject，非常的不优雅哟~]]></description>
 			<content:encoded><![CDATA[<p>这里说到了一个比较重要的点，Unity版本的Agent其实建议不要继承自Mono，而是走存逻辑类。我现在的代码框架是脱离mono的，但因为Agent继承自mono，所以需要手动创建一个逻辑GameObject，非常的不优雅哟~</p>
@@ -339,11 +261,11 @@ C#版支持Unity版和纯C#版，使用BEHAVIAC_CS_ONLY宏，纯C#版的Agent不
 		<item>
 		<title>
 		最新版3.6.39发布了！ &#8211; behaviac对《behaviac版本下载及说明》的评论		</title>
-		<link>./../../../../downloads/index.html#comment-410</link>
+		<link>/downloads/#comment-410</link>
 
 		<dc:creator><![CDATA[最新版3.6.39发布了！ &#8211; behaviac]]></dc:creator>
 		<pubDate>Tue, 12 Sep 2017 11:07:01 +0000</pubDate>
-		<guid isPermaLink="false">./../../../../index.html?p=343#comment-410</guid>
+		<guid isPermaLink="false">/?p=343#comment-410</guid>
 
 					<description><![CDATA[[&#8230;] 下载该版本点这里 [&#8230;]]]></description>
 			<content:encoded><![CDATA[<p>[&#8230;] 下载该版本点这里 [&#8230;]</p>
@@ -353,11 +275,11 @@ C#版支持Unity版和纯C#版，使用BEHAVIAC_CS_ONLY宏，纯C#版的Agent不
 		<item>
 		<title>
 		最新版3.6.38发布了！ &#8211; behaviac对《behaviac版本下载及说明》的评论		</title>
-		<link>./../../../../downloads/index.html#comment-409</link>
+		<link>/downloads/#comment-409</link>
 
 		<dc:creator><![CDATA[最新版3.6.38发布了！ &#8211; behaviac]]></dc:creator>
 		<pubDate>Thu, 17 Aug 2017 06:41:11 +0000</pubDate>
-		<guid isPermaLink="false">./../../../../index.html?p=343#comment-409</guid>
+		<guid isPermaLink="false">/?p=343#comment-409</guid>
 
 					<description><![CDATA[[&#8230;] 下载该版本点这里 [&#8230;]]]></description>
 			<content:encoded><![CDATA[<p>[&#8230;] 下载该版本点这里 [&#8230;]</p>
@@ -367,11 +289,11 @@ C#版支持Unity版和纯C#版，使用BEHAVIAC_CS_ONLY宏，纯C#版的Agent不
 		<item>
 		<title>
 		低调对《使用cmake构建C++版运行时库》的评论		</title>
-		<link>./../../../../build/index.html#comment-408</link>
+		<link>/build/#comment-408</link>
 
 		<dc:creator><![CDATA[低调]]></dc:creator>
 		<pubDate>Mon, 14 Aug 2017 06:52:03 +0000</pubDate>
-		<guid isPermaLink="false">./../../../../index.html?p=156#comment-408</guid>
+		<guid isPermaLink="false">/?p=156#comment-408</guid>
 
 					<description><![CDATA[请问如何把tutorial_1_gcc_debug也编译成so,
 让java通过JNI来调用.]]></description>
@@ -383,11 +305,11 @@ C#版支持Unity版和纯C#版，使用BEHAVIAC_CS_ONLY宏，纯C#版的Agent不
 		<item>
 		<title>
 		行为树的基本概念及进阶 &#8211; behaviac对《节点类型的简单介绍》的评论		</title>
-		<link>./../../../../intro/index.html#comment-407</link>
+		<link>/intro/#comment-407</link>
 
 		<dc:creator><![CDATA[行为树的基本概念及进阶 &#8211; behaviac]]></dc:creator>
 		<pubDate>Tue, 08 Aug 2017 03:19:12 +0000</pubDate>
-		<guid isPermaLink="false">./../../../../index.html?p=216#comment-407</guid>
+		<guid isPermaLink="false">/?p=216#comment-407</guid>
 
 					<description><![CDATA[[&#8230;] 先补充下各节点类型的执行逻辑（详见节点说明）： [&#8230;]]]></description>
 			<content:encoded><![CDATA[<p>[&#8230;] 先补充下各节点类型的执行逻辑（详见节点说明）： [&#8230;]</p>
@@ -397,11 +319,11 @@ C#版支持Unity版和纯C#版，使用BEHAVIAC_CS_ONLY宏，纯C#版的Agent不
 		<item>
 		<title>
 		最新版3.6.36发布了！ &#8211; behaviac对《behaviac版本下载及说明》的评论		</title>
-		<link>./../../../../downloads/index.html#comment-406</link>
+		<link>/downloads/#comment-406</link>
 
 		<dc:creator><![CDATA[最新版3.6.36发布了！ &#8211; behaviac]]></dc:creator>
 		<pubDate>Thu, 03 Aug 2017 08:04:00 +0000</pubDate>
-		<guid isPermaLink="false">./../../../../index.html?p=343#comment-406</guid>
+		<guid isPermaLink="false">/?p=343#comment-406</guid>
 
 					<description><![CDATA[[&#8230;] 下载该版本点这里 [&#8230;]]]></description>
 			<content:encoded><![CDATA[<p>[&#8230;] 下载该版本点这里 [&#8230;]</p>
@@ -411,11 +333,11 @@ C#版支持Unity版和纯C#版，使用BEHAVIAC_CS_ONLY宏，纯C#版的Agent不
 		<item>
 		<title>
 		green对《自定义类或结构体》的评论		</title>
-		<link>./../../../../tutorial6_customtypes/index.html#comment-405</link>
+		<link>/tutorial6_customtypes/#comment-405</link>
 
 		<dc:creator><![CDATA[green]]></dc:creator>
 		<pubDate>Thu, 27 Jul 2017 09:38:39 +0000</pubDate>
-		<guid isPermaLink="false">./../../../../index.html?p=292#comment-405</guid>
+		<guid isPermaLink="false">/?p=292#comment-405</guid>
 
 					<description><![CDATA[你好，请问一下如何在编辑器使用第三方库的类或结构体呢]]></description>
 			<content:encoded><![CDATA[<p>你好，请问一下如何在编辑器使用第三方库的类或结构体呢</p>
@@ -425,16 +347,16 @@ C#版支持Unity版和纯C#版，使用BEHAVIAC_CS_ONLY宏，纯C#版的Agent不
 		<item>
 		<title>
 		cainhuang对《教程1.2：手工编写类型代码的工作流程》的评论		</title>
-		<link>./../../../../tutorial_1_2_write_codes/index.html#comment-404</link>
+		<link>/tutorial_1_2_write_codes/#comment-404</link>
 
 		<dc:creator><![CDATA[cainhuang]]></dc:creator>
 		<pubDate>Tue, 25 Jul 2017 03:11:45 +0000</pubDate>
-		<guid isPermaLink="false">./../../../../index.html?p=1745#comment-404</guid>
+		<guid isPermaLink="false">/?p=1745#comment-404</guid>
 
-					<description><![CDATA[In reply to &lt;a href=&quot;./../../../../tutorial_1_2_write_codes/index.html#comment-399&quot;&gt;franck&lt;/a&gt;.
+					<description><![CDATA[In reply to &lt;a href=&quot;/tutorial_1_2_write_codes/#comment-399&quot;&gt;franck&lt;/a&gt;.
 
 没有问题，因为每个.h文件的第一句代码都是类似这种语句：#ifndef _BEHAVIAC_HEADERS_H_，所以不会造成循环include]]></description>
-			<content:encoded><![CDATA[<p>In reply to <a href="./../../../../tutorial_1_2_write_codes/index.html#comment-399">franck</a>.</p>
+			<content:encoded><![CDATA[<p>In reply to <a href="/tutorial_1_2_write_codes/#comment-399">franck</a>.</p>
 <p>没有问题，因为每个.h文件的第一句代码都是类似这种语句：#ifndef _BEHAVIAC_HEADERS_H_，所以不会造成循环include</p>
 ]]></content:encoded>
 		
@@ -442,28 +364,101 @@ C#版支持Unity版和纯C#版，使用BEHAVIAC_CS_ONLY宏，纯C#版的Agent不
 		<item>
 		<title>
 		如何编译构建 &#8211; behaviac对《behaviac版本下载及说明》的评论		</title>
-		<link>./../../../../downloads/index.html#comment-403</link>
+		<link>/downloads/#comment-403</link>
 
 		<dc:creator><![CDATA[如何编译构建 &#8211; behaviac]]></dc:creator>
 		<pubDate>Tue, 25 Jul 2017 03:07:07 +0000</pubDate>
-		<guid isPermaLink="false">./../../../../index.html?p=343#comment-403</guid>
+		<guid isPermaLink="false">/?p=343#comment-403</guid>
 
-					<description><![CDATA[[&#8230;] 请首先到./../../downloads/下载或克隆源码。/index.html [&#8230;]]]></description>
-			<content:encoded><![CDATA[<p>[&#8230;] 请首先到./../../downloads/下载或克隆源码。/index.html [&#8230;]</p>
+					<description><![CDATA[[&#8230;] 请首先到/language/zh/downloads/下载或克隆源码。 [&#8230;]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] 请首先到/language/zh/downloads/下载或克隆源码。 [&#8230;]</p>
 ]]></content:encoded>
 		
 			</item>
 		<item>
 		<title>
 		使用cmake构建C++版运行时库 &#8211; behaviac对《behaviac版本下载及说明》的评论		</title>
-		<link>./../../../../downloads/index.html#comment-402</link>
+		<link>/downloads/#comment-402</link>
 
 		<dc:creator><![CDATA[使用cmake构建C++版运行时库 &#8211; behaviac]]></dc:creator>
 		<pubDate>Tue, 25 Jul 2017 03:04:43 +0000</pubDate>
-		<guid isPermaLink="false">./../../../../index.html?p=343#comment-402</guid>
+		<guid isPermaLink="false">/?p=343#comment-402</guid>
 
-					<description><![CDATA[[&#8230;] 请首先到./../../downloads/下载或克隆源码。/index.html [&#8230;]]]></description>
-			<content:encoded><![CDATA[<p>[&#8230;] 请首先到./../../downloads/下载或克隆源码。/index.html [&#8230;]</p>
+					<description><![CDATA[[&#8230;] 请首先到/language/zh/downloads/下载或克隆源码。 [&#8230;]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] 请首先到/language/zh/downloads/下载或克隆源码。 [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		aaa对《behaviac与Behavior Designer的对比》的评论		</title>
+		<link>/bd_vs_behaviac/#comment-401</link>
+
+		<dc:creator><![CDATA[aaa]]></dc:creator>
+		<pubDate>Sat, 15 Jul 2017 06:27:10 +0000</pubDate>
+		<guid isPermaLink="false">/?p=154#comment-401</guid>
+
+					<description><![CDATA[editor尽快支持macos]]></description>
+			<content:encoded><![CDATA[<p>editor尽快支持macos</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		最新版3.6.35发布了！ &#8211; behaviac对《behaviac版本下载及说明》的评论		</title>
+		<link>/downloads/#comment-400</link>
+
+		<dc:creator><![CDATA[最新版3.6.35发布了！ &#8211; behaviac]]></dc:creator>
+		<pubDate>Wed, 12 Jul 2017 06:35:52 +0000</pubDate>
+		<guid isPermaLink="false">/?p=343#comment-400</guid>
+
+					<description><![CDATA[[&#8230;] 下载该版本点这里 [&#8230;]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] 下载该版本点这里 [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		franck对《教程1.2：手工编写类型代码的工作流程》的评论		</title>
+		<link>/tutorial_1_2_write_codes/#comment-399</link>
+
+		<dc:creator><![CDATA[franck]]></dc:creator>
+		<pubDate>Fri, 16 Jun 2017 02:26:20 +0000</pubDate>
+		<guid isPermaLink="false">/?p=1745#comment-399</guid>
+
+					<description><![CDATA[在behaviac_heads.h中有#include &quot;SecondAgent.h&quot;，而在SecondAgent.h中又有#include &quot;behaviac_headers.h&quot;，这样相互include，在C++中会有问题的吧]]></description>
+			<content:encoded><![CDATA[<p>在behaviac_heads.h中有#include &#8220;SecondAgent.h&#8221;，而在SecondAgent.h中又有#include &#8220;behaviac_headers.h&#8221;，这样相互include，在C++中会有问题的吧</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		jojo对《概率选择节点》的评论		</title>
+		<link>/selectorprobability/#comment-398</link>
+
+		<dc:creator><![CDATA[jojo]]></dc:creator>
+		<pubDate>Tue, 30 May 2017 10:10:59 +0000</pubDate>
+		<guid isPermaLink="false">/?p=250#comment-398</guid>
+
+					<description><![CDATA[这随机尼玛就是坑]]></description>
+			<content:encoded><![CDATA[<p>这随机尼玛就是坑</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		jonygli对《共享资源和实例数据》的评论		</title>
+		<link>/memory_shared/#comment-397</link>
+
+		<dc:creator><![CDATA[jonygli]]></dc:creator>
+		<pubDate>Wed, 24 May 2017 11:38:28 +0000</pubDate>
+		<guid isPermaLink="false">/?p=164#comment-397</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/memory_shared/#comment-396&quot;&gt;pan&lt;/a&gt;.
+
+对的。一般情况，不需要显示的调用btunload。如果还有相应问题，可以去bbs.behaviac.com提问哈。]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/memory_shared/#comment-396">pan</a>.</p>
+<p>对的。一般情况，不需要显示的调用btunload。如果还有相应问题，可以去bbs.behaviac.com提问哈。</p>
 ]]></content:encoded>
 		
 			</item>

@@ -8,10 +8,10 @@
 <channel>
 	<title>
 	《如何编译构建》的评论	</title>
-	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
-	<link>./../index.html</link>
+	<atom:link href="/how_to_build/feed/" rel="self" type="application/rss+xml" />
+	<link>/how_to_build/</link>
 	<description>Tencent behaviac, Game AI, Behavior Tree, Finite State Machine, Hierarchical Task Network, BT FSM HTN, 腾讯开源, 游戏AI, 行为树,有限状态机,分层任务网络</description>
-	<lastBuildDate>Sat, 02 Nov 2019 09:54:52 +0000</lastBuildDate>
+	<lastBuildDate>Tue, 25 Jul 2017 03:06:50 +0000</lastBuildDate>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
@@ -20,11 +20,11 @@
 	<item>
 		<title>
 		作者：目录结构 &#8211; behaviac		</title>
-		<link>./../index.html#comment-163</link>
+		<link>/how_to_build/#comment-163</link>
 
 		<dc:creator><![CDATA[目录结构 &#8211; behaviac]]></dc:creator>
 		<pubDate>Wed, 18 Jan 2017 02:01:04 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=308#comment-163</guid>
+		<guid isPermaLink="false">/?p=308#comment-163</guid>
 
 					<description><![CDATA[[&#8230;] build：构建脚本，可以参考文档《如何编译构建》 [&#8230;]]]></description>
 			<content:encoded><![CDATA[<p>[&#8230;] build：构建脚本，可以参考文档《如何编译构建》 [&#8230;]</p>
@@ -34,11 +34,11 @@
 		<item>
 		<title>
 		作者：教程一：Hello Behaviac &#8211; behaviac		</title>
-		<link>./../index.html#comment-162</link>
+		<link>/how_to_build/#comment-162</link>
 
 		<dc:creator><![CDATA[教程一：Hello Behaviac &#8211; behaviac]]></dc:creator>
 		<pubDate>Mon, 16 Jan 2017 09:13:44 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=308#comment-162</guid>
+		<guid isPermaLink="false">/?p=308#comment-162</guid>
 
 					<description><![CDATA[[&#8230;] 需要整合behaviac运行时库到自己的项目中来一起编译构建和运行行为树。如何编译构建behaviac运行时库，请参考文档《如何编译构建》。 [&#8230;]]]></description>
 			<content:encoded><![CDATA[<p>[&#8230;] 需要整合behaviac运行时库到自己的项目中来一起编译构建和运行行为树。如何编译构建behaviac运行时库，请参考文档《如何编译构建》。 [&#8230;]</p>
@@ -48,11 +48,11 @@
 		<item>
 		<title>
 		作者：jonygli		</title>
-		<link>./../index.html#comment-11</link>
+		<link>/how_to_build/#comment-11</link>
 
 		<dc:creator><![CDATA[jonygli]]></dc:creator>
 		<pubDate>Tue, 24 May 2016 03:33:58 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=308#comment-11</guid>
+		<guid isPermaLink="false">/?p=308#comment-11</guid>
 
 					<description><![CDATA[cmake很方便的]]></description>
 			<content:encoded><![CDATA[<p>cmake很方便的</p>
@@ -62,11 +62,11 @@
 		<item>
 		<title>
 		作者：nil		</title>
-		<link>./../index.html#comment-8</link>
+		<link>/how_to_build/#comment-8</link>
 
 		<dc:creator><![CDATA[nil]]></dc:creator>
 		<pubDate>Fri, 20 May 2016 10:23:05 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=308#comment-8</guid>
+		<guid isPermaLink="false">/?p=308#comment-8</guid>
 
 					<description><![CDATA[还有make中的build_enable_lua看起来很有用的样子]]></description>
 			<content:encoded><![CDATA[<p>还有make中的build_enable_lua看起来很有用的样子</p>
@@ -76,11 +76,11 @@
 		<item>
 		<title>
 		作者：nil		</title>
-		<link>./../index.html#comment-7</link>
+		<link>/how_to_build/#comment-7</link>
 
 		<dc:creator><![CDATA[nil]]></dc:creator>
 		<pubDate>Fri, 20 May 2016 10:21:48 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=308#comment-7</guid>
+		<guid isPermaLink="false">/?p=308#comment-7</guid>
 
 					<description><![CDATA[好吧，make gui 直接根目录生成即可]]></description>
 			<content:encoded><![CDATA[<p>好吧，make gui 直接根目录生成即可</p>
@@ -90,11 +90,11 @@
 		<item>
 		<title>
 		作者：nil		</title>
-		<link>./../index.html#comment-6</link>
+		<link>/how_to_build/#comment-6</link>
 
 		<dc:creator><![CDATA[nil]]></dc:creator>
 		<pubDate>Fri, 20 May 2016 10:15:05 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=308#comment-6</guid>
+		<guid isPermaLink="false">/?p=308#comment-6</guid>
 
 					<description><![CDATA[话说有没有c++ ios 的编译教程]]></description>
 			<content:encoded><![CDATA[<p>话说有没有c++ ios 的编译教程</p>

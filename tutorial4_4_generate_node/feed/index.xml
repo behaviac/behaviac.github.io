@@ -8,8 +8,8 @@
 <channel>
 	<title>
 	《扩展生成节点的行为树代码》的评论	</title>
-	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
-	<link>./../index.html</link>
+	<atom:link href="/tutorial4_4_generate_node/feed/" rel="self" type="application/rss+xml" />
+	<link>/tutorial4_4_generate_node/</link>
 	<description>Tencent behaviac, Game AI, Behavior Tree, Finite State Machine, Hierarchical Task Network, BT FSM HTN, 腾讯开源, 游戏AI, 行为树,有限状态机,分层任务网络</description>
 	<lastBuildDate>Mon, 19 Dec 2016 09:11:42 +0000</lastBuildDate>
 	<sy:updatePeriod>

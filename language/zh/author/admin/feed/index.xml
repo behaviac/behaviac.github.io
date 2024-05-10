@@ -9,62 +9,54 @@
 
 <channel>
 	<title>admin &#8211; behaviac</title>
-	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
-	<link>./../../../../../index.html</link>
+	<atom:link href="/language/zh/author/admin/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
 	<description>Tencent behaviac, Game AI, Behavior Tree, Finite State Machine, Hierarchical Task Network, BT FSM HTN, 腾讯开源, 游戏AI, 行为树,有限状态机,分层任务网络</description>
-	<lastBuildDate>Sat, 02 Nov 2019 09:54:52 +0000</lastBuildDate>
+	<lastBuildDate>Tue, 12 Sep 2017 11:04:11 +0000</lastBuildDate>
 	<language>zh-CN</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
 	<generator>https://wordpress.org/?v=5.4.1</generator>
-
-<image>
-	<url>./../../../../../wp-content/uploads/2016/04/cropped-256x256-32x32.png</url>
-	<title>admin &#8211; behaviac</title>
-	<link>./../../../../../index.html</link>
-	<width>32</width>
-	<height>32</height>
-</image> 
 	<item>
 		<title>节点类型的简单介绍</title>
-		<link>./../../../../../intro/index.html</link>
-					<comments>./../../../../../intro/index.html#comments</comments>
+		<link>/intro/</link>
+					<comments>/intro/#comments</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<pubDate>Wed, 11 May 2016 10:05:17 +0000</pubDate>
 				<category><![CDATA[手册]]></category>
 		<category><![CDATA[节点]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=216</guid>
+		<guid isPermaLink="false">/?p=216</guid>
 
-					<description><![CDATA[behaviac 有以下节点类型： 其中‘附件’有前置和后置，可以添加到任何一个节点作为前置和后置。前置往往是作为前提条件（precondition）来使用，而<a class="moretag" href="./../../../../../intro/index.html">Read More...</a>]]></description>
+					<description><![CDATA[behaviac 有以下节点类型： 其中‘附件’有前置和后置，可以添加到任何一个节点作为前置和后置。前置往往是作为前提条件（precondition）来使用，而<a class="moretag" href="/intro/">Read More...</a>]]></description>
 										<content:encoded><![CDATA[<p>behaviac 有以下节点类型：</p>
-<p><img src="./../../../../../img/references/nodetypes.png" alt="nodetypes" /></p>
+<p><img src="/img/references/nodetypes.png" alt="nodetypes" /></p>
 <p>其中‘附件’有前置和后置，可以添加到任何一个节点作为前置和后置。前置往往是作为前提条件（precondition）来使用，而后置往往是当节点结束的时候施加效果（effects）。</p>
-<p><img src="./../../../../../img/references/prepost.png" alt="prepost" /></p>
+<p><img src="/img/references/prepost.png" alt="prepost" /></p>
 <p>其中‘组合’，‘装饰器’ 类都是分支节点，‘动作’ 类，和‘条件’类大都是子节点， 而‘条件’类中的‘或’、‘与’是分支节点。</p>
 <p>需要指出的是，有些节点类型通过其他更基本类型的节点的组合也可以实现。这里提供的节点类型只是使用起来可能会更方便，更直观些。用户可以根据自己的偏好选择使用与否。 用户也可以选择扩展节点类型提供扩展功能或者快捷方式，请参考‘教程’ 中的相关章节。 同时如果根本不打算使用某些节点类型，可以在 config.xml 里配置后就不会出现在可选的列表里了，请参考配置Config.xml。</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../intro/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/intro/feed/</wfw:commentRss>
 			<slash:comments>1</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>序列节点</title>
-		<link>./../../../../../sequence/index.html</link>
-					<comments>./../../../../../sequence/index.html#comments</comments>
+		<link>/sequence/</link>
+					<comments>/sequence/#comments</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<pubDate>Thu, 12 May 2016 10:08:31 +0000</pubDate>
 				<category><![CDATA[手册]]></category>
 		<category><![CDATA[节点]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=222</guid>
+		<guid isPermaLink="false">/?p=222</guid>
 
-					<description><![CDATA[Sequence 节点是 BT 中传统的组合节点之一。 该节点以给定的顺序依次执行其子节点，直到所有子节点成功返回，该节点也返回成功。只要其中某个子节点失败，那<a class="moretag" href="./../../../../../sequence/index.html">Read More...</a>]]></description>
-										<content:encoded><![CDATA[<p><img src="./../../../../../img/references/sequence.png" alt="sequence" /></p>
+					<description><![CDATA[Sequence 节点是 BT 中传统的组合节点之一。 该节点以给定的顺序依次执行其子节点，直到所有子节点成功返回，该节点也返回成功。只要其中某个子节点失败，那<a class="moretag" href="/sequence/">Read More...</a>]]></description>
+										<content:encoded><![CDATA[<p><img src="/img/references/sequence.png" alt="sequence" /></p>
 <p>Sequence 节点是 BT 中传统的组合节点之一。 该节点以给定的顺序依次执行其子节点，直到所有子节点成功返回，该节点也返回成功。只要其中某个子节点失败，那么该节点也失败。</p>
 <p>Sequence 实现了与（&amp;&amp;）的功能。我们知道表达式 R=A&amp;&amp;B&amp;&amp;C&amp;&amp;D 执行的时候首先执行 A，如果 A 是 false 则返回 false，如果 A 是 true 则执行 B，如果 B 是 false 则返回 false，否则如果 B 是 true 则执行 C，如果 C 是 false 则返回 false，否则如果 C 是 true 则执行 D，并且返回D 的值。</p>
 <p>最一般的意义上， Sequence 节点实现了一个序列。 实际上， Sequence 节点不仅可以管理‘动作’子节点，也可以管理‘条件’子节点。 如上图的应用中， 如果1和2号节点是条件节点的话，这两个条件节点实际上用作进入下面其他节点的 precondition，只有这两个条件是 true，下面的其他节点才有可能执行。</p>
@@ -72,33 +64,33 @@
 <p>具体的执行逻辑可以查看 <a href="https://github.com/Tencent/behaviac/blob/master/src/behaviortree/nodes/composites/sequence.cpp">behaviortree/nodes/composites/sequence.cpp</a></p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../sequence/feed/index.html</wfw:commentRss>
-			<slash:comments>1</slash:comments>
+					<wfw:commentRss>/sequence/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>behaviac版本下载及说明</title>
-		<link>./../../../../../downloads/index.html</link>
-					<comments>./../../../../../downloads/index.html#comments</comments>
+		<link>/downloads/</link>
+					<comments>/downloads/#comments</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<pubDate>Mon, 16 May 2016 09:46:07 +0000</pubDate>
 				<category><![CDATA[下载]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=343</guid>
+		<guid isPermaLink="false">/?p=343</guid>
 
-					<description><![CDATA[说明 C++版的构建使用cmake来生成对应平台的项目文件，请参考构建说明 访问history.txt获取修改说明 升级版本的步骤及注意事项 教程 说明文章 节<a class="moretag" href="./../../../../../downloads/index.html">Read More...</a>]]></description>
+					<description><![CDATA[说明 C++版的构建使用cmake来生成对应平台的项目文件，请参考构建说明 访问history.txt获取修改说明 升级版本的步骤及注意事项 教程 说明文章 节<a class="moretag" href="/downloads/">Read More...</a>]]></description>
 										<content:encoded><![CDATA[<div class="release label-latest">
 <div class="release-body commit open">
 <div class="release-header">
 <h1><span class="ez-toc-section" id="i">说明</span></h1>
 <ul>
-<li>C++版的构建使用cmake来生成对应平台的项目文件，请参考<a href="./../../../../../docs/zh/articles/build/index.html">构建说明</a></li>
+<li>C++版的构建使用cmake来生成对应平台的项目文件，请参考<a href="/docs/zh/articles/build/">构建说明</a></li>
 <li>访问<a href="https://github.com/Tencent/behaviac/blob/master/history.txt">history.txt</a>获取修改说明</li>
-<li><a href="./../../../updatenotes/index.html">升级版本的步骤及注意事项</a></li>
-<li><a href="./../../../category/%e6%96%87%e6%a1%a3/%e6%95%99%e7%a8%8b/index.html">教程 </a></li>
-<li><a href="./../../../category/%e6%96%87%e6%a1%a3/%e6%96%87%e7%ab%a0/index.html">说明文章</a></li>
-<li><a href="./../../../category/%e6%96%87%e6%a1%a3/%e6%89%8b%e5%86%8c/index.html">节点手册</a></li>
+<li><a href="/language/zh/updatenotes/">升级版本的步骤及注意事项</a></li>
+<li><a href="/language/zh/category/文档/教程/">教程 </a></li>
+<li><a href="/language/zh/category/文档/%e6%96%87%e7%ab%a0/">说明文章</a></li>
+<li><a href="/language/zh/category/文档/%e6%89%8b%e5%86%8c/">节点手册</a></li>
 <li>每个版本有3个文件可以下载，每个文件中的数字都是版本号
 <ul>
 <li>BehaviacSetup_*.exe是windows平台上的安装程序，用以安装可执行的编辑器和demo。也可以从源码自行构建。</li>
@@ -2399,7 +2391,7 @@
 <li><strong>所有源码 [<a href="http://dlied5.qq.com/behaviac/behaviac3.6.18.zip">国内镜像</a>]</strong></li>
 <li><strong>unity package [<a href="http://dlied5.qq.com/behaviac/behaviac3.6.18.unitypackage">国内镜像</a>]</strong></li>
 </ul>
-<p>3.6.18是重大版本升级，请参考文档《<a href="./../../../updatenotes/index.html#36x">升级版本的步骤及注意事项</a>》</p>
+<p>3.6.18是重大版本升级，请参考文档《<a href="/language/zh/updatenotes/#36x">升级版本的步骤及注意事项</a>》</p>
 <h3><span class="ez-toc-section" id="i-17">主要改动：</span></h3>
 </div>
 <ul>
@@ -2694,15 +2686,15 @@
 </div>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../downloads/feed/index.html</wfw:commentRss>
-			<slash:comments>11</slash:comments>
+					<wfw:commentRss>/downloads/feed/</wfw:commentRss>
+			<slash:comments>10</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>编辑器的安装</title>
-		<link>./../../../../../tutorial1_install/index.html</link>
-					<comments>./../../../../../tutorial1_install/index.html#respond</comments>
+		<link>/tutorial1_install/</link>
+					<comments>/tutorial1_install/#respond</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<pubDate>Fri, 13 May 2016 02:17:21 +0000</pubDate>
@@ -2710,11 +2702,11 @@
 		<category><![CDATA[上手]]></category>
 		<category><![CDATA[安装]]></category>
 		<category><![CDATA[编辑器]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=267</guid>
+		<guid isPermaLink="false">/?p=267</guid>
 
-					<description><![CDATA[首先从下载页面下载编辑器 可以查看目录结构 安装 安装behaviac套件的系统配置需求如下所示： 最低配置： 硬件环境： CPU：Intel core2 Du<a class="moretag" href="./../../../../../tutorial1_install/index.html">Read More...</a>]]></description>
-										<content:encoded><![CDATA[<p><a href="./../../../behaviac%E7%89%88%E6%9C%AC%E4%B8%8B%E8%BD%BD/index.html">首先从下载页面下载编辑器</a></p>
-<p><a href="./../../../directory/index.html">可以查看目录结构</a></p>
+					<description><![CDATA[首先从下载页面下载编辑器 可以查看目录结构 安装 安装behaviac套件的系统配置需求如下所示： 最低配置： 硬件环境： CPU：Intel core2 Du<a class="moretag" href="/tutorial1_install/">Read More...</a>]]></description>
+										<content:encoded><![CDATA[<p><a href="/language/zh/behaviac%E7%89%88%E6%9C%AC%E4%B8%8B%E8%BD%BD/">首先从下载页面下载编辑器</a></p>
+<p><a href="/language/zh/directory/">可以查看目录结构</a></p>
 <h2 id="section">安装</h2>
 <p>安装behaviac套件的系统配置需求如下所示：</p>
 <h3 id="section-1">最低配置：</h3>
@@ -2737,35 +2729,35 @@
 <p>可能需要下载安装<a href="https://support.microsoft.com/en-us/kb/2977003">Microsoft Visual C++ 运行库</a>。<br />
 及<a href="https://www.microsoft.com/en-US/download/details.aspx?id=21">.net</a>。</p>
 <p>安装完成后，会在桌面生成编辑器的快捷方式，如下图所示：</p>
-<p><img src="./../../../../../img/tutorials/tutorial1/designerIcon.png" alt="" /></p>
+<p><img src="/img/tutorials/tutorial1/designerIcon.png" alt="" /></p>
 <p>图1 安装后桌面的编辑器图标</p>
 <p>另外，在系统的“开始”菜单中生成了一些游戏demo和文档的菜单项。其中，BattleCityDemo是采用Unity引擎实现的小游戏（C#版），LaunchCocosGame是采用Cocos引擎实现的小游戏（C++版），LaunchSDLDemo是采用SDL库实现的小游戏（C++版），如下图所示：</p>
-<p><img src="./../../../../../img/tutorials/tutorial1/startmenu.png" alt="" /></p>
+<p><img src="/img/tutorials/tutorial1/startmenu.png" alt="" /></p>
 <p>图2 开始菜单中demo和文档菜单项</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../tutorial1_install/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/tutorial1_install/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>编辑器的使用</title>
-		<link>./../../../../../tutorial2_usage/index.html</link>
-					<comments>./../../../../../tutorial2_usage/index.html#comments</comments>
+		<link>/tutorial2_usage/</link>
+					<comments>/tutorial2_usage/#comments</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<pubDate>Fri, 13 May 2016 02:18:49 +0000</pubDate>
 				<category><![CDATA[3.5]]></category>
 		<category><![CDATA[上手]]></category>
 		<category><![CDATA[编辑器]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=269</guid>
+		<guid isPermaLink="false">/?p=269</guid>
 
-					<description><![CDATA[1 概述 behaviac中间件是我们对行为树、有限状态机等AI范式的一种整合实现方案，主要包括编辑器（Designer）和运行时库（Runtime）两大部分。<a class="moretag" href="./../../../../../tutorial2_usage/index.html">Read More...</a>]]></description>
+					<description><![CDATA[1 概述 behaviac中间件是我们对行为树、有限状态机等AI范式的一种整合实现方案，主要包括编辑器（Designer）和运行时库（Runtime）两大部分。<a class="moretag" href="/tutorial2_usage/">Read More...</a>]]></description>
 										<content:encoded><![CDATA[<h2 id="section"><span class="ez-toc-section" id="1">1 概述</span></h2>
 <p>behaviac中间件是我们对行为树、有限状态机等AI范式的一种整合实现方案，主要包括编辑器（Designer）和运行时库（Runtime）两大部分。其中，编辑器用于编辑、导出类型信息，也用于编辑、导出和调试行为树；运行时库也可导出类型信息，主要用于解释和执行编辑器导出的行为树，运行时库需要整合到自己的游戏项目中去。</p>
 <p>编辑器和运行时之间通过类型信息（Meta）进行交互，注意类型信息流动的双向箭头，表示编辑器和运行时库双方都可以导出类型信息，如下图所示：</p>
-<p><img src="./../../../../../img/overview/meta.png" alt="" /></p>
+<p><img src="/img/overview/meta.png" alt="" /></p>
 <p>图1 基于类型信息的编辑器和运行时端的交互</p>
 <p>编辑器只能运行在Windows平台上，运行时库支持C++和C#语言两个版本，对Unity引擎原生支持C#，运行时库目前支持所有主流平台，包括Windows/Linux/Android/iOS等。</p>
 <p>该组件的使用场景，支持但不限于游戏中的逻辑、角色的人工智能、动画的控制等方面。</p>
@@ -2773,7 +2765,7 @@
 <h3 id="section-2"><span class="ez-toc-section" id="21">2.1 基本介绍</span></h3>
 <p>编辑器首次打开后为会根据操作系统的语言环境配置自动设置为中文版或英文版的界面，若需更改语言显示，可以依次选择菜单项“文件（File）”-&gt;“设置（Settings）”，在弹出的设置对话框中，选择需要的“语言（Language）”并点击“确认（OK）”后，退出并重新打开编辑器，则转为需要语言的界面。<br />
 编辑器主要分为几个部分：菜单和工具栏、行为树文件区、节点区、主视口和属性表等，如下图所示：</p>
-<p><img src="./../../../../../img/tutorials/tutorial2/designerMainWindow.png" alt="" /></p>
+<p><img src="/img/tutorials/tutorial2/designerMainWindow.png" alt="" /></p>
 <p>图2.1 编辑器主界面</p>
 <ul>
 <li>菜单和工具栏：主要有新建/打开工作区、新建/保存/导出/关闭行为树文件、设置、退出、帮助等菜单项或按键。</li>
@@ -2793,7 +2785,7 @@
 <ul>
 <li>点击菜单“文件”-&gt;“新建工作区”，弹出新建工作区对话框，如下图所示。</li>
 </ul>
-<p><img src="./../../../../../img/tutorials/tutorial2/newWorkspace.png" alt="" /></p>
+<p><img src="/img/tutorials/tutorial2/newWorkspace.png" alt="" /></p>
 <p>图2.2.1 新建工作区</p>
 <ul>
 <li>依次设置工作区的名字、位置（即工作区的保存路径）、源位置（即原始行为树的保存路径）、导出位置（即运行时库所需行为树的导出路径）和元数据位置（即运行时库导出的类型信息文件路径）。</li>
@@ -2804,11 +2796,11 @@
 <p>点击菜单“文件”-&gt;“打开工作区”，选择保存在磁盘上的*.workspace.xml文件。<br />
 在安装路径下有提供的例子供参考，例如默认安装路径下的“C:\Program Files (x86)\behaviac\integration\BattleCityDemo\Assets\BTWorkspace\BattleCity.workspace.xml”，或者从菜单中的“文件”-&gt;“最近打开的工作区”列表中选择最近打开过的工作区。<br />
 behaviac组件提供了C++和C#两种编程语言的单元测试以及游戏Demo，可以通过编辑器中的菜单项“帮助”-&gt;“控制说明” 进入，然后点击快速打开所需的单元测试或游戏Demo所用到的工作区，如下图所示：</p>
-<p><img src="./../../../../../img/tutorials/tutorial2/demoUnittest.png" alt="" /></p>
+<p><img src="/img/tutorials/tutorial2/demoUnittest.png" alt="" /></p>
 <p>图2.2.2 快速打开单元测试和游戏Demo的工作区</p>
 <h4 id="section-6"><span class="ez-toc-section" id="223">2.2.3 编辑工作区</span></h4>
 <p>点击菜单“文件”-&gt;“编辑工作区”，可以修改该工作区的设置（名字、元数据位置、源位置、导出位置等），如下图所示：</p>
-<p><img src="./../../../../../img/tutorials/tutorial2/editWorkspace.png" alt="" /></p>
+<p><img src="/img/tutorials/tutorial2/editWorkspace.png" alt="" /></p>
 <p>图2.2.3 编辑工作区</p>
 <h4 id="section-7"><span class="ez-toc-section" id="224">2.2.4 新建并编辑行为树文件</span></h4>
 <ul>
@@ -2825,47 +2817,47 @@ behaviac组件提供了C++和C#两种编程语言的单元测试以及游戏Demo
 <li>通过菜单项“文件”-&gt;“导出全部”项（或者快捷键Ctrl+Shift+T）导出工作区中的所有行为树文件。</li>
 <li>目前支持4种文件格式的导出，即XML、BSON、C++和C#，如下图所示：</li>
 </ul>
-<p><img src="./../../../../../img/tutorials/tutorial2/exportBehaviors.png" alt="" /></p>
+<p><img src="/img/tutorials/tutorial2/exportBehaviors.png" alt="" /></p>
 <p>图2.2.6.1 导出行为树</p>
 <ul>
 <li>对于C++/C#格式的导出，还可以设置导出的文件名和位置。点击图2.2.6.1中“导出设置”-&gt;“设置”列的“…”按钮，可以弹出“C++/C#导出设置”对话框。对于C++文件，还需添加游戏项目中Agent子类的.h头文件，如图2.2.6.2所示。<br />
 导出后，将在指定的导出路径下生成behaviac_generated目录，里面又包含了behaviors和types两个子目录，需要将这两个子目录里面的所有文件全部包含到自己的项目中去。<br />
 注意：对于导出C++文件，如果不添加Agent子类的.h头文件，那么需要注意将behaviors和types两个子目录中生成的头文件放在项目代码include “yourAgent.h”之后，以确保Agent子类先被包含进来，否则会有编译错误。</li>
 </ul>
-<p><img src="./../../../../../img/tutorials/tutorial2/exportSettings.png" alt="" /></p>
+<p><img src="/img/tutorials/tutorial2/exportSettings.png" alt="" /></p>
 <p>图2.2.6.2 C++/C#的导出设置</p>
 <ul>
 <li>图2.2.6.2中的选项“是否导出统一文件”用来表示导出的C++或者C#文件是否为一个统一的大文件还是若干个小文件，其中每个小文件对应一个行为树。</li>
 <li>运行时库支持行为树导出文件的热加载，如果在编辑器修改完行为树之后，重新导出，游戏端会自动重新加载所用到的行为树，无需重启游戏。</li>
 </ul>
-<h4 id="section-10"><span class="ez-toc-section" id="227_Permalink">2.2.7 连接游戏<a class="header-link" title="Permalink" href="./../../../../../docs/zh/tutorials/tutorial2_usage/index.html#section-10"><span class="sr-only">Permalink</span><i class="fa fa-link"></i></a></span></h4>
+<h4 id="section-10"><span class="ez-toc-section" id="227_Permalink">2.2.7 连接游戏<a class="header-link" title="Permalink" href="/docs/zh/tutorials/tutorial2_usage/#section-10"><span class="sr-only">Permalink</span><i class="fa fa-link"></i></a></span></h4>
 <ul>
 <li>从开始菜单中，启动小游戏BattleCityDemo，如下图所示：</li>
 </ul>
-<p><img src="./../../../../../img/tutorials/tutorial2/battleCityDemo.png" alt="" /></p>
+<p><img src="/img/tutorials/tutorial2/battleCityDemo.png" alt="" /></p>
 <p>图2.2.7.1 Battle City Demo</p>
 <ul>
 <li>点击游戏主界面右上角的“Show Levels”按钮，可以切换不同的关卡，如下图所示：</li>
 </ul>
-<p><img src="./../../../../../img/tutorials/tutorial2/selectGameLevel.png" alt="" /></p>
+<p><img src="/img/tutorials/tutorial2/selectGameLevel.png" alt="" /></p>
 <p>图2.2.7.2 选择关卡</p>
 <ul>
 <li>点击游戏主界面左下角的“Launch Designer”按钮，启动编辑器，编辑器会自动打开BattleCityDemo的工作区，并打开游戏当前关卡所用到的行为树（如果没有切换其他关卡，默认打开的是Tank_Fire_Random行为树文件）。</li>
 <li>点击编辑器工具栏中的“连接游戏”按钮或通过菜单项“文件”-&gt;“连接游戏”（或通过快捷键Ctrl+L），开始连接游戏。默认的，一般无需更改服务器IP和端口号，如图2.2.7.3所示。<br />
 注意：有时候可能会发现连不上游戏，很可能是原来的端口号已被占用，可以尝试在运行时端的端口号60636改为其他值，然后相应的修改图2.2.7.3中的端口号，尝试重新连接游戏。</li>
 </ul>
-<p><img src="./../../../../../img/tutorials/tutorial2/connectGame.png" alt="" /></p>
+<p><img src="/img/tutorials/tutorial2/connectGame.png" alt="" /></p>
 <p>图2.2.7.3 连接游戏</p>
 <ul>
 <li>连接成功后，编辑器从编辑模式切换到连接模式，如下图所示：</li>
 </ul>
-<p><img src="./../../../../../img/tutorials/tutorial2/connectMode.png" alt="" /></p>
+<p><img src="/img/tutorials/tutorial2/connectMode.png" alt="" /></p>
 <p>图2.2.7.4 连接模式</p>
 <ul>
 <li>时间轴（Timeline）：默认位于编辑器最上方，用于表示当前帧相关的信息。</li>
 <li>实例列表：列出了游戏中所有的对象实例，双击实例节点后可以开始跟踪调试选中的实例，右键单击实例节点弹出如下菜单，如图2.2.7.5所示。其中“调试”跟双击节点的作用一致，开始跟踪选中的实例，主视口会高亮显示行为树的执行路径；“查看属性”用于跟踪当前选中实例的所有属性的变化，编辑器会弹出实例的属性列表。</li>
 </ul>
-<p><img src="./../../../../../img/tutorials/tutorial2/debugInstance.png" alt="" /></p>
+<p><img src="/img/tutorials/tutorial2/debugInstance.png" alt="" /></p>
 <p>图2.2.7.5 实例右键菜单</p>
 <ul>
 <li>主视口：高亮的节点边框和连接线段，表示程序当前执行的路径情况。双击树中节点的左右两侧，可以设置节点的断点（左侧表示进入断点，右侧表示退出断点），用于游戏执行时在断点位置停下来，游戏断下来后按F5键后继续运行。</li>
@@ -2878,13 +2870,13 @@ behaviac组件提供了C++和C#两种编程语言的单元测试以及游戏Demo
 <li>点击菜单或工具栏中的“断开游戏”按键，断开与游戏端的连接，回到编辑模式。</li>
 <li>默认弹出如下对话框，保存之前连接模式下调试的相关数据。</li>
 </ul>
-<p><img src="./../../../../../img/tutorials/tutorial2/saveDump.png" alt="" /></p>
+<p><img src="/img/tutorials/tutorial2/saveDump.png" alt="" /></p>
 <p>图2.2.8.1 保存dump数据</p>
 <ul>
 <li>点击菜单或工具栏中的“分析导出文件”按键，选择打开上一步导出的数据文件，编辑器进入到分析模式。</li>
 <li>分析模式的界面布局跟连接模式类似，但是可以通过时间轴里面的播放按钮开始重现连接过程中的情况，如下图所示：</li>
 </ul>
-<p><img src="./../../../../../img/tutorials/tutorial2/analyzeDump.png" alt="" /></p>
+<p><img src="/img/tutorials/tutorial2/analyzeDump.png" alt="" /></p>
 <p>图2.2.8.2 分析dump数据</p>
 <ul>
 <li>要退出分析模式，可以点击菜单或工具栏中的“终止分析”按键，回到编辑模式。</li>
@@ -2896,51 +2888,51 @@ behaviac组件提供了C++和C#两种编程语言的单元测试以及游戏Demo
 <div class="section-nav"></div>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../tutorial2_usage/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/tutorial2_usage/feed/</wfw:commentRss>
 			<slash:comments>3</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>如何编译构建</title>
-		<link>./../../../../../how_to_build/index.html</link>
-					<comments>./../../../../../how_to_build/index.html#comments</comments>
+		<link>/how_to_build/</link>
+					<comments>/how_to_build/#comments</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<pubDate>Fri, 13 May 2016 02:43:18 +0000</pubDate>
 				<category><![CDATA[文章]]></category>
 		<category><![CDATA[上手]]></category>
 		<category><![CDATA[编译构建]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=308</guid>
+		<guid isPermaLink="false">/?p=308</guid>
 
-					<description><![CDATA[如何编译构建 请首先到./../../../downloads/下载或克隆源码。/index.html C++运行时库的构建 请参<a class="moretag" href="./../../../../../how_to_build/index.html">Read More...</a>]]></description>
+					<description><![CDATA[如何编译构建 请首先到/language/zh/downloads/下载或克隆源码。 C++运行时库的构建 请参考<a class="moretag" href="/how_to_build/">Read More...</a>]]></description>
 										<content:encoded><![CDATA[<h2><span class="ez-toc-section" id="i">如何编译构建</span></h2>
-<p id="section">请首先到<a href="./../../../downloads/index.html#https://github.com/Tencent/behaviac">./../../../downloads/index.html</a>下载或克隆源码。</p>
+<p id="section">请首先到<a href="/language/zh/downloads/#https://github.com/Tencent/behaviac">/language/zh/downloads/</a>下载或克隆源码。</p>
 <h3 id="c"><span class="ez-toc-section" id="C">C++运行时库的构建</span></h3>
-<p>请参考文档《<a href="./../../../../../build/index.html">使用cmake构建C++版运行时库</a>》。</p>
+<p>请参考文档《<a href="/docs/zh/articles/build/">使用cmake构建C++版运行时库</a>》。</p>
 <h4><span class="ez-toc-section" id="i-2">项目文件</span></h4>
 <p>从3.6.33版本，我们提供了预先生成的项目文件，如下图：</p>
-<p id="NgRlqmF"><img class="alignnone size-full wp-image-2062 " src="./../../../../../wp-content/uploads/2017/07/img_5976b5154fe90.png" alt="" srcset="./../../../../../wp-content/uploads/2017/07/img_5976b5154fe90.png 558w, ./../../../../../wp-content/uploads/2017/07/img_5976b5154fe90-300x110.png 300w" sizes="(max-width: 558px) 100vw, 558px" /></p>
+<p id="NgRlqmF"><img class="alignnone size-full wp-image-2062 " src="/wp-content/uploads/2017/07/img_5976b5154fe90.png" alt="" srcset="/wp-content/uploads/2017/07/img_5976b5154fe90.png 558w, /wp-content/uploads/2017/07/img_5976b5154fe90-300x110.png 300w" sizes="(max-width: 558px) 100vw, 558px" /></p>
 <h3><span class="ez-toc-section" id="CUnity">C#和Unity运行时库的构建</span></h3>
 <p>安装目录中的/integration/unity是基于Unity C#的单元测试项目。</p>
 <p>自己的C#项目需要将目录/integration/unity/Assets/Scripts/behaviac/runtime下的所有源码直接复制过去，如下图所示：</p>
-<p><img class="aligncenter size-full wp-image-1365" src="./../../../../../wp-content/uploads/2016/05/unity_runtime.png" alt="unity_runtime" width="453" height="579" srcset="./../../../../../wp-content/uploads/2016/05/unity_runtime.png 453w, ./../../../../../wp-content/uploads/2016/05/unity_runtime-235x300.png 235w" sizes="(max-width: 453px) 100vw, 453px" /></p>
+<p><img class="aligncenter size-full wp-image-1365" src="/wp-content/uploads/2016/05/unity_runtime.png" alt="unity_runtime" width="453" height="579" srcset="/wp-content/uploads/2016/05/unity_runtime.png 453w, /wp-content/uploads/2016/05/unity_runtime-235x300.png 235w" sizes="(max-width: 453px) 100vw, 453px" /></p>
 <p>如果是Unity平台下的C#开发，还可以在Unity编辑器中导入/integration/behaviac.unitypackage包（安装完发布的BehaviacSetup_***.exe后，会在安装目录中的/integration文件夹中找到该behaviac.unitypackage包）。</p>
 <h3><span class="ez-toc-section" id="i-3">编辑器的构建</span></h3>
 <p>编辑器的源码目录结构，如下图所示：<br />
-<img src="./../../../../../img/faq/source_designer_path.png" alt="source_designer_path.png" /></p>
+<img src="/img/faq/source_designer_path.png" alt="source_designer_path.png" /></p>
 <p>请使用vs2010或以上打开并构建<code class="highlighter-rouge">tools/designer/BehaviacDesigner.sln</code>。</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../how_to_build/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/how_to_build/feed/</wfw:commentRss>
 			<slash:comments>6</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>VS项目中使用behaviac组件</title>
-		<link>./../../../../../cpp_include/index.html</link>
-					<comments>./../../../../../cpp_include/index.html#comments</comments>
+		<link>/cpp_include/</link>
+					<comments>/cpp_include/#comments</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<pubDate>Fri, 13 May 2016 02:44:04 +0000</pubDate>
@@ -2949,35 +2941,35 @@ behaviac组件提供了C++和C#两种编程语言的单元测试以及游戏Demo
 		<category><![CDATA[C++]]></category>
 		<category><![CDATA[编译构建]]></category>
 		<category><![CDATA[运行时]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=311</guid>
+		<guid isPermaLink="false">/?p=311</guid>
 
-					<description><![CDATA[下载完behaviac组件的全部源码后，整个组件的目录结构，如下图所示： 将behaviac组件整合到自己的项目中时，可以通过两种方式使用behaviac组件：<a class="moretag" href="./../../../../../cpp_include/index.html">Read More...</a>]]></description>
+					<description><![CDATA[下载完behaviac组件的全部源码后，整个组件的目录结构，如下图所示： 将behaviac组件整合到自己的项目中时，可以通过两种方式使用behaviac组件：<a class="moretag" href="/cpp_include/">Read More...</a>]]></description>
 										<content:encoded><![CDATA[<p id="cbehaviac">下载完behaviac组件的全部源码后，整个组件的目录结构，如下图所示：</p>
-<p><img src="./../../../../../img/tutorials/tutorial16/sourceFolder.png" alt="" /></p>
+<p><img src="/img/tutorials/tutorial16/sourceFolder.png" alt="" /></p>
 <p>将behaviac组件整合到自己的项目中时，可以通过两种方式使用behaviac组件：</p>
 <ul>
 <li>将全部源码（包括behaviac组件的所有<a href="https://github.com/Tencent/behaviac/blob/master/inc/behaviac">.h</a>和<a href="https://github.com/Tencent/behaviac/blob/master/src">.cpp</a>文件）全部复制到自己的游戏项目中。</li>
 <li>单独编译behaviac组件库，生成lib文件，然后自己的项目包含.h文件和生成的.lib文件。</li>
 </ul>
-<p>对于上面的第二种用法，请先参考<a href="./../../../../../docs/zh/tutorials/how_to_build/index.html">如何编译构建</a>文档来编译构建behavaic组件。</p>
+<p>对于上面的第二种用法，请先参考<a href="/docs/zh/tutorials/how_to_build/">如何编译构建</a>文档来编译构建behavaic组件。</p>
 <p>在Windows平台，如果是使用VS来管理项目的，需要在VS的项目“Property Pages”-&gt;“Configuration Properties”-&gt;“C/C++”-&gt;“General”中的“Additional Include Directories”项中添加behaviac组件头文件（即图1中的inc文件夹）所在的路径，如下图所示：</p>
-<p><img src="./../../../../../img/tutorials/tutorial16/includeHeaderSettings.png" alt="" /></p>
+<p><img src="/img/tutorials/tutorial16/includeHeaderSettings.png" alt="" /></p>
 <p>再在VS的项目“Property Pages”-&gt;“Configuration Properties”-&gt;“Linker”-&gt;“General”中的“Additional Library Directories”项中添加自己编译出的behaviac lib文件（即图1中的lib文件夹）所在的路径，如下图所示：</p>
-<p><img src="./../../../../../img/tutorials/tutorial16/includeLibSettings.png" alt="" /></p>
+<p><img src="/img/tutorials/tutorial16/includeLibSettings.png" alt="" /></p>
 <p>最后在VS的项目“Property Pages”-&gt;“Configuration Properties”-&gt;“Linker”-&gt;“Input”中的“Additional Dependencies”项中添加自己编译出的behaviac lib文件，如下图所示：</p>
-<p><img src="./../../../../../img/tutorials/tutorial16/addLibSettings.png" alt="" /></p>
+<p><img src="/img/tutorials/tutorial16/addLibSettings.png" alt="" /></p>
 <p>注意：上图中的behaviac_debugdll_win32_vs2010.lib文件是用VS2010编译出来的，说明游戏项目也需要用VS2010来编译。如果你的游戏项目使用其他版本的VS，则编译behaviac组件也需要用相应版本的VS来编译。</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../cpp_include/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/cpp_include/feed/</wfw:commentRss>
 			<slash:comments>3</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>C++运行时端的使用上手</title>
-		<link>./../../../../../tutorial14_cpp_workflow/index.html</link>
-					<comments>./../../../../../tutorial14_cpp_workflow/index.html#comments</comments>
+		<link>/tutorial14_cpp_workflow/</link>
+					<comments>/tutorial14_cpp_workflow/#comments</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<pubDate>Fri, 13 May 2016 02:21:24 +0000</pubDate>
@@ -2985,11 +2977,11 @@ behaviac组件提供了C++和C#两种编程语言的单元测试以及游戏Demo
 		<category><![CDATA[上手]]></category>
 		<category><![CDATA[C++]]></category>
 		<category><![CDATA[运行时]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=273</guid>
+		<guid isPermaLink="false">/?p=273</guid>
 
-					<description><![CDATA[运行时（游戏）端使用行为树之前，需要确保行为树文件已经成功导出。 如何注册和导出类型信息请参考C++类型信息的注册和导出，如何导出行为树请参考导出和使用XML/<a class="moretag" href="./../../../../../tutorial14_cpp_workflow/index.html">Read More...</a>]]></description>
+					<description><![CDATA[运行时（游戏）端使用行为树之前，需要确保行为树文件已经成功导出。 如何注册和导出类型信息请参考C++类型信息的注册和导出，如何导出行为树请参考导出和使用XML/<a class="moretag" href="/tutorial14_cpp_workflow/">Read More...</a>]]></description>
 										<content:encoded><![CDATA[<p id="c">运行时（游戏）端使用行为树之前，需要确保行为树文件已经成功导出。</p>
-<p>如何注册和导出类型信息请参考<a href="./../../../../../docs/zh/tutorials/tutorial3_1_meta_cpp_register/index.html">C++类型信息的注册和导出</a>，如何导出行为树请参考<a href="./../../../../../docs/zh/tutorials/tutorial4_1_export_xml_bson/index.html">导出和使用XML/BSON行为树</a>。</p>
+<p>如何注册和导出类型信息请参考<a href="/docs/zh/tutorials/tutorial3_1_meta_cpp_register/">C++类型信息的注册和导出</a>，如何导出行为树请参考<a href="/docs/zh/tutorials/tutorial4_1_export_xml_bson/">导出和使用XML/BSON行为树</a>。</p>
 <p>通过编辑器导出行为树文件后，运行时端的执行主要分为三个部分：</p>
 <ul>
 <li>初始化</li>
@@ -3040,7 +3032,7 @@ behaviac组件提供了C++和C#两种编程语言的单元测试以及游戏Demo
 <li>Workspace::SetFilePath指定的是编辑器中Workspace的导出路径，可以是绝对路径。当指定的是相对路径的时候，相对的是当前<strong>工作路径</strong>（一般都是运行程序所在目录）。</li>
 <li>Agent::btload使用的文件名是相对于Workspace::SetFilePath指定的路径，没有扩展名，可以有目录结构的层次化文件名，如“node_test/selector_loop_ut_7”。在编辑器中打开某个行为树后，右键文件页选取“复制文件名”获取。</li>
 </ul>
-<p><img src="./../../../../../img/tutorials/tutorial14/copy_filepath.png" alt="copy_filepath" /></p>
+<p><img src="/img/tutorials/tutorial14/copy_filepath.png" alt="copy_filepath" /></p>
 <ul>
 <li>例如：
 <ul>
@@ -3058,7 +3050,7 @@ behaviac组件提供了C++和C#两种编程语言的单元测试以及游戏Demo
 </ul>
 <h3 id="section-1"><span class="ez-toc-section" id="2">2 循环更新</span></h3>
 <p>在游戏的主循环中，添加执行Agent实例的行为树相关代码，也即通过调用Agent类的接口btexec()或Workspace类的接口Update()来执行行为树。</p>
-<p>这两种执行方式的区别，请参考<a href="./../../../../../docs/zh/tutorials/tutorial13_updateloop/index.html">更新流程</a>。</p>
+<p>这两种执行方式的区别，请参考<a href="/docs/zh/tutorials/tutorial13_updateloop/">更新流程</a>。</p>
 <p>如下代码样例所示：</p>
 <div class="highlighter-rouge">
 <pre class="highlight"><code>
@@ -3099,15 +3091,15 @@ behaviac组件提供了C++和C#两种编程语言的单元测试以及游戏Demo
 <p>以上步骤的完整代码，请参考<a href="https://github.com/Tencent/behaviac/blob/master/test/demo_running/demo_running.cpp">demo_running.cpp</a>文件。</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../tutorial14_cpp_workflow/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/tutorial14_cpp_workflow/feed/</wfw:commentRss>
 			<slash:comments>2</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>导出和使用C++行为树</title>
-		<link>./../../../../../tutorial4_2_export_cpp/index.html</link>
-					<comments>./../../../../../tutorial4_2_export_cpp/index.html#respond</comments>
+		<link>/tutorial4_2_export_cpp/</link>
+					<comments>/tutorial4_2_export_cpp/#respond</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<pubDate>Fri, 13 May 2016 02:29:06 +0000</pubDate>
@@ -3115,26 +3107,26 @@ behaviac组件提供了C++和C#两种编程语言的单元测试以及游戏Demo
 		<category><![CDATA[上手]]></category>
 		<category><![CDATA[C++]]></category>
 		<category><![CDATA[编辑器]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=284</guid>
+		<guid isPermaLink="false">/?p=284</guid>
 
-					<description><![CDATA[在“导出行为树”对话框中，选择“C++ Behavior Exporter”，如下图所示： 点击上图中右侧的“…”设置按钮，在弹出的“C++导出设置”对话框中设<a class="moretag" href="./../../../../../tutorial4_2_export_cpp/index.html">Read More...</a>]]></description>
+					<description><![CDATA[在“导出行为树”对话框中，选择“C++ Behavior Exporter”，如下图所示： 点击上图中右侧的“…”设置按钮，在弹出的“C++导出设置”对话框中设<a class="moretag" href="/tutorial4_2_export_cpp/">Read More...</a>]]></description>
 										<content:encoded><![CDATA[<ul>
 <li>在“导出行为树”对话框中，选择“C++ Behavior Exporter”，如下图所示：</li>
 </ul>
-<p><img class="aligncenter" src="./../../../../../img/tutorials/tutorial4/exportCpp.png" alt="" /></p>
+<p><img class="aligncenter" src="/img/tutorials/tutorial4/exportCpp.png" alt="" /></p>
 <ul>
 <li>点击上图中右侧的“…”设置按钮，在弹出的“C++导出设置”对话框中设置生成文件所在的位置，并可以添加项目中游戏类（从Agent类派生而来）所在的.h头文件，添加的头文件将会被包含在生成的.cpp文件中，如下图所示：</li>
 </ul>
-<p><img class="aligncenter" src="./../../../../../img/tutorials/tutorial4/cppExportSettings.png" alt="" /></p>
+<p><img class="aligncenter" src="/img/tutorials/tutorial4/cppExportSettings.png" alt="" /></p>
 <ul>
 <li>回到“导出行为树”对话框，点击“导出”按钮，开始导出<code class="highlighter-rouge">C++</code>文件。在指定的导出位置（默认为当前工作区的导出路径）会自动生成一个名为<code class="highlighter-rouge">behaviac_generated</code>的文件夹，里面生成了<code class="highlighter-rouge">behaviors</code>和<code class="highlighter-rouge">types</code>两个子文件夹，如图3所示：</li>
 <li><code class="highlighter-rouge">behaviors</code>文件夹中含有<code class="highlighter-rouge">generated_behaviors.h</code>及其他单个的行为树<code class="highlighter-rouge">.inl</code>文件（如果没有勾选“导出统一文件？”，则对每一棵行为树都会生成独立的<code class="highlighter-rouge">.inl</code>文件，这些.inl文件会自动include在<code class="highlighter-rouge">generated_behaviors.h</code>文件中，无需在自己的项目中再include这些<code class="highlighter-rouge">.inl</code>文件，只需要include这个<code class="highlighter-rouge">generated_behaviors.h</code>文件即可）。</li>
 <li><code class="highlighter-rouge">types</code>文件夹中含有<code class="highlighter-rouge">agentproperties.h</code>（为Agent类自定义的属性和方法，会扩展在该文件中）、<code class="highlighter-rouge">customizedtypes.h/customizedtypes.cpp</code>（自定义的枚举和结构体类型，会生成在这两个文件中）以及其他自定义<code class="highlighter-rouge">Agent</code>子类的文件（这些文件是为添加的<code class="highlighter-rouge">Agent</code>子类自动生成的<code class="highlighter-rouge">.h/.cpp</code>文件，需要程序员补充代码进一步实现这些<code class="highlighter-rouge">Agent</code>子类的逻辑）。</li>
 </ul>
-<p><img class="aligncenter" src="./../../../../../img/tutorials/tutorial4/exportedCppFiles.png" alt="" /></p>
+<p><img class="aligncenter" src="/img/tutorials/tutorial4/exportedCppFiles.png" alt="" /></p>
 <ul>
 <li>注意：这些自动生成的文件（除了上面提及的单个的行为树<code class="highlighter-rouge">.inl</code>文件之外）都需要包含到自己的游戏项目中，一起参与整个项目代码的编译和构建。</li>
-<li>在项目中包含了这些自动生成的代码文件后，就可以与前面提及的<a href="./../../../../../docs/zh/tutorials/tutorial4_1_export_xml_bson/index.html">导出和使用XML/BSON行为树</a>一样的接口和方式加载使用这些C++文件，只是需要将文件格式改为<code class="highlighter-rouge">EFF_cpp</code>：</li>
+<li>在项目中包含了这些自动生成的代码文件后，就可以与前面提及的<a href="/docs/zh/tutorials/tutorial4_1_export_xml_bson/">导出和使用XML/BSON行为树</a>一样的接口和方式加载使用这些C++文件，只是需要将文件格式改为<code class="highlighter-rouge">EFF_cpp</code>：</li>
 </ul>
 <div class="highlighter-rouge">
 <pre class="highlight"><code>
@@ -3145,15 +3137,15 @@ behaviac组件提供了C++和C#两种编程语言的单元测试以及游戏Demo
 <div class="section-nav"></div>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../tutorial4_2_export_cpp/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/tutorial4_2_export_cpp/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>C++运行时端中元信息的注册和导出</title>
-		<link>./../../../../../tutorial3_1_meta_cpp_register/index.html</link>
-					<comments>./../../../../../tutorial3_1_meta_cpp_register/index.html#comments</comments>
+		<link>/tutorial3_1_meta_cpp_register/</link>
+					<comments>/tutorial3_1_meta_cpp_register/#comments</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<pubDate>Fri, 13 May 2016 02:23:51 +0000</pubDate>
@@ -3161,11 +3153,11 @@ behaviac组件提供了C++和C#两种编程语言的单元测试以及游戏Demo
 		<category><![CDATA[上手]]></category>
 		<category><![CDATA[C++]]></category>
 		<category><![CDATA[运行时]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=276</guid>
+		<guid isPermaLink="false">/?p=276</guid>
 
-					<description><![CDATA[behaviac组件的基本运作机制就是在运行时端（C++）和编辑器通过元信息进行交互，如图1所示。其中，元信息里面包含了类自身的描述、属性、方法及类的实例等。 <a class="moretag" href="./../../../../../tutorial3_1_meta_cpp_register/index.html">Read More...</a>]]></description>
+					<description><![CDATA[behaviac组件的基本运作机制就是在运行时端（C++）和编辑器通过元信息进行交互，如图1所示。其中，元信息里面包含了类自身的描述、属性、方法及类的实例等。 <a class="moretag" href="/tutorial3_1_meta_cpp_register/">Read More...</a>]]></description>
 										<content:encoded><![CDATA[<p id="c">behaviac组件的基本运作机制就是在运行时端（C++）和编辑器通过元信息进行交互，如图1所示。其中，元信息里面包含了类自身的描述、属性、方法及类的实例等。</p>
-<p><img class="aligncenter" src="./../../../../../img/overview/meta.png" alt="" /></p>
+<p><img class="aligncenter" src="/img/overview/meta.png" alt="" /></p>
 <p style="text-align: center;">图1 基于元信息的编辑器和运行时端的交互</p>
 <p>在运行时端，也即游戏代码端，通过注册（C++通过宏的方式）并导出供行为树引擎和编辑器使用的XML元信息。运行时端主要是由程序员编写Agent的子类及其属性和方法，然后调用相关接口将这些元信息导出，就可以在编辑器中对这些元信息进行使用。</p>
 <p>在编辑器中也可以创建和编辑元信息。在项目开始初期，也就是程序员还没把代码写出来之前，策划就可以自己手动的创建一些Agent子类、属性和方法等元信息。这样可以加速游戏原型的创建，也就是策划不用等程序员，就可以进行游戏原型的编辑。</p>
@@ -3276,15 +3268,15 @@ behaviac组件提供了C++和C#两种编程语言的单元测试以及游戏Demo
 <p>更多细节可以参考behaviac组件C++源码中附带的test/demo_running工程的<a href="https://github.com/Tencent/behaviac/blob/master/test/demo_running/demo_running.cpp">demo_running.cpp</a>文件。</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../tutorial3_1_meta_cpp_register/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/tutorial3_1_meta_cpp_register/feed/</wfw:commentRss>
 			<slash:comments>2</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>C#运行时端中元信息的注册和导出</title>
-		<link>./../../../../../tutorial3_2_meta_cs_register/index.html</link>
-					<comments>./../../../../../tutorial3_2_meta_cs_register/index.html#respond</comments>
+		<link>/tutorial3_2_meta_cs_register/</link>
+					<comments>/tutorial3_2_meta_cs_register/#respond</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<pubDate>Fri, 13 May 2016 02:25:57 +0000</pubDate>
@@ -3292,11 +3284,11 @@ behaviac组件提供了C++和C#两种编程语言的单元测试以及游戏Demo
 		<category><![CDATA[unity]]></category>
 		<category><![CDATA[上手]]></category>
 		<category><![CDATA[运行时]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=278</guid>
+		<guid isPermaLink="false">/?p=278</guid>
 
-					<description><![CDATA[behaviac组件的基本运作机制就是在运行时端（C#）和编辑器通过元信息进行交互，如图1所示。其中，元信息里面包含了类自身的描述、属性、方法及类的实例等。 图<a class="moretag" href="./../../../../../tutorial3_2_meta_cs_register/index.html">Read More...</a>]]></description>
+					<description><![CDATA[behaviac组件的基本运作机制就是在运行时端（C#）和编辑器通过元信息进行交互，如图1所示。其中，元信息里面包含了类自身的描述、属性、方法及类的实例等。 图<a class="moretag" href="/tutorial3_2_meta_cs_register/">Read More...</a>]]></description>
 										<content:encoded><![CDATA[<p id="c-">behaviac组件的基本运作机制就是在运行时端（C#）和编辑器通过元信息进行交互，如图1所示。其中，元信息里面包含了类自身的描述、属性、方法及类的实例等。</p>
-<p><img class="aligncenter" src="./../../../../../img/overview/meta.png" alt="" /></p>
+<p><img class="aligncenter" src="/img/overview/meta.png" alt="" /></p>
 <p style="text-align: center;">图1 基于元信息的编辑器和运行时端的交互</p>
 <p>在运行时端，也即游戏代码端，通过注册（C#通过标记Attribute的方式）并导出供行为树引擎和编辑器使用的XML元信息。运行时端主要是由程序员编写Agent的子类及其属性和方法，然后调用相关接口将这些元信息导出，就可以在编辑器中对这些元信息进行使用。</p>
 <p>在编辑器中也可以创建和编辑元信息。在项目开始初期，也就是程序员还没把代码写出来之前，策划就可以自己手动的创建一些Agent子类、属性和方法等元信息。这样可以加速游戏原型的创建，也就是策划不用等程序员，就可以进行游戏原型的编辑。</p>
@@ -3383,15 +3375,15 @@ behaviac组件提供了C++和C#两种编程语言的单元测试以及游戏Demo
 <p>更多细节可以参考behaviac组件C#源码中附带的integration/BattleCityDemo工程的<a href="https://github.com/Tencent/behaviac/blob/master/integration/BattleCityDemo/Assets/Scripts/BehaviacSystem.cs">BehaviacSystem.cs</a>文件。</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../tutorial3_2_meta_cs_register/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/tutorial3_2_meta_cs_register/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>导出和使用C#行为树</title>
-		<link>./../../../../../tutorial4_3_export_cs/index.html</link>
-					<comments>./../../../../../tutorial4_3_export_cs/index.html#respond</comments>
+		<link>/tutorial4_3_export_cs/</link>
+					<comments>/tutorial4_3_export_cs/#respond</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<pubDate>Fri, 13 May 2016 02:29:49 +0000</pubDate>
@@ -3399,40 +3391,40 @@ behaviac组件提供了C++和C#两种编程语言的单元测试以及游戏Demo
 		<category><![CDATA[unity]]></category>
 		<category><![CDATA[上手]]></category>
 		<category><![CDATA[编辑器]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=286</guid>
+		<guid isPermaLink="false">/?p=286</guid>
 
-					<description><![CDATA[在“导出行为树”对话框中，选择“C# Behavior Exporter”，如下图所示： 点击上图中右侧的“…”设置按钮，在弹出的“C#导出设置”对话框中设置导<a class="moretag" href="./../../../../../tutorial4_3_export_cs/index.html">Read More...</a>]]></description>
+					<description><![CDATA[在“导出行为树”对话框中，选择“C# Behavior Exporter”，如下图所示： 点击上图中右侧的“…”设置按钮，在弹出的“C#导出设置”对话框中设置导<a class="moretag" href="/tutorial4_3_export_cs/">Read More...</a>]]></description>
 										<content:encoded><![CDATA[<ul>
 <li>在“导出行为树”对话框中，选择“C# Behavior Exporter”，如下图所示：</li>
 </ul>
-<p><img class="aligncenter" src="./../../../../../img/tutorials/tutorial4/exportCs.png" alt="" /></p>
+<p><img class="aligncenter" src="/img/tutorials/tutorial4/exportCs.png" alt="" /></p>
 <ul>
 <li>点击上图中右侧的“…”设置按钮，在弹出的“C#导出设置”对话框中设置导出文件所在的位置，如图2所示：</li>
 </ul>
-<p><img class="aligncenter" src="./../../../../../img/tutorials/tutorial4/csExportSettings.png" alt="" /></p>
+<p><img class="aligncenter" src="/img/tutorials/tutorial4/csExportSettings.png" alt="" /></p>
 <ul>
-<li>回到“导出行为树”对话框，点击“导出”按钮，开始导出<code class="highlighter-rouge">C#</code>文件。在指定的导出位置（默认为当前工作区的导出路径）会自动生成一个名为<code class="highlighter-rouge">behaviac_generated</code>的文件夹，里面生成了<code class="highlighter-rouge">behaviors</code>和<code class="highlighter-rouge">types</code>两个子文件夹，如图3所示：<img class="aligncenter" src="./../../../../../img/tutorials/tutorial4/exportedCsFiles.png" alt="" /></li>
+<li>回到“导出行为树”对话框，点击“导出”按钮，开始导出<code class="highlighter-rouge">C#</code>文件。在指定的导出位置（默认为当前工作区的导出路径）会自动生成一个名为<code class="highlighter-rouge">behaviac_generated</code>的文件夹，里面生成了<code class="highlighter-rouge">behaviors</code>和<code class="highlighter-rouge">types</code>两个子文件夹，如图3所示：<img class="aligncenter" src="/img/tutorials/tutorial4/exportedCsFiles.png" alt="" /></li>
 <li><code class="highlighter-rouge">behaviors</code>文件夹含有<code class="highlighter-rouge">generated_behaviors.cs</code>及其他单个的行为树<code class="highlighter-rouge">.cs</code>文件（如果没有勾选“导出统一文件？”，则对每一棵行为树都会生成独立的<code class="highlighter-rouge">.cs</code>文件）。</li>
 <li><code class="highlighter-rouge">types</code>文件夹中含有<code class="highlighter-rouge">agentproperties.cs</code>（为<code class="highlighter-rouge">Agent</code>类自定义的属性和方法，会扩展在该文件中）、<code class="highlighter-rouge">customizedtypes.cs</code>（自定义的枚举和结构体类型，会生成在这个文件中）以及其他的<code class="highlighter-rouge">Agent</code>子类的文件（这些文件是为添加的<code class="highlighter-rouge">Agent</code>子类自动生成的<code class="highlighter-rouge">.cs</code>文件，需要程序员补充代码进一步实现这些<code class="highlighter-rouge">Agent</code>子类的逻辑），这些自动生成的文件都需要包含到自己的游戏项目中。</li>
 </ul>
 <ul>
 <li>注意：这些自动生成的文件都需要包含到自己的游戏项目中，一起参与整个项目代码的编译和构建。</li>
-<li>在项目中包含了这些自动生成的<code class="highlighter-rouge">.cs</code>文件后，就可以与前面提及的<a href="./../../../../../docs/zh/tutorials/tutorial4_1_export_xml_bson/index.html">导出和使用XML/BSON行为树</a>一样的接口和方式加载使用这些文件，只是需要将文件格式改为<code class="highlighter-rouge">EFF_cs</code>：</li>
+<li>在项目中包含了这些自动生成的<code class="highlighter-rouge">.cs</code>文件后，就可以与前面提及的<a href="/docs/zh/tutorials/tutorial4_1_export_xml_bson/">导出和使用XML/BSON行为树</a>一样的接口和方式加载使用这些文件，只是需要将文件格式改为<code class="highlighter-rouge">EFF_cs</code>：</li>
 </ul>
 <figure class="highlight">
 <pre><code class="language-cs" data-lang="cs"><span class="n">behaviac</span><span class="p">.</span><span class="n">Workspace</span><span class="p">.</span><span class="n">Instance</span><span class="p">.</span><span class="n">FileFormat</span> <span class="p">=</span> <span class="n">behaviac</span><span class="p">.</span><span class="n">Workspace</span><span class="p">.</span><span class="n">EFileFormat</span><span class="p">.</span><span class="n">EF</span></code></pre>
 </figure>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../tutorial4_3_export_cs/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/tutorial4_3_export_cs/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>导出和使用XML/BSON行为树</title>
-		<link>./../../../../../tutorial4_1_export_xml_bson/index.html</link>
-					<comments>./../../../../../tutorial4_1_export_xml_bson/index.html#respond</comments>
+		<link>/tutorial4_1_export_xml_bson/</link>
+					<comments>/tutorial4_1_export_xml_bson/#respond</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<pubDate>Fri, 13 May 2016 02:27:46 +0000</pubDate>
@@ -3441,15 +3433,15 @@ behaviac组件提供了C++和C#两种编程语言的单元测试以及游戏Demo
 		<category><![CDATA[上手]]></category>
 		<category><![CDATA[C++]]></category>
 		<category><![CDATA[运行时]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=282</guid>
+		<guid isPermaLink="false">/?p=282</guid>
 
-					<description><![CDATA[目前behaviac组件支持4种文件格式（XML、BSON、C++和C#）行为树的导出。在项目开发过程中，建议使用XML格式的导出文件，以便于调试和查错等；而在<a class="moretag" href="./../../../../../tutorial4_1_export_xml_bson/index.html">Read More...</a>]]></description>
+					<description><![CDATA[目前behaviac组件支持4种文件格式（XML、BSON、C++和C#）行为树的导出。在项目开发过程中，建议使用XML格式的导出文件，以便于调试和查错等；而在<a class="moretag" href="/tutorial4_1_export_xml_bson/">Read More...</a>]]></description>
 										<content:encoded><![CDATA[<p id="section">目前behaviac组件支持4种文件格式（XML、BSON、C++和C#）行为树的导出。在项目开发过程中，建议使用XML格式的导出文件，以便于调试和查错等；而在最终的发布（release）版本中，可以导出C++或C#格式的行为树文件，以便提高运行效率。</p>
 <h3 id="xmlbson">导出和使用XML/BSON行为树</h3>
 <ul>
 <li>在编辑器中导出整个工作区文件，在“导出行为树”对话框中，勾选“Xml Behavior Exporter”或“Bson Behavior Exporter”，如下图所示：</li>
 </ul>
-<p><img class="aligncenter" src="./../../../../../img/tutorials/tutorial4/exportXMLBson.png" alt="" /></p>
+<p><img class="aligncenter" src="/img/tutorials/tutorial4/exportXMLBson.png" alt="" /></p>
 <ul>
 <li>导出行为树文件结束后，回到运行时（游戏）代码端，按以下步骤使用行为树文件：
 <ul>
@@ -3458,7 +3450,7 @@ behaviac组件提供了C++和C#两种编程语言的单元测试以及游戏Demo
 <li>调用Workspace::SetFileFormat(…)函数，设置加载行为树的文件格式，如果不调用则默认加载EFF_xml格式。</li>
 <li>通过调用Agent的接口btload(…)加载所需的行为树文件。</li>
 <li>通过调用Agent的接口btsetcurrent(…)设置当前准备执行的行为树文件。</li>
-<li>行为树的更新执行流程请参考<a href="./../../../../../docs/zh/tutorials/tutorial13_updateloop/index.html">更新流程</a>。</li>
+<li>行为树的更新执行流程请参考<a href="/docs/zh/tutorials/tutorial13_updateloop/">更新流程</a>。</li>
 <li>在游戏的释放函数里面，添加Agent::Unregister&lt;***&gt;()用于释放类型的注册信息。</li>
 </ul>
 </li>
@@ -3557,26 +3549,26 @@ behaviac组件提供了C++和C#两种编程语言的单元测试以及游戏Demo
 <p>更多细节可以参考behaviac组件C#源码中附带的integration/BattleCityDemo工程的<a href="https://github.com/Tencent/behaviac/blob/master/integration/BattleCityDemo/Assets/Scripts/BehaviacSystem.cs">BehaviacSystem.cs</a>文件。</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../tutorial4_1_export_xml_bson/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/tutorial4_1_export_xml_bson/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>Agent实例的用法</title>
-		<link>./../../../../../instance/index.html</link>
-					<comments>./../../../../../instance/index.html#respond</comments>
+		<link>/instance/</link>
+					<comments>/instance/#respond</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<pubDate>Fri, 13 May 2016 02:44:53 +0000</pubDate>
 				<category><![CDATA[3.5]]></category>
 		<category><![CDATA[上手]]></category>
 		<category><![CDATA[概念]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=313</guid>
+		<guid isPermaLink="false">/?p=313</guid>
 
-					<description><![CDATA[在编辑器的节点属性窗口中，为了给某个节点选择和配置属性，首先需要选择一个实例（instance），然后再选择该实例的属性或方法，如下图所示： 这些实例主要来自于<a class="moretag" href="./../../../../../instance/index.html">Read More...</a>]]></description>
+					<description><![CDATA[在编辑器的节点属性窗口中，为了给某个节点选择和配置属性，首先需要选择一个实例（instance），然后再选择该实例的属性或方法，如下图所示： 这些实例主要来自于<a class="moretag" href="/instance/">Read More...</a>]]></description>
 										<content:encoded><![CDATA[<p>在编辑器的节点属性窗口中，为了给某个节点选择和配置属性，首先需要选择一个实例（instance），然后再选择该实例的属性或方法，如下图所示：</p>
-<p><img class="aligncenter" src="./../../../../../img/tutorials/tutorial17/instance_list.png" alt="" /></p>
+<p><img class="aligncenter" src="/img/tutorials/tutorial17/instance_list.png" alt="" /></p>
 <p>这些实例主要来自于如下三个方面：</p>
 <ul>
 <li>Self：表示当前行为树根节点所配置的Agent类型的实例，类似于程序语言中的this。</li>
@@ -3640,55 +3632,55 @@ behaviac组件提供了C++和C#两种编程语言的单元测试以及游戏Demo
 <div class="section-nav"></div>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../instance/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/instance/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>事件处理</title>
-		<link>./../../../../../tutorial11_event/index.html</link>
-					<comments>./../../../../../tutorial11_event/index.html#respond</comments>
+		<link>/tutorial11_event/</link>
+					<comments>/tutorial11_event/#respond</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<pubDate>Fri, 13 May 2016 02:40:42 +0000</pubDate>
 				<category><![CDATA[3.5]]></category>
 		<category><![CDATA[事件]]></category>
 		<category><![CDATA[概念]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=302</guid>
+		<guid isPermaLink="false">/?p=302</guid>
 
-					<description><![CDATA[事件处理 执行行为树的过程中，当状态、条件发生变化或发生事件（Event）时，如何响应或打断当前的执行是个重要的问题。 目前behaviac组件支持三种方式来处<a class="moretag" href="./../../../../../tutorial11_event/index.html">Read More...</a>]]></description>
+					<description><![CDATA[事件处理 执行行为树的过程中，当状态、条件发生变化或发生事件（Event）时，如何响应或打断当前的执行是个重要的问题。 目前behaviac组件支持三种方式来处<a class="moretag" href="/tutorial11_event/">Read More...</a>]]></description>
 										<content:encoded><![CDATA[<h3><span class="ez-toc-section" id="i">事件处理</span></h3>
 <p id="section">执行行为树的过程中，当状态、条件发生变化或发生事件（Event）时，如何响应或打断当前的执行是个重要的问题。</p>
 <p>目前behaviac组件支持三种方式来处理状态变化或事件发生：并行节点、选择监测节点、事件附件等。</p>
 <p>简而言之，并行和选择监测节点的工作方式是采用“轮询”的方式，每次执行时需要重新评估所有子节点，而不是像其他节点会保留上一次正在执行的子节点以便在下一次执行时继续执行。事件附件是在游戏逻辑发出事件时，才按需得到响应。</p>
 <h3 id="section-1"><span class="ez-toc-section" id="i-2">并行节点</span></h3>
 <p>依靠并行（Parallel）节点处理事件，需要把事件用条件的形式表达并且需要监控该条件，当该条件不满足的时候就退出。这种方式在概念上不太清晰，使用起来也比较繁琐，如下图所示：</p>
-<p><img class="aligncenter" src="./../../../../../img/overview/parallel.png" alt="" /></p>
+<p><img class="aligncenter" src="/img/overview/parallel.png" alt="" /></p>
 <h3 id="section-2"><span class="ez-toc-section" id="i-3">选择监测节点</span></h3>
 <p>选择监测（SelectorMonitor）和监测分支（WithPrecondition）节点作为对传统行为树的扩展，可以很自然的处理事件和状态的改变。选择监测和监测分支节点只能配对使用，即选择监测只能添加监测分支作为它的子节点，监测分支也只能作为选择监测的子节点被添加，如下图所示：</p>
 <ul>
 <li>选择监测节点是一个动态的选择节点，和选择（Selector）节点相同的是，它选择第一个返回成功的子节点，但不同的是，它不是只选择一次，而是每次执行时都对其子节点重新进行选择。</li>
 <li>监测分支节点有条件分支子树和动作分支子树。只有条件分支子树返回成功的时候，动作分支子树才能够被执行。</li>
 </ul>
-<p><img class="aligncenter" src="./../../../../../img/overview/selectormonitor.png" alt="" /></p>
+<p><img class="aligncenter" src="/img/overview/selectormonitor.png" alt="" /></p>
 <h3><span class="ez-toc-section" id="i-4">事件附件</span></h3>
 <p>事件（Event）作为一种附件，是behaviac组件的一大特色。事件主要用于在游戏逻辑发出事件时，得到响应后打断当前正在执行的行为树，并切换到所设置的另一个行为树。</p>
 <p>用一个具体例子来说明事件的原理和用法：</p>
 <ul>
 <li>首先，在编辑器中为AgentNodeTest类添加了event_test_int_bool(int val_int, bool val_bool)这个任务（Task）或者更形象的称之为“接口”（Interface），如下图所示：</li>
 </ul>
-<p><img class="aligncenter" src="./../../../../../img/overview/task.png" alt="" /></p>
+<p><img class="aligncenter" src="/img/overview/task.png" alt="" /></p>
 <ul>
 <li>其次，为行为树event_subtree_2添加一个任务节点，并作为根节点的第一个子节点，为该任务节点选择一个任务，这里我们直接选择event_test_int_bool，如下图所示。类似于编程语言中的函数参数为函数体的代码提供了局部变量，任务节点中的接口参数为当前的行为树提供了局部变量，这些局部变量可以根据需要用于该行为树所有子节点。</li>
 </ul>
-<p><img class="aligncenter" src="./../../../../../img/overview/settask.png" alt="" /></p>
+<p><img class="aligncenter" src="/img/overview/settask.png" alt="" /></p>
 <ul>
 <li>再次，将上面的行为树event_subtree_2通过鼠标拖拽到行为树event_ut_1中的第一个序列节点上，这样该序列节点就有了一个事件的附件，如下图所示：</li>
 </ul>
-<p><img src="./../../../../../img/overview/addevent.png" alt="" /></p>
+<p><img src="/img/overview/addevent.png" alt="" /></p>
 <ul>
-<li>然后，为该事件设置参数，如下图所示：<img src="./../../../../../img/overview/eventparam.png" alt="" /><br />
+<li>然后，为该事件设置参数，如下图所示：<img src="/img/overview/eventparam.png" alt="" /><br />
 其中，“触发一次”表示该事件是否只触发一次就不再起作用。“触发模式”控制该事件触发后对当前行为树的影响以及被触发的子树结束时应该如何恢复，有转移（Transfer）和返回（Return）两个选项：</p>
 <ul>
 <li>转移：当子树结束时，当前行为树被中断和重置，该子树将被设置为当前行为树。</li>
@@ -3703,23 +3695,23 @@ behaviac组件提供了C++和C#两种编程语言的单元测试以及游戏Demo
 <p>这样，在执行行为树event_ut_1时，如果接收到事件“event_test_int_bool”，那么行为树中的事件附件将得到响应和处理，行为树的执行就会从当前的event_ut_1跳转到event_subtree_2。</p>
 <p>调用FireEvent的时候，只有处于running状态的节点才响应事件。这样子是是为了事件的灵活性的考虑。这个设计是为了允许不同的分支不同的时机同样的事件可以触发不同的行为。比如同样是BeingHit，你受伤的时候，或者逃跑的时候可以对应不同的行为。如果不需要根据不同的节点相应不同的行为，只是需要响应事件，可以把事件配置在根节点上（根节点同样需要是running状态，非running状态的节点没有机会相应事件）。</p>
 <p>另外需要补充说明的是，行为树event_subtree_2带有任务节点，我们也可以直接将该行为树拖拽到行为树event_ut_1中，如下图所示：</p>
-<p><img class="aligncenter" src="./../../../../../img/overview/eventsubtree.png" alt="" /></p>
+<p><img class="aligncenter" src="/img/overview/eventsubtree.png" alt="" /></p>
 <p>这样在行为树event_ut_1中，选中引用节点event_test_int_bool后，就可以直接配置该子树执行时所需的参数（这里是val_int和val_bool），如下图所示：</p>
-<p><img class="aligncenter" src="./../../../../../img/overview/subtreeparam.png" alt="" /></p>
+<p><img class="aligncenter" src="/img/overview/subtreeparam.png" alt="" /></p>
 <p>行为树的任务及其参数可以类比编程语言中的函数及其参数，因此event_test_int_bool这个“函数”有两个“形式参数”val_int和val_bool，而上图中所选择的5和true值就是event_test_int_bool函数执行时所用到的“实际参数”。</p>
 <p>只有根节点是Task的子树才能被拖拽到另一个符合要求的树上生成事件。</p>
 <p>可以查看 <a href="https://github.com/Tencent/behaviac/blob/master/test/btunittest/NodeTest/EventUnitTest.cpp">test/btunittest/NodeTest/EventUnitTest.cpp</a></p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../tutorial11_event/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/tutorial11_event/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>运行时端的执行流程</title>
-		<link>./../../../../../tutorial13_updateloop/index.html</link>
-					<comments>./../../../../../tutorial13_updateloop/index.html#comments</comments>
+		<link>/tutorial13_updateloop/</link>
+					<comments>/tutorial13_updateloop/#comments</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<pubDate>Fri, 13 May 2016 02:42:05 +0000</pubDate>
@@ -3727,9 +3719,9 @@ behaviac组件提供了C++和C#两种编程语言的单元测试以及游戏Demo
 		<category><![CDATA[unity]]></category>
 		<category><![CDATA[上手]]></category>
 		<category><![CDATA[C++]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=306</guid>
+		<guid isPermaLink="false">/?p=306</guid>
 
-					<description><![CDATA[在运行时端（下面以C++版来加以说明，C#版基本类似），整个组建的更新可以通过Workspace::Update()函数来执行，该函数主要包括两大功能： 调用D<a class="moretag" href="./../../../../../tutorial13_updateloop/index.html">Read More...</a>]]></description>
+					<description><![CDATA[在运行时端（下面以C++版来加以说明，C#版基本类似），整个组建的更新可以通过Workspace::Update()函数来执行，该函数主要包括两大功能： 调用D<a class="moretag" href="/tutorial13_updateloop/">Read More...</a>]]></description>
 										<content:encoded><![CDATA[<p id="section">在运行时端（下面以C++版来加以说明，C#版基本类似），整个组建的更新可以通过Workspace::Update()函数来执行，该函数主要包括两大功能：</p>
 <ul>
 <li>调用DebugUpdate()函数来更新一些连调和热加载相关的功能。</li>
@@ -3773,23 +3765,23 @@ behaviac组件提供了C++和C#两种编程语言的单元测试以及游戏Demo
 </ul>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../tutorial13_updateloop/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/tutorial13_updateloop/feed/</wfw:commentRss>
 			<slash:comments>3</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>behaviac概述</title>
-		<link>./../../../../../overview/index.html</link>
-					<comments>./../../../../../overview/index.html#comments</comments>
+		<link>/overview/</link>
+					<comments>/overview/#comments</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<pubDate>Mon, 11 Apr 2016 10:00:46 +0000</pubDate>
 				<category><![CDATA[3.5]]></category>
 		<category><![CDATA[概念]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=166</guid>
+		<guid isPermaLink="false">/?p=166</guid>
 
-					<description><![CDATA[1 项目概况 behaviac是游戏AI的开发框架组件，也是游戏原型的快速设计工具。支持全平台，适用于客户端和服务器，助力游戏快速迭代开发。 编辑器可以运行在P<a class="moretag" href="./../../../../../overview/index.html">Read More...</a>]]></description>
+					<description><![CDATA[1 项目概况 behaviac是游戏AI的开发框架组件，也是游戏原型的快速设计工具。支持全平台，适用于客户端和服务器，助力游戏快速迭代开发。 编辑器可以运行在P<a class="moretag" href="/overview/">Read More...</a>]]></description>
 										<content:encoded><![CDATA[<h2 id="section"><span class="ez-toc-section" id="1">1 项目概况</span></h2>
 <ul>
 <li>behaviac是游戏AI的开发框架组件，也是游戏原型的快速设计工具。支持全平台，适用于客户端和服务器，助力游戏快速迭代开发。</li>
@@ -3816,7 +3808,7 @@ behaviac组件提供了C++和C#两种编程语言的单元测试以及游戏Demo
 <li>…；</li>
 <li>否则，不做任何跳转，维持当前状态。</li>
 </ul>
-<p><img src="./../../../../../img/overview/fsm.png" alt="" /></p>
+<p><img src="/img/overview/fsm.png" alt="" /></p>
 <p>图2.1 有限状态机</p>
 <p>有限状态机有着简单的优势，采用状态机来实现AI更符合思维的朴素表达。对于一些简单的AI，用状态机更加便捷，但是面对一些复杂的AI逻辑就会显得比较繁杂。</p>
 <p>同时，当需要对现有行为逻辑进行扩展的时候，代码上会显得比较吃力，因为要维护的状态量会成倍增加。</p>
@@ -3825,7 +3817,7 @@ behaviac组件提供了C++和C#两种编程语言的单元测试以及游戏Demo
 <p>行为树（Behavior Tree，BT），使得实现AI的过程变得更加需要技巧。框架设计者较为全面的考虑了可能会遇到的种种情况，把每种情况都抽象成了某个类型的节点，而游戏开发者要做的就是按照规范把各种节点连接成一棵所需的行为树。这样，行为树更加具有面向对象的特征，行为模块间的藕合度相对较低。</p>
 <p>概念上，行为树就是一段脚本，以树的形式展现给用户。节点的执行结果由其父节点来管理，决定接下来做什么。由于节点间不再有转换，因此不再称为状态，节点只是行为。</p>
 <p>行为树的基本结构如图2.2所示，行为树由叶子节点和中间节点组成，从左到右依次是父子关系的节点：叶子节点主要是一些动作、条件和赋值等原子操作节点，包含了最基本的行为（如跑动、攻击等），当一个叶子节点被选择后，就会激活其对应的基本行为；中间节点主要是一些组合节点，代表逻辑单元，用于管理子节点如何执行等。</p>
-<p><img src="./../../../../../img/overview/bt.png" alt="" /></p>
+<p><img src="/img/overview/bt.png" alt="" /></p>
 <p>图2.2 行为树</p>
 <p>叶子节点和中间节点主要分为五大类节点或附件：动作、条件、组合、修饰、附件等。其中，动作、条件节点为叶子节点，组合、修饰节点为中间节点，附件必须附属在这四类节点上面而不能独立存在。</p>
 <p>每个节点执行结束后，都必须将其返回值提供给父节点。节点的返回值包括三种：成功（Success）、失败（Failure）以及正在执行（Running）。最基本的行为（叶子节点）可能执行成功也可能失败，高等级的行为（中间节点）是否执行成功依赖于子节点是否执行成功，子节点执行失败可能导致其父节点选择另一个子节点。<br />
@@ -3848,7 +3840,7 @@ behaviac组件提供了C++和C#两种编程语言的单元测试以及游戏Demo
 <h2 id="behaviac"><span class="ez-toc-section" id="3_behaviac">3 behaviac组件</span></h2>
 <p>behaviac组件包括编辑器（Designer）和运行时（Runtime）两大部分：编辑器主要用于编辑行为树，运行时库主要用于解释和执行编辑并导出过的行为树，运行时库需要整合到自己的游戏项目中去。<br />
 编辑器和运行时之间通过类型信息（Meta）进行交互，如图3.1所示：</p>
-<p><img src="./../../../../../img/overview/meta.png" alt="" /></p>
+<p><img src="/img/overview/meta.png" alt="" /></p>
 <p>图3.1 基于类型信息的编辑器和运行时端的交互</p>
 <h3 id="section-4"><span class="ez-toc-section" id="31">3.1 类型信息</span></h3>
 <p>类型信息是behaviac组件的核心，包括Agent的类型、属性、方法以及类的实例名称等信息。游戏中负责运行行为的实体称谓Agent，每个Agent都存有自己的数据或者能执行自己的动作，这样的数据被称为属性（Property），这样的动作被称为方法（Method）。所谓的类型信息就是对一个Agent的描述，包括其属性和方法等。</p>
@@ -3936,7 +3928,7 @@ behaviac组件提供了C++和C#两种编程语言的单元测试以及游戏Demo
 <p>代码3.1.2 在C#中通过Attribute标记类型信息</p>
 <p>此外，behaviac组件的特色之一就是编辑器中也可以创建和编辑类型信息。编辑器主要交给策划编辑行为树，也可以编辑类型信息。策划在项目开始初期，也就是程序员还没把代码写出来之前，策划就可以自己手动的创建一些Agent类型、属性和方法等类型信息。这样可以加速游戏原型的创建，也就是策划不用等程序员，就可以进行游戏原型的编辑。</p>
 <p>如图3.1.3所示，打开编辑器中提供的类型信息浏览器，可以查看或新建Agent类型。选中其中一个Agent类型之后，可以查看它的属性、方法等信息，并可以扩展Agent类型的成员属性和方法等，还支持新建枚举和结构体类型等。</p>
-<p><img src="./../../../../../img/overview/metabrowser.png" alt="" /></p>
+<p><img src="/img/overview/metabrowser.png" alt="" /></p>
 <p>图3.1.3 在类型信息浏览器中查看和编辑类型信息</p>
 <h4 id="section-5"><span class="ez-toc-section" id="311">3.1.1 类型</span></h4>
 <p>类型（Type）分为Agent、枚举和结构体等。</p>
@@ -3946,14 +3938,14 @@ behaviac组件提供了C++和C#两种编程语言的单元测试以及游戏Demo
 <li>结构体：游戏端的用到结构体类型会导出在类型信息文件中，也可以在类型信息浏览器中添加自己的结构体类型，但只能为其增加成员属性，不能添加成员方法，可以导出生成C++或C#源码，添加到游戏端代码中。</li>
 </ul>
 <p>如图3.1.1.1所示，在新建一棵行为树时，首先需要为根节点选择一种Agent类型，以表明当前新建的行为树是用的哪种Agent，该行为树的所有叶子节点将可以使用该Agent类型的属性和方法。</p>
-<p><img src="./../../../../../img/articles/agenttype_selector.png" alt="" /></p>
-<p><img src="./../../../../../img/overview/agenttype.png" alt="" /></p>
+<p><img src="/img/articles/agenttype_selector.png" alt="" /></p>
+<p><img src="/img/overview/agenttype.png" alt="" /></p>
 <p>图3.1.1.1 为根节点设置Agent类型</p>
 <h4 id="section-6"><span class="ez-toc-section" id="312">3.1.2 实例</span></h4>
 <p>上面已经提及了一棵行为树需要设置它的Agent类型，以便于所有叶子节点使用该Agent类型的属性和方法。对于这种情况，我们称之为使用自身（Self）的属性和方法。</p>
 <p>另一方面，某个节点的参数可能会用到不是自身的属性或方法，这时就需要首先选择实例（Instance），然后再选择该实例所属的Agent类型的属性或方法，如图3.1.2.1所示。</p>
 <p>所有Agent类的实例在运行时端需要通过注册并导出到类型信息文件中，这样编辑器拿到所有的实例列表后就可以一一列举出来以供选择，具体注册方法详见使用手册。</p>
-<p><img src="./../../../../../img/overview/properties.png" alt="" /></p>
+<p><img src="/img/overview/properties.png" alt="" /></p>
 <p>图3.1.2.1 为条件节点设置左参数</p>
 <h4 id="section-7"><span class="ez-toc-section" id="313">3.1.3 变量</span></h4>
 <p>变量分为成员字段（Field）、属性（Property）、自定义的属性以及局部变量等。</p>
@@ -3963,7 +3955,7 @@ behaviac组件提供了C++和C#两种编程语言的单元测试以及游戏Demo
 <li>自定义的属性：主要是在编辑器中为Agent类型新建出来的成员属性。在变量前有一个‘*’星号标识。如下图。</li>
 <li>局部变量：在变量前有一个‘-’减号标识。相对于成员属性和自定义的属性这些全局属性而言。为什么称之为全局属性？在整个游戏项目中，可能会有很多棵行为树，我们称之为工作区来管理所有的行为树。每一种Agent类型的成员属性和自定义的属性是可以供这个工作区中的所有行为树选择使用的，而局部变量只是针对某一棵行为树，局限于在这一棵行为树中所使用的变量。</li>
 </ul>
-<p><img src="./../../../../../img/overview/variable_indicator.png" alt="" /></p>
+<p><img src="/img/overview/variable_indicator.png" alt="" /></p>
 <p>behaviac组件支持变量的只读（Readonly）特性，这样在编辑器中只可以对该属性进行读取，但不能为其赋值。局部变量不仅支持int、float、bool、枚举等基本的数据类型，也支持复杂的指针或引用类型。</p>
 <h4 id="section-8"><span class="ez-toc-section" id="314">3.1.4 方法</span></h4>
 <p>方法包括成员方法、自定义的方法、任务（Task）等。</p>
@@ -3973,15 +3965,15 @@ behaviac组件提供了C++和C#两种编程语言的单元测试以及游戏Demo
 <li>任务：用于描述子树所需的接口，包括接口名和参数列表，跟方法的定义类似。后文将结合子树的概念，对任务的用法进行更详细的说明。</li>
 </ul>
 <p>最后，在编辑器中就可以根据导出和创建的类型信息，对行为树进行编辑。在行为树的每个节点上可以根据需要选择或设置属性、方法及其参数等，如图3.1.4.1所示。</p>
-<p><img src="./../../../../../img/overview/action.png" alt="" /></p>
+<p><img src="/img/overview/action.png" alt="" /></p>
 <p>图3.1.4.1 编辑节点的属性</p>
 <h3 id="section-9"><span class="ez-toc-section" id="32">3.2 工作区</span></h3>
 <p>采用behaviac组件开始项目时，首先需要在编辑器中创建一个工作区（Workspace）。</p>
 <p>工作区文件以.workspace.xml为后缀名，是管理游戏项目中所有行为树文件的配置文件，如图3.2.1所示：</p>
-<p><img src="./../../../../../img/overview/workspace.png" alt="" /></p>
+<p><img src="/img/overview/workspace.png" alt="" /></p>
 <p>图3.2.1 工作区文件</p>
 <p>该配置文件可以指定XML类型信息文件、行为树源文件的路径、导出文件的路径等，可以通过编辑器中的“新建工作区”或“编辑工作区”工具编辑相关设置，如图3.2.2所示：</p>
-<p><img src="./../../../../../img/overview/editworkspace.png" alt="" /></p>
+<p><img src="/img/overview/editworkspace.png" alt="" /></p>
 <p>图3.2.2 编辑工作区</p>
 <p>行为树源文件和导出文件的区别在于，行为树源文件是在编辑器中供策划编辑使用的初始源文件（XML格式），包含了很多冗余的信息，比如UI显示所需的属性等。而导出文件是一种精简版的行为树文件，只是给运行时端使用的一种高效的执行文件。</p>
 <p>源文件就像那些Raw Data，必须导出后才能在运行时中使用，而导出文件就像那些处理过并在游戏中直接使用的Game Data。工作区文件、源文件、类型信息文件等在游戏中都不再需要，游戏中只需要导出的文件。</p>
@@ -3991,89 +3983,89 @@ behaviac组件提供了C++和C#两种编程语言的单元测试以及游戏Demo
 <h4 id="section-11"><span class="ez-toc-section" id="331">3.3.1 节点与附件</span></h4>
 <p>前面已经介绍，行为树的节点主要分为五大类节点或附件：动作、条件、组合、修饰、附件等，如图3.3.1所示。其中，动作、条件节点为叶子节点，组合、修饰节点为中间节点，附件必须附属在这四类节点上面而不能独立存在。</p>
 <p>behaviac组件还支持扩展新的节点类型，具体用法可以详见使用手册中的介绍。</p>
-<p><img src="./../../../../../img/overview/nodes.png" alt="" /></p>
+<p><img src="/img/overview/nodes.png" alt="" /></p>
 <p>图3.3.1.1 行为树的节点和附件</p>
 <p>为了支持子树（Subtree）的功能，behaviac组件还提供了引用节点（ReferencedBehavior）类型，后文将对子树和引用节点详细介绍。</p>
 <p>节点可以具有前置（Preaction）和后置（Postaction）等附件，如图3.3.2所示。前置可以表示执行某个条件或者某个操作，如果是条件，那么前置必须返回成功后才能继续执行所在的节点，否则直接返回到父节点。而后置只用于表示该节点执行完毕后继续执行的操作。</p>
-<p><img src="./../../../../../img/overview/attachments.png" alt="" /></p>
+<p><img src="/img/overview/attachments.png" alt="" /></p>
 <p>图3.3.1.2 节点上的前置和后置</p>
 <p>还有一种附件比较特殊，也即事件（Event）。事件是将一棵行为树作为另一棵行为树中某个节点（一般为根节点）的附件，用于响应事件发生时行为树的切换。后文将对事件进行更详细的说明。</p>
 <p>为了支持某些特殊应用，behaviac组件还为序列（Sequence）、选择（Selector）等组合节点添加了中断条件（Interrupted Condition），如图3.3.1.3所示。增加中断条件是为了让序列节点（或其他组合节点）在依次执行每个子节点的时候，都需要根据该中断条件的执行结果，来判断是否需要执行当前子节点。也即，所有的子节点有一个统一的中断条件被打断执行。</p>
-<p><img src="./../../../../../img/overview/interupt.png" alt="" /></p>
+<p><img src="/img/overview/interupt.png" alt="" /></p>
 <p>图3.3.1.3 中断条件</p>
 <p>在编辑器中，可以通过鼠标拖拽这些节点到新建的行为树中，或拖拽前置和后置附件到某个节点上。</p>
 <h4 id="section-12"><span class="ez-toc-section" id="332">3.3.2 预制</span></h4>
 <p>为了方便或加速行为树的编辑，behaviac编辑器提供了预制（Prefab）的功能，以便利于复用已经编辑好的行为树。</p>
 <p>behaviac组件的预制跟Unity引擎中的预制工作机制类似，如果在用到预制的地方改变了预制中某个节点的属性，那么就会在所在的行为树中创建一份该预制的实例（Instance）。如果没有改变预制中任何节点的属性，则直接跟预制母体的属性保持一致，也即修改了预制中任何节点的属性，用到该预制的其他行为树也跟着同步改变。</p>
 <p>在编辑器中，可以将已经编辑好的行为树另存为预制，这些预制会组织在Prefabs目录下，以便区分于项目所需的行为树（归类在Behaviors目录下），如图3.3.2.1所示。</p>
-<p><img src="./../../../../../img/overview/behaviors.png" alt="" /></p>
+<p><img src="/img/overview/behaviors.png" alt="" /></p>
 <p>图3.3.2.1 行为树与预制</p>
 <p>如图3.3.2.2所示，先构建了一个预制行为树“Prefab_安全的随机移动”。</p>
-<p><img src="./../../../../../img/overview/prefab.png" alt="" /></p>
+<p><img src="/img/overview/prefab.png" alt="" /></p>
 <p>图3.3.2.2 预制</p>
 <p>如图3.3.2.3所示，再将该行为树拖拽进行为树Tank_SafeWander_RandomFire中，可以看到该预制行为树会得到展开并复制过去，这加速了行为树的编辑，提高了开发工作的效率。</p>
-<p><img src="./../../../../../img/overview/prefabinstance.png" alt="" /></p>
+<p><img src="/img/overview/prefabinstance.png" alt="" /></p>
 <p>图3.3.2.3 使用预制的行为树</p>
 <h4 id="section-13"><span class="ez-toc-section" id="333">3.3.3 子树与递归</span></h4>
 <p>在编辑器中，可以通过鼠标拖拽一棵行为树到另一棵行为树中，并作为引用节点（ReferencedBehavior）添加到另一棵行为树上。如图3.3.3.1所示，action_ut_0就是action_ut_1的子树，action_ut_0所在的节点是一个引用节点。</p>
-<p><img src="./../../../../../img/overview/subtree.png" alt="" /></p>
+<p><img src="/img/overview/subtree.png" alt="" /></p>
 <p>图3.3.3.1 子树</p>
 <p>有了子树的功能，behaviac组件自然也支持了“递归”的功能，只要将当前行为树作为自己的子树即可。形成递归的时候需要注意不要造成死循环，这可以通过变量的使用来避免。</p>
 <p>如图3.3.3.2所示，利用testVar_0来避免死循环：第一次进入的时候testVar_0 == 0，所以可以执行下面的序列，先把testVar_0赋值为1，那么在下面的递归重入的时候由于testVar_0 == 1，所以testVar_0 == 0的条件不满足，所以下面的序列不会进入从而避免了死循环。</p>
-<p><img src="./../../../../../img/overview/reverse.png" alt="" /></p>
+<p><img src="/img/overview/reverse.png" alt="" /></p>
 <p>图3.3.3.2 递归</p>
 <h4 id="section-14"><span class="ez-toc-section" id="334">3.3.4 事件处理</span></h4>
 <p>执行行为树的过程中，当状态、条件发生变化或发生事件（Event）时如何响应或打断当前的执行是个重要的问题。</p>
-<p>请详看文档《<a href="./../../../../../docs/zh/tutorials/tutorial11_event/index.html">事件处理</a>》。</p>
+<p>请详看文档《<a href="/docs/zh/tutorials/tutorial11_event/">事件处理</a>》。</p>
 <h4 id="section-15"><span class="ez-toc-section" id="335">3.3.5 热加载</span></h4>
 <p>behaviac组件中的编辑器和运行时库都支持热加载，但是只针对XML/BSON格式的行为树文件。</p>
 <p>在编辑器中，只要当前打开的行为树文件在编辑器外由于某种原因得到修改（例如通过项目中的文件版本管理系统强制同步行为树文件，或者通过文本编辑器强制修改行为树XML文件等），那么都可以自动的在编辑器中得到刷新。</p>
 <p>对于运行时端（或游戏端），只要在编辑器中修改了行为树文件并重新导出，那么在游戏运行过程中不用退出游戏，最新导出的行为树可以自动进行加载，这样就可以及时查看行为树最新的效果。</p>
-<p>请详看文档《<a href="./../../../../../docs/zh/tutorials/tutorial12_hotreload/index.html">热加载</a>》。</p>
+<p>请详看文档《<a href="/docs/zh/tutorials/tutorial12_hotreload/">热加载</a>》。</p>
 <h3 id="section-16"><span class="ez-toc-section" id="34">3.4 有限状态机</span></h3>
 <p>除了上面提及的行为树，behaviac组件还支持传统的有限状态机（FSM）。在前面的2.1章节已经说明，有限状态机主要由状态（State）和转换（Transition）构成，如图3.4.1所示。</p>
-<p><img src="./../../../../../img/overview/fsm.png" alt="" /></p>
+<p><img src="/img/overview/fsm.png" alt="" /></p>
 <p>图3.4.1 有限状态机</p>
 <p>类似于前面提及的行为树子树的概念，behaviac组件的一大特色就是支持将编辑好的一个有限状态机整体作为另一个有限状态机的“子树”，甚至有限状态机还可以跟行为树交替引用，互相作为彼此的子树，也即一个有限状态机可以整体作为一棵行为树的“引用节点”，同时一棵行为树也可以整体作为一个有限状态机中的“引用状态”。</p>
 <p>在behaviac编辑器中，状态是作为类似行为树的节点一样独立存在，而转换是为类似行为树中的附件一样挂在某个状态上。有限状态机的编辑也很简单，只需要通过鼠标拖拽“状态”节点和“转换”附件到新建的有限状态机中，如图3.4.2所示。</p>
-<p><img src="./../../../../../img/overview/states.png" alt="" /></p>
+<p><img src="/img/overview/states.png" alt="" /></p>
 <p>图3.4.2 有限状态机的状态和转换</p>
 <p>类似于行为树中的节点，还可以为有限状态机中的状态节点添加前置和后置附件，以表示执行到当前状态节点时，所需要执行的前置条件和后置操作。</p>
 <h3 id="section-17"><span class="ez-toc-section" id="35">3.5 调试</span></h3>
 <p>编辑器支持跟游戏端进行连调，如图3.5.1所示。</p>
-<p><img src="./../../../../../img/overview/connect.png" alt="" /></p>
+<p><img src="/img/overview/connect.png" alt="" /></p>
 <p>图3.5.1 连接游戏</p>
 <p>支持查看属性的变化（图3.5.2）、在节点上设置断点（图3.5.3）、高亮显示行为树的执行路径（图3.5.3）以及记录每帧信息以便后续查看等功能。</p>
-<p><img src="./../../../../../img/overview/agentproperties.png" alt="" /></p>
+<p><img src="/img/overview/agentproperties.png" alt="" /></p>
 <p>图3.5.2 查看Agent的属性</p>
-<p><img src="./../../../../../img/overview/breakpoints.png" alt="" /></p>
+<p><img src="/img/overview/breakpoints.png" alt="" /></p>
 <p>图3.5.3 设置断点以及高亮显示执行路径</p>
 <h3 id="demo"><span class="ez-toc-section" id="36">3.6 单元测试与</span></h3>
 <p>为了方便入门，behaviac组件提供了C++和C#两种编程语言的单元测试以及游戏Demo，可以通过编辑器中的菜单项“帮助”-&gt;“控制说明” 进入，然后点击快速打开所需的单元测试或游戏Demo所用到的工作区，如图3.6.1所示。</p>
-<p><img src="./../../../../../img/overview/demo.png" alt="" /></p>
+<p><img src="/img/overview/demo.png" alt="" /></p>
 <p>图3.6.1 单元测试与Demo</p>
 <h3 id="section-18"><span class="ez-toc-section" id="37">3.7 开源</span></h3>
 <p>behaviac组件已在github上开源，网址是<a href="https://github.com/Tencent/behaviac">https://github.com/Tencent/behaviac</a>，可以下载最新的安装包、源码以及相关文档等。</p>
 <p>另外，behaviac视频讲解的链接为：<a href="http://gad.qq.com/tool/detail/2">http://gad.qq.com/tool/detail/2</a></p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../overview/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/overview/feed/</wfw:commentRss>
 			<slash:comments>2</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>扩展节点类型</title>
-		<link>./../../../../../tutorial9_extendnodes/index.html</link>
-					<comments>./../../../../../tutorial9_extendnodes/index.html#respond</comments>
+		<link>/tutorial9_extendnodes/</link>
+					<comments>/tutorial9_extendnodes/#respond</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<pubDate>Fri, 13 May 2016 02:37:40 +0000</pubDate>
 				<category><![CDATA[3.5]]></category>
 		<category><![CDATA[扩展]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=298</guid>
+		<guid isPermaLink="false">/?p=298</guid>
 
-					<description><![CDATA[有时候，behaviac组件自带的节点类型不能满足项目需求，或者需要更高效的节点类型，可以通过添加新的节点类型来扩展系统。 添加新的节点类型，编辑器端需要实现一<a class="moretag" href="./../../../../../tutorial9_extendnodes/index.html">Read More...</a>]]></description>
+					<description><![CDATA[有时候，behaviac组件自带的节点类型不能满足项目需求，或者需要更高效的节点类型，可以通过添加新的节点类型来扩展系统。 添加新的节点类型，编辑器端需要实现一<a class="moretag" href="/tutorial9_extendnodes/">Read More...</a>]]></description>
 										<content:encoded><![CDATA[<p id="section">有时候，behaviac组件自带的节点类型不能满足项目需求，或者需要更高效的节点类型，可以通过添加新的节点类型来扩展系统。</p>
 <p>添加新的节点类型，编辑器端需要实现一个插件，运行时端需要实现相应的节点类型以便加载数据并且负责执行。</p>
 <h3 id="section-1"><span class="ez-toc-section" id="i">编辑器端的插件</span></h3>
@@ -4082,13 +4074,13 @@ behaviac组件提供了C++和C#两种编程语言的单元测试以及游戏Demo
 <ul>
 <li>该项目依赖如下DLL，如下图所示：</li>
 </ul>
-<p><img class="aligncenter" src="./../../../../../img/tutorials/tutorial9/referencedDlls.png" alt="" /></p>
+<p><img class="aligncenter" src="/img/tutorials/tutorial9/referencedDlls.png" alt="" /></p>
 <ul>
 <li>产生的DLL需要放置在BehaviacDesigner.exe同一个目录。</li>
 <li>如果自己的插件只是对ExamplePlugin修改了相应的名字，并且该插件项目和ExamplePlugin的所在位置一样，即位于tools/Designer/Plugins中，那么对BehaviacDesignerBase.dll的引用以及产生DLL的输出路径不需要改动即可。否则，如果有编译错误或者运行时不能看到添加的节点，请确保上面两个步骤的设置都是正确的。</li>
 <li>打开编辑器后，正常情况下新加的节点ExampleNode将出现在动作组下，如下图所示：</li>
 </ul>
-<p><img class="aligncenter" src="./../../../../../img/tutorials/tutorial9/actionFolder.png" alt="" /></p>
+<p><img class="aligncenter" src="/img/tutorials/tutorial9/actionFolder.png" alt="" /></p>
 <h3><span class="ez-toc-section" id="i-3">节点类型</span></h3>
 <p>每一个要添加的节点类型，都需要仿照ExampleNode或相应的节点新建文件ExampleNode.cs，并编写类ExampleNode的实现。</p>
 <ul>
@@ -4158,15 +4150,15 @@ behaviac组件提供了C++和C#两种编程语言的单元测试以及游戏Demo
 <p>如果没有特殊需要，则直接调用super的函数就可以了。</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../tutorial9_extendnodes/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/tutorial9_extendnodes/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>类、结构体或枚举的数组</title>
-		<link>./../../../../../tutorial8_customarray/index.html</link>
-					<comments>./../../../../../tutorial8_customarray/index.html#respond</comments>
+		<link>/tutorial8_customarray/</link>
+					<comments>/tutorial8_customarray/#respond</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<pubDate>Fri, 13 May 2016 02:34:48 +0000</pubDate>
@@ -4174,9 +4166,9 @@ behaviac组件提供了C++和C#两种编程语言的单元测试以及游戏Demo
 		<category><![CDATA[扩展]]></category>
 		<category><![CDATA[C++]]></category>
 		<category><![CDATA[运行时]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=296</guid>
+		<guid isPermaLink="false">/?p=296</guid>
 
-					<description><![CDATA[对于C#版，类型信息不支持[]类型的数组，只支持List&#60;***&#62;类型的数组。 对于C++版，需要按照如下方式进行注册： 基本类型（bool、int<a class="moretag" href="./../../../../../tutorial8_customarray/index.html">Read More...</a>]]></description>
+					<description><![CDATA[对于C#版，类型信息不支持[]类型的数组，只支持List&#60;***&#62;类型的数组。 对于C++版，需要按照如下方式进行注册： 基本类型（bool、int<a class="moretag" href="/tutorial8_customarray/">Read More...</a>]]></description>
 										<content:encoded><![CDATA[<p id="section">对于C#版，类型信息不支持[]类型的数组，只支持List&lt;***&gt;类型的数组。</p>
 <p>对于C++版，需要按照如下方式进行注册：</p>
 <p>基本类型（bool、int、float、char、sbyte、ubyte等）的数组可以直接使用，但当使用到其他自定义类型数组的时候，需要添加特殊的宏和代码，否则运行时可能会有错误（如果没有使用到相应的操作，则没有错误）：</p>
@@ -4232,150 +4224,150 @@ behaviac组件提供了C++和C#两种编程语言的单元测试以及游戏Demo
 <p>更多细节可以参考behaviac组件C++源码中附带的<a href="https://github.com/Tencent/behaviac/blob/master/test/btunittest/Agent/EmployeeParTestAgent.h">EmployeeParTestAgent.h</a>文件中的类EmployeeParTestAgent。</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../tutorial8_customarray/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/tutorial8_customarray/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>元信息的使用和编辑</title>
-		<link>./../../../../../tutorial3_3_meta_edit/index.html</link>
-					<comments>./../../../../../tutorial3_3_meta_edit/index.html#respond</comments>
+		<link>/tutorial3_3_meta_edit/</link>
+					<comments>/tutorial3_3_meta_edit/#respond</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<pubDate>Fri, 13 May 2016 02:26:41 +0000</pubDate>
 				<category><![CDATA[3.5]]></category>
 		<category><![CDATA[上手]]></category>
 		<category><![CDATA[编辑器]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=280</guid>
+		<guid isPermaLink="false">/?p=280</guid>
 
-					<description><![CDATA[使用元信息 在编辑器中新建一个工作区，并根据上一步中导出的元数据文件所在的文件夹，设置该工作区的“元数据位置”，可以看到demo_running.xml文件已经<a class="moretag" href="./../../../../../tutorial3_3_meta_edit/index.html">Read More...</a>]]></description>
+					<description><![CDATA[使用元信息 在编辑器中新建一个工作区，并根据上一步中导出的元数据文件所在的文件夹，设置该工作区的“元数据位置”，可以看到demo_running.xml文件已经<a class="moretag" href="/tutorial3_3_meta_edit/">Read More...</a>]]></description>
 										<content:encoded><![CDATA[<h2>使用元信息</h2>
 <ul>
 <li>在编辑器中新建一个工作区，并根据上一步中导出的元数据文件所在的文件夹，设置该工作区的“元数据位置”，可以看到demo_running.xml文件已经可以使用，如下图所示：</li>
 </ul>
-<p><img class="aligncenter" src="./../../../../../img/tutorials/tutorial3/editWorkspace.png" alt="" /></p>
+<p><img class="aligncenter" src="/img/tutorials/tutorial3/editWorkspace.png" alt="" /></p>
 <ul>
 <li>新建行为树文件，并为该行为树添加一些节点，选择某个节点后，可以设置该节点的属性（可选属性正是来至上面导出的元信息），如下图所示：</li>
 </ul>
-<p><img class="aligncenter" src="./../../../../../img/overview/action.png" alt="" /></p>
+<p><img class="aligncenter" src="/img/overview/action.png" alt="" /></p>
 <h2>编辑元信息</h2>
 <ul>
 <li>前面介绍的是在运行时（游戏）端编写代码导出元信息到编辑器中，behaviac组件也支持在编辑器中创建和编辑元信息。</li>
 <li>在编辑器中，通过菜单项“视图”-&gt;“元信息浏览”（或快捷键Ctrl+M）打开元信息浏览器，如下图所示：</li>
 </ul>
-<p><img class="aligncenter" src="./../../../../../img/overview/metabrowser.png" alt="" /></p>
+<p><img class="aligncenter" src="/img/overview/metabrowser.png" alt="" /></p>
 <ul>
 <li>类型列表：左上方的“类型列表”显示了所有的Agent类、自定义的枚举和结构体类型，其右侧是当前选中的类型的属性。“类型列表”中的名字前面带有“*”，表示该类型是在编辑器中创建出来的。创建一个类型（Agent类、枚举或结构体），可以点击元信息浏览器右上角的“新增”按钮，如下图所示。后文将提到对这些新增的类型，导出时会自动生成相应的C++或C#源码文件，这样程序员就可以在生成的源码文件基础上添加和实现自己的游戏逻辑。</li>
 </ul>
-<p><img class="aligncenter" src="./../../../../../img/tutorials/tutorial3/newType.png" alt="" /></p>
+<p><img class="aligncenter" src="/img/tutorials/tutorial3/newType.png" alt="" /></p>
 <ul>
 <li>实例名称：元信息浏览器中的“实例名称”，用于列出当前选中的Agent类型的所有实例，这些实例是通过之前提及的Agent::RegisterInstanceName接口在运行时端注册并导出的。如果当前选中的Agent类型没有导出任何实例，那么这一行显示为空白。</li>
 <li>成员类型：成员类型包括属性（Property）、方法（Method）和任务（Task）。</li>
 <li>成员列表：选中了上面的“成员类型”后，会列出当前选中的类型的所有成员属性、方法或任务。如果是自定义的成员，那么在列表中的名字前会多出一个“*”。点击“成员列表”右侧的“新增”按钮，可以新增一个成员，可以通过选中“是否局部变量”，将该变量标记为局部变量（在列表中的名字前会多出一个“-”），如下图所示。新增一个方法或任务也类似。选中某个成员后，在元信息浏览器下方会列出该成员的所有属性。</li>
 </ul>
-<p><img class="aligncenter" src="./../../../../../img/tutorials/tutorial3/newProperty.png" alt="" /></p>
+<p><img class="aligncenter" src="/img/tutorials/tutorial3/newProperty.png" alt="" /></p>
 <p>只要在元信息浏览器中编辑了元信息，那么点击元信息浏览器下方的“应用”或“确认”按钮后，编辑器就会在工作区源文件所在目录的保存出一个名为“behaviac.bb.xml”的文件，如下图所示：</p>
-<p><img class="aligncenter" src="./../../../../../img/tutorials/tutorial3/bbFile.png" alt="" /></p>
+<p><img class="aligncenter" src="/img/tutorials/tutorial3/bbFile.png" alt="" /></p>
 <p>后文我们将介绍，这个“behaviac.bb.xml”文件也会跟其他行为树源文件一并导出给运行时库。</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../tutorial3_3_meta_edit/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/tutorial3_3_meta_edit/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>快速原型设计</title>
-		<link>./../../../../../tutorial3_4_prototype/index.html</link>
-					<comments>./../../../../../tutorial3_4_prototype/index.html#respond</comments>
+		<link>/tutorial3_4_prototype/</link>
+					<comments>/tutorial3_4_prototype/#respond</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<pubDate>Fri, 13 May 2016 02:20:43 +0000</pubDate>
 				<category><![CDATA[3.5]]></category>
 		<category><![CDATA[编辑器]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=271</guid>
+		<guid isPermaLink="false">/?p=271</guid>
 
-					<description><![CDATA[本文主要介绍在不需要程序员编写任何代码的前提下，策划如何在编辑器中快速开发行为树原型。 1 新建工作区 打开编辑器，点击菜单项“文件”-&#62;“新建工作区”新<a class="moretag" href="./../../../../../tutorial3_4_prototype/index.html">Read More...</a>]]></description>
+					<description><![CDATA[本文主要介绍在不需要程序员编写任何代码的前提下，策划如何在编辑器中快速开发行为树原型。 1 新建工作区 打开编辑器，点击菜单项“文件”-&#62;“新建工作区”新<a class="moretag" href="/tutorial3_4_prototype/">Read More...</a>]]></description>
 										<content:encoded><![CDATA[<p id="section">本文主要介绍在不需要程序员编写任何代码的前提下，策划如何在编辑器中快速开发行为树原型。</p>
 <h3 id="section-1"><span class="ez-toc-section" id="1">1 新建工作区</span></h3>
 <p>打开编辑器，点击菜单项“文件”-&gt;“新建工作区”新建一个自己的工作区，如下图所示：</p>
-<p><img src="./../../../../../img/tutorials/tutorial3/newWorkspace.png" alt="" /></p>
+<p><img src="/img/tutorials/tutorial3/newWorkspace.png" alt="" /></p>
 <p>图1.1 新建工作区</p>
 <p>暂不设置“元数据位置”，表示没有从运行时端导出任何元信息文件，元信息都会在编辑器中创建出来。</p>
 <p>点击确认，创建完之后，整个编辑器几乎是空的，如下图所示：</p>
-<p><img src="./../../../../../img/tutorials/tutorial3/emptyEditor.png" alt="" /></p>
+<p><img src="/img/tutorials/tutorial3/emptyEditor.png" alt="" /></p>
 <p>图1.2 初始的编辑器</p>
 <h3 id="section-2"><span class="ez-toc-section" id="2">2 新建行为树</span></h3>
 <p>从工具栏中点击“新建行为树”按钮，开始创建我们的第一棵行为树，如下图所示：</p>
-<p><img src="./../../../../../img/tutorials/tutorial3/newBehavior.png" alt="" /></p>
+<p><img src="/img/tutorials/tutorial3/newBehavior.png" alt="" /></p>
 <p>图2.1 新建行为树</p>
 <p>创建后，将这棵行为树命名为“first_behavior”，如下图所示：</p>
-<p><img src="./../../../../../img/tutorials/tutorial3/firstBehavior.png" alt="" /></p>
+<p><img src="/img/tutorials/tutorial3/firstBehavior.png" alt="" /></p>
 <p>图2.2 第一棵行为树</p>
 <p>从图2.2中可以看出这棵行为树只有一个根节点，鼠标点击该根节点后，可以看到它的Agent类型只有一个<code class="highlighter-rouge">behaviac::Agent</code>可以选择，但是不要选它，如下图所示：</p>
-<p><img src="./../../../../../img/tutorials/tutorial3/rootAgentType.png" alt="" /></p>
+<p><img src="/img/tutorials/tutorial3/rootAgentType.png" alt="" /></p>
 <p>图2.3 根节点的Agent类型</p>
 <h3 id="agent"><span class="ez-toc-section" id="3_Agent">3 新建自定义的Agent子类及其属性和方法</span></h3>
 <p>为了让行为树可以描述一个Agent类型，首先需要创建一个我们的Agent子类，通过菜单项“视图”-&gt;“元信息浏览”（或通过快捷键Ctrl+M）打开元信息浏览器，如下图所示：</p>
-<p><img src="./../../../../../img/tutorials/tutorial3/metaBrowser.png" alt="" /></p>
+<p><img src="/img/tutorials/tutorial3/metaBrowser.png" alt="" /></p>
 <p>图3.1 元信息浏览器</p>
 <p>点击元信息浏览器右上角的“新建”按钮，开始创建我们的第一个Agent子类，命名为<code class="highlighter-rouge">FirstAgent</code>，如下图所示：</p>
-<p><img src="./../../../../../img/tutorials/tutorial3/newAgent.png" alt="" /></p>
+<p><img src="/img/tutorials/tutorial3/newAgent.png" alt="" /></p>
 <p>图3.2 新建Agent子类</p>
 <p>从上图可以看出，<code class="highlighter-rouge">FirstAgent</code>类没有任何的成员属性和方法，我们接着为其添加属性和方法。</p>
 <p>点击元信息浏览器中间靠右的“新建”按钮，为<code class="highlighter-rouge">FirstAgent</code>类添加第一个成员属性，如下图所示：</p>
-<p><img src="./../../../../../img/tutorials/tutorial3/createProperty.png" alt="" /></p>
+<p><img src="/img/tutorials/tutorial3/createProperty.png" alt="" /></p>
 <p>图3.3 开始添加成员属性</p>
 <p>为这个属性命名为<code class="highlighter-rouge">FirstProperty</code>，并设置为int类型，如下图所示：</p>
-<p><img src="./../../../../../img/tutorials/tutorial3/createFirstProperty.png" alt="" /></p>
+<p><img src="/img/tutorials/tutorial3/createFirstProperty.png" alt="" /></p>
 <p>图3.4 新建成员属性</p>
 <p>创建完之后，我们可以看到，<code class="highlighter-rouge">FirstAgent</code>类已经有了第一个成员属性<code class="highlighter-rouge">FirstProperty</code>，如下图所示：</p>
-<p><img src="./../../../../../img/tutorials/tutorial3/firstProperty.png" alt="" /></p>
+<p><img src="/img/tutorials/tutorial3/firstProperty.png" alt="" /></p>
 <p>图3.5 第一个成员属性</p>
 <p>类似的，在元信息浏览器中，选择“成员类型”为“Method”，为<code class="highlighter-rouge">FirstAgent</code>类添加第一个成员方法，如下图所示：</p>
-<p><img src="./../../../../../img/tutorials/tutorial3/createMethod.png" alt="" /></p>
+<p><img src="/img/tutorials/tutorial3/createMethod.png" alt="" /></p>
 <p>图3.6 新建成员方法</p>
 <p>创建完之后，我们可以看到，<code class="highlighter-rouge">FirstAgent</code>类已经有了第一个成员方法<code class="highlighter-rouge">FirstMethod</code>，如下图所示：</p>
-<p><img src="./../../../../../img/tutorials/tutorial3/firstMethod.png" alt="" /></p>
+<p><img src="/img/tutorials/tutorial3/firstMethod.png" alt="" /></p>
 <p>图3.7 第一个成员方法</p>
 <p>这样，我们的第一个Agent子类（<code class="highlighter-rouge">FirstAgent</code>）就有了一个成员属性（<code class="highlighter-rouge">FirstProperty</code>）和一个成员方法（<code class="highlighter-rouge">FirstMethod</code>）。</p>
 <p>在元信息浏览器上点击下面的“确认”按钮，关闭元信息浏览器，回到编辑器主视口，继续编辑之前创建的第一棵行为树。</p>
 <h3 id="section-3"><span class="ez-toc-section" id="4">4 编辑行为树</span></h3>
 <p>鼠标选中根节点，为其设置Agent类型，这时，我们可以看到有了<code class="highlighter-rouge">FirstProperty</code>可供选择，如下图所示：</p>
-<p><img src="./../../../../../img/tutorials/tutorial3/selectAgentType.png" alt="" /></p>
+<p><img src="/img/tutorials/tutorial3/selectAgentType.png" alt="" /></p>
 <p>图4.1 设置Agent类型</p>
 <p>编辑该行为树，通过鼠标将左边的节点列表中的节点拖拽到主视口中，为该行为树添加一个序列节点、一个条件节点和一个动作节点，如下图所示：</p>
-<p><img src="./../../../../../img/tutorials/tutorial3/editBehavior.png" alt="" /></p>
+<p><img src="/img/tutorials/tutorial3/editBehavior.png" alt="" /></p>
 <p>图4.2 为行为树添加节点</p>
 <p>为条件节点选择刚才创建的属性<code class="highlighter-rouge">FirstProperty</code>，如下图所示：</p>
-<p><img src="./../../../../../img/tutorials/tutorial3/editCondition.png" alt="" /></p>
+<p><img src="/img/tutorials/tutorial3/editCondition.png" alt="" /></p>
 <p>图4.3 设置条件节点</p>
 <p>为动作节点选择刚才创建的方法<code class="highlighter-rouge">FirstMethod</code>，如下图所示：</p>
-<p><img src="./../../../../../img/tutorials/tutorial3/editAction.png" alt="" /></p>
+<p><img src="/img/tutorials/tutorial3/editAction.png" alt="" /></p>
 <p>图4.4 设置动作节点</p>
 <p>这样，我们就编辑完了第一棵行为树。</p>
 <p>注意，如果点击当前行为树主视图窗口右上角的“检查错误”按钮，如下图所示：</p>
-<p><img src="./../../../../../img/tutorials/tutorial3/checkError.png" alt="" /></p>
+<p><img src="/img/tutorials/tutorial3/checkError.png" alt="" /></p>
 <p>图4.5 检查错误</p>
 <p>检查当前行为树是否包含错误，将会弹出如下图所示的错误信息提示框：</p>
-<p><img src="./../../../../../img/tutorials/tutorial3/errorInfo.png" alt="" /></p>
+<p><img src="/img/tutorials/tutorial3/errorInfo.png" alt="" /></p>
 <p>图4.6 错误信息提示框</p>
-<p>如何消除该错误，请查看使用说明文档<a href="./../../../../../docs/zh/references/action/index.html">动作节点</a>。</p>
+<p>如何消除该错误，请查看使用说明文档<a href="/docs/zh/references/action/">动作节点</a>。</p>
 <h3 id="c"><span class="ez-toc-section" id="5_C">5 生成C++源码文件</span></h3>
 <p>为了方便讨论，下面只介绍生成C++源码文件，生成C#源码文件的流程基本类似，也可以分别参考下面两篇文档：</p>
 <ul>
-<li><a href="./../../../../../docs/zh/tutorials/tutorial4_2_export_cpp/index.html">导出和使用C++行为树</a></li>
-<li><a href="./../../../../../docs/zh/tutorials/tutorial4_3_export_cs/index.html">导出和使用C#行为树</a></li>
+<li><a href="/docs/zh/tutorials/tutorial4_2_export_cpp/">导出和使用C++行为树</a></li>
+<li><a href="/docs/zh/tutorials/tutorial4_3_export_cs/">导出和使用C#行为树</a></li>
 </ul>
 <p>开始导出C++源码文件，点击工具栏中的“导出行为树”按钮，如下图所示：</p>
-<p><img src="./../../../../../img/tutorials/tutorial3/startExportingBehaviors.png" alt="" /></p>
+<p><img src="/img/tutorials/tutorial3/startExportingBehaviors.png" alt="" /></p>
 <p>图5.1 开始导出C++源码文件</p>
 <p>弹出导出行为树设置窗口，我们看到“first_behavior”是一棵“有错误的行为树”，暂时忽略这个错误，直接选择下面的“导出设置”，只选择“C++ Behavior Export”，如下图所示：</p>
-<p><img src="./../../../../../img/tutorials/tutorial3/exportBehaviors.png" alt="" /></p>
+<p><img src="/img/tutorials/tutorial3/exportBehaviors.png" alt="" /></p>
 <p>图5.2 导出C++源码文件</p>
 <p>点击“C++ Behavior Export”最右侧的“…”按钮，弹出如下图所示的配置窗口：</p>
-<p><img src="./../../../../../img/tutorials/tutorial3/exportCppSettings.png" alt="" /></p>
+<p><img src="/img/tutorials/tutorial3/exportCppSettings.png" alt="" /></p>
 <p>图5.3 导出C++源码文件设置</p>
 <p>在上图中，暂时不用修改任何设置，只需使用默认值，直接点击“确认”按钮，回到图5.2中的导出行为树窗口，点击“导出”按钮。</p>
 <p>导出结束后，在工作区设置的导出路径（本文示例中的导出路径是“D:\test\exported”）中，会生成“behaviac_generated”文件夹，里面又有“types”文件夹，可以看到包含了“FirstAgent.h”和“FirstAgent.cpp”文件。</p>
@@ -4455,40 +4447,40 @@ behaviac组件提供了C++和C#两种编程语言的单元测试以及游戏Demo
 </code></pre>
 </div>
 <h3 id="section-4"><span class="ez-toc-section" id="6">6 导出元信息文件</span></h3>
-<p>将上面自动生成的“FirstAgent.h”和“FirstAgent.cpp”文件添加到自己的游戏项目中，并参考<a href="./../../../../../docs/zh/tutorials/tutorial3_1_meta_cpp_register/index.html">C++元信息的注册和导出</a>的做法导出元信息文件。</p>
+<p>将上面自动生成的“FirstAgent.h”和“FirstAgent.cpp”文件添加到自己的游戏项目中，并参考<a href="/docs/zh/tutorials/tutorial3_1_meta_cpp_register/">C++元信息的注册和导出</a>的做法导出元信息文件。</p>
 <p>这里我们假设生成的元信息文件名为“firstagent.xml”，并放在meta文件夹中，meta文件夹放在这个工作区的路径中，如下图所示：</p>
-<p><img src="./../../../../../img/tutorials/tutorial3/metaPath.png" alt="" /></p>
+<p><img src="/img/tutorials/tutorial3/metaPath.png" alt="" /></p>
 <p>图6.1 元信息文件</p>
 <p>回到编辑器中，点击菜单项“文件”-&gt;“编辑工作区”，为当前的工作区设置“元信息位置”，如下图所示：</p>
-<p><img src="./../../../../../img/tutorials/tutorial3/editWorkspaceMeta.png" alt="" /></p>
+<p><img src="/img/tutorials/tutorial3/editWorkspaceMeta.png" alt="" /></p>
 <p>图6.2 设置元信息位置</p>
 <p>点击工具栏中的“重新加载”按钮，重新加载整个工作区，如下图所示：</p>
-<p><img src="./../../../../../img/tutorials/tutorial3/refreshWorkspace.png" alt="" /></p>
+<p><img src="/img/tutorials/tutorial3/refreshWorkspace.png" alt="" /></p>
 <p>图6.3 重新加载工作区</p>
 <p>重新加载整个工作区之后，再次打开我们的第一棵行为树“first_behavior”，然后点击主视口中右上角的“检查错误”按钮，如下图所示：</p>
-<p><img src="./../../../../../img/tutorials/tutorial3/startCheckingErrors.png" alt="" /></p>
+<p><img src="/img/tutorials/tutorial3/startCheckingErrors.png" alt="" /></p>
 <p>图6.4 检查错误</p>
 <p>这个时候，我们发现该行为树已经没有任何错误，可以导出了，这里我们只导出XML行为树，如下图所示：</p>
-<p><img src="./../../../../../img/tutorials/tutorial3/exportXMLBehaviors.png" alt="" /></p>
+<p><img src="/img/tutorials/tutorial3/exportXMLBehaviors.png" alt="" /></p>
 <p>图6.5 开始导出XML行为树</p>
 <p>导出结束后，在工作区的导出路径下，导出了我们的第一棵行为树，如下图所示：</p>
-<p><img src="./../../../../../img/tutorials/tutorial3/xmlBehavior.png" alt="" /></p>
+<p><img src="/img/tutorials/tutorial3/xmlBehavior.png" alt="" /></p>
 <p>图6.6 第一棵导出的XML行为树</p>
-<p>有了导出的行为树，就可以参考<a href="./../../../../../docs/zh/tutorials/tutorial14_cpp_workflow/index.html">C++运行时端的使用上手</a>的做法开始使用运行时库。</p>
+<p>有了导出的行为树，就可以参考<a href="/docs/zh/tutorials/tutorial14_cpp_workflow/">C++运行时端的使用上手</a>的做法开始使用运行时库。</p>
 <h3 id="section-5"><span class="ez-toc-section" id="7">7 导出行为树</span></h3>
 <p>需要注意的是，<strong>如果行为树使用到了这里在编辑器里创建的’自定义方法’的话，那个行为树是不允许导出的</strong>。因为运行时还没有实现那个方法，如果运行时试图运行那个行为树的话，由于那个方法没有定义，没办法处理。</p>
 <p>这种情况下，编辑器只是作为‘设计’工具。</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../tutorial3_4_prototype/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/tutorial3_4_prototype/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>自定义枚举</title>
-		<link>./../../../../../tutorial7_customenum/index.html</link>
-					<comments>./../../../../../tutorial7_customenum/index.html#respond</comments>
+		<link>/tutorial7_customenum/</link>
+					<comments>/tutorial7_customenum/#respond</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<pubDate>Fri, 13 May 2016 02:34:01 +0000</pubDate>
@@ -4496,9 +4488,9 @@ behaviac组件提供了C++和C#两种编程语言的单元测试以及游戏Demo
 		<category><![CDATA[扩展]]></category>
 		<category><![CDATA[C++]]></category>
 		<category><![CDATA[运行时]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=294</guid>
+		<guid isPermaLink="false">/?p=294</guid>
 
-					<description><![CDATA[类似于自定义类，在.h文件中，任意编写一个自定义枚举类型，然后通过宏DECLARE_BEHAVIAC_ENUM声明该枚举类型。需要注意的是，宏DECLARE_B<a class="moretag" href="./../../../../../tutorial7_customenum/index.html">Read More...</a>]]></description>
+					<description><![CDATA[类似于自定义类，在.h文件中，任意编写一个自定义枚举类型，然后通过宏DECLARE_BEHAVIAC_ENUM声明该枚举类型。需要注意的是，宏DECLARE_B<a class="moretag" href="/tutorial7_customenum/">Read More...</a>]]></description>
 										<content:encoded><![CDATA[<ul>
 <li>类似于自定义类，在.h文件中，任意编写一个自定义枚举类型，然后通过宏DECLARE_BEHAVIAC_ENUM声明该枚举类型。需要注意的是，宏DECLARE_BEHAVIAC_ENUM必须定义在全局的namespace里，即放在任何命名空间之外。<br />
 如下代码样例所示：</li>
@@ -4568,24 +4560,24 @@ behaviac组件提供了C++和C#两种编程语言的单元测试以及游戏Demo
 <div>如果只是声明了，但是没有被使用过，则不会被导出。</div>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../tutorial7_customenum/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/tutorial7_customenum/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>自定义类或结构体</title>
-		<link>./../../../../../tutorial6_customtypes/index.html</link>
-					<comments>./../../../../../tutorial6_customtypes/index.html#comments</comments>
+		<link>/tutorial6_customtypes/</link>
+					<comments>/tutorial6_customtypes/#comments</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<pubDate>Fri, 13 May 2016 02:32:53 +0000</pubDate>
 				<category><![CDATA[3.5]]></category>
 		<category><![CDATA[扩展]]></category>
 		<category><![CDATA[运行时]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=292</guid>
+		<guid isPermaLink="false">/?p=292</guid>
 
-					<description><![CDATA[在.h文件中，任意编写一个自定义的类或结构体，并用宏DECLARE_BEHAVIAC_STRUCT声明该类或者结构体为非虚类，如下代码所示： struct Ty<a class="moretag" href="./../../../../../tutorial6_customtypes/index.html">Read More...</a>]]></description>
+					<description><![CDATA[在.h文件中，任意编写一个自定义的类或结构体，并用宏DECLARE_BEHAVIAC_STRUCT声明该类或者结构体为非虚类，如下代码所示： struct Ty<a class="moretag" href="/tutorial6_customtypes/">Read More...</a>]]></description>
 										<content:encoded><![CDATA[<ul>
 <li>在.h文件中，任意编写一个自定义的类或结构体，并用宏DECLARE_BEHAVIAC_STRUCT声明该类或者结构体为非虚类，如下代码所示：</li>
 </ul>
@@ -4622,29 +4614,29 @@ behaviac::TypeRegister::UnRegister&amp;amp;amp;amp;lt; TypeTest2_t &amp;amp;amp;
 <p>更多细节可以参考behaviac组件C++源码库中btunittest工程的<a href="https://github.com/Tencent/behaviac/blob/master/test/btunittest/Others/reflectionunittest.cpp">reflectionunittest.cpp</a>文件中TypeTest2_t结构体相关的代码。</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../tutorial6_customtypes/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/tutorial6_customtypes/feed/</wfw:commentRss>
 			<slash:comments>3</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>扩展使用已有的类型</title>
-		<link>./../../../../../tutorial5_extendtypes/index.html</link>
-					<comments>./../../../../../tutorial5_extendtypes/index.html#respond</comments>
+		<link>/tutorial5_extendtypes/</link>
+					<comments>/tutorial5_extendtypes/#respond</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<pubDate>Fri, 13 May 2016 02:32:11 +0000</pubDate>
 				<category><![CDATA[3.5]]></category>
 		<category><![CDATA[扩展]]></category>
 		<category><![CDATA[运行时]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=290</guid>
+		<guid isPermaLink="false">/?p=290</guid>
 
-					<description><![CDATA[在某些情况下，除了运行时库（C++）中提供支持的一些基本类型（bool、short、int、float等）之外，behaviac还支持扩展使用已有的或者用户自定<a class="moretag" href="./../../../../../tutorial5_extendtypes/index.html">Read More...</a>]]></description>
+					<description><![CDATA[在某些情况下，除了运行时库（C++）中提供支持的一些基本类型（bool、short、int、float等）之外，behaviac还支持扩展使用已有的或者用户自定<a class="moretag" href="/tutorial5_extendtypes/">Read More...</a>]]></description>
 										<content:encoded><![CDATA[<p>在某些情况下，除了运行时库（C++）中提供支持的一些基本类型（bool、short、int、float等）之外，behaviac还支持扩展使用已有的或者用户自定义的类、结构体和枚举类型。<br />
 这里有两种情况，其处理方式是不同的：</p>
 <ul>
 <li>有些类型是程序中本来就有的，该类型可能是某个第三方库中提供的，但这些类型是不方便随意修改的。</li>
-<li>另外一些可以随便修改的类型，请参考<a href="./../../../../../docs/zh/tutorials/tutorial6_customtypes/index.html">自定义类或结构体</a>。</li>
+<li>另外一些可以随便修改的类型，请参考<a href="/docs/zh/tutorials/tutorial6_customtypes/">自定义类或结构体</a>。</li>
 </ul>
 <h3 id="section">字符串和数组类型</h3>
 <p>需要注意的是，behaviac组件为了支持C++的反射系统，对字符串和数组类型有如下要求：</p>
@@ -4771,15 +4763,15 @@ behaviac::TypeRegister::UnRegister&amp;amp;amp;amp;lt; TypeTest2_t &amp;amp;amp;
 <p>详细代码可以参考behaviac组件C++源码库中btunittest工程的<a href="https://github.com/Tencent/behaviac/blob/master/test/btunittest/ext/extendstruct.h">extendstruct.h</a>文件。</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../tutorial5_extendtypes/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/tutorial5_extendtypes/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>热加载</title>
-		<link>./../../../../../tutorial12_hotreload/index.html</link>
-					<comments>./../../../../../tutorial12_hotreload/index.html#respond</comments>
+		<link>/tutorial12_hotreload/</link>
+					<comments>/tutorial12_hotreload/#respond</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<pubDate>Fri, 13 May 2016 02:41:28 +0000</pubDate>
@@ -4787,13 +4779,13 @@ behaviac::TypeRegister::UnRegister&amp;amp;amp;amp;lt; TypeTest2_t &amp;amp;amp;
 		<category><![CDATA[概念]]></category>
 		<category><![CDATA[编辑器]]></category>
 		<category><![CDATA[运行时]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=304</guid>
+		<guid isPermaLink="false">/?p=304</guid>
 
-					<description><![CDATA[behaviac组件中的编辑器和运行时库都支持热加载，但是只针对XML/BSON格式的行为树文件。 在编辑器中，只要当前打开的行为树文件在编辑器外由于某种原因得<a class="moretag" href="./../../../../../tutorial12_hotreload/index.html">Read More...</a>]]></description>
+					<description><![CDATA[behaviac组件中的编辑器和运行时库都支持热加载，但是只针对XML/BSON格式的行为树文件。 在编辑器中，只要当前打开的行为树文件在编辑器外由于某种原因得<a class="moretag" href="/tutorial12_hotreload/">Read More...</a>]]></description>
 										<content:encoded><![CDATA[<p id="section">behaviac组件中的编辑器和运行时库都支持热加载，但是只针对XML/BSON格式的行为树文件。</p>
 <p>在编辑器中，只要当前打开的行为树文件在编辑器外由于某种原因得到修改（例如，通过项目中的文件版本管理系统强制同步行为树文件，或者通过文本编辑器强制修改行为树XML文件等），那么都可以自动的在编辑器中得到刷新。</p>
 <p>对于运行时端（或程序端），只要在编辑器中修改了行为树文件并重新导出，那么在游戏运行过程中不用退出游戏，最新导出的行为树就可以自动进行加载。这样可以及时查看或使用行为树最新的修改效果。</p>
-<p>行为树的更新执行流程请参考<a href="./../../../../../docs/zh/tutorials/tutorial13_updateloop/index.html">更新流程</a>。</p>
+<p>行为树的更新执行流程请参考<a href="/docs/zh/tutorials/tutorial13_updateloop/">更新流程</a>。</p>
 <p>为了启动热加载功能，需要确保在运行时端直接或间接调用了Workspace::DebugUpdate()函数，有两种方式：</p>
 <ul>
 <li>如果Agent的行为树是通过调用Workspace::Update()来集中执行的，则无需额外调用Workspace::DebugUpdate()函数</li>
@@ -4801,24 +4793,24 @@ behaviac::TypeRegister::UnRegister&amp;amp;amp;amp;lt; TypeTest2_t &amp;amp;amp;
 </ul>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../tutorial12_hotreload/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/tutorial12_hotreload/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>选择节点</title>
-		<link>./../../../../../selector/index.html</link>
-					<comments>./../../../../../selector/index.html#comments</comments>
+		<link>/selector/</link>
+					<comments>/selector/#comments</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<pubDate>Wed, 11 May 2016 10:07:34 +0000</pubDate>
 				<category><![CDATA[手册]]></category>
 		<category><![CDATA[节点]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=218</guid>
+		<guid isPermaLink="false">/?p=218</guid>
 
-					<description><![CDATA[Selector 节点是 BT 中传统的组合节点之一。 该节点以给定的顺序依次调用其子节点，直到 其中一个成功返回，那么该节点也返回成功。如果所有的子节点都失败<a class="moretag" href="./../../../../../selector/index.html">Read More...</a>]]></description>
-										<content:encoded><![CDATA[<p><img src="./../../../../../img/references/selector.png" alt="selector" /></p>
+					<description><![CDATA[Selector 节点是 BT 中传统的组合节点之一。 该节点以给定的顺序依次调用其子节点，直到 其中一个成功返回，那么该节点也返回成功。如果所有的子节点都失败<a class="moretag" href="/selector/">Read More...</a>]]></description>
+										<content:encoded><![CDATA[<p><img src="/img/references/selector.png" alt="selector" /></p>
 <p>Selector 节点是 BT 中传统的组合节点之一。 该节点以给定的顺序依次调用其子节点，直到<br />
 其中一个成功返回，那么该节点也返回成功。如果所有的子节点都失败，那么该节点也失败。</p>
 <p>Selector 实现了或（‘||’）的功能。 我们知道表达式 R=A||B||C||D 执行的时候首先执行 A，如果<br />
@@ -4830,29 +4822,29 @@ false 则执行 C，如果 C 是 true 则返回 true，否则如果 C 是 false 
 <p>具体的执行逻辑可以查看 <a href="https://github.com/Tencent/behaviac/blob/master/src/behaviortree/nodes/composites/selector.cpp">behaviortree/nodes/composites/selector.cpp</a></p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../selector/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/selector/feed/</wfw:commentRss>
 			<slash:comments>1</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>并行节点</title>
-		<link>./../../../../../parallel/index.html</link>
-					<comments>./../../../../../parallel/index.html#comments</comments>
+		<link>/parallel/</link>
+					<comments>/parallel/#comments</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<pubDate>Wed, 25 May 2016 08:31:58 +0000</pubDate>
 				<category><![CDATA[手册]]></category>
 		<category><![CDATA[节点]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=429</guid>
+		<guid isPermaLink="false">/?p=429</guid>
 
-					<description><![CDATA[并行（Parallel）节点在一般意义上是并行的执行其子节点，即“一边做A，一边做B”，如下图所示： 在选择或序列节点中，是顺序的一个接一个的执行其子节点，上一<a class="moretag" href="./../../../../../parallel/index.html">Read More...</a>]]></description>
+					<description><![CDATA[并行（Parallel）节点在一般意义上是并行的执行其子节点，即“一边做A，一边做B”，如下图所示： 在选择或序列节点中，是顺序的一个接一个的执行其子节点，上一<a class="moretag" href="/parallel/">Read More...</a>]]></description>
 										<content:encoded><![CDATA[<p>并行（Parallel）节点在一般意义上是并行的执行其子节点，即“一边做A，一边做B”，如下图所示：</p>
-<p id="FgwGTQU"><img class="size-full wp-image-1940  aligncenter" src="./../../../../../wp-content/uploads/2017/04/img_58fdc12123513.png" alt="" srcset="./../../../../../wp-content/uploads/2017/04/img_58fdc12123513.png 530w, ./../../../../../wp-content/uploads/2017/04/img_58fdc12123513-300x159.png 300w" sizes="(max-width: 530px) 100vw, 530px" /></p>
+<p id="FgwGTQU"><img class="size-full wp-image-1940  aligncenter" src="/wp-content/uploads/2017/04/img_58fdc12123513.png" alt="" srcset="/wp-content/uploads/2017/04/img_58fdc12123513.png 530w, /wp-content/uploads/2017/04/img_58fdc12123513-300x159.png 300w" sizes="(max-width: 530px) 100vw, 530px" /></p>
 <p>在选择或序列节点中，是顺序的一个接一个的执行其子节点，上一个子节点执行结束后，根据其状态是否执行接下来的子节点。而并行节点在逻辑上是“同时”并行的执行所有子节点（但实际也是从上往下依次执行），然后根据所有子节点的状态决定本身的状态。</p>
 <p><strong>注意：</strong>并行节点每帧都有可能执行所有的子树，大量使用的时候请注意其性能。</p>
 <p>如何根据所有子节点的返回状态，来决定并行节点本身的状态呢？并行节点有几个重要属性可以配置，如下图所示：</p>
-<p><img class="aligncenter" src="./../../../../../img/references/parallelproperties.png" alt="parallelproperties" /></p>
+<p><img class="aligncenter" src="/img/references/parallelproperties.png" alt="parallelproperties" /></p>
 <ul>
 <li><strong>失败条件：</strong>决定并行节点在什么条件下是失败的</li>
 <li><strong>成功条件：</strong>决定并行节点在什么条件下是成功的</li>
@@ -4862,34 +4854,34 @@ false 则执行 C，如果 C 是 true 则返回 true，否则如果 C 是 false 
 </ul>
 <p>在序列节点中，假设其子节点包括了条件节点和其他节点。那么，条件节点实际上是作为其他节点的前提条件，只有条件节点返回Success，下面的其他节点才会得到执行。</p>
 <p>并行节点可以用来实现所谓的“上下文相关的前提条件”（context precondition），如下图所示：<img src="file:///C:\Users\cainhuang\AppData\Roaming\Tencent\Users\48016464\QQ\WinTemp\RichOle\&#96;95YXVWT)4SIK20T]5NH&#96;K5.png" /></p>
-<p><img class="aligncenter size-full wp-image-1941" src="./../../../../../wp-content/uploads/2016/05/95YXVWT4SIK20T5NHK5.png" alt="" width="521" height="186" srcset="./../../../../../wp-content/uploads/2016/05/95YXVWT4SIK20T5NHK5.png 521w, ./../../../../../wp-content/uploads/2016/05/95YXVWT4SIK20T5NHK5-300x107.png 300w" sizes="(max-width: 521px) 100vw, 521px" /></p>
+<p><img class="aligncenter size-full wp-image-1941" src="/wp-content/uploads/2016/05/95YXVWT4SIK20T5NHK5.png" alt="" width="521" height="186" srcset="/wp-content/uploads/2016/05/95YXVWT4SIK20T5NHK5.png 521w, /wp-content/uploads/2016/05/95YXVWT4SIK20T5NHK5-300x107.png 300w" sizes="(max-width: 521px) 100vw, 521px" /></p>
 <p>并行节点配置条件节点和其他节点，并且失败条件是缺省的配置FAIL_ON_ONE，那么只有当条件节点成功的时候其他节点才被执行，从而条件节点事实上是其他节点的前提条件。</p>
-<p><strong>注意：</strong>作为前提条件的这种用法是不严谨的，当条件失败的时候，在并行节点返回失败之前，后续的其他节点会多执行一次。所以，请使用“<a href="./../../../../../attachment/index.html">前置</a>”附件来实现这种前置条件的需求。</p>
+<p><strong>注意：</strong>作为前提条件的这种用法是不严谨的，当条件失败的时候，在并行节点返回失败之前，后续的其他节点会多执行一次。所以，请使用“<a href="/attachment/">前置</a>”附件来实现这种前置条件的需求。</p>
 <p>与序列节点+条件节点方式的不同之处在于，序列节点实现的前提条件只是“进入”其他节点的前提条件，一旦首次进入并开始执行其他节点后，就不再检查该前提条件了。而并行节点实现的前提条件是上下文相关的，不但首次进入并开始执行前需要检查，之后每次执行也都要检查。</p>
 <p>具体的执行逻辑可以查看 <a href="https://github.com/Tencent/behaviac/blob/master/src/behaviortree/nodes/composites/parallel.cpp">behaviortree/nodes/composites/parallel.cpp</a></p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../parallel/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/parallel/feed/</wfw:commentRss>
 			<slash:comments>2</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>动作节点</title>
-		<link>./../../../../../action/index.html</link>
-					<comments>./../../../../../action/index.html#comments</comments>
+		<link>/action/</link>
+					<comments>/action/#comments</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<pubDate>Mon, 11 Apr 2016 09:10:18 +0000</pubDate>
 				<category><![CDATA[手册]]></category>
 		<category><![CDATA[节点]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=128</guid>
+		<guid isPermaLink="false">/?p=128</guid>
 
-					<description><![CDATA[动作（Action）节点在behaviac中几乎是最重要的节点，如下图所示： 动作节点通常对应Agent的某个方法（Method），可以从下拉列表里为其选择方法<a class="moretag" href="./../../../../../action/index.html">Read More...</a>]]></description>
+					<description><![CDATA[动作（Action）节点在behaviac中几乎是最重要的节点，如下图所示： 动作节点通常对应Agent的某个方法（Method），可以从下拉列表里为其选择方法<a class="moretag" href="/action/">Read More...</a>]]></description>
 										<content:encoded><![CDATA[<p>动作（Action）节点在behaviac中几乎是最重要的节点，如下图所示：</p>
-<p><img class="aligncenter" src="./../../../../../img/references/action.png" alt="action" /></p>
+<p><img class="aligncenter" src="/img/references/action.png" alt="action" /></p>
 <p>动作节点通常对应Agent的某个方法（Method），可以从下拉列表里为其选择方法，如下图所示：</p>
-<p><img class="aligncenter" src="./../../../../../img/references/action_prop.png" alt="action" /></p>
+<p><img class="aligncenter" src="/img/references/action_prop.png" alt="action" /></p>
 <p>在设置其方法后，需进一步设置其“决定状态的选项（Status Option）”或“决定状态的函数（Status Functor）”，如上图所示。如果没有正确配置，则视为错误不能被导出。</p>
 <ul>
 <li>“决定状态的选项”：不管动作的方法的返回值是什么，都强制返回设定的EBTStatus值（即Success、Failure或Running）。</li>
@@ -4909,25 +4901,25 @@ false 则执行 C，如果 C 是 true 则返回 true，否则如果 C 是 false 
 <p>具体的执行逻辑可以查看<a href="https://github.com/Tencent/behaviac/blob/master/src/behaviortree/nodes/actions/action.cpp">behaviortree/nodes/actions/action.cpp</a></p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../action/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/action/feed/</wfw:commentRss>
 			<slash:comments>1</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>条件节点</title>
-		<link>./../../../../../condition/index.html</link>
-					<comments>./../../../../../condition/index.html#respond</comments>
+		<link>/condition/</link>
+					<comments>/condition/#respond</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<pubDate>Fri, 13 May 2016 02:02:06 +0000</pubDate>
 				<category><![CDATA[手册]]></category>
 		<category><![CDATA[节点]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=242</guid>
+		<guid isPermaLink="false">/?p=242</guid>
 
-					<description><![CDATA[条件（Condition）节点对左右参数进行比较，如下图所示： 图1 条件节点 条件节点根据比较结果返回成功或失败，但永远不会返回正在执行（Running）： <a class="moretag" href="./../../../../../condition/index.html">Read More...</a>]]></description>
+					<description><![CDATA[条件（Condition）节点对左右参数进行比较，如下图所示： 图1 条件节点 条件节点根据比较结果返回成功或失败，但永远不会返回正在执行（Running）： <a class="moretag" href="/condition/">Read More...</a>]]></description>
 										<content:encoded><![CDATA[<p>条件（Condition）节点对左右参数进行比较，如下图所示：</p>
-<p><img src="./../../../../../img/references/condition.png" alt="condition" /></p>
+<p><img src="/img/references/condition.png" alt="condition" /></p>
 <p>图1 条件节点</p>
 <p>条件节点根据比较结果返回成功或失败，但永远不会返回正在执行（Running）：</p>
 <ul>
@@ -4935,41 +4927,41 @@ false 则执行 C，如果 C 是 true 则返回 true，否则如果 C 是 false 
 <li>如果结果为假，则返回失败。</li>
 </ul>
 <p>通常左参数是Agent的某个属性或某个有返回值的方法，用户可以从下拉列表里选择，右参数是相应类型的常数、Agent的某个属性或某个有返回值的方法，如下图所示：</p>
-<p><img src="./../../../../../img/references/condition_prop.png" alt="condition" /></p>
+<p><img src="/img/references/condition_prop.png" alt="condition" /></p>
 <p>图2 条件节点的属性</p>
-<p>条件节点没有提供取反的属性。如果需要取反，请用《<a href="./../../../../../docs/zh/references/decorator/index.html">非（Not）节点</a>》来装饰。</p>
+<p>条件节点没有提供取反的属性。如果需要取反，请用《<a href="/docs/zh/references/decorator/">非（Not）节点</a>》来装饰。</p>
 <p>具体的执行逻辑可以查看<a href="https://github.com/Tencent/behaviac/blob/master/src/behaviortree/nodes/conditions/condition.cpp">behaviortree/nodes/conditions/condition.cpp</a></p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../condition/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/condition/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
 		<title>装饰节点</title>
-		<link>./../../../../../decorator/index.html</link>
-					<comments>./../../../../../decorator/index.html#comments</comments>
+		<link>/decorator/</link>
+					<comments>/decorator/#comments</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<pubDate>Fri, 13 May 2016 02:06:29 +0000</pubDate>
 				<category><![CDATA[手册]]></category>
 		<category><![CDATA[节点]]></category>
-		<guid isPermaLink="false">./../../../../../index.html?p=248</guid>
+		<guid isPermaLink="false">/?p=248</guid>
 
-					<description><![CDATA[概述 装饰节点作为控制分支节点，必须且只接受一个子节点。装饰节点的执行首先执行子节点，并根据自身的控制逻辑以及子节点的返回结果决定自身的状态。 装饰节点都有属性<a class="moretag" href="./../../../../../decorator/index.html">Read More...</a>]]></description>
+					<description><![CDATA[概述 装饰节点作为控制分支节点，必须且只接受一个子节点。装饰节点的执行首先执行子节点，并根据自身的控制逻辑以及子节点的返回结果决定自身的状态。 装饰节点都有属性<a class="moretag" href="/decorator/">Read More...</a>]]></description>
 										<content:encoded><![CDATA[<h2><span class="ez-toc-section" id="i">概述</span></h2>
 <p>装饰节点作为控制分支节点，必须且只接受一个子节点。装饰节点的执行首先执行子节点，并根据自身的控制逻辑以及子节点的返回结果决定自身的状态。</p>
 <p>装饰节点都有属性“子节点结束时作用（DecorateChildEnds）”可以配置，如果该值配置为真，则仅当子节点结束（成功或失败）的时候，装饰节点的装饰逻辑才起作用。</p>
 <h2 id="log"><span class="ez-toc-section" id="Log">输出消息（Log）节点</span></h2>
 <p>输出消息节点作为调试的辅助工具，执行完子节点后，输出配置的消息，如下图所示：</p>
-<p><img class="aligncenter" src="./../../../../../img/references/log.png" alt="log" /></p>
+<p><img class="aligncenter" src="/img/references/log.png" alt="log" /></p>
 <p>可以在“输出消息”属性中设置想输出的任何消息，如下图所示：</p>
-<p><img class="aligncenter" src="./../../../../../img/references/log_prop.png" alt="log" /></p>
+<p><img class="aligncenter" src="/img/references/log_prop.png" alt="log" /></p>
 <p>具体的执行逻辑可以查看<a href="https://github.com/Tencent/behaviac/blob/master/src/behaviortree/nodes/decorators/decoratorlog.cpp">behaviortree/nodes/decorators/decoratorlog.cpp</a></p>
 <h2 id="not"><span class="ez-toc-section" id="Not">非（Not）节点</span></h2>
 <p>非节点将子节点的返回值取反，如下图所示：</p>
-<p><img class="aligncenter" src="./../../../../../img/references/not.png" alt="not" /></p>
+<p><img class="aligncenter" src="/img/references/not.png" alt="not" /></p>
 <p>类似于逻辑“非”操作，非节点对子节点的返回值执行如下操作：</p>
 <ul>
 <li>如果子节点失败，那么此节点返回成功。</li>
@@ -4979,9 +4971,9 @@ false 则执行 C，如果 C 是 true 则返回 true，否则如果 C 是 false 
 <p>具体的执行逻辑可以查看<a href="https://github.com/Tencent/behaviac/blob/master/src/behaviortree/nodes/decorators/decoratornot.cpp">behaviortree/nodes/decorators/decoratornot.cpp</a></p>
 <h2 id="loop"><span class="ez-toc-section" id="Loop">循环（Loop）节点</span></h2>
 <p>循环节点循环执行子节点指定的次数，如下图所示：</p>
-<p><img class="aligncenter" src="./../../../../../img/references/loop.png" alt="loop" /></p>
+<p><img class="aligncenter" src="/img/references/loop.png" alt="loop" /></p>
 <p>如下图可以配置循环节点的相关参数：</p>
-<p><img class="aligncenter size-full wp-image-1488" src="./../../../../../wp-content/uploads/2016/05/loop.png" alt="" width="476" height="214" srcset="./../../../../../wp-content/uploads/2016/05/loop.png 476w, ./../../../../../wp-content/uploads/2016/05/loop-300x135.png 300w" sizes="(max-width: 476px) 100vw, 476px" /></p>
+<p><img class="aligncenter size-full wp-image-1488" src="/wp-content/uploads/2016/05/loop.png" alt="" width="476" height="214" srcset="/wp-content/uploads/2016/05/loop.png 476w, /wp-content/uploads/2016/05/loop-300x135.png 300w" sizes="(max-width: 476px) 100vw, 476px" /></p>
 <ul>
 <li>次数：如果次数配置为-1，则视为无限循环，总是返回运行。否则循环执行子节点指定的次数然后返回成功，在指定次数之前则返回运行。</li>
 <li>此循环次数可以是常数，也可以是变量，当是变量的时候，每次enter的时候此循环次数被赋值，也就是每次enter的时候，循环的次数就被确定了。之后再更改该变量的值在本次循环内将不起作用，但是exit后再enter的时候会起作用。</li>
@@ -4990,16 +4982,16 @@ false 则执行 C，如果 C 是 true 则返回 true，否则如果 C 是 false 
 <li>然而如果子节点失败了，不会执行指定次数就直接返回失败。</li>
 <li>如果子节点一直返回运行，则本节点一直阻塞。但如果“子节点结束时作用”不为真，则不会阻塞。</li>
 <li>在‘一帧内结束’的情况下，本节点只能成功或失败，不会返回运行。</li>
-<li>‘一帧内结束’的配置只在3.5.4及以后的版本中才有实现。用以取代<a href="./../../../decorator/index.html#repeat">重复节点</a></li>
+<li>‘一帧内结束’的配置只在3.5.4及以后的版本中才有实现。用以取代<a href="/language/zh/decorator/#repeat">重复节点</a></li>
 </ul>
 </li>
 </ul>
 <p>具体的执行逻辑可以查看<a href="https://github.com/Tencent/behaviac/blob/master/src/behaviortree/nodes/decorators/decoratorloop.cpp">behaviortree/nodes/decorators/decoratorloop.cpp</a></p>
 <h2 id="loopuntil"><span class="ez-toc-section" id="LoopUntil">循环直到（LoopUntil）节点</span></h2>
 <p>循环直到节点在指定的次数到达后返回成功，在指定的次数到达前一直返回正在执行。如果指定的次数小于0，则表示无限循环，总是返回正在执行。如下图所示：</p>
-<p><img class="aligncenter" src="./../../../../../img/references/loopuntil.png" alt="loopuntil" /></p>
+<p><img class="aligncenter" src="/img/references/loopuntil.png" alt="loopuntil" /></p>
 <p>循环直到节点除了像循环节点可以配置循环的次数，还有一个属性“直到子树”需要配置，如下图所示：</p>
-<p><img class="aligncenter" src="./../../../../../img/references/loopuntil_prop.png" alt="loopuntil_prop" /></p>
+<p><img class="aligncenter" src="/img/references/loopuntil_prop.png" alt="loopuntil_prop" /></p>
 <p>循环直到节点有两个结束条件，指定的“循环次数”到达或者子树的返回值与配置的“直到子树”值一样：</p>
 <ul>
 <li>指定的“循环次数”到达的时候，则返回成功。</li>
@@ -5013,9 +5005,9 @@ false 则执行 C，如果 C 是 true 则返回 true，否则如果 C 是 false 
 </ul>
 <p>具体的执行逻辑可以查看<a href="https://github.com/Tencent/behaviac/blob/master/src/behaviortree/nodes/decorators/decoratorloopuntil.cpp">behaviortree/nodes/decorators/decoratorloopuntil.cpp</a></p>
 <h2 id="repeat"><span class="ez-toc-section" id="Repeat">重复（Repeat）节点</span></h2>
-<p id="repeat">重复（Repeat）节点只在3.5.4以前的版本中才有。3.5.4及以后的版本请使用<a href="./../../../decorator/index.html#loop">循环节点</a>，并且选上‘一帧内结束’</p>
+<p id="repeat">重复（Repeat）节点只在3.5.4以前的版本中才有。3.5.4及以后的版本请使用<a href="/language/zh/decorator/#loop">循环节点</a>，并且选上‘一帧内结束’</p>
 <p>重复节点根据指定的次数，在一次更新过程中重复执行子节点然后返回，如下图所示：</p>
-<p><img class="aligncenter" src="./../../../../../img/references/repeat.png" alt="repeat" /></p>
+<p><img class="aligncenter" src="/img/references/repeat.png" alt="repeat" /></p>
 <p>重复节点根据子节点的返回值相应的返回：</p>
 <ul>
 <li>如果子节点失败了，则返回失败。</li>
@@ -5024,7 +5016,7 @@ false 则执行 C，如果 C 是 true 则返回 true，否则如果 C 是 false 
 <li>本节点只能成功或失败，不会返回运行。</li>
 </ul>
 <p>重复节点可以配置重复执行的“次数”和“子节点结束时作用”，如下图所示：</p>
-<p><img class="aligncenter" src="./../../../../../img/references/repeat_prop.png" alt="repeat_prop" /></p>
+<p><img class="aligncenter" src="/img/references/repeat_prop.png" alt="repeat_prop" /></p>
 <div class="qa-a-selection">
 <p>重复节点和循环节点相同之处是其子节点都是被多次执行。</p>
 <div class="entry-content">
@@ -5034,32 +5026,32 @@ false 则执行 C，如果 C 是 true 则返回 true，否则如果 C 是 false 
 <p>具体的执行逻辑可以查看<a href="https://github.com/Tencent/behaviac/blob/master/src/behaviortree/nodes/decorators/decoratorrepeat.cpp">behaviortree/nodes/decorators/decoratorrepeat.cpp</a></p>
 <h2 id="time"><span class="ez-toc-section" id="Time">时间（Time）节点</span></h2>
 <p>时间节点用于在指定的时间内，持续调用其子节点，如下图所示：</p>
-<p><img class="aligncenter" src="./../../../../../img/references/time.png" alt="time" /></p>
+<p><img class="aligncenter" src="/img/references/time.png" alt="time" /></p>
 <p>时间节点可以配置其属性“时间”，该属性是float或double类型，可以配置一个常量、成员属性或方法的返回值，如下图所示：</p>
-<p><img class="aligncenter" src="./../../../../../img/references/time_prop.png" alt="time" /></p>
+<p><img class="aligncenter" src="/img/references/time_prop.png" alt="time" /></p>
 <p>具体的执行逻辑可以查看<a href="https://github.com/Tencent/behaviac/blob/master/src/behaviortree/nodes/decorators/decoratortime.cpp">behaviortree/nodes/decorators/decoratortime.cpp</a></p>
 <h2 id="frames"><span class="ez-toc-section" id="Frames">帧数（Frames）节点</span></h2>
 <p>帧数节点用于在指定的帧数内，持续调用其子节点，如下图所示：</p>
-<p><img class="aligncenter" src="./../../../../../img/references/frames.png" alt="frames" /></p>
+<p><img class="aligncenter" src="/img/references/frames.png" alt="frames" /></p>
 <p>帧数节点可以配置其属性“帧数”，该属性是int类型，可以配置一个常量、成员属性或方法的返回值，如下图所示：</p>
-<p><img class="aligncenter" src="./../../../../../img/references/frames_prop.png" alt="frames" /></p>
+<p><img class="aligncenter" src="/img/references/frames_prop.png" alt="frames" /></p>
 <p>具体的执行逻辑可以查看<a href="https://github.com/Tencent/behaviac/blob/master/src/behaviortree/nodes/decorators/decoratorframes.cpp">behaviortree/nodes/decorators/decoratorframes.cpp</a></p>
 <h2 id="countlimit"><span class="ez-toc-section" id="CountLimit">计数限制（CountLimit）节点</span></h2>
 <p>计数限制节点不同于循环节点，它在指定的循环次数到达前返回子节点返回的状态，无论成功、失败还是正在执行，如下图所示：</p>
-<p><img class="aligncenter" src="./../../../../../img/references/countlimit.png" alt="countlimit" /></p>
+<p><img class="aligncenter" src="/img/references/countlimit.png" alt="countlimit" /></p>
 <p>计数限制节点在指定的循环次数到达后不再执行。如果指定的循环次数小于0，则表示无限循环，等同于什么操作都没有，只是执行子节点并且返回子节点的返回值。</p>
 <p>此外，计数限制节点上还可以添加中断条件作为重新开始条件，如下图所示：</p>
-<p><img class="aligncenter" src="./../../../../../img/references/countlimit_interupt.png" alt="countlimit" /></p>
+<p><img class="aligncenter" src="/img/references/countlimit_interupt.png" alt="countlimit" /></p>
 <p>具体的执行逻辑可以查看<a href="https://github.com/Tencent/behaviac/blob/master/src/behaviortree/nodes/decorators/decoratorcountlimit.cpp">behaviortree/nodes/decorators/decoratorcountlimit.cpp</a></p>
 <h2 id="successuntilfailureuntil"><span class="ez-toc-section" id="SuccessUntilFailureUntil">返回成功直到（SuccessUntil）/返回失败直到（FailureUntil）</span></h2>
 <p>返回成功直到节点在指定的次数到达前返回成功，指定的次数到达后返回失败。如果指定的次数小于0，则总是返回成功。如下图所示：</p>
-<p><img class="aligncenter" src="./../../../../../img/references/successuntil.png" alt="successuntil" /></p>
+<p><img class="aligncenter" src="/img/references/successuntil.png" alt="successuntil" /></p>
 <p>返回失败直到节点在指定的次数到达前返回失败，指定的次数到达后返回成功。如果指定的次数小于0，则总是返回失败。如下图所示：</p>
-<p><img class="aligncenter" src="./../../../../../img/references/failureuntil.png" alt="failureuntil" /></p>
+<p><img class="aligncenter" src="/img/references/failureuntil.png" alt="failureuntil" /></p>
 <p>具体的执行逻辑可以分别查看<a href="https://github.com/Tencent/behaviac/blob/master/src/behaviortree/nodes/decorators/decoratorsuccessuntil.cpp">behaviortree/nodes/decorators/decoratorsuccessuntil.cpp</a>和<a href="https://github.com/Tencent/behaviac/blob/master/src/behaviortree/nodes/decorators/decoratorfailureuntil.cpp">behaviortree/nodes/decorators/decoratorfailureuntil.cpp</a></p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../../../../../decorator/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>/decorator/feed/</wfw:commentRss>
 			<slash:comments>1</slash:comments>
 		
 		

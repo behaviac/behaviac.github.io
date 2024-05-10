@@ -8,8 +8,8 @@
 <channel>
 	<title>
 	《C++运行时端中元信息的注册和导出》的评论	</title>
-	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
-	<link>./../index.html</link>
+	<atom:link href="/tutorial3_1_meta_cpp_register/feed/" rel="self" type="application/rss+xml" />
+	<link>/tutorial3_1_meta_cpp_register/</link>
 	<description>Tencent behaviac, Game AI, Behavior Tree, Finite State Machine, Hierarchical Task Network, BT FSM HTN, 腾讯开源, 游戏AI, 行为树,有限状态机,分层任务网络</description>
 	<lastBuildDate>Fri, 01 Dec 2017 09:19:31 +0000</lastBuildDate>
 	<sy:updatePeriod>
@@ -20,11 +20,11 @@
 	<item>
 		<title>
 		作者：Superflat		</title>
-		<link>./../index.html#comment-421</link>
+		<link>/tutorial3_1_meta_cpp_register/#comment-421</link>
 
 		<dc:creator><![CDATA[Superflat]]></dc:creator>
 		<pubDate>Fri, 01 Dec 2017 09:19:31 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=276#comment-421</guid>
+		<guid isPermaLink="false">/?p=276#comment-421</guid>
 
 					<description><![CDATA[Is the content still valid? As I see nothing about REGISTER_METHOD in demo_running project.]]></description>
 			<content:encoded><![CDATA[<p>Is the content still valid? As I see nothing about REGISTER_METHOD in demo_running project.</p>
@@ -34,11 +34,11 @@
 		<item>
 		<title>
 		作者：方登辉		</title>
-		<link>./../index.html#comment-63</link>
+		<link>/tutorial3_1_meta_cpp_register/#comment-63</link>
 
 		<dc:creator><![CDATA[方登辉]]></dc:creator>
 		<pubDate>Tue, 14 Jun 2016 03:50:23 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=276#comment-63</guid>
+		<guid isPermaLink="false">/?p=276#comment-63</guid>
 
 					<description><![CDATA[behaviac::Workspace::GetInstance()-&#062;SetDeltaFrames(1); //这个已经废弃了，希望修改一下]]></description>
 			<content:encoded><![CDATA[<p>behaviac::Workspace::GetInstance()-&gt;SetDeltaFrames(1); //这个已经废弃了，希望修改一下</p>

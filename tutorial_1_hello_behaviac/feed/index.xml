@@ -8,10 +8,10 @@
 <channel>
 	<title>
 	《教程1：Hello Behaviac》的评论	</title>
-	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
-	<link>./../index.html</link>
+	<atom:link href="/tutorial_1_hello_behaviac/feed/" rel="self" type="application/rss+xml" />
+	<link>/tutorial_1_hello_behaviac/</link>
 	<description>Tencent behaviac, Game AI, Behavior Tree, Finite State Machine, Hierarchical Task Network, BT FSM HTN, 腾讯开源, 游戏AI, 行为树,有限状态机,分层任务网络</description>
-	<lastBuildDate>Thu, 20 Jun 2019 08:04:06 +0000</lastBuildDate>
+	<lastBuildDate>Mon, 12 Mar 2018 12:06:53 +0000</lastBuildDate>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
@@ -19,26 +19,12 @@
 	<generator>https://wordpress.org/?v=5.4.1</generator>
 	<item>
 		<title>
-		作者：Liuzhy		</title>
-		<link>./../index.html#comment-474</link>
-
-		<dc:creator><![CDATA[Liuzhy]]></dc:creator>
-		<pubDate>Thu, 20 Jun 2019 08:04:06 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=1315#comment-474</guid>
-
-					<description><![CDATA[不懂的东西很多，不过开始慢慢跟。]]></description>
-			<content:encoded><![CDATA[<p>不懂的东西很多，不过开始慢慢跟。</p>
-]]></content:encoded>
-		
-			</item>
-		<item>
-		<title>
 		作者：谭兆飞		</title>
-		<link>./../index.html#comment-426</link>
+		<link>/tutorial_1_hello_behaviac/#comment-426</link>
 
 		<dc:creator><![CDATA[谭兆飞]]></dc:creator>
 		<pubDate>Mon, 12 Mar 2018 12:06:53 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=1315#comment-426</guid>
+		<guid isPermaLink="false">/?p=1315#comment-426</guid>
 
 					<description><![CDATA[文档写的很详细，很好。赞一个]]></description>
 			<content:encoded><![CDATA[<p>文档写的很详细，很好。赞一个</p>
@@ -48,11 +34,11 @@
 		<item>
 		<title>
 		作者：DevTang		</title>
-		<link>./../index.html#comment-419</link>
+		<link>/tutorial_1_hello_behaviac/#comment-419</link>
 
 		<dc:creator><![CDATA[DevTang]]></dc:creator>
 		<pubDate>Fri, 24 Nov 2017 08:08:11 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=1315#comment-419</guid>
+		<guid isPermaLink="false">/?p=1315#comment-419</guid>
 
 					<description><![CDATA[请问为什么在Clean Behaviac 的时候中止线程异常呢？
 提示说不支持 xxx  platform 
@@ -67,11 +53,11 @@
 		<item>
 		<title>
 		作者：教程1.1：采用编辑器生成类型代码的工作流程 &#8211; behaviac		</title>
-		<link>./../index.html#comment-372</link>
+		<link>/tutorial_1_hello_behaviac/#comment-372</link>
 
 		<dc:creator><![CDATA[教程1.1：采用编辑器生成类型代码的工作流程 &#8211; behaviac]]></dc:creator>
 		<pubDate>Tue, 07 Mar 2017 08:20:27 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=1315#comment-372</guid>
+		<guid isPermaLink="false">/?p=1315#comment-372</guid>
 
 					<description><![CDATA[[&#8230;] 如《教程1：Hello Behaviac》所述，程序端的类型代码可以通过编辑器自动生成基本原型，然后在生成的代码模板上继续添加自己的逻辑代码。 [&#8230;]]]></description>
 			<content:encoded><![CDATA[<p>[&#8230;] 如《教程1：Hello Behaviac》所述，程序端的类型代码可以通过编辑器自动生成基本原型，然后在生成的代码模板上继续添加自己的逻辑代码。 [&#8230;]</p>
@@ -81,11 +67,11 @@
 		<item>
 		<title>
 		作者：教程二：让行为树丰富起来 &#8211; behaviac		</title>
-		<link>./../index.html#comment-170</link>
+		<link>/tutorial_1_hello_behaviac/#comment-170</link>
 
 		<dc:creator><![CDATA[教程二：让行为树丰富起来 &#8211; behaviac]]></dc:creator>
 		<pubDate>Fri, 20 Jan 2017 04:14:06 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=1315#comment-170</guid>
+		<guid isPermaLink="false">/?p=1315#comment-170</guid>
 
 					<description><![CDATA[[&#8230;] 类似于任何一种程序语言的基本语法，behaviac组件也提供了基本的赋值、条件、循环、序列、选择等基本节点。有了《教程一》的基本介绍，本教程将引入这些常用的复合节点，以便将行为树编辑得更加丰富多彩。 [&#8230;]]]></description>
 			<content:encoded><![CDATA[<p>[&#8230;] 类似于任何一种程序语言的基本语法，behaviac组件也提供了基本的赋值、条件、循环、序列、选择等基本节点。有了《教程一》的基本介绍，本教程将引入这些常用的复合节点，以便将行为树编辑得更加丰富多彩。 [&#8230;]</p>

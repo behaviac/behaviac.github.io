@@ -8,8 +8,8 @@
 <channel>
 	<title>
 	《导出和使用C#行为树》的评论	</title>
-	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
-	<link>./../index.html</link>
+	<atom:link href="/tutorial4_3_export_cs/feed/" rel="self" type="application/rss+xml" />
+	<link>/tutorial4_3_export_cs/</link>
 	<description>Tencent behaviac, Game AI, Behavior Tree, Finite State Machine, Hierarchical Task Network, BT FSM HTN, 腾讯开源, 游戏AI, 行为树,有限状态机,分层任务网络</description>
 	<lastBuildDate>Mon, 19 Dec 2016 07:50:09 +0000</lastBuildDate>
 	<sy:updatePeriod>

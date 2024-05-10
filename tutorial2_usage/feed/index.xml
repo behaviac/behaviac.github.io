@@ -8,8 +8,8 @@
 <channel>
 	<title>
 	《编辑器的使用》的评论	</title>
-	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
-	<link>./../index.html</link>
+	<atom:link href="/tutorial2_usage/feed/" rel="self" type="application/rss+xml" />
+	<link>/tutorial2_usage/</link>
 	<description>Tencent behaviac, Game AI, Behavior Tree, Finite State Machine, Hierarchical Task Network, BT FSM HTN, 腾讯开源, 游戏AI, 行为树,有限状态机,分层任务网络</description>
 	<lastBuildDate>Mon, 19 Dec 2016 06:20:18 +0000</lastBuildDate>
 	<sy:updatePeriod>
@@ -20,11 +20,11 @@
 	<item>
 		<title>
 		作者：fdyshlk		</title>
-		<link>./../index.html#comment-140</link>
+		<link>/tutorial2_usage/#comment-140</link>
 
 		<dc:creator><![CDATA[fdyshlk]]></dc:creator>
 		<pubDate>Tue, 22 Nov 2016 07:39:29 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=269#comment-140</guid>
+		<guid isPermaLink="false">/?p=269#comment-140</guid>
 
 					<description><![CDATA[出些视频教程不是很好，这样文档一个个看下来，既不容易理解，学的又慢。]]></description>
 			<content:encoded><![CDATA[<p>出些视频教程不是很好，这样文档一个个看下来，既不容易理解，学的又慢。</p>
@@ -34,16 +34,16 @@
 		<item>
 		<title>
 		作者：xinglely		</title>
-		<link>./../index.html#comment-137</link>
+		<link>/tutorial2_usage/#comment-137</link>
 
 		<dc:creator><![CDATA[xinglely]]></dc:creator>
 		<pubDate>Thu, 10 Nov 2016 06:26:11 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=269#comment-137</guid>
+		<guid isPermaLink="false">/?p=269#comment-137</guid>
 
-					<description><![CDATA[In reply to &lt;a href=&quot;./../index.html#comment-136&quot;&gt;xinglely&lt;/a&gt;.
+					<description><![CDATA[In reply to &lt;a href=&quot;/tutorial2_usage/#comment-136&quot;&gt;xinglely&lt;/a&gt;.
 
 可以了]]></description>
-			<content:encoded><![CDATA[<p>In reply to <a href="./../index.html#comment-136">xinglely</a>.</p>
+			<content:encoded><![CDATA[<p>In reply to <a href="/tutorial2_usage/#comment-136">xinglely</a>.</p>
 <p>可以了</p>
 ]]></content:encoded>
 		
@@ -51,11 +51,11 @@
 		<item>
 		<title>
 		作者：xinglely		</title>
-		<link>./../index.html#comment-136</link>
+		<link>/tutorial2_usage/#comment-136</link>
 
 		<dc:creator><![CDATA[xinglely]]></dc:creator>
 		<pubDate>Thu, 10 Nov 2016 02:59:50 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=269#comment-136</guid>
+		<guid isPermaLink="false">/?p=269#comment-136</guid>
 
 					<description><![CDATA[能不能写个从0开始建树的教程，你们的编辑器好难用]]></description>
 			<content:encoded><![CDATA[<p>能不能写个从0开始建树的教程，你们的编辑器好难用</p>

@@ -8,8 +8,8 @@
 <channel>
 	<title>
 	《并行节点》的评论	</title>
-	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
-	<link>./../index.html</link>
+	<atom:link href="/parallel/feed/" rel="self" type="application/rss+xml" />
+	<link>/parallel/</link>
 	<description>Tencent behaviac, Game AI, Behavior Tree, Finite State Machine, Hierarchical Task Network, BT FSM HTN, 腾讯开源, 游戏AI, 行为树,有限状态机,分层任务网络</description>
 	<lastBuildDate>Tue, 25 Apr 2017 04:04:30 +0000</lastBuildDate>
 	<sy:updatePeriod>
@@ -20,11 +20,11 @@
 	<item>
 		<title>
 		作者：并行节点的使用 &#8211; behaviac		</title>
-		<link>./../index.html#comment-391</link>
+		<link>/parallel/#comment-391</link>
 
 		<dc:creator><![CDATA[并行节点的使用 &#8211; behaviac]]></dc:creator>
 		<pubDate>Tue, 25 Apr 2017 04:04:30 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=429#comment-391</guid>
+		<guid isPermaLink="false">/?p=429#comment-391</guid>
 
 					<description><![CDATA[[&#8230;] 并行节点用于一般意义上并行的执行所有子节点，相关的功能和属性说明详见手册《并行节点》。 [&#8230;]]]></description>
 			<content:encoded><![CDATA[<p>[&#8230;] 并行节点用于一般意义上并行的执行所有子节点，相关的功能和属性说明详见手册《并行节点》。 [&#8230;]</p>
@@ -34,11 +34,11 @@
 		<item>
 		<title>
 		作者：关于性能优化的说明 &#8211; behaviac		</title>
-		<link>./../index.html#comment-76</link>
+		<link>/parallel/#comment-76</link>
 
 		<dc:creator><![CDATA[关于性能优化的说明 &#8211; behaviac]]></dc:creator>
 		<pubDate>Thu, 23 Jun 2016 07:14:16 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=429#comment-76</guid>
+		<guid isPermaLink="false">/?p=429#comment-76</guid>
 
 					<description><![CDATA[[&#8230;] 选择监测节点以及并行节点用起来很方便，但是需要提醒的是，相比其他节点，这两个节点比较费。 [&#8230;]]]></description>
 			<content:encoded><![CDATA[<p>[&#8230;] 选择监测节点以及并行节点用起来很方便，但是需要提醒的是，相比其他节点，这两个节点比较费。 [&#8230;]</p>

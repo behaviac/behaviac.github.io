@@ -57,5 +57,5 @@ border-radius: 30px;
 }
 .owl-item.loading{
 min-height: 150px;
-background: url(./AjaxLoader.gif) no-repeat center center
+background: url(/wp-content/uploads/latest-1/contents/ui/theme/css/AjaxLoader.gif) no-repeat center center
 }

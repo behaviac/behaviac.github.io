@@ -8,8 +8,8 @@
 <channel>
 	<title>
 	《使用cmake构建C++版运行时库》的评论	</title>
-	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
-	<link>./../index.html</link>
+	<atom:link href="/build/feed/" rel="self" type="application/rss+xml" />
+	<link>/build/</link>
 	<description>Tencent behaviac, Game AI, Behavior Tree, Finite State Machine, Hierarchical Task Network, BT FSM HTN, 腾讯开源, 游戏AI, 行为树,有限状态机,分层任务网络</description>
 	<lastBuildDate>Fri, 17 Nov 2017 14:56:41 +0000</lastBuildDate>
 	<sy:updatePeriod>
@@ -20,11 +20,11 @@
 	<item>
 		<title>
 		作者：陈		</title>
-		<link>./../index.html#comment-418</link>
+		<link>/build/#comment-418</link>
 
 		<dc:creator><![CDATA[陈]]></dc:creator>
 		<pubDate>Fri, 17 Nov 2017 14:56:41 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=156#comment-418</guid>
+		<guid isPermaLink="false">/?p=156#comment-418</guid>
 
 					<description><![CDATA[VS 2015 默认mDd编译 ,改成MTD编译，运行测试代码会有 __acrt_first_block == header std::string]]></description>
 			<content:encoded><![CDATA[<p>VS 2015 默认mDd编译 ,改成MTD编译，运行测试代码会有 __acrt_first_block == header std::string</p>
@@ -34,11 +34,11 @@
 		<item>
 		<title>
 		作者：啦啦啦		</title>
-		<link>./../index.html#comment-416</link>
+		<link>/build/#comment-416</link>
 
 		<dc:creator><![CDATA[啦啦啦]]></dc:creator>
 		<pubDate>Mon, 13 Nov 2017 06:44:18 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=156#comment-416</guid>
+		<guid isPermaLink="false">/?p=156#comment-416</guid>
 
 					<description><![CDATA[请问能否在VS2005运行吗？]]></description>
 			<content:encoded><![CDATA[<p>请问能否在VS2005运行吗？</p>
@@ -48,11 +48,11 @@
 		<item>
 		<title>
 		作者：低调		</title>
-		<link>./../index.html#comment-408</link>
+		<link>/build/#comment-408</link>
 
 		<dc:creator><![CDATA[低调]]></dc:creator>
 		<pubDate>Mon, 14 Aug 2017 06:52:03 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=156#comment-408</guid>
+		<guid isPermaLink="false">/?p=156#comment-408</guid>
 
 					<description><![CDATA[请问如何把tutorial_1_gcc_debug也编译成so,
 让java通过JNI来调用.]]></description>
@@ -64,16 +64,16 @@
 		<item>
 		<title>
 		作者：admin		</title>
-		<link>./../index.html#comment-371</link>
+		<link>/build/#comment-371</link>
 
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<pubDate>Tue, 28 Feb 2017 02:27:08 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=156#comment-371</guid>
+		<guid isPermaLink="false">/?p=156#comment-371</guid>
 
-					<description><![CDATA[In reply to &lt;a href=&quot;./../index.html#comment-368&quot;&gt;tcdona&lt;/a&gt;.
+					<description><![CDATA[In reply to &lt;a href=&quot;/build/#comment-368&quot;&gt;tcdona&lt;/a&gt;.
 
 有视频教程，你应该是没有找到，还有一部分教程在录制中。]]></description>
-			<content:encoded><![CDATA[<p>In reply to <a href="./../index.html#comment-368">tcdona</a>.</p>
+			<content:encoded><![CDATA[<p>In reply to <a href="/build/#comment-368">tcdona</a>.</p>
 <p>有视频教程，你应该是没有找到，还有一部分教程在录制中。</p>
 ]]></content:encoded>
 		
@@ -81,11 +81,11 @@
 		<item>
 		<title>
 		作者：tcdona		</title>
-		<link>./../index.html#comment-368</link>
+		<link>/build/#comment-368</link>
 
 		<dc:creator><![CDATA[tcdona]]></dc:creator>
 		<pubDate>Mon, 27 Feb 2017 15:23:09 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=156#comment-368</guid>
+		<guid isPermaLink="false">/?p=156#comment-368</guid>
 
 					<description><![CDATA[入门的人表示真的看不懂，尝试了好多次，能不能给个视频演示？]]></description>
 			<content:encoded><![CDATA[<p>入门的人表示真的看不懂，尝试了好多次，能不能给个视频演示？</p>
@@ -95,11 +95,11 @@
 		<item>
 		<title>
 		作者：优化及性能 &#8211; behaviac		</title>
-		<link>./../index.html#comment-22</link>
+		<link>/build/#comment-22</link>
 
 		<dc:creator><![CDATA[优化及性能 &#8211; behaviac]]></dc:creator>
 		<pubDate>Wed, 01 Jun 2016 08:14:40 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=156#comment-22</guid>
+		<guid isPermaLink="false">/?p=156#comment-22</guid>
 
 					<description><![CDATA[[&#8230;] BEHAVIAC_RELEASE缺省下是否定义可以参考构建说明 [&#8230;]]]></description>
 			<content:encoded><![CDATA[<p>[&#8230;] BEHAVIAC_RELEASE缺省下是否定义可以参考构建说明 [&#8230;]</p>

@@ -7,8 +7,8 @@
 	>
 <channel>
 	<title>《编辑器的使用》的评论</title>
-	<atom:link href="/tutorial2_usage/feed/" rel="self" type="application/rss+xml" />
-	<link>/tutorial2_usage/</link>
+	<atom:link href="http://www.behaviac.com/tutorial2_usage/feed/" rel="self" type="application/rss+xml" />
+	<link>http://www.behaviac.com/tutorial2_usage/</link>
 	<description>Tencent behaviac, Game AI, Behavior Tree, Finite State Machine, Hierarchical Task Network, BT FSM HTN, 腾讯开源, 游戏AI, 行为树,有限状态机,分层任务网络</description>
 	<lastBuildDate>Mon, 26 Mar 2018 16:07:20 +0000</lastBuildDate>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
@@ -16,30 +16,30 @@
 	<generator>https://wordpress.org/?v=4.9.1</generator>
 	<item>
 		<title>作者：fdyshlk</title>
-		<link>/tutorial2_usage/#comment-140</link>
+		<link>http://www.behaviac.com/tutorial2_usage/#comment-140</link>
 		<dc:creator><![CDATA[fdyshlk]]></dc:creator>
 		<pubDate>Tue, 22 Nov 2016 07:39:29 +0000</pubDate>
-		<guid isPermaLink="false">/</guid>
+		<guid isPermaLink="false">http://www.behaviac.com/</guid>
 		<description><![CDATA[出些视频教程不是很好，这样文档一个个看下来，既不容易理解，学的又慢。]]></description>
 		<content:encoded><![CDATA[<p>出些视频教程不是很好，这样文档一个个看下来，既不容易理解，学的又慢。</p>
 ]]></content:encoded>
 	</item>
 	<item>
 		<title>作者：xinglely</title>
-		<link>/tutorial2_usage/#comment-137</link>
+		<link>http://www.behaviac.com/tutorial2_usage/#comment-137</link>
 		<dc:creator><![CDATA[xinglely]]></dc:creator>
 		<pubDate>Thu, 10 Nov 2016 06:26:11 +0000</pubDate>
-		<guid isPermaLink="false">/</guid>
+		<guid isPermaLink="false">http://www.behaviac.com/</guid>
 		<description><![CDATA[可以了]]></description>
 		<content:encoded><![CDATA[<p>可以了</p>
 ]]></content:encoded>
 	</item>
 	<item>
 		<title>作者：xinglely</title>
-		<link>/tutorial2_usage/#comment-136</link>
+		<link>http://www.behaviac.com/tutorial2_usage/#comment-136</link>
 		<dc:creator><![CDATA[xinglely]]></dc:creator>
 		<pubDate>Thu, 10 Nov 2016 02:59:50 +0000</pubDate>
-		<guid isPermaLink="false">/</guid>
+		<guid isPermaLink="false">http://www.behaviac.com/</guid>
 		<description><![CDATA[能不能写个从0开始建树的教程，你们的编辑器好难用]]></description>
 		<content:encoded><![CDATA[<p>能不能写个从0开始建树的教程，你们的编辑器好难用</p>
 ]]></content:encoded>

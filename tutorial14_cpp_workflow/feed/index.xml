@@ -8,8 +8,8 @@
 <channel>
 	<title>
 	《C++运行时端的使用上手》的评论	</title>
-	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
-	<link>./../index.html</link>
+	<atom:link href="/tutorial14_cpp_workflow/feed/" rel="self" type="application/rss+xml" />
+	<link>/tutorial14_cpp_workflow/</link>
 	<description>Tencent behaviac, Game AI, Behavior Tree, Finite State Machine, Hierarchical Task Network, BT FSM HTN, 腾讯开源, 游戏AI, 行为树,有限状态机,分层任务网络</description>
 	<lastBuildDate>Mon, 19 Dec 2016 07:42:05 +0000</lastBuildDate>
 	<sy:updatePeriod>
@@ -20,16 +20,16 @@
 	<item>
 		<title>
 		作者：quinnpan		</title>
-		<link>./../index.html#comment-19</link>
+		<link>/tutorial14_cpp_workflow/#comment-19</link>
 
 		<dc:creator><![CDATA[quinnpan]]></dc:creator>
 		<pubDate>Wed, 25 May 2016 07:13:35 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=273#comment-19</guid>
+		<guid isPermaLink="false">/?p=273#comment-19</guid>
 
-					<description><![CDATA[In reply to &lt;a href=&quot;./../index.html#comment-18&quot;&gt;郑经纬&lt;/a&gt;.
+					<description><![CDATA[In reply to &lt;a href=&quot;/tutorial14_cpp_workflow/#comment-18&quot;&gt;郑经纬&lt;/a&gt;.
 
 请去http://bbs.behaviac.com上反馈问题，这个地方粘贴错误代码的格式不是很友好。]]>/</description>
-			<content:encoded><![CDATA[<p>In reply to <a href="./../index.html#comment-18">郑经纬</a>.</p>
+			<content:encoded><![CDATA[<p>In reply to <a href="/tutorial14_cpp_workflow/#comment-18">郑经纬</a>.</p>
 <p>请去http://bbs.behaviac.com上反馈问题，这个地方粘贴错误代码的格式不是很友好。/</p>
 ]]></content:encoded>
 		
@@ -37,11 +37,11 @@
 		<item>
 		<title>
 		作者：郑经纬		</title>
-		<link>./../index.html#comment-18</link>
+		<link>/tutorial14_cpp_workflow/#comment-18</link>
 
 		<dc:creator><![CDATA[郑经纬]]></dc:creator>
 		<pubDate>Wed, 25 May 2016 07:11:03 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=273#comment-18</guid>
+		<guid isPermaLink="false">/?p=273#comment-18</guid>
 
 					<description><![CDATA[24 bytes in 1 blocks are definitely lost in loss record 59 of 429
  at 0x4A05DBC: memalign (vg_replace_malloc.c:858)

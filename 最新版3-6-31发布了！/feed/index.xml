@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	《最新版3.6.31发布了！》的评论	</title>
+	<atom:link href="/%E6%9C%80%E6%96%B0%E7%89%883-6-31%E5%8F%91%E5%B8%83%E4%BA%86%EF%BC%81/feed/" rel="self" type="application/rss+xml" />
+	<link>/%e6%9c%80%e6%96%b0%e7%89%883-6-31%e5%8f%91%e5%b8%83%e4%ba%86%ef%bc%81/</link>
+	<description>Tencent behaviac, Game AI, Behavior Tree, Finite State Machine, Hierarchical Task Network, BT FSM HTN, 腾讯开源, 游戏AI, 行为树,有限状态机,分层任务网络</description>
+	<lastBuildDate>Mon, 24 Apr 2017 08:57:10 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.4.1</generator>
+</channel>
+</rss>

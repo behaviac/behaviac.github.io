@@ -8,8 +8,8 @@
 <channel>
 	<title>
 	《VS项目中使用behaviac组件》的评论	</title>
-	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
-	<link>./../index.html</link>
+	<atom:link href="/cpp_include/feed/" rel="self" type="application/rss+xml" />
+	<link>/cpp_include/</link>
 	<description>Tencent behaviac, Game AI, Behavior Tree, Finite State Machine, Hierarchical Task Network, BT FSM HTN, 腾讯开源, 游戏AI, 行为树,有限状态机,分层任务网络</description>
 	<lastBuildDate>Tue, 12 Dec 2017 03:54:18 +0000</lastBuildDate>
 	<sy:updatePeriod>
@@ -20,11 +20,11 @@
 	<item>
 		<title>
 		作者：tangyin025		</title>
-		<link>./../index.html#comment-422</link>
+		<link>/cpp_include/#comment-422</link>
 
 		<dc:creator><![CDATA[tangyin025]]></dc:creator>
 		<pubDate>Tue, 12 Dec 2017 03:54:18 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=311#comment-422</guid>
+		<guid isPermaLink="false">/?p=311#comment-422</guid>
 
 					<description><![CDATA[由BehaviacDesigner生成的cpp中需要预编译头stdafx.h如何处理]]></description>
 			<content:encoded><![CDATA[<p>由BehaviacDesigner生成的cpp中需要预编译头stdafx.h如何处理</p>
@@ -34,30 +34,30 @@
 		<item>
 		<title>
 		作者：cainhuang		</title>
-		<link>./../index.html#comment-387</link>
+		<link>/cpp_include/#comment-387</link>
 
 		<dc:creator><![CDATA[cainhuang]]></dc:creator>
 		<pubDate>Mon, 17 Apr 2017 06:46:31 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=311#comment-387</guid>
+		<guid isPermaLink="false">/?p=311#comment-387</guid>
 
-					<description><![CDATA[In reply to &lt;a href=&quot;./../index.html#comment-386&quot;&gt;周裕业&lt;/a&gt;.
+					<description><![CDATA[In reply to &lt;a href=&quot;/cpp_include/#comment-386&quot;&gt;周裕业&lt;/a&gt;.
 
 如何编译behaviac运行时库，看这篇文档：
-./../../language/zh/build/]]>/index.html</description>
-			<content:encoded><![CDATA[<p>In reply to <a href="./../index.html#comment-386">周裕业</a>.</p>
+/language/zh/build/]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/cpp_include/#comment-386">周裕业</a>.</p>
 <p>如何编译behaviac运行时库，看这篇文档：<br />
-<a href="./../../language/zh/build/index.html" rel="nofollow ugc">./../../language/zh/build/index.html</a></p>
+<a href="/language/zh/build/" rel="nofollow ugc">/language/zh/build/</a></p>
 ]]></content:encoded>
 		
 			</item>
 		<item>
 		<title>
 		作者：周裕业		</title>
-		<link>./../index.html#comment-386</link>
+		<link>/cpp_include/#comment-386</link>
 
 		<dc:creator><![CDATA[周裕业]]></dc:creator>
 		<pubDate>Sun, 16 Apr 2017 07:25:50 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=311#comment-386</guid>
+		<guid isPermaLink="false">/?p=311#comment-386</guid>
 
 					<description><![CDATA[怎么单独编译behaviac组件库]]></description>
 			<content:encoded><![CDATA[<p>怎么单独编译behaviac组件库</p>
